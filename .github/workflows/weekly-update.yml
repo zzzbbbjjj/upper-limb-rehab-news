@@ -1,0 +1,44 @@
+name: Weekly Paper Fetch
+
+on:
+  schedule:
+    # Run every Monday at 08:00 UTC (16:00 Beijing time)
+    - cron: "0 8 * * 1"
+  # Allow manual trigger
+  workflow_dispatch:
+
+jobs:
+  fetch-papers:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r scripts/requirements.txt
+
+      - name: Fetch new papers
+        run: python scripts/fetch_papers.py
+
+      - name: Commit and push new papers
+        run: |
+          git config user.name "research-bot"
+          git config user.email "bot@upper-limb-rehab-news.dev"
+          git add content/papers/
+          if git diff --staged --quiet; then
+            echo "No new papers to commit."
+          else
+            git commit -m "📄 Weekly paper update — $(date +%Y-%m-%d)"
+            git push
+            echo "New papers committed and pushed! Vercel will auto-deploy."
+          fi
