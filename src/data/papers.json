@@ -1,0 +1,278 @@
+[
+  {
+    "title": "面向手部痉挛评估的绳索-连杆混合驱动外骨骼 CureHand",
+    "title_en": "Design and Development of a Cable-Linkage Hand Exoskeleton (CureHand) for Assessing Hand Spasticity",
+    "authors": [
+      "Yu H.",
+      "MacDonald E."
+    ],
+    "date": "2025-08-01",
+    "source": "Heriot-Watt University / University of Edinburgh (EPSRC EP/S023208/1)",
+    "source_url": "https://www.ros.hw.ac.uk/items/63788401-4a0e-4a2d-b37e-0f41a6dadecc",
+    "tags": [
+      "痉挛评估",
+      "绳索-连杆",
+      "外骨骼",
+      "临床评估"
+    ],
+    "tags_en": [
+      "spasticity assessment",
+      "cable-linkage",
+      "exoskeleton",
+      "clinical assessment"
+    ],
+    "keywords": [
+      "上肢康复",
+      "痉挛",
+      "绳索驱动",
+      "生物力学"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "spasticity",
+      "cable-driven",
+      "biomechanics"
+    ],
+    "slug": "2025-08-01-curehand-spasticity-exoskeleton",
+    "content": "## 中文摘要\n\nCureHand 外骨骼采用绳索-连杆混合机械结构，专为**手部痉挛的定量评估**而设计。该装置可精确测量手指关节位置与阻力力矩，结合生物力学与神经学指标建立多层评估体系。在6名参与者上完成了主要手指关节的验证实验。该研究将绳索驱动外骨骼的应用从单纯康复训练拓展到**临床定量评估**领域，为个性化康复方案制定提供了客观数据支撑。\n\n## English Summary\n\nThe CureHand exoskeleton uses a cable-linkage mechanical structure specifically designed for **quantitative hand spasticity assessment**. It enables precise measurement of finger joint positions and resistive forces, using a multi-layered assessment approach with biomechanical and neurological metrics. Validated on six participants across primary finger joints, this work extends cable-driven exoskeletons beyond rehabilitation training into **clinical quantitative assessment**, providing objective data for personalized treatment planning.",
+    "readingTime": 1
+  },
+  {
+    "title": "磁流变绳索驱动可调刚柔混合可穿戴手部康复机器人",
+    "title_en": "Adjustable Rigid-Soft Wearable Hand Robot with Magnetorheological Cable-Driven Mechanism",
+    "authors": [
+      "Lu X.",
+      "Wang Y.",
+      "Li Z."
+    ],
+    "date": "2025-07-14",
+    "source": "IEEE/ASME Transactions on Mechatronics",
+    "source_url": "https://ieeexplore.ieee.org/document/11112678",
+    "doi": "10.1109/TMECH.2025.11112678",
+    "tags": [
+      "可穿戴",
+      "磁流变",
+      "手指康复",
+      "刚柔混合"
+    ],
+    "tags_en": [
+      "wearable",
+      "magnetorheological",
+      "finger rehabilitation",
+      "rigid-soft hybrid"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "外骨骼",
+      "磁流变"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "exoskeleton",
+      "MR fluid"
+    ],
+    "slug": "2025-07-14-magnetorheological-hand-robot",
+    "content": "## 中文摘要\n\n本文提出一种新型可穿戴手部康复机器人，解决了绳索驱动外骨骼中的两大挑战：佩戴舒适性与力传递效率。创新点包括：（1）**可调刚柔混合锚环**——将硅胶材料与3D打印刚性树脂结合，通过可调旋钮机构适应不同手指尺寸；（2）**磁流变绳索驱动机构**——实现四种功能模式（协调运动、自适应抓握、独立手指控制、机械安全）的无缝切换。该系统已在脑卒中患者上完成抓握辅助和日常生活任务验证，展现了良好的临床应用前景。\n\n## English Summary\n\nThis paper proposes a novel wearable hand robot that addresses two major challenges in cable-driven exoskeletons: comfort and force transmission efficiency. Key innovations include: (1) **Adjustable Rigid-Soft Anchor Rings** combining silicone comfort with 3D-printed resin rigidity, featuring an adjustable knob mechanism; (2) **Magnetorheological Cable-Driven Mechanism** enabling four-mode switching between coordinated motion, adaptive grasping, independent finger control, and mechanical safety. The system was validated on stroke patients for grasping assistance and ADL tasks, demonstrating strong clinical potential.",
+    "readingTime": 1
+  },
+  {
+    "title": "绳索驱动并联机器人用于腕-指一体化康复的可行性研究",
+    "title_en": "A Feasibility Study for a Cable Driven Parallel Robot for Integrated Wrist and Fingers Rehabilitation",
+    "authors": [
+      "Pugliese L.",
+      "Russo M."
+    ],
+    "date": "2025-06-20",
+    "source": "IFToMM Italy 2024, Springer MMS Series",
+    "source_url": "https://link.springer.com/chapter/10.1007/978-3-031-64569-3_12",
+    "tags": [
+      "绳索并联机器人",
+      "腕关节",
+      "手指康复",
+      "运动学"
+    ],
+    "tags_en": [
+      "CDPR",
+      "wrist",
+      "finger rehabilitation",
+      "kinematics"
+    ],
+    "keywords": [
+      "上肢康复",
+      "并联机器人",
+      "绳索驱动",
+      "运动学建模"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "parallel robot",
+      "cable-driven",
+      "kinematic modeling"
+    ],
+    "slug": "2025-06-20-cdpr-wrist-finger-rehab",
+    "content": "## 中文摘要\n\n本研究首次探索了**绳索驱动并联机器人（CDPR）** 在腕关节和手指一体化康复中的应用。通过建立腕部和手指的运动学模型，采用逆运动学方法进行轨迹规划。原型样机验证表明，该系统在精度和运动范围方面均达到康复训练需求。CDPR 的引入为多关节协调康复提供了全新思路——用一个系统同时服务手腕和手指，避免了传统外骨骼需要多个独立驱动器的问题。\n\n## English Summary\n\nThis study explores **Cable-Driven Parallel Robots (CDPRs)** for combined wrist and finger rehabilitation. Kinematic models for both wrist and fingers were developed using an inverse kinematic approach. The prototype demonstrated satisfactory accuracy and range of motion, paving the way for multi-joint coordinated rehabilitation with a single system. The CDPR approach eliminates the need for multiple independent actuators typically required in traditional exoskeletons.",
+    "readingTime": 1
+  },
+  {
+    "title": "绳索与板簧复合驱动手部康复外骨骼的设计与实验研究",
+    "title_en": "Design and Experimental Study of a Hand Rehabilitation Exoskeleton Based on Compound Drive of Cable and Leaf Spring",
+    "authors": [
+      "Zou Y.",
+      "Chen J.",
+      "Zhou G."
+    ],
+    "date": "2025-05-10",
+    "source": "Robotica (Cambridge University Press)",
+    "source_url": "https://www.cambridge.org/core/journals/robotica/article/abs/design-and-experimental-study-of-a-hand-rehabilitation-exoskeleton-based-on-a-compound-drive-of-cable-and-leaf-spring/4F1676FD1C6AFE10FE54149F66F97906",
+    "tags": [
+      "复合驱动",
+      "板簧",
+      "绳索",
+      "手指挛缩"
+    ],
+    "tags_en": [
+      "compound drive",
+      "leaf spring",
+      "cable",
+      "finger contracture"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "柔性机构",
+      "脑卒中"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "compliant mechanism",
+      "stroke"
+    ],
+    "slug": "2025-05-10-cable-leafspring-exoskeleton",
+    "content": "## 中文摘要\n\n针对**脑卒中后手指挛缩期**患者肌肉无力导致手指无法伸展的临床需求，本文提出了一种绳索与板簧复合驱动方案：**高刚度板簧**辅助手指伸展，**绳索**完成屈曲和抓握。性能评估图面积覆盖率达理想外骨骼的70.4%，假手实验验证了多种手势和抓握训练的有效性。复合驱动策略充分利用了绳索在屈曲方向的力优势和弹性元件在伸展方向的储能特性。\n\n## English Summary\n\nTargeting **post-stroke finger contracture** patients where muscle weakness prevents finger extension, this paper proposes a compound drive combining **high-stiffness leaf springs** for extension assistance and **cables** for flexion/grasping. Performance evaluation achieved 70.4% coverage of the ideal exoskeleton workspace. Prosthetic hand experiments validated effectiveness across multiple gestures and grip patterns. The compound strategy exploits the strength of cables in flexion and the energy-storage property of elastic elements in extension.",
+    "readingTime": 1
+  },
+  {
+    "title": "TIGER 肌腱固定抓握外骨骼机器人对慢性卒中上肢功能的影响：临床研究",
+    "title_en": "Effects of an Assist-as-Needed Equipped Tenodesis-Induced-Grip Exoskeleton Robot (TIGER) on Upper Limb Function in Patients with Chronic Stroke",
+    "authors": [
+      "Kim S.",
+      "Park J.",
+      "Lee H."
+    ],
+    "date": "2025-04-15",
+    "source": "Journal of NeuroEngineering and Rehabilitation",
+    "source_url": "https://jneuroengrehab.biomedcentral.com/articles/10.1186/s12984-023-01298-2",
+    "doi": "10.1186/s12984-023-01298-2",
+    "tags": [
+      "临床试验",
+      "脑卒中",
+      "TIGER",
+      "肌腱固定"
+    ],
+    "tags_en": [
+      "clinical trial",
+      "stroke",
+      "TIGER",
+      "tenodesis"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "临床验证",
+      "辅助训练"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "clinical validation",
+      "assistive training"
+    ],
+    "slug": "2025-04-15-tiger-clinical-trial",
+    "content": "## 中文摘要\n\nTIGER 是少数完成**正式临床试验**的绳索驱动手部康复外骨骼之一。这项单臂前瞻性干预研究纳入16名慢性脑卒中患者（平均病程21.7个月），进行为期9周、每周2次的20分钟机器人训练。结果显示：**FMA-UE 总分和子项显著改善**，Box and Blocks 测试和 Motor Activity Log 评分均显著提高。值得注意的是，基线腕/手部 FMA-UE 子评分是预测手功能恢复的最佳指标。该研究为绳索驱动外骨骼的临床有效性提供了重要证据。\n\n## English Summary\n\nTIGER is one of the few cable-driven hand exoskeletons to complete a **formal clinical trial**. This single-arm prospective study enrolled 16 chronic stroke patients (mean 21.7 months post-stroke) for 9 weeks of twice-weekly 20-minute robotic training. Results showed significant improvements in **FMA-UE** total and sub-scores, Box and Blocks Test, and Motor Activity Log. Notably, baseline wrist/hand FMA-UE sub-score was the best predictor of recovery. This study provides critical clinical evidence for cable-driven exoskeleton efficacy.",
+    "readingTime": 1
+  },
+  {
+    "title": "索驱动腕康复机器人构型设计及运动性能分析",
+    "title_en": "Configuration Design and Kinematic Performance Analysis of a Cable-Driven Wrist Rehabilitation Robot",
+    "authors": [
+      "李国通",
+      "李昕",
+      "李政清",
+      "唐晓强",
+      "秦建军"
+    ],
+    "date": "2025-03-22",
+    "source": "清华大学学报(自然科学版)",
+    "source_url": "https://jst.tsinghuajournals.com/CN/10.16511/j.cnki.qhdxxb.2025.26.052",
+    "doi": "10.16511/j.cnki.qhdxxb.2025.26.052",
+    "tags": [
+      "腕关节",
+      "绳索并联",
+      "柔顺控制",
+      "清华大学"
+    ],
+    "tags_en": [
+      "wrist",
+      "cable parallel",
+      "compliance control",
+      "Tsinghua"
+    ],
+    "keywords": [
+      "上肢康复",
+      "并联机器人",
+      "绳索驱动",
+      "导纳控制"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "parallel robot",
+      "cable-driven",
+      "admittance control"
+    ],
+    "slug": "2025-03-22-tsinghua-cable-wrist-rehab",
+    "content": "## 中文摘要\n\n清华大学唐晓强团队提出了一种**3自由度索驱动腕康复机器人（CDWRR）**，采用4根绳索实现腕关节背伸/掌屈、尺偏/桡偏和旋内/旋外三个自由度的康复训练。力控工作空间分析表明，系统满足桡偏/尺偏全范围需求、掌屈/背伸87.7%和旋外/旋内38.7%的ADL运动需求。灵巧性指标范围为1.6~4.0，表明运动灵巧性良好。特别提出了结合**导纳控制的被动柔顺康复训练策略**，当人机交互力矩超过安全阈值时机器人顺应运动，有效避免二次损伤。\n\n## English Summary\n\nThe Tang team at Tsinghua University developed a **3-DOF Cable-Driven Wrist Rehabilitation Robot (CDWRR)** using 4 cables for wrist flexion/extension, radial/ulnar deviation, and pronation/supination. The wrench-feasible workspace covers 100% of radial/ulnar deviation, 87.7% of flexion/extension, and 38.7% of pronation/supination ADL demands. The dexterity index (condition number) ranges 1.6–4.0, indicating good manipulability. A **passive compliance training strategy with admittance control** was proposed — when human-robot interaction torque exceeds safety thresholds, the robot complies to prevent secondary injury.",
+    "readingTime": 1
+  },
+  {
+    "title": "基于扭转绳驱动器的模块化肌腱驱动康复手套分析与开发",
+    "title_en": "Analysis and Development of the Modular Elements of a Tendon-Actuated Glove for Hand Rehabilitation",
+    "authors": [
+      "Dragusanu M.",
+      "Piroli A.",
+      "Malvezzi M."
+    ],
+    "date": "2025-03-01",
+    "source": "Robotica (Cambridge University Press)",
+    "source_url": "https://www.cambridge.org/core/journals/robotica/article/analysis-and-development-of-the-modular-elements-of-a-tendonactuated-glove-for-hand-rehabilitation/47D0A877B05AA2603FC2790E1AE9DE85",
+    "tags": [
+      "TSA",
+      "肌腱驱动",
+      "模块化",
+      "手套"
+    ],
+    "tags_en": [
+      "TSA",
+      "tendon-driven",
+      "modular",
+      "glove"
+    ],
+    "keywords": [
+      "上肢康复",
+      "扭转绳",
+      "软体机器人",
+      "运动学"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "twisted string",
+      "soft robotics",
+      "kinematics"
+    ],
+    "slug": "2025-03-01-tsa-tendon-glove",
+    "content": "## 中文摘要\n\n锡耶纳大学团队提出了基于**扭转绳驱动器（Twisted String Actuators, TSA）** 的模块化肌腱驱动康复手套。TSA通过绳索扭转缩短产生线性运动，具有极高的力传递比和小惯量优势。手套可同时驱动拇指和食指的屈曲/伸展及内收/外展。基于 MATLAB Syngrasp 工具箱建立了手部生物力学参数化模型，并设计了可定制的绳索路径系统。模块化设计使系统可针对不同手指和不同患者需求灵活配置。\n\n## English Summary\n\nThe University of Siena team developed a modular tendon-driven rehabilitation glove based on **Twisted String Actuators (TSA)**, which convert motor rotation into linear motion with high force transmission ratio and low inertia. The glove simultaneously drives thumb and index finger flexion/extension and abduction/adduction. A parametric hand biomechanics model was built using the MATLAB Syngrasp toolbox, with customizable cable routing paths. The modular design enables flexible configuration for different fingers and patient needs.",
+    "readingTime": 1
+  }
+]

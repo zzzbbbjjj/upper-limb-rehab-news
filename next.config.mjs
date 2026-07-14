@@ -7,14 +7,11 @@ const withMDX = createMDX({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
-  images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: '**',
-      },
-    ],
-  },
+  output: 'export',
+  // GitHub Pages project site needs basePath
+  basePath: process.env.GITHUB_ACTIONS ? '/upper-limb-rehab-news' : '',
+  // Disable image optimization (not supported in static export)
+  images: { unoptimized: true },
 }
 
 export default withMDX(nextConfig)

@@ -1,26 +1,35 @@
+'use client'
+
+import { useState, useEffect, Suspense } from 'react'
+import { useSearchParams } from 'next/navigation'
 import { searchPapersLocal } from '@/lib/papers'
 import SearchBar from '@/components/SearchBar'
 import PaperList from '@/components/PaperList'
-import type { Metadata } from 'next'
+import type { Paper } from '@/lib/types'
 
-export const metadata: Metadata = {
-  title: '搜索论文',
-}
-
-export default function SearchPage({
-  searchParams,
-}: {
-  searchParams: { q?: string; page?: string }
-}) {
-  const query = searchParams.q || ''
-  const page = Number(searchParams.page) || 1
+function SearchContent() {
+  const searchParams = useSearchParams()
+  const query = searchParams.get('q') || ''
+  const page = Number(searchParams.get('page')) || 1
   const pageSize = 10
 
-  let papers = searchPapersLocal(query)
-  const total = papers.length
-  const totalPages = Math.max(1, Math.ceil(total / pageSize))
-  const start = (page - 1) * pageSize
-  papers = papers.slice(start, start + pageSize)
+  const [papers, setPapers] = useState<Paper[]>([])
+  const [total, setTotal] = useState(0)
+  const [totalPages, setTotalPages] = useState(1)
+
+  useEffect(() => {
+    if (!query) {
+      setPapers([])
+      setTotal(0)
+      setTotalPages(1)
+      return
+    }
+    const all = searchPapersLocal(query)
+    setTotal(all.length)
+    setTotalPages(Math.max(1, Math.ceil(all.length / pageSize)))
+    const start = (page - 1) * pageSize
+    setPapers(all.slice(start, start + pageSize))
+  }, [query, page])
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
@@ -67,7 +76,7 @@ export default function SearchPage({
             <div className="text-center py-16">
               <span className="text-4xl">🔬</span>
               <p className="mt-4 text-slate-500 dark:text-slate-400">
-                未找到相关论文，请尝试其他关键词如 &ldquo;外骨骼&rdquo;、&ldquo;绳索驱动&rdquo;、&ldquo;脑卒中&rdquo; 等。
+                未找到相关论文，请尝试其他关键词。
               </p>
             </div>
           )}
@@ -82,5 +91,13 @@ export default function SearchPage({
         </div>
       )}
     </div>
+  )
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<div className="text-center py-16">加载中...</div>}>
+      <SearchContent />
+    </Suspense>
   )
 }
