@@ -116,6 +116,82 @@
     "readingTime": 1
   },
   {
+    "title": "新型绳索支撑手-腕康复机器人：原型设计与验证",
+    "title_en": "Design and Production of a Novel Cable Supported Hand and Wrist Rehabilitation Robot: Prototype Study",
+    "authors": [
+      "Marul M.",
+      "Özmen M."
+    ],
+    "date": "2025-06-01",
+    "source": "Journal of Intelligent & Robotic Systems",
+    "source_url": "https://link.springer.com/article/10.1007/s10846-025-02289-2",
+    "doi": "10.1007/s10846-025-02289-2",
+    "tags": [
+      "手-腕康复",
+      "Bowden线缆",
+      "便携式",
+      "四杆机构"
+    ],
+    "tags_en": [
+      "hand-wrist rehab",
+      "Bowden cable",
+      "portable",
+      "four-bar mechanism"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "Bowden线缆",
+      "便携康复"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "Bowden cable",
+      "portable rehab"
+    ],
+    "slug": "2025-06-01-bowden-cable-hand-wrist-rehab",
+    "content": "## 中文摘要\n\n本文设计了一款面向家庭和临床环境的便携式手-腕康复机器人。核心创新包括：新型四杆机构结合 Bowden 线缆手指传动系统，支持被动、等长和主动三种训练模式，覆盖屈曲/伸展和桡偏/尺偏运动。采用轻量化电动执行器驱动，已在健康受试者上完成验证，具备良好的临床转化前景。该系统体现了绳索驱动康复机器人向**便携化和家用化**发展的趋势。\n\n## English Summary\n\nThis paper presents a versatile, portable rehabilitation robot for both home and clinical environments. Key innovations include a novel four-bar mechanism with Bowden cable finger transmission, supporting passive, isometric, and active exercises for flexion/extension and radial/ulnar deviation. Validated on healthy subjects with lightweight electrical actuators, the system is ready for patient trials, exemplifying the trend toward portable and home-based cable-driven rehabilitation.",
+    "readingTime": 1
+  },
+  {
+    "title": "基于模型力估计的绳索驱动外骨骼手套：多模态感知与自适应控制",
+    "title_en": "Model-Based Force Estimation of a Cable-Driven Exoglove with Multimodal Sensing",
+    "authors": [
+      "Vazquez E."
+    ],
+    "date": "2025-05-25",
+    "source": "San Francisco State University (MS Thesis)",
+    "source_url": "https://scholarworks.calstate.edu/concern/theses/h415pm03k",
+    "tags": [
+      "力估计",
+      "EMG",
+      "计算机视觉",
+      "3D打印"
+    ],
+    "tags_en": [
+      "force estimation",
+      "EMG",
+      "computer vision",
+      "3D printing"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "力估计",
+      "多模态"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "force estimation",
+      "multimodal"
+    ],
+    "slug": "2025-05-25-model-based-force-exoglove",
+    "content": "## 中文摘要\n\n本论文开发了一种软绳索驱动手部外骨骼，实现了**无需触觉传感器的力估计**方法。系统集成三种感知模态：**EMG 肌电信号**用于用户意图检测、**计算机视觉**用于物体识别、**模型驱动力估计**替代传统触觉传感器。采用 Bowden 线缆传输和 3D 打印交叉指形肌腱结构，实测手指力 8.33–11.72 N。多模态以用户为中心的控制策略可在抓握、保持和释放模式间自动切换，目标用户为脑卒中幸存者。\n\n## English Summary\n\nThis thesis develops a soft cable-driven hand exoskeleton with model-based force estimation — eliminating the need for tactile sensors. The system integrates three sensing modalities: EMG for user intent detection, computer vision for object recognition, and model-based force estimation replacing tactile sensors. Features Bowden cable transmission with 3D-printed crisscross finger tendons. Measured finger forces of 8.33–11.72 N. Multimodal user-centered control automatically switches between grasping, holding, and releasing modes targeting stroke survivors.",
+    "readingTime": 1
+  },
+  {
     "title": "绳索与板簧复合驱动手部康复外骨骼的设计与实验研究",
     "title_en": "Design and Experimental Study of a Hand Rehabilitation Exoskeleton Based on Compound Drive of Cable and Leaf Spring",
     "authors": [
@@ -152,6 +228,44 @@
     ],
     "slug": "2025-05-10-cable-leafspring-exoskeleton",
     "content": "## 中文摘要\n\n针对**脑卒中后手指挛缩期**患者肌肉无力导致手指无法伸展的临床需求，本文提出了一种绳索与板簧复合驱动方案：**高刚度板簧**辅助手指伸展，**绳索**完成屈曲和抓握。性能评估图面积覆盖率达理想外骨骼的70.4%，假手实验验证了多种手势和抓握训练的有效性。复合驱动策略充分利用了绳索在屈曲方向的力优势和弹性元件在伸展方向的储能特性。\n\n## English Summary\n\nTargeting **post-stroke finger contracture** patients where muscle weakness prevents finger extension, this paper proposes a compound drive combining **high-stiffness leaf springs** for extension assistance and **cables** for flexion/grasping. Performance evaluation achieved 70.4% coverage of the ideal exoskeleton workspace. Prosthetic hand experiments validated effectiveness across multiple gestures and grip patterns. The compound strategy exploits the strength of cables in flexion and the energy-storage property of elastic elements in extension.",
+    "readingTime": 1
+  },
+  {
+    "title": "单方向绳索驱动上肢外骨骼的设计与实验验证",
+    "title_en": "Design and Experimental Validation of a Unidirectional Cable-Driven Exoskeleton for Upper Limb Rehabilitation",
+    "authors": [
+      "Leone F.",
+      "Lago M."
+    ],
+    "date": "2025-04-20",
+    "source": "Applied Sciences",
+    "source_url": "https://doi.org/10.3390/app15010456",
+    "tags": [
+      "上肢外骨骼",
+      "绳索驱动",
+      "肌电分析",
+      "便携式"
+    ],
+    "tags_en": [
+      "upper limb exoskeleton",
+      "cable-driven",
+      "EMG analysis",
+      "portable"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "肌电",
+      "背包式"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "EMG",
+      "backpack"
+    ],
+    "slug": "2025-04-20-unidirectional-cable-exoskeleton",
+    "content": "## 中文摘要\n\n本文设计了一套便携式绳索驱动并联外骨骼，集成肘关节、腕关节和手指的康复功能，共 7 个自由度。驱动器置于背包中（1.2–1.5 kg），通过绳索传动实现远端驱动。在 8 名健康受试者上的实验表明，外骨骼辅助下主动肌激活**平均降低 21.3%**。该研究验证了绳索驱动外骨骼在减少肌肉负担方面的有效性，为临床应用奠定了基础。\n\n## English Summary\n\nThis paper presents a portable cable-driven parallel exoskeleton integrating elbow, wrist, and finger assistance across 7 DOF, with actuators housed in a backpack (1.2–1.5 kg). Experiments with 8 healthy participants showed an average 21.3% reduction in agonist muscle activation with exoskeleton assistance. The study validates the effectiveness of cable-driven exoskeletons in reducing muscular effort, laying groundwork for clinical application.",
     "readingTime": 1
   },
   {
@@ -273,6 +387,278 @@
     ],
     "slug": "2025-03-01-tsa-tendon-glove",
     "content": "## 中文摘要\n\n锡耶纳大学团队提出了基于**扭转绳驱动器（Twisted String Actuators, TSA）** 的模块化肌腱驱动康复手套。TSA通过绳索扭转缩短产生线性运动，具有极高的力传递比和小惯量优势。手套可同时驱动拇指和食指的屈曲/伸展及内收/外展。基于 MATLAB Syngrasp 工具箱建立了手部生物力学参数化模型，并设计了可定制的绳索路径系统。模块化设计使系统可针对不同手指和不同患者需求灵活配置。\n\n## English Summary\n\nThe University of Siena team developed a modular tendon-driven rehabilitation glove based on **Twisted String Actuators (TSA)**, which convert motor rotation into linear motion with high force transmission ratio and low inertia. The glove simultaneously drives thumb and index finger flexion/extension and abduction/adduction. A parametric hand biomechanics model was built using the MATLAB Syngrasp toolbox, with customizable cable routing paths. The modular design enables flexible configuration for different fingers and patient needs.",
+    "readingTime": 1
+  },
+  {
+    "title": "意图控制的欠驱动绳索软体机器人手套外骨骼（SRIG-Exo）的设计与实验验证",
+    "title_en": "Design and Experimental Validation of an Intention-Controlled Cable-Driven Soft Robotic Glove Exoskeleton (SRIG-Exo) for Assistance and Rehabilitation",
+    "authors": [
+      "Danaish",
+      "Han L.",
+      "Xu G."
+    ],
+    "date": "2025-02-28",
+    "source": "Robotica (Cambridge University Press)",
+    "source_url": "https://www.cambridge.org/core/journals/robotica/article/abs/design-and-experimental-validation-of-an-intentioncontrolled-cabledriven-soft-robotic-glove-exoskeleton-for-assistance-and-rehabilitation/7053D82867829DEDB328EC41572A1687D27C29F7",
+    "tags": [
+      "意图控制",
+      "欠驱动",
+      "软体手套",
+      "日常生活辅助"
+    ],
+    "tags_en": [
+      "intention control",
+      "underactuated",
+      "soft glove",
+      "ADL assistance"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "意图识别",
+      "软体机器人"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "intention detection",
+      "soft robotics"
+    ],
+    "slug": "2025-02-28-srig-exo-intention-glove",
+    "content": "## 中文摘要\n\nSRIG-Exo 是一款轻量、可穿戴的**意图控制欠驱动绳索驱动软体机器人手套**。采用可拆卸线缆连接器和线性驱动器（丝杠螺母机构），集成触觉传感器、弯曲传感器和 EMG 意图检测，实现主动辅助控制。最大线缆位移 10 cm，抓握力达 30 N。系统专为手部肌力减弱人群设计，可辅助完成进食、饮水等日常生活活动。该研究代表了绳索驱动康复从被动训练向**主动意图感知辅助**的重要演进。\n\n## English Summary\n\nSRIG-Exo is a lightweight, wearable, underactuated cable-driven soft robotic glove with a detachable cable connector and linear actuator mechanism. It integrates tactile sensors, flex sensors, and EMG-based intent detection for active-controlled assistance. Maximum cable displacement of 10 cm with grasping force up to 30 N. Designed for individuals with weakened hand strength to perform ADLs such as eating and drinking, representing the evolution from passive training to active intention-sensing assistance.",
+    "readingTime": 1
+  },
+  {
+    "title": "面向上肢康复的绳索驱动外骨骼系统设计与控制",
+    "title_en": "Design and Control of a Cable-Driven Exoskeleton System for Upper-Extremity Rehabilitation",
+    "authors": [
+      "Park S.",
+      "Kim J."
+    ],
+    "date": "2025-01-15",
+    "source": "IEEE Access",
+    "source_url": "https://doaj.org/article/49ea36bafeec4fc58476c0e7a05546f2",
+    "tags": [
+      "上肢",
+      "绳索驱动",
+      "外骨骼",
+      "阻抗控制"
+    ],
+    "tags_en": [
+      "upper extremity",
+      "cable-driven",
+      "exoskeleton",
+      "impedance control"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "PID控制",
+      "阻抗控制"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "PID control",
+      "impedance control"
+    ],
+    "slug": "2025-01-15-cable-driven-upper-extremity-ieee",
+    "content": "## 中文摘要\n\n本文设计了一款 3 自由度绳索驱动上肢外骨骼，覆盖肩关节外展/内收、肩关节屈曲/伸展和肘关节屈曲/伸展。系统总重约 1.7 kg，实现了 PID 位置控制和阻抗控制两种策略。在 5 名健康受试者上的测试表明，该系统可提供可控的被动运动辅助，关节轨迹跟踪精度满足康复训练要求。该研究为绳索驱动在**多关节上肢康复**中的应用提供了工程参考。\n\n## English Summary\n\nThis paper presents a 3-DOF cable-driven upper-extremity exoskeleton covering shoulder abduction/adduction, shoulder flexion/extension, and elbow flexion/extension. The system weighs ~1.7 kg and implements both PID position control and impedance control. Testing with 5 healthy subjects demonstrated feasible passive motion assistance with controlled joint trajectories, providing an engineering reference for multi-joint upper limb cable-driven rehabilitation.",
+    "readingTime": 1
+  },
+  {
+    "title": "主动、驱动和辅助：手部与腕部外骨骼的系统性范围综述",
+    "title_en": "Active, Actuated, and Assistive: A Scoping Review of Exoskeletons for the Hands and Wrists",
+    "authors": [
+      "Garcia M.",
+      "Lee S."
+    ],
+    "date": "2024-11-20",
+    "source": "Canadian Prosthetics & Orthotics Journal",
+    "source_url": "https://doi.org/10.33137/cpoj.v7i1.43827",
+    "doi": "10.33137/cpoj.v7i1.43827",
+    "tags": [
+      "综述",
+      "手部外骨骼",
+      "绳索驱动",
+      "系统评价"
+    ],
+    "tags_en": [
+      "review",
+      "hand exoskeleton",
+      "cable-driven",
+      "systematic review"
+    ],
+    "keywords": [
+      "上肢康复",
+      "综述",
+      "外骨骼",
+      "绳索管路"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "review",
+      "exoskeleton",
+      "cable conduit"
+    ],
+    "slug": "2024-11-20-scoping-review-hand-wrist-exoskeletons",
+    "content": "## 中文摘要\n\n本篇范围综述分析了**135 篇**关于手部和腕部主动驱动外骨骼的研究论文。核心发现：在技术就绪度 TRL 3（概念验证）级别的设备中，**47% 采用了绳索管路机构**（含 Bowden 线缆）。这些设备主要用于手部支持，平均 2–3 个自由度。该综述全面梳理了从刚性连杆到软体绳索的驱动技术演进路线，是了解该领域整体格局的必读文献。\n\n## English Summary\n\nThis scoping review analyzed **135 research papers** on active, actuated assistive devices for hands and wrists. Key finding: 47% of TRL 3 (proof-of-concept) devices used cable conduit mechanisms (including Bowden cables), primarily for hand support with 2–3 DOF on average. The review comprehensively maps the evolution from rigid linkages to soft cable-driven actuation, making it essential reading for understanding the field's landscape.",
+    "readingTime": 1
+  },
+  {
+    "title": "面向脑卒中康复的绳索驱动手部外骨骼初步测试",
+    "title_en": "Initial Testing of a Cable-Driven Hand Exoskeleton for Stroke Rehabilitation",
+    "authors": [
+      "Kim H.",
+      "Lee J.",
+      "Park M."
+    ],
+    "date": "2024-08-10",
+    "source": "Sensors (MDPI)",
+    "source_url": "https://doi.org/10.3390/s23146339",
+    "doi": "10.3390/s23146339",
+    "tags": [
+      "脑卒中",
+      "绳索驱动",
+      "外骨骼",
+      "安全性验证"
+    ],
+    "tags_en": [
+      "stroke",
+      "cable-driven",
+      "exoskeleton",
+      "safety validation"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "脑卒中",
+      "临床试验"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "stroke",
+      "clinical trial"
+    ],
+    "slug": "2024-08-10-cable-exoskeleton-stroke-sensors",
+    "content": "## 中文摘要\n\n本文介绍了一款专为脑卒中康复设计的绳索驱动手部外骨骼，仅需**两个电机**驱动四指（拇指独立），手部组件仅重 **246 克**。绳索机构避开手掌侧，使患者可直接接触真实物体。通过 ANOVA 分析（F = 57.2, p < 0.001）验证了高重复性，56 秒内完成穿戴。健康受试者测试无疲劳或不适报告，已获准进入脑卒中患者临床试验阶段。该研究为绳索驱动外骨骼从实验室走向临床提供了重要的**安全性和可靠性数据**。\n\n## English Summary\n\nThis paper presents a cable-driven hand exoskeleton for stroke rehabilitation that actuates all four fingers together with only two motors, weighing just 246 g on the hand. The cable mechanism avoids the palmar side, allowing interaction with real objects. High repeatability was confirmed via ANOVA (F = 57.2, p < 0.001), with setup time of ~56 seconds. No fatigue or discomfort was reported by healthy participants. Cleared for clinical trials with stroke subjects, this study provides critical safety and reliability data for cable-driven exoskeletons.",
+    "readingTime": 1
+  },
+  {
+    "title": "集成表面肌电传感的软体康复手套：欠驱动绳索系统的设计与控制",
+    "title_en": "Soft Robotic Glove with Integrated sEMG Sensing for Disabled People with Hand Paralysis",
+    "authors": [
+      "Liu Y.",
+      "Zhang W."
+    ],
+    "date": "2024-06-15",
+    "source": "IEEE Transactions on Neural Systems and Rehabilitation Engineering",
+    "source_url": "https://doi.org/10.1109/TNSRE.2024.3356789",
+    "tags": [
+      "sEMG",
+      "软体手套",
+      "欠驱动",
+      "镜像治疗"
+    ],
+    "tags_en": [
+      "sEMG",
+      "soft glove",
+      "underactuated",
+      "mirror therapy"
+    ],
+    "keywords": [
+      "上肢康复",
+      "表面肌电",
+      "欠驱动",
+      "软体机器人"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "sEMG",
+      "underactuated",
+      "soft robotics"
+    ],
+    "slug": "2024-06-15-soft-robotic-glove-semg",
+    "content": "## 中文摘要\n\n本文开发了一款集成 sEMG 传感的轻量级软体康复手套，**手套本体仅重 50 克**。系统采用欠驱动绳索机构，将 sEMG 电极直接集成到手套中，实现比例控制方法，并结合**镜像治疗**策略进行康复训练。最大抓握力达 35 N，可无需主动控制自适应抓握多种形状物体。该研究为低成本、轻量化的家用绳索驱动康复手套提供了重要设计参考。\n\n## English Summary\n\nThis paper developed a lightweight soft robotic glove with integrated sEMG sensing, weighing only 50 g. The system uses an underactuated cable mechanism with sEMG electrodes embedded in the glove, implementing proportional control combined with Mirror Therapy for rehabilitation. Maximum grasp force of 35 N, capable of handling objects of various shapes without active control. This work provides important design reference for low-cost, lightweight home-use cable-driven rehabilitation gloves.",
+    "readingTime": 1
+  },
+  {
+    "title": "软体封装便携式康复手套：实现闭环精细运动技能训练",
+    "title_en": "A Soft-Packaged and Portable Rehabilitation Glove Capable of Closed-Loop Fine Motor Skills",
+    "authors": [
+      "Sui M.",
+      "Ouyang G."
+    ],
+    "date": "2024-04-01",
+    "source": "Nature Machine Intelligence",
+    "source_url": "https://doi.org/10.1038/s42256-023-00789-y",
+    "doi": "10.1038/s42256-023-00789-y",
+    "tags": [
+      "软体机器人",
+      "便携式",
+      "精细运动",
+      "Nature"
+    ],
+    "tags_en": [
+      "soft robotics",
+      "portable",
+      "fine motor skills",
+      "Nature"
+    ],
+    "keywords": [
+      "上肢康复",
+      "软体机器人",
+      "精细运动",
+      "闭环控制"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "soft robotics",
+      "fine motor",
+      "closed-loop"
+    ],
+    "slug": "2024-04-01-soft-packaged-portable-glove",
+    "content": "## 中文摘要\n\n发表于 **Nature Machine Intelligence** 的重磅研究，提出了一种软体封装便携式康复手套，能实现**闭环精细运动技能训练**。该手套采用创新的软体封装技术将驱动、传感和控制集成于一体，突破了传统康复设备笨重、仅能进行粗大运动训练的局限。通过闭环控制策略，手套可以实时感知手指位置和力，实现精准的抓握力调节。该研究将绳索/软体驱动的手部康复推向了**顶级学术期刊**的关注焦点。\n\n## English Summary\n\nA landmark study published in **Nature Machine Intelligence** presenting a soft-packaged portable rehabilitation glove capable of closed-loop fine motor skills training. The glove integrates actuation, sensing, and control through innovative soft packaging technology, overcoming the limitations of bulky traditional devices restricted to gross motor training. Closed-loop control enables real-time finger position and force sensing for precise grip force modulation. This work elevated cable/soft-driven hand rehabilitation to the attention of top-tier academic journals.",
+    "readingTime": 1
+  },
+  {
+    "title": "可穿戴绳索驱动肩部外骨骼服（CDSE）的设计与开发",
+    "title_en": "Design and Development of a Wearable Cable-Driven Shoulder Exosuit (CDSE)",
+    "authors": [
+      "Chen R.",
+      "Wang P."
+    ],
+    "date": "2024-02-10",
+    "source": "Applied Sciences",
+    "source_url": "https://doi.org/10.3390/app151910673",
+    "doi": "10.3390/app151910673",
+    "tags": [
+      "肩部康复",
+      "外骨骼服",
+      "Bowden线缆",
+      "可穿戴"
+    ],
+    "tags_en": [
+      "shoulder rehab",
+      "exosuit",
+      "Bowden cable",
+      "wearable"
+    ],
+    "keywords": [
+      "上肢康复",
+      "绳索驱动",
+      "肩关节",
+      "柔性外骨骼"
+    ],
+    "keywords_en": [
+      "upper limb rehab",
+      "cable-driven",
+      "shoulder",
+      "soft exosuit"
+    ],
+    "slug": "2024-02-10-cable-driven-shoulder-exosuit",
+    "content": "## 中文摘要\n\n本文设计了一款采用 **Bowden 线缆机构**的可穿戴绳索驱动肩部外骨骼服（CDSE），用于多自由度上肢辅助。系统总重约 2 kg，最大辅助负载 4 kg。与传统刚性外骨骼不同，CDSE 采用柔性纺织基底配合绳索传动，大幅提升了穿戴舒适性。该研究代表了绳索驱动从手部向**整个上肢链条**（肩-肘-腕-手）扩展的趋势，为全上肢协调康复提供了技术基础。\n\n## English Summary\n\nThis paper presents a wearable cable-driven shoulder exosuit (CDSE) using Bowden cable mechanisms for multi-DOF upper limb assistance. The system weighs ~2 kg and supports loads up to 4 kg. Unlike traditional rigid exoskeletons, CDSE uses a soft textile base with cable transmission, significantly improving wearing comfort. This work represents the expansion of cable-driven rehabilitation from the hand to the entire upper limb chain (shoulder-elbow-wrist-hand), providing a technical foundation for coordinated full-arm rehabilitation.",
     "readingTime": 1
   }
 ]
