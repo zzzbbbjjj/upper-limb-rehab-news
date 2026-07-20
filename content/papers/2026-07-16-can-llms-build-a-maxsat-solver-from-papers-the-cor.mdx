@@ -1,0 +1,21 @@
+---
+title: "法学硕士可以根据论文构建 MaxSAT 求解器吗？ CoreForge 体验"
+title_en: "Can LLMs Build a MaxSAT Solver from Papers? The CoreForge Experience"
+authors: ["Ruben Martins"]
+date: "2026-07-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.14818v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+我们报告了 CoreForge，这是一种使用大型语言模型 (LLM) 从研究论文而不是现有求解器代码库构建未加权 MaxSAT 求解器的经验。该项目专注于基于不可满足性的 MaxSAT 算法，并遵循迭代工作流程，将论文讨论与 ChatGPT 相结合，通过 Codex 提示实施，以及重复的 LLM 辅助代码审核和修订。尽管代码库实现了多种算法和求解器组件，但我们的评估重点是结合核心引导优化、轻量级预处理、核心最小化、与整数线性优化后端集成以及新的核心序列前瞻方法的配置。   我们的经验表明，法学硕士可以支持论文中的求解器实现，同时需要外部验证、基准测试和人工指导。在我们的实验中，模糊测试和 Ma...
+
+## English Summary
+
+We report on CoreForge, an experience in using large language models (LLMs) to build an unweighted MaxSAT solver from research papers rather than from an existing solver codebase. The project focuses on unsatisfiability-based MaxSAT algorithms and follows an iterative workflow that combines paper discussions with ChatGPT, implementation through Codex prompts, and repeated LLM-assisted code audits and revisions. Although the codebase implements several algorithms and solver components, our evaluation focuses on configurations that combine core-guided optimization, lightweight preprocessing, core minimization, integration with integer linear optimization backends, and a new core-sequence lookahead approach.   Our experience suggests that LLMs can support solver implementation from papers, while requiring external validation, benchmarking, and human guidance. In our experiments, fuzzing and MaxSAT Evaluation instances did not reveal wrong answers in the tested configurations, although performance remains below the best hand-engineered MaxSAT solvers. We summarize what worked, what remained difficult, and the lessons for future LLM-assisted solver development.

@@ -1,0 +1,21 @@
+---
+title: "用于 LEED 合规性的神经符号人工智能：以文档为中心的基准测试、确定性数值检查以及多模式伤害时"
+title_en: "Neuro-Symbolic AI for LEED compliance: Document-Centric Benchmarking, Deterministic Numeric Checking, and When Multimodal Hurts"
+authors: ["Aritro De", "Juliana Felkner"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15647v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+LEED v4.1 BD+C 认证仍然是一个文档密集型过程，需要审核人员阅读数百页的项目证据并手动应用特定于信用的阈值逻辑。本文研究了本地部署的小型语言模型是否可以对 LEED 文档进行有意义的筛选，以及确定性符号组件应如何共享该工作。引入了神经符号管道，将项目 PDF 与 LEED 信用部分对齐，使用信用感知关键字签名检索证据，验证是否符合本地托管的 40 亿参数语言模型，并将 LEED 特定的数字检查器应用于定量阈值。在四所大学建筑（484 个 PDF、153 个学分级别决策）上进行的实验表明，40 亿参数模型 (gemma3:4b) 是最强的纯文本核心验证器，在此任务中实现了 67.3%...
+
+## English Summary
+
+LEED v4.1 BD+C certification remains a document-intensive process that requires reviewers to read hundreds of pages of project evidence and apply credit-specific threshold logic by hand. This paper investigates whether small, locally deployed language models can perform meaningful screening of LEED documentation and how deterministic symbolic components should share that work. A neuro-symbolic pipeline is introduced that aligns project PDFs to LEED credit sections, retrieves evidence with credit-aware keyword signatures, verifies compliance with a locally hosted 4-billion-parameter language model, and applies a LEED-specific numeric checker to quantitative thresholds. Experiments on four university buildings (484 PDFs, 153 credit-level decisions) show that a 4-billion-parameter model (gemma3:4b) is the strongest text-only core verifier, achieving 67.3% accuracy and outperforming a larger 8-billion-parameter model (llama3.1:8b) in this task. The deterministic numeric checker corrects arithmetic errors on key quantitative credits, moving EA-p2 from 50% to 100% accuracy and improving several other credits when required values are reliably extracted. At the same time, the full neuro-symbolic configuration achieves 61.6% overall accuracy, trailing the best text-only baseline due to extraction failures and conservative behavior on qualitative categories. Systematic ablations show that adding low-resolution drawing images (150-300 dpi) consistently reduces accuracy, and that prompt effectiveness depends on the building's ground-truth PASS rate: rubric prompts perform best on documentation-rich projects, while chain-of-thought prompts perform best on documentation-lean projects. Within the specific scope of LEED v4.1 BD+C compliance verification over raw project documentation, this pipeline and its baselines provide an initial reproducible reference point for both accuracy and failure modes.

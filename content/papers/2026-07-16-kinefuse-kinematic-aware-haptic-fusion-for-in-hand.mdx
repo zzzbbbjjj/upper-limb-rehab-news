@@ -1,0 +1,21 @@
+---
+title: "KineFuse：用于手部遮挡物体姿势跟踪的运动学感知触觉融合"
+title_en: "KineFuse: Kinematic-Aware Haptic Fusion for In-Hand Occluded-Object Pose Tracking"
+authors: ["Chanyoung Ahn", "Jaesung Lee", "Sungwoo Park", "Donghyun Hwang"]
+date: "2026-07-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.14842v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+灵巧的手部操作需要连续的 6D 姿态跟踪，但操作手指不可避免地会遮挡相机中的物体。我们研究如何构建多指手上已有的稀疏触觉信号，包括本体感觉、近端力/扭矩和二元接触，以补充遮挡下预训练的视觉姿势跟踪器。我们提出了一种运动学感知的手指级编码器，并通过三个级别的评估将其与四种替代设计进行系统比较：每帧细化、顺序开环跟踪和闭环操纵。我们的实验表明（i）每帧评估无法区分编码器质量，而顺序跟踪将架构差异放大多达 15 倍； (ii) 结构化编码器学习特定于任务的跨模式门控，专门使用视觉进行平移，并将一个注意力头专门用于旋转触觉，无需明确的监督； (iii) 具有 4 个标记的紧凑手指级标记化优于平面融合和...
+
+## English Summary
+
+Dexterous in-hand manipulation requires continuous 6D pose tracking, yet the manipulating fingers inevitably occlude the object from the camera. We study how to structure the sparse haptic signals already available on multi-fingered hands, including proprioception, proximal force/torque, and binary contact, to complement a pretrained visual pose tracker under occlusion. We propose a kinematic-aware finger-level encoder and systematically compare it against four alternative designs through three levels of evaluation: per-frame refinement, sequential open-loop tracking, and closed-loop manipulation. Our experiments reveal that (i) per-frame evaluation cannot distinguish encoder quality, while sequential tracking amplifies architectural differences by up to 15 times; (ii) the structured encoder learns task-specific cross-modal gating, using vision exclusively for translation and dedicating one attention head to haptics for rotation, without explicit supervision; and (iii) compact finger-level tokenization with 4 tokens outperforms both flat fusion and joint-level representations, which suppress vision through norm dominance. We validate that improved tracking yields higher success in a downstream reorientation task and provide qualitative real-world demonstrations. Our project page is available at https://cold-young.github.io/kine-fuse/.

@@ -1,0 +1,21 @@
+---
+title: "具有自动锚点校准和地形感知融合功能的工业地面机器人可立即部署的 UWB 定位"
+title_en: "Deployment-Ready UWB Localization for Industrial Ground Robots with Automatic Anchor Calibration and Terrain-Aware Fusion"
+authors: ["Alexander Raab", "Giulio Delama", "Roland Jung", "Stephan Weiss"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15807v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+由于精度提高且成本低廉，超宽带 (UWB) 测距已成为工业自主移动机器人 (AMR) 定位的可行选择。然而，现实世界的部署仍然受到两个反复出现的挑战的限制：校准静态锚点可能非常耗时且容易出错，而将 UWB 与现有的板载传感器集成需要仔细的设计，以确保稳健且一致的姿态估计。为了解决这些挑战，本文提出了一种端到端管道，它将自动锚定校准与针对表面约束车辆运动定制的通用多传感器估计器相结合。它针对机器人先验姿势可用于初始化的场景中的现有 AMR 堆栈。校准阶段估计锚点位置和范围偏差，而定位阶段将 UWB 与偏差感知扩展卡尔曼滤波器中的本体感觉传感相融合，以提高一致性，而无需进行大量参数调整。在仓库环境...
+
+## English Summary
+
+Ultra-Wideband (UWB) ranging has become a viable option for industrial Autonomous Mobile Robot (AMR) localization due to improved accuracy and low cost. However, real-world deployments remain limited by two recurring challenges: calibrating static anchors can be time-consuming and error-prone, and integrating UWB with existing onboard sensors requires careful design to ensure robust and consistent pose estimation. Addressing these challenges, this paper presents an end-to-end pipeline that combines automatic anchor calibration with a generic multi-sensor estimator tailored to surface-bound vehicle motion. It targets existing AMR stacks in scenarios where robot pose priors are available for initialization. The calibration stage estimates anchor positions and range biases, while the localization stage fuses UWB with proprioceptive sensing in a bias-aware Extended Kalman Filter to improve consistency without extensive parameter tuning. Experiments on a commercial logistics AMR in a warehouse setting demonstrate accurate positioning indoors and across outdoor transitions, with improved consistency compared to an earlier estimator formulation. Evaluation on an independent forklift dataset further indicates transferability to other platforms. The method remains effective in test cases with limited line-of-sight and sparse anchor coverage. These results show that UWB localization can be deployed with substantially reduced manual effort while preserving the accuracy required for industrial AMRs. The collected warehouse dataset is made publicly available.

@@ -1,0 +1,21 @@
+---
+title: "BODIESReg：使用姿势对齐初始化注册 3D 人体扫描的开源管道"
+title_en: "BODIESReg: An Open-Source Pipeline for Registering 3D Body Scans Using Pose-Aligned Initialization"
+authors: ["Vikash Chaurasia", "Judit Cueto Fernandez", "J. Micah Prendergast", "Eline van der Kruk"]
+date: "2026-07-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15463v1"
+doi: ""
+tags: ["康复训练"]
+tags_en: ["rehabilitation"]
+keywords: ["康复训练"]
+keywords_en: ["rehabilitation"]
+---
+
+## 中文摘要
+
+生物力学模型用于量化和优化临床康复、运动科学和职业健康中的人体运动。个性化这些模型需要准确识别解剖标志和身体部位参数，这些参数可以从 3D 体表扫描中得出。将这些表面注册到规范模板对于自动地标检测和模型缩放至关重要。然而，将参数化人体模型拟合到现实世界的 3D 点云仍然具有挑战性：当目标姿势大幅偏离模板的默认姿势时，非线性优化可能会收敛到次优解决方案。我们提出了 BODIESReg，一个开源注册管道，它通过在距离最小化开始之前构建姿势对齐网格来解决这个初始化问题。在自动模式下，BODIESReg 可用于端到端注册，无需用户干预，并批量处理多个扫描。我们在两个互补数据集上评估了 BODIESRe...
+
+## English Summary
+
+Biomechanical models are used to quantify and optimize human movement in clinical rehabilitation, sports science, and occupational health. Personalizing these models requires accurate identification of anatomical landmarks and body segment parameters, which can be derived from 3D body surface scans. Registering these surfaces to a canonical template is essential for automated landmark detection and model scaling. However, fitting parametric body models to real-world 3D point clouds remains challenging: non-linear optimization can converge to suboptimal solutions when target poses deviate substantially from the default pose of a template. We present BODIESReg, an open-source registration pipeline that addresses this initialization problem by constructing a pose-aligned mesh before distance minimization begins. In automatic mode, BODIESReg can be used for end-to-end registration without user intervention and processes multiple scans in batch. We evaluated BODIESReg on two complementary datasets: CHI3D, a synthetic dataset containing complex human poses, and MorphoMotion, a set of real-world 3D optical scans. Automatic registration succeeded for 82.9% of CHI3D scans and for all MorphoMotion scans. Among successful registrations, mean surface-fit error were below 10 mm across both datasets. For cases where automatic initialization fails, we provide interactive tools for manual pose correction and correspondence selection. BODIESReg supports large-scale registration of 3D body scans for biomechanical research.

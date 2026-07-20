@@ -1,0 +1,21 @@
+---
+title: "超越边界：场景异常引导的自主探索"
+title_en: "Beyond Frontiers: Scene-Anomaly Guided Autonomous Exploration"
+authors: ["Akash Kumbar", "Abhinav Raundhal", "Madhava Krishna"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15828v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+传统上，对未知 3D 环境的自主探索是由覆盖最大化几何启发法驱动的。然而，这些方法通常在不考虑潜在结构背景的情况下确定勘探目标。这会导致轨迹效率低下，通常会限制最终 3D 重建的保真度。为了弥合空间覆盖和重建质量之间的差距，我们引入了一种新的范式：将探索重新定义为几何异常最小化问题。我们推出了 SCAGE：SCene 异常引导探索，这是一种直接在非结构化 3D 点云上运行的新型自主探索框架。我们没有盲目地追逐体积边界，而是让机器人对标准室内建筑有基本的了解。当机器人导航时，它会根据这些习得的期望不断评估其实时 3D 观察结果。当传入的几何图形与典型室内环境的先验知识相矛盾时，例如破碎的墙壁或部...
+
+## English Summary
+
+Autonomous exploration of unknown 3D environments is traditionally driven by coverage-maximizing geometric heuristics. However, these methods typically determine exploration targets without considering the underlying structural context. This leads to inefficient trajectories often limiting the fidelity of the final 3D reconstruction. To bridge the gap between spatial coverage and reconstruction quality, we introduce a novel paradigm: reframing exploration as a geometric anomaly minimization problem. We present SCAGE: SCene Anomaly Guided Exploration, a novel autonomous exploration framework that operates directly on unstructured 3D point clouds. Instead of blindly chasing volumetric boundaries, we equip the robot with a foundational understanding of standard indoor architecture. As the robot navigates, it continuously evaluates its live 3D observations against these learned expectations. When the incoming geometry contradicts the learned priors of a typical indoor environment, such as a fragmented wall or a partial table, the system flags these regions as scene anomalies. These geometric inconsistencies act as a guiding signal, naturally drawing the robot to investigate and resolve these structural anomalies from optimal vantage points. By actively targeting poorly reconstructed regions rather than just empty space, our approach seamlessly couples spatial discovery with high-fidelity mapping. Extensive evaluations demonstrate that SCAGE achieves superior volumetric coverage (~90% in all scenes) and higher 3D reconstruction quality compared to state-of-the-art baselines.

@@ -1,0 +1,21 @@
+---
+title: "DECODEM：通过增强方法从公司组织文档中提取数据"
+title_en: "DECODEM: Data Extraction from Corporate Organizational Documents via Enhanced Methods"
+authors: ["Jens Frankenreiter"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15879v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+许多实证法律研究依赖于将非结构化文本转化为结构化变量。在公司治理研究中，与其他地方一样，这种翻译传统上依赖于章程和章程等文件的人工编码，这是一个成本高昂、难以扩展且通常不透明的过程。本文介绍了 DECODEM，这是一组用于评估从组织文档中自动提取公司治理变量的基准数据集。这些基准将随机抽样的公司章程和细则与高质量的人工注释配对，涵盖了实证工作中常见的一系列治理条款。   使用这些数据集，本文评估了几种在提示设计、任务分解和文档处理方面有所不同的大型语言模型提取管道。底层任务由一组文档级二元分类问题组成，每个问题对应一个治理变量。结果表明，对于许多规定来说，自动提取在高精度上是可行的，各种方法的...
+
+## English Summary
+
+Much empirical legal research depends on translating unstructured text into structured variables. In corporate governance research as elsewhere, this translation has traditionally relied on human coding of documents such as charters and bylaws, a process that is costly, difficult to scale, and often opaque. This paper introduces DECODEM, a set of benchmark datasets for evaluating the automated extraction of corporate governance variables from organizational documents. The benchmarks pair randomly sampled corporate charters and bylaws with high-quality human annotations covering a range of governance provisions commonly studied in empirical work.   Using these datasets, the paper evaluates several large-language-model extraction pipelines that vary in prompt design, task decomposition, and document handling. The underlying task consists of a set of document-level binary classification problems, one for each governance variable. The results show that automated extraction is feasible at a high level of accuracy for many provisions, with median performance near the upper bound across approaches. At the same time, performance varies systematically across variables, with a small number of provisions accounting for most of the remaining errors. More elaborate prompting strategies and cascading pipelines do not consistently improve performance for frontier models, but substantially narrow the gap between frontier and efficiency-oriented models in some settings, suggesting that pipeline design can partly substitute for model capability.   By providing a standardized benchmark and a systematic evaluation of extraction methods, the paper demonstrates that current frontier models can extract legally meaningful information from complex corporate documents with high accuracy and suggests an important future role for automated feature extraction in constructing corporate governance datasets.

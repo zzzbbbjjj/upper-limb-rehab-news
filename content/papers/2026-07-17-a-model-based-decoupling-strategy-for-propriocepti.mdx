@@ -1,0 +1,21 @@
+---
+title: "架构软机械臂中基于模型的本体感知和接触传感解耦策略"
+title_en: "A Model-Based Decoupling Strategy for Proprioception and Contact Sensing in an Architected Soft Manipulator"
+authors: ["Francesco Stella", "Annan Zhang", "Cosimo Della Santina", "Josie Hughes", "Daniela Rus"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15582v1"
+doi: ""
+tags: ["绳索驱动", "软体机器人", "上肢康复"]
+tags_en: ["cable-driven", "soft robotics", "upper limb"]
+keywords: ["绳索驱动", "软体机器人", "上肢康复"]
+keywords_en: ["cable-driven", "soft robotics", "upper limb"]
+---
+
+## 中文摘要
+
+软连续体机器人需要嵌入式传感来进行本体感知和接触检测，但将传感器集成到稀疏、高度可变形的建筑结构中仍然具有挑战性。我们提出了一种基于模型的策略，该策略将本体感受和接触信号与嵌入软架构段中的一组通用流体压力传感器解耦。神经修剪螺旋 (ITH) 的每一段都包含六个空气通道，这些空气通道沿圆周以局部之字形图案排列。仅具有三个主要运动自由度（轴向压缩、x 方向弯曲、y 方向弯曲），六个压力读数形成一个超定系统。分段常曲率模型将压力映射到形状，Huber 回归识别离群通道，其残差表明外部接触。在单个 ITH 段上，该方法实现了本体感觉形状估计，在 178 次试验中相对弯曲误差为 0.11 +/- 0.0...
+
+## English Summary
+
+Soft continuum robots require embedded sensing for proprioception and contact detection, yet integrating sensors into sparse, highly deformable architected structures remains challenging. We present a model-based strategy that decouples proprioceptive and contact signals from a common set of fluidic pressure sensors embedded in a soft architected segment. Each segment of the Innervated Trimmed Helicoid (ITH) contains six air channels routed in a localized zigzag pattern along the circumference. With only three principal kinematic degrees of freedom (axial compression, bending in x, bending in y), the six pressure readings form an overdetermined system. A piecewise constant curvature model maps pressures to shape, and Huber regression identifies outlier channels whose residuals indicate external contact. On a single ITH segment, this approach achieves proprioceptive shape estimation with a relative bending error of 0.11 +/- 0.02 and a contact detection rate of 97% across 178 trials. We integrate eight ITH segments into Air-Helix, a tendon-driven soft continuum manipulator, and present exploratory whole-arm demonstrations that include tactile teaching by demonstration, admittance-controlled force regulation, and tactile object reconstruction. The results suggest that localized fluidic innervation combined with model-based redundancy resolution is a practical path toward concurrent proprioception and contact sensing in architected soft robots.

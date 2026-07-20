@@ -1,0 +1,21 @@
+---
+title: "有限注释和导航预算下的具体主动学习用于对象检测"
+title_en: "Embodied Active Learning under Limited Annotation and Navigation Budget for Object Detection"
+authors: ["Hadrien Crassous", "Mohamed Yassine Kabouri", "Minahil Raza", "Joni Pajarinen", "Riad Akrour"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15974v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+本文研究了如何在机器人导航时间和注释预算约束下使计算机视觉目标检测器适应未知环境。我们的方法选择信息丰富的机器人轨迹和图像样本来重新训练检测器，明确针对其故障案例。形式上，该方法是批量主动学习的具体变体，其中在每一轮中，代理都具有有限的导航预算来收集候选样本，并且有限的注释预算用于最相关的图像。我们利用空间一致性来识别具有不一致标签的图像，这可能为视觉模型提供最大的改进。我们在 AI2-THOR 模拟器的大场景上以及使用带有实时对象检测器 YOLOv5 的 Boston Dynamics Spot 机器人的实际设置上使用不同的主动学习目标来评估该方法。通过与多个基线的比较，我们的实验结果表明，...
+
+## English Summary
+
+This paper studies how to adapt a computer vision object detector to an unknown environment under both a robot navigation time and annotation budget constraint. Our approach selects informative robot trajectories and image samples to retrain the detector, explicitly targeting its failure cases. Formally, the approach is an embodied variant of batch active learning, where at each round an agent has a limited navigation budget to collect candidate samples and a limited annotation budget for the most relevant images. We leverage spatial consistency to identify images with inconsistent labels, which are likely to provide the greatest improvement to the vision model. We evaluate the approach using different active learning objectives on large scenes from the AI2-THOR simulator and on a real-world setup using a Boston Dynamics Spot robot with the real-time object detector YOLOv5. Through comparison against several baselines, our experimental results show that spatial inconsistency helps guide the agent and select relevant images without external supervision, achieving the highest detection accuracy at the end of the adaptation process under the same budget. The open-source project can be found at https://mkabouri.github.io/embodied-active-learning-od

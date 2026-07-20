@@ -1,0 +1,21 @@
+---
+title: "基于动态约束重构的控制屏障函数，用于高维机械臂的安全关键控制"
+title_en: "Dynamic Constraint Reconstruction Based Control Barrier Functions for Safety-Critical Control of High-Dimensional Manipulators"
+authors: ["Bingsheng Zhang", "Shen Wang", "Qiang Wang", "Muguo Du", "Donghai Shi", "Xiaofeng Tao"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15961v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+控制屏障函数 (CBF) 为受约束的非线性系统提供形式安全保证，但其有效性依赖于精确的系统动力学。在受到未知扰动和模型不确定性影响的高维机械臂中，根据标称动力学构造的固定安全约束可能会与实际系统行为不一致，从而导致安全性下降或过度保守。本文提出了一种基于动态约束重建的控制障碍函数（DCR-CBF）框架，用于受干扰的机器人操纵器的安全关键控制。采用扩展状态观测器在线估计集总扰动，并将估计的扰动纳入高阶控制势垒函数，根据估计的真实动态重建安全约束。为了解决估计误差问题，引入了安全裕度，并导出了充分条件来保证在有界估计误差下的前向不变性。对四自由度挖掘机械手的仿真研究表明，所提出的 DCR-CBF ...
+
+## English Summary
+
+Control barrier functions (CBFs) provide formal safety guarantees for constrained nonlinear systems, but their effectiveness relies on accurate system dynamics. In high-dimensional manipulators subject to unknown disturbances and model uncertainties, fixed safety constraints constructed from nominal dynamics may become inconsistent with the actual system behavior, leading to safety degradation or excessive conservatism. This paper proposes a dynamic constraint reconstruction based control barrier function (DCR-CBF) framework for safety-critical control of disturbed robotic manipulators. An extended state observer is employed to estimate lumped disturbances online, and the estimated disturbance is incorporated into high-order control barrier functions to reconstruct safety constraints according to the estimated true dynamics. To address estimation inaccuracies, a safety margin is introduced, and a sufficient condition is derived to guarantee forward invariance under bounded estimation errors. Simulation studies on a 4-DOF excavation manipulator demonstrate that the proposed DCR-CBF method achieves zero safety violation under strong unknown disturbances while significantly improving trajectory-tracking performance compared with standard and robust CBF methods.

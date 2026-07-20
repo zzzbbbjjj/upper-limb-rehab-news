@@ -1,0 +1,21 @@
+---
+title: "GoStop：基于事件的特征跟踪中自适应时间聚合的强化学习"
+title_en: "GoStop: Reinforcement Learning for Adaptive Temporal Aggregation in Event-Based Feature Tracking"
+authors: ["Youngho Kim", "Hoonhee Cho", "Jae-Young Kang", "Kuk-Jin Yoon"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15699v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+特征跟踪在理解场景运动并支持各种下游任务方面发挥着基础作用。事件相机具有高时间分辨率和异步传感功能，可实现低延迟和运动鲁棒性感知，使其非常适合快速和非线性运动下的特征跟踪。然而，现有的基于事件的特征跟踪方法依赖于基于事件累积的手动调整的固定启发式规则。这种策略无法适应不同的运动动态，导致在突然的运动变化或低运动场景下性能下降。在本文中，我们将事件积累建模为顺序决策问题，并引入强化学习（RL）框架来自适应控制基于事件的在线特征跟踪的积累过程。我们的方法训练了一个 RL 代理，该代理决定是继续累积事件还是根据运动线索执行跟踪推理。所提出的自适应时间代理能够动态适应不同的运动模式，而不依赖于手工制定...
+
+## English Summary
+
+Feature tracking plays a fundamental role in understanding scene motion and supports various downstream tasks. Event cameras, with their high temporal resolution and asynchronous sensing, enable low-latency and motion-robust perception, making them well-suited for feature tracking under fast and non-linear motion. However, existing event-based feature tracking methods rely on fixed heuristic rules based on hand-tuning for event accumulation. Such strategies fail to adapt to diverse motion dynamics, leading to degraded performance under abrupt motion changes or low-motion scenarios. In this paper, we model event accumulation as a sequential decision-making problem and introduce reinforcement learning (RL) framework to adaptively control the accumulation process for online event-based feature tracking. Our approach trains a RL agent that decides whether to continue accumulating events or to perform tracking inference based on motion cues. The proposed adaptive temporal agent enables dynamic adaptation to varying motion patterns without relying on hand-crafted rules. Furthermore, we introduce a Dynamic Event-based Tracking (DEFT) dataset with dynamic motion distributions to evaluate the robustness of the feature tracking. Extensive experiments demonstrate that integrating our plug-and-play framework to existing feature tracking methods consistently outperforms heuristic-based approaches, improving robustness under dynamic motion while offering a better balance between tracking accuracy and efficiency. Our project codes and datasets are available at https://github.com/kmax2001/GoSTOP

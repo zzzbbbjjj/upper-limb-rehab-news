@@ -1,0 +1,21 @@
+---
+title: "通过强化学习学习避免任务：矢量化模拟和基准"
+title_en: "Learning Reach-Avoid Task with Reinforcement Learning: Vectorized Simulation and Benchmark"
+authors: ["Jonas Weihing", "Shahram Eivazi"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15935v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb"]
+---
+
+## 中文摘要
+
+深度强化学习（DRL）在解决避免触及任务问题方面有着悠久的传统，特别是在控制机械臂方面。虽然该任务作为研究社区内的基准环境，但 DRL 在复杂且现实的场景中（超越简化和受限的桌面设置）有效学习避免任务的能力仍然不确定。在本文中，我们首次提出了reachavoid任务的综合基准，该基准可以准确地捕捉现实世界的复杂性而不进行简化。我们展示了机械臂避免任务的各种设置，可用于评估 DRL 研究。我们通过利用 MuJoCo MJX 物理引擎并使用 Brax 库并行化模拟环境和 DRL 算法来实现这一目标。我们取得了最先进的结果，触及任务的成功率为 96.1% (UR5e) 和 98.8% (Franka...
+
+## English Summary
+
+Deep reinforcement learning (DRL) has a longstanding tradition in addressing the reach-avoid task problem, especially for controlling robotic arms. While this task serves as a baseline environment within the research community, the ability of DRL to effectively learn the each-avoid task in complex and realistic scenarios beyond simplified and restricted tabletop settings remains uncertain. In this paper, we present, for the first time, a comprehensive benchmark for the reachavoid task that accurately captures real-world complexities without simplifications. We demonstrate a diverse range of settings for robotic arm reach-avoid task, which can be used for evaluating DRL research. We achieved this by utilizing the MuJoCo MJX physics engine and parallelizing both the simulation environment and DRL algorithms using the Brax library. We achieved state-of-the-art results with success rates of 96.1% (UR5e) and 98.8% (Franka Emika Robot) for the reach task and 86.8% (UR5e) and 95.2% (Franka) for the static reachavoid task. Our results indicate that while in previous works DRL agents could solve, for example, a reach task in a simplified setting perfectly, their agents performance collapses when evaluated in realistic scenarios. Overall, this work identifies that additional research is still required to claim the successful resolution of the robotic arm reach-avoid task using DRL. The environment and benchmarking code is available as open source at the following link

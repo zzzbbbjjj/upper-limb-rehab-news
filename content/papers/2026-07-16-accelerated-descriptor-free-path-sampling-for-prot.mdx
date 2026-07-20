@@ -1,0 +1,21 @@
+---
+title: "蛋白质-配体结合动力学的加速无描述符路径采样"
+title_en: "Accelerated descriptor-free path sampling for protein-ligand binding kinetics"
+authors: ["Simon M. Lichtinger", "Roberto Covino"]
+date: "2026-07-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15101v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+蛋白质-配体结合系统的动力学越来越被认为是药物功效的关键决定因素，但仍然比结合亲和力更难计算。现有的动力学方法要么沿着集体变量 (CV) 偏置动力学，要求仔细的系统特定 CV 设计，要么使用路径采样，这保持动力学无偏差，但很难从深自由能井中收敛速率，并且通常依赖于手工设计的描述符。通过结合“两全其美”，我们提出了一种方法，以适度的计算成本和最小的微调来计算一般配体非结合问题的精确动力学，该方法建立在人工智能分子机制发现（AIMMD）路径采样框架的基础上。为了避免特征工程的需要，我们选择使用跨所有系统共享的单个无描述符的等变图神经网络来对提交者进行建模。我们还部分地压平了具有静态、盆地限制的偏置...
+
+## English Summary
+
+The kinetics of protein-ligand binding systems are increasingly recognized as a key determinant of drug efficacy, yet remain far harder to compute than binding affinities. Existing kinetics methods either bias the dynamics along a collective variable (CV), demanding careful system-specific CV design, or use path sampling, which keeps the dynamics unbiased but can struggle to converge rates out of deep free-energy wells and often relies on hand-engineered descriptors. By combining the `best of both worlds', we propose a method to compute accurate kinetics for general ligand-unbinding problems at modest computational expense and minimal fine tuning, building on the AI for Molecular Mechanism Discovery (AIMMD) path sampling framework. To avoid the need for feature engineering, we opt for modelling the committor with a single descriptor-free, equivariant graph neural network shared across all systems. We also partially flatten deep bound-state wells with a static, basin-restricted bias potential. This improves convergence by lifting the path sampling state boundary out of regions, where the committor is hard to learn, while leaving the reactive region strictly unbiased. Across host-guest and protein-ligand systems spanning roughly 17 orders of magnitude in residence time, the method robustly recovers rates in line with reference and experimental values. Simultaneously, and without further sampling, it also reconstructs the underlying unbinding mechanisms. We additionally find that accurate rates do not require globally accurate committor models, allowing for efficient kinetics estimation even in a low-data training regime. Requiring little system-specific setup, our approach offers an efficient and broadly generalizable route to binding kinetics, and its shared committor architecture lays crucial groundwork for probing structure-kinetics relationships across ligand series in drug discovery.

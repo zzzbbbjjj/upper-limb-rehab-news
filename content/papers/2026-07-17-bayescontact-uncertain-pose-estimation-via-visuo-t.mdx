@@ -1,0 +1,21 @@
+---
+title: "BayesContact：通过视觉触觉建议和基于模拟的推理进行不确定姿势估计"
+title_en: "BayesContact: Uncertain Pose Estimation via Visuo-Tactile Proposals and Simulation-based Inference"
+authors: ["Aditya Kamireddypalli", "Matias Mattamala", "Joao Moura", "Russell Buchanan", "Sethu Vijayakumar", "Subramanian Ramamoorthy"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.16123v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+富含接触的操纵需要姿态估计，而姿态估计通常比仅深度传感提供的更准确。现有的方法依赖于视觉和接触，采用成本高昂的离线训练程序，需要针对新的环境和几何形状进行重新训练。我们提出了 BayesContact，一种基于模拟的推理框架，用于孔洞插入中的视觉触觉姿势估计。 BayesContact 保持对物体姿态的粒子信念，并将深度观察与力/扭矩导出的接触证据融合在一起。我们采用基于模拟的前向模型来近似这些观察可能性。对于每个姿势假设，渲染器预测深度测量，物理模拟器预测受保护探测动作下的接触结果；两者都是根据真实观察进行评分以更新信念。由此产生的多模态信念还可以实现基于信息增益的主动消歧探测。在模拟几何结...
+
+## English Summary
+
+Contact-rich manipulation requires pose estimates that are often more accurate than what depth-only sensing provides. Existing methods, relying on vision and contact, employ costly offline training procedures that need to be retrained for new environments and geometries. We propose BayesContact, a Simulation-Based Inference framework for visuo-tactile pose estimation in peg-in-hole insertion. BayesContact maintains a particle belief over object pose and fuses depth observations with force/torque-derived contact evidence. We employ simulation based forward models to approximate these observation likelihoods. For each pose hypothesis, a renderer predicts depth measurements and a physics simulator predicts contact outcomes under guarded probing actions; both are scored against real observations to update the belief. The resulting multimodal belief also enables information-gain-based probing for active disambiguation. Across simulated geometries and real-robot experiments, BayesContact improves pose observability and insertion success over vision-only inference by 30%

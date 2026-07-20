@@ -1,0 +1,21 @@
+---
+title: "视觉语言运动地图：3D 场景地图的开放词汇、不确定性感知、可查询运动属性"
+title_en: "Vision-Language-Motion Maps: An Open-Vocabulary, Uncertainty-Aware, Queryable Motion Attribute for 3D Scene Maps"
+authors: ["Dibyendu Ghosh", "Ayushi Shakya"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.16173v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+开放词汇 3D 地图让机器人能够回答关于什么和在哪里的语言查询，但它们假设一个静态世界，并且无法回答关于场景元素如何行为的查询。我们引入了视觉语言运动图（VLMM），这是一种开放词汇、可自然语言查询的 3D 地图，其中每个元素都带有融合的运动属性：VLM/LLM 语义可移动性先验与几何观察到的跨帧运动以及每个元素的不确定性相结合。查询简化为属性过滤器，用于区分哪些已看到移动，哪些可以移动但尚未移动，以及哪些保持静止。在具有精确地面事实（AI2-THOR，三种场景类型）的受控模拟器基准上，我们通过消融表明模式字段是不可替代的：即使具有强大的特征，纯语义基线也无法进行运动查询，并且运动场都不能替代...
+
+## English Summary
+
+Open-vocabulary 3D maps let robots answer language queries about what and where, but they assume a static world and cannot answer queries about how scene elements behave. We introduce Vision-Language-Motion Maps (VLMM), an open-vocabulary, natural-language-queryable 3D map in which each element carries a fused motion attribute: a VLM/LLM semantic movability prior combined with geometrically observed cross-frame motion, together with a per-element uncertainty. Queries reduce to attribute filters that distinguish what has been seen to move, what could move but has not, and what stays still. On a controlled simulator benchmark with exact ground truth (AI2-THOR, three scene types) we show through ablation that the schema fields are non-substitutable: a semantic-only baseline fails motion queries even with strong features, and neither motion field substitutes for the other (the prior cannot answer "what is moving," observed motion cannot answer "what could move"). On real dynamic RGB-D (TUM and Bonn, six sequences) we show the uncertainty channel-our key difference from prior fused-motion work-consistently improves moving-vs-static average precision and reduces false motion flags, and is robust to estimated (noisy) poses. The raw confidence is not calibrated, but post-hoc isotonic calibration reaches an expected calibration error of 0.10. VLMM is a representation contribution: the closest prior maps each lack at least one of the four properties-open-vocabulary, language-queryable, fused prior-and-observed motion, and per-element uncertainty-that our combination provides.

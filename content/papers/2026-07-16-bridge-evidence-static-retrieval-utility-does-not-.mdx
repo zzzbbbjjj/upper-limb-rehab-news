@@ -1,0 +1,21 @@
+---
+title: "桥接证据：静态检索实用程序不能预测多步代理搜索中的因果实用程序"
+title_en: "Bridge Evidence: Static Retrieval Utility Does Not Predict Causal Utility in Multi-Step Agentic Search"
+authors: ["Debayan Mukhopadhyay", "Utshab Kumar Ghosh", "Shubham Chatterjee"]
+date: "2026-07-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15253v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+检索系统根据静态有用性概念进行训练和评估：将文档和问题交给读者模型，查看答案是否有所改进，并对文档进行相应评分。当单独阅读文档时，这个想法是成立的。当语言模型充当搜索代理、发出多个查询并轮流进行推理时，它就会崩溃，因为文档的重要性在于它让代理下一步做什么，而不是它对当前问题所说的内容。   我们衡量这一差距而不是争论它。在 HotpotQA 上使用 ReAct 风格的代理，我们重播 1000 个开发问题，并且对于代理读取的每个文档，将其删除并从该点重新运行其余的轨迹。将原始运行与其反事实进行比较，得出来自三个增量的反事实轨迹效用 (CTU) 分数：最终答案质量、下一个查询检索质量和回合数。将 ...
+
+## English Summary
+
+Retrieval systems are trained and evaluated on a static idea of usefulness: hand a document and a question to a reader model, see whether the answer improves, and score the document accordingly. The idea holds up when a document is read on its own. It breaks when a language model works as a search agent, issuing several queries and reasoning across turns, because a document can matter for what it lets the agent do next rather than for what it says about the current question.   We measure that gap rather than argue it. Using a ReAct style agent over HotpotQA, we replay 1000 development questions and, for every document the agent read, delete it and re-run the rest of the trajectory from that point. Comparing the original run against its counterfactual gives a Counterfactual Trajectory Utility (CTU) score from three deltas: final answer quality, next query retrieval quality, and turn count. Crossing CTU against Static RAG Utility (SRU) over 23,322 document observations, the two are close to statistically independent (Spearman rho = -0.026). Roughly a third of the documents the agent reads are causally load bearing while looking useless to a static reader; we call these bridge documents. The pattern survives when the reader based axis is swapped for a BM25 and cross encoder proxy, giving a bridge cell of 27.2% on an evenly spread axis.   A second experiment pins down the mechanism. Using the Observable Entity Relevance (OER) measure from prior work, entities that discriminate relevant from non-relevant candidates appear in the agent's next query 4.02 times more often than entities found only in non-relevant documents (6.1% vs 1.5%, n = 227,139). A bridge document earns its keep by handing the agent a discriminative entity that redirects the search. Static relevance and causal usefulness are different quantities in agentic retrieval, and optimizing the first does not deliver the second.

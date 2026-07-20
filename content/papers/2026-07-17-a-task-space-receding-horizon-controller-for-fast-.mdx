@@ -1,0 +1,21 @@
+---
+title: "用于快速避免碰撞的任务空间后退地平线控制器"
+title_en: "A Task-Space Receding Horizon Controller for Fast Collision Avoidance"
+authors: ["Mattia Penzotti", "Marco Controzzi"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15733v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+机器人操纵器的实时避免碰撞需要对意外的障碍物运动和前瞻做出快速反应，以避免受到近期约束的限制。完整的模型预测控制可以提供这种预见性，但其在线成本可能会随着视野长度、模型保真度和活动几何约束的数量而快速增长。相反，无视野反应方法计算效率高，但在动态杂波中可能是短视的。我们提出了一种任务空间后退地平线控制器，它使用短的接触一致卷展来生成满足内部非穿透约束的终端运动学参考，然后仅计算向该参考平滑最小加速度过渡的第一个输入。从闭环逆运动学调节律开始，通过迭代动力学求解器对膨胀的凸机器人和障碍物几何形状进行操作来执行推出，以便机器人障碍物接触、动态障碍物运动和自碰撞可以塑造终端参考，而不需要完全约束轨迹...
+
+## English Summary
+
+Real-time collision avoidance for robotic manipulators requires fast reactions to unexpected obstacle motion and lookahead to avoid becoming trapped by near-future constraints. Full model predictive control can provide this foresight, but its online cost may grow quickly with horizon length, model fidelity, and the number of active geometric constraints. Conversely, horizon-free reactive methods are computationally efficient but can be short-sighted in dynamic clutter. We present a task-space receding-horizon controller that uses a short contact-consistent rollout to generate a terminal kinematic reference satisfying internal non-penetration constraints, then computes only the first input of a smooth minimum-acceleration transition toward that reference. Starting from a closed-loop inverse-kinematics regulation law, the rollout is performed with an iterative dynamics solver operating on inflated convex robot and obstacle geometries, so that robot-obstacle contacts, dynamic obstacle motion, and self-collisions can shape the terminal reference without requiring full constrained trajectory optimization. We analyze the contact-inactive closed loop and show local exponential task-space regulation under standard regularity assumptions. For contacts activated inside the rollout, we characterize the corresponding discrete updates and bound the effect of moving obstacles on regular operating sets. Simulations on a 40-DOF multi-chain system show that intermediate horizons balance anticipation, responsiveness, and computational cost. Hardware experiments on a 6-DOF platform demonstrate consistent sim-to-real behavior without accurate inertial parameter estimation, and comparisons against dynamic optimization fabrics and model predictive control (MPC) baselines show improved success rates in dynamic clutter while preserving solve times compatible with real-time execution in the tested regimes.

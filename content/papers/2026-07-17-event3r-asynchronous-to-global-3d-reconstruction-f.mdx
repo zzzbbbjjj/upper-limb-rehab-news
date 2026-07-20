@@ -1,0 +1,21 @@
+---
+title: "Event3R：通过时空特征聚合从事件相机进行异步全局 3D 重建"
+title_en: "Event3R: Asynchronous-to-Global 3D Reconstruction from Event Camera via Spatial-Temporal Feature Aggregation"
+authors: ["Jian Huang", "Haotian Shen", "Xinhao Lou", "Chengrui Dong", "Wenpu Li", "Peidong Liu"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15727v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+稳健的 3D 重建对于机器人技术和具体感知至关重要。最近的前馈方法（例如 DUSt3R）在 RGB 图像的密集 3D 重建方面取得了令人瞩目的进展，实现了全局几何一致性和强大的泛化能力。然而，由于事件摄像机的异步、稀疏和高度动态的性质，以及缺乏大规模、标记良好的数据集，将如此密集的 3D 重建扩展到事件摄像机仍然具有挑战性。在这项工作中，我们引入了 Event3R，这是一种前馈框架，可直接将异步事件流映射到全局一致的 3D 点云。 Event3R 将传入事件表示为时空体素，通过时间注意模块实现时间感知特征集成，从而增强模块的时间特征学习。为了进一步加强时间表示学习并减少对标记数据的依赖，我们提...
+
+## English Summary
+
+Robust 3D reconstruction is essential for robotics and embodied perception. Recent feed-forward approaches such as DUSt3R have demonstrated impressive progress in dense 3D reconstruction from RGB images, achieving global geometric consistency and strong generalization. However, extending such dense 3D reconstruction to event cameras remains challenging due to their asynchronous, sparse, and highly dynamic nature, as well as the lack of large-scale, well-labeled datasets. In this work, we introduce Event3R, a feed-forward framework that directly maps asynchronous event streams to globally consistent 3D point clouds. Event3R represents incoming events as spatial-temporal voxels, enabling time-aware feature integration through a temporal attention module that enhances the module's temporal feature learning. To further strengthen temporal representation learning and reduce reliance on labeled data, we propose a Masked Bin Modeling (MBM) strategy for self-supervised pre-training, enabling robust temporal representation learning with minimal labeled data, and retain it as an auxiliary fine-tuning objective. In addition, contrastive alignment and consistency regularization losses are incorporated during fine-tuning to reinforce structural correspondence and temporal coherence across views. Extensive experiments on both synthetic and real-world benchmarks demonstrate that Event3R achieves robust, temporally consistent, and globally aligned 3D reconstructions, significantly outperforming existing event-based methods.

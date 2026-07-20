@@ -1,0 +1,21 @@
+---
+title: "DPNeXt：一种轻量级多尺度特征融合框架，用于基于 ViT 的高效多任务密集预测"
+title_en: "DPNeXt: A Lightweight Multi-Scale Feature Fusion Framework for Efficient ViT-Based Multi-Task Dense Prediction"
+authors: ["Jehun Kang", "Jungha Wang", "Youngjun Hwang", "David Hyunchul Shim"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.16012v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+机器人感知系统中的多任务学习 (MTL) 通过集成语义分割和深度估计来支持全面的 3D 空间场景理解。虽然视觉基础模型（VFM）越来越多地被采用作为强大的特征编码器，但现有的解码策略存在关键瓶颈。为了解决这个问题，我们提出了 DPNeXt，这是一种简化的多尺度特征融合解码器，也是标准密集预测变换器（DPT）的有效替代品。 DPNeXt 使用双深度可分离反向瓶颈，通过以融合为中心的解码和独立任务模块化来提高冻结 VFM 利用率。为了进一步减轻任务之间的负归纳转移，我们引入了多任务边界指导（MTBG）策略。与之前添加融合模块或门控的边界感知方法不同，MTBG 应用对称的以边界为中心的监督来鼓励几何...
+
+## English Summary
+
+Multi-Task Learning (MTL) in robotics perception systems supports comprehensive 3D spatial scene understanding by integrating semantic segmentation and depth estimation. While Vision Foundation Models (VFMs) are increasingly adopted as robust feature encoders, existing decoding strategies present a critical bottleneck. To address this, we propose DPNeXt, a streamlined multi-scale feature fusion decoder and efficient alternative to the standard Dense Prediction Transformer (DPT). DPNeXt uses dual depthwise separable inverted bottlenecks to improve frozen VFM utilization through fusion-centric decoding and independent task modularization. To further mitigate negative inductive transfer between tasks, we introduce the Multi-Task Boundary Guidance (MTBG) strategy. Unlike prior boundary-aware methods that add fusion modules or gating, MTBG applies symmetric boundary-focused supervision to encourage geometric consistency without extra annotation or inference cost. Experiments on Cityscapes show that DPNeXt-S outperforms prior state-of-the-art (SOTA) MTL models, while DPNeXt-B further improves the overall performance and achieves the best results among the compared methods. On NYUv2, DPNeXt-B also achieves the best semantic segmentation and depth estimation results among the compared methods while requiring substantially fewer trainable parameters than prior large-scale MTL models. Compared with the standard DPT, DPNeXt-S reduces trainable parameters by 78.6% and achieves the fastest inference speed among the compared models on resource-constrained laptop hardware. The source code, model checkpoints, and a demo video will be made available at https://github.com/kangjehun/DPNeXt.

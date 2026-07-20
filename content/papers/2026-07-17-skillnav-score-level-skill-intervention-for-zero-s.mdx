@@ -1,0 +1,21 @@
+---
+title: "SkillNav：零射击目标导航的分数级技能干预"
+title_en: "SkillNav: Score-Level Skill Intervention for Zero-Shot Object Goal Navigation"
+authors: ["Ruijie Sang", "Yiqun Duan", "Pinhan Fu", "Ruilin Wang", "Wei Sui", "Xianda Guo"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.15758v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉语言模型（VLM）智能体具有先进的零样本目标目标导航，但单帧推理使它们缺乏具体导航器所需的跨步骤行为意识，从而产生反复出现的故障，例如死胡同失速、室内循环和迂回接近检测到的目标。基于提示的补救措施会增加跨多个子模块情节的代币预算，并且仍然难以编码固有的空间信号，例如角度、地图单元和视点坐标。在本文中，我们提出了 SkillNav，这是一种用于基于 VLM 的导航的可扩展行为技能框架，它将现代 VLM 导航器已经维护的好奇心价值图视为可写基底，可组合技能以零令牌成本在其上刻录行为记忆。技能根据其行为权威级别分为三层，即按比例重新加权的软缩放、区域级保证的下限提升以及阈值触发的强制行动的硬覆盖...
+
+## English Summary
+
+Vision-Language Model (VLM) agents have advanced zero-shot object-goal navigation, yet single-frame reasoning leaves them without the cross-step behavioral awareness an embodied navigator requires, producing recurring failures such as dead-end stalls, in-room loops, and circuitous approaches to detected targets. Prompt-based remedies inflate token budgets across multi-submodule episodes and still struggle to encode inherently spatial signals such as angles, map cells, and viewpoint coordinates. In this paper, we propose SkillNav, an extensible behavioral skill framework for VLM-based navigation that treats the curiosity value map already maintained by modern VLM navigators as a writable substrate on which composable skills inscribe behavioral memory at zero token cost. Skills are stratified into three tiers by their level of behavioral authority, namely soft scaling for proportional reweighting, lower-bound boost for region-level guarantees, and hard override for threshold-triggered forced actions, and cooperate across tiers under a fixed composition order that establishes a predictable, declared priority among skills. This design turns capability improvement into skill registration: new behaviors plug in without retraining the VLM or disturbing existing skills, opening a path for continual refinement. A minimal prompt channel complements the score-level skills with category-level semantic hints, yielding a dual-representation design in which spatial memory lives on the map and semantic memory in short prompts. Training-free, SkillNav establishes new state-of-the-art SPL across MP3D (25.5), HM3D v0.1 (39.3), and HM3D v0.2 (43.2), improving SPL by up to 6.0 absolute over the strongest prior method, and achieves the highest Success Rate on HM3D v0.1 (69.7) and v0.2 (75.9).

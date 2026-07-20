@@ -1,0 +1,21 @@
+---
+title: "PIXIE：一种零射击纹理不变 6D 姿态估计框架，用于具有装配缺陷的看不见的物体"
+title_en: "PIXIE: A Zero-Shot texture-invariant 6D pose estimation framework for unseen objects with assembly defects"
+authors: ["Leon Jungemeyer", "Alejandro Magaña", "Gautham Mohan", "Matthias Karl", "Daniel Werdehausen"]
+date: "2026-07-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.16015v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+6D 姿态估计仍然是机器人和计算机视觉领域的一个关键挑战，特别是在工业环境中。目前可用的数据驱动方法的部署通常受到资源密集型数据管道、对纹理 3D 模型的依赖以及对损坏或装配缺陷引起的几何偏差的敏感性的限制。我们提出了 PIXIE，这是一个零样本框架，仅使用无纹理的 3D 模型从 RGB 图像中估计物体的 6D 姿态。合成深度和法线图从采样的参考视点渲染，并通过预训练的跨模态特征匹配器与查询图像匹配。匹配的关键点被反投影以获得基于 PnP 的姿态估计的 2D--3D 对应关系。完全依赖几何使得该方法对光照和纹理变化具有固有的鲁棒性，而对应过滤则处理模型和物理对象之间的几何偏差。我们对广泛使用的...
+
+## English Summary
+
+6D pose estimation remains a key challenge in robotics and computer vision, particularly in industrial environments. The deployment of currently available data-driven methods is often limited by resource-intensive data pipelines, reliance on textured 3D models, and sensitivity to geometric deviations caused by damages or assembly defects. We present PIXIE, a zero-shot framework that estimates the 6D pose of an object from an RGB image using only an untextured 3D model. Synthetic depth and normal maps are rendered from sampled reference viewpoints and matched to the query image via a pretrained cross-modality feature matcher. Matched keypoints are back-projected to obtain 2D--3D correspondences for PnP-based pose estimation. Relying exclusively on geometry makes the method inherently robust to lighting and texture variation, while correspondence filtering handles geometric deviations between the model and physical object. We evaluate on widely-used public benchmarks, reporting state-of-the-art results on texture-less objects without object-specific training, and introduce a novel dataset with assembly defects, texture variations, and occlusion to demonstrate real-world applicability.
