@@ -1,0 +1,21 @@
+---
+title: "用于控制阀粘滞检测的最佳传输图像表示和深度协方差对齐 (CORAL)"
+title_en: "Optimal Transport Image Representation and Deep Covariance Alignment (CORAL) for Control Valve Stiction Detection"
+authors: ["Seshu K. Damarla"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22486v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+控制阀粘滞是工业过程中不必要的振荡和控制回路性能不佳的常见原因。数据驱动的方法可以自动检测静摩擦力，但由于域转移，纯粹基于模拟数据训练的模型通常很难推广到实际的工业控制回路。为了弥补这一差距，这项工作提出了一种新颖的粘滞检测方法，该方法将最佳传输（OT）成像技术与深度相关对准（Deep CORAL）算法相结合。闭环信号：控制器输出和过程变量转换为二维 OT 图像。这些图像捕获控制回路的动态行为。所提出的方法包括一个卷积神经网络 (CNN) 编码器（或特征提取器），该编码器经过训练，通过优化组合目标来学习域不变表示：标记模拟数据上的交叉熵损失以及模拟数据和未标记目标域工业数据之间的 Deep C...
+
+## English Summary
+
+Control valve stiction is a common cause of unwanted oscillations and poor control-loop performance in industrial processes. Data-driven methods can automatically detect stiction, but models trained purely on simulated data often struggle to generalize to real industrial control loops due to domain shift. To bridge this gap, this work propose a novel stiction detection methodology that combines optimal transport (OT) imaging technique with deep correlation alignment (Deep CORAL) algorithm. Closed loop signals: controller output and process variable are converted into two-dimensional OT images. These images capture the dynamic behaviour of control loops. The proposed methodology includes a convolutional neural network (CNN) encoder (or feature extractor) trained to learn domain-invariant representations by optimizing a combined objective: a cross-entropy loss on labeled simulation data and a Deep CORAL (covariance-alignment) loss between simulation data and unlabeled target-domain industrial data. Downstream classifiers trained on the domain-invariant target features were evaluated on an independent test set of 20 benchmark loops from industrial stiction data benchmark. The proposed methodology successfully diagnosed 18 out of the 20 loops and achieved100% recall across all 13 stiction cases, an accuracy of 90.00% and an F1-score of 92.86%. Compared to standard baseline approach (hand-crafted features-based method), the proposed methodology significantly mitigates domain shift, providing robust, highly reliable stiction detection for real-world industrial control loops.

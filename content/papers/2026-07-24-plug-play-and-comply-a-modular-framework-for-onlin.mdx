@@ -1,0 +1,21 @@
+---
+title: "即插即用和合规：具有任意方向合规轴的在线可变阻抗的模块化框架"
+title_en: "Plug, Play, and Comply: A Modular Framework for Online Variable Impedance with Arbitrarily Oriented Compliance Axes"
+authors: ["Mihael Simonič", "Xiaocong Li"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22483v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+该论文提出了一种与机器人无关的顺从控制框架，该框架通过标准化的关节和笛卡尔命令接口扩展了 ROS 控制生态系统。它解决了现有控制软件的一个关键限制：没有可重用的基础设施来跨不同的操纵器实现合规控制算法，同时保留与更高级别应用程序的通用接口。基于插件的架构将控制器基础设施与控制律实现分开。通用包装器使用现有的硬件抽象来与不同的操纵器交互，而运行时加载的插件仅实现控制律。命令接口支持关节空间和笛卡尔空间参考、刚度和阻尼增益、零空间目标和前馈项，从而实现可变阻抗和多样化的顺从控制公式。机器人运动学和动力学是使用 Pinocchio 根据 URDF 模型计算的。该架构有助于开发合规控制策略，并使相同的...
+
+## English Summary
+
+The paper proposes a robot-agnostic compliant-control framework that extends the ROS control ecosystem with standardized joint and Cartesian command interfaces. It addresses a key limitation of existing control software: no reusable infrastructure for implementing compliant-control algorithms across different manipulators while preserving a common interface to higher-level applications. A plugin-based architecture separates controller infrastructure from control-law implementation. Generic wrappers use existing hardware abstractions to interface with different manipulators, while runtime-loaded plugins implement only the control law. Command interfaces support joint- and Cartesian-space references, stiffness and damping gains, nullspace targets, and feedforward terms, enabling variable impedance and diverse compliant-control formulations. Robot kinematics and dynamics are computed from URDF models using Pinocchio. The architecture facilitates the development of compliant-control strategies and enables the same implementation to be deployed across platforms unchanged. The complete framework, including reference controllers, high-level task interfaces, and example configurations for various manipulators, is open-sourced. The reference Cartesian impedance controller supports task-dependent compliance by rotating translational and rotational stiffness and damping, allowing the principal compliance directions to be updated online according to local task geometry rather than remaining fixed in the robot base or TCP frame. This is particularly important in contact-rich manipulation, where the desired directions of motion, constraints, and compliance directions may vary throughout task execution. Real-robot experiments demonstrate task-dependent compliance in contact-rich manipulation, while simulations show portability across manipulators with distinct kinematic and dynamic characteristics.

@@ -1,0 +1,21 @@
+---
+title: "通过搜索赋值和零空间体现多手操作策略"
+title_en: "Embodying Multi-Hand Manipulation Policies by Searching the Assignment and Null Spaces"
+authors: ["Yorai Shaoul", "Jiaoyang Li", "Maxim Likhachev"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22020v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+学习的操纵策略越来越多地预测抽象“手”的运动，并且在实践中很有吸引力，因为它们依赖于轻松收集的演示并在机器人平台上传输。然而，在多臂机器人上执行这些轨迹并非易事。多手策略输出必须分配给物理手臂，每个手臂必须实现跟踪其规定的末端执行器轨迹的配置空间运动，并且所有手臂必须遵守运动学限制并避免碰撞。在缺乏直接解决此问题的算法的情况下，从业者通常以临时方式扩展单臂逆向运动学 (IK) 管道，而无法保证可行性或安全性。在这项工作中，我们通过基于搜索的框架缩小了执行差距，该框架理论上完整，可以将策略生成的多手轨迹扎根到物理多臂系统上。在基于冲突的搜索的基础上，我们的方法显式搜索手臂轨迹的离散分配和冗余操纵...
+
+## English Summary
+
+Learned manipulation policies increasingly predict motions for abstract "hands" and are attractive in practice because they rely on easily collected demonstrations and transfer across robot platforms. Executing these trajectories on multi-arm robots, however, is not trivial. Multi-hand policy outputs must be assigned to physical arms, each arm must realize a configuration-space motion that tracks its prescribed end-effector trajectory, and all arms must respect kinematic limits and avoid collisions. In the absence of algorithms that directly address this problem, practitioners typically extend single-arm inverse-kinematics (IK) pipelines in an ad hoc way, with no guarantees of feasibility or safety. In this work, we close this execution gap with a search-based framework that is theoretically complete for grounding policy-generated multi-hand trajectories onto physical multi-arm systems. Building on Conflict-Based Search, our method explicitly searches over both the discrete assignment of trajectories to arms and the continuous Jacobian null spaces of redundant manipulators, using redundancy to avoid inter-arm collisions while tracking the prescribed motions. This unified treatment of assignment and null-space motion yields a practically efficient planner that safely realizes coordinated manipulation-policy outputs on multi-arm robots. See omcbsa.github.io for more.

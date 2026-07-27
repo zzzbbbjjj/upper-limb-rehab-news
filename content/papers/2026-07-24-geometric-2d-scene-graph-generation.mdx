@@ -1,0 +1,21 @@
+---
+title: "几何 2D 场景图生成"
+title_en: "Geometric 2D Scene Graph Generation"
+authors: ["Christoph Jahn", "Urs Waldmann", "Bastian Goldluecke"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22325v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+在消费品的生产过程中，装配指令不仅对于规划而且对于执行生产过程都至关重要。同样，在机器人技术中，装配机器人了解组件如何组合在一起并进行组装至关重要。为了促进这些任务，我们提供了一种构建场景图的方法来表示和表征组件之间的装配关系。我们的方法不依赖于语义数据，并且能够处理非常小的数据集。为了实现这一点，使用 Faster R-CNN 模型的输出来创建几何表示，然后由 Transformer 架构处理以生成邻接矩阵。该矩阵用作 Siamese 网络的输入，该网络使用基于注意力图卷积网络 (aGCN) 架构的消息传递来表征组件之间的连接。我们在可组装成运输车辆的玩具模型组件的研究数据集上验证了我们的方...
+
+## English Summary
+
+In production processes for consumer products, assembly instructions are essential not only for planning but also for executing the production process. Likewise in robotics, it is crucial for an assembly robot to understand how components fit together and can be assembled. To facilitate these tasks, we contribute a method for constructing scene graphs to represent and characterize assembly relationships between components. Our approach does not rely on semantic data and is capable of handling a very small dataset. To realize this, the output of a Faster R-CNN model is used to create geometric representations, which are then processed by a transformer architecture to generate an adjacency matrix. This matrix serves as input to a Siamese network that uses message passing based on an attentional graph convolutional network (aGCN) architecture to characterize the connections between the components. We validate our method on a study dataset of toy model components which can be assembled into transportation vehicles.

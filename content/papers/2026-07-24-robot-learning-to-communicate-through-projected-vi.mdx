@@ -1,0 +1,21 @@
+---
+title: "机器人学习通过投影视觉抽象进行交流"
+title_en: "Robot Learning to Communicate through Projected Visual Abstractions"
+authors: ["Danyang Yan", "Boyuan Wang", "Jiaxun Liu", "Boyuan Chen"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22434v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+人类通常通过身体的抽象来进行交流，包括阴影、轮廓和反射。然而，机器人在很大程度上仍然局限于通过其物理形态来表达自己。让机器人能够通过这种投射的视觉抽象进行交流，不仅需要推理身体运动，还需要推理如何将运动转化为观察者感知的外部表征。在这些抽象概念中，阴影提供了一个特别引人注目的例子，因为它们直接从机器人的体现中出现，同时在视觉上与身体本身不同。在这里，我们提出了一个能够使用 21 自由度的灵巧手、柔顺的软皮肤和学习的阴影自模型来进行动态阴影表达的机器人系统。软皮实施例减少了光泄漏以产生视觉上连续的轮廓，而可微分自模型通过与任务无关的自探索来学习手部配置和投影阴影外观之间的映射。给定目标阴影图像或...
+
+## English Summary
+
+Humans routinely communicate through abstractions of their bodies, including shadows, silhouettes, and reflections. Yet robots remain largely confined to expressing themselves through their physical morphology. Enabling robots to communicate through such projected visual abstractions requires reasoning not only about bodily motion but also about how that motion is transformed into an external representation perceived by an observer. Among these abstractions, shadows provide a particularly compelling example because they emerge directly from the robot's embodiment while remaining visually distinct from the body itself. Here, we present a robotic system capable of dynamic shadow expression using a 21-degree-of-freedom dexterous hand with compliant soft skin and a learned shadow self-model. The soft-skinned embodiment reduces light leakage to produce visually continuous silhouettes, while the differentiable self-model learns the mapping between hand configurations and projected shadow appearance through task-agnostic self-exploration. Given a target shadow image or video, the robot optimizes its hand configurations through gradient-based search over 1 the learned self-model and refines the solution through collision-aware simulation to obtain physically feasible motions. For dynamic shadow performance, we further introduce expressive-region objectives, temporal smoothness regularization, and keyframe-based optimization to preserve visually important motion cues while reducing optimization complexity. We demonstrate robotic shadow expression across sign-language gestures, hand-shadow puppetry, and animal motion imitation in both simulation and physical experiments. These results establish a framework for enabling robots to manipulate projected visual abstractions of themselves for communication and visual storytelling.

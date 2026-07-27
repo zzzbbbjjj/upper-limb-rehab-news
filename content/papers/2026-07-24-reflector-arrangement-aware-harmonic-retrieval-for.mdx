@@ -1,0 +1,21 @@
+---
+title: "Reflector：基于样本的作曲的排列感知谐波检索"
+title_en: "Reflector: Arrangement-Aware Harmonic Retrieval for Sample-Based Composition"
+authors: ["Austin Rockman"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22413v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+样本检索工具可以帮助作曲家找到和声兼容的材料，但随着编曲的发展以及和声上下文随着每个音乐决策的变化，从固定参考样本中查询的信息变得越来越少。我们推出了 Reflector，这是一个交互式音频工作站，可以跟踪和声组合在作曲家时间轴上的积累，并随着编曲的发展而调整检索。该系统是围绕一个固定的间隔级预言机组织的：一个手工设计的权重表，用于对音高级内容在源之间的组合进行评分。完全接受合成音频训练的编码器学习在 128 维嵌入空间中近似预言，其中点积代表交互速度下的兼容性分数。当作曲家在多轨时间轴上安排素材时，扫描线分析会发现同声区域，计算预言权重质心，并根据会话演变的复合和声特性进行检索。投影到可导航...
+
+## English Summary
+
+Sample retrieval tools can help composers find harmonically compatible material, but querying from a fixed reference sample becomes less informative as arrangements evolve and the harmonic context shifts with each musical decision. We present Reflector, an interactive audio workstation that tracks harmonic combinations as they accumulate on the composer's timeline and adapts retrieval as the arrangement develops. The system is organized around a fixed interval-class oracle: a hand-designed table of weights that scores how pitch-class content combines between sources. An encoder trained entirely on synthetic audio learns to approximate the oracle in a 128-dimensional embedding space, where dot products stand in for compatibility scores at interactive speed. As the composer arranges material on a multi-track timeline, a sweep-line analysis discovers co-sounding regions, computes oracle-weighted centroids, and retrieves against the composite harmonic identity of the session as it evolves. Session centroids projected into a navigable 3-D space reveal structural harmonic relations across the composer's body of work. This paper is a systems account: we give the design rationale for each architectural decision, characterize Reflector's behavior through intrinsic measurements on a working sample library, and describe the implementation. The characterization yields a central finding: the learned embedding preserves the kernel's pairwise judgments while covering the whole library, something the kernel cannot do when used directly as a retrieval rule, because the embedding's normalized geometry cannot express the degenerate solutions that direct scoring favors. The entire pipeline runs locally with no copyrighted training data. Reflector is free, and the training pipeline is open source.

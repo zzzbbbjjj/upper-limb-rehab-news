@@ -1,0 +1,21 @@
+---
+title: "室外环境下具有几何目标定位的离线视觉语言导航"
+title_en: "Offline Vision-Language Navigation with Geometric Goal Localization for Outdoor Environments"
+authors: ["Ali Salmasi", "Xianjia Yu", "Tomi Westerlund"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22226v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+基于基础模型的视觉语言导航 (VLN) 具有先进的自主机器人导航功能，使机器人能够解释自然语言指令、识别语义目标并遵循用户指定的行为规则。然而，现有的 VLN 系统严重依赖云托管的基础模型来进行语言理解和语义基础，限制了它们在网络连接不可用且需要可靠的度量目标本地化的情况下的适用性。尽管最近的小语言模型（SLM）能够实现完全机载推理，但它们对导航指令分解的适用性尚未得到系统评估。本文为室外环境的完全机载 VLN 做出了三项贡献。首先，我们针对 4 个在线 API 提出了 17 个可边缘部署的 SLM 的第一个系统基准，用于机器人导航指令分解，评估三个计算平台上人工注释指令的准确性和延迟，并为选...
+
+## English Summary
+
+Foundation-model-based vision-language navigation (VLN) has advanced autonomous robot navigation by enabling robots to interpret natural-language instructions, identify semantic goals, and follow user-specified behavioral rules. However, existing VLN systems rely heavily on cloud-hosted foundation models for language understanding and semantic grounding, limiting their applicability where network connectivity is unavailable and reliable metric goal localization is required. Although recent small language models (SLMs) enable fully onboard inference, their suitability for navigation instruction decomposition has not been systematically evaluated. This paper makes three contributions toward fully onboard VLN for outdoor environments. First, we present the first systematic benchmark of 17 edge-deployable SLMs against 4 online APIs for robotic navigation instruction decomposition, evaluating accuracy and latency on human-annotated instructions across three computing platforms and providing practical guidance for selecting onboard language models. Second, we propose a lightweight hybrid semantic-geometric goal localization framework that combines open-vocabulary object detection, prompted segmentation, and LiDAR geometry to estimate metric goals, while maintaining visual bearing guidance when reliable geometric observations are unavailable. Third, we integrate these advances into Edge-BehAV, a fully onboard extension of the BehAV architecture that enables cloud-independent behavior-guided navigation. Experimental results show that the best offline SLM matches the instruction decomposition performance of the strongest cloud API while running approximately 9x faster and without network connectivity. The proposed goal localization framework reduces mean goal-distance error from 2.05 m to 0.20 m at lower computational cost, and the complete system succeeds in 31 of 32 closed-loop outdoor trials.

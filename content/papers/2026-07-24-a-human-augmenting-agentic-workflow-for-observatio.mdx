@@ -1,0 +1,21 @@
+---
+title: "用于观察因果推理的人类增强代理工作流程"
+title_en: "A Human-Augmenting Agentic Workflow for Observational Causal Inference"
+authors: ["Winston Chou", "Adrien Alexandre", "Lars Olds", "Yi Zhang", "Nathan Kallus"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22443v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+数据分析代理正在成为应用和科学研究中越来越常见的工具。然而，对于观察因果推理 (OCI) 等高度专业化的任务，仍然需要人工监督以确保结果的有效性。我们引入了“oci-agent”，这是一个开源 Python 包，它实现了用于观察因果推理的人机交互代理工作流程。 “oci-agent”旨在自动化应用因果推理中重要但费力的方面，例如协变量平衡检查、倾向评分修剪和敏感性分析，以便人们可以专注于更细致的任务，例如提出问题、审查假设以及评估诊断和结果。   我们最初于 2026 年 6 月开源了“oci-agent”，支持对单一二元治疗的平均治疗效果进行双重稳健学习。从那时起，我们增加了对异质治疗效果估...
+
+## English Summary
+
+Data analysis agents are becoming increasingly common tools for applied and scientific research. Yet, for highly specialized tasks such as Observational Causal Inference (OCI), human oversight remains necessary to ensure the validity of results. We introduce `oci-agent`, an open-source Python package that implements a human-in-the-loop agentic workflow for observational causal inference. `oci-agent` is designed to automate vital but laborious aspects of applied causal inference, such as covariate balance checking, propensity score trimming, and sensitivity analysis, so that humans can focus on more nuanced tasks, such as framing questions, scrutinizing assumptions, and evaluating diagnostics and results.   We initially open-sourced `oci-agent` in June 2026 with support for doubly robust learning of the average treatment effect of a single binary treatment. Since then, we have added support for heterogeneous treatment effect estimation and for multiple continuous treatments via partially linear models. In this paper, we describe the principles behind `oci-agent` and offer internal Netflix case studies and evaluations on public data of its capabilities. Across numerous evaluations, `oci-agent` outperforms less structured baselines while remaining competitive with hand-tuned benchmarks. `oci-agent` is used extensively for causal inference at Netflix and has orchestrated more than 100 analyses per month since its release in June.

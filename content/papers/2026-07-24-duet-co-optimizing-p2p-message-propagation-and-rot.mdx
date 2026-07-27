@@ -1,0 +1,21 @@
+---
+title: "Duet：协同优化P2P消息传播和轮值领导共识"
+title_en: "Duet: Co-Optimizing P2P Message Propagation and Rotating-Leader Consensus"
+authors: ["Yifeng Ye", "Rongji Huang", "Gerui Wang", "Mingchao Wan", "Yuxing Duan", "Jingjing Zhang", "Shengyun Liu"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22209v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在区块链系统中，点对点（P2P）覆盖网络在向上层提供可靠、可扩展和高效的消息传递服务方面发挥着至关重要的作用。然而，现有区块链中共识层和底层P2P网络仍然相互不透明，放弃了进一步改进的机会。与其他P2P应用相比，区块链自然可以抽象为状态机。因此，我们利用这种抽象以可信和协调的方式记录网络拓扑和延迟。在此支持下，我们对轮换领导者共识协议及其底层 P2P 网络提出了三项改进：（1）加速领导者轮换； (2) 引入可靠广播范式，在正常情况下采用基于树的传播，仅在必要时才回退到八卦； (3)构建延迟感知传播树。我们将上述想法集成到 Tendermint 和 libp2p 中，并使用分布在 10 个区域的...
+
+## English Summary
+
+In blockchain systems, peer-to-peer (P2P) overlay networks play a crucial role in providing reliable, scalable and efficient message-delivery services to upper layers. However, the consensus layer and the underlying P2P network remain mutually opaque in existing blockchains, waiving the opportunity for further improvement. In contrast to other P2P applications, blockchain can naturally be abstracted as a state machine. We therefore leverage this abstraction to record network topologies and latencies in a trusted and coordinated manner. With this support, we propose three improvements to rotating-leader consensus protocols and their underlying P2P networks: (1) accelerating leader rotation; (2) introducing a reliable-broadcast paradigm that employs tree-based dissemination in the normal case and falls back to gossip only when necessary; and (3) constructing latency-aware dissemination trees. We integrate the above ideas into Tendermint and libp2p, and conduct empirical evaluation on Amazon EC2 platform using up to 300 nodes distributed across 10 regions. The results demonstrate that, compared with gossip-based dissemination over the same topology, our prototype improves peak throughput by up to $7.26\times$.

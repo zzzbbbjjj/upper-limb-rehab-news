@@ -1,0 +1,21 @@
+---
+title: "SiPhy：单图像物理属性推理"
+title_en: "SiPhy: Single-Image Physical Property Reasoning"
+authors: ["Hoang Le", "Joonwoo Kwon", "Elkhan Ismayilzada", "Yufei Zhang", "Zijun Cui"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22355v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+从单个图像推断质量、刚度和弹性等物理属性对于模拟和嵌入式人工智能至关重要，但大多数现有方法依赖于多视图重建或基于物理的监督。我们推出了 SiPhy，这是一个用于单图像物理属性推理的统一框架，可将 3D 感知视觉线索、深度与基于语言的材料知识结合起来。 SiPhy 从一幅 RGB 图像中对伪体素点进行采样，提取 CLIP 特征，并将其基于 VLM 提出的候选材料。基于零件的对比聚合器增强了区域一致性，而重量感知细化则改进了密集物体的厚度和体积估计。在 ABO-500、MVImgNet-100 和 PhysXNet-100 中，SiPhy 实现了最先进的单图像性能，通过将质量 MnRE 提高高达 ...
+
+## English Summary
+
+Inferring physical properties such as mass, stiffness, and elasticity from a single image is essential for simulation and embodied AI, yet most existing approaches rely on multi-view reconstruction or physics-based supervision. We introduce SiPhy, a unified framework for single-image physical property reasoning that aligns 3D-aware visual cues, depth with language-based material knowledge. From one RGB image, SiPhy samples pseudo-voxel points, extracts CLIP features, and grounds them to material candidates proposed by a VLM. A part-based contrastive aggregator enforces region consistency, while a heaviness-aware refinement improves thickness and volume estimation for dense objects. Across ABO-500, MVImgNet-100, and PhysXNet-100, SiPhy achieves state-of-the-art single-image performance, surpassing multi-view reconstruction methods by improving mass MnRE by up to 93% (vs. PUGS), reducing density MAE by 35.5% (vs. NeRF2Physics), and lowering Young's modulus error by 23.5%. We further validate SiPhy on real hand-object interaction datasets, demonstrating its potential as a data annotation engine for physical understanding from single-view imagery.

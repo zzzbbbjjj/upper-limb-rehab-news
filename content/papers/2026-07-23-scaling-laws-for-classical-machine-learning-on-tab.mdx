@@ -1,0 +1,21 @@
+---
+title: "表格数据经典机器学习的缩放定律：基准研究"
+title_en: "Scaling Laws for Classical Machine Learning on Tabular Data: A Benchmark Study"
+authors: ["Kaihua Ding"]
+date: "2026-07-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.21866v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+之前的经典机器学习学习曲线工作将幂律拟合到表格数据上的树、线性和核模型，但规模较小：通常是一条曲线、一个团队、几个单元。我们提出了分布式课堂规模的复制：127 名学生每人在 3 个分配的数据集上运行固定协议，这些数据集取自 18 个表格分类和回归数据集以及 6 个模型系列（Boosting、随机森林、SVM、线性/逻辑、Ridge、Lasso），产生 11,536 次训练运行和 1,648 条误差 (N) = a N^(-b) + c 形式的拟合幂律曲线。三项发现。 (1) 幂律拟合：R^2 > 0.8 在 77.7% 的单元上，树集成在完整数据上占主导地位（Boosting 50% 的数据集...
+
+## English Summary
+
+Prior classical-ML learning-curve work fits power laws to tree, linear, and kernel models on tabular data, but at small scale: typically one curve, one team, a handful of cells. We present a distributed classroom-scale replication: 127 students each ran a fixed protocol on 3 assigned datasets, drawn from 18 tabular classification and regression datasets and 6 model families (Boosting, Random Forest, SVM, Linear/Logistic, Ridge, Lasso), yielding 11,536 training runs and 1,648 fitted power-law curves of the form error(N) = a N^(-b) + c. Three findings. (1) Power laws fit: R^2 &gt; 0.8 on 77.7% of cells, with tree ensembles dominating at full data (Boosting 50% of datasets, RandomForest 33%; linear models underperform on classification). (2) Approximate shared exponents within a model family: for 5 of 6 families, a single family-level exponent predicts each family's cross-dataset curves nearly as well as per-dataset exponents (R^2 gap &lt; 0.011), though AIC favors the unconstrained fit and curve collapse is partial (32-58% of points within +/-0.5 dex). We frame this as approximate predictive compressibility, not dataset-independent universality; Lasso fails outright (negative control) and Ridge is fragile under leave-one-dataset-out. (3) Replicator-implementation variance: with random_state=42 fixed, independent re-implementations of the same protocol still differ by mean CV(b) = 0.144 on the fitted exponent -- not seed variance, but the spread induced by unconstrained parts of the protocol (preprocessing, encoding, missing-value handling). We release the aggregated curves, per-cell fits, and a practical data-requirement table for N* to reach target error 0.15.

@@ -1,0 +1,21 @@
+---
+title: "一只手注视另一只手：动态多智能体协作，在动态环境中实现样本高效的双手操作"
+title_en: "One Hand Watches The Other: Dynamic Multi-Agent Cooperation for Sample-Efficient Bimanual Manipulation in Dynamic Environments"
+authors: ["Jan Ole von Hartz", "Abhinav Valada", "Joschka Boedecker"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22119v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+多流机器人操纵策略通过对相对于环境参考系的动作进行建模，实现了无与伦比的样本效率和泛化性。然而，现有的方法通常假设这些框架是严格外生的。这种因果假设在动态环境中崩溃，例如当单个机器人手臂操纵移动物体时或当两个手臂协调时，每个手臂实际上成为另一个手臂动态环境的一部分。我们提出了 DynaMAC，一个轻量级的、与策略无关的框架，它解决了这种因果限制，同时保留了多流策略的样本效率、计算速度和灵活性，DynaMAC 将相反的手臂视为动态任务参数，从而为动态操作和双手协调提供了统一的公式，而不需要明确的领导者-跟随者关系。为了严格评估这些功能，我们引入了 DynaBench，这是动态环境中机器人操作的新...
+
+## English Summary
+
+Multi-stream robot manipulation policies achieve unparalleled sample efficiency and generalization by modeling actions relative to environmental reference frames. However, existing approaches typically assume these frames to be strictly exogenous. This causal assumption collapses in dynamic settings, such as when a single robot arm manipulates a moving object or when two arms coordinate, where each arm effectively becomes part of the dynamic environment of the other. We propose DynaMAC, a lightweight, policy-agnostic framework that resolves this causal limitation while preserving the sample efficiency, computational speed, and flexibility of multi-stream policies, DynaMAC treats the opposite arm as a dynamic task parameter, thereby providing a unified formulation for dynamic manipulation and bimanual coordination without requiring an explicit leader-follower relationship. To rigorously evaluate these capabilities, we introduce DynaBench, a novel benchmark for robot manipulation in dynamic environments. Across both dynamic environments and bimanual manipulation tasks, DynaMAC outperforms leading probabilistic and generative baselines by over 35 percentage points while requiring 20 times fewer samples. Crucially, DynaMAC generalizes zero-shot from static demonstrations to dynamic environments, substantially simplifying data collection and establishing an elegant bridge toward human-robot collaboration.

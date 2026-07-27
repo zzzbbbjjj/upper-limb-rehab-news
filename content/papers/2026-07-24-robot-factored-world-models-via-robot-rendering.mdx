@@ -1,0 +1,21 @@
+---
+title: "通过机器人渲染构建机器人因素的世界模型"
+title_en: "Robot-Factored World Models via Robot Rendering"
+authors: ["Byungjun Kim", "Taeksoo Kim", "Hyunsoo Cha", "Hanbyul Joo"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22535v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+动作条件视频世界模型根据初始观察和动作信号预测未来的观察。在机器人技术中，动作通过两个不同的过程影响未来的观察：它们首先由机器人主体和控制器实现为机器人运动，然后场景通过接触和物体运动做出响应。直接根据动作命令进行调节要求世界模型学习实现过程本身，而根据记录的未来状态进行调节会泄露其旨在预测的交互结果。我们提出了机器人因素的世界模型，它将两个机器人特定的因素移到了世界模型之外。首先，动作实现：每个命令都通过机器人自己的控制器和运动学滚动到可部署的标称轨迹中，这是一个避免动作实现学习和未来状态泄漏的中间信号。其次，机器人渲染：这个标称轨迹是通过机器人 URDF 渲染的，将机器人的几何形状、运动学...
+
+## English Summary
+
+Action-conditioned video world models predict future observations from an initial observation and an action signal. In robotics, actions influence future observations through two distinct processes: they are first realized into robot motion by the robot body and controller, and the scene then responds through contact and object motion. Conditioning directly on action commands asks the world model to learn the realization process itself, while conditioning on logged future states leaks the interaction outcomes it is meant to predict. We propose robot-factored world models, which move two robot-specific factors outside the world model. First, action realization: each command is rolled through the robot's own controller and kinematics into a deployment-available nominal trajectory, a middle signal that avoids both action-realization learning and future-state leakage. Second, robot rendering: this nominal trajectory is rendered through the robot URDF, factoring the robot's geometry, kinematics, and appearance out of the model and into explicit rendered robot geometry. To resolve depth ambiguity, we pair end-effector depth with scene depth, giving geometric cues for contact and occlusion beyond image-plane overlap. Together, camera-aware static RGB/depth context and rendered robot geometry form a shared visual world-model interface that stays consistent across viewpoints and robot embodiments, so the model sees the action only as visible robot geometry and learns how objects respond to it. Our experiments show that the rendered interface outperforms vector-conditioned baselines and generalizes to unseen robot embodiments at inference. We further demonstrate that our model generates robot manipulation videos from human demonstrations by retargeting and rendering the hand motion as robot geometry.

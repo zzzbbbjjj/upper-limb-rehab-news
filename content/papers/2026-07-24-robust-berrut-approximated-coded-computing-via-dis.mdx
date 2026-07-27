@@ -1,0 +1,21 @@
+---
+title: "通过离散余弦变换进行鲁棒 Berrut 近似编码计算"
+title_en: "Robust Berrut-Approximated Coded Computing via Discrete Cosine Transforms"
+authors: ["Rimpi Borah", "J. Harshan"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22427v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+编码计算是一种可靠且容错的范例，用于在分布式工作节点上执行大规模计算任务。在现有的编码计算框架中，Berrut近似编码计算（BACC）能够通过有理插值对任意非多项式函数进行分布式计算。尽管 BACC 提供了可证明的近似保证和针对落后工人的弹性，但其针对拜占庭工人的稳健性在很大程度上仍未被探索。为了填补这一研究空白，我们提出了鲁棒 Berrut 近似编码计算（RBACC），它通过在拜占庭工作人员存在的情况下实现错误定位和纠错来为 BACC 建立编码理论框架。特别是，RBACC引入了一种新的评估点选择，在Berrut插值和离散余弦变换（DCT）代码之间建立了联系，从而实现了有限精度算术下的错误定位...
+
+## English Summary
+
+Coded computing is a reliable and fault-tolerant paradigm for executing large-scale computational tasks over distributed worker nodes. Among existing coded computing frameworks, Berrut Approximated Coded Computing (BACC) enables distributed computation of arbitrary non-polynomial functions through rational interpolation. Although BACC provides provable approximation guarantees and resilience against straggling workers, its robustness against Byzantine workers remains largely unexplored. To fill this research gap, we propose Robust Berrut Approximated Coded Computing (RBACC), which establishes a coding-theoretic framework for BACC by enabling error localization and error correction in the presence of Byzantine workers. In particular, RBACC introduces a new choice of evaluation points that establishes a connection between Berrut interpolation and Discrete Cosine Transform (DCT) codes, thereby enabling error localization and error correction under finite-precision arithmetic. We derive analytical upper bounds on the approximation error of RBACC under multiple operating scenarios, including straggler-only systems and systems with Byzantine workers under finite-precision arithmetic. Building upon this analysis, we formulate several optimization problems for selecting the DCT code dimension and for assigning encoded evaluations to unreliable workers. We show that these are previously unexplored design parameters that can be systematically optimized to improve the reconstruction accuracy. Experimental results demonstrate that the proposed RBACC framework effectively mitigates stragglers and Byzantine workers while offering improved reconstruction accuracy over the baselines.

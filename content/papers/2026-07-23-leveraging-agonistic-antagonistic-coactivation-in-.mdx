@@ -1,0 +1,21 @@
+---
+title: "利用单网格 HDsEMG 中的激动-拮抗共激活进行手势识别"
+title_en: "Leveraging Agonistic-Antagonistic Coactivation in Single-Grid HDsEMG for Hand Gesture Recognition"
+authors: ["Firas Darwish", "Dhiyaa Al Jorf", "Costanza Armanini", "Eion Tyacke", "Farah E. Shamout"]
+date: "2026-07-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.21809v1"
+doi: ""
+tags: ["手部康复", "人机接口"]
+tags_en: ["hand rehabilitation", "human-machine interface"]
+keywords: ["手部康复", "人机接口"]
+keywords_en: ["hand rehabilitation", "human-machine interface"]
+---
+
+## 中文摘要
+
+表面肌电图 (sEMG) 对于人机界面中的意图预测（例如假肢控制）至关重要。尽管手势识别 (HGR) 的深度学习模型产生了出色的结果，但它们对计算和硬件提出了很高的要求。本文通过利用主动-拮抗肌活动的冗余来解决这一瓶颈，假设来自伸肌或屈肌群的 sEMG 信号中存在的共激活足以实现准确的 HGR。我们通过比较在一个肌肉网格上训练的卷积神经网络 (CNN) 与在两个网格上联合训练的 CNN 架构来评估这一点。实验使用来自 20 名受试者的高密度 sEMG 信号数据集中的 16 个手势进行。结果表明，单独的伸肌网格实现了与双网格系统（94.6% 平衡精度，1.00 AUROC）相当的性能（89.5%...
+
+## English Summary
+
+Surface Electromyography (sEMG) is critical for intention prediction in human-computer interfaces, such as for prosthetics control. Although deep learning models for Hand Gesture Recognition (HGR) yield excellent results, they impose high computational and hardware demands. This paper addresses this bottleneck by exploiting redundancies in agonist-antagonist muscle activity, hypothesizing that coactivations present in the sEMG signals from the extensor or flexor groups alone are sufficient for accurate HGR. We evaluate this by comparing convolutional neural networks (CNNs) trained on one muscle grid against CNN architectures trained jointly on both grids. Experiments were conducted using 16 gestures from a dataset of high-density sEMG signals from 20 subjects. The results demonstrate that the extensor grid alone achieves performance (89.5% balanced accuracy, 0.99 AUROC) comparable to the dual-grid system (94.6% balanced accuracy, 1.00 AUROC). Notably, even when applying slow joint fusion to capture spatial features across grids, model performance did not improve. GradCAM visualizations and anatomical analysis further indicate that the extensor region provides superior signal quality compared to the flexors. Our findings suggest that for a base set of DoF gestures, HGR hardware requirements and computational complexity can be halved without a prohibitive loss in accuracy.

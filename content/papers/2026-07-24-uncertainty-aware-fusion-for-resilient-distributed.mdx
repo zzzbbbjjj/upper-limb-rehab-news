@@ -1,0 +1,21 @@
+---
+title: "用于弹性分布式雷达传感的不确定性感知融合"
+title_en: "Uncertainty-Aware Fusion for Resilient Distributed Radar Sensing"
+authors: ["Christian Eckrich", "Maik Pfefferkorn", "Rolf Findeisen", "Abdelhak M. Zoubir", "Vahid Jamali"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22357v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+分布式雷达传感通过结合场景的多个局部视图，实现移动机器人和车辆系统的安全和弹性操作。在本文中，我们考虑配备调频连续波（FMCW）雷达的移动代理，将其本地测量值与周围静态雷达传感器的测量值融合，以减少目标状态估计的不确定性。在容量有限的无线链路上共享测量结果的好处是以两种相互竞争的退化机制为代价的：量化失真（增加有效本底噪声）和延迟（导致接收到的信息老化）。因此，需要一个统一的框架来量化单个雷达如何在有限的通信资源下减少不确定性。为此，我们通过坐标变换结合局部费舍尔信息矩阵（FIM），通过状态转换模型结合率失真理论和信息老化的失真界限，推导出融合目标状态的 Cramer-Rao 下界（CRLB）...
+
+## English Summary
+
+Distributed radar sensing enables safe and resilient operation in mobile robotic and vehicular systems by combining multiple local views of the scene. In this paper, we consider a moving agent equipped with a frequency modulated continuous wave (FMCW) radar that fuses its local measurements with those of surrounding static radar sensors to reduce the uncertainty in target state estimation. The benefit of sharing measurements over capacity-limited wireless links come at the expense of two competing degradation mechanisms: quantization distortion, which increases the effective noise floor, and latency, which causes the received information to age. A unified framework is thus needed to quantify how individual radars contribute to uncertainty reduction under limited communication resources. To this end, we derive the Cramer-Rao lower bound (CRLB) for the fused target state by combining local Fisher information matrices (FIMs) through coordinate transformations, incorporating distortion bounds from rate-distortion theory and information aging via a state transition model. We show that the resulting expression reveals a fundamental tradeoff between update rate and quantization fidelity governed by the available channel capacity. Our numerical simulations illustrate this tradeoff and demonstrate that a careful choice of system parameters (e.g., selected radar systems, quantization, update rate) is necessary for maximum uncertainty reduction.

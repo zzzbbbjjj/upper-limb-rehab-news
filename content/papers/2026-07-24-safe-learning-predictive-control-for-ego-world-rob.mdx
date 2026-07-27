@@ -1,0 +1,21 @@
+---
+title: "自我世界机器人系统的安全学习预测控制"
+title_en: "Safe Learning Predictive Control for Ego-World Robotic Systems"
+authors: ["Davide Valenti", "Giuseppe Notarstefano"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22225v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+共享环境中的安全自主导航需要能够预测周围机器人的潜在行为并做出反应。在本文中，我们提出了 SOWL-MPC，一种针对新场景的基于安全学习的预测控制策略，我们将其命名为自我世界机器人框架。在这种情况下，世界机器人的控制策略是未知的，自我利用数据来学习它并执行安全的操作。所提出的架构将基于稀疏变分高斯过程（SVGP）的在线学习机制与后退控制方案相结合。我们的方法仅依靠噪声状态测量来推断潜在世界策略的后验分布，该策略通过在线变分调节（OVC）根据流数据进行更新。学习到的策略使用近似矩传播方案通过非线性世界动力学传播，并馈送到不确定性感知模型预测控制（MPC），从而实现自我机器人的安全操纵。 SOWL...
+
+## English Summary
+
+Safe autonomous navigation in shared environments requires the ability to anticipate and react to the latent behaviors of surrounding robots. In this paper, we propose SOWL-MPC, a safe learning-based predictive control strategy for a novel scenario, which we name ego-world robotic framework. In this setting, the control policy of the world robot is unknown and the ego exploits data to learn it and perform safe maneuvers. The proposed architecture combines an online learning mechanism based on Sparse Variational Gaussian Processes (SVGPs) with a receding-horizon control scheme. Relying solely on noisy state measurements, our approach infers a posterior distribution over the latent world policy, which is updated on streaming data via Online Variational Conditioning (OVC). The learned policy is propagated through the nonlinear world dynamics using an approximate moment propagation scheme, and fed to an uncertainty-aware Model Predictive Control (MPC), thus enabling safe maneuvering of the ego robot. The real-time feasibility and safety guarantees of SOWL-MPC are demonstrated through extensive Monte Carlo virtual experiments in ROS 2, and validated on real-world robotic hardware in an indoor arena.

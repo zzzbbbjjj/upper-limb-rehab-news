@@ -1,0 +1,21 @@
+---
+title: "autotn：根据符号局部规则受自动机启发构建张量网络运算符"
+title_en: "autotn: Automata-inspired construction of tensor-network operators from symbolic local rules"
+authors: ["Aitor Morais", "Izaskun Oregi", "Iker Pastor", "Eneko Osaba"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22232v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+矩阵乘积算子 (MPO) 是张量网络模拟和量子计算应用中结构化算子的标准表示。然而，将哈密顿量和成本函数的符号描述转换为 MPO 表示通常需要大量的手动实现，使得该过程容易出错且难以重现。本文介绍了 autotn，这是一种开源 Python 软件工具，可将符号运算符规则转换为 MPO 表示形式。用户以高级格式定义本地运算符和交互规则，软件生成相应的 MPO 以及验证实用程序。在此过程中，该软件遵循自动机启发的方法，识别算子符号描述中的重复模式，并重用它们来构建紧凑的张量网络表示，从而避免了手动构建每个张量的需要。 autotn 当前的实现既支持组合优化问题中常见的对角运算符，也支持量子多体物理...
+
+## English Summary
+
+Matrix product operators (MPOs) are a standard representation for structured operators in tensor-network simulations and quantum computing applications. However, converting symbolic descriptions of Hamiltonians and cost functions into MPO representations often requires substantial manual implementation, making the process error-prone and difficult to reproduce. This paper presents autotn, an open-source Python software tool that converts symbolic operator rules into MPO representations. Users define local operators and interaction rules in a high-level format, and the software generates the corresponding MPO along with validation utilities. In doing so, the software follows an automata-inspired approach that identifies repeated patterns in the symbolic description of the operator and reuses them to build a compact tensor-network representation, avoiding the need to construct each tensor by hand. The current implementation of autotn supports both diagonal operators, commonly encountered in combinatorial optimization problems, and general local matrix operators used in quantum many-body physics. The software is demonstrated on Max-Cut cost operators, long-range XX+YY+Z spin Hamiltonians, and quantum clock models. By providing a reproducible workflow from symbolic model specification to validated MPO construction, autotn reduces the engineering effort required to develop, verify, and compare MPO constructions.

@@ -1,0 +1,21 @@
+---
+title: "音频基础模型捕获的海洋哺乳动物和鸟类发声的系统发育信号：特定领域预训练的有限优势"
+title_en: "Phylogenetic signal in marine mammal and bird vocalizations captured by audio foundation models: the limited benefit of domain-specific pretraining"
+authors: ["Víctor Rincón Yepes"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22458v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+学习到的音频嵌入是否会编码没有人告诉他们编码的结构？我们探索了四个大型预训练音频模型（AST、CLAP、BEATs-bio 和 BirdNET），其中包含一个在训练过程中没有见过的下游任务：恢复物种发声的系统发育距离。如果嵌入空间的几何形状跟踪生命之树，则表示会拾取比模型优化的标签更深的东西。   我们对两个独立的辐射进行曼特尔测试。在 32 种海洋哺乳动物（来自沃特金斯海洋哺乳动物声音数据库的 1,754 条记录）中，基础模型在 26 种鲸目动物中恢复了强烈的系统发育信号（CLAP r=0.82、BEATs-bio r=0.82、AST r=0.74；所有 p<0.001），是所有分类单元报...
+
+## English Summary
+
+Do learned audio embeddings encode structure that nobody told them to encode? We probe four large pretrained audio models (AST, CLAP, BEATs-bio and BirdNET) with a downstream task none of them saw during training: recovering phylogenetic distance from species vocalizations. If the geometry of the embedding space tracks the tree of life, the representation is picking up something deeper than the labels the model was optimized for.   We run Mantel tests across two independent radiations. In 32 marine mammal species (1,754 recordings from the Watkins Marine Mammal Sound Database) the foundation models recover strong phylogenetic signal within the 26 cetaceans (CLAP r=0.82, BEATs-bio r=0.82, AST r=0.74; all p&lt;0.001), among the highest acoustic-phylogenetic correlations reported for any taxon. Hand-crafted MFCC features (105d) find nothing (r=0.040, p=0.338). The gap survives after PCA-projecting every embedding down to 105 dimensions, so it is not an artefact of representation size. It also survives a partial Mantel test controlling for dominant frequency (partial Mantel r=0.404, keeping 97% of the variance explained), so it is not just pitch in disguise.   We repeat the analysis on 20 bird species using the Jetz et al. (2012) phylogeny, and this time add BirdNET, a classifier trained end-to-end on around 6,000 bird species. The general-purpose foundation models recover the signal again (AST r=0.55, CLAP r=0.52). The unexpected result is that neither BirdNET nor the bioacoustic BEATs-bio beat them (r around 0.32 to 0.36). Matching the training domain to the target taxon does not, by itself, help. Pretrained audio embeddings carry evolutionary information across two independent radiations, and domain-specific pretraining is not required for it to emerge.

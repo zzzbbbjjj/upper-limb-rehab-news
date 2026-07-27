@@ -1,0 +1,21 @@
+---
+title: "VIREL：经过验证的格上整数残差编码，用于精确且误差有限的浮点时间序列压缩"
+title_en: "VIREL: Verified Integer-Residual Encoding on Lattices for Exact and Error-Bounded Floating-Point Time-Series Compression"
+authors: ["Yue Zhang", "Jiatao Lin", "Haopeng Chen"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22433v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+流式浮点数据通常在十进制或物理分辨率点阵上生成，但最精确的压缩器仍然直接对 IEEE 二进制表示进行建模。本文介绍了 VIREL，一种用于精确且有误差限制的浮点时间序列压缩的页面流式框架。 VIREL 首先将每个值接纳到经过验证的十进制或误差格中，然后在生成的整数生成域中而不是在 IEEE 字异或空间中预测残差。为了处理混合精度和异常，VIREL 将值路由到兼容的通道中，并保持每个通道本地的预测器状态。其压缩优先精确配置文件进一步应用了成本计算的晶格步长归一化：对于仿射子晶格 q = d z + r，仅当完整帧成本降低时，它才对紧凑坐标 z 进行编码。误差有界轮廓应用了与精确整除规则相同的思想...
+
+## English Summary
+
+Streaming floating-point data are often generated on decimal or physical resolution lattices, but most exact compressors still model the IEEE binary representation directly. This paper presents VIREL, a page-streamable framework for exact and error-bounded floating-point time-series compression. VIREL first admits each value into a verified decimal or error lattice, then predicts residuals in the resulting integer generation domain rather than in IEEE-word XOR space. To handle mixed precision and exceptions, VIREL routes values into compatible lanes and keeps predictor state local to each lane. Its compression-first exact profile further applies costed lattice-step normalization: for an affine sub-lattice q = d z + r, it encodes the compact coordinate z only when the complete frame cost decreases. The error-bounded profile applies the same idea with an exact divisibility rule, storing q/d only when it reconstructs the same lattice point and therefore consumes no error budget.   Across canonical exact streams with independent 1,024-value pages, VIREL-Exact-Fast reaches 6.0243x compression, while VIREL-Exact-Upper reaches 7.0287x and emits substantially fewer bytes than the strongest evaluated prior exact codecs. On 74.70 million values in 48 independently paged streams, the two exact profiles reach 8.0629x and 9.6490x. At error bound 1e-3 on 15 Serf streams, VIREL-EB reaches 12.1094x, emits 12.54 percent fewer bits than the strongest compliant external baseline, and preserves all checked pointwise bounds. Ablations show that integer-domain residual prediction is the primary source of gain, while lattice-step normalization and route-persistent multi-lane prediction preserve that gain under mixed resolution. VIREL also scales across CPU cores and runs as an Apache TsFile page codec.

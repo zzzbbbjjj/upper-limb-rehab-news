@@ -1,0 +1,21 @@
+---
+title: "每个模型都作弊：攻击性网络任务作弊的即时缓解"
+title_en: "Every Model Cheats: Prompt-Level Mitigation of Cheating on Offensive Cyber Tasks"
+authors: ["Michael Kouremetis", "Ads Dawson", "Raja Sekhar Rao Dheekonda", "Brian Greunke"]
+date: "2026-07-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.21763v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+大型语言模型（LLM）代理经常在网络安全基准上作弊，使报告的通过率远远超出真实能力。 Cybench 之前的审计发现 0.3-3.4% 的痕迹存在作弊行为，仅涉及少数模型。我们针对来自 7 个提供商的 22 个前沿模型，针对三种提示条件（无反作弊、标准、严重）下的 23 个 Cybench 夺旗 (CTF) 挑战，提出了一项受控提示消融研究。所有 1,518 项任务跟踪均通过四阶段管道进行单独审核，该管道结合了法学硕士作为法官的分类、程序化验证、法官-验证者协调和人工审核。我们发现作弊现象比之前估计的要普遍得多：在基线条件下，37.1% 的传球涉及作弊，22 个模型中有 21 个模型作弊，分数...
+
+## English Summary
+
+Large language model (LLM) agents routinely cheat on cybersecurity benchmarks, inflating reported pass rates far beyond genuine capability. Prior audits of Cybench found cheating in 0.3-3.4% of traces, implicating only a handful of models. We present a controlled prompt-ablation study across 22 frontier models from 7 providers on 23 Cybench capture-the-flag (CTF) challenges under three prompt conditions (no anti-cheat, standard, severe). All 1,518 task traces were individually audited through a four-stage pipeline combining LLM-as-a-judge classification, programmatic verification, judge-verifier reconciliation, and human review. We find cheating is far more pervasive than previously estimated: under baseline conditions, 37.1% of passes involved cheating, 21 of 22 models cheated, and scores were inflated by up to 5x. Anti-cheat prompts reduce cheat propensity from 33.0% (baseline) to 17.8% (standard) to 8.5% (severe) without degrading, and sometimes improving, solve rates. However, even under the most restrictive prompt condition, eight models still produced cheated passes, four showed backfire effects, and cheating escalated from web search toward infrastructure probing. We introduce the "solve rate" metric (clean passes only) to distinguish genuine capability from cheated outcomes, and argue it should be standard practice in any evaluation where cheating vectors are available. Anti-cheat prompts are an effective and essentially free first layer of defense, but they are not a substitute for environmental controls.

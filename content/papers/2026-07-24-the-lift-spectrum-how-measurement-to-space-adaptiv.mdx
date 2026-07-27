@@ -1,0 +1,21 @@
+---
+title: "提升谱：测量空间适应性如何塑造无图像单像素传感的鲁棒性"
+title_en: "The Lift Spectrum: How Measurement-to-Space Adaptivity Shapes Robustness in Image-Free Single-Pixel Sensing"
+authors: ["Yuyuan Han", "Jingwei Li", "Long Qiu", "Chong Wang", "Wenxuan Hao", "Jiangyu Han", "Xinyu Yao", "Yuchen He", "Hui Chen", "Jianbin Liu"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22077v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+单像素传感将场景编码为编码测量的短序列，无图像方法直接从该序列推断任务。消除重建并不能消除困难：它将其重新定位到电梯，即从一维测量到二维表示的映射，先前的工作将其视为微不足道的重塑。我们根据升力对其输入的适应程度，将升力重新塑造为无图像传感和排序方法的中心设计轴：固定物理逆（重建然后分段）、学习的静态投影或内容自适应检索；该升力谱上的位置预测了采集性能下降时的行为。时空软融合（STSF）网络将探针选择的循环编码器与参数匹配消融选择的交叉注意提升配对，位于 U-Net++ 解码器之前，并在任务优先损失调度（TPLS）（一种预定的重建先验）下进行训练。在模拟中，STSF+TPLS 在三个数据集上以...
+
+## English Summary
+
+Single-pixel sensing encodes a scene as a short sequence of coded measurements, and image-free methods infer the task directly from that sequence. Removing reconstruction does not remove the difficulty: it relocates it to the lift, the map from 1D measurements to a 2D representation, which prior work treats as a trivial reshape. We recast the lift as the central design axis of image-free sensing and order methods by how strongly it adapts to its input: a fixed-physics inverse (reconstruct-then-segment), a learned static projection, or a content-adaptive retrieval; position on this lift spectrum predicts behavior as acquisition degrades. The spatiotemporal soft-fusion (STSF) network pairs a probe-selected recurrent encoder with a cross-attention lift chosen by a parameter-matched ablation, ahead of its U-Net++ decoder, and trains under task-prioritized loss scheduling (TPLS), a scheduled reconstruction prior. In simulation, STSF+TPLS surpasses the prior image-free baseline on three datasets at 3.13% sampling (+3.2 to +9.9 pp foreground mIoU) and plateaus down to 0.39%. The strongest clean-trained reconstruct-then-segment baseline wins the noiseless limit, but under calibrated measurement noise image-free inference overtakes it, for a measured reason: the reconstruction pipeline amplifies the identical measurement noise before its segmenter reads it. Each region fails in its own signature: collapse, imprinting, or coarsening. STSF+TPLS transfers without fine-tuning to a real single-pixel bench as a proof of concept, at about 14 ms per mask. Charting the lift turns a scattered design space into a map of which lift to deploy at each operating point. Code and pretrained weights: https://github.com/Hanyuyuan6/STSF-TPLS

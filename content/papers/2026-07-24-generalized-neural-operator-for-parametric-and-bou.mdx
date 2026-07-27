@@ -1,0 +1,21 @@
+---
+title: "参数和边界值问题的广义神经算子"
+title_en: "Generalized Neural Operator for Parametric and Boundary-Value Problems"
+authors: ["Ruoyan Li", "Yizhou Sun", "Wei Wang"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.21932v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+开发偏微分方程 (PDE) 的基础神经模拟器需要跨不同物理参数和边界条件的稳健泛化。然而，当前的深度学习方法在很大程度上面临着与条件无关的部署和物理保真度之间的结构性权衡。纯数据驱动的算子隐式推断底层物理，因此缺乏确保跨不同领域的物理有效解决方案所需的显式约束，从而导致学习问题不适定。另一方面，物理信息神经网络 (PINN) 强制执行严格的物理约束，但需要昂贵的特定于实例的优化。此外，新兴基础算子的大规模严重降低了它们的推理速度，使得它们在计算上与传统数值求解器相比没有竞争力。为了解决与条件无关的部署、物理严谨性和推理效率之间的瓶颈，我们提出了 \textit{广义神经运算符}。通过形式化神经...
+
+## English Summary
+
+Developing foundational neural simulators for Partial Differential Equations (PDEs) requires robust generalization across diverse physical parameters and boundary conditions. However, current deep learning approaches largely face a structural trade-off between condition-agnostic deployment and physical fidelity. Purely data-driven operators infer the underlying physics implicitly and thus lack the explicit constraints needed to ensure physically valid solutions across varying domains, rendering the learning problem ill-posed. On the other hand, Physics-Informed Neural Networks (PINNs) enforce rigorous physical constraints but necessitate costly, instance-specific optimization. Furthermore, the massive scale of emerging foundational operators has severely degraded their inference speeds, making them computationally uncompetitive with traditional numerical solvers. To address this bottleneck between condition-agnostic deployment, physical rigor, and inference efficiency, we propose a \textit{Generalized Neural Operator}. By formalizing the classical conditions for well-posedness within neural operators, our framework demonstrates the theoretical benefits of explicitly conditioning on PDE parameters and boundary conditions. To implement this synthesis without compromising computational speed, we introduce three novel architectural components: a parameter-gated mixture of kernels for efficient parameter generalization, a generalized boundary transfer operator that projects arbitrary boundary constraints into a unified latent Dirichlet representation, and a specialized training objective to ensure stability. Extensive experiments demonstrate that our theoretically grounded approach achieves superior generalization across heterogeneous physical regimes while maintaining strict inference efficiency comparable to conventional numerical baselines.

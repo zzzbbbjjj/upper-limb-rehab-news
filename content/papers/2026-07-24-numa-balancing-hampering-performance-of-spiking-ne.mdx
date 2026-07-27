@@ -1,0 +1,21 @@
+---
+title: "NUMA 平衡阻碍尖峰网络模拟的性能"
+title_en: "NUMA balancing hampering performance of spiking network simulations"
+authors: ["Melissa Lober", "Alp Inangu", "Gorka Peraza Coppola", "Dennis Terhorst", "Sebastian Gillessen", "Jan Vogelsang", "Hans Ekkehard Plesser", "Brian Wylie", "Benedikt Steinbusch", "Guido Trensch"]
+date: "2026-07-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.22275v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+如今的计算中心大多运行基于 CPU 和 GPU 的传统系统，其中降低能耗的直接方法是减少应用程序的运行时间。神经形态计算有望为人工智能提供一种具有更高能源效率的替代架构。在这一努力中，在传统超级计算机上模拟大规模尖峰网络的代码是参考。我们表明，关闭自动 NUMA 平衡可以减少 30% 的能耗。就成本效益而言，这使提高计算中心能源效率的其他尝试相形见绌。尖峰网络模拟代码的内存访问模式与自动 NUMA 平衡动态交互。这不会影响模拟结果的正确性，因此在日常神经科学研究中不会被注意到。然而，在性能分析中，时间测量的波动阻碍了优化模拟技术的尝试。新的时间和计算节点解析性能显示揭示了分布式尖峰网络模拟的细...
+
+## English Summary
+
+Computing centers today mostly operate conventional CPU- and GPU-based systems, where the direct way of decreasing energy consumption is a reduction in the applications' runtime. Neuromorphic computing promises an alternative architecture with improved energy efficiency for artificial intelligence. In this endeavor, code for the simulation of large-scale spiking networks on conventional supercomputers is the reference. We show that turning off automatic NUMA balancing may reduce energy consumption by 30%. This dwarfs other attempts of increasing the energy efficiency of a computing center with respect to cost effectiveness. The memory access pattern of spiking network simulation code dynamically interacts with automatic NUMA balancing. This does not affect the correctness of simulation results and thus goes unnoticed in day-to-day neuroscience research. In performance analysis, however, time measurements fluctuate obstructing attempts to optimize simulation technology. A new time- and compute-node resolved performance display exposes the fine-grained temporal variability of distributed spiking network simulations. The analysis uncovers that automatic NUMA balancing is of disadvantage and affects the jemalloc library for thread-aware memory allocation in a transient manner. The method also allows developers to detect perturbations of the HPC system and target specific improvements to simulation technology. As a consequence, we have equipped our supercomputers with an option to turn on or off automatic NUMA balancing on a per-job basis on the user level. This gives researchers the opportunity to find the best setting for the application at hand. There are indications in the literature that the effect has been observed before, yet it does not seem common knowledge in scientific computing. It remains to be investigated how widespread the phenomenon is among scientific codes.
