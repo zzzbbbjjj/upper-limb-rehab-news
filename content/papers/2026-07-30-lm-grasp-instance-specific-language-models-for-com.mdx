@@ -1,0 +1,21 @@
+---
+title: "LM-GRASP：通过在线模仿学习进行组合构建的特定于实例的语言模型"
+title_en: "LM-GRASP: Instance-Specific Language Models for Combinatorial Construction via Online Imitation Learning"
+authors: ["Mohand Mezmaz", "Grégoire Danoy"]
+date: "2026-07-30"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.28135v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+用于组合优化的机器学习通常依赖于通过强化学习在大型离线数据集上针对固定问题类进行训练的神经构造函数，这会导致较高的预训练成本，并且在训练分布之外的泛化能力很差。我们提出了一种替代方案：一种元启发式框架，将 GRASP 的随机构建阶段重新表述为在线模仿学习任务，并针对每个问题实例从头开始进行训练。本地搜索过程充当专家预言机，而仅解码器的 Transformer 充当建设性策略。与经典的 GRASP 不同，经典的 GRASP 依赖于基于局部标量成本的静态、短视的启发式规则，我们的方法完全由数据驱动：构建策略来自搜索本身发现的高质量解决方案，不需要针对特定​​问题的特征工程。   我们将其实例化为 ...
+
+## English Summary
+
+Machine learning for combinatorial optimization typically relies on neural constructors trained via reinforcement learning on large offline datasets for a fixed problem class-incurring high pretraining costs and generalizing poorly outside the training distribution. We propose an alternative: a metaheuristic framework that reformulates the randomized constructive phase of GRASP as an online imitation learning task, trained from scratch on each problem instance. A local search procedure acts as an expert oracle, while a decoder-only Transformer serves as the constructive policy. Unlike classical GRASP, which relies on static, myopic heuristic rules based on localized scalar costs, our approach is fully data-driven: the construction policy emerges from high-quality solutions discovered during the search itself, with no problem-specific feature engineering required.   We instantiate this as LM-GRASP, a hybrid metaheuristic following an iterative learn-infer-improve cycle, training the policy online via behavioral cloning on a dynamic archive of elite trajectories-no external data or offline pretraining needed. The pipeline interfaces with the domain solely through the objective evaluator used by local search.   Evaluated on the Taillard PFSP benchmark (ta51-ta60), the most discriminating block due to half its optima being unknown, LM-GRASP outperforms GPU-GRASP by 28.4 makespan units on average-comparable to the gain from GPU acceleration over sequential execution (27.2 units), though with overlapping standard deviations. This suggests instance-specific, online-trained language models are a promising, practical alternative to hand-engineered constructors, especially for landscapes resistant to classical greedy construction.

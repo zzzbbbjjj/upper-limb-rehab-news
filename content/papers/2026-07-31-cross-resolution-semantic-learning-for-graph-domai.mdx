@@ -1,0 +1,21 @@
+---
+title: "图域适应的跨分辨率语义学习"
+title_en: "Cross-Resolution Semantic Learning for Graph Domain Adaptation"
+authors: ["Yingxu Wang", "Haoze Huang", "Zhongkai Zheng", "Shangsong Liang"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29365v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+图域适应（GDA）将预测知识从标记的源图转移到分布转移下的未标记的目标图。现有方法对齐表示或正则化图结构，但没有明确建模在不同源邻域范围学习到的类判别知识应如何跨目标范围路由。我们将由图表示编码的邻域范围称为其传播分辨率，并将语义分辨率偏移定义为传播分辨率的跨域变化，在该变化中类别区分证据最强。这种转变可能会使固定的相同分辨率配对变得次优，并增加负迁移的风险。为了解决这个问题，我们提出了跨分辨率语义学习（CReSL），这是一种从跨域类结构中学习软源到目标分辨率对应关系的 GDA 方法。首先，CReSL 使用共享图神经网络和可学习的分辨率嵌入构建多分辨率表示库，并为每个源分辨率配备一个分辨率索引...
+
+## English Summary
+
+Graph Domain Adaptation (GDA) transfers predictive knowledge from labeled source graphs to unlabeled target graphs under distribution shift. Existing methods align representations or regularize graph structures, but do not explicitly model how class-discriminative knowledge learned at different source neighborhood ranges should be routed across target ranges. We call the neighborhood range encoded by a graph representation its propagation resolution and define semantic resolution shift as a cross-domain change in the propagation resolutions at which class-discriminative evidence is strongest. Such shifts can make fixed same-resolution pairing suboptimal and increase the risk of negative transfer. To address this issue, we propose Cross-Resolution Semantic Learning (CReSL), a GDA method that learns soft sourceto-target resolution correspondence from cross-domain class structure. First, CReSL constructs a multi-resolution representation bank using a shared Graph Neural Network and learnable resolution embeddings, with a resolution-indexed expert for each source resolution. Second, CReSL introduces Cross-Resolution Prototype Transport, which constructs class-resolution prototypes from source labels and soft target posteriors and converts cross-domain prototype discrepancies into expert-specific routing over target resolutions. Third, CReSL introduces Cross-Resolution Target Grafting, which constructs posterior-weighted target-to-source prototype displacements and enforces correspondence-weighted prediction consistency for instance-level adaptation under class uncertainty. Extensive experiments on graph benchmarks under diverse domain shifts show that CReSL outperforms strong representative baselines across most settings.

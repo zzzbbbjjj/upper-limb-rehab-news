@@ -1,0 +1,21 @@
+---
+title: "通过屏障增强流匹配的安全视觉语言动作模型"
+title_en: "Safe Vision Language Action Models via Barrier Enhanced Flow Matching"
+authors: ["Kasra Sinaei", "Hung-Chieh Wu", "Donald Ebeigbe"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29569v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+本文提出了一个模块化推理框架，它将流匹配生成模型与正式的控制屏障函数 (CBF) 安全保证集成在一起。与将外部安全过滤器应用于模型最终输出的现有方法不同，我们的方法修改了模型内的流量匹配去噪过程，以固有地生成安全轨迹。通过采用平滑的对数和指数聚合屏障，我们增强了整个操作块的安全性。这种聚合屏障确保计算开销的增加最小化，并且不会改变模型的语义意图。我们表明，在所提出的框架内，生成的分布和目标分布之间的 2-Wasserstein 距离仍然有界。我们的方法消除了对特定安全数据集或昂贵的模型再训练的需求，为安全推理提供了通用的解决方案。我们在两个机器人操作平台和 2D 导航基准上验证了该方法，验证我...
+
+## English Summary
+
+This article presents a modular inference framework that integrates Flow Matching generative models with formal Control Barrier Function (CBF) safety guarantees. Unlike existing methods that apply external safety filters to a model's final output, our approach modifies the Flow Matching denoising process within the model to inherently generate safe trajectories. By employing a smooth Log-Sum-Exponential aggregate barrier, we enforce safety over entire action chunks. This aggregate barrier ensures a minimal increase in computational overhead and does not alter the semantic intent of the model. We show that, within the proposed framework, the 2-Wasserstein distance between the generated distribution and the target distribution remains bounded. Our method eliminates the need for safety-specific datasets or costly model retraining, providing a versatile solution for safe inference. We validate the approach on two robotic manipulation platforms and a 2D navigation benchmark, verifying that our framework achieves reliable safety without degrading the success rate of the model.

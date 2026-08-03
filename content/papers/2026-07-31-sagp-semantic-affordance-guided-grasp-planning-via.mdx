@@ -1,0 +1,21 @@
+---
+title: "SAGP：通过粗区 VLM 推理进行语义可供引导的掌握规划"
+title_en: "SAGP: Semantic Affordance-Guided Grasp Planning via Coarse-Zone VLM Reasoning"
+authors: ["Muhayy Ud Din", "Irfan Hussain"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29374v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+基于几何的抓取规划器可确保物理上有效的抓取，但忽略功能语义，通常会生成相反且无碰撞但实际上不合适的抓取，例如，抓住杯子的边缘、抓住刀的刀片或靠近瓶盖的瓶子。即使满足传统的掌握指标，这些不一致也会导致下游任务失败。现有的视觉语言模型（VLM）方法要么依赖于细粒度、特定类别的部分分割，要么尝试直接推断抓取姿势，后者容易产生空间幻觉。因此，目前还没有提出实用的、免训练的框架来将高级语义推理与几何掌握规划稳健地联系起来。我们引入了语义可供性引导的掌握规划（SAGP），这是一种建立在粗区抽象层上的免训练管道。该方法首先通过应用基于 PCA 的对齐，然后进行距离驱动的 DBSCAN 聚类，将对象点云划分为...
+
+## English Summary
+
+Geometry-based grasp planners ensure physically valid grasps but ignore functional semantics, often generating grasps that are antipodal and collision-free yet practically inappropriate, for example, gripping a mug by its rim, a knife by the blade, or a bottle near its cap. These inconsistencies cause the downstream task to fail even when traditional grasp metrics are met. Existing vision-language model (VLM) approaches either depend on fine-grained, category-specific part segmentation or attempt to directly infer grasp poses, with the latter prone to spatial hallucinations. As a result, no practical, training-free framework has yet been proposed that robustly links high-level semantic reasoning to geometric grasp planning. We introduce Semantic Affordance-Guided Grasp Planning (SAGP), a training-free pipeline built on a coarse-zone abstraction layer. The method first partitions the object point cloud into spatial regions (top, middle, bottom, lateral sides, and protrusions) by applying PCA-based alignment followed by distance-driven DBSCAN clustering, entirely bypassing learned segmentation. A pre-trained VLM then assesses the grasp quality of each region through a structured zero-shot query, and the resulting zone-wise scores are fused with geometric, reachability, and task-alignment signals to re-rank antipodal grasp candidates. Experiments on YCB objects in PyBullet with a Franka Panda robot show that SAGP preserves the high success rate of geometry-only planning while substantially improving the functional appropriateness of selected grasps, particularly on asymmetric, handle-bearing objects where geometry alone is uninformative. The introduced coarse-zone abstraction offers an effective, training-free bridge between VLM-based reasoning and geometric grasp planning, without the need for fine-grained part segmentation.

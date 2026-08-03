@@ -1,0 +1,21 @@
+---
+title: "MHRGait：动量人体装备姿势的步态识别"
+title_en: "MHRGait: Gait Recognition from Momentum Human Rig Pose"
+authors: ["Huiran Duan", "Qian Zhou", "Xianda Guo", "Hua Zou", "Guoying Zhao", "Zhongyuan Wang", "Yingli Tian"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29083v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+步态识别由其输入表示决定。轮廓编码投影的身体形状，骨骼编码稀疏的关节坐标，3D 网格编码密集的表面几何形状。在每种情况下，通过几何载体观察到承载身份的清晰度，这些几何载体也随着服装、骨骼尺度或体形而变化。我们研究是否可以通过紧凑的铰接控制来识别步态。我们引入 Momentum Human Rig (MHR) 姿势作为步态表示，使用从单目视频估计的 184 个语义组织的身体和手部参数来描述每一帧。 MHRGait 通过解剖学对这些异构控制进行分组，对它们的帧内协调和时间演化进行建模，并生成紧凑的身体和手部描述符。我们进一步介绍了 MHRGait++，它通过模态平衡距离融合将 MHR 姿态与轮廓结...
+
+## English Summary
+
+Gait recognition is shaped by its input representation. Silhouettes encode projected body shape, skeletons encode sparse joint coordinates, and 3D meshes encode dense surface geometry. In each case, identity-bearing articulation is observed through geometric carriers that also vary with clothing, skeletal scale, or body shape. We investigate whether gait can instead be recognized from compact articulated controls. We introduce Momentum Human Rig (MHR) pose as a gait representation, describing each frame using 184 semantically organized body and hand parameters estimated from monocular video. MHRGait groups these heterogeneous controls by anatomy, models their intra-frame coordination and temporal evolution, and produces compact body and hand descriptors. We further introduce MHRGait++, which combines MHR pose with silhouettes through modality-balanced distance fusion, preventing descriptor count from determining modality importance. Experiments on four benchmarks show that MHRGait attains the best overall performance among compared model-based methods on CCPG and SUSTech1K and transfers effectively across datasets, while its recognition network requires only 2.76M parameters and 0.69 GFLOPs for a 30-frame input. MHRGait++ consistently improves silhouette recognizers with a favorable accuracy-efficiency trade-off. These results establish rig-space articulation as an effective standalone gait representation and a complementary cue to projected body shape. Our code is available at https://github.com/duanhuiran/MHRGait.

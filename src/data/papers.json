@@ -1,5 +1,2120 @@
 [
   {
+    "title": "随机乘法函数部分和的几乎确定的尖锐上限",
+    "title_en": "A sharp almost sure upper bound for partial sums of random multiplicative functions",
+    "authors": [
+      "Benjamin Durkan",
+      "Andrew Pearce-Crump"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29429v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-a-sharp-almost-sure-upper-bound-for-partial-sums-o",
+    "content": "## 中文摘要\n\n我们证明，对于 Steinhaus 随机乘法函数或 Rademacher 随机乘法函数 $f$，以及每个 $\\eps>0$，几乎可以肯定 $$ \\left|\\sum_{n\\le x}f(n)\\right|\\ll_{\\eps,f}\\sqrt{x}(\\log\\log x)^{1/4+\\eps}。 $$ 与哈珀几乎确定的下限一起，这决定了两个模型中的锐对数指数。这解决了哈珀关于随机乘法函数大波动的猜想。\n\n## English Summary\n\nWe prove that, for either a Steinhaus random multiplicative function or a Rademacher random multiplicative function $f$, and every $\\eps&gt;0$, almost surely $$ \\left|\\sum_{n\\le x}f(n)\\right|\\ll_{\\eps,f}\\sqrt{x}(\\log\\log x)^{1/4+\\eps}. $$ Together with Harper's almost sure lower bound, this determines the sharp logarithmic exponent in both models. This settles Harper's conjecture on the large fluctuations of random multiplicative functions.",
+    "readingTime": 1
+  },
+  {
+    "title": "贝叶斯非参数不一致的简单示例",
+    "title_en": "A Simple Example of Bayesian Nonparametric Inconsistency",
+    "authors": [
+      "Antonio R. Linero"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28958v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-a-simple-example-of-bayesian-nonparametric-inconsi",
+    "content": "## 中文摘要\n\n我提出了一个非常简单的例子，其中完全支持先验的分布函数具有不一致的后验，我相信这具有指导价值。示例为贝叶斯分层模型 $[Y_i \\mid P] \\stackrel{\\text{iid}}{\\sim} P$ 下的 $Y_i \\stackrel{\\text{iid}}{\\sim} P_0$ 和 $P \\sim \\int \\mbox{DP}(α, H) \\, π_α(α) \\ dα$（当 $π_α(\\cdot)$ 具有指数（或更重）尾部时），其中$\\mbox{DP}(α, H)$表示狄利克雷过程，浓度参数为$α$，平均值为$H(\\cdot)$；另一方面，在轻尾先验下获得了一致性。这统一并概括了 Fr...\n\n## English Summary\n\nI present a very simple example in which a full-support prior over distribution functions has an inconsistent posterior, which I believe has instructive value. The example is $Y_i \\stackrel{\\text{iid}}{\\sim} P_0$ under the Bayesian hierarchical model $[Y_i \\mid P] \\stackrel{\\text{iid}}{\\sim} P$ and $P \\sim \\int \\mbox{DP}(α, H) \\, π_α(α) \\ dα$ when $π_α(\\cdot)$ has exponential (or heavier) tails, where $\\mbox{DP}(α, H)$ denotes a Dirichlet process with concentration parameter $α$ and mean $H(\\cdot)$; on the other hand, consistency is obtained under a light-tailed prior. This unifies and generalizes a consistency result of Freedman and Diaconis (1983) with an inconsistency result described by Ferguson et al. (1992).",
+    "readingTime": 1
+  },
+  {
+    "title": "AquaJEPA：水下机器人动力学的动作条件多模态预测表示",
+    "title_en": "AquaJEPA: Action-Conditioned Multimodal Predictive Representations for Underwater Robot Dynamics",
+    "authors": [
+      "Alan-Barsag Gazzaev",
+      "Alexey Gavrilov",
+      "Sergey Muravyov"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29393v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-aquajepa-action-conditioned-multimodal-predictive-",
+    "content": "## 中文摘要\n\n水下机器人结合了互补传感器，其可靠性随着水能见度、视角和车辆运动而突然变化。我们推出了 AquaJEPA，这是一种动作条件联合嵌入预测模型，它融合了 RGB 摄像头、前视声纳和具有明确传感器有效性的本体感觉。它预测以八个推进器命令为条件的未来潜在目标，并向共享后退地平线规划器提供速度和声纳轮廓预测。我们研究了 Stonefish 中针对反应​​性、纯状态、普通多模态、监督动力学和循环世界模型基线的方法。我们进一步隔离 EMA 目标、行动裕度、掩码和模态 dropout。预先注册的 120 个环境复制包括五个独立的网格复制，跨越三个看不见的障碍物地图、四个水能见度系数以及标称动态与移动动态，同时...\n\n## English Summary\n\nUnderwater robots combine complementary sensors whose reliability changes abruptly with water visibility, viewpoint, and vehicle motion. We introduce AquaJEPA, an action-conditioned joint-embedding predictive model that fuses an RGB camera, forward-looking sonar, and proprioception with explicit sensor validity. It predicts a future latent target conditioned on eight-thruster commands and supplies velocity and sonar-profile predictions to a shared receding-horizon planner. We study the method in Stonefish against reactive, state-only, ordinary multimodal, supervised dynamics, and recurrent world-model baselines. We further isolate the EMA target, action margin, masks, and modality dropout. A preregistered 120-environment replication comprises five independent replicates of a grid crossing three unseen obstacle maps, four water-visibility coefficients, and nominal versus shifted dynamics, while intermittently removing DVL observations. In 120 fresh paired environments with scheduled DVL loss, AquaJEPA reaches 74 goals, versus 68 for both state-only and the recurrent world model, and attains the lowest mean final error (0.906 m). Paired final-error reductions relative to ordinary multimodal prediction, supervised dynamics, and the recurrent world model are 0.273 m (95% CI: 0.190-0.356), 0.364 m (0.260-0.468), and 0.106 m (0.025-0.187), respectively. AquaJEPA therefore achieves the best aggregate closed-loop performance and significantly outperforms three action-conditioned predictive baselines in paired final error; its advantage over state-only remains statistically unresolved.",
+    "readingTime": 2
+  },
+  {
+    "title": "人工智能：供应链瓶颈和产业政策的影响范围",
+    "title_en": "Artificial Intelligence: Supply-Chain Chokepoints and the Reach of Industrial Policy",
+    "authors": [
+      "Piyush Akimitsu"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29572v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-artificial-intelligence-supply-chain-chokepoints-a",
+    "content": "## 中文摘要\n\n人工智能依赖于一系列输入、计算模型、芯片计算以及电力和精炼矿物芯片。本文根据引用和可重复的数据测量了赫芬达尔-赫希曼指数（HHI）这一尺度上每一层的浓度。以下是三个发现。首先，浓度形成明显的梯度。它是适度的下游，公众和监管机构的关注度最高，模型使用和云低于美国机构视为高度集中的 1{,}800 大关。它在上游陡峭地上升，那里的公众话语很少。先进封装得分为 8{,}100，领先的光刻技术得分达到 10{,}000 的上限，并且一个国家主导了几种关键矿物的生产或精炼，其中镓接近这一最高值。其次，这些上游层是整个人工智能经济的瓶颈和战略漏洞。反垄断无法触及它们，因为它们掌握在外国人或国家手中。对它们...\n\n## English Summary\n\nArtificial intelligence depends on a stack of inputs, models on compute, compute on chips, and chips on electricity and refined minerals. This paper measures the concentration of each layer on one scale, the Herfindahl-Hirschman Index (HHI), from cited and reproducible data. Three findings follow. First, concentration forms a clear gradient. It is modest downstream, where public and regulatory attention is heaviest and model usage and cloud fall below the 1{,}800 mark United States agencies treat as highly concentrated. It rises steeply upstream, where public discourse is sparse. There advanced packaging scores 8{,}100, leading-edge lithography reaches the ceiling of 10{,}000, and one country dominates the production or refining of several critical minerals, gallium near that maximum. Second, these upstream layers are chokepoints and a strategic vulnerability for the whole AI economy. Antitrust cannot reach them, because they lie in foreign or state hands. Contesting them falls to export controls and domestic industrial policy. Third, placing reserves beside refining shows the concentration is built rather than geological, a variable industrial policy can move. A rise in an upstream input's price barely changes the cost of the product built from it, because the input is only a small share of that cost. A chokepoint's threat is therefore the loss of the input itself rather than a higher price.",
+    "readingTime": 2
+  },
+  {
+    "title": "不同长度弹力面料的自动直线缝纫",
+    "title_en": "Automated Straight-line Sewing of Stretchable Fabrics with Different Lengths",
+    "authors": [
+      "Bingchen Jin",
+      "Akinari Kobayashi",
+      "Dipankar Bhattacharya",
+      "Akira Seino",
+      "Fuyuki Tokuda",
+      "Norman Chihnan Tien",
+      "Kazuhiro Kosuge"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29464v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-automated-straight-line-sewing-of-stretchable-fabr",
+    "content": "## 中文摘要\n\n不同长度对齐缝纫 (DLAS) 涉及拉伸较短的织物以匹配较长的织物，然后将它们沿直线缝合在一起，这是一项具有挑战性的任务，在自动化缝纫过程时需要满足多项要求。为了应对这些挑战，本研究提出了一种新型机器人缝纫系统，即不同长度机器人缝纫系统（DLRoSS），它由一个滚轮式末端执行器组成，连接到一个六自由度机械手。末端执行器由主动的较短和较长的织物辊以及连接到较短织物辊的被动压辊组成。假设两层织物的一端最初位于缝纫机压脚下方，则系统通过四个不同阶段的操作来实现 DLAS 的自动化。 (P1) 织物包裹：各个织物层被拾取、固定并从另一端包裹到送料辊上。 (P2) 缝纫：在缝纫过程中，根据缝纫速度和先验...\n\n## English Summary\n\nDifferent Length Alignment Sewing (DLAS), which involves stretching the shorter fabric to match the longer one and sewing them together in a straight line, is a challenging task that needs to satisfy several requirements when automating the sewing process. To address the challenges, this research proposes a novel robotic sewing system, Different Length Robotic Sewing System (DLRoSS), which consists of a roller type end-effector, attached to a 6-DoF manipulator. The end-effector composed of active shorter and longer fabric rollers, and a passive press-roller attached to the shorter-fabric roller. Assuming that one end of the two fabric layers are initially positioned under the sewing machine's presser foot, the system automates DLAS by operating in four distinct phases. (P1) Fabric wrapping: Individual fabric layers are picked, held, and wrapped from the other end onto the feed rollers. (P2) Sewing: During the sewing, the shorter fabric is stretched and aligned with the longer fabric in real-time using roller velocity control based on the sewing speed and apriori known length ratio. (P3) Sewing completion: In the final sewing round on the fabric rollers, the press roller is engaged to prevent the stretched fabric from slipping off due to internal tension. (P4) Sewing fabric release: At the end of sewing, the fabric edge moves past the press roller, and the fabric releases from the rollers. Experimental results demonstrate that DLRoSS achieves consistent, high-quality sewing of stretchable fabrics of different materials and lengths.",
+    "readingTime": 2
+  },
+  {
+    "title": "人形与物体质量的平衡：权衡分析和提升控制",
+    "title_en": "Balancing of Humanoid with Object Mass: Trade-off Analyses and Lifting Control",
+    "authors": [
+      "Hyunjong Song",
+      "William Z. Peng",
+      "Joo H. Kim"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29625v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-balancing-of-humanoid-with-object-mass-trade-off-a",
+    "content": "## 中文摘要\n\n最近，对物体的人形机器人操作任务的需求有所增加，并且大多数现有的用于此类任务稳定性的控制方法都依赖于启发式或机器学习技术。这项研究严格分析和利用了物体质量对平衡稳定性的动态影响。通过使用分布式接触扳手和姿态接触处的压力中心来制定全身动力学中的物体质量参数，量化它们对系统动量和约束的非线性影响。动态模型和约束被纳入平衡状态盆地/边界 (BSB) 的构造中，平衡状态盆地/边界 (BSB) 是两足动物系统的质心状态空间的划分，以保持其所需接触的平衡。使用人形机器人和分析上易于处理的降阶机制强调了 BSB 对预测和控制的影响。不同支撑基础、驱动能力和姿态条件下的 BSB 提供了物体质量对系统平衡能力影...\n\n## English Summary\n\nThe demand for humanoid loco-manipulation tasks with an object has recently increased, and most existing control approaches for stability in such tasks rely on heuristics or machine-learning techniques. This study rigorously analyzes and exploits the dynamic effects of the object mass on balance stability. By formulating the object mass parameters in the whole-body dynamics with distributed contact wrenches and centers of pressure at the stance contacts, their nonlinear effects on the system momenta and constraints are quantified. The dynamic models and constraints are incorporated into the construction of the balanced state basin/boundary (BSB), a partition of the center-of-mass state space for a biped system to maintain balance in its desired contacts. The implications of the BSB for prediction and control are highlighted using a humanoid robot and an analytically tractable reduced-order mechanism. The BSBs under different conditions of base of support, actuation capacity, and pose provide systematic analyses of the effects of object mass on the balancing capability of a system. In particular, the trade-off relationships between momentum regulation and limiting factors in balancing are characterized, introducing two key quantities of the object: the critical mass, at which the system's balancing capability is maximum, and the transition mass, which activates different limiting factors. In addition, sufficient conditions for imposing balanced states on a trajectory are established and implemented with BSBs as explicit threshold constraints in the whole-body trajectory optimization for stable object-lifting control of the humanoid, demonstrating the lift-and-hold and lift-and-release tasks with distinct mass properties in simulations and experiments.",
+    "readingTime": 2
+  },
+  {
+    "title": "树的二分极值数",
+    "title_en": "Bipartite Extremal Numbers of Trees",
+    "authors": [
+      "Lucas Waite",
+      "Nuh Aydin"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29579v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-bipartite-extremal-numbers-of-trees",
+    "content": "## 中文摘要\n\n我们研究了经典的 Erdős-Sós 问题（树的极值数量）对二分主图类的限制，无论是当仅规定主的顺序还是当其两个部分大小固定时。我们给出自然的下界构造并制定相应的线性上限猜想。我们应用$k$-极小性的加权变体来证明一系列树的上限，包括扫帚、部分大小最多相差一个的树以及最多 7 个顶点的所有树，从而解决了 Caro、Patkós 和 Tuza 问题的一部分直至加性常数。我们还将树的固定部分极值数与普通极值数联系起来，并考虑类似于 Zarankiewicz 函数的有向二分极值函数。\n\n## English Summary\n\nWe study a restriction of the classical Erdős--Sós problem, the extremal number of trees, to the class of bipartite host graphs, both when only the order of the host is prescribed and when its two part-sizes are fixed. We give natural lower-bound constructions and formulate corresponding linear upper-bound conjectures. We apply a weighted variant of $k$-minimality to prove upper bounds for a broad family of trees including brooms, trees with part-sizes differing by at most one, and all trees on at most 7 vertices, resolving part of a problem of Caro, Patkós and Tuza up to additive constants. We also relate the fixed-part extremal number of a tree to the ordinary extremal number, and consider an oriented bipartite extremal function analogous to the Zarankiewicz function.",
+    "readingTime": 1
+  },
+  {
+    "title": "使用误差界引导二元分类的自监督学习：机器人插入任务的案例研究",
+    "title_en": "Bootstrapping Self-Supervised Learning of Binary Classification Using Error Bounds: A Case Study on a Robotic Insertion Task",
+    "authors": [
+      "Zebin Duan",
+      "Norbert Krüger",
+      "Juan Heredia",
+      "Thorbjørn Mosekjær Iversen",
+      "Frederik Hagelskjær"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29640v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-bootstrapping-self-supervised-learning-of-binary-c",
+    "content": "## 中文摘要\n\n灵活的制造需要快速部署解决方案和最短的设置时间才能保持竞争力。一个基本属性是控制错误级别的能力，因为故障的范围可能从轻微的性能下降到严重的设备损坏。然而，传统部署通常涉及大量设置、数据收集、模型训练或参数调整以及系统测试，导致严重延迟，阻碍商业可行性。我们提出了一种数据引擎，可以在执行任务时收集数据并提高其性能。数据引擎由两个分类器、快速模型预测和昂贵的验证组成。首先，执行模型预测，并根据预测的置信水平，可以使用昂贵的验证。通过调整置信水平，用户可以控制可容忍误差的水平。   我们的方法是在现实世界的机器人插入任务上实现的，该任务使用力数据进行模型预测。该系统应用 UMAP 降维并使用 Wil...\n\n## English Summary\n\nFlexible manufacturing requires rapid deployment of solutions and minimal setup time to remain competitive. An essential attribute is the ability to control error levels, as failures can range from minor performance degradation to severe equipment damage. However, conventional deployment often involves extensive setup, data collection, model training or parameter tuning, and system testing, resulting in significant delays that hinder commercial feasibility. We propose a data engine which gathers data and improves its performance while executing the task. The data engine consists of two classifiers, a fast model prediction and expensive verification. First, a model prediction is performed and based on the confidence level of the prediction, the expensive verification can be used. By adjusting the confidence level, users can control the level of tolerable error.   Our method is implemented on a real-world robotic insertion task, which uses force data for the model prediction. The system applies UMAP dimensionality reduction and uses Wilson-Score to compute the confidence bounds of the prediction. Results demonstrate the ability to learn and reduce the need for expensive verifications over time, while staying within the set error-rate. The results highlight the potential of confidence bounds in self-improving models to enhance reliability in robotic classification task.",
+    "readingTime": 2
+  },
+  {
+    "title": "BWM：用于机器人学习的低成本高保真世界模拟器",
+    "title_en": "BWM: A Low-Cost High-Fidelity World Simulator for Robot Learning",
+    "authors": [
+      " BWM Team"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29302v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-bwm-a-low-cost-high-fidelity-world-simulator-for-r",
+    "content": "## 中文摘要\n\n可靠的机器人学习需要一个世界模拟器，该模拟器可以在物理硬件上执行之前预测动作后果，包括有风险和容易失败的结果。现有的物理模拟器需要大量的资产构建和校准，并且仍然面临模拟与真实的差距，而视频生成器通常缺乏对细粒度机器人动作响应的精确控制。在本文中，我们提出了无边界世界模型（BWM），这是一种用于机器人操纵的开源、低成本、高保真世界模拟器。 BWM 是一种动作条件世界模型，它结合了初始环境引导、动态视觉历史和时间对齐的机器人动作条件，用于对未来观测进行状态自回归预测。我们通过轨迹回放、重叠剪辑采样和初始观察增强来构建动作对齐的训练剪辑。 BWM 充当数据引擎，通过与行动一致的部署来增强模仿学习数据...\n\n## English Summary\n\nReliable robot learning requires a world simulator that can predict action consequences before execution on physical hardware, including risky and failure-prone outcomes. Existing physics simulators require substantial asset construction and calibration and still face a sim-to-real gap, while video generators often lack precise control over their responses to fine-grained robot actions. In this paper, we present the Boundless World Model (BWM), an open-source, low-cost, high-fidelity world simulator for robot manipulation. BWM is an action-conditioned world model that combines initial-environment guidance, dynamic visual history, and temporally aligned robot-action conditioning for stateful autoregressive prediction of future observations. We construct action-aligned training clips through trajectory replay, overlapping clip sampling, and initial-observation enhancement. BWM serves as a data engine that augments imitation-learning data with action-aligned rollouts, and as a policy evaluator for closed-loop assessment, risk anticipation, and policy ranking. Experiments on the WorldArena benchmark and physical robots demonstrate improved simulator fidelity and functional utility across the data-engine and policy-evaluator settings. BWM ranks first overall in the WorldArena Challenge across Track 1 and its two Track 2 applications. We release the BWM open-source ecosystem, including model checkpoints, training and inference code, and interfaces for data generation and policy evaluation.",
+    "readingTime": 2
+  },
+  {
+    "title": "CatBoost 与光谱能量分布拟合：在受控光度不完整性下估计星系特性",
+    "title_en": "CatBoost versus Spectral Energy Distribution-Fitting: Estimating Galaxy Properties under Controlled Photometric Incompleteness",
+    "authors": [
+      "Vahid Asadi",
+      "Hosein Haghi",
+      "Akram Hasani Zonoozi"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29437v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-catboost-versus-spectral-energy-distribution-fitti",
+    "content": "## 中文摘要\n\n从光度数据估计星系物理参数从根本上受到天文调查中常见的测量缺失的挑战。使用 Horizon-AGN 流体动力学模拟中提供真实物理参数的模拟目录，我们在故意对抗的场景下评估 CatBoost（一种原生处理缺失数据的梯度增强算法）：我们在 12 个光度波段上对其进行训练，注入缺失水平不断增加（每个波段缺失 10%、20%、30%），并将其性能与使用完整 26 波段光度测定的理想化参数光谱能量分布 (SED) 拟合参考（无缺少数据，所有波段均可用）。这种不对称设计代表了传统方法的上限、最佳情况基线。尽管有这个故意的缺点，CatBoost 的性能下降是有限的：从完整数据变为缺失 30%，质量 RMSE...\n\n## English Summary\n\nEstimating galaxy physical parameters from photometric data is fundamentally challenged by missing measurements that are endemic to astronomical surveys. Using a mock catalog from the Horizon-AGN hydrodynamical simulation that provides the true physical parameters, we evaluate CatBoost, a gradient-boosting algorithm that natively handles missing data, under a deliberately adversarial scenario: we train it on 12 photometric bands with increasing levels of injected missingness (10%, 20%, 30% missing per band) and compare its performance against an idealised parametric spectral energy distribution (SED)-fitting reference that uses complete 26-band photometry (no missing data, all bands available). This asymmetric design represents an upper-bound, best-case baseline for traditional methods. Despite this intentional disadvantage, CatBoost's performance degradation is limited: moving from complete data to 30% missing, mass RMSE increases from 0.08 to 0.18 dex, SFR RMSE from 0.41 to 0.53 dex, and redshift RMSE from 0.20 to 0.28, while bias remains near zero. Against the ideal SED-fitting reference, CatBoost trained on only 12 bands with 30% missing values achieves lower errors for mass (0.18 vs. 0.28 dex) and SFR (0.53 vs. 0.57 dex) and removes the systematic biases present in the SED-fitting results. For redshift, the SED-fitting reference has lower NMAD (0.030 vs. 0.093 at extreme missingness) while CatBoost maintains smaller bias. These results suggest that CatBoost's native handling of missing values can offer practical advantages for extracting galaxy properties from imperfect photometric surveys, at least under the conditions explored here.",
+    "readingTime": 2
+  },
+  {
+    "title": "在单循环水平上产生 b、c 和 tau 质量的最小模型的分类",
+    "title_en": "Classification of minimal models producing b, c and tau masses at one-loop level",
+    "authors": [
+      "Lucia Stockdale",
+      "Raymond R. Volkas"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29331v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-07-31-classification-of-minimal-models-producing-b-c-and",
+    "content": "## 中文摘要\n\n标准模型既没有提供夸克和轻子质量等级的动力学解释，也没有解释为什么所有这些质量（除了顶夸克之外）与电弱尺度相比都受到抑制。受此启发，我们探索了另一种辐射质量生成假说，专门研究单环水平上的底部质量、魅力质量和 tau 质量。提出了仅使用奇异标量和奇异费米子的所有最小模型的分类，从而产生了具有四个奇异多重态的 25 种可能性。作为奖励，如果包含右手中微子场，一些模型会产生单环中微子狄拉克质量，而有些模型则具有类似 WIMP 的暗物质候选者。举例来说，我们分析了从 25 个候选集合中选择的基准模型的现象学，发现它能够在允许的参数空间内准确地复制预测的标准模型汤川耦合。\n\n## English Summary\n\nThe Standard Model neither provides a dynamical explanation for the quark and lepton mass hierarchies, nor a rationale for why all of these masses save that of the top quark are suppressed compared to the electroweak scale. Motivated by this, we explore the alternative radiative mass generation hypothesis, specialising to the generation of the bottom, charm, and tau masses at one-loop level. A classification of all minimal models that use exotic scalars and exotic fermions only is presented, resulting in 25 possibilities featuring four exotic multiplets. As a bonus, some of the models produce a one-loop neutrino Dirac mass if a right-handed neutrino field is included, and some feature WIMP-like dark matter candidates. By way of example, we analyse the phenomenology of a benchmark model chosen from the set of 25 candidates and find that it is capable of exactly replicating the predicted Standard Model Yukawa couplings within the permitted parameter space.",
+    "readingTime": 1
+  },
+  {
+    "title": "扩散环境下多臂匪徒政策梯度的收敛与遗憾",
+    "title_en": "Convergence and Regret of the Policy Gradient for Multi-Armed Bandits in Diffusion Environment",
+    "authors": [
+      "Yanwei Jia",
+      "Du Ouyang"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29593v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb"
+    ],
+    "slug": "2026-07-31-convergence-and-regret-of-the-policy-gradient-for-",
+    "content": "## 中文摘要\n\n本文研究了 Wang 等人在连续时间强化学习框架下用随机微分方程（SDE）描述的扩散环境中的多臂老虎机问题的策略梯度更新。 (2020)，贾和周 (2022b)。通过随机策略的 logit 参数化，我们表明它在任意恒定学习率下几乎肯定会收敛到最优臂。此外，当恒定学习率低于时不变阈值时，我们推导出非渐进遗憾上限；后悔界限的阶数为 $O(\\log T)$。我们通过构建新的 Lyapunov 函数改进了 Lattimore (2026a) 中对同一 SDE 的分析，并证明了使用 SDE 中的工具分析政策梯度的透明度。此外，同样的Lyapunov函数也有助于分析离散时间策略梯度算法。\n\n## English Summary\n\nThis paper studies the policy gradient update for a multi-arm bandit problem in diffusion environment that is described by a stochastic differential equation (SDE) under the continuous-time reinforcement learning framework by Wang et al. (2020), Jia and Zhou (2022b). With the logit parameterization for the stochastic policy, we show that it converges almost surely to the optimal arm under an arbitrary constant learning rate. Furthermore, we derive the non-asymptotic regret upper bound when the constant learning rate is below a time-invariant threshold; and the regret bound has order $O(\\log T)$. We improve the analysis in Lattimore (2026a) for the same SDE by constructing a novel Lyapunov function and demonstrate the transparency of analyzing policy gradient using the tools in SDEs. In addition, the same Lyapunov function is also helpful in analyzing the discrete-time policy gradient algorithm.",
+    "readingTime": 1
+  },
+  {
+    "title": "图域适应的跨分辨率语义学习",
+    "title_en": "Cross-Resolution Semantic Learning for Graph Domain Adaptation",
+    "authors": [
+      "Yingxu Wang",
+      "Haoze Huang",
+      "Zhongkai Zheng",
+      "Shangsong Liang"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29365v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-cross-resolution-semantic-learning-for-graph-domai",
+    "content": "## 中文摘要\n\n图域适应（GDA）将预测知识从标记的源图转移到分布转移下的未标记的目标图。现有方法对齐表示或正则化图结构，但没有明确建模在不同源邻域范围学习到的类判别知识应如何跨目标范围路由。我们将由图表示编码的邻域范围称为其传播分辨率，并将语义分辨率偏移定义为传播分辨率的跨域变化，在该变化中类别区分证据最强。这种转变可能会使固定的相同分辨率配对变得次优，并增加负迁移的风险。为了解决这个问题，我们提出了跨分辨率语义学习（CReSL），这是一种从跨域类结构中学习软源到目标分辨率对应关系的 GDA 方法。首先，CReSL 使用共享图神经网络和可学习的分辨率嵌入构建多分辨率表示库，并为每个源分辨率配备一个分辨率索引...\n\n## English Summary\n\nGraph Domain Adaptation (GDA) transfers predictive knowledge from labeled source graphs to unlabeled target graphs under distribution shift. Existing methods align representations or regularize graph structures, but do not explicitly model how class-discriminative knowledge learned at different source neighborhood ranges should be routed across target ranges. We call the neighborhood range encoded by a graph representation its propagation resolution and define semantic resolution shift as a cross-domain change in the propagation resolutions at which class-discriminative evidence is strongest. Such shifts can make fixed same-resolution pairing suboptimal and increase the risk of negative transfer. To address this issue, we propose Cross-Resolution Semantic Learning (CReSL), a GDA method that learns soft sourceto-target resolution correspondence from cross-domain class structure. First, CReSL constructs a multi-resolution representation bank using a shared Graph Neural Network and learnable resolution embeddings, with a resolution-indexed expert for each source resolution. Second, CReSL introduces Cross-Resolution Prototype Transport, which constructs class-resolution prototypes from source labels and soft target posteriors and converts cross-domain prototype discrepancies into expert-specific routing over target resolutions. Third, CReSL introduces Cross-Resolution Target Grafting, which constructs posterior-weighted target-to-source prototype displacements and enforces correspondence-weighted prediction consistency for instance-level adaptation under class uncertainty. Extensive experiments on graph benchmarks under diverse domain shifts show that CReSL outperforms strong representative baselines across most settings.",
+    "readingTime": 2
+  },
+  {
+    "title": "来自未对准希格斯场的微扰衰变的暗光子",
+    "title_en": "Dark Photons from Perturbative Decay of a Misaligned Higgs Field",
+    "authors": [
+      "James M. Cline",
+      "Gonzalo Herrera",
+      "Jean-Samuel Roux"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29682v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-dark-photons-from-perturbative-decay-of-a-misalign",
+    "content": "## 中文摘要\n\n我们重新考虑暗希格斯场 $h$ 的微扰衰变产生的暗光子 $A'$ 作为暗物质，该暗希格斯场 $h$ 与暴胀期间其潜力的最小值随机失准。这是一个用于生成 $A'$ 遗迹丰度的简单且预测的框架。它受到结构形成的限制，因为 $A'$ 最初被增强，并且膨胀等曲率波动需要小的四次耦合 $λh^4$。我们确定了 100 eV 到 1 GeV 之间的 $A'$ 质量和规范耦合 $g\\sim 10^{-15}-10^{-10}$ 在这种情况下是一致的，并且如果存在通用水平的动力学混合，则它们会受到更严格的约束。可以通过未来的 CMB 或 Lyman-$α$ 观测来测试首选参数区域，并且在存在动力混合的情况下，...\n\n## English Summary\n\nWe reconsider the production of dark photons $A'$ as dark matter, from the perturbative decay of a dark Higgs field $h$, that is stochastically misaligned from the minimum of its potential during inflation. This is a simple and predictive framework for generating the $A'$ relic abundance. It is constrained by structure formation, since the $A'$ are initially boosted, and inflationary isocurvature fluctuations, which require small quartic couplings $λh^4$. We identify $A'$ masses between 100 eV and 1 GeV and gauge couplings $g\\sim 10^{-15}-10^{-10}$ that are consistent in this scenario, and which become more tightly constrained if a generic level of kinetic mixing is present. The favored parameter region could be tested through future CMB or Lyman-$α$ observations, and, in the presence of kinetic mixing, by direct detection experiments or diffuse soft gamma-ray searches.",
+    "readingTime": 1
+  },
+  {
+    "title": "诊断顺序机器人任务中的组合概括",
+    "title_en": "Diagnosing Compositional Generalization in Sequential Robot Tasks",
+    "authors": [
+      "Yixiao Wang",
+      "Cheng-En Wu",
+      "Lingfeng Sun",
+      "Pengcheng Wang",
+      "Xiang Ji",
+      "Boyuan Liang",
+      "Guojian Zhan",
+      "Masayoshi Tomizuka"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29687v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-diagnosing-compositional-generalization-in-sequent",
+    "content": "## 中文摘要\n\n顺序机器人操作需要策略来执行熟悉的指令组件的新颖组合。然而，收集所有可能的指令元组的演示在组合上是昂贵的，而稀疏覆盖的数据集在分布外重组下通常会失败。本文通过指令空间覆盖的视角研究构图泛化。我们将泛化差距分解为三个来源：\\textit{边缘指令移位}、\\textit{指令组合移位}和\\textit{上下文-动作移位}。这种分解使我们能够诊断何时稀疏训练覆盖范围足够，以及训练集必须保留什么结构才能进行可靠的动作预测。我们的结果表明，详尽的元组枚举是不必要的：一个结构化子集，小至整个任务空间的四分之一，在覆盖与操作相关的依赖项时可以恢复强大的分布外性能。我们进一步发现，稀疏训练常常因指令指导而失败...\n\n## English Summary\n\nSequential robot manipulation requires policies to execute novel combinations of familiar instruction components. However, collecting demonstrations for all possible instruction tuples is combinatorially expensive, while sparsely covered datasets often fail under out-of-distribution recombination. This paper studies compositional generalization through the lens of instruction-space coverage. We decompose the generalization gap into three sources: \\textit{marginal instruction shift}, \\textit{instruction-compositional shift}, and \\textit{context--action shift}. This decomposition allows us to diagnose when sparse training coverage is sufficient, and what structure the training set must preserve for reliable action prediction. Our results show that exhaustive tuple enumeration is unnecessary: a structured subset, as small as one quarter of the full task space, can recover strong out-of-distribution performance when it covers action-relevant dependencies. We further find that sparse training often fails due to instruction steering rather than missing low-level skills; finetuning only one demonstration per task improves OOD success from \\(0.4\\%\\) to \\(54.7\\%\\). For semantically dependent tasks, effective coverage must capture relational structure rather than only factor diversity. These findings suggest that efficient robot data collection should prioritize dependency coverage in instruction space over exhaustive task expansion. More results are available in the supplementary material. Project website: https://yixiaowang7.github.io/Diagnosing_Compositional_Generalization_Robot_Page/.",
+    "readingTime": 1
+  },
+  {
+    "title": "DualDiT：用于联合 OCT 图像和分割掩模生成的条件双输出扩散变压器",
+    "title_en": "DualDiT: A Conditional Dual-Output Diffusion Transformer for Joint OCT Image and Segmentation Mask Generation",
+    "authors": [
+      "Fernando García-Torres",
+      "Rocío del Amor",
+      "Sandra Morales",
+      "Álvaro Barroso",
+      "Peter Heiduschka",
+      "Björn Kemper",
+      "Valery Naranjo"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29337v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-dualdit-a-conditional-dual-output-diffusion-transf",
+    "content": "## 中文摘要\n\n背景和目的：使用解剖学上准确的分割掩模生成逼真的医学图像有助于解决医学成像中注释数据的短缺问题，特别是在小鼠眼睛的光学相干断层扫描（OCT）中，由于结构微小且需要专业知识，手动视网膜层描绘是劳动密集型的，导致数据集稀缺。虽然扩散模型在医学图像合成中表现良好，但联合图像掩模生成主要依赖于基于 U-Net 的降噪器，而扩散变换器在很大程度上尚未得到探索。方法：我们提出了一种条件双输出扩散变压器 (DualDiT)，用于联合合成离体小鼠视网膜中的 OCT B 扫描和上视网膜细胞层的分割掩模。 DualDiT 通过预训练的 VAE 将两种模态编码到共享的潜在空间中，连接它们的潜在表示，并在联合张量上执...\n\n## English Summary\n\nBackground and Objective: Generating realistic medical images with anatomically accurate segmentation masks helps address the shortage of annotated data in medical imaging, particularly in optical coherence tomography (OCT) of mouse eyes, where manual retinal layer delineation is labour-intensive due to tiny structures and required expertise, resulting in scarce datasets. While diffusion models perform well in medical image synthesis, joint image-mask generation has relied mainly on U-Net-based denoisers, leaving diffusion transformers largely unexplored. Methods: We propose a conditional dual-output Diffusion Transformer (DualDiT) for joint synthesis of OCT B-scans and segmentation masks of the upper retinal cell layers in ex vivo mouse retina. DualDiT encodes both modalities into a shared latent space via a pretrained VAE, concatenates their latent representations, and performs conditional diffusion over the joint tensor. We compared DualDiT against two adapted diffusion baselines: DDPM and LDM. Generative quality was assessed via Fréchet Inception Distance (FID) and spatial FID (sFID); practical utility via synthetic data augmentation for downstream U-Net segmentation; and perceptual realism via evaluation by three domain experts. Results: DualDiT achieved the best generative quality (FID 56.14, sFID 114.35), outperforming DDPM and LDM. Expert panels misclassified 46% of synthetic samples as real and 42% of real samples as synthetic. Adding DualDiT-generated images and masks improved Dice and IoU scores on a held-out segmentation test set. Conclusions: DualDiT shows that transformer-based diffusion models can effectively learn the joint distribution of OCT images and segmentation masks, surpassing DDPM- and LDM-based baselines in generative fidelity, downstream utility, and perceptual realism, highlighting its potential for data augmentation in annotation-scarce medical imaging.",
+    "readingTime": 2
+  },
+  {
+    "title": "欧拉泊松括号形式主义的弹性动力学：在手性奇固体中的应用",
+    "title_en": "Elastodynamics from Eulerian Poisson-bracket formalism: application to chiral odd solids",
+    "authors": [
+      "Cheng-Tai Lee",
+      "Tomer Markovich"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29521v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-elastodynamics-from-eulerian-poisson-bracket-forma",
+    "content": "## 中文摘要\n\n泊松括号 (PB) 形式被广泛用于推导粗粒度 (CG) 场的动力学，以捕捉大尺度物理现象，将 PB 在经典粒子力学中的作用扩展到宏观领域。它已被应用于临界现象的波动、液晶的流体动力学、液晶弹性体、组织以及旋转颗粒的奇怪粘度的出现。 PB 形式可以在拉格朗日框架（使用参考空间）或欧拉框架（使用实空间）中表述。通常，拉格朗日公式用于弹性固体，欧拉公式用于流体。然而，对于真实空间中自然定义的现象，例如粘弹性响应、移动界面和粒子中场引起的结构变化，人们对固体的欧拉描述越来越感兴趣。在这里，我们开发了一种系统公式，用于将欧拉 PB 形式主义应用于具有通常在拉格朗日空间中书写的势的弹性系统，并阐明其与拉格...\n\n## English Summary\n\nThe Poisson-bracket (PB) formalism is widely used to derive dynamics of coarse-grained (CG) fields to capture large-scale physics, extending the role of PBs in classical particle mechanics to macroscopic fields. It has been applied to fluctuations in critical phenomena, hydrodynamics of liquid crystals, liquid crystal elastomers, tissues, and the emergence of odd viscosity from spinning particles. The PB formalism can be formulated in either the Lagrangian framework, using reference space, or the Eulerian framework, using real space. Conventionally, the Lagrangian formulation is used for elastic solids, and the Eulerian one for fluids. However, growing interest in Eulerian descriptions of solids has emerged for phenomena naturally defined in real space, such as viscoelastic responses, moving interfaces, and field-induced structural changes in particles. Here we develop a systematic formulation for applying the Eulerian PB formalism to elastic systems with potentials typically written in Lagrangian space, and clarify its consistency with the Lagrangian counterpart. We show that the Eulerian formulation generates additional nonlinearities absent in the Lagrangian framework. Such nonlinearities originate from CG volume changes under coordinate transformation and from particle flow across neighboring CG volumes. They must be retained when nonlinear effects are important. To illustrate, we study chiral active solids of finite-sized particles, where active torques drive internal particle rotations and generate geometric nonlinearities. These nonlinearities give rise to the odd elastic modulus, which non-reciprocally couples two different shear modes in stress-strain response. By recovering this modulus directly from the Eulerian PB formalism, we demonstrate its ability to capture emergent nonlinear elastic behavior in driven active solids, whose stresses are naturally measured in real space.",
+    "readingTime": 2
+  },
+  {
+    "title": "网格图中的精确距离控制",
+    "title_en": "Exact-Distance Domination in Grid Graphs",
+    "authors": [
+      "Sandip Das",
+      "Sweta Das",
+      "Arpan Sadhukhan"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29648v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-exact-distance-domination-in-grid-graphs",
+    "content": "## 中文摘要\n\n令\\(G_n\\)为\\(n\\times n\\)方格，并令\\(k\\geq 2\\)。如果 V(G_n)\\setminus D\\ 中的每个顶点 \\(v\\in V(G_n)\\setminus D\\) 都有一个顶点 \\(u\\in D\\) 且 d(u,v)=k\\)，则集合 \\(D\\subseteq V(G_n)\\) 是一个 \\emph{精确距离 \\(k\\) 支配集}。我们将这样一个集合的最小基数写为 \\(D_{\\mathrm{opt}}^{(k)}(G_n)\\) 。对于每个固定的 \\(k\\)，考虑极限 \\[ δ_k= \\lim_{n\\to\\infty} \\frac{D_{\\mathrm{opt}}^{(k)...\n\n## English Summary\n\nLet \\(G_n\\) be the \\(n\\times n\\) square grid, and let \\(k\\geq 2\\). A set \\(D\\subseteq V(G_n)\\) is an \\emph{exact-distance \\(k\\)-dominating set} if every vertex \\(v\\in V(G_n)\\setminus D\\) has a vertex \\(u\\in D\\) with \\(d(u,v)=k\\). We write \\(D_{\\mathrm{opt}}^{(k)}(G_n)\\) for the minimum cardinality of such a set. For every fixed \\(k\\), consider the limit \\[ δ_k= \\lim_{n\\to\\infty} \\frac{D_{\\mathrm{opt}}^{(k)}(G_n)}{n^2}. \\]   We prove that, for every fixed \\(k\\geq 3\\), \\[ \\frac{1}{4k} \\leq δ_k \\leq \\frac{k-1}{3k^2-k-1}. \\] For \\(k=2\\), the lower and upper bounds coincide asymptotically, giving \\(δ_2=1/9\\).",
+    "readingTime": 1
+  },
+  {
+    "title": "费米子熵：一种可有效测量的非高斯性强单调性",
+    "title_en": "Fermionic entropy: an efficiently measurable strong monotone for non-Gaussianity",
+    "authors": [
+      "Lorenzo Leone",
+      "Lennart Bittel"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29670v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-fermionic-entropy-an-efficiently-measurable-strong",
+    "content": "## 中文摘要\n\n费米子高斯态形成了经典易处理量子态的中心类别，而费米子非高斯性提供了超越自由费米子动力学所需的资源。一个关键的挑战是通过数学上严格且实验上可访问的单调来量化这种资源。在这里，我们证明通过相关矩阵的弗罗贝尼乌斯范数平方定义的费米子熵是强纯态高斯单调。其简单的封闭式表达式也使其可直接测量：我们表明，可以使用 $O(\\varepsilon^{-2})$ 两副本测量无偏地估计相关的费米子纯度，直至加性误差 $\\varepsilon$，而与系统大小无关。此外，我们证明费米子熵服从渐近连续性，并作为直接结果，将其操作意义确立为非高斯蒸馏渐近率的上限。我们进一步推导出费米高斯态的容忍测试的线性样本复杂度界限...\n\n## English Summary\n\nFermionic Gaussian states form a central class of classically tractable quantum states, while fermionic non-Gaussianity provides the resource required to go beyond free-fermion dynamics. A key challenge is to quantify this resource through monotones that are both mathematically rigorous and experimentally accessible. Here, we show that the fermionic entropy, defined through the squared Frobenius norm of the correlation matrix, is a strong pure-state Gaussian monotone. Its simple closed-form expression also makes it directly measurable: we show that the associated fermionic purity can be unbiasedly estimated up to additive error $\\varepsilon$ using $O(\\varepsilon^{-2})$ two-copy measurements, independently of the system size. Moreover, we prove that the fermionic entropy obeys asymptotic continuity and, as a direct consequence, establish its operational meaning as the upper bound to the asymptotic rate of non-Gaussianity distillation. We further derive a linear sample complexity bound for tolerant testing of fermionic Gaussian states, providing a quadratic improvement over the state of the art. As a further application of our results, we study unitary designs generated by Matchgate circuits supplemented with Majorana-local non-Gaussian gates. We prove that a linear number of such gates is necessary even to achieve an approximate state $2$-design with error below $0.4\\%$. Combined with known nearly linear upper bounds for relative-error designs, this determines the optimal doping level, up to logarithmic factors, across all relevant design notions and reveals the extensive non-Gaussianity cost required to generate Haar-like quantum dynamics in this architecture.",
+    "readingTime": 2
+  },
+  {
+    "title": "HAM-VLN：利用分层代理记忆进行零样本视觉和语言导航",
+    "title_en": "HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation",
+    "authors": [
+      "An Liu",
+      "Bingxi Liu",
+      "Hongyu Ding",
+      "Yixuan Jiang",
+      "Yaran Chen",
+      "Fulin Tang",
+      "Cong Leng",
+      "Hong Zhang",
+      "Jian Cheng"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29600v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-ham-vln-harnessing-hierarchical-agentic-memory-for",
+    "content": "## 中文摘要\n\n视觉和语言导航 (VLN) 使机器人能够在以前未见过的环境中遵循指令。最近，出现了一种免训练范例：机器人查询多模式 LLM 以了解其观察结果并计划下一步行动。然而，基于图像流或密集地图的长视距导航不可避免地会引入日益增长的内存和推理瓶颈。我们提出了 HAM-VLN，一种决策耦合的、由代理编写的存储器，为机器人配备了持久的、基于深度的世界图。在用于选择下一个操作的同一模型调用中，HAM-VLN 还记录语义和反射信息，包括房间类型、对象、导航进度和故障注释。最近的路径点逐字保留在有界窗口内，而较旧的历史记录只能通过根据相关性、新近度和显着性进行评分的检索以及一跳拓扑扩展来重新进入上下文。除了每个航...\n\n## English Summary\n\nVision-and-language navigation (VLN) enables robots to follow instructions in previously unseen environments. Recently, a training-free paradigm has emerged: the robot queries a multimodal LLM to understand its observations and plan the next action. However, long-horizon navigation based on either image streams or dense map inevitably introduces a growing memory and reasoning bottleneck. We present HAM-VLN, a decision-coupled, agent-authored memory that equips the robot with a persistent, depth-grounded world graph. In the same model call used to select the next action, HAM-VLN also records semantic and reflective information---including room type, objects, navigation progress, and failure notes. Recent waypoints remain verbatim within a bounded window, while older history re-enters the context only through retrieval scored by relevance, recency, and salience, together with one-hop topological expansion. This design requires no additional LLM calls beyond the per-waypoint decision. Compared to previous methods, HAM-VLN not only improves various navigation metrics but also reduces the context length by more than 65%. Specifically, HAM-VLN achieves 61.0% Success Rate (SR) on VLN-CE R2R, 52.7% SR on VLN-CE RxR, and 79.7% SR on HM3D-v2 ObjectNav without any training.",
+    "readingTime": 1
+  },
+  {
+    "title": "高维符号动力学：3 图的纺织框架",
+    "title_en": "Higher-Dimensional Symbolic Dynamics: A Textile Framework For 3-graphs",
+    "authors": [
+      "Roozbeh Hazrat",
+      "Promit Mukherjee",
+      "Sujit Kumar Sardar"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29233v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-higher-dimensional-symbolic-dynamics-a-textile-fra",
+    "content": "## 中文摘要\n\n纺织系统以模拟有限类型的二维位移而闻名。在本文中，我们将离散代数与纺织系统相关联，并为其提供群群模型。当纺织系统左解析时，该代数与相关 $2$ 图的 Kumjian-Pask 代数一致。本文的主要目标是将纺织系统扩展到 $3$ 维度，以便生成的结构一方面可以捕获有限类型的所有三维位移，另一方面为 $3$ 图提供类似纺织的框架，扩展 $2$ 图和左解析纺织系统之间众所周知的联系。我们引入了三维纺织系统的模型，并研究了此类纺织系统与 3 美元图之间的相互作用。特别是，我们的调查表明，从 3 美元彩色图形成 3 美元图所需的条件（包括三色路径上微妙的关联性条件）可以用由纺织品数据产生的简单回拉图进行...\n\n## English Summary\n\nTextile systems are best known to model two-dimensional shifts of finite type. In this article, we associate a discrete algebra with a textile system and provide a groupoid model for it. When the textile system is left-resolving, this algebra coincides with the Kumjian--Pask algebra of the associated $2$-graph. The main objective of this paper is to extend textile systems to dimension $3$ so that the resulting structures can, on the one hand, capture all three-dimensional shifts of finite type and, on the other hand, provide a textile-like framework for $3$-graphs extending the well-known connection between $2$-graphs and left-resolving textile systems. We introduce a model of a three-dimensional textile system and investigate the interplay between such textile systems and $3$-graphs. In particular, our investigation shows that the conditions required to form a $3$-graph from a $3$-colored graph (including the delicate associativity condition on tricolored paths), can be encoded in terms of simple pullback diagrams arising from the textile data. We also define homology groups for three-dimensional textiles and prove that these groups coincide with the homology groups of the associated $3$-graphs, thus establishing that our construction is homologically consistent with $3$-graphs.",
+    "readingTime": 2
+  },
+  {
+    "title": "无需预定义参考路径的同伦感知走廊生成",
+    "title_en": "Homotopy-Aware Corridor Generation without Predefined Reference Paths",
+    "authors": [
+      "Haoze Dong",
+      "Minghan Li",
+      "Meng Guo",
+      "Zhongkui Li"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29513v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-homotopy-aware-corridor-generation-without-predefi",
+    "content": "## 中文摘要\n\n生成安全走廊对于无碰撞机器人运动规划至关重要，但大多数现有方法依赖于预定义的参考路径，这会偏置走廊几何形状并隐式限制可以探索的同伦类。我们在凸集图（GCS）上提出了一种无参考路径的走廊生成框架，该框架直接将走廊构建为凸集序列，允许走廊结构从自由空间表示中出现，而不是从引导路径中出现。为了推断走廊之间的相似性，我们将基于可见性的变形从路径扩展到凸集序列，从而实现拓扑冗余走廊的融合，同时保留不同的替代方案。为了克服现有基于静态全局分解的GCS方法的有限适应性，我们进一步开发了一种自适应多尺度GCS，其中基于采样的细尺度图支持局部更新，而基于可见性的粗尺度图支持紧凑的全局探索。这两个级别保持拓扑一致...\n\n## English Summary\n\nGenerating safe corridors is essential for collision-free robotic motion planning, yet most existing methods rely on predefined reference paths, which bias corridor geometry and implicitly limit the homotopy classes that can be explored. We propose a reference-path-free corridor generation framework on graphs of convex sets (GCS) that constructs corridors directly as sequences of convex sets, allowing corridor structure to emerge from the free-space representation rather than from a guiding path. To reason about similarity among corridors, we extend visibility-based deformation from paths to convex-set sequences, enabling the fusion of topologically redundant corridors while preserving distinct alternatives. To overcome the limited adaptability of existing GCS methods based on static global decompositions, we further develop an adaptive multi-scale GCS, in which a sampling-based fine-scale graph supports localized updates and a visibility-based coarse-scale graph enables compact global exploration. The two levels maintain topological consistency, allowing incremental updates without full graph reconstruction under environmental uncertainty. Numerical experiments characterize GCS construction, corridor generation, homotopy-aware exploration, and local updates, showing efficient graph construction, stable trajectory-level performance, and shorter-duration homotopy-aware trajectories than existing baselines. Hardware experiments on ground and aerial robots, including deployment with onboard localization, further validate the framework under translated and previously unknown obstacles.",
+    "readingTime": 2
+  },
+  {
+    "title": "用于可供性分割的轻量级神经网络：解码器模块的增强",
+    "title_en": "Lightweight Neural Networks for Affordance Segmentation: Enhancement of the Decoder Module",
+    "authors": [
+      "Simone Lugani",
+      "Edoardo Ragusa",
+      "Rodolfo Zunino",
+      "Paolo Gastaldo"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29473v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "可穿戴"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "wearable"
+    ],
+    "keywords": [
+      "手部康复",
+      "可穿戴"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "wearable"
+    ],
+    "slug": "2026-07-31-lightweight-neural-networks-for-affordance-segment",
+    "content": "## 中文摘要\n\n由于问题的一些相互冲突的方面，在可穿戴机器人姿势上部署深度神经网络进行视觉可供性分割可能是至关重要的。一方面，可供性分割需要高级抽象能力，通常涉及大型模型。另一方面，可穿戴机器人上托管的计算资源阻碍了实时运行大尺寸模型。本文分析了分段头在泛化性能和计算成本之间的权衡中的作用。所获得的模型在众所周知的真实数据集中优于现代基线解决方案，同时满足较低的计算要求。\n\n## English Summary\n\nThe deployment of deep neural networks for visual affordance segmentation on wearable robots poses may prove critical, due to some conflicting aspects of the problem. On one hand, affordance segmentation requires high-level abstraction capabilities, that typically involve large-size models. On the other hand, computing resources hosted on wearable robots prevent to run large-size models in real-time. The paper presents an analysis of the role of the segmentation head in the trade-off between generalization performance and compute cost. The obtained models outperform modern baseline solutions in well-known, real-world datasets while meeting low computing requirements.",
+    "readingTime": 1
+  },
+  {
+    "title": "MHRGait：动量人体装备姿势的步态识别",
+    "title_en": "MHRGait: Gait Recognition from Momentum Human Rig Pose",
+    "authors": [
+      "Huiran Duan",
+      "Qian Zhou",
+      "Xianda Guo",
+      "Hua Zou",
+      "Guoying Zhao",
+      "Zhongyuan Wang",
+      "Yingli Tian"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29083v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-mhrgait-gait-recognition-from-momentum-human-rig-p",
+    "content": "## 中文摘要\n\n步态识别由其输入表示决定。轮廓编码投影的身体形状，骨骼编码稀疏的关节坐标，3D 网格编码密集的表面几何形状。在每种情况下，通过几何载体观察到承载身份的清晰度，这些几何载体也随着服装、骨骼尺度或体形而变化。我们研究是否可以通过紧凑的铰接控制来识别步态。我们引入 Momentum Human Rig (MHR) 姿势作为步态表示，使用从单目视频估计的 184 个语义组织的身体和手部参数来描述每一帧。 MHRGait 通过解剖学对这些异构控制进行分组，对它们的帧内协调和时间演化进行建模，并生成紧凑的身体和手部描述符。我们进一步介绍了 MHRGait++，它通过模态平衡距离融合将 MHR 姿态与轮廓结...\n\n## English Summary\n\nGait recognition is shaped by its input representation. Silhouettes encode projected body shape, skeletons encode sparse joint coordinates, and 3D meshes encode dense surface geometry. In each case, identity-bearing articulation is observed through geometric carriers that also vary with clothing, skeletal scale, or body shape. We investigate whether gait can instead be recognized from compact articulated controls. We introduce Momentum Human Rig (MHR) pose as a gait representation, describing each frame using 184 semantically organized body and hand parameters estimated from monocular video. MHRGait groups these heterogeneous controls by anatomy, models their intra-frame coordination and temporal evolution, and produces compact body and hand descriptors. We further introduce MHRGait++, which combines MHR pose with silhouettes through modality-balanced distance fusion, preventing descriptor count from determining modality importance. Experiments on four benchmarks show that MHRGait attains the best overall performance among compared model-based methods on CCPG and SUSTech1K and transfers effectively across datasets, while its recognition network requires only 2.76M parameters and 0.69 GFLOPs for a 30-frame input. MHRGait++ consistently improves silhouette recognizers with a favorable accuracy-efficiency trade-off. These results establish rig-space articulation as an effective standalone gait representation and a complementary cue to projected body shape. Our code is available at https://github.com/duanhuiran/MHRGait.",
+    "readingTime": 2
+  },
+  {
+    "title": "双语义引导和全局局部互调制的多模态对象重识别",
+    "title_en": "Multi-Modal Object Re-Identification with Dual Semantic Guidance and Global-Local Mutual Modulation",
+    "authors": [
+      "Weixiang Zhou",
+      "Xingguo Xu",
+      "Yuhao Wang",
+      "Cong Wang",
+      "Yang Yang",
+      "Zhixun Su",
+      "Jinshan Pan"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29207v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-multi-modal-object-re-identification-with-dual-sem",
+    "content": "## 中文摘要\n\n多模态对象重新识别（ReID）旨在通过利用跨模态的补充信息来检索目标实例。然而，现有方法面临两个挑战。首先，它们常常无法利用良好对齐且可靠的语义先验，使它们容易受到背景混乱和跨模式错位的影响。另一方面，它们通常依赖于整体特征建模，忽视了全局和局部表示之间的协同作用。为了克服这些限制，我们提出了一种具有双重语义引导和全局局部相互调制的鲁棒多模态 ReID 框架，该框架主要由三个关键组件组成，即文本语义注入器（TSI）、掩码全局局部调制器（MGLM）和分层 MoE 融合（HMF）。 TSI 通过将清晰且连贯的文本特征集成到视觉标记中来增强语义意识。 MGLM 通过软掩模和全局上下文的联合指导，实现...\n\n## English Summary\n\nMulti-modal object Re-Identification (ReID) aims to retrieve target instances by leveraging complementary information across modalities. However, existing methods suffer from two challenges. First, they often fail to exploit well-aligned and reliable semantic priors, making them vulnerable to background clutter and cross-modal misalignment. On the other hand, they typically rely on holistic feature modeling, overlooking the synergy between global and local representations. To overcome these limitations, we propose a robust multi-modal ReID framework with dual semantic guidance and global-local mutual modulation, which mainly consists of three key components, namely the Text-Semantic Injector (TSI), the Masked Global-Local Modulator (MGLM), and the Hierarchical MoE Fusion (HMF). The TSI enhances semantic awareness by integrating clean and coherent textual features into visual tokens. The MGLM enables part-aware cross-modal interaction through joint guidance from soft masks and global context, improving fine-grained feature alignment. Finally, the HMF adaptively aggregates multi-spectral features under local semantic supervision, yielding discriminative and robust representations. Extensive experiments on three multi-modal ReID benchmarks demonstrate the effectiveness of the proposed method. The code will be made publicly available at https://github.com/zw-absin/DSGM upon acceptance.",
+    "readingTime": 1
+  },
+  {
+    "title": "非互易扭矩引导活性粒子自组装成具有可控功能的簇",
+    "title_en": "Non-reciprocal torques guide self-assembly of active particles into clusters with controllable function",
+    "authors": [
+      "Till Welker",
+      "Yukino Fujiya",
+      "Holger Stark"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29651v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-non-reciprocal-torques-guide-self-assembly-of-acti",
+    "content": "## 中文摘要\n\n成分的自组装决定了微观世界的结构形成。吸引力可以将活性粒子组装成胶体机器，但它们不能固定粒子的方向，这限制了对机器功能的控制。我们证明，不可逆转向扭矩不仅可以将活性粒子组装成簇，而不需要吸引力，而且还将粒子方向与簇配置联系起来。对称性决定了簇是静止的、旋转的还是平移的。在小系统中，粒子数唯一决定稳定的构型和功能。在较大的系统中，存在多种具有不同功能的稳定配置，调整扭矩强度使我们能够偏向所需的功能，例如运行和翻滚运动。由于驱动组装的交互可以打开和关闭，因此集群可以在需要时进行自组装。为了使这种“及时”自组装切实可行，快速组装是必要的。我们表明，通过短暂关闭推进力和扭矩来实现的随机重置可以通过避免...\n\n## English Summary\n\nSelf-assembly of constituents determines structure formation in the microscopic world. Attractive forces can assemble active particles into colloidal machines, but they do not fix the particles' orientations, which limits control over the machine's function. We demonstrate that non-reciprocal turn-towards torques not only assemble active particles into clusters, without requiring attractive forces, but also link particle orientations to the cluster configuration. Symmetry then dictates whether the cluster is static, rotates, or translates. In small systems, the particle number uniquely determines the stable configuration and function. In larger systems, there are multiple stable configurations with distinct functions, and tuning the torque strength allows us to bias towards the desired function, such as a run-and-tumble motion. Because the interactions driving assembly can be switched on and off, the clusters self-assemble when needed. For such a \"just-in-time\" self-assembly to be practical, fast assembly is necessary. We show that stochastic resetting, implemented by briefly turning off propulsion and torque, significantly speeds up self-assembly by avoiding slow pathways. Together, our findings demonstrate that non-reciprocal torques can rapidly assemble active particles into colloidal micromachines with controllable function.",
+    "readingTime": 1
+  },
+  {
+    "title": "OASIS：通过 3D 高斯泼溅进行遮挡感知单图像手部头像重建",
+    "title_en": "OASIS: Occlusion-aware Single-image Hand Avatar Reconstruction via 3D Gaussian Splatting",
+    "authors": [
+      "Zhisheng Han",
+      "Shiyao Wu",
+      "Jiayan Qiu",
+      "Yakun Ju",
+      "Lu Liu",
+      "Le Zhang",
+      "Pengfei Feng",
+      "Huiyu Zhou",
+      "Zheheng Jiang"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29633v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-oasis-occlusion-aware-single-image-hand-avatar-rec",
+    "content": "## 中文摘要\n\n单图像 3D 手部头像重建从根本上来说是不适定的，并且由于严重自遮挡下的视觉证据有限以及高度关节化的手部复杂的依赖于姿势的变形而特别具有挑战性。现有方法主要依赖于隐式 NeRF 式表示，其体积拟合的计算成本很高，并且常常难以保留细粒度的手部细节。在这项工作中，我们提出了 OASIS，这是一个定制的 3D 高斯 Splatting 框架，用于单图像手部头像重建。为了在单视图重建中忠实地编码稀疏图像特定的外观线索，我们通过显式地将输入图像观察与 3D 手部几何形状对齐并上下文自适应地标记生成的视觉证据来构建几何对齐的视觉证据标记。由于严重的自遮挡使得图像证据的可靠性本质上依赖于可见性，因此我们引入...\n\n## English Summary\n\nSingle-image 3D hand avatar reconstruction is fundamentally ill-posed and particularly challenging due to limited visual evidence under severe self-occlusion and the complex pose-dependent deformation of highly articulated hands. Existing methods predominantly rely on implicit NeRF-style representations, whose volumetric fitting is computationally expensive and often struggles to preserve fine-grained hand details. In this work, we present OASIS, a tailored 3D Gaussian Splatting framework for single-image hand avatar reconstruction. To faithfully encode sparse image-specific appearance cues in single-view reconstruction, we construct geometry-aligned visual evidence tokens by explicitly aligning input image observations with 3D hand geometry and context-adaptively tokenizing the resulting visual evidence. Since severe self-occlusion makes the reliability of image evidence inherently visibility-dependent, we introduce a visibility-conditioned point-image attention to reliably transfer visual evidence to geometric tokens, yielding occlusion-aware Gaussian features for faithful and robust reconstruction. To further capture non-rigid deformation of articulated hands, we introduce a Feature-on-Mesh representation to enable Gaussian deformation to be guided by local surface stretching. Under this framework, we adopt a one-shot adaptation scheme that learns a shared hand prior from multi-identity training data and then fits it to a target image for target-specific reconstruction. Extensive experiments show that OASIS outperforms existing baselines in both visual fidelity and efficiency across challenging poses and in-the-wild scenarios, and further demonstrates strong versatility in downstream applications such as text-to-avatar generation and texture editing.",
+    "readingTime": 2
+  },
+  {
+    "title": "OSEF：用于跨视频场景程序规划的一步证据融合",
+    "title_en": "OSEF: One-Step Evidence Fusion for Cross-Video Scene Procedure Planning",
+    "authors": [
+      "Zhentong Ye",
+      "Lei Zhang",
+      "Sijia Zhou",
+      "Yingda Yu",
+      "Yuehan Shi",
+      "Jiaqi Xuan",
+      "Shuaiwu Dong",
+      "Guanchao Tong",
+      "Meimei Zhang",
+      "Bin Li"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29401v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-osef-one-step-evidence-fusion-for-cross-video-scen",
+    "content": "## 中文摘要\n\n视频场景程序规划 (VSPP) 提前提供目标起始目标观察结果，从而为规划人员在必须检索证据本身时应如何采取行动留下了余地。我们引入跨视频场景程序规划（CVSPP）：给定答案编辑的起始目标查询和 K 个候选视频，模型必须检索支持视频、本地化相关窗口并预测动作序列。这里有两个障碍。相同任务的演示共享舞台和窗口，早期的硬选择将错误的场景链传递给规划者。我们构建了一个包含十一个来源的基准，其中包含类型化的负面角色、失败关闭的答案泄漏门以及单独的证据轴和计划轴指标。在其 14 个源范围单元上，我们针对多数序列层调整了 9 个规划器系列。然后，我们提出了一步证据融合（OSEF），它对所有候选者的查询条件单...\n\n## English Summary\n\nVideo Scene Procedure Planning (VSPP) supplies the target start-goal observations in advance, leaving open how a planner should act when the evidence must itself be retrieved. We introduce Cross-Video Scene Procedure Planning (CVSPP): given an answer-redacted start-goal query and K candidate videos, a model must retrieve the supporting video, localize the relevant window, and predict the action sequence. Two obstacles couple here. Same-task demonstrations share stages and windows, and an early hard selection passes the wrong scene chain to the planner. We build an eleven-source benchmark with typed negative roles, a fail-closed answer-leakage gate, and separate Evidence- and Plan-axis metrics. On its 14 source-horizon cells we adapt nine planner families against a majority-sequence floor. We then present One-Step Evidence Fusion (OSEF), which scores a query-conditioned cell-and-span lattice over all candidates and feeds the full soft lattice to the planner through a token-global adapter, cropping no window beforehand. OSEF ranks first on all six cells the benchmark certifies as method-rankable. On four matched same-task COIN and CrossTask cells it improves exact-video-and-plan success by 2.9-10.7 points over an enhanced hard-selection SOTA, and a component study assigns the largest single increment to the token-global interface. Five converted-source cells sit at or near the majority-sequence floor, the benchmark's remaining headroom. The supplementary package includes model constructors and evaluation code.",
+    "readingTime": 2
+  },
+  {
+    "title": "无参数重尾老虎机",
+    "title_en": "Parameter-Free Heavy-Tailed Bandits",
+    "authors": [
+      "Gianmarco Genalti",
+      "Alberto Maria Metelli"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29460v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-parameter-free-heavy-tailed-bandits",
+    "content": "## 中文摘要\n\n重尾分布自然出现在金融投资、在线广告和网络管理等连续决策问题中，在这些问题中，罕见但极端的结果可能会主导性能。重尾老虎机在这些设置中仅假设奖励 $X$ 满足 $\\mathbb{E}[|X|^{1+ε}]\\leq u$，对于某些尾部指数 $ε\\in(0,1]$ 和力矩限制 $u<+\\infty$。然而，大多数现有的遗憾最小化算法需要知道这些参数。这种假设在实践中特别具有限制性：$ε$ 和 $u$ 控制稀有的频率和幅度受 Genalti 和 Metelli 在 COLT 2025 提出的开放性问题的启发，我们解决了重尾老虎机的无假设适应问题，并在不知道尾部参数的情况下描述了价格。我们首先研究固定尾...\n\n## English Summary\n\nHeavy-tailed distributions arise naturally in sequential decision-making problems such as financial investment, online advertising, and network management, where rare but extreme outcomes can dominate performance. Heavy-tailed bandits model online decision-making in these settings by assuming only that rewards $X$ satisfy $\\mathbb{E}[|X|^{1+ε}]\\leq u$, for some tail exponent $ε\\in(0,1]$ and moment bound $u&lt;+\\infty$. However, most existing regret minimization algorithms require these parameters to be known. This assumption is particularly restrictive in practice: $ε$ and $u$ govern the frequency and magnitude of rare events and are therefore precisely the quantities that are hardest to infer reliably from limited observations.   Motivated by an open problem posed by Genalti and Metelli at COLT 2025, we resolve the assumption-free adaptation problem for heavy-tailed bandits and characterize the price in the regret of not knowing the tail parameters. We first study adaptation to the moment bound $u$ for a fixed tail exponent $ε$. We prove that every algorithm unaware of $u$, or of any upper bound on it, must obey a sharp trade-off between its distribution-dependent and distribution-free regret guarantees. We then introduce a scheduled-exploration algorithm that requires no knowledge of $u$ and matches the resulting adaptation frontier up to logarithmic factors. Finally, we show that the same algorithm can be instanced without knowing $ε$ by calibrating its exploration schedule to the endpoint $ε=1$. It achieves sublinear regret for every fixed $ε&gt;0$, while no algorithm can guarantee sublinear regret uniformly over all $ε\\in(0,1]$. Altogether, our results resolve the COLT open problem without additional distributional assumptions and provide a sharp characterization of the statistical cost of adapting to unknown heavy tails.",
+    "readingTime": 2
+  },
+  {
+    "title": "三维楔形几何中的电泳流",
+    "title_en": "Phoretic flow in a three-dimensional wedge geometry",
+    "authors": [
+      "Abdallah Daddi-Moussa-Ider",
+      "Semyon Yakubovich",
+      "Maciej Lisicki"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29262v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-phoretic-flow-in-a-three-dimensional-wedge-geometr",
+    "content": "## 中文摘要\n\n了解化学诱导的表面传输如何在有限的几何形状中产生流体运动对于合理设计微型泵送装置和主动微流体系统至关重要。在这里，我们开发了一个在扩散主导的三维楔形几何结构中化学驱动泳流的理论框架。我们利用 Fourier-Kontorovich-Lebedev 谱表示，利用楔形的平移不变性和径向结构来制定扩散和流体动力学问题。针对反射和混合反射吸收边界导出了浓度场的格林函数，将其简化为有限的类似图像的总和或相称楔角的闭合形式表达式。然后使用所得的滑移速度通过 Papkovich-Neuber 表示构建三维斯托克斯流，从而产生速度场的显式谱解。这些结果建立了楔形约束中泳动泵浦的格林函数框架，并为受限微流体系统...\n\n## English Summary\n\nUnderstanding how chemically induced surface transport generates fluid motion in confined geometries is essential for the rational design of microscale pumping devices and active microfluidic systems. Here we develop a theoretical framework for chemically driven phoretic flows in a three-dimensional wedge geometry in the diffusion-dominated regime. We formulate both the diffusion and hydrodynamic problems using a Fourier-Kontorovich-Lebedev spectral representation, exploiting the translational invariance and radial structure of the wedge. Green's functions for the concentration field are derived for reflecting and mixed reflecting-absorbing boundaries, reducing to finite image-like sums or closed-form expressions for commensurate wedge angles. The resulting slip velocity is then used to construct the three-dimensional Stokes flow through the Papkovich-Neuber representation, yielding explicit spectral solutions for the velocity field. These results establish a Green's-function framework for phoretic pumping in wedge-shaped confinement and provide analytical benchmarks for numerical simulations of chemically driven transport in confined microfluidic systems.",
+    "readingTime": 1
+  },
+  {
+    "title": "RayViT：用于视点鲁棒模仿学习的光线条件视觉表示",
+    "title_en": "RayViT: Ray-Conditioned Visual Representations for Viewpoint-Robust Imitation Learning",
+    "authors": [
+      "Qian Wang",
+      "Longrui Chen",
+      "Peiran Sun",
+      "Aleksandar Taranovic",
+      "Niklas Freymuth",
+      "Ge Li",
+      "Weiran Liao",
+      "C. F. Maximilian Nagy",
+      "Yucheng Tan",
+      "Tao Chen"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29622v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-rayvit-ray-conditioned-visual-representations-for-",
+    "content": "## 中文摘要\n\n视觉模仿学习使机器人能够直接从图像中获得视觉运动技能，但 RGB 观察缺乏明确的几何线索，使得学习的策略容易受到相机扰动的影响。为了解决这个问题，我们提出了 \\textbf{射线条件视觉变换编码器（RayViT）}，这是一种轻量级架构，可将相机几何结构注入预训练的 ViT 主干中。 RayViT 将相机几何形状表示为 Plücker 光线图，将其修补为光线特征，并使用门控交叉注意力来生成光线条件类标记。这些光线特征被添加为密集位置嵌入，而光线类标记取代了原始的 ViT 类标记以提供几何感知的摘要表示。我们将此方法与辅助余弦相似性损失相结合，以持续提高几何感知标记的性能和鲁棒性。模拟和真实机器人...\n\n## English Summary\n\nVisual imitation learning enables robots to acquire visuomotor skills directly from images, yet RGB observations lack explicit geometric cues, making learned policies brittle to camera perturbations. To address this, we propose \\textbf{Ray-conditioned Vision Transformer Encoder (RayViT)}, a lightweight architecture that injects camera geometry into pretrained ViT backbones. RayViT represents camera geometry as a Plücker ray map, patchifies it into ray features, and uses gated cross-attention to produce a ray-conditioned class token. These ray features are added as dense positional embeddings, while the ray class token replaces the original ViT class token to provide a geometry-aware summary representation. We combine this approach with an auxiliary cosine similarity loss to consistently improve the performance and robustness for geometry-aware tokens. Experiments on sim- and real-robot tasks demonstrate that RayViT improves robustness by approximately 13 percentage points under camera perturbations in multi-task RoboCasa benchmark and by 1.78 average completed stages in real-world multi-task success rate compared to baselines.",
+    "readingTime": 1
+  },
+  {
+    "title": "二级 Racah 代数嵌入二级 Jacobi 代数的实现",
+    "title_en": "Realization embeddings of the rank two Racah algebra into the rank two Jacobi algebra",
+    "authors": [
+      "Nicolas Crampé",
+      "Sarah Post",
+      "Luc Vinet"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29358v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-realization-embeddings-of-the-rank-two-racah-algeb",
+    "content": "## 中文摘要\n\n我们将二阶拉卡代数 $\\mathfrak{R}_2$ 构造为二阶雅可比代数 $\\mathfrak{J}_2$ 的显式嵌入。在三角形 $\\mathfrak{J}_2$ 的微分模型中，我们回想起 $\\mathfrak{J}_2$ 的子代数结构是由一个五边形组织的，该五边形的四个上边带有一级雅可比代数，其底边带有一级拉卡代数。通过三对角化将两个乘法运算符提升为 Racah 型生成器，将五边形的每条边都变成一级 Racah 代数，并在 $\\mathfrak{J}_2$ 中实现 $\\mathfrak{R}_2$。我们将不同通勤对的共同特征函数明确确定为高斯超几何函数和雅可比多项式的乘积。不同的重叠系数的...\n\n## English Summary\n\nWe construct an explicit embedding of the rank two Racah algebra $\\mathfrak{R}_2$ into the rank two Jacobi algebra $\\mathfrak{J}_2$. Working in the differential model of $\\mathfrak{J}_2$ on the triangle, we recall that the subalgebra structure of $\\mathfrak{J}_2$ is organized by a pentagon whose four upper edges carry rank one Jacobi algebras and whose base carries a rank one Racah algebra. Promoting the two multiplication operators to Racah type generators by tridiagonalization turns every edge of the pentagon into a rank one Racah algebra and realizes $\\mathfrak{R}_2$ inside $\\mathfrak{J}_2$. We determine the common eigenfunctions of different commuting pairs explicitly as products of Gauss hypergeometric functions and Jacobi polynomials. Different overlap coefficients are computed involving univariate Wilson polynomials as well as, for one pair of bases, bivariate Racah polynomials of Tratnik type. We also recall how $\\mathfrak{J}_2$ arises as a contraction of the rank two Racah algebra $\\mathfrak{R}_2$.",
+    "readingTime": 1
+  },
+  {
+    "title": "通过扩展不确定性原理解决红外纠缠发散",
+    "title_en": "Resolution of Infrared Entanglement Divergences via the Extended Uncertainty Principle",
+    "authors": [
+      "Subhra Mondal",
+      "S. Shankaranarayanan"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29427v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb"
+    ],
+    "slug": "2026-07-31-resolution-of-infrared-entanglement-divergences-vi",
+    "content": "## 中文摘要\n\n量子系统的纠缠熵通常表现出紫外和红外（IR）发散。在低频限制下，IR 发散与零模式的无界空间离域密切相关，这是耦合谐振子和无质量标量场共有的病态特征。在这项工作中，我们证明了这种无限增长可以通过引用扩展不确定性原理（EUP）自然地解决，该原理对规范交换关系引入了大规模的几何校正。通过在 EUP 框架下精确求解简谐振子，我们建立了内在几何限制的存在，该限制对位置方差施加严格的上限，限制空间离域，并引入与背景 Ricci 标量相关的内在本地化长度尺度。我们通过评估一维谐波链和无质量标量场的纠缠熵和纠缠谱，将这种正则化机制扩展到多体系统。我们证明，EUP 引起的空间界限可以防止低位长波长模式的积累，...\n\n## English Summary\n\nThe entanglement entropy of quantum systems typically exhibits both ultraviolet and infrared (IR) divergences. In the low-frequency limit, the IR divergence is intimately tied to the unbounded spatial delocalization of zero-modes, a pathological feature common to both coupled harmonic oscillators and massless scalar fields. In this work, we demonstrate that this infinite growth is naturally resolved by invoking the Extended Uncertainty Principle (EUP), which introduces large-length-scale geometric corrections to the canonical commutation relations. By exactly solving the simple harmonic oscillator under the EUP framework, we establish the existence of an intrinsic geometric confinement that enforces a strict upper bound on the position variance, limits spatial delocalization, and introduces an intrinsic localization length scale related to the background Ricci scalar. We extend this regularizing mechanism to many-body systems by evaluating the entanglement entropy and entanglement spectrum of a one-dimensional harmonic chain and a massless scalar field. We show that the EUP-induced spatial bounds prevent the accumulation of low-lying long-wavelength modes, keeping the entanglement spectrum discrete and evenly gapped even in the strictly massless limit. This non-vanishing modular gap effectively caps the local entanglement temperature of the vacuum. Consequently, the entanglement entropy saturates to a finite value, providing a robust, geometric resolution to the zero-mode IR divergence problem in quantum field theory.",
+    "readingTime": 2
+  },
+  {
+    "title": "通过弹性动力学框架内的拉普拉斯逆变换表达式重新审视单轴压缩下三维弹性空心球的应力分析",
+    "title_en": "Revisiting Stress Analysis in a Three-Dimensional Elastic Hollow Sphere under Uniaxial Compression via the Inverse Laplace Transform Expressions within an Elastodynamic Framework",
+    "authors": [
+      "Satoshi Takada",
+      "Shintaro Hokada"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29286v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-revisiting-stress-analysis-in-a-three-dimensional-",
+    "content": "## 中文摘要\n\n采用弹性动力学框架，重新审视了受到单轴压缩的三维弹性空心球的应力分析。通过拉普拉斯变换的应用，位移的标量势和矢量势得到扩展，有利于系统机械行为的详细探索。在长时间极限下导出了位移和应力分布的静态解，揭示了弹性空心球响应的关键见解。值得注意的是，在内表面上，某些量在压缩力与表面上的点之间的角度变得垂直的点处表现出峰值，表明局部应力集中。这些发现为理解和预测弹性空心球在单轴载荷下的行为提供了一种可靠的分析方法，对材料科学和结构工程具有重要意义。\n\n## English Summary\n\nThe stress analysis of a three-dimensional elastic hollow sphere subjected to uniaxial compression is revisited, employing an elastodynamic framework. Through the application of the Laplace transform, the scalar and vector potentials of displacement are expanded, facilitating a detailed exploration of the system's mechanical behavior. The static solutions for displacement and stress distributions are derived in the long-time limit, which reveal key insights into the response of the elastic hollow sphere. Notably, on the inner surface, certain quantities exhibit a peak at the point where the angle between the compressive force and the point on the surface becomes perpendicular, indicating localized stress concentration. These findings provide a robust analytical approach for understanding and predicting the behavior of elastic hollow spheres under uniaxial loading, with implications for material science and structural engineering.",
+    "readingTime": 1
+  },
+  {
+    "title": "通过屏障增强流匹配的安全视觉语言动作模型",
+    "title_en": "Safe Vision Language Action Models via Barrier Enhanced Flow Matching",
+    "authors": [
+      "Kasra Sinaei",
+      "Hung-Chieh Wu",
+      "Donald Ebeigbe"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29569v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-safe-vision-language-action-models-via-barrier-enh",
+    "content": "## 中文摘要\n\n本文提出了一个模块化推理框架，它将流匹配生成模型与正式的控制屏障函数 (CBF) 安全保证集成在一起。与将外部安全过滤器应用于模型最终输出的现有方法不同，我们的方法修改了模型内的流量匹配去噪过程，以固有地生成安全轨迹。通过采用平滑的对数和指数聚合屏障，我们增强了整个操作块的安全性。这种聚合屏障确保计算开销的增加最小化，并且不会改变模型的语义意图。我们表明，在所提出的框架内，生成的分布和目标分布之间的 2-Wasserstein 距离仍然有界。我们的方法消除了对特定安全数据集或昂贵的模型再训练的需求，为安全推理提供了通用的解决方案。我们在两个机器人操作平台和 2D 导航基准上验证了该方法，验证我...\n\n## English Summary\n\nThis article presents a modular inference framework that integrates Flow Matching generative models with formal Control Barrier Function (CBF) safety guarantees. Unlike existing methods that apply external safety filters to a model's final output, our approach modifies the Flow Matching denoising process within the model to inherently generate safe trajectories. By employing a smooth Log-Sum-Exponential aggregate barrier, we enforce safety over entire action chunks. This aggregate barrier ensures a minimal increase in computational overhead and does not alter the semantic intent of the model. We show that, within the proposed framework, the 2-Wasserstein distance between the generated distribution and the target distribution remains bounded. Our method eliminates the need for safety-specific datasets or costly model retraining, providing a versatile solution for safe inference. We validate the approach on two robotic manipulation platforms and a 2D navigation benchmark, verifying that our framework achieves reliable safety without degrading the success rate of the model.",
+    "readingTime": 1
+  },
+  {
+    "title": "SAGP：通过粗区 VLM 推理进行语义可供引导的掌握规划",
+    "title_en": "SAGP: Semantic Affordance-Guided Grasp Planning via Coarse-Zone VLM Reasoning",
+    "authors": [
+      "Muhayy Ud Din",
+      "Irfan Hussain"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29374v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-sagp-semantic-affordance-guided-grasp-planning-via",
+    "content": "## 中文摘要\n\n基于几何的抓取规划器可确保物理上有效的抓取，但忽略功能语义，通常会生成相反且无碰撞但实际上不合适的抓取，例如，抓住杯子的边缘、抓住刀的刀片或靠近瓶盖的瓶子。即使满足传统的掌握指标，这些不一致也会导致下游任务失败。现有的视觉语言模型（VLM）方法要么依赖于细粒度、特定类别的部分分割，要么尝试直接推断抓取姿势，后者容易产生空间幻觉。因此，目前还没有提出实用的、免训练的框架来将高级语义推理与几何掌握规划稳健地联系起来。我们引入了语义可供性引导的掌握规划（SAGP），这是一种建立在粗区抽象层上的免训练管道。该方法首先通过应用基于 PCA 的对齐，然后进行距离驱动的 DBSCAN 聚类，将对象点云划分为...\n\n## English Summary\n\nGeometry-based grasp planners ensure physically valid grasps but ignore functional semantics, often generating grasps that are antipodal and collision-free yet practically inappropriate, for example, gripping a mug by its rim, a knife by the blade, or a bottle near its cap. These inconsistencies cause the downstream task to fail even when traditional grasp metrics are met. Existing vision-language model (VLM) approaches either depend on fine-grained, category-specific part segmentation or attempt to directly infer grasp poses, with the latter prone to spatial hallucinations. As a result, no practical, training-free framework has yet been proposed that robustly links high-level semantic reasoning to geometric grasp planning. We introduce Semantic Affordance-Guided Grasp Planning (SAGP), a training-free pipeline built on a coarse-zone abstraction layer. The method first partitions the object point cloud into spatial regions (top, middle, bottom, lateral sides, and protrusions) by applying PCA-based alignment followed by distance-driven DBSCAN clustering, entirely bypassing learned segmentation. A pre-trained VLM then assesses the grasp quality of each region through a structured zero-shot query, and the resulting zone-wise scores are fused with geometric, reachability, and task-alignment signals to re-rank antipodal grasp candidates. Experiments on YCB objects in PyBullet with a Franka Panda robot show that SAGP preserves the high success rate of geometry-only planning while substantially improving the functional appropriateness of selected grasps, particularly on asymmetric, handle-bearing objects where geometry alone is uninformative. The introduced coarse-zone abstraction offers an effective, training-free bridge between VLM-based reasoning and geometric grasp planning, without the need for fine-grained part segmentation.",
+    "readingTime": 2
+  },
+  {
+    "title": "耦合到大量子标量场的软量子波导的光谱分析",
+    "title_en": "Spectral Analysis of a Soft Quantum Waveguide Coupled to a Massive Quantum Scalar Field",
+    "authors": [
+      "Benjamin Alvarez",
+      "Hugo Gouttenegre"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29526v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-spectral-analysis-of-a-soft-quantum-waveguide-coup",
+    "content": "## 中文摘要\n\n我们研究了纳尔逊型哈密顿量，描述了在平面软量子波导中移动的巨大无自旋非相对论粒子，并线性耦合到巨大的标量玻色子场。我们的光谱分析依赖于将弯曲波导与其直波导进行比较。对于直哈密顿量，纵向平移不变性产生纤维分解，并且我们证明其谱是纯粹必要的且无间隙的。对于弯曲哈密顿量，我们建立了基本谱底部的HVZ型公式，涉及直系统和单玻色子阈值。我们还推导了弯曲情况下非空离散谱存在的充分条件，用有效的一维薛定谔算子表示。\n\n## English Summary\n\nWe study a Nelson-type Hamiltonian describing a massive spinless non-relativistic particle moving in a planar soft quantum waveguide and linearly coupled to a massive scalar bosonic field. Our spectral analysis relies on comparing the curved waveguide with its straight counterpart. For the straight Hamiltonian, longitudinal translation invariance yields a fiber decomposition, and we prove that its spectrum is purely essential and gapless. For the curved Hamiltonian, we establish an HVZ-type formula for the bottom of the essential spectrum, involving that of the straight system and the one-boson threshold. We also derive a sufficient condition for the existence of non-empty discrete spectrum in the curved case, expressed in terms of an effective one-dimensional Schrödinger operator.",
+    "readingTime": 1
+  },
+  {
+    "title": "具有低帧率高维连续标记的稳定自回归语音生成",
+    "title_en": "Stable Autoregressive Speech Generation with Low-Frame-Rate High-Dimensional Continuous Tokens",
+    "authors": [
+      "Yi Luo",
+      "Rongzhi Gu",
+      "Jixun Yao"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29363v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-stable-autoregressive-speech-generation-with-low-f",
+    "content": "## 中文摘要\n\n平衡序列长度、表征能力和长范围稳定性是自回归 (AR) 语音和音频生成中的核心问题。具有更高帧速率或更大容量的表示可以保留更多信号细节，但它们也使流生成更容易受到分布漂移和 AR 误差积累的影响。相反，更短和更压缩的表示简化了 AR 建模，但其有限的带宽可能会丢弃重要的组件并限制重建保真度和生成质量的上限。我们询问是否可以与流生成框架共同设计低帧率、高维、高带宽连续表示，以支持鲁棒的高保真重建、强大的单标记可预测性和卓越的长范围稳定性。我们将这个目标分解为两个耦合问题：高维表示空间应该具有哪些几何和统计特性，以及 AR 连续令牌生成器应该如何构造以抵抗错误累积。因此，我们提出了Locodec，...\n\n## English Summary\n\nBalancing sequence length, representational capacity, and long-horizon stability is a central problem in autoregressive (AR) speech and audio generation. Representations with higher frame rates or greater capacity can preserve more signal detail, but they also make streaming generation more vulnerable to distribution drift and AR error accumulation. Conversely, shorter and more compressed representations simplify AR modeling, but their limited bandwidth may discard important components and constrain the upper bound of reconstruction fidelity and generation quality. We ask whether a low-frame-rate, high-dimensional, high-bandwidth continuous representation can be co-designed with a streaming generation framework to support robust high-fidelity reconstruction, strong single-token predictability, and superior long-horizon stability. We decompose this goal into two coupled problems: what geometric and statistical properties a high-dimensional representation space should have, and how an AR continuous-token generator should be structured to resist error accumulation. Accordingly, we propose Locodec, a locally encoded codec that shapes its representation space to improve the interpolatability of a lower-dimensional core manifold and the identifiability of the native high-dimensional coordinates, thereby improving the predictability of high-dimensional high-bandwidth tokens. We also propose MP-ELD, a single-token AR flow-matching framework that uses multi-path information routing and residual classifier-free guidance to mitigate error accumulation. Experiments with 8-Hz, 768-dimensional tokens show that our design preserves reconstruction quality, improves single-token predictability, achieves competitive WER, and maintains stable long-form synthesis, without using external SSL/ASR models, pretrained text language models, or post-training stages.",
+    "readingTime": 2
+  },
+  {
+    "title": "电荷中性 ProTα-组蛋白 H1 缩合物的结构、扩散和弛豫",
+    "title_en": "Structure, Diffusion, and Relaxation in a Charge-Neutral ProTalpha-Histone H1 Condensate",
+    "authors": [
+      "Aniket Bhattacharya"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29639v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-structure-diffusion-and-relaxation-in-a-charge-neu",
+    "content": "## 中文摘要\n\n由带相反电荷的本质无序蛋白质形成的凝聚物提供了模型系统，用于理解瞬态静电相互作用如何控制生物分子组装体中的结构和动力学。在这里，我们使用每残基单珠粗粒模型研究了由 50 个胸腺肽原 α (ProTalpha) 和 40 个组蛋白 H1 分子组成的几乎电中性的冷凝物，该模型将无序区域的 HPS 水病模型与组蛋白 H1 球状结构域的 Go 模型相结合，在 NPT 条件下、压力为 2 至 12 bar 下。我们发现链尺寸，包括回转半径 (Rg)、端到端距离 (Ree) 及其比率 R，对压力不敏感，表明链构象在研究的压力范围内基本保持不变。由于其球状核心加无序尾部结构，组蛋白 H1 表现出比 ProT...\n\n## English Summary\n\nCondensates formed by oppositely charged intrinsically disordered proteins provide model systems for understanding how transient electrostatic interactions govern structure and dynamics in biomolecular assemblies. Here we investigate a nearly charge-neutral condensate composed of 50 Prothymosin alpha (ProTalpha) and 40 Histone H1 molecules using a single-bead-per-residue coarse-grained model combining the HPS hydropathy model for disordered regions with a Go model for the globular domain of Histone H1 under NPT conditions at pressures from 2 to 12 bar. We find that chain dimensions, including the radius of gyration (Rg), end-to-end distance (Ree), and their ratio R, are insensitive to pressure, indicating that chain conformations remain largely unchanged over the pressure range studied. Histone H1 exhibits systematically larger values of R than ProTalpha because of its globular-core plus disordered-tail architecture. Translational diffusion coefficients decrease monotonically with pressure, from approximately 0.22 to 0.06 nm^2/ns, with substantial chain-to-chain heterogeneity comparable to the mean diffusion coefficient. Chain relaxation follows a stretched exponential with beta less than 1 that decreases with pressure. ProTalpha relaxation times of approximately 12 to 40 ns obey Rouse scaling, whereas Histone H1 deviates because of the internal constraint imposed by its globular domain. ProTalpha-Histone H1 contact lifetimes of approximately 0.43 to 0.56 ns are much shorter than the Rouse relaxation time, placing the system firmly in the fast-exchange regime where transient electrostatic contacts renormalize chain friction rather than acting as permanent cross-links, consistent with the moderate stretching exponent beta of approximately 0.55 to 0.70 observed across all pressures.",
+    "readingTime": 2
+  },
+  {
+    "title": "基材接触角控制微凝胶形状、刚度和沉积模式",
+    "title_en": "Substrate contact angle governs microgel shape, stiffness and deposition pattern",
+    "authors": [
+      "M. Friederike Schulte",
+      "Sebastian S. Meyer",
+      "Timon Kratzenberg",
+      "Simon Schog",
+      "Jesco M. Schönfelder",
+      "Silke Klein-Kormelink",
+      "Tim Blinzer",
+      "Matthias Karg",
+      "Walter Richtering",
+      "Marcel Rey"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29477v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-substrate-contact-angle-governs-microgel-shape-sti",
+    "content": "## 中文摘要\n\n软微凝胶被广泛用作二维组件的可变形构建块，但固体基材在界面沉积后通常被视为被动支撑物。在这里，我们表明基质润湿性在干燥前对软微凝胶进行机械预处理。使用液体力-体积原子力显微镜，我们发现相同的微凝胶根据基底接触角的不同而采用明显不同的水合形状和刚度分布：疏水性基底引起铺展、变平和内部硬化，而亲水性基底则保持更高、更软的微凝胶和更小的接触面积。这些单微凝胶状态可以解释 Langmuir-Blodgett 沉积的单层在干燥过程中如何响应。在亲水性基材上，观察到的组装体与柔软且弱固定的微凝胶在浸没毛细管力下重新排列一致，产生不同的电晕-电晕和核-核接触状态以及明显的同构转变。在疏水性基质上，扁平且硬化...\n\n## English Summary\n\nSoft microgels are widely used as deformable building blocks for two-dimensional assemblies, yet solid substrates are often treated as passive supports after interfacial deposition. Here, we show that substrate wettability mechanically preconditions soft microgels before drying. Using in-liquid force-volume atomic force microscopy, we find that the same microgels adopt markedly different hydrated shapes and stiffness profiles depending on substrate contact angle: hydrophobic substrates induce spreading, flattening, and internal stiffening, whereas hydrophilic substrates preserve taller, softer microgels with smaller contact areas. These single-microgel states can explain how Langmuir-Blodgett-deposited monolayers respond during drying. On hydrophilic substrates, the observed assemblies are consistent with soft and weakly immobilized microgels rearranging under immersion-capillary forces, producing distinct corona-corona and core-core contact states and an apparent isostructural transition. On hydrophobic substrates, the flattened and stiffened microgels are more strongly immobilized, likely suppressing capillary-driven rearrangements and largely preserving the transferred interfacial assembly structure. These findings establish substrate-controlled microgel mechanics as the missing link between interfacial self-assembly and the final structures observed after transfer and drying.",
+    "readingTime": 1
+  },
+  {
+    "title": "作为受体波动反应的超选择性",
+    "title_en": "Superselectivity as a Receptor-Fluctuation Response",
+    "authors": [
+      "Xiuyang Xia"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29599v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-superselectivity-as-a-receptor-fluctuation-respons",
+    "content": "## 中文摘要\n\n超选择性多价结合能够在靶向和传感中实现敏锐的受体密度辨别，但其对数响应在微观上的测量结果仍不清楚。在这里，我们将选择性的精确响应分解为受体状态重新加权和直接占用响应。在稀淬灭泊松极限中，直接项消失，选择性恰好是结合颗粒下方的平均受体过量，这可以从足够大的共同配准的受体-颗粒图像中以单一密度进行测量。除了泊松统计之外，多余的部分还通过线性计数响应的 Fano 因子进行归一化，而分布形状的变化则需要完整的计数解析响应。晶格模拟验证了不同受体统计数据之间的这些关系，而晶格外模拟表明粒子拥挤通过直接项进入。这些结果建立了一个波动响应框架，将多价选择性与优先通过吸附采样的局部受体波动联系起来。\n\n## English Summary\n\nSuperselective multivalent binding enables sharp receptor-density discrimination in targeting and sensing, but what its logarithmic response measures microscopically remains unclear. Here, we derive an exact response decomposition of the selectivity into receptor-state reweighting and a direct occupation response. In the dilute quenched Poisson limit, the direct term vanishes and selectivity is exactly the mean receptor excess beneath bound particles, which can be measured at a single density from a sufficiently large co-registered receptor-particle image. Beyond Poisson statistics, the excess is normalized by the Fano factor for a linear count response, while changes in distribution shape require the full count-resolved response. Lattice simulations verify these relations across distinct receptor statistics, while off-lattice simulations show that particle crowding enters through the direct term. These results establish a fluctuation-response framework linking multivalent selectivity to the local receptor fluctuations preferentially sampled by adsorption.",
+    "readingTime": 1
+  },
+  {
+    "title": "分布式介数中心性计算中的系统范围终止",
+    "title_en": "System-Wide Termination in Distributed Betweenness Centrality Computation",
+    "authors": [
+      "Siamak Abdi",
+      "Lucia Cavallaro",
+      "Giuseppe Di Fatta"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29474v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-system-wide-termination-in-distributed-betweenness",
+    "content": "## 中文摘要\n\n在大型网络上计算介数中心性本质上是昂贵的，因为它需要聚合所有顶点对的最短路径依赖关系，并且随着网络规模的增长而变得越来越难以扩展。可扩展的分布式算法可以促进此类计算，特别是当集中处理不可行并且必须仔细控制消息交换时，例如在带宽有限或超大规模网络中。然而，现有的分布式介数中心性实现没有集成轻量级的、系统范围的终止检测器。因此，这可能会导致本地收敛后出现额外的消息传递，或者如果配置错误，会导致过早停止。在这项工作中，提出了一种用于此任务的轻量级、系统范围的全局终止检测算法。所提出的方法使顶点能够在整个系统收敛时进行局部决策。该方法根据局部停止策略进行评估，其中顶点在其自身估计稳定后单独终止。为了比...\n\n## English Summary\n\nComputing betweenness centrality on large networks is inherently expensive, as it requires aggregating shortest-path dependencies across all pairs of vertices and becomes increasingly difficult to scale as network size grows. Scalable distributed algorithms can facilitate such computations, particularly when centralised processing is not feasible, and message exchanges must be carefully controlled, for example, in bandwidth-limited or very large-scale networks. However, existing distributed betweenness centrality implementations do not integrate a lightweight, system-wide termination detector. As a consequence, this can lead to extra messaging after local convergence or, if misconfigured, premature stops. In this work, a lightweight, system-wide global termination detection algorithm for this task is presented. The proposed method enables vertices to decide locally when the overall system has converged. The method is evaluated against a local stopping strategy in which vertices terminate individually once their own estimates stabilise. To compare these two approaches, namely global termination detection and local stopping, a custom Python simulator is implemented, and both approaches are tested on synthetic (Erdos-Renyi and geometric) and real (Email and Road) network topologies. Our results show that system-wide termination detection lets vertices stop safely after detecting global convergence, as indicated by zero final error in the evaluated networks, rather than stopping independently based only on local convergence. The local stopping approach, on the other hand, results in premature termination and some errors on heterogeneous networks. This work emphasises the need for coordinated halting in distributed centrality computation.",
+    "readingTime": 2
+  },
+  {
+    "title": "时间策略：通过演示为机器人学习生成历史初始化的动作",
+    "title_en": "Temporal Policy: History-Initialized Action Generation for Robotic Learning from Demonstration",
+    "authors": [
+      "Dylan Miller",
+      "Martin Jagersand"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29482v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-temporal-policy-history-initialized-action-generat",
+    "content": "## 中文摘要\n\n通过依赖无信息高斯先验的独立耦合，标准扩散和流量匹配模型被迫学习复杂、高成本的向量场以到达物理动作空间。生成模型擅长捕获机器人演示学习 (LfD) 的多模态行为，但通常会面临较高的推理成本。本文介绍了时间策略，这是一种基于随机插值的生成框架，它将动作生成表示为时间耦合传输问题。通过初始化机器人最近历史的生成流，我们明确地将过去的状态与未来的动作序列耦合起来。这种依赖于数据的耦合降低了传输成本并产生直矢量场。我们在视觉运动模拟基准和物理 Barrett WAM 2x 7DoF 远程操作平台上验证时间策略。与噪声初始化基线相比，我们的方法将传输成本降低了近一个数量级，在单个 NVIDIA RTX ...\n\n## English Summary\n\nBy relying on independent couplings from uninformative Gaussian priors, standard diffusion and flow matching models are forced to learn complex, high-cost vector fields to reach the physical action space. Generative models excel at capturing multimodal behaviors for robotic Learning from Demonstration (LfD), but often suffer from high inference cost. This paper introduces Temporal Policy, a generative framework based on stochastic interpolants that formulates action generation as a temporally coupled transport problem. By initializing the generative flow at the robot's recent history, we explicitly couple past states to future action sequences. This data-dependent coupling reduces transport cost and produces straight vector fields. We validate Temporal Policy across visuomotor simulation benchmarks and on a physical Barrett WAM 2x 7DoF teleoperation platform. Our approach reduces transport costs by nearly an order of magnitude compared to noise-initialized baselines, achieving a 19.1 ms inference latency on a single NVIDIA RTX 4080. Crucially, these geometric and computational efficiencies are achieved while matching the success rates of state-of-the-art baselines. This simplified transport geometry bypasses the computational bottleneck of independent Gaussian priors, helping enable high-frequency, closed-loop control. The code is publicly available at https://github.com/dmiller12/TemporalPolicy.",
+    "readingTime": 2
+  },
+  {
+    "title": "The Kikuchi Hierarchy is Sharp for $k$XOR",
+    "title_en": "The Kikuchi Hierarchy is Sharp for $k$XOR",
+    "authors": [
+      "Alexander Schmidhuber",
+      "Matthew B. Hastings"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29672v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-the-kikuchi-hierarchy-is-sharp-for-kxor",
+    "content": "## 中文摘要\n\n植入噪声 $k$XOR 和随机 $k$XOR 的强烈反驳是由信号强度和时间之间的推测权衡决定的：Kikuchi 层次结构的级别 $\\ell$ 应实现平滑曲线 \\begin{equation*} m\\ \\gtrsim\\ ρ^{-2}n^{k/2}/\\ell^{k/2-1}\\ \\text{clauses} \\quad\\Longleftrightarrow\\quad \\text{可在时间 }n^{O(\\ell)}, \\end{方程*} 中求解，其中 $ρ$ 是植入信号的偏差，或者用于反驳的目标优势。然而，迄今为止，稀疏 $k$XOR 的每次频谱分析都会丢失该曲线的多对数因子，这种损失会进入运行时间的...\n\n## English Summary\n\nPlanted noisy $k$XOR and the strong refutation of random $k$XOR are governed by a conjectured trade-off between signal strength and time: Level $\\ell$ of the Kikuchi hierarchy should achieve the smooth curve \\begin{equation*}   m\\ \\gtrsim\\ ρ^{-2}n^{k/2}/\\ell^{k/2-1}\\ \\text{clauses}   \\quad\\Longleftrightarrow\\quad   \\text{solvable in time }n^{O(\\ell)}, \\end{equation*} where $ρ$ is the bias of the planted signal or, for refutation, the target advantage. However, every spectral analysis of sparse $k$XOR to date loses polylogarithmic factors against this curve, a loss that enters the exponent of the running time.   We show that a normalized variant of the Kikuchi hierarchy achieves the sharp conjectured trade-off, with no logarithmic loss, at every arity $k\\ge3$. At the scale above, our algorithms achieve strong detection, weak recovery, and strong refutation; an additional cleanup step boosts weak recovery to exact recovery, and the refutation certificates yield sum-of-squares proofs of degree $O_k(\\ell)$. We also prove matching lower bounds in the same model. The inference and refutation upper bounds transfer to more general planting laws and predicates. Finally, we give a quantum algorithm that achieves a quartic speedup over the classical spectral algorithms for detection and weak recovery.   The proofs rest on two key ingredients: a normalization of the sparse Kikuchi matrix, and a sharp count of the closed walks in its trace expansion. We use a closely related trace-walk count to prove Feige's 2008 hypergraph Moore bound conjecture in a companion paper.",
+    "readingTime": 2
+  },
+  {
+    "title": "拍卖中的目标损失风险边界",
+    "title_en": "The Targeted-Loss Exposure Frontier in Auctions",
+    "authors": [
+      "Hiroaki Odahara"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29518v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-the-targeted-loss-exposure-frontier-in-auctions",
+    "content": "## 中文摘要\n\n按投标付费拍卖在分配前向参与者收费，因此使得失败方的付款容易受到卖方干预。本文介绍了目标损失暴露，这是一种压力测试，当一个竞争对手的均衡报告固定在任意高水平，同时保留其类型分布时，记录指定投标人的付款。在非负支付和赢家至少支付与输家一样多的订单的情况下，收入等值产生了通过无声的消耗战实现的尖锐的两个投标者界限。对于任意数量的投标人，相同的格式达到支付排序的本地排名规则的上限。该证明将支付地点表述为线性程序，并构建了对偶概率测度。对于两个以上的投标人，互补的松弛几乎在任何地方都决定了最佳的失败者付款时间表。获胜者付费拍卖的风险为零，标准全付费拍卖严格低于边界，并且边界风险随着投标人数量的增加而减...\n\n## English Summary\n\nPay-to-bid auctions charge participants before allocation and therefore make losing-side payments vulnerable to seller intervention. This paper introduces targeted-loss exposure, a stress test that records a designated bidder's payment when one rival's equilibrium report is fixed at an arbitrarily high level while her type distribution is preserved. Under nonnegative payments and an ordering in which a winner pays at least as much as a loser, revenue equivalence yields a sharp two-bidder bound attained by the silent war of attrition. For any number of bidders, the same format attains the upper bound among payment-ordered rank-local rules. The proof formulates payment location as a linear program and constructs a dual probability measure. With more than two bidders, complementary slackness determines the optimal loser-payment schedule almost everywhere. Winner-pay auctions have zero exposure, standard all-pay auctions lie strictly below the frontier, and frontier exposure decreases as the number of bidders rises. A loser-only rule shows that removing payment ordering can make exposure unbounded. A common-shock extension also shows that anticipating intervention changes bids but preserves the ordering of standard formats. The results separate the total interim payment fixed by revenue equivalence from the winning or losing state to which that payment is attached.",
+    "readingTime": 2
+  },
+  {
+    "title": "TraceViT：视觉抽象推理的基础跟踪监督",
+    "title_en": "TraceViT: Grounded Trace Supervision for Visual Abstract Reasoning",
+    "authors": [
+      "Binnan Liu",
+      "Yechi Ma",
+      "Tian Xie",
+      "Wei Hua"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29586v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-tracevit-grounded-trace-supervision-for-visual-abs",
+    "content": "## 中文摘要\n\n抽象与推理语料库 (ARC) 测试模型是否可以从一些输入输出示例中推断出未见过的转换并将其应用于新的网格。循环视觉推理器通过多次迭代来完善预测，但传统训练仅限制最终输出，而中间的改进不受约束。我们建议这些细化应该跟随转型一步步进行。我们引入了 TraceViT，这是一种使用语义单调转换链进行训练的循环视觉推理器。我们通过重写和验证编程任务实现，将每个解决方案分解为中间网格状态来获得这些链。每次迭代都以从几次演示中派生的任务参考和表示当前网格状态的对象工作区为基础。由于这些链的长度可能与循环不同，因此软跟踪对齐仅强制执行它们的顺序，让模型自由分配迭代。 TraceViT 在 ARC-AGI-1 ...\n\n## English Summary\n\nThe Abstraction and Reasoning Corpus (ARC) tests whether a model can infer an unseen transformation from a few input-output examples and apply it to a new grid. Looped visual reasoners refine predictions over multiple iterations, but conventional training constrains only the final output, leaving intermediate refinements unconstrained. We propose that these refinements should instead follow the transformation step by step. We introduce TraceViT, a looped visual reasoner trained with semantically monotonic transformation chains. We obtain these chains by rewriting and verifying programmatic task implementations, decomposing each solution into intermediate grid states. Each iteration is grounded by a task reference derived from the few-shot demonstrations and an object workspace representing the current grid state. Because these chains may differ in length from the loop, soft trace alignment enforces only their ordering, letting the model allocate iterations freely. TraceViT achieves 67.8% pass@2 on ARC-AGI-1 and 24.3% on ARC-AGI-2. Controlled ablations on ARC-AGI-1 show that trace supervision becomes beneficial only when paired with grounding. Code and data will be available at https://github.com/LiuBinnan/TraceViT.",
+    "readingTime": 1
+  },
+  {
+    "title": "TRACT：具有时间顺序阶段权限的临时路由动作块，用于接触丰富的操作",
+    "title_en": "TRACT: Temporally Routed Action Chunks with Chronological Phase Authority for Contact-Rich Manipulation",
+    "authors": [
+      "Jiahao Liu",
+      "Kento Kawaharazuka",
+      "Tasuku Makabe",
+      "Kei Okada"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29285v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb"
+    ],
+    "slug": "2026-07-31-tract-temporally-routed-action-chunks-with-chronol",
+    "content": "## 中文摘要\n\n动作分块通过预测多个未来动作来缩短机器人模仿学习的有效决策范围，而传统的相位调节则描述当前的控制时刻。当预测的范围跨越程序边界时，将当前阶段分配给整个块会产生结构时间不匹配。我们提出了 TRACT，它将阶段结构的动作分块分解为可接受的当前阶段和未来范围内的单个当前到下一个边界。任务本地图限制了按时间顺序排列的阶段权威，并且累积边界分布通过特定于阶段的查询和操作路径单调地路由未来的查询。对于联系执行，因果响应缺陷积分器将策略意图与符合 ACK 资格的后续动作进行比较，在方向响应受到抑制时累积臂补偿，并在确认恢复后衰减。在六个真实机器人变体（每个变体十次试验）中，完整的 TRACT 实现了 10/...\n\n## English Summary\n\nAction chunking shortens the effective decision horizon of robot imitation learning by predicting multiple future actions, while conventional phase conditioning describes the current control instant. When a predicted horizon crosses a procedural boundary, assigning the current phase to the entire chunk creates a structural temporal mismatch. We present TRACT, which factorizes phase-structured action chunking into an accepted current phase and a single CURRENT-to-NEXT boundary inside the future horizon. A task-local graph constrains chronological phase authority, and a cumulative boundary distribution monotonically routes future queries through phase-specific query and action paths. For contact execution, a causal response-deficit integrator compares policy intent with ACK-eligible subsequent motion, accumulates arm compensation when directional response is suppressed, and decays after confirmed recovery. Across six real-robot variants with ten trials each, full TRACT achieves 10/10 full-sequence success, 99.00 [88.75, 100.00]% median [min, max] wipe completion, zero observed phase ambiguity, and zero stalls. Under the current complete method package and evaluation setting, the routed representation obtains better observed task results than the flat package (6/10 vs. 3/10 success; 77.08% vs. 8.03% median wipe completion). Chronological authority reduces observed phase ambiguity from 8/10 to 0/10, and response integration reduces stalls from 4/10 to 0/10. The package comparison does not isolate routing from other generator-package differences.",
+    "readingTime": 2
+  },
+  {
+    "title": "TransGraspNet：透明实验室器具的物理和几何一致操作",
+    "title_en": "TransGraspNet: Physically and Geometrically Consistent Manipulation of Transparent Labware",
+    "authors": [
+      "Hailing Hu",
+      "Mingyi Zhu",
+      "Yiquan An",
+      "Yifei Tian",
+      "Tianyou Zuo",
+      "Lifeng Zhou"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29567v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-transgraspnet-physically-and-geometrically-consist",
+    "content": "## 中文摘要\n\n操作含有液体的透明实验室玻璃器皿本质上是安全关键：即使很小的几何误差也会导致不稳定的抓握和危险的溢出。尽管最近在透明物体感知和机器人抓取方面取得了进展，但大多数现有系统独立优化检测、深度重建和抓取规划，这导致跨阶段不一致、不完善的边界导致深度渗漏、扭曲的表面破坏正常估计，并且与任务无关的抓取评分产生倾斜或偏离中心的抓取，在动态运动下失败。在本文中，我们提出了 TransGraspNet，一个几何物理一致性框架，它通过三个耦合原则明确强制从感知到执行的一致性：边界一致性，以产生结构可靠的对象轮廓作为下游先验，表面一致性，以在深度重建过程中保持几何保真度和表面法线精度，以及物理一致性，以通过质心对...\n\n## English Summary\n\nManipulating transparent laboratory glassware that contains liquid is inherently safety-critical: even small geometric errors can cause unstable grasps and hazardous spillage. Although recent progress has been made in transparent object perception and robotic grasping, most existing systems optimize detection, depth reconstruction, and grasp planning independently, which leads to cross-stage inconsistency imperfect boundaries induce depth bleeding, distorted surfaces corrupt normal estimation, and task agnostic grasp scoring yields tilted or off-center grasps that fail under dynamic motion. In this paper, we propose TransGraspNet, a geometry physics consistent framework that explicitly enforces consistency from perception to execution through three coupled principles: boundary consistency to produce structurally reliable object contours as downstream priors, surface consistency to preserve geometric fidelity and surface normal accuracy during depth reconstruction, and physics consistency to refine grasp selection with centroid alignment and wrench-space stability for upright and dynamically robust manipulation. We evaluate TransGraspNet on public benchmarks, a dedicated transparent glassware dataset, and a real robotic platform. The results show improved boundary quality and surface normal fidelity, and demonstrate strong task-level performance in cluttered transparent scenes. Most importantly, the proposed system achieves reliable real-world operation, including high grasp success rates in clutter and zero spillage during high speed liquid transport, highlighting the effectiveness of our method.",
+    "readingTime": 2
+  },
+  {
+    "title": "使用基于迭代学习的反应方法对冗余多链接和混合电缆驱动并联机器人进行三空间操作控制",
+    "title_en": "Tri-Space Operational Control of Redundant Multilink and Hybrid Cable-Driven Parallel Robots Using an Iterative-Learning based Reactive Approach",
+    "authors": [
+      "Dipankar Bhattacharya",
+      "Yin Pok Chan",
+      "Siqi Shang",
+      "Yuen Shan Chan",
+      "Ying Tan",
+      "Darwin Lau"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29500v1",
+    "doi": "",
+    "tags": [
+      "绳索驱动",
+      "并联机器人",
+      "手部康复"
+    ],
+    "tags_en": [
+      "cable-driven",
+      "parallel robot",
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "绳索驱动",
+      "并联机器人",
+      "手部康复"
+    ],
+    "keywords_en": [
+      "cable-driven",
+      "parallel robot",
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-tri-space-operational-control-of-redundant-multili",
+    "content": "## 中文摘要\n\n电缆驱动并联机器人（CDPR）是一种使用电缆作为执行器的并联机构。由于 CDPR 驱动、关节和操作空间（统称为三空间）内的两级冗余和众多约束，在同时满足三空间中的约束的同时跟踪操作空间中的给定轨迹具有挑战性。据作者所知，不存在任何稳健、有效且可直接适用于冗余驱动 CDPR 的多种架构的三空间控制框架。本文提出了一种结合反应控制（RC）和迭代学习控制（ILC）的三空间控制框架，以在操作空间中执行重复性任务。该框架允许通过可行的电缆力在线跟踪操作空间轨迹，同时避免电缆链路干扰、联合干扰和可操纵性损失等不良情况。另一方面，通过使用零空间向量的新颖参数化在零空间中找到最佳参数，可以在重复执行任务时通过...\n\n## English Summary\n\nCable-Driven Parallel Robots (CDPRs) are a type of parallel mechanism in which cables are used as actuators. Due to the two levels of redundancy and numerous constraints within the CDPR actuation, joint and operational spaces (together known as the tri-space), tracking a given trajectory in the operational space while satisfying constraints in tri-space simultaneously is challenging. To the best of the authors' knowledge, there does not exist any tri-space control framework, which is robust, effective, and directly applicable to several architectures of redundantly actuated CDPRs. This paper proposes a tri-space control framework that combines Reactive Control (RC) and Iterative-Learning Control (ILC) to perform repetitive tasks in the operational space. The framework allows the tracking of operational space trajectories online with feasible cable forces, while avoiding undesirable situations such as cable-link interference, joint interference, and loss of manipulability. On the other hand, by finding an optimal parameter in the null space using a novel parameterization of a null space vector, the performance can be improved through ILC when the task is repeatedly executed. Simulation and hardware results on various Multilink Cable-Driven Robot (MCDRs) and Hybrid Cable-Driven Robots (HCDRs) show that the proposed tri-space control framework can be conveniently and effectively applied to the real-time control of different CDPRs.",
+    "readingTime": 2
+  },
+  {
+    "title": "美国联邦人工智能透明度制度的三角测量",
+    "title_en": "Triangulating Across U.S. Federal AI Transparency Regimes",
+    "authors": [
+      "Emma Lurie",
+      "Emma Fauser",
+      "Qing He",
+      "Danaé Metaxa",
+      "Sorelle A. Friedler"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29540v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-triangulating-across-us-federal-ai-transparency-re",
+    "content": "## 中文摘要\n\n联邦人工智能系统可以拒绝福利或将个人标记为驱逐出境，但旨在使这些系统可见的公开披露是支离破碎且不均匀的。本文研究了美国现有的三个联邦透明度制度——记录通知系统（SORN）、信息收集请求（ICR）和人工智能用例清单——并询问它们单独和共同描述政府人工智能使用的效果如何。我们发现，没有一个单一的制度能够完全揭示政府如何构建或部署人工智能：每个制度都披露了系统的不同方面，而当前的披露基础设施使得公众很难跨监管制度并随着时间的推移跟踪特定的人工智能系统。缺乏持久标识符，粒度差异很大，年度人工智能用例清单周期意味着联邦机构可以在出现在任何官方记录中之前几个月部署系统。使用手工验证的零样本分类和跨文档实体...\n\n## English Summary\n\nFederal AI systems can deny benefits or flag individuals for deportation, but the public disclosures meant to make those systems visible are fragmented and unevenly detailed. This paper examines three existing U.S. federal transparency regimes---System of Records Notices (SORNs), Information Collection Requests (ICRs), and the AI Use Case Inventory---and asks how well they, individually and together, describe government AI use. We find that no single regime fully reveals how the government constructs or deploys AI: each discloses different aspects of a system, and the current disclosure infrastructure makes it very challenging for the public to track specific AI systems across regulatory regimes and over time. Persistent identifiers are absent, granularity varies widely, and the annual AI Use Case Inventory cycle means federal agencies can deploy systems months before appearing in any official record. Using hand-validated zero-shot classification and cross-document entity resolution, we contribute a triangulation method that links disclosures across all three regimes and present two case studies. Our case studies finds that linking records provides greater insight into government AI use, but even linked records would constitute insufficient oversight compared to what public reporting has revealed about the same systems. We trace each regime's disclosure weaknesses to its original administrative purpose, showing these gaps are structural, and offer recommendations focused on the AI Use Case Inventory as the mechanism best suited for public-facing transparency: (1) a broad and consistently applied AI system definition, (2) persistent system identifiers with cross-references to related disclosures, and (3) restored public visibility into risk management processes.",
+    "readingTime": 2
+  },
+  {
+    "title": "具有分数结构阻尼的半线性波动方程的爆炸时间的两侧估计",
+    "title_en": "Two-sided estimates of the blow-up time for a semilinear wave equation with fractional structural damping",
+    "authors": [
+      "Firas Kaabi"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29379v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-two-sided-estimates-of-the-blow-up-time-for-a-semi",
+    "content": "## 中文摘要\n\n我们考虑有界域中具有分数结构阻尼 $$ u_{tt}+(-Δ)^θu_{t}-Δu=|u|^{p-1}u $$ 的半线性波动方程的初边值问题，其中指数 $θ\\in[0,1]$ 在外部摩擦阻尼 ($θ=0$) 和内部 Kelvin--Voigt 粘弹性阻尼之间插值($θ=1$)，因此参数化了耗散机制的频率依赖性。对于能量低于势井深度和负 Nehari 泛函的初始数据，我们证明了有限时间爆炸以及爆炸时间的明确上限。该界限来自单个凹泛函，其中分数耗散相同地抵消；因此，它对于每个 $θ\\in[0,1]$ 都具有相同的形式，并且它允许 $θ$ 中一致的变体。相反，对于 $1<p\\le\\frac{n+2θ...\n\n## English Summary\n\nWe consider the initial--boundary value problem for the semilinear wave equation with fractional structural damping $$ u_{tt}+(-Δ)^θu_{t}-Δu=|u|^{p-1}u $$ in a bounded domain, where the exponent $θ\\in[0,1]$ interpolates between external frictional damping ($θ=0$) and internal Kelvin--Voigt viscoelastic damping ($θ=1$), and therefore parametrises the frequency dependence of the dissipation mechanism. For initial data with energy below the depth of the potential well and negative Nehari functional we prove finite-time blow-up together with an explicit upper bound for the blow-up time. The bound comes from a single concavity functional in which the fractional dissipation cancels identically; it therefore has the same form for every $θ\\in[0,1]$, and it admits a variant that is uniform in $θ$. Conversely, for $1&lt;p\\le\\frac{n+2θ}{n-2}$ when $n\\ge3$, we establish an explicit lower bound for the blow-up time. Mechanically, the two bounds delimit a guaranteed interval of existence and a guaranteed failure time for the model. The admissible range of exponents in the lower bound widens linearly with $θ$, which quantifies how the strength of the internal damping enlarges the class of nonlinear loads for which such a guarantee can be computed; we do not claim monotonicity in $θ$ of the numerical value of the bound. Both theorems are proved for a class of energy solutions specified by a short list of requirements, so that they are independent of any particular local existence theorem, and they carry over unchanged to the elasticity and plate operators used in structural models. The two endpoint cases recover known results for frictional and strong damping.",
+    "readingTime": 2
+  },
+  {
+    "title": "WCM：视觉-语言-动作强化学习的世界批评模型",
+    "title_en": "WCM: A World Critic Model for Vision-Language-Action Reinforcement Learning",
+    "authors": [
+      "Senyu Fei",
+      "Xiaopeng Yu",
+      "Siyin Wang",
+      "Xianzhong Zhao",
+      "Jingjing Gong",
+      "Xipeng Qiu"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29613v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-wcm-a-world-critic-model-for-vision-language-actio",
+    "content": "## 中文摘要\n\n视觉-语言-动作（VLA）模型的强化学习（RL）后训练在机器人操作方面显示出了巨大的前景。在 RL 方法中，基于批评家的方法依赖于主要对单帧观察或单帧 VLM 主干潜伏进行操作的值估计器，这与机器人控制的部分可观察性质根本不匹配。将观察历史纳入批评家的幼稚方法会导致高维视觉空间的指数复杂性，并且仍然失败，因为纯标量返回回归为学习跨时间动态提供了足够的监督。我们将根本原因确定为状态近似问题：如果没有明确的世界建模目标，批评者的表示无法捕获准确的值估计所需的时间结构。为了解决这个问题，我们提出了世界评论模型（WCM），它建立在轻量级的 LeJEPA 架构上； WCM 联合预测未来的潜在状态并估计值...\n\n## English Summary\n\nReinforcement learning (RL) post-training of Vision-Language-Action (VLA) models has shown strong promise for robotic manipulation. Among RL methods, critic-based approaches rely on a value estimator that predominantly operates on single-frame observations or single-frame VLM backbone latents, which is a fundamental mismatch with the partially observable nature of robot control. A naive approach to incorporate observation history into the critic incurs exponential complexity with high-dimensional visual space, and still fails because pure scalar-return regression provides insufficient supervision for learning cross-temporal dynamics. We identify the root cause as a state approximation problem: without an explicit world modeling objective, the critic's representation cannot capture the temporal structure needed for accurate value estimation. To address this, we propose the World Critic Model (WCM), built on a lightweight LeJEPA architecture; WCM jointly predicts future latent state and estimates values, such that the critic's representation is explicitly trained to capture temporal dynamics rather than merely regress scalar returns. WCM integrates seamlessly into both on-policy and off-policy training pipelines and is compatible with state-of-the-art VLA backbones including Pi0, Pi0.5, and OpenVLA-OFT. Extensive experiments on 149 tasks across four benchmarks demonstrate that WCM consistently achieves state-of-the-art performance in both in-distribution and out-of-distribution settings, with particularly strong generalization gains. We further validate WCM on seven real-world manipulation tasks using OpenVLA-OFT and Pi0.5 with off-policy RL, confirming stable deployment across diverse settings.",
+    "readingTime": 2
+  },
+  {
+    "title": "政策内互动何时有帮助？基于价值的模仿学习中的代表性权衡",
+    "title_en": "When Does On-Policy Interaction Help? Representational Tradeoffs in Value-Based Imitation Learning",
+    "authors": [
+      "Luca Viano",
+      "Antoine Moulin",
+      "Audrey Huang",
+      "Volkan Cevher",
+      "Philip Amortila",
+      "Dylan J. Foster"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29617v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-31-when-does-on-policy-interaction-help-representatio",
+    "content": "## 中文摘要\n\n模仿学习（IL）——训练代理从演示中复制专家行为——支撑着从机器人到语言模型训练的应用。众所周知，诸如行为克隆（BC）之类的标准方法会遭受复合错误和性能停滞的困扰，特别是当学习者无法完美地代表专家的策略时（典型的情况是，例如在蒸馏中）。两种干预措施在经验上被广泛理解，以提高绩效：沿着学习者自己的轨迹交互式地询问专家，并在生成策略的过程中使用价值函数估计，而不是直接拟合专家的完整行动分布。   我们研究了这些改进的本质及其潜在的令人惊讶的相互作用。我们的主要发现是，专家交互放松了对学习者的表征要求：人们只需要一个能够实现专家价值函数的模型，绕过了实现专家策略本身的（通常更严格的）要求。具体来说，...\n\n## English Summary\n\nImitation learning (IL)---training an agent to replicate expert behavior from demonstrations---underpins applications from robotics to language model training. Standard approaches such as Behavior Cloning (BC) are known to suffer from compounding errors and performance plateaus, particularly when the learner cannot perfectly represent the expert's policy (as is typical, e.g., in distillation). Two interventions are widely understood empirically to improve performance: querying the expert interactively along the learner's own trajectories, and using value function estimation en route to generating a policy rather than directly fitting the expert's full action distribution.   We investigate the nature of these improvements and their potentially surprising interplay. Our main finding is that expert interaction relaxes the representational demands on the learner: one only needs a model capable of realizing the expert's value function, bypassing the (often stricter) requirement of realizing the expert's policy itself. Concretely, we introduce OVI, an interactive on-policy IL algorithm that is statistically efficient whenever the learner can represent the expert's value function and computationally efficient given access to a linear maximization oracle. We complement this with a negative result showing that interaction is necessary. Namely, without stronger assumptions beyond expert-value realizability alone, any offline IL algorithm must scale with the complexity of the expert policy class. Our findings bear out empirically. OVI outperforms offline policy-based (BC), interactive policy-based (DAgger), and offline value-based IL methods, with the largest gains when the learner network is substantially less expressive than the expert's.",
+    "readingTime": 2
+  },
+  {
+    "title": "当模型先验与视觉证据发生冲突时：通过选择性先验校准减轻常识驱动的幻觉",
+    "title_en": "When Model Priors Conflict with Visual Evidence: Mitigating Commonsense-Driven Hallucinations by Selective Prior Calibration",
+    "authors": [
+      "Kesheng Chen",
+      "Yamin Hu",
+      "Wenjian Luo"
+    ],
+    "date": "2026-07-31",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.29240v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-31-when-model-priors-conflict-with-visual-evidence-mi",
+    "content": "## 中文摘要\n\n在视觉-语言模型中，当模型的常识先验覆盖了非典型状态的清晰视觉证据时，常识驱动的幻觉（CDH）就会发生。例如，模型可能会报告一只明显有六个手指的手有五个手指。我们证明这些错误是系统性的：当模型错误地回答有关反事实（CF）图像的问题时，其答案通常与它喜欢的候选者一致，而无需访问图像。不加区别地抑制此先验可以修复 CF 错误，但也可能会破坏匹配的常识 (CS) 图像上的正确答案，而相同的先验是有帮助的。因此，我们提出选择性先验校准（SPC），它从具有实例相关强度的图像条件分数中减去候选级先验偏好估计，并仅当所得分数模式强烈支持替代方案时才修改原始预测。大量实验表明，SPC 显着提高了 CF 图像的...\n\n## English Summary\n\nIn vision--language models, commonsense-driven hallucination (CDH) occurs when a model's commonsense prior overrides clear visual evidence of an atypical state. For example, a model may report that a visibly six-fingered hand has five fingers. We show that these errors are systematically directed: when a model answers a question about a counterfactual (CF) image incorrectly, its answer often coincides with the candidate it prefers without access to the image. Suppressing this prior indiscriminately can repair CF errors, but may also disrupt correct answers on matched commonsense (CS) images, where the same prior is helpful. We therefore propose Selective Prior Calibration (SPC), which subtracts candidate-level prior-preference estimates from image-conditioned scores with an instance-dependent strength and revises the original prediction only when the resulting score pattern strongly supports an alternative. Extensive experiments demonstrate that SPC substantially improves accuracy on CF images while largely preserving accuracy on matched CS images. Furthermore, these gains generalize across CDH categories, candidate-answer permutations, and other conflict benchmarks, while SPC rarely alters predictions on benchmarks without such conflicts.",
+    "readingTime": 1
+  },
+  {
+    "title": "对双黑洞子群天体物理起源的四维模型不可知论探测",
+    "title_en": "A Four-dimensional Model-agnostic Probe into the Astrophysical Origins of Binary Black Hole Subpopulations",
+    "authors": [
+      "Anarya Ray",
+      "Vicky Kalogera"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28622v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-a-four-dimensional-model-agnostic-probe-into-the-a",
+    "content": "## 中文摘要\n\n有强有力的证据表明，LIGO-Virgo-KAGRA 合作的累积引力波目录中存在多个二元黑洞~（BBH）亚群，这些亚群可能起源于不同的进化通道。对这个复杂的底层星群的天体物理学解释受到双星演化、核心塌缩和宿主环境处理的理论不确定性的影响。由于缺乏稳健的预测和看似合理的特征的多样性，强建模的总体分析通常会得出先验驱动的结论。另一方面，灵活的替代方案通常难以在更高维度上扩展，这可能导致天体物理上有意义的相关性的关键信息丢失。在这封信中，我们提出了对 BBH 主质量、质量比、有效螺旋和有效进动自旋参数的联合四维分布的第一个数据驱动重建，这对 BBH 子群的天体物理起源产生了新的模型不可知的约束。我们...\n\n## English Summary\n\nThere is strong evidence of multiple binary black hole~(BBH) subpopulations in the cumulative gravitational wave catalog by the LIGO-Virgo-KAGRA collaboration that likely originate through distinct evolutionary channels. The astrophysical interpretation of this complex underlying population is subject to theoretical uncertainties in treatments of binary stellar evolution, core collapse, and host environments. Due to a lack of robust predictions and the sheer diversity of plausible features, strongly modelled population analyses often lead to prior-driven conclusions. On the other hand, flexible alternatives are often difficult to scale in higher dimensions, which can lead to a loss of critical information on astrophysically meaningful correlations. In this \\textit{Letter}, we present the first data-driven reconstruction of the joint four-dimensional distribution of BBH primary masses, mass ratios, effective inspiral and effective precessing spin parameters, which yields novel model-agnostic constraints on the astrophysical origins of BBH subpopulations. We characterize four distinct subpopulations spanning different ranges of BBH masses and report new correlations in these specific mass ranges that are beyond the reach of strongly modeled parametrizations and lower-dimensional data-driven frameworks. Our results unveil novel insights into the abundances of specific subchannels of isolated binary evolution, dynamical assembly, and hierarchical mergers across various mass ranges in the astrophysical BBH population.",
+    "readingTime": 2
+  },
+  {
+    "title": "ACE-Data-0：以人为本的环境捕捉作为具体数据引擎",
+    "title_en": "ACE-Data-0: Human-Centric Ambient Capture as Embodied Data Engine",
+    "authors": [
+      "Yukang Cao",
+      "Haozhe Xie",
+      "Beichen Wen",
+      "Runmao Yao",
+      "Yinghao Liu",
+      "Yue Huang",
+      "Zhichao Liao",
+      "Yunxiang Wang",
+      "Haiheng Liu",
+      "Xingshun Tian"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28625v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-ace-data-0-human-centric-ambient-capture-as-embodi",
+    "content": "## 中文摘要\n\n具身智能面临着基本的数据瓶颈。模型必须捕捉第一人称感知、全身运动、灵巧操作、物体状态、声音和触觉如何随着人类追求目标而一起演变。现有的数据集将这种体验分割成不同的观点、模式或空间尺度，只留下部分观察到的完整的感知-行动循环。我们推出了环境捕捉引擎 (ACE)，这是一种以人为中心的数据引擎，可将真实的家庭环境转变为空间校准、时间同步的录音室。 ACE 在两个互补的尺度上运行：桌面尺度配置解决了手部物体操作的问题，而房间尺度配置则捕捉整个身体的运动、移动和在家具齐全的房屋中的交互。 ACE 将自我中心和多视图外心视频、全身和关节式手部运动、物体几何和 6 自由度轨迹、音频和触觉信号记录为统一的多感...\n\n## English Summary\n\nEmbodied intelligence faces a fundamental data bottleneck. Models must capture how first-person perception, whole-body motion, dexterous manipulation, object state, sound, and touch evolve together as humans pursue goals over time. Existing datasets fragment this experience across viewpoints, modalities, or spatial scales, leaving the full perception-action loop only partially observed. We introduce the Ambient Capture Engine (ACE), a human-centric data engine that transforms real home environments into spatially calibrated, temporally synchronized recording studios. ACE operates at two complementary scales: a table-scale configuration resolves hand-object manipulation, while a room-scale configuration captures whole-body motion, locomotion, and interactions across a furnished home. ACE records egocentric and multi-view exocentric video, full-body and articulated hand motion, object geometry and 6-DoF trajectories, audio, and tactile signals as a unified multisensory stream. Using ACE, we build ACE-Data-0, comprising 150 hours and 17M video frames across 200 task categories, performed by 50 participants in 2 environments, for a total of 75,000 interaction episodes. The dataset spans atomic manipulation, long-horizon chains of household activities, and human-scene interaction, while preserving natural behavioral variation through goal-level rather than step-by-step instructions. We further introduce a hierarchical benchmark that progresses from signals to scene components and then to interactions. Evaluations of state-of-the-art methods expose substantial gaps under contact, occlusion, egomotion, and long temporal horizons. ACE-Data-0 provides synchronized human demonstrations with aligned perceptual, kinematic, and contact supervision, offering a scalable foundation for imitation learning, world models, vision-language-action systems, and embodied AI.",
+    "readingTime": 2
+  },
+  {
+    "title": "证明自己利用的代理：针对安全对手利用的置信计划限制响应",
+    "title_en": "Agents That Certify Their Own Exploits: Confidence-Scheduled Restricted Responses for Safe Opponent Exploitation",
+    "authors": [
+      "Boning Li",
+      "Longbo Huang"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28520v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-agents-that-certify-their-own-exploits-confidence-",
+    "content": "## 中文摘要\n\n在两人零和不完美信息博弈中采用纳什均衡策略的智能体可以确保博弈价值，但会丧失由有缺陷的对手提供的附加价值。分散偏差带来了一个特殊的挑战：二进制发布规则可能收集的证据太少而无法采取行动，而对不完整的对手模型的完整最佳响应则可能具有高度可利用性。我们引入\\emph{预算约束置信计划限制响应}（CS-RNR），这是第一个对手利用方法，其安全保证是代理根据其实际部署的策略计算的证书，因此它提交的每个利用都是它自己审核的。该方法使用任何时间有效的置信序列来跟踪汇集的动作频率，并且仅当频率的间隔与平衡参考分离时才将频率视为可利用的。已确认的偏差定义了一个保守的对手模型，限制响应解决方案将其转变为针级别网格...\n\n## English Summary\n\nAn agent playing a Nash-equilibrium strategy in a two-player zero-sum imperfect-information game secures the game value but forfeits the additional value offered by a flawed opponent. Diffuse deviations pose a particular challenge: binary release rules may gather too little evidence to act, while a full best response to an incomplete opponent model can be highly exploitable. We introduce \\emph{budget-constrained confidence-scheduled restricted responses} (CS-RNR), the first opponent-exploitation method whose safety guarantee is a certificate the agent computes on the strategy it actually deploys, so that every exploit it commits to is one it has audited itself. The method tracks pooled action frequencies with anytime-valid confidence sequences and treats a frequency as exploitable only once its interval separates from an equilibrium reference. The confirmed deviations define a conservative opponent model, which a restricted-response solve turns into candidate counter-strategies over a grid of pin levels. Before deployment, each complete candidate is evaluated by a full-tree best response. The resulting certificate is compared with a user-specified budget and committed atomically with the strategy. Because this check is performed on the played strategy, model quality determines the exploitation achieved while the certificate controls reference-relative expected loss. In Leduc hold'em, CS-RNR obtains $6.2\\times$ the steady-state gain of a money-verified binary gate while keeping every deployed strategy within budget. A trajectory mixture using the same estimator reaches $13.6\\times$ the budget. Across Leduc, Liar's Dice, and 5-rank Leduc, all $36{,}000$ audited hands satisfy the reported certificate tolerance.",
+    "readingTime": 2
+  },
+  {
+    "title": "ARES：使用 LLM 代理进行 PPA 和成本感知 RTL 优化的自适应推理工作指导",
+    "title_en": "ARES: Adaptive Reasoning-Effort Steering for PPA- and Cost-Aware RTL Optimization with LLM Agents",
+    "authors": [
+      "Stef Cuyckens",
+      "Mihaela Jivanescu",
+      "Jun Yin",
+      "Chao Fang",
+      "Marian Verhelst"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.27879v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-ares-adaptive-reasoning-effort-steering-for-ppa-an",
+    "content": "## 中文摘要\n\n大型语言模型 (LLM) 代理通过迭代编辑、综合和 PPA 分析来优化寄存器传输级 (RTL) 设计的功耗、性能和面积 (PPA)，为每个 LLM 调用支付一美元成本。先前的代理报告在没有标准化成本的情况下达到的质量，将该质量归因于工程交叉设计内存，并固定每个呼叫的推理工作。我们提出了 Ares 以及三个相应的创新。 (1) 我们引入了每个 LLM 调用的标准化美元成本以及品质因数 (FoM)，从而能够在工作水平和优化器之间进行公平比较。 (2) 通过这种计算，我们发现长期记忆的构建并不重要。与相同经历的简单串联相比，经过改造的记忆并不能带来可靠的收益。 (3) 相反，我们通过对 21 种训练...\n\n## English Summary\n\nLarge language model (LLM) agents optimize the power, performance, and area (PPA) of register-transfer-level (RTL) designs by iterating over edits, synthesis, and PPA analysis, paying a dollar cost for every LLM call. Prior agents report the quality reached without its normalized cost, attribute that quality to an engineered cross-design memory, and hold the reasoning effort of every call fixed. We propose Ares with three corresponding innovations. (1) We introduce a normalized dollar cost per LLM call reported alongside the figure of merit (FoM), enabling fair comparison across effort levels and optimizers. (2) Using this accounting, we find the construction of the long-term memory matters little. An engineered memory brings no dependable gain over a plain concatenation of the same experience. (3) We instead adapt the per-call reasoning effort by escalating to deeper reasoning only once progress at a lower effort stalls, via a patience counter fit on 21 training designs, allocating reasoning where it pays rather than uniformly across all iterations. On three test designs unseen during training, the effort policy lowers the FoM by 23-27% where the best fixed effort reaches 16-23%, at equal normalized cost. Ares closes up to 83% of the gap from an LLM-drafted multiply-accumulate unit to its highly hand-optimized counterpart, and reaches a 25% deeper FoM than state-of-the-art Dr. RTL at 12% of its tokens.",
+    "readingTime": 2
+  },
+  {
+    "title": "AutoPref：自动发现神经组合优化的特定任务偏好目标",
+    "title_en": "AutoPref: Automatic Discovery of Task-Specific Preference Objectives for Neural Combinatorial Optimization",
+    "authors": [
+      "Shengda Gu",
+      "Kai Li",
+      "Xinyi Ke",
+      "Haobo Fu",
+      "Yifan Zhang",
+      "Jian Cheng"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.27953v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-autopref-automatic-discovery-of-task-specific-pref",
+    "content": "## 中文摘要\n\n组合优化问题 (COP) 支撑着许多现实世界的决策，但其指数级大的搜索空间使得获得高质量解决方案的成本高昂。神经组合优化 (NCO) 通常通过强化学习 (RL) 来学习快速构造策略，而基于偏好的 NCO 通过学习相对解质量来提高样本效率。然而，现有的偏好目标在手动指定的、一刀切的公式中结合了两种不同的设计选择：从每个解对中提取什么学习信号以及如何相对于采样集对每对进行加权。我们推出 AutoPref，这是第一个 LLM 引导的框架，用于 NCO 中自动偏好目标发现。 AutoPref 将目标分解为成对损失程序（定义学习信号）和设置感知加权程序（确定每对的相对贡献）。它们的组合形成了一个统一的规...\n\n## English Summary\n\nCombinatorial optimization problems (COPs) underpin many real-world decisions, but their exponentially large search spaces make high-quality solutions costly to obtain. Neural combinatorial optimization (NCO) learns fast construction policies, typically with reinforcement learning (RL), while preference-based NCO improves sample efficiency by learning from relative solution quality. However, existing preference objectives combine two distinct design choices in manually specified, one-size-fits-all formulations: what learning signal to extract from each solution pair and how to weight each pair relative to the sampled set. We present AutoPref, the first LLM-guided framework for automated preference-objective discovery in NCO. AutoPref factorizes the objective into a pairwise loss program, which defines the learning signal, and a set-aware weighting program, which determines each pair's relative contribution. Their composition forms a unified programmatic objective space containing existing preference objectives as special cases. To make its search tractable, we introduce a staged conditional search strategy with behavioral gates that filter inadmissible programs before short-horizon training and evaluation. Across TSP, CVRP, FFSP, and JSSP, AutoPref consistently outperforms strong hand-designed baselines across problem scales, demonstrating the benefits and scalability of automated objective discovery for NCO.",
+    "readingTime": 2
+  },
+  {
+    "title": "超越手动导出的不等式：二元多项式优化中切割生成的决策图",
+    "title_en": "Beyond Hand-Derived Inequalities: Decision Diagrams for Cut Generation in Binary Polynomial Optimization",
+    "authors": [
+      "Martin Cooper",
+      "Margarita Castro"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28511v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-beyond-hand-derived-inequalities-decision-diagrams",
+    "content": "## 中文摘要\n\n我们研究二元多项式优化（BPO）的割面生成，其可行区域是超图的多线性集。该集合的强不等式（例如双链接、花和奇数 $β$ 循环）通常是针对固定支持模式手动导出的。相反，我们提出了一种决策图（DD）方法：对于任何选定的支持，它会在局部多线性多胞形中分离出定义面的切口，并将其提升回原始问题。我们利用基于递归公式的新型紧凑 DD 编码，该公式仅表示顶点变量并隐式编码状态表示内的超边变量。从这个 DD 编码中，我们还获得：（i）多线性多面体的扩展公式，（ii）通过有效反链的宽度表征，揭示了新的多项式可解的超图类，以及（iii）生成的切割的面性的证书。我们探索了三种不同的切割生成支持策略，将局部结构重用、...\n\n## English Summary\n\nWe study cutting-plane generation for binary polynomial optimization (BPO), whose feasible region is the multilinear set of a hypergraph. Strong inequalities for this set---such as two-links, flowers, and odd $β$-cycles---are classically hand-derived for fixed support patterns. Instead, we propose a decision-diagram (DD) approach: for any chosen support, it separates a facet-defining cut in the local multilinear polytope and lifts it back to the original problem. We utilize a novel compact DD encoding based on a recursive formulation that represents only the vertex variables and implicitly encodes the hyperedge variables inside the state representation. From this DD encoding, we also obtain: (i) an extended formulation of the multilinear polytope, (ii) a width characterization via valid antichains that uncovers a new polynomially solvable class of hypergraphs, and (iii) a certificate for the facetness of the generated cuts. We explore three different support strategies for cut generation that reuse, expand, or partition local structures into section hypergraphs. Our empirical results show that our DD-based methodologies achieve a larger gap closure at the root node with fewer cuts than existing procedures and, in turn, markedly accelerate branch-and-bound procedures.",
+    "readingTime": 1
+  },
+  {
+    "title": "模型空间的完备性并不强制无限维李群的正则性",
+    "title_en": "Completeness of the Model Space Does Not Force Regularity for Infinite-Dimensional Lie Groups",
+    "authors": [
+      "Zongjian Han",
+      "Fungo Liu"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28557v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-07-30-completeness-of-the-model-space-does-not-force-reg",
+    "content": "## 中文摘要\n\n我们构建了一个反例来解决无限维李理论中的一个基本开放问题：在完全局部凸空间上建模的每个李群是否都是正则的。这个例子是一个可收缩复解析BCH——李群$H$，以完整席尔瓦空间$\\varphi_{\\mathbb C}$为模型，其指数映射是同胚，但$H$甚至不是$C^0$-半正则。在一个固定的有限维子空间中趋向于零的平滑控制没有 $H$ 值的 $C^1$ 演化，尽管每个控制在 $[0,1)$ 上都有独特的平滑演化。群是完备复连续逆代数的主要单位群。该构造还否定地回答了 Glöckner-Neeb 的问题，即即使在更强的完备性假设下，它们的乘法增长条件对于 Mackey 完备的连续逆代数是否是自动的。\n\n## English Summary\n\nWe construct a counterexample resolving a fundamental open problem in infinite-dimensional Lie theory: whether every Lie group modelled on a complete locally convex space is regular. The example is a contractible complex analytic BCH--Lie group $H$, modelled on the complete Silva space $\\varphi_{\\mathbb C}$, whose exponential map is a homeomorphism, yet $H$ is not even $C^0$-semiregular. Smooth controls tending to zero in one fixed finite-dimensional subspace have no $H$-valued $C^1$ evolution, although each has a unique smooth evolution on $[0,1)$. The group is the principal unit group of a complete complex continuous inverse algebra. The construction also answers negatively the Glöckner--Neeb question whether their multiplication-growth condition is automatic for Mackey-complete continuous inverse algebras, even under the stronger assumption of completeness.",
+    "readingTime": 1
+  },
+  {
+    "title": "DexDirect：直接动觉手臂引导，高效灵巧演示采集",
+    "title_en": "DexDirect: Direct Kinesthetic Arm Guidance for Efficient Dexterous Demonstration Collection",
+    "authors": [
+      "Beom Jun Kim",
+      "Shiu-Jen Wang",
+      "Jonathan Liu",
+      "Alvin Zhu",
+      "Quanyou Wang",
+      "Hanzhang Fang",
+      "Feng Xu",
+      "Mingzhang Zhu",
+      "Yuchen Cui",
+      "Dennis W. Hong"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.27784v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-07-30-dexdirect-direct-kinesthetic-arm-guidance-for-effi",
+    "content": "## 中文摘要\n\n可扩展的灵巧操作演示集合仍然是机器人学习的主要瓶颈。高保真接口通常需要昂贵的硬件和广泛的设置，而低设置、低成本的替代方案往往提供不太精确的控制，并给操作员带来更大的认知工作量。我们推出了 DexDirect，一种直接动觉手臂引导，可实现高效灵巧的演示采集。操作员直接通过手柄拖动 6-DoF 重力补偿机器人手臂，同时单个网络摄像头将操作员的另一只手重新定位到 16 个关节的 13-DoF 灵巧机器人手上。用户研究表明，与纯视觉 (AnyTeleop) 和姿势跟踪 (TeleDex) 基线相比，DexDirect 收集的成功演示分别高出 17.2 倍和 3.2 倍。改编后的 NASA-TLX 显示...\n\n## English Summary\n\nScalable collection of dexterous manipulation demonstrations remains a major bottleneck for robot learning. High-fidelity interfaces often require costly hardware and extensive setup, while low-setup, low cost alternatives tend to provide less precise control and impose greater cognitive workload on operators. We present DexDirect, a direct kinesthetic arm guidance for efficient dexterous demonstration collection. The operator drags a 6-DoF gravity-compensated robot arm directly by a handle, while a single webcam retargets operator's other hand onto a 16 joints 13-DoF dexterous robot hand. User studies suggest DexDirect collects 17.2x and 3.2x more successful demonstrations compared to purely vision (AnyTeleop) and pose-tracking (TeleDex) baselines. An adapted NASA-TLX shows DexDirect greatly reduces mental demand, effort, and frustration, despite raising physical demand. A diffusion policy trained on DexDirect demonstrations reaches a 90% success rate on a cube pick-and-place task. These results suggest that direct kinesthetic arm guidance combined with vision-based hand retargeting provides an efficient low-setup and scalable interface for collecting dexterous manipulation demonstrations",
+    "readingTime": 1
+  },
+  {
+    "title": "大型基础模型时代的手物交互：重构、生成和体现迁移",
+    "title_en": "Hand-Object Interaction in the Age of Large Foundation Models:Reconstruction, Generation, and Embodied Transfer",
+    "authors": [
+      "Weiquan Lin",
+      "Yu Deng",
+      "Shiyang Liu",
+      "Luping Xiao",
+      "Xu Tang",
+      "Junzhi Yu",
+      "Jiaolong Yang",
+      "Lei Zhang",
+      "Xingyu Chen"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28394v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-hand-object-interaction-in-the-age-of-large-founda",
+    "content": "## 中文摘要\n\n手-物体交互（HOI）建模仍然具有挑战性，因为它需要在严重的视觉不确定性下对手的清晰度、物体几何形状、接触、语义和动力学进行联合推理。基础模型引入了从大规模跨领域数据中学到的可转移先验知识，提供了解决特定任务数据和模型之外的这些挑战的新方法。然而，快速增长的文献仍然支离破碎，现有的研究通常将这些方法简单地描述为“使用大型模型”，而没有系统地描述引入的知识、知识进入 HOI 管道的位置，或者有助于减少哪些 HOI 不确定性。这项调查首次对 HOI 基础模型先验进行了系统回顾。我们将文献组织成涵盖重建和生成的六个 HOI 任务。更重要的是，我们建立了八个基础模型子先验的分类法，分为几何、语义和视觉...\n\n## English Summary\n\nHand-object interaction (HOI) modeling remains challenging because it requires joint reasoning about hand articulation, object geometry, contact, semantics, and dynamics under severe visual uncertainty. Foundation models introduce transferable prior knowledge learned from large-scale cross-domain data, offering new ways to address these challenges beyond task-specific data and models. However, the rapidly growing literature remains fragmented, and existing studies typically describe these methods simply as ``using large models'' without systematically characterizing what knowledge is introduced, where it enters the HOI pipeline, or which HOI uncertainty it helps reduce. This survey presents the first systematic review of foundation-model priors for HOI. We organize the literature into six HOI tasks spanning reconstruction and generation. More importantly, we establish a taxonomy of eight foundation-model sub-priors grouped into geometric, semantic, and visual families. Geometric priors encompass shape retrieval, shape reconstruction, and spatial reconstruction; semantic priors include semantic grounding and language reasoning; and visual priors cover visual representation, image generation, and video generation. Based on this taxonomy, we systematically analyze how different priors are represented, injected, and adapted across HOI pipelines and tasks. Beyond how foundation models empower HOI, we further examine how HOI-derived knowledge is used in robot learning, including human-data pretraining, human-to-robot skill transfer, and HOI-to-robot data generation. Finally, we summarize datasets and evaluation protocols, and discuss limitations and future directions toward more generalizable HOI systems. To support long-term progress, we curate a live repository that continuously aggregates emerging methods and benchmarks.",
+    "readingTime": 2
+  },
+  {
+    "title": "适用于 GPU 的 Futhark 高级大整数算术",
+    "title_en": "High-Level Big Integer Arithmetic in Futhark for GPUs",
+    "authors": [
+      "Cosmin E. Oancea",
+      "Stephen M. Watt"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28897v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-high-level-big-integer-arithmetic-in-futhark-for-g",
+    "content": "## 中文摘要\n\n我们报告了使用高级函数语言 Futhark 对操作数为 $2^{15}$ 到 $2^{19}$ 位的中型整数进行块级加法、减法、乘法和除法的 GPU 实现。与手写的 C++/CUDA 版本和 CGBN 进行比较，我们确定哪些函数结构可以编译良好，哪些内存布局和顺序化有效，以及需要哪些编译器支持。结果表明，在某些编译器改进后，高级代码可以紧凑地表达算法，同时接近有竞争力的性能。特别是，我们发现 GPU 寄存器内存中数组的自动放置对于性能至关重要。\n\n## English Summary\n\nWe report on GPU implementations of block-level addition, subtraction, multiplication and division for midsize integers, with operands of $2^{15}$ to $2^{19}$ bits using the high-level functional language Futhark. Comparing with hand-written C++/CUDA versions and CGBN, we identify which functional constructs compile well, where memory placement and sequentialization are effective, and what compiler support is needed. The results show that high-level code can express the algorithms compactly while approaching competitive performance after certain compiler improvements. In particular, we find that automated placement of arrays in GPU register memory is critical for performance.",
+    "readingTime": 1
+  },
+  {
+    "title": "研究拥挤条件有序众包数据的有效不确定性可视化",
+    "title_en": "Investigating Effective Uncertainty Visualizations for Ordinal Crowdsourced Data of Crowding Conditions",
+    "authors": [
+      "Bea Alexis Arcega",
+      "Annika Dominique S. Campos",
+      "Kathleen Therese Cruz",
+      "Aaron Ace Toledo",
+      "Briane Paul V. Samson"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28072v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-investigating-effective-uncertainty-visualizations",
+    "content": "## 中文摘要\n\n通勤者经常会在铁路系统中遇到拥挤的情况，尤其是在乘客密度全天变化的队列中。这带来了拥挤的不确定性，使个人很难有效地预测情况并计划他们的旅行。众包一直是收集本地化用户数据的一种有价值的方法。但人群的不可预测性和众包信息的不确定性给决策带来了新的挑战。然而，我们对如何有效地可视化拥挤的不确定性以支持明智的通勤决策知之甚少，特别是在使用众包序数数据时。在这里，我们研究了不同的不确定性可视化及其在表示众包拥挤数据的可变性和可靠性方面的有效性。通过在线研究对它们进行了评估，我们发现集群可视化最适合减少认知负荷，同时最大限度地提高用户的信心和信任。另一方面，参与者在使用气泡树图时在确定人群水平方面表现出更...\n\n## English Summary\n\nCommuters often encounter crowding in railway systems, particularly in queues where passenger density varies throughout the day. This introduces uncertainty in crowdedness, making it difficult for individuals to anticipate conditions and plan their trips effectively. Crowdsourcing has been a valuable method for collecting localized user data. But the unpredictability of crowds and the uncertainty of crowdsourced information pose new challenges for decision-making. However, we know little about how to effectively visualize uncertainty in crowdedness to support informed commuting decisions, particularly when using crowdsourced ordinal data. Here, we investigated different uncertainty visualizations and their effectiveness in representing the variability and reliability of crowdsourced crowding data. They were evaluated through an online study, and we found that cluster visualization is best suited to reduce cognitive load while maximizing user confidence and trust. On the other hand, participants showed higher accuracy in determining crowd levels when using bubble treemaps.",
+    "readingTime": 1
+  },
+  {
+    "title": "学习追踪塞伯格二元性",
+    "title_en": "Learning to Trace Seiberg Dualities",
+    "authors": [
+      "Jonathan J. Heckman",
+      "Shani Meynet",
+      "Alessandro Mininno",
+      "Gary Shiu"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28628v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-learning-to-trace-seiberg-dualities",
+    "content": "## 中文摘要\n\n对偶性在建立广泛的物理系统中的微观现象和涌现现象方面发挥着重要作用。然而，在实践中，即使所有“游戏规则”都是众所周知的，确定两个系统何时是对偶的，在计算上通常也具有挑战性。换句话说，当面对两个系统时，如何有效地确定它们实际上是对偶的？在本文中，我们使用机器学习方法来解决超对称箭袋规范理论的塞伯格对偶性问题。从数学上讲，这涉及建立箭袋的突变，这又是“学习解开”主题的变体。一方面，这为我们提供了一种用于确定不同对偶性的计算复杂性的实用工具。另一方面，它也让我们能够研究不同的网络架构如何学习如何追踪塞伯格对偶性。我们发现，对于具有适度数量的箭袋节点（数量级为 10 美元）的箭袋，由变压器和多层感知器...\n\n## English Summary\n\nDualities play an important role in establishing both microscopic and emergent phenomena in a wide range of physical systems. In practice, though, it can often be computationally challenging to establish when two systems are dual, even when all of the \"rules of the game\" are well-known. Said differently, when confronted with two systems, how can one efficiently establish that they are in fact dual? In this paper we use machine learning methods to address this question for Seiberg dualities of supersymmetric quiver gauge theories. Mathematically, this involves establishing mutations of quivers, which is in turn a variation on the theme of \"learning to unknot\". On the one hand, this leads us to a practical tool for establishing the computational complexity of different dualities. On the other hand, it also allows us to study how different network architectures learn how to trace Seiberg dualities. We find that for quivers with a modest number of quiver nodes (of order $10$), different network architectures consisting of transformers and multi-layer perceptrons tend to outperform deterministic algorithms. Supplementing the network by well-established pathfinder algorithms (essentially \"Google Maps for quivers\") leads to an additional improvement in the efficiency and accuracy of the search strategy. We anticipate that this class of questions can serve as a useful benchmark for frontier AI models applied to theoretical physics.",
+    "readingTime": 2
+  },
+  {
+    "title": "LM-GRASP：通过在线模仿学习进行组合构建的特定于实例的语言模型",
+    "title_en": "LM-GRASP: Instance-Specific Language Models for Combinatorial Construction via Online Imitation Learning",
+    "authors": [
+      "Mohand Mezmaz",
+      "Grégoire Danoy"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28135v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-lm-grasp-instance-specific-language-models-for-com",
+    "content": "## 中文摘要\n\n用于组合优化的机器学习通常依赖于通过强化学习在大型离线数据集上针对固定问题类进行训练的神经构造函数，这会导致较高的预训练成本，并且在训练分布之外的泛化能力很差。我们提出了一种替代方案：一种元启发式框架，将 GRASP 的随机构建阶段重新表述为在线模仿学习任务，并针对每个问题实例从头开始进行训练。本地搜索过程充当专家预言机，而仅解码器的 Transformer 充当建设性策略。与经典的 GRASP 不同，经典的 GRASP 依赖于基于局部标量成本的静态、短视的启发式规则，我们的方法完全由数据驱动：构建策略来自搜索本身发现的高质量解决方案，不需要针对特定​​问题的特征工程。   我们将其实例化为 ...\n\n## English Summary\n\nMachine learning for combinatorial optimization typically relies on neural constructors trained via reinforcement learning on large offline datasets for a fixed problem class-incurring high pretraining costs and generalizing poorly outside the training distribution. We propose an alternative: a metaheuristic framework that reformulates the randomized constructive phase of GRASP as an online imitation learning task, trained from scratch on each problem instance. A local search procedure acts as an expert oracle, while a decoder-only Transformer serves as the constructive policy. Unlike classical GRASP, which relies on static, myopic heuristic rules based on localized scalar costs, our approach is fully data-driven: the construction policy emerges from high-quality solutions discovered during the search itself, with no problem-specific feature engineering required.   We instantiate this as LM-GRASP, a hybrid metaheuristic following an iterative learn-infer-improve cycle, training the policy online via behavioral cloning on a dynamic archive of elite trajectories-no external data or offline pretraining needed. The pipeline interfaces with the domain solely through the objective evaluator used by local search.   Evaluated on the Taillard PFSP benchmark (ta51-ta60), the most discriminating block due to half its optima being unknown, LM-GRASP outperforms GPU-GRASP by 28.4 makespan units on average-comparable to the gain from GPU acceleration over sequential execution (27.2 units), though with overlapping standard deviations. This suggests instance-specific, online-trained language models are a promising, practical alternative to hand-engineered constructors, especially for landscapes resistant to classical greedy construction.",
+    "readingTime": 2
+  },
+  {
+    "title": "具有被动市场影响的最佳执行",
+    "title_en": "Optimal Execution with Passive Market Impact",
+    "authors": [
+      "Alexander Barzykin",
+      "Robert Boyce",
+      "Eyal Neuman",
+      "Sturmius Tuschmann"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28323v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-optimal-execution-with-passive-market-impact",
+    "content": "## 中文摘要\n\n我们推导出一个用于通过限价订单实现最佳执行的介观模型，该模型结合了被动价格影响的微观结构特征。我们的框架基于两个经验可观测值：限价单执行概率随距中间价格距离的近似指数衰减，以及价格变化对订单流失衡的短期线性响应。结合这些成分，我们获得了一个简化形式的被动影响率，该影响率随着报价距离呈指数衰减。该模型描述了战术层面的被动执行，其中成交是由一系列平衡执行概率、逆向选择和机会成本的报价调整产生的。我们制定并解决了一个最优清算问题，其中交易者控制被动卖出报价的激进程度。这就产生了一种权衡，一方面是较高的填充强度和较大的累积影响，另一方面是较低的影响但较大的不执行风险。使用纳斯达克股票和公共外汇进行的经...\n\n## English Summary\n\nWe derive a mesoscopic model for optimal execution with limit orders that incorporates microstructural features of passive price impact. Our framework is based on two empirical observables: the approximately exponential decay of limit-order fill probabilities with distance from the midprice, and the short-term linear response of price changes to order flow imbalance. Combining these ingredients, we obtain a reduced-form passive impact rate that decays exponentially with quote distance. The model describes passive execution at a tactical level, where fills arise from a sequence of quote adjustments that balance execution probability, adverse selection, and opportunity cost. We formulate and solve an optimal liquidation problem in which the trader controls the aggressiveness of passive sell quotes. This generates a trade-off between higher fill intensity and larger accumulated impact on the one hand, and lower impact but greater non-execution risk on the other. Empirical calibration using NASDAQ equities and public FX supports the empirical foundations of the model. We also analyse extensions with heterogeneous decay rates, transient impact, and target execution schedules.",
+    "readingTime": 1
+  },
+  {
+    "title": "静态输入，动态输出：移动物体操纵的反事实动作增强",
+    "title_en": "Static In, Dynamic Out: Counterfactual Action Augmentation for Moving Object Manipulation",
+    "authors": [
+      "Woo Chul Shin",
+      "Zhenyang Chen",
+      "Alfred Cueva",
+      "Nadun Ranawaka Arachchige",
+      "Yingyan Celine Lin",
+      "Benjamin Joffe",
+      "Shreyas Kousik",
+      "Danfei Xu"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.27890v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-static-in-dynamic-out-counterfactual-action-augmen",
+    "content": "## 中文摘要\n\n视觉运动策略在目标对象在执行过程中保持静态的操作任务方面取得了进展，但实际部署打破了这一假设：零件在传送带上漂移，水果在风中摇摆。我们引入了静态输入、动态输出（SIDO），这是一种反事实动作增强，使仅在静态对象演示上训练的策略能够适应测试时看不见的对象运动。我们的关键思想是将移动物体的操纵分解为两个子问题：预测物体将在哪里，以及达到预测的姿势。 SIDO 将物体移动到反事实的未来位置，并改变演示的动作块以保留手部物体的相对姿势，从而产生目标条件策略。在部署时，物体姿态预测器提供未来位置。在五种对象运动模式下的三个模拟任务（Mug、Square、Stack）和两个现实世界任务（Gantry、Pe...\n\n## English Summary\n\nVisuomotor policies have advanced on manipulation tasks where the target object stays static during execution, but real deployments break this assumption: parts drift on conveyors and fruits sway in the wind. We introduce Static In, Dynamic Out (SIDO), a counterfactual action augmentation that enables a policy trained only on static object demonstrations to adapt to unseen object motion at test time. Our key idea is to factorize moving object manipulation into two sub-problems: predicting where the object will be, and reaching that predicted pose. SIDO displaces the object to a counterfactual future position and morphs the demonstrated action chunk to preserve the hand-object relative pose, yielding a goal-conditioned policy. At deployment an object pose predictor supplies the future position. Across three simulated tasks (Mug, Square, Stack) under five object motion patterns and two real-world tasks (Gantry, Peachtree), SIDO improves moving object success over the baselines while preserving static object performance. Project website: https://sido-staticindynamicout.github.io/.",
+    "readingTime": 1
+  },
+  {
+    "title": "TacWAM：具有力学感知触觉预测的锚引导世界动作模型",
+    "title_en": "TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile Prediction",
+    "authors": [
+      "Lei Jin",
+      "Yiding Ma",
+      "Xin Zhang",
+      "Chen Gao",
+      "Wei Wu",
+      "Yong Li"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28391v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-tacwam-anchor-guided-world-action-model-with-mecha",
+    "content": "## 中文摘要\n\n世界动作模型（WAM）将未来状态预测与机器人动作生成相结合，但现有方法很大程度上依赖于视觉未来。视觉预测捕捉场景结构和物体运动，但在接触丰富的操作过程中对力、变形、剪切和滑动提供有限的监督。这就产生了两个设计要求：触觉未来应该携带有意义的物理信息，并且它们不应该成为行动生成的特权线索。我们推出了 TacWAM，这是一种机械感知的触觉 WAM，它分三个步骤解决了这一挑战。首先，空间对齐融合 (SAF) 触觉编码器将触觉外观、密集力场和变形流映射到共享的潜在预测空间，并通过双边力和扭矩重建保留全局接触信息。其次，触觉历史编码器提供时间上下文，因此未来的触觉预测反映了力和变形如何变化超出当前的触觉观...\n\n## English Summary\n\nWorld Action Models (WAMs) combine future-state prediction with robot action generation, but existing approaches largely rely on visual futures. Visual prediction captures scene structure and object motion, yet provides limited supervision for force, deformation, shear, and slip during contact-rich manipulation. This creates two design requirements: tactile futures should carry meaningful physical information, and they should not become privileged cues for action generation. We present TacWAM, a mechanics-aware tactile WAM that addresses this challenge in three steps. First, a Spatially Aligned Fusion (SAF) Tactile Encoder maps tactile appearance, dense force fields, and deformation flow into a shared latent prediction space, with bilateral force and torque reconstruction preserving global contact information. Second, a tactile history encoder provides temporal context so future tactile prediction reflects how force and deformation change beyond the current tactile observation. Third, Anchor-Guided Tri-Modal (AGT) Attention separates current visual and tactile anchors, future prediction tokens, and action tokens, allowing future tactile states to supervise training without being directly read by the action branch. We evaluate TacWAM on four real-world contact-rich manipulation tasks covering fragile grasping, sustained surface contact, and dynamic in-hand manipulation. TacWAM achieves an average success rate of 75.0%, exceeding the strongest evaluated baseline by 37.5 percentage points. Staged ablations show consistent degradation when tactile history is removed and access to future prediction targets is relaxed. These results indicate that future tactile supervision can improve contact-aware action learning when combined with informative tactile representations and deployment-consistent information constraints.",
+    "readingTime": 2
+  },
+  {
+    "title": "CFT 中的运营商塔和大额费用的凸界",
+    "title_en": "Towers of Operators in CFTs and Convexity Bounds at Large Charge",
+    "authors": [
+      "Fedor K. Popov",
+      "Adar Sharon"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28726v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-towers-of-operators-in-cfts-and-convexity-bounds-a",
+    "content": "## 中文摘要\n\n在 arXiv:2406.19441 中，研究表明，对于具有 $U(1)$ 对称性自发破缺的模空间的 3d CFT，大电荷 $Q$ 处的最小缩放尺寸为 $Δ_{\\min}(Q)=α_1 Q+α_0+O(1/Q)$。受全息沼泽计划的推动，我们研究了系数 $α_i$ 的可能界限。对于$α_0$，弱引力猜想激发了CFT电荷凸性猜想，这需要边界$α_0\\leq 0$。使用模空间 EFT，我们证明了 $\\textit{projected}$ $Δ_{\\min}(Q)$ 的边界，这是通过固定单个电荷 $Q$ 并最小化维度同时允许所有其他电荷变化而获得的。这提供了一个 WGC 驱动的界限，可以使用 CFT ...\n\n## English Summary\n\nIn arXiv:2406.19441, it was shown that for 3d CFTs with a moduli space along which a $U(1)$ symmetry is spontaneously broken, the minimum scaling dimension at large charge $Q$ scales as $Δ_{\\min}(Q)=α_1 Q+α_0+O(1/Q)$. Motivated by the holographic swampland program, we study possible bounds on the coefficients $α_i$. For $α_0$, the weak gravity conjecture motivates the CFT charge convexity conjecture, which requires the bound $α_0\\leq 0$. Using the moduli space EFT we prove this bound for the $\\textit{projected}$ $Δ_{\\min}(Q)$, obtained by fixing a single charge $Q$ and minimizing the dimension while allowing all other charges to vary. This provides a WGC-motivated bound that is explicitly provable using CFT methods. On the other hand, we show that $α_1$ admits no universal bound apart from the trivial bound $α_1\\geq 0$. We also compute $α_1$ and $α_0$ in several new 3d $\\mathcal{N}=1$ theories via the $ε$-expansion and large-$N$ methods.",
+    "readingTime": 1
+  },
+  {
+    "title": "UniCross：统一交叉技能灵巧操控综合",
+    "title_en": "UniCross: Unified Cross-Skill Dexterous Manipulation Synthesis",
+    "authors": [
+      "Hui Zhang",
+      "Julian Ferchow",
+      "Jie Song",
+      "Mirko Meboldt"
+    ],
+    "date": "2026-07-30",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2607.28198v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-07-30-unicross-unified-cross-skill-dexterous-manipulatio",
+    "content": "## 中文摘要\n\n许多灵巧的操作任务要求在整个交互过程中始终牢固地握住物体。从手与物体关系运动的角度来看，这种操纵包括四种典型技能：抓取、移动、手中旋转和手中平移。人类的双手灵活地组合这些技能来完成复杂的任务。然而，现有的方法使用特定于技能的动作约束、目标甚至专用的手部形态来单独对这些技能进行建模，这打破了长视野构图所需的兼容性和连续性。在这项工作中，我们提出了一个统一的框架，用一个单一的公式对所有四种技能进行建模，该公式共享相同的状态和行动空间以及共同的目标结构。这种公式可以直接提炼单一的跨技能策略，该策略在每项技能上都表现出色，泛化到看不见的物体，对干扰保持鲁棒性，并将技能无缝地链接到长视野操作中。该框架还...\n\n## English Summary\n\nMany dexterous manipulation tasks require the object to remain securely held throughout the interaction. From the perspective of hand-object relational motion, such manipulation comprises four canonical skills: grasping, relocation, in-hand rotation, and in-hand translation. Human hands flexibly compose these skills to accomplish complex tasks. Existing approaches, however, model these skills separately with skill-specific action constraints, objectives, or even dedicated hand morphologies, which breaks the compatibility and continuity required for long-horizon composition. In this work, we present a unified framework that models all four skills in a single formulation that shares the same state and action spaces and a common objective structure. This formulation enables straightforward distillation of a single cross-skill policy that performs strongly on every skill, generalizes to unseen objects, stays robust to disturbances, and chains skills seamlessly into long-horizon manipulation. The framework also transfers effectively across different hand morphologies. Overall, our results suggest that different dexterous manipulation skills can be viewed as instantiations of a shared task formulation, revealing the intrinsic consistency across different behaviors.",
+    "readingTime": 1
+  },
+  {
     "title": "用于观察因果推理的人类增强代理工作流程",
     "title_en": "A Human-Augmenting Agentic Workflow for Observational Causal Inference",
     "authors": [

@@ -1,0 +1,21 @@
+---
+title: "TRACT：具有时间顺序阶段权限的临时路由动作块，用于接触丰富的操作"
+title_en: "TRACT: Temporally Routed Action Chunks with Chronological Phase Authority for Contact-Rich Manipulation"
+authors: ["Jiahao Liu", "Kento Kawaharazuka", "Tasuku Makabe", "Kei Okada"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29285v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb"]
+---
+
+## 中文摘要
+
+动作分块通过预测多个未来动作来缩短机器人模仿学习的有效决策范围，而传统的相位调节则描述当前的控制时刻。当预测的范围跨越程序边界时，将当前阶段分配给整个块会产生结构时间不匹配。我们提出了 TRACT，它将阶段结构的动作分块分解为可接受的当前阶段和未来范围内的单个当前到下一个边界。任务本地图限制了按时间顺序排列的阶段权威，并且累积边界分布通过特定于阶段的查询和操作路径单调地路由未来的查询。对于联系执行，因果响应缺陷积分器将策略意图与符合 ACK 资格的后续动作进行比较，在方向响应受到抑制时累积臂补偿，并在确认恢复后衰减。在六个真实机器人变体（每个变体十次试验）中，完整的 TRACT 实现了 10/...
+
+## English Summary
+
+Action chunking shortens the effective decision horizon of robot imitation learning by predicting multiple future actions, while conventional phase conditioning describes the current control instant. When a predicted horizon crosses a procedural boundary, assigning the current phase to the entire chunk creates a structural temporal mismatch. We present TRACT, which factorizes phase-structured action chunking into an accepted current phase and a single CURRENT-to-NEXT boundary inside the future horizon. A task-local graph constrains chronological phase authority, and a cumulative boundary distribution monotonically routes future queries through phase-specific query and action paths. For contact execution, a causal response-deficit integrator compares policy intent with ACK-eligible subsequent motion, accumulates arm compensation when directional response is suppressed, and decays after confirmed recovery. Across six real-robot variants with ten trials each, full TRACT achieves 10/10 full-sequence success, 99.00 [88.75, 100.00]% median [min, max] wipe completion, zero observed phase ambiguity, and zero stalls. Under the current complete method package and evaluation setting, the routed representation obtains better observed task results than the flat package (6/10 vs. 3/10 success; 77.08% vs. 8.03% median wipe completion). Chronological authority reduces observed phase ambiguity from 8/10 to 0/10, and response integration reduces stalls from 4/10 to 0/10. The package comparison does not isolate routing from other generator-package differences.

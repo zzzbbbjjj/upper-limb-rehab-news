@@ -1,0 +1,21 @@
+---
+title: "OASIS：通过 3D 高斯泼溅进行遮挡感知单图像手部头像重建"
+title_en: "OASIS: Occlusion-aware Single-image Hand Avatar Reconstruction via 3D Gaussian Splatting"
+authors: ["Zhisheng Han", "Shiyao Wu", "Jiayan Qiu", "Yakun Ju", "Lu Liu", "Le Zhang", "Pengfei Feng", "Huiyu Zhou", "Zheheng Jiang"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29633v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+单图像 3D 手部头像重建从根本上来说是不适定的，并且由于严重自遮挡下的视觉证据有限以及高度关节化的手部复杂的依赖于姿势的变形而特别具有挑战性。现有方法主要依赖于隐式 NeRF 式表示，其体积拟合的计算成本很高，并且常常难以保留细粒度的手部细节。在这项工作中，我们提出了 OASIS，这是一个定制的 3D 高斯 Splatting 框架，用于单图像手部头像重建。为了在单视图重建中忠实地编码稀疏图像特定的外观线索，我们通过显式地将输入图像观察与 3D 手部几何形状对齐并上下文自适应地标记生成的视觉证据来构建几何对齐的视觉证据标记。由于严重的自遮挡使得图像证据的可靠性本质上依赖于可见性，因此我们引入...
+
+## English Summary
+
+Single-image 3D hand avatar reconstruction is fundamentally ill-posed and particularly challenging due to limited visual evidence under severe self-occlusion and the complex pose-dependent deformation of highly articulated hands. Existing methods predominantly rely on implicit NeRF-style representations, whose volumetric fitting is computationally expensive and often struggles to preserve fine-grained hand details. In this work, we present OASIS, a tailored 3D Gaussian Splatting framework for single-image hand avatar reconstruction. To faithfully encode sparse image-specific appearance cues in single-view reconstruction, we construct geometry-aligned visual evidence tokens by explicitly aligning input image observations with 3D hand geometry and context-adaptively tokenizing the resulting visual evidence. Since severe self-occlusion makes the reliability of image evidence inherently visibility-dependent, we introduce a visibility-conditioned point-image attention to reliably transfer visual evidence to geometric tokens, yielding occlusion-aware Gaussian features for faithful and robust reconstruction. To further capture non-rigid deformation of articulated hands, we introduce a Feature-on-Mesh representation to enable Gaussian deformation to be guided by local surface stretching. Under this framework, we adopt a one-shot adaptation scheme that learns a shared hand prior from multi-identity training data and then fits it to a target image for target-specific reconstruction. Extensive experiments show that OASIS outperforms existing baselines in both visual fidelity and efficiency across challenging poses and in-the-wild scenarios, and further demonstrates strong versatility in downstream applications such as text-to-avatar generation and texture editing.

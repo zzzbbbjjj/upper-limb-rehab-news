@@ -1,0 +1,21 @@
+---
+title: "使用误差界引导二元分类的自监督学习：机器人插入任务的案例研究"
+title_en: "Bootstrapping Self-Supervised Learning of Binary Classification Using Error Bounds: A Case Study on a Robotic Insertion Task"
+authors: ["Zebin Duan", "Norbert Krüger", "Juan Heredia", "Thorbjørn Mosekjær Iversen", "Frederik Hagelskjær"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29640v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+灵活的制造需要快速部署解决方案和最短的设置时间才能保持竞争力。一个基本属性是控制错误级别的能力，因为故障的范围可能从轻微的性能下降到严重的设备损坏。然而，传统部署通常涉及大量设置、数据收集、模型训练或参数调整以及系统测试，导致严重延迟，阻碍商业可行性。我们提出了一种数据引擎，可以在执行任务时收集数据并提高其性能。数据引擎由两个分类器、快速模型预测和昂贵的验证组成。首先，执行模型预测，并根据预测的置信水平，可以使用昂贵的验证。通过调整置信水平，用户可以控制可容忍误差的水平。   我们的方法是在现实世界的机器人插入任务上实现的，该任务使用力数据进行模型预测。该系统应用 UMAP 降维并使用 Wil...
+
+## English Summary
+
+Flexible manufacturing requires rapid deployment of solutions and minimal setup time to remain competitive. An essential attribute is the ability to control error levels, as failures can range from minor performance degradation to severe equipment damage. However, conventional deployment often involves extensive setup, data collection, model training or parameter tuning, and system testing, resulting in significant delays that hinder commercial feasibility. We propose a data engine which gathers data and improves its performance while executing the task. The data engine consists of two classifiers, a fast model prediction and expensive verification. First, a model prediction is performed and based on the confidence level of the prediction, the expensive verification can be used. By adjusting the confidence level, users can control the level of tolerable error.   Our method is implemented on a real-world robotic insertion task, which uses force data for the model prediction. The system applies UMAP dimensionality reduction and uses Wilson-Score to compute the confidence bounds of the prediction. Results demonstrate the ability to learn and reduce the need for expensive verifications over time, while staying within the set error-rate. The results highlight the potential of confidence bounds in self-improving models to enhance reliability in robotic classification task.

@@ -1,0 +1,21 @@
+---
+title: "当模型先验与视觉证据发生冲突时：通过选择性先验校准减轻常识驱动的幻觉"
+title_en: "When Model Priors Conflict with Visual Evidence: Mitigating Commonsense-Driven Hallucinations by Selective Prior Calibration"
+authors: ["Kesheng Chen", "Yamin Hu", "Wenjian Luo"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29240v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+在视觉-语言模型中，当模型的常识先验覆盖了非典型状态的清晰视觉证据时，常识驱动的幻觉（CDH）就会发生。例如，模型可能会报告一只明显有六个手指的手有五个手指。我们证明这些错误是系统性的：当模型错误地回答有关反事实（CF）图像的问题时，其答案通常与它喜欢的候选者一致，而无需访问图像。不加区别地抑制此先验可以修复 CF 错误，但也可能会破坏匹配的常识 (CS) 图像上的正确答案，而相同的先验是有帮助的。因此，我们提出选择性先验校准（SPC），它从具有实例相关强度的图像条件分数中减去候选级先验偏好估计，并仅当所得分数模式强烈支持替代方案时才修改原始预测。大量实验表明，SPC 显着提高了 CF 图像的...
+
+## English Summary
+
+In vision--language models, commonsense-driven hallucination (CDH) occurs when a model's commonsense prior overrides clear visual evidence of an atypical state. For example, a model may report that a visibly six-fingered hand has five fingers. We show that these errors are systematically directed: when a model answers a question about a counterfactual (CF) image incorrectly, its answer often coincides with the candidate it prefers without access to the image. Suppressing this prior indiscriminately can repair CF errors, but may also disrupt correct answers on matched commonsense (CS) images, where the same prior is helpful. We therefore propose Selective Prior Calibration (SPC), which subtracts candidate-level prior-preference estimates from image-conditioned scores with an instance-dependent strength and revises the original prediction only when the resulting score pattern strongly supports an alternative. Extensive experiments demonstrate that SPC substantially improves accuracy on CF images while largely preserving accuracy on matched CS images. Furthermore, these gains generalize across CDH categories, candidate-answer permutations, and other conflict benchmarks, while SPC rarely alters predictions on benchmarks without such conflicts.

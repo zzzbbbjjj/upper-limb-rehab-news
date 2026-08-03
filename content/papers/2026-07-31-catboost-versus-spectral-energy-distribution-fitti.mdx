@@ -1,0 +1,21 @@
+---
+title: "CatBoost 与光谱能量分布拟合：在受控光度不完整性下估计星系特性"
+title_en: "CatBoost versus Spectral Energy Distribution-Fitting: Estimating Galaxy Properties under Controlled Photometric Incompleteness"
+authors: ["Vahid Asadi", "Hosein Haghi", "Akram Hasani Zonoozi"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29437v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+从光度数据估计星系物理参数从根本上受到天文调查中常见的测量缺失的挑战。使用 Horizon-AGN 流体动力学模拟中提供真实物理参数的模拟目录，我们在故意对抗的场景下评估 CatBoost（一种原生处理缺失数据的梯度增强算法）：我们在 12 个光度波段上对其进行训练，注入缺失水平不断增加（每个波段缺失 10%、20%、30%），并将其性能与使用完整 26 波段光度测定的理想化参数光谱能量分布 (SED) 拟合参考（无缺少数据，所有波段均可用）。这种不对称设计代表了传统方法的上限、最佳情况基线。尽管有这个故意的缺点，CatBoost 的性能下降是有限的：从完整数据变为缺失 30%，质量 RMSE...
+
+## English Summary
+
+Estimating galaxy physical parameters from photometric data is fundamentally challenged by missing measurements that are endemic to astronomical surveys. Using a mock catalog from the Horizon-AGN hydrodynamical simulation that provides the true physical parameters, we evaluate CatBoost, a gradient-boosting algorithm that natively handles missing data, under a deliberately adversarial scenario: we train it on 12 photometric bands with increasing levels of injected missingness (10%, 20%, 30% missing per band) and compare its performance against an idealised parametric spectral energy distribution (SED)-fitting reference that uses complete 26-band photometry (no missing data, all bands available). This asymmetric design represents an upper-bound, best-case baseline for traditional methods. Despite this intentional disadvantage, CatBoost's performance degradation is limited: moving from complete data to 30% missing, mass RMSE increases from 0.08 to 0.18 dex, SFR RMSE from 0.41 to 0.53 dex, and redshift RMSE from 0.20 to 0.28, while bias remains near zero. Against the ideal SED-fitting reference, CatBoost trained on only 12 bands with 30% missing values achieves lower errors for mass (0.18 vs. 0.28 dex) and SFR (0.53 vs. 0.57 dex) and removes the systematic biases present in the SED-fitting results. For redshift, the SED-fitting reference has lower NMAD (0.030 vs. 0.093 at extreme missingness) while CatBoost maintains smaller bias. These results suggest that CatBoost's native handling of missing values can offer practical advantages for extracting galaxy properties from imperfect photometric surveys, at least under the conditions explored here.

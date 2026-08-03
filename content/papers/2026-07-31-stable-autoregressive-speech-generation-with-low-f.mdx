@@ -1,0 +1,21 @@
+---
+title: "具有低帧率高维连续标记的稳定自回归语音生成"
+title_en: "Stable Autoregressive Speech Generation with Low-Frame-Rate High-Dimensional Continuous Tokens"
+authors: ["Yi Luo", "Rongzhi Gu", "Jixun Yao"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29363v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+平衡序列长度、表征能力和长范围稳定性是自回归 (AR) 语音和音频生成中的核心问题。具有更高帧速率或更大容量的表示可以保留更多信号细节，但它们也使流生成更容易受到分布漂移和 AR 误差积累的影响。相反，更短和更压缩的表示简化了 AR 建模，但其有限的带宽可能会丢弃重要的组件并限制重建保真度和生成质量的上限。我们询问是否可以与流生成框架共同设计低帧率、高维、高带宽连续表示，以支持鲁棒的高保真重建、强大的单标记可预测性和卓越的长范围稳定性。我们将这个目标分解为两个耦合问题：高维表示空间应该具有哪些几何和统计特性，以及 AR 连续令牌生成器应该如何构造以抵抗错误累积。因此，我们提出了Locodec，...
+
+## English Summary
+
+Balancing sequence length, representational capacity, and long-horizon stability is a central problem in autoregressive (AR) speech and audio generation. Representations with higher frame rates or greater capacity can preserve more signal detail, but they also make streaming generation more vulnerable to distribution drift and AR error accumulation. Conversely, shorter and more compressed representations simplify AR modeling, but their limited bandwidth may discard important components and constrain the upper bound of reconstruction fidelity and generation quality. We ask whether a low-frame-rate, high-dimensional, high-bandwidth continuous representation can be co-designed with a streaming generation framework to support robust high-fidelity reconstruction, strong single-token predictability, and superior long-horizon stability. We decompose this goal into two coupled problems: what geometric and statistical properties a high-dimensional representation space should have, and how an AR continuous-token generator should be structured to resist error accumulation. Accordingly, we propose Locodec, a locally encoded codec that shapes its representation space to improve the interpolatability of a lower-dimensional core manifold and the identifiability of the native high-dimensional coordinates, thereby improving the predictability of high-dimensional high-bandwidth tokens. We also propose MP-ELD, a single-token AR flow-matching framework that uses multi-path information routing and residual classifier-free guidance to mitigate error accumulation. Experiments with 8-Hz, 768-dimensional tokens show that our design preserves reconstruction quality, improves single-token predictability, achieves competitive WER, and maintains stable long-form synthesis, without using external SSL/ASR models, pretrained text language models, or post-training stages.

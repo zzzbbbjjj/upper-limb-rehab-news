@@ -1,0 +1,21 @@
+---
+title: "适用于 GPU 的 Futhark 高级大整数算术"
+title_en: "High-Level Big Integer Arithmetic in Futhark for GPUs"
+authors: ["Cosmin E. Oancea", "Stephen M. Watt"]
+date: "2026-07-30"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.28897v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+我们报告了使用高级函数语言 Futhark 对操作数为 $2^{15}$ 到 $2^{19}$ 位的中型整数进行块级加法、减法、乘法和除法的 GPU 实现。与手写的 C++/CUDA 版本和 CGBN 进行比较，我们确定哪些函数结构可以编译良好，哪些内存布局和顺序化有效，以及需要哪些编译器支持。结果表明，在某些编译器改进后，高级代码可以紧凑地表达算法，同时接近有竞争力的性能。特别是，我们发现 GPU 寄存器内存中数组的自动放置对于性能至关重要。
+
+## English Summary
+
+We report on GPU implementations of block-level addition, subtraction, multiplication and division for midsize integers, with operands of $2^{15}$ to $2^{19}$ bits using the high-level functional language Futhark. Comparing with hand-written C++/CUDA versions and CGBN, we identify which functional constructs compile well, where memory placement and sequentialization are effective, and what compiler support is needed. The results show that high-level code can express the algorithms compactly while approaching competitive performance after certain compiler improvements. In particular, we find that automated placement of arrays in GPU register memory is critical for performance.

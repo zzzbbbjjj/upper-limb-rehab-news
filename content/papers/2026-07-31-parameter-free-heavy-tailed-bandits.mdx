@@ -1,0 +1,21 @@
+---
+title: "无参数重尾老虎机"
+title_en: "Parameter-Free Heavy-Tailed Bandits"
+authors: ["Gianmarco Genalti", "Alberto Maria Metelli"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29460v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+重尾分布自然出现在金融投资、在线广告和网络管理等连续决策问题中，在这些问题中，罕见但极端的结果可能会主导性能。重尾老虎机在这些设置中仅假设奖励 $X$ 满足 $\mathbb{E}[|X|^{1+ε}]\leq u$，对于某些尾部指数 $ε\in(0,1]$ 和力矩限制 $u<+\infty$。然而，大多数现有的遗憾最小化算法需要知道这些参数。这种假设在实践中特别具有限制性：$ε$ 和 $u$ 控制稀有的频率和幅度受 Genalti 和 Metelli 在 COLT 2025 提出的开放性问题的启发，我们解决了重尾老虎机的无假设适应问题，并在不知道尾部参数的情况下描述了价格。我们首先研究固定尾...
+
+## English Summary
+
+Heavy-tailed distributions arise naturally in sequential decision-making problems such as financial investment, online advertising, and network management, where rare but extreme outcomes can dominate performance. Heavy-tailed bandits model online decision-making in these settings by assuming only that rewards $X$ satisfy $\mathbb{E}[|X|^{1+ε}]\leq u$, for some tail exponent $ε\in(0,1]$ and moment bound $u&lt;+\infty$. However, most existing regret minimization algorithms require these parameters to be known. This assumption is particularly restrictive in practice: $ε$ and $u$ govern the frequency and magnitude of rare events and are therefore precisely the quantities that are hardest to infer reliably from limited observations.   Motivated by an open problem posed by Genalti and Metelli at COLT 2025, we resolve the assumption-free adaptation problem for heavy-tailed bandits and characterize the price in the regret of not knowing the tail parameters. We first study adaptation to the moment bound $u$ for a fixed tail exponent $ε$. We prove that every algorithm unaware of $u$, or of any upper bound on it, must obey a sharp trade-off between its distribution-dependent and distribution-free regret guarantees. We then introduce a scheduled-exploration algorithm that requires no knowledge of $u$ and matches the resulting adaptation frontier up to logarithmic factors. Finally, we show that the same algorithm can be instanced without knowing $ε$ by calibrating its exploration schedule to the endpoint $ε=1$. It achieves sublinear regret for every fixed $ε&gt;0$, while no algorithm can guarantee sublinear regret uniformly over all $ε\in(0,1]$. Altogether, our results resolve the COLT open problem without additional distributional assumptions and provide a sharp characterization of the statistical cost of adapting to unknown heavy tails.

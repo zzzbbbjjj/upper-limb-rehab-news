@@ -1,0 +1,21 @@
+---
+title: "无需预定义参考路径的同伦感知走廊生成"
+title_en: "Homotopy-Aware Corridor Generation without Predefined Reference Paths"
+authors: ["Haoze Dong", "Minghan Li", "Meng Guo", "Zhongkui Li"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29513v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+生成安全走廊对于无碰撞机器人运动规划至关重要，但大多数现有方法依赖于预定义的参考路径，这会偏置走廊几何形状并隐式限制可以探索的同伦类。我们在凸集图（GCS）上提出了一种无参考路径的走廊生成框架，该框架直接将走廊构建为凸集序列，允许走廊结构从自由空间表示中出现，而不是从引导路径中出现。为了推断走廊之间的相似性，我们将基于可见性的变形从路径扩展到凸集序列，从而实现拓扑冗余走廊的融合，同时保留不同的替代方案。为了克服现有基于静态全局分解的GCS方法的有限适应性，我们进一步开发了一种自适应多尺度GCS，其中基于采样的细尺度图支持局部更新，而基于可见性的粗尺度图支持紧凑的全局探索。这两个级别保持拓扑一致...
+
+## English Summary
+
+Generating safe corridors is essential for collision-free robotic motion planning, yet most existing methods rely on predefined reference paths, which bias corridor geometry and implicitly limit the homotopy classes that can be explored. We propose a reference-path-free corridor generation framework on graphs of convex sets (GCS) that constructs corridors directly as sequences of convex sets, allowing corridor structure to emerge from the free-space representation rather than from a guiding path. To reason about similarity among corridors, we extend visibility-based deformation from paths to convex-set sequences, enabling the fusion of topologically redundant corridors while preserving distinct alternatives. To overcome the limited adaptability of existing GCS methods based on static global decompositions, we further develop an adaptive multi-scale GCS, in which a sampling-based fine-scale graph supports localized updates and a visibility-based coarse-scale graph enables compact global exploration. The two levels maintain topological consistency, allowing incremental updates without full graph reconstruction under environmental uncertainty. Numerical experiments characterize GCS construction, corridor generation, homotopy-aware exploration, and local updates, showing efficient graph construction, stable trajectory-level performance, and shorter-duration homotopy-aware trajectories than existing baselines. Hardware experiments on ground and aerial robots, including deployment with onboard localization, further validate the framework under translated and previously unknown obstacles.

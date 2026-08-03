@@ -1,0 +1,21 @@
+---
+title: "ARES：使用 LLM 代理进行 PPA 和成本感知 RTL 优化的自适应推理工作指导"
+title_en: "ARES: Adaptive Reasoning-Effort Steering for PPA- and Cost-Aware RTL Optimization with LLM Agents"
+authors: ["Stef Cuyckens", "Mihaela Jivanescu", "Jun Yin", "Chao Fang", "Marian Verhelst"]
+date: "2026-07-30"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.27879v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+大型语言模型 (LLM) 代理通过迭代编辑、综合和 PPA 分析来优化寄存器传输级 (RTL) 设计的功耗、性能和面积 (PPA)，为每个 LLM 调用支付一美元成本。先前的代理报告在没有标准化成本的情况下达到的质量，将该质量归因于工程交叉设计内存，并固定每个呼叫的推理工作。我们提出了 Ares 以及三个相应的创新。 (1) 我们引入了每个 LLM 调用的标准化美元成本以及品质因数 (FoM)，从而能够在工作水平和优化器之间进行公平比较。 (2) 通过这种计算，我们发现长期记忆的构建并不重要。与相同经历的简单串联相比，经过改造的记忆并不能带来可靠的收益。 (3) 相反，我们通过对 21 种训练...
+
+## English Summary
+
+Large language model (LLM) agents optimize the power, performance, and area (PPA) of register-transfer-level (RTL) designs by iterating over edits, synthesis, and PPA analysis, paying a dollar cost for every LLM call. Prior agents report the quality reached without its normalized cost, attribute that quality to an engineered cross-design memory, and hold the reasoning effort of every call fixed. We propose Ares with three corresponding innovations. (1) We introduce a normalized dollar cost per LLM call reported alongside the figure of merit (FoM), enabling fair comparison across effort levels and optimizers. (2) Using this accounting, we find the construction of the long-term memory matters little. An engineered memory brings no dependable gain over a plain concatenation of the same experience. (3) We instead adapt the per-call reasoning effort by escalating to deeper reasoning only once progress at a lower effort stalls, via a patience counter fit on 21 training designs, allocating reasoning where it pays rather than uniformly across all iterations. On three test designs unseen during training, the effort policy lowers the FoM by 23-27% where the best fixed effort reaches 16-23%, at equal normalized cost. Ares closes up to 83% of the gap from an LLM-drafted multiply-accumulate unit to its highly hand-optimized counterpart, and reaches a 25% deeper FoM than state-of-the-art Dr. RTL at 12% of its tokens.

@@ -1,0 +1,21 @@
+---
+title: "The Kikuchi Hierarchy is Sharp for $k$XOR"
+title_en: "The Kikuchi Hierarchy is Sharp for $k$XOR"
+authors: ["Alexander Schmidhuber", "Matthew B. Hastings"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29672v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+植入噪声 $k$XOR 和随机 $k$XOR 的强烈反驳是由信号强度和时间之间的推测权衡决定的：Kikuchi 层次结构的级别 $\ell$ 应实现平滑曲线 \begin{equation*} m\ \gtrsim\ ρ^{-2}n^{k/2}/\ell^{k/2-1}\ \text{clauses} \quad\Longleftrightarrow\quad \text{可在时间 }n^{O(\ell)}, \end{方程*} 中求解，其中 $ρ$ 是植入信号的偏差，或者用于反驳的目标优势。然而，迄今为止，稀疏 $k$XOR 的每次频谱分析都会丢失该曲线的多对数因子，这种损失会进入运行时间的...
+
+## English Summary
+
+Planted noisy $k$XOR and the strong refutation of random $k$XOR are governed by a conjectured trade-off between signal strength and time: Level $\ell$ of the Kikuchi hierarchy should achieve the smooth curve \begin{equation*}   m\ \gtrsim\ ρ^{-2}n^{k/2}/\ell^{k/2-1}\ \text{clauses}   \quad\Longleftrightarrow\quad   \text{solvable in time }n^{O(\ell)}, \end{equation*} where $ρ$ is the bias of the planted signal or, for refutation, the target advantage. However, every spectral analysis of sparse $k$XOR to date loses polylogarithmic factors against this curve, a loss that enters the exponent of the running time.   We show that a normalized variant of the Kikuchi hierarchy achieves the sharp conjectured trade-off, with no logarithmic loss, at every arity $k\ge3$. At the scale above, our algorithms achieve strong detection, weak recovery, and strong refutation; an additional cleanup step boosts weak recovery to exact recovery, and the refutation certificates yield sum-of-squares proofs of degree $O_k(\ell)$. We also prove matching lower bounds in the same model. The inference and refutation upper bounds transfer to more general planting laws and predicates. Finally, we give a quantum algorithm that achieves a quartic speedup over the classical spectral algorithms for detection and weak recovery.   The proofs rest on two key ingredients: a normalization of the sparse Kikuchi matrix, and a sharp count of the closed walks in its trace expansion. We use a closely related trace-walk count to prove Feige's 2008 hypergraph Moore bound conjecture in a companion paper.

@@ -1,0 +1,21 @@
+---
+title: "分布式介数中心性计算中的系统范围终止"
+title_en: "System-Wide Termination in Distributed Betweenness Centrality Computation"
+authors: ["Siamak Abdi", "Lucia Cavallaro", "Giuseppe Di Fatta"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29474v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+在大型网络上计算介数中心性本质上是昂贵的，因为它需要聚合所有顶点对的最短路径依赖关系，并且随着网络规模的增长而变得越来越难以扩展。可扩展的分布式算法可以促进此类计算，特别是当集中处理不可行并且必须仔细控制消息交换时，例如在带宽有限或超大规模网络中。然而，现有的分布式介数中心性实现没有集成轻量级的、系统范围的终止检测器。因此，这可能会导致本地收敛后出现额外的消息传递，或者如果配置错误，会导致过早停止。在这项工作中，提出了一种用于此任务的轻量级、系统范围的全局终止检测算法。所提出的方法使顶点能够在整个系统收敛时进行局部决策。该方法根据局部停止策略进行评估，其中顶点在其自身估计稳定后单独终止。为了比...
+
+## English Summary
+
+Computing betweenness centrality on large networks is inherently expensive, as it requires aggregating shortest-path dependencies across all pairs of vertices and becomes increasingly difficult to scale as network size grows. Scalable distributed algorithms can facilitate such computations, particularly when centralised processing is not feasible, and message exchanges must be carefully controlled, for example, in bandwidth-limited or very large-scale networks. However, existing distributed betweenness centrality implementations do not integrate a lightweight, system-wide termination detector. As a consequence, this can lead to extra messaging after local convergence or, if misconfigured, premature stops. In this work, a lightweight, system-wide global termination detection algorithm for this task is presented. The proposed method enables vertices to decide locally when the overall system has converged. The method is evaluated against a local stopping strategy in which vertices terminate individually once their own estimates stabilise. To compare these two approaches, namely global termination detection and local stopping, a custom Python simulator is implemented, and both approaches are tested on synthetic (Erdos-Renyi and geometric) and real (Email and Road) network topologies. Our results show that system-wide termination detection lets vertices stop safely after detecting global convergence, as indicated by zero final error in the evaluated networks, rather than stopping independently based only on local convergence. The local stopping approach, on the other hand, results in premature termination and some errors on heterogeneous networks. This work emphasises the need for coordinated halting in distributed centrality computation.

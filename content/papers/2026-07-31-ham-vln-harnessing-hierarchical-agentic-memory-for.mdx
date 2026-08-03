@@ -1,0 +1,21 @@
+---
+title: "HAM-VLN：利用分层代理记忆进行零样本视觉和语言导航"
+title_en: "HAM-VLN: Harnessing Hierarchical Agentic Memory for Zero-Shot Vision-and-Language Navigation"
+authors: ["An Liu", "Bingxi Liu", "Hongyu Ding", "Yixuan Jiang", "Yaran Chen", "Fulin Tang", "Cong Leng", "Hong Zhang", "Jian Cheng"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29600v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉和语言导航 (VLN) 使机器人能够在以前未见过的环境中遵循指令。最近，出现了一种免训练范例：机器人查询多模式 LLM 以了解其观察结果并计划下一步行动。然而，基于图像流或密集地图的长视距导航不可避免地会引入日益增长的内存和推理瓶颈。我们提出了 HAM-VLN，一种决策耦合的、由代理编写的存储器，为机器人配备了持久的、基于深度的世界图。在用于选择下一个操作的同一模型调用中，HAM-VLN 还记录语义和反射信息，包括房间类型、对象、导航进度和故障注释。最近的路径点逐字保留在有界窗口内，而较旧的历史记录只能通过根据相关性、新近度和显着性进行评分的检索以及一跳拓扑扩展来重新进入上下文。除了每个航...
+
+## English Summary
+
+Vision-and-language navigation (VLN) enables robots to follow instructions in previously unseen environments. Recently, a training-free paradigm has emerged: the robot queries a multimodal LLM to understand its observations and plan the next action. However, long-horizon navigation based on either image streams or dense map inevitably introduces a growing memory and reasoning bottleneck. We present HAM-VLN, a decision-coupled, agent-authored memory that equips the robot with a persistent, depth-grounded world graph. In the same model call used to select the next action, HAM-VLN also records semantic and reflective information---including room type, objects, navigation progress, and failure notes. Recent waypoints remain verbatim within a bounded window, while older history re-enters the context only through retrieval scored by relevance, recency, and salience, together with one-hop topological expansion. This design requires no additional LLM calls beyond the per-waypoint decision. Compared to previous methods, HAM-VLN not only improves various navigation metrics but also reduces the context length by more than 65%. Specifically, HAM-VLN achieves 61.0% Success Rate (SR) on VLN-CE R2R, 52.7% SR on VLN-CE RxR, and 79.7% SR on HM3D-v2 ObjectNav without any training.

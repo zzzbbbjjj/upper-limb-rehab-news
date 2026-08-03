@@ -1,0 +1,21 @@
+---
+title: "诊断顺序机器人任务中的组合概括"
+title_en: "Diagnosing Compositional Generalization in Sequential Robot Tasks"
+authors: ["Yixiao Wang", "Cheng-En Wu", "Lingfeng Sun", "Pengcheng Wang", "Xiang Ji", "Boyuan Liang", "Guojian Zhan", "Masayoshi Tomizuka"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29687v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+顺序机器人操作需要策略来执行熟悉的指令组件的新颖组合。然而，收集所有可能的指令元组的演示在组合上是昂贵的，而稀疏覆盖的数据集在分布外重组下通常会失败。本文通过指令空间覆盖的视角研究构图泛化。我们将泛化差距分解为三个来源：\textit{边缘指令移位}、\textit{指令组合移位}和\textit{上下文-动作移位}。这种分解使我们能够诊断何时稀疏训练覆盖范围足够，以及训练集必须保留什么结构才能进行可靠的动作预测。我们的结果表明，详尽的元组枚举是不必要的：一个结构化子集，小至整个任务空间的四分之一，在覆盖与操作相关的依赖项时可以恢复强大的分布外性能。我们进一步发现，稀疏训练常常因指令指导而失败...
+
+## English Summary
+
+Sequential robot manipulation requires policies to execute novel combinations of familiar instruction components. However, collecting demonstrations for all possible instruction tuples is combinatorially expensive, while sparsely covered datasets often fail under out-of-distribution recombination. This paper studies compositional generalization through the lens of instruction-space coverage. We decompose the generalization gap into three sources: \textit{marginal instruction shift}, \textit{instruction-compositional shift}, and \textit{context--action shift}. This decomposition allows us to diagnose when sparse training coverage is sufficient, and what structure the training set must preserve for reliable action prediction. Our results show that exhaustive tuple enumeration is unnecessary: a structured subset, as small as one quarter of the full task space, can recover strong out-of-distribution performance when it covers action-relevant dependencies. We further find that sparse training often fails due to instruction steering rather than missing low-level skills; finetuning only one demonstration per task improves OOD success from \(0.4\%\) to \(54.7\%\). For semantically dependent tasks, effective coverage must capture relational structure rather than only factor diversity. These findings suggest that efficient robot data collection should prioritize dependency coverage in instruction space over exhaustive task expansion. More results are available in the supplementary material. Project website: https://yixiaowang7.github.io/Diagnosing_Compositional_Generalization_Robot_Page/.

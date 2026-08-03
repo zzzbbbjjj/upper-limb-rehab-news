@@ -1,0 +1,21 @@
+---
+title: "TransGraspNet：透明实验室器具的物理和几何一致操作"
+title_en: "TransGraspNet: Physically and Geometrically Consistent Manipulation of Transparent Labware"
+authors: ["Hailing Hu", "Mingyi Zhu", "Yiquan An", "Yifei Tian", "Tianyou Zuo", "Lifeng Zhou"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29567v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+操作含有液体的透明实验室玻璃器皿本质上是安全关键：即使很小的几何误差也会导致不稳定的抓握和危险的溢出。尽管最近在透明物体感知和机器人抓取方面取得了进展，但大多数现有系统独立优化检测、深度重建和抓取规划，这导致跨阶段不一致、不完善的边界导致深度渗漏、扭曲的表面破坏正常估计，并且与任务无关的抓取评分产生倾斜或偏离中心的抓取，在动态运动下失败。在本文中，我们提出了 TransGraspNet，一个几何物理一致性框架，它通过三个耦合原则明确强制从感知到执行的一致性：边界一致性，以产生结构可靠的对象轮廓作为下游先验，表面一致性，以在深度重建过程中保持几何保真度和表面法线精度，以及物理一致性，以通过质心对...
+
+## English Summary
+
+Manipulating transparent laboratory glassware that contains liquid is inherently safety-critical: even small geometric errors can cause unstable grasps and hazardous spillage. Although recent progress has been made in transparent object perception and robotic grasping, most existing systems optimize detection, depth reconstruction, and grasp planning independently, which leads to cross-stage inconsistency imperfect boundaries induce depth bleeding, distorted surfaces corrupt normal estimation, and task agnostic grasp scoring yields tilted or off-center grasps that fail under dynamic motion. In this paper, we propose TransGraspNet, a geometry physics consistent framework that explicitly enforces consistency from perception to execution through three coupled principles: boundary consistency to produce structurally reliable object contours as downstream priors, surface consistency to preserve geometric fidelity and surface normal accuracy during depth reconstruction, and physics consistency to refine grasp selection with centroid alignment and wrench-space stability for upright and dynamically robust manipulation. We evaluate TransGraspNet on public benchmarks, a dedicated transparent glassware dataset, and a real robotic platform. The results show improved boundary quality and surface normal fidelity, and demonstrate strong task-level performance in cluttered transparent scenes. Most importantly, the proposed system achieves reliable real-world operation, including high grasp success rates in clutter and zero spillage during high speed liquid transport, highlighting the effectiveness of our method.

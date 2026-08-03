@@ -1,0 +1,21 @@
+---
+title: "DualDiT：用于联合 OCT 图像和分割掩模生成的条件双输出扩散变压器"
+title_en: "DualDiT: A Conditional Dual-Output Diffusion Transformer for Joint OCT Image and Segmentation Mask Generation"
+authors: ["Fernando García-Torres", "Rocío del Amor", "Sandra Morales", "Álvaro Barroso", "Peter Heiduschka", "Björn Kemper", "Valery Naranjo"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29337v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+背景和目的：使用解剖学上准确的分割掩模生成逼真的医学图像有助于解决医学成像中注释数据的短缺问题，特别是在小鼠眼睛的光学相干断层扫描（OCT）中，由于结构微小且需要专业知识，手动视网膜层描绘是劳动密集型的，导致数据集稀缺。虽然扩散模型在医学图像合成中表现良好，但联合图像掩模生成主要依赖于基于 U-Net 的降噪器，而扩散变换器在很大程度上尚未得到探索。方法：我们提出了一种条件双输出扩散变压器 (DualDiT)，用于联合合成离体小鼠视网膜中的 OCT B 扫描和上视网膜细胞层的分割掩模。 DualDiT 通过预训练的 VAE 将两种模态编码到共享的潜在空间中，连接它们的潜在表示，并在联合张量上执...
+
+## English Summary
+
+Background and Objective: Generating realistic medical images with anatomically accurate segmentation masks helps address the shortage of annotated data in medical imaging, particularly in optical coherence tomography (OCT) of mouse eyes, where manual retinal layer delineation is labour-intensive due to tiny structures and required expertise, resulting in scarce datasets. While diffusion models perform well in medical image synthesis, joint image-mask generation has relied mainly on U-Net-based denoisers, leaving diffusion transformers largely unexplored. Methods: We propose a conditional dual-output Diffusion Transformer (DualDiT) for joint synthesis of OCT B-scans and segmentation masks of the upper retinal cell layers in ex vivo mouse retina. DualDiT encodes both modalities into a shared latent space via a pretrained VAE, concatenates their latent representations, and performs conditional diffusion over the joint tensor. We compared DualDiT against two adapted diffusion baselines: DDPM and LDM. Generative quality was assessed via Fréchet Inception Distance (FID) and spatial FID (sFID); practical utility via synthetic data augmentation for downstream U-Net segmentation; and perceptual realism via evaluation by three domain experts. Results: DualDiT achieved the best generative quality (FID 56.14, sFID 114.35), outperforming DDPM and LDM. Expert panels misclassified 46% of synthetic samples as real and 42% of real samples as synthetic. Adding DualDiT-generated images and masks improved Dice and IoU scores on a held-out segmentation test set. Conclusions: DualDiT shows that transformer-based diffusion models can effectively learn the joint distribution of OCT images and segmentation masks, surpassing DDPM- and LDM-based baselines in generative fidelity, downstream utility, and perceptual realism, highlighting its potential for data augmentation in annotation-scarce medical imaging.

@@ -1,0 +1,21 @@
+---
+title: "TraceViT：视觉抽象推理的基础跟踪监督"
+title_en: "TraceViT: Grounded Trace Supervision for Visual Abstract Reasoning"
+authors: ["Binnan Liu", "Yechi Ma", "Tian Xie", "Wei Hua"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29586v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+抽象与推理语料库 (ARC) 测试模型是否可以从一些输入输出示例中推断出未见过的转换并将其应用于新的网格。循环视觉推理器通过多次迭代来完善预测，但传统训练仅限制最终输出，而中间的改进不受约束。我们建议这些细化应该跟随转型一步步进行。我们引入了 TraceViT，这是一种使用语义单调转换链进行训练的循环视觉推理器。我们通过重写和验证编程任务实现，将每个解决方案分解为中间网格状态来获得这些链。每次迭代都以从几次演示中派生的任务参考和表示当前网格状态的对象工作区为基础。由于这些链的长度可能与循环不同，因此软跟踪对齐仅强制执行它们的顺序，让模型自由分配迭代。 TraceViT 在 ARC-AGI-1 ...
+
+## English Summary
+
+The Abstraction and Reasoning Corpus (ARC) tests whether a model can infer an unseen transformation from a few input-output examples and apply it to a new grid. Looped visual reasoners refine predictions over multiple iterations, but conventional training constrains only the final output, leaving intermediate refinements unconstrained. We propose that these refinements should instead follow the transformation step by step. We introduce TraceViT, a looped visual reasoner trained with semantically monotonic transformation chains. We obtain these chains by rewriting and verifying programmatic task implementations, decomposing each solution into intermediate grid states. Each iteration is grounded by a task reference derived from the few-shot demonstrations and an object workspace representing the current grid state. Because these chains may differ in length from the loop, soft trace alignment enforces only their ordering, letting the model allocate iterations freely. TraceViT achieves 67.8% pass@2 on ARC-AGI-1 and 24.3% on ARC-AGI-2. Controlled ablations on ARC-AGI-1 show that trace supervision becomes beneficial only when paired with grounding. Code and data will be available at https://github.com/LiuBinnan/TraceViT.

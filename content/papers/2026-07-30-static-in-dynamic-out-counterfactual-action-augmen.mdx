@@ -1,0 +1,21 @@
+---
+title: "静态输入，动态输出：移动物体操纵的反事实动作增强"
+title_en: "Static In, Dynamic Out: Counterfactual Action Augmentation for Moving Object Manipulation"
+authors: ["Woo Chul Shin", "Zhenyang Chen", "Alfred Cueva", "Nadun Ranawaka Arachchige", "Yingyan Celine Lin", "Benjamin Joffe", "Shreyas Kousik", "Danfei Xu"]
+date: "2026-07-30"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.27890v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+视觉运动策略在目标对象在执行过程中保持静态的操作任务方面取得了进展，但实际部署打破了这一假设：零件在传送带上漂移，水果在风中摇摆。我们引入了静态输入、动态输出（SIDO），这是一种反事实动作增强，使仅在静态对象演示上训练的策略能够适应测试时看不见的对象运动。我们的关键思想是将移动物体的操纵分解为两个子问题：预测物体将在哪里，以及达到预测的姿势。 SIDO 将物体移动到反事实的未来位置，并改变演示的动作块以保留手部物体的相对姿势，从而产生目标条件策略。在部署时，物体姿态预测器提供未来位置。在五种对象运动模式下的三个模拟任务（Mug、Square、Stack）和两个现实世界任务（Gantry、Pe...
+
+## English Summary
+
+Visuomotor policies have advanced on manipulation tasks where the target object stays static during execution, but real deployments break this assumption: parts drift on conveyors and fruits sway in the wind. We introduce Static In, Dynamic Out (SIDO), a counterfactual action augmentation that enables a policy trained only on static object demonstrations to adapt to unseen object motion at test time. Our key idea is to factorize moving object manipulation into two sub-problems: predicting where the object will be, and reaching that predicted pose. SIDO displaces the object to a counterfactual future position and morphs the demonstrated action chunk to preserve the hand-object relative pose, yielding a goal-conditioned policy. At deployment an object pose predictor supplies the future position. Across three simulated tasks (Mug, Square, Stack) under five object motion patterns and two real-world tasks (Gantry, Peachtree), SIDO improves moving object success over the baselines while preserving static object performance. Project website: https://sido-staticindynamicout.github.io/.

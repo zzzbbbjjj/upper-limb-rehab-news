@@ -1,0 +1,21 @@
+---
+title: "大型基础模型时代的手物交互：重构、生成和体现迁移"
+title_en: "Hand-Object Interaction in the Age of Large Foundation Models:Reconstruction, Generation, and Embodied Transfer"
+authors: ["Weiquan Lin", "Yu Deng", "Shiyang Liu", "Luping Xiao", "Xu Tang", "Junzhi Yu", "Jiaolong Yang", "Lei Zhang", "Xingyu Chen"]
+date: "2026-07-30"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.28394v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+手-物体交互（HOI）建模仍然具有挑战性，因为它需要在严重的视觉不确定性下对手的清晰度、物体几何形状、接触、语义和动力学进行联合推理。基础模型引入了从大规模跨领域数据中学到的可转移先验知识，提供了解决特定任务数据和模型之外的这些挑战的新方法。然而，快速增长的文献仍然支离破碎，现有的研究通常将这些方法简单地描述为“使用大型模型”，而没有系统地描述引入的知识、知识进入 HOI 管道的位置，或者有助于减少哪些 HOI 不确定性。这项调查首次对 HOI 基础模型先验进行了系统回顾。我们将文献组织成涵盖重建和生成的六个 HOI 任务。更重要的是，我们建立了八个基础模型子先验的分类法，分为几何、语义和视觉...
+
+## English Summary
+
+Hand-object interaction (HOI) modeling remains challenging because it requires joint reasoning about hand articulation, object geometry, contact, semantics, and dynamics under severe visual uncertainty. Foundation models introduce transferable prior knowledge learned from large-scale cross-domain data, offering new ways to address these challenges beyond task-specific data and models. However, the rapidly growing literature remains fragmented, and existing studies typically describe these methods simply as ``using large models'' without systematically characterizing what knowledge is introduced, where it enters the HOI pipeline, or which HOI uncertainty it helps reduce. This survey presents the first systematic review of foundation-model priors for HOI. We organize the literature into six HOI tasks spanning reconstruction and generation. More importantly, we establish a taxonomy of eight foundation-model sub-priors grouped into geometric, semantic, and visual families. Geometric priors encompass shape retrieval, shape reconstruction, and spatial reconstruction; semantic priors include semantic grounding and language reasoning; and visual priors cover visual representation, image generation, and video generation. Based on this taxonomy, we systematically analyze how different priors are represented, injected, and adapted across HOI pipelines and tasks. Beyond how foundation models empower HOI, we further examine how HOI-derived knowledge is used in robot learning, including human-data pretraining, human-to-robot skill transfer, and HOI-to-robot data generation. Finally, we summarize datasets and evaluation protocols, and discuss limitations and future directions toward more generalizable HOI systems. To support long-term progress, we curate a live repository that continuously aggregates emerging methods and benchmarks.

@@ -1,0 +1,21 @@
+---
+title: "时间策略：通过演示为机器人学习生成历史初始化的动作"
+title_en: "Temporal Policy: History-Initialized Action Generation for Robotic Learning from Demonstration"
+authors: ["Dylan Miller", "Martin Jagersand"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29482v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+通过依赖无信息高斯先验的独立耦合，标准扩散和流量匹配模型被迫学习复杂、高成本的向量场以到达物理动作空间。生成模型擅长捕获机器人演示学习 (LfD) 的多模态行为，但通常会面临较高的推理成本。本文介绍了时间策略，这是一种基于随机插值的生成框架，它将动作生成表示为时间耦合传输问题。通过初始化机器人最近历史的生成流，我们明确地将过去的状态与未来的动作序列耦合起来。这种依赖于数据的耦合降低了传输成本并产生直矢量场。我们在视觉运动模拟基准和物理 Barrett WAM 2x 7DoF 远程操作平台上验证时间策略。与噪声初始化基线相比，我们的方法将传输成本降低了近一个数量级，在单个 NVIDIA RTX ...
+
+## English Summary
+
+By relying on independent couplings from uninformative Gaussian priors, standard diffusion and flow matching models are forced to learn complex, high-cost vector fields to reach the physical action space. Generative models excel at capturing multimodal behaviors for robotic Learning from Demonstration (LfD), but often suffer from high inference cost. This paper introduces Temporal Policy, a generative framework based on stochastic interpolants that formulates action generation as a temporally coupled transport problem. By initializing the generative flow at the robot's recent history, we explicitly couple past states to future action sequences. This data-dependent coupling reduces transport cost and produces straight vector fields. We validate Temporal Policy across visuomotor simulation benchmarks and on a physical Barrett WAM 2x 7DoF teleoperation platform. Our approach reduces transport costs by nearly an order of magnitude compared to noise-initialized baselines, achieving a 19.1 ms inference latency on a single NVIDIA RTX 4080. Crucially, these geometric and computational efficiencies are achieved while matching the success rates of state-of-the-art baselines. This simplified transport geometry bypasses the computational bottleneck of independent Gaussian priors, helping enable high-frequency, closed-loop control. The code is publicly available at https://github.com/dmiller12/TemporalPolicy.

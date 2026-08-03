@@ -1,0 +1,21 @@
+---
+title: "TacWAM：具有力学感知触觉预测的锚引导世界动作模型"
+title_en: "TacWAM: Anchor-Guided World Action Model with Mechanics-Aware Tactile Prediction"
+authors: ["Lei Jin", "Yiding Ma", "Xin Zhang", "Chen Gao", "Wei Wu", "Yong Li"]
+date: "2026-07-30"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.28391v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+世界动作模型（WAM）将未来状态预测与机器人动作生成相结合，但现有方法很大程度上依赖于视觉未来。视觉预测捕捉场景结构和物体运动，但在接触丰富的操作过程中对力、变形、剪切和滑动提供有限的监督。这就产生了两个设计要求：触觉未来应该携带有意义的物理信息，并且它们不应该成为行动生成的特权线索。我们推出了 TacWAM，这是一种机械感知的触觉 WAM，它分三个步骤解决了这一挑战。首先，空间对齐融合 (SAF) 触觉编码器将触觉外观、密集力场和变形流映射到共享的潜在预测空间，并通过双边力和扭矩重建保留全局接触信息。其次，触觉历史编码器提供时间上下文，因此未来的触觉预测反映了力和变形如何变化超出当前的触觉观...
+
+## English Summary
+
+World Action Models (WAMs) combine future-state prediction with robot action generation, but existing approaches largely rely on visual futures. Visual prediction captures scene structure and object motion, yet provides limited supervision for force, deformation, shear, and slip during contact-rich manipulation. This creates two design requirements: tactile futures should carry meaningful physical information, and they should not become privileged cues for action generation. We present TacWAM, a mechanics-aware tactile WAM that addresses this challenge in three steps. First, a Spatially Aligned Fusion (SAF) Tactile Encoder maps tactile appearance, dense force fields, and deformation flow into a shared latent prediction space, with bilateral force and torque reconstruction preserving global contact information. Second, a tactile history encoder provides temporal context so future tactile prediction reflects how force and deformation change beyond the current tactile observation. Third, Anchor-Guided Tri-Modal (AGT) Attention separates current visual and tactile anchors, future prediction tokens, and action tokens, allowing future tactile states to supervise training without being directly read by the action branch. We evaluate TacWAM on four real-world contact-rich manipulation tasks covering fragile grasping, sustained surface contact, and dynamic in-hand manipulation. TacWAM achieves an average success rate of 75.0%, exceeding the strongest evaluated baseline by 37.5 percentage points. Staged ablations show consistent degradation when tactile history is removed and access to future prediction targets is relaxed. These results indicate that future tactile supervision can improve contact-aware action learning when combined with informative tactile representations and deployment-consistent information constraints.

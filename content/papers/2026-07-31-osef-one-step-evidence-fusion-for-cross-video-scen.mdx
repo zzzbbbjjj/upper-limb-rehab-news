@@ -1,0 +1,21 @@
+---
+title: "OSEF：用于跨视频场景程序规划的一步证据融合"
+title_en: "OSEF: One-Step Evidence Fusion for Cross-Video Scene Procedure Planning"
+authors: ["Zhentong Ye", "Lei Zhang", "Sijia Zhou", "Yingda Yu", "Yuehan Shi", "Jiaqi Xuan", "Shuaiwu Dong", "Guanchao Tong", "Meimei Zhang", "Bin Li"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29401v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+视频场景程序规划 (VSPP) 提前提供目标起始目标观察结果，从而为规划人员在必须检索证据本身时应如何采取行动留下了余地。我们引入跨视频场景程序规划（CVSPP）：给定答案编辑的起始目标查询和 K 个候选视频，模型必须检索支持视频、本地化相关窗口并预测动作序列。这里有两个障碍。相同任务的演示共享舞台和窗口，早期的硬选择将错误的场景链传递给规划者。我们构建了一个包含十一个来源的基准，其中包含类型化的负面角色、失败关闭的答案泄漏门以及单独的证据轴和计划轴指标。在其 14 个源范围单元上，我们针对多数序列层调整了 9 个规划器系列。然后，我们提出了一步证据融合（OSEF），它对所有候选者的查询条件单...
+
+## English Summary
+
+Video Scene Procedure Planning (VSPP) supplies the target start-goal observations in advance, leaving open how a planner should act when the evidence must itself be retrieved. We introduce Cross-Video Scene Procedure Planning (CVSPP): given an answer-redacted start-goal query and K candidate videos, a model must retrieve the supporting video, localize the relevant window, and predict the action sequence. Two obstacles couple here. Same-task demonstrations share stages and windows, and an early hard selection passes the wrong scene chain to the planner. We build an eleven-source benchmark with typed negative roles, a fail-closed answer-leakage gate, and separate Evidence- and Plan-axis metrics. On its 14 source-horizon cells we adapt nine planner families against a majority-sequence floor. We then present One-Step Evidence Fusion (OSEF), which scores a query-conditioned cell-and-span lattice over all candidates and feeds the full soft lattice to the planner through a token-global adapter, cropping no window beforehand. OSEF ranks first on all six cells the benchmark certifies as method-rankable. On four matched same-task COIN and CrossTask cells it improves exact-video-and-plan success by 2.9-10.7 points over an enhanced hard-selection SOTA, and a component study assigns the largest single increment to the token-global interface. Five converted-source cells sit at or near the majority-sequence floor, the benchmark's remaining headroom. The supplementary package includes model constructors and evaluation code.

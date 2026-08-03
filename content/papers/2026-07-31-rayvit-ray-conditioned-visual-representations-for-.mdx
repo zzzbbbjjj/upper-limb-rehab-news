@@ -1,0 +1,21 @@
+---
+title: "RayViT：用于视点鲁棒模仿学习的光线条件视觉表示"
+title_en: "RayViT: Ray-Conditioned Visual Representations for Viewpoint-Robust Imitation Learning"
+authors: ["Qian Wang", "Longrui Chen", "Peiran Sun", "Aleksandar Taranovic", "Niklas Freymuth", "Ge Li", "Weiran Liao", "C. F. Maximilian Nagy", "Yucheng Tan", "Tao Chen"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29622v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉模仿学习使机器人能够直接从图像中获得视觉运动技能，但 RGB 观察缺乏明确的几何线索，使得学习的策略容易受到相机扰动的影响。为了解决这个问题，我们提出了 \textbf{射线条件视觉变换编码器（RayViT）}，这是一种轻量级架构，可将相机几何结构注入预训练的 ViT 主干中。 RayViT 将相机几何形状表示为 Plücker 光线图，将其修补为光线特征，并使用门控交叉注意力来生成光线条件类标记。这些光线特征被添加为密集位置嵌入，而光线类标记取代了原始的 ViT 类标记以提供几何感知的摘要表示。我们将此方法与辅助余弦相似性损失相结合，以持续提高几何感知标记的性能和鲁棒性。模拟和真实机器人...
+
+## English Summary
+
+Visual imitation learning enables robots to acquire visuomotor skills directly from images, yet RGB observations lack explicit geometric cues, making learned policies brittle to camera perturbations. To address this, we propose \textbf{Ray-conditioned Vision Transformer Encoder (RayViT)}, a lightweight architecture that injects camera geometry into pretrained ViT backbones. RayViT represents camera geometry as a Plücker ray map, patchifies it into ray features, and uses gated cross-attention to produce a ray-conditioned class token. These ray features are added as dense positional embeddings, while the ray class token replaces the original ViT class token to provide a geometry-aware summary representation. We combine this approach with an auxiliary cosine similarity loss to consistently improve the performance and robustness for geometry-aware tokens. Experiments on sim- and real-robot tasks demonstrate that RayViT improves robustness by approximately 13 percentage points under camera perturbations in multi-task RoboCasa benchmark and by 1.78 average completed stages in real-world multi-task success rate compared to baselines.

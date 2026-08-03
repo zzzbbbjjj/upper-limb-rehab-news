@@ -1,0 +1,21 @@
+---
+title: "政策内互动何时有帮助？基于价值的模仿学习中的代表性权衡"
+title_en: "When Does On-Policy Interaction Help? Representational Tradeoffs in Value-Based Imitation Learning"
+authors: ["Luca Viano", "Antoine Moulin", "Audrey Huang", "Volkan Cevher", "Philip Amortila", "Dylan J. Foster"]
+date: "2026-07-31"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2607.29617v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+模仿学习（IL）——训练代理从演示中复制专家行为——支撑着从机器人到语言模型训练的应用。众所周知，诸如行为克隆（BC）之类的标准方法会遭受复合错误和性能停滞的困扰，特别是当学习者无法完美地代表专家的策略时（典型的情况是，例如在蒸馏中）。两种干预措施在经验上被广泛理解，以提高绩效：沿着学习者自己的轨迹交互式地询问专家，并在生成策略的过程中使用价值函数估计，而不是直接拟合专家的完整行动分布。   我们研究了这些改进的本质及其潜在的令人惊讶的相互作用。我们的主要发现是，专家交互放松了对学习者的表征要求：人们只需要一个能够实现专家价值函数的模型，绕过了实现专家策略本身的（通常更严格的）要求。具体来说，...
+
+## English Summary
+
+Imitation learning (IL)---training an agent to replicate expert behavior from demonstrations---underpins applications from robotics to language model training. Standard approaches such as Behavior Cloning (BC) are known to suffer from compounding errors and performance plateaus, particularly when the learner cannot perfectly represent the expert's policy (as is typical, e.g., in distillation). Two interventions are widely understood empirically to improve performance: querying the expert interactively along the learner's own trajectories, and using value function estimation en route to generating a policy rather than directly fitting the expert's full action distribution.   We investigate the nature of these improvements and their potentially surprising interplay. Our main finding is that expert interaction relaxes the representational demands on the learner: one only needs a model capable of realizing the expert's value function, bypassing the (often stricter) requirement of realizing the expert's policy itself. Concretely, we introduce OVI, an interactive on-policy IL algorithm that is statistically efficient whenever the learner can represent the expert's value function and computationally efficient given access to a linear maximization oracle. We complement this with a negative result showing that interaction is necessary. Namely, without stronger assumptions beyond expert-value realizability alone, any offline IL algorithm must scale with the complexity of the expert policy class. Our findings bear out empirically. OVI outperforms offline policy-based (BC), interactive policy-based (DAgger), and offline value-based IL methods, with the largest gains when the learner network is substantially less expressive than the expert's.
