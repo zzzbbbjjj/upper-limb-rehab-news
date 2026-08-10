@@ -1,0 +1,21 @@
+---
+title: "为什么只知道两跳还不够：理解语言模型中的两跳泛化"
+title_en: "Why Knowing Both Hops Is Not Enough: Understanding Two-Hop Generalization in Language Models"
+authors: ["Zili Zhang", "Yilin Wang", "Heng Wang", "Herun Wan", "Minnan Luo"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07261v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+大型语言模型 (LLM) 可以解决复杂的多跳问题，但在简单的两跳查询上却表现出令人费解的失败：尽管模型可以正确存储每个单独的跳，但通常无法将它们组合起来。为了了解这种现象的内部机制，我们在受控的符号环境中从头开始训练变压器。我们的实验揭示了双跳泛化的模式：当第二跳遵循训练分布时，模型可以可靠地泛化，但当它偏离训练分布时，模型总是会失败。   通过机制分析，我们为这些不同的泛化行为提供了完整的解释：在模型成功泛化的设置中，性能是由跨上下文的相同实体的一致中间表示的出现驱动的，而第二跳不分布的设置中的失败则源于跨层的不匹配：较低层正确地构造这些中间表示，但上层在接受相应原子事实的训练时，主要学习将...
+
+## English Summary
+
+Large language models (LLMs) can solve complex multi-hop problems yet exhibit puzzling failures on simple two-hop queries: although a model may correctly store each individual hop, it often fails to combine them. To understand the internal mechanisms of this phenomenon, we train transformers from scratch in a controlled symbolic environment. Our experiments reveal a pattern in two-hop generalization: models generalize reliably when the second hop follows the training distribution, but always fail when it deviates.   Through mechanistic analysis, we provide a complete explanation for these distinct generalization behaviors: in settings where models generalize successfully, performance is driven by the emergence of consistent intermediate representations for the same entities across contexts, whereas failures on settings where the second hop is out-of-distribution arise from a mismatch across layers: lower layers correctly construct these intermediate representations, but upper layers, while trained on corresponding atomic facts, primarily learn to map them to outputs rather than to reason over them.   Driven by this insight, we propose a recurrent-style training strategy, which enables transformers to reuse their reasoning circuitry across input forms and substantially improves generalization on out-of-distribution two-hop queries.

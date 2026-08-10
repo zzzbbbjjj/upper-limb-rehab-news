@@ -1,0 +1,21 @@
+---
+title: "PRISM：薛定谔桥模型的原则参考识别"
+title_en: "PRISM: Principled Reference Identification for Schrodinger Bridge Model"
+authors: ["Forouzan Fallah", "Yezhou Yang"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06893v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+薛定谔电桥模型通过遵循参考过程的条件电桥，从退化的观测中恢复干净的信号，但该参考是启发式选择的，通常是带有手动调整时间表的白噪声。我们开发了 PRISM，一种桥梁参考设计理论。我们描述了随时间变化的高斯参考，这些参考仍然可以通过每个模式的时间表精确处理：正是那些瞬时协方差可交换的高斯参考。然后，我们证明了一个隐形原理：通过精确的漂移和无限的求解器步骤，每个可接受的参考都可以恢复真实的后验。因此，参考的选择仅在计算资源有限的情况下才重要。对于固定步长预算，我们导出封闭形式的有限步目标，并证明每个最佳噪声谱都与 Pk（传感器破坏的信息谱）成正比，具有与模式无关的常数 x*(T) = (2 ln T...
+
+## English Summary
+
+Schrödinger bridge models restore a clean signal from a degraded observation by following the conditional bridges of a reference process, yet this reference is chosen heuristically, typically white noise with a hand-tuned schedule. We develop PRISM, a theory of bridge reference design. We characterize the time-varying Gaussian references that remain exactly tractable with per-mode schedules: precisely those whose instantaneous covariances commute. We then prove an invisibility principle: with the exact drift and unlimited solver steps, every admissible reference recovers the true posterior. The choice of reference therefore matters only under finite computational resources. For a fixed step budget, we derive the finite-step objective in closed form and prove that every optimal noise spectrum is proportional to Pk, the spectrum of information destroyed by the sensor, with a mode-independent constant x*(T) = (2 ln T)^-1/2 (1 + o(1)). The analysis shows that noise color and temporal scheduling are interchangeable, and regularization provably shifts the optimal reference toward white noise. Experiments in Gaussian settings confirm the predicted orderings and the closed-form loss floors. On FFHQ, the distortion-- perception trade-off and spectral localization transfer, but white noise outperforms the matched reference; a pre-registered study that changes the training regime refutes ridge whitening as the explanation. A 2x2 mechanism study then traces the inversion to the non-Gaussian per-mode statistics of real images. PRISM turns reference design from a hyperparameter sweep into a calculation in the Gaussian regime, and locates exactly where real images break it.

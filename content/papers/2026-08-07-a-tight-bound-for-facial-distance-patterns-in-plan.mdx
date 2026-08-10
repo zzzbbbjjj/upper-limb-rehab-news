@@ -1,0 +1,21 @@
+---
+title: "平面图中面部距离模式的紧界"
+title_en: "A Tight Bound for Facial Distance Patterns in Planar Graphs"
+authors: ["Viktor Fredslund-Hansen", "Shay Mozes", "Oren Weimann"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07187v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+令 $G$ 为无向无权平面图，令 $S=(s_0,\dots,s_{k-1})$ 为指定面的顶点，按循环顺序列出。考虑一个存储从任意顶点 $v$ 到 $S$ 所有顶点的距离的向量。 $v$ 的模式是通过计算该向量中每对连续值之间的差值来获得的。 Li 和 Parter [STOC'19] 证明了 $G$ 所有顶点上唯一模式数量的上限 $O(k^3)$。我们将其改进为 $O(k^2)$，匹配已知的下限并解决 [ISAAC'22] 中的猜想。 OpenAI 的 GPT 5.6-Sol 模型找到了简单的证明。   将这个新界限插入已知结果对无向无权平面图具有以下三个直接影响：（1）它改进了 Okam...
+
+## English Summary
+
+Let $G$ be an undirected unweighted planar graph and let $S=(s_0,\dots,s_{k-1})$ be the vertices of a designated face, listed in cyclic order. Consider a vector that stores the distances from an arbitrary vertex $v$ to all vertices of $S$. The pattern of $v$ is obtained by taking the difference between every pair of consecutive values in this vector. Li and Parter [STOC'19] proved an upper bound of $O(k^3)$ on the number of unique patterns over all vertices of $G$. We improve this to $O(k^2)$, matching a known lower bound and settling a conjecture in [ISAAC'22]. The simple proof was found by OpenAI's GPT 5.6-Sol model.   Plugging this new bound into known results has the following three immediate implications for undirected unweighted planar graphs: (1) it gives an improved compression of the Okamura-Seymour metric (2) it improves the space required by constant-time exact distance oracles, and (3) it improves the fastest distributed algorithm for computing the diameter. We further present a previously unknown and nontrivial implication: a (centralized) $\tilde{O}(n^{8/5})$-time algorithm for computing the diameter, improving over the $\tilde{O}(n^{5/3})$ algorithm of [SODA'18] which works for weighted directed planar graphs. Thus, there is currently a gap between the time for computing the diameter between weighted and unweighted planar graphs.

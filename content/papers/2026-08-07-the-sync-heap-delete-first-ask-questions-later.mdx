@@ -1,0 +1,21 @@
+---
+title: "同步堆：先删除，后提问"
+title_en: "The Sync Heap: Delete First, Ask Questions Later"
+authors: ["Benjamin Aram Berendsohn", "Egor Gorbachev", "László Kozma"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07134v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+堆（优先级队列）是计算机科学中研究最深入的数据结构之一。在本文中，我们批判性地重新审视了教科书的假设，即在比较模型中，插入元素和删除最小值这两个标准堆操作中至少有一个必须花费对数时间。   通过将删除本身与向用户揭示已删除元素的身份的行为分离，我们避免了排序障碍，并在堆操作的复杂性之间获得了一种新颖的权衡。这表明对数障碍本质上并不是删除最小值的成本，而是立即获悉删除了哪个元素的信息成本。在用户仅持续多次检查堆状态的特殊情况下，我们表明可以在恒定的摊余时间内支持插入和删除。作为一个应用程序，这可以将教科书单位时间调度问题的运行时间从 $\mathcal{O}(n \log n)$ 提高到最佳 $...
+
+## English Summary
+
+Heaps (priority queues) are among the best-studied data structures in computer science. In this paper, we critically revisit the textbook assumption that in the comparison model at least one of the two standard heap operations of inserting an element and deleting the minimum must take logarithmic time.   By decoupling the deletion itself from the act of revealing the identity of the deleted element to the user, we avoid the sorting barrier and obtain a novel trade-off between the complexities of heap operations. This shows that the logarithmic barrier is not inherently the cost of deleting the minimum but rather the information cost of immediately learning which element was deleted. In the special case when the user inspects the heap state only constantly many times, we show that both insertions and deletions can be supported in constant amortized time. As an application, this yields a runtime improvement from $\mathcal{O}(n \log n)$ to the optimal $\mathcal{O}(n)$ for a textbook unit-time scheduling problem.   We obtain our results by designing a new data structure, the sync heap, which gains speed by rearranging and compacting its operations until queries force it to synchronize and reveal its state. As a key component, we use the soft heap introduced by Chazelle as part of his minimum spanning tree algorithm. Our data structure is simple, comparison-based, and deterministic, and our results are asymptotically optimal.

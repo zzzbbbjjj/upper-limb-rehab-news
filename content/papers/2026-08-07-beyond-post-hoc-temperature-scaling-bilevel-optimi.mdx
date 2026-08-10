@@ -1,0 +1,21 @@
+---
+title: "超越事后温度缩放：LLM 校准的双层优化"
+title_en: "Beyond Post-Hoc Temperature Scaling: Bilevel Optimization for LLM Calibration"
+authors: ["Ruochen Jin", "Zhanliang Wang", "Zongyu Dai", "Jiancong Xiao", "Bojian Hou"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07419v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+偏好对齐通常会使大型语言模型 (LLM) 过于自信且校准不佳。传统的事后温度缩放本质上是与域相关的：在一个域上拟合的温度不能推广到跨域。这促使我们在训练期间修改模型参数以改进校准。我们建议将预测分布的熵最大化作为校准目标，它通过阻止过度集中的预测来直接针对过度自信。受温度缩放的启发，我们通过双层优化公式实现了这一点，其中较低层在参数损失下训练模型，而较高层选择损失超参数以最大化熵。为了使该框架在法学硕士规模上实用，我们采用了有效的一阶近似，避免了显式的二阶计算。在多项选择和开放式生成问答中，实验表明我们的方法产生了经过良好校准的法学硕士，在域外泛化方面具有特殊优势。
+
+## English Summary
+
+Preference alignment often makes large language models (LLMs) overconfident and poorly calibrated. Traditional post-hoc temperature scaling is inherently domain-dependent: a temperature fitted on one domain does not generalize across domains. This motivates us to modify model parameters during training to improve calibration. We propose maximizing the entropy of predictive distributions as the calibration objective, which directly targets overconfidence by discouraging overly concentrated predictions. Inspired by temperature scaling, we realize this through a bilevel optimization formulation, where the lower level trains the model under a parametric loss and the upper level selects loss hyperparameters to maximize entropy. To make the framework practical at LLM scale, we adopt an efficient first-order approximation that avoids explicit second-order computation. Across both multiple-choice and open-ended generative question answering, experiments demonstrate that our method yields well-calibrated LLMs with particular advantages in out-of-domain generalization.

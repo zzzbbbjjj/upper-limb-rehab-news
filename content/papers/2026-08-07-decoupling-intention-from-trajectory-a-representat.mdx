@@ -1,0 +1,21 @@
+---
+title: "将意图与轨迹脱钩：世界行动模型的代表性推论框架"
+title_en: "Decoupling Intention from Trajectory: A Representational Deduction Framework for World Action Models"
+authors: ["Xiangkai Ma", "Yue Ma", "Junjie Wang", "Sheng Xu", "Mingyang Li", "Han Zhang", "Yuzheng Zhuang", "Wenzhong Li", "Zhihao Yuan"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06994v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+世界行动模型（WAM）旨在构建一个能够理解世界状态演变并指导生成运动规划的统一架构。然而，现有的视觉分支侧重于预测静态视觉观察，而不是反映捕捉运动交互下世界状态演变的潜在转换信息。这导致了动作模型中高层物理条件演化和低层动作轨迹生成之间的表征纠缠，造成了结构性瓶颈，同时削弱了世界演化模型对动作生成的预测能力。我们提出了 PILOT（潜在优化轨迹的物理推理），其核心表征演绎（RD）通过将运动思想链（CoT）指导集成为原生模型功能来弥补这一差距。具体来说，RD 旨在鼓励动作分支对潜在的状态转换标记进行显式建模，这些标记在推理空间中保留为 CoT，以指导细粒度的运动轨迹。实验表明，RD不仅显着提高了...
+
+## English Summary
+
+World Action Models (WAMs) aim to construct a unified architecture capable of understanding world state evolution and guiding to generative motion planning. However, existing visual branches focus on predicting static visual observation, rather than reflecting potential transition information that captures the evolution of world states under motion interactions. This leads to representational entanglement between high-level physical condition evolution and low-level action trajectory generation within the Action Model, creating a structural bottleneck while weakening the predictive capability of world evolution modeling for action generation. We propose PILOT (Physical Inference for Latent Optimized Trajectories), whose core Representational Deduction (RD) bridges this gap by integrating motion thought-of-chain (CoT) guidance as a native model capability. Specifically, RD aims to encourage the action branch to explicitly model potential state transition tokens, which are retained as CoT in the reasoning space to guide fine-grained motion trajectory. Experiments demonstrate that RD not only significantly improves the success rate and generalization ability of WAMs in complex robotic manipulation tasks but also enhances the model's physical interpretability by decoupling high-level motion semantics from low-level trajectory details. Furthermore, the abundant state transition supervision signals introduced by RD effectively alleviate the sparse supervision in action generation, enabling it to serve as an efficient few-shot real-robot fine-tuning strategy and demonstrating superior scalability for migration to mainstream WAM architectures.

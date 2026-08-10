@@ -1,0 +1,21 @@
+---
+title: "基于 6D 动态触觉传感的瞬态外在接触检测和测距"
+title_en: "Detection and Ranging of Transient Extrinsic Contacts Based on 6D Dynamic Tactile Sensing"
+authors: ["Haowen Zheng", "Yinghao Wu", "Fuyuan Liu", "Yichen Li", "Yitian Shao"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07075v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+精细的操作通常涉及所抓取的物体与环境之间短暂且微妙的碰撞。虽然人手凭借卓越的触觉灵敏度可以轻松定位这些接触，但机器人系统通常缺乏必要的分辨率来获取运动规划所需的信息，从而导致操作笨拙甚至任务失败。在这里，我们提出了瞬态外在接触检测和测距（TECDAR），这是一种简单而快速且有效的方法，用于检测和测距所抓取物体的外在接触。我们的夹具尖端设计采用动态触觉传感，利用单个 2.5 美元\乘以 3 毫米 6D 惯性测量单元。该传感器以 7 kHz 采样率捕获亚毫秒尖端变形，但运行数据流仅为 84 KB/s。高带宽和紧凑的数据大小使系统能够快速检测和定位抓取的物体与其周围环境之间的接触。具体来说，通过扩展...
+
+## English Summary
+
+Delicate manipulation often involves transient and subtle collisions between a grasped object and the environment. While the human hand localizes these contacts effortlessly thanks to superior tactile sensitivity, robotic systems often lack the requisite resolution to acquire the information necessary for motion planning, resulting in clumsy manipulation or even task failure. Here, we propose transient extrinsic contact detection and ranging (TECDAR), a simple yet fast and efficient method for detecting and ranging extrinsic contact of grasped objects. Our design of gripper tips employs dynamic tactile sensing leveraging a single 2.5$\times$3 mm 6D inertial measurement unit. The sensor captures sub-millisecond tip deformations at a 7 kHz sampling rate, but operating on a data stream of only 84 KB/s. High bandwidth and compact data size enable the system to rapidly detect and localize contact between grasped objects and their surroundings. Specifically, fusing tactile data with robot pose via an extended Kalman filter enables fast and precise localization of extrinsic contact, reaching millimeter-level accuracy within 180 ms. Experimental results demonstrate that the system achieves an average localization accuracy of approximately 7\,mm in both line-contact and point-contact localization tasks. Furthermore, this near-instantaneous localization enables the robot to rectify its trajectory on a millisecond scale, facilitating precise tool manipulation and enhanced perception of complex environments purely through tactile exploration and mapping. We envision such techniques advancing the future of robotics across domains requiring delicate manipulation, including precision assembly, surgical assistance, and autonomous exploration in touch-dominant environments. Project page: humitlab.github.io/TECDAR/

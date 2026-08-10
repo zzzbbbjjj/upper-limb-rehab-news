@@ -1,0 +1,21 @@
+---
+title: "AutoIntervene：针对行动组块模仿学习策略的校准干预"
+title_en: "AutoIntervene: Calibrated Intervention for Action-Chunking Imitation Learning Policies"
+authors: ["Jinhe Tang", "Weiming Zhi"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07065v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+动作分块视觉运动策略从演示中学习，并通过预测短动作序列而不是单步命令来提高时间一致性。然而，感知错误和执行漂移可能会将机器人移出演示分布，而策略继续产生与观察到的状态不一致的平滑动作块。我们提出了 AutoIntervene，一个在线框架，可以在部署期间有选择地在操作分块策略和操作员之间转移控制。 AutoIntervene 根据从成功的任务执行中构建的视觉动作支持记忆来评估提议的块，将视觉相似性与提议和参考动作之间的一致性结合起来。阶段局部支持控制当前任务阶段内的策略到操作员的传输，而全局支持控制操作员恢复后返回到策略控制。我们根据专家演示的评估水平分数的经验分位数校准两个方向的单独切换阈值...
+
+## English Summary
+
+Action-chunking visuomotor policies learn from demonstrations and improve temporal consistency by predicting short action sequences rather than single-step commands. Yet perception errors and execution drift can move the robot outside the demonstration distribution, while the policy continues to produce smooth action chunks that are inconsistent with the observed state. We present AutoIntervene, an online framework that selectively transfers control between an action-chunking policy and an operator during deployment. AutoIntervene evaluates proposed chunks against a visual-action support memory built from successful task executions, combining visual similarity with consistency between proposed and reference actions. Phase-local support governs policy-to-operator transfer within the current task phase, whereas global support governs the return to policy control after operator recovery. We calibrate separate switching thresholds for the two directions from empirical quantiles of evaluation-level scores on held-out expert demonstrations, avoiding direct manual tuning of score cutoffs. Intervention segments retained from successful rollouts target learner-induced states and provide corrective supervision for subsequent policy updates. Experiments on real-world bimanual manipulation tasks show higher post-adaptation task success and lower operator-control time than manual intervention. Videos and additional results are available at https://aus.bot/research/autointervene/.

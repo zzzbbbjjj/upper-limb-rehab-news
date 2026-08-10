@@ -1,0 +1,21 @@
+---
+title: "路由在最有价值的地方是最难学的：Web 代理表示路由的界限"
+title_en: "Routing Is Least Learnable Where It Is Most Valuable: Bounds on Representation Routing for Web Agents"
+authors: ["Jiaming Wei", "Zekun Wu", "Adriano Koshiyama", "Maria Perez-Ortiz"]
+date: "2026-08-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06171v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+Web 代理通过文本、像素或两者来观察浏览器，并且对于所有任务，选择通常都是固定的。我们在 VisualWebArena 和 WebArena 上测量了八个站点模型组合（单元）的六种观察模式，并询问每个任务的选择会带来什么。这些模式是互补的：每种模式都解决了其他模式错过的任务，它们以结构上不同的方式失败，并且任务集之间的最佳选择相反。显而易见的奖品是为每项任务选择获胜模式的预言机，看起来很大，但由于运行之间的噪音而膨胀：在相同的任务上重新运行相同的模式会改变 12-14% 的结果，因此第二次运行已经在手的模式所获得的收益与添加新模式的收益差不多。剩下的就是成本限制：仅将没有模式解决的任务发送到...
+
+## English Summary
+
+Web agents observe a browser through text, pixels, or both, and the choice is usually fixed once for all tasks. We measure six observation modes across eight site-model combinations (cells) on VisualWebArena and WebArena and ask what choosing per task would buy. The modes are complementary: each solves tasks the others miss, they fail in structurally different ways, and the best choice reverses between task sets. The obvious prize, an oracle that picks a winning mode for every task, looks large but is inflated by run-to-run noise: rerunning the same mode on the same tasks changes 12-14% of outcomes, so a second run of a mode already in hand gains about as much as adding a new one. What survives is a cost bound: sending only the tasks no mode solves to the cheapest mode cuts cost by 9.5-30.6% in 8 of 8 cells at unchanged success. We then test five routing policies (picking the mode, deciding when to spend on the strong mode, a zero-cost rule read off the task text, a confidence cascade, and pooled cost tiers), and none robustly beats simply fixing one well-chosen mode; the one exception is a fragile result in our sparsest cell. The central obstruction is that routing supervision is produced at the agent's success rate: the weaker the agent, the fewer labels a router gets, exactly where routing would be most valuable. This limit belongs to today's agents rather than to routing itself. Label supply and routing opportunity rise together (correlation 0.95 across cells), so a stronger agent can overturn the result, and we report the rerun noise bands and the full measurement protocol.

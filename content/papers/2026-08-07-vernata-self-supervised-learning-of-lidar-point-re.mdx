@@ -1,0 +1,21 @@
+---
+title: "Vernata：LiDAR 点表示的自监督学习"
+title_en: "Vernata: Self-Supervised Learning of LiDAR Point Representations"
+authors: ["Oliver Lemke", "Alexander Liniger", "Abel Gawel", "Marco Hutter"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06919v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+激光雷达是在室外环境中运行的机器人的主要传感方式。然而，该领域深度学习模型的性能受到标记数据稀缺的严重限制，这是3D标注成本高昂的直接结果。自监督学习通过从未标记的数据中学习通用特征来解决这种稀缺性。在这项工作中，我们提出了一个多模式、多教师的蒸馏框架，用于户外激光雷达点云的自监督学习。在 Sonata 架构的基础上，我们引入了 Vernata，它由三个扩展组成：稀疏视图增强，以提高针对不同点密度的鲁棒性；存储库机制，以稳定资源受限的训练；以及利用密集、高分辨率 2D 图像特征的跨模式蒸馏，以实现细粒度的语义指导。我们在 GrandTour、TartanGround 和 Waymo 数据集以及...
+
+## English Summary
+
+LiDAR serves as a primary sensing modality for robots operating in outdoor environments. However, the performance of deep learning models in this domain is severely limited by the scarcity of labeled data, a direct result of the high cost of 3D annotation. Self-supervised learning addresses this scarcity by learning general-purpose features from unlabeled data. In this work, we present a multi-modal, multi-teacher distillation framework for self-supervised learning on outdoor LiDAR point clouds. Building upon the Sonata architecture, we introduce Vernata, consisting of three extensions: sparse view augmentation to improve robustness against varying point densities, a memory bank mechanism to stabilize resource-constrained training, and cross-modal distillation utilizing dense, high-resolution 2D image features to enable fine-grained semantic guidance. We evaluate our method on the GrandTour, TartanGround, and Waymo datasets, as well as data collected from our own robotic platforms. Our experiments demonstrate a significant performance improvement over Sonata baselines, yielding mIoU scores of 54.7 on TartanGround (+5.9 points, +12.1%) and 57.1 on Waymo (+7.3 points, +14.7%). Finally, we show that the self-supervised approach maintains strong performance even in reduced-modality settings (lacking color or normals), achieving competitive mIoU scores of 49.4 and 50.2 on the respective datasets.

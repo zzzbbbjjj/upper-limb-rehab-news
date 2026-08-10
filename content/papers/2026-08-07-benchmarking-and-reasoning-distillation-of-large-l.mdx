@@ -1,0 +1,21 @@
+---
+title: "复杂动态系统反馈控制器设计大型语言模型的基准测试和推理蒸馏"
+title_en: "Benchmarking and Reasoning Distillation of Large Language Models for Feedback Controller Design in Complex Dynamical Systems"
+authors: ["Zhongchao Zhou", "Yixuan Xie", "Wenwei Yu", "Yuxi Lu", "Yaonan Zhu", "Qian Niu", "Yutaka Matsuo", "Yusuke Iwasawa"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07004v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb"]
+---
+
+## 中文摘要
+
+尽管跨科学领域的大型语言模型 (LLM) 已经展示了卓越的功能，但反馈控制器设计仍处于探索之中。现有基准测试主要关注线性单自由度 (DoF) 系统和大型 API 托管模型，复杂控制器设计任务的性能和边缘部署的可行性尚不清楚。为了解决这些限制，我们引入了大型语言模型的复杂动力学控制基准 (CoDyControlBench)，包括跨五个评估维度的 132 个系统配置：自由度数量、系统类型、耦合级别、阻尼机制和控制器类型。六个最先进的法学硕士在三次独立运行中进行了评估，包括三个商业模型（GPT、Gemini 和 Claude）和三个开源模型（GLM、DeepSeek 和 Qwen）。 GPT 的设计...
+
+## English Summary
+
+Although remarkable capabilities have been demonstrated by Large Language Models (LLMs) across scientific domains, feedback controller design remains underexplored. Existing benchmarks focus mainly on linear single-Degree-of-Freedom (DoF) systems and large API-hosted models, leaving performance on complex controller-design tasks and feasibility for edge deployment unclear. To address these limitations, we introduce the Complex Dynamics-to-Control Benchmark for Large Language Models (CoDyControlBench), comprising 132 system configurations across five evaluation dimensions: number of DoF, system type, coupling level, damping regime, and controller type. Six state-of-the-art LLMs were evaluated over three independent runs, including three commercial models (GPT, Gemini, and Claude) and three open-source models (GLM, DeepSeek, and Qwen). GPT achieved the highest design success rate at 94.8\%, whereas Qwen showed the lowest rate at 50.0\%. Across the benchmark dimensions, DoF and controller type exhibited the largest model-averaged variations in design success, with success-rate ranges of 36.3\% and 17.6\%, respectively, exceeding those associated with system type, coupling level, and damping regime. Comparison of GPT and Qwen showed that their performance gap arose mainly from the control-design knowledge, particularly gain selection and the use of transient-limiting mechanisms. For edge deployment, a specialized 1.5B-parameter model was developed through reasoning distillation. The reasoning-distilled model outperformed the answer-distilled and base model on CoDyControlBench, maintained stable performance across 1-6 DoFs, and achieved successful traget tracking in all three physical trials on a pneumatic-artificial-muscle-driven robotic arm. These results establish a benchmark baseline and highlight the potential of lightweight, edge-deployable controller-design models.

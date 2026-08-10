@@ -1,0 +1,21 @@
+---
+title: "HOPE：从单目视频估计手部物体压力"
+title_en: "HOPE: Hand-Object Pressure Estimation from Monocular Videos"
+authors: ["Subin Jeon", "Byungjun Kim", "Hanbyul Joo"]
+date: "2026-08-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06192v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+从视觉估计物理压力对于理解富含接触的手部物体交互至关重要。然而，现有的基于视觉的压力估计方法很大程度上局限于平面和单个图像输入，使得它们难以应用于与不同物体的动态手部物体交互。相反，我们将压力估计表述为以单眼视频作为输入的以手为中心的视频预测问题。该公式预测随时间变化的每个顶点法向压力和直接在手网格上的接触，产生独立于对象形状和传感器布局的统一输出空间。在此基础上，我们提出了 \textbf{HOPE}，一个具有两个关键组件的框架。首先，我们将触觉手套压力、平面传感器压力和基于距离的手部物体接触注释提升到共享的手部顶点空间中，允许徒手接触数据在度量标签不可用的情况下规范压力学习。其次，我们引入...
+
+## English Summary
+
+Estimating physical pressure from vision is essential for understanding contact-rich hand-object interaction. However, prior vision-based pressure estimation methods are largely limited to planar surfaces and single image input, making them difficult to apply to dynamic hand-object interaction with diverse objects. We instead formulate pressure estimation as a hand-centric video prediction problem with monocular video as input. This formulation predicts temporally evolving per-vertex normal pressure and contact directly on the hand mesh, yielding a unified output space independent of object shape and sensor layout. Building on this formulation, we propose \textbf{HOPE}, a framework with two key components. First, we lift tactile-glove pressure, planar-sensor pressure, and distance-based hand-object contact annotations into a shared hand vertex space, allowing bare-hand contact data to regularize pressure learning where metric labels are unavailable. Second, we introduce a vertex-anchored video transformer that treats each vertex as a persistent token, aggregates visual features and hand pose over time, and uses a contact-gated pressure head to enforce that pressure vanishes without contact. Experiments on OpenTouch, PressureVisionDB, and hand-object contact benchmarks validate HOPE across object-pressure, surface-pressure, and contact-supervised HOI settings. Despite using metric pressure supervision primarily from gloved-hand videos, HOPE generalizes to bare-hand egocentric and in-the-wild videos, producing joint contact and pressure predictions beyond the scope of contact-only or planar-pressure baselines.

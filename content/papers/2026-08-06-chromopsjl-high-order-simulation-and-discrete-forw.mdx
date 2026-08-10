@@ -1,0 +1,21 @@
+---
+title: "ChromOps.jl：色谱模型的高阶模拟和离散正向灵敏度分析"
+title_en: "ChromOps.jl: High-order simulation and discrete forward sensitivity analysis for chromatography models"
+authors: ["Kristian Meyer", "Maksym Ratajczyk", "Christopher Rackauckas"]
+date: "2026-08-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06131v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+机械色谱模型对于工艺开发很有价值，但基于梯度的参数估计和优化可能会受到计算成本和导出目标函数梯度的工作的阻碍。为了解决这个问题，我们提出了一种完全可微的 Julia 色谱求解器 ChromOps.jl，它将高阶空间离散化与离散前向灵敏度分析 (DFSA) 相结合。在具有空间质量作用动力学的 6 组分离子交换色谱问题上，对两种高阶空间离散化、有限差分分部求和 (FD-SBP) 和不连续伽辽金谱元法 (DG-SEM) 进行了比较。两者都在制造问题上达到了理论收敛速度，而 FD-SBP 对于前向（原始）和双值模拟都显示出良好的工作精度性能，并且在概念上更易于实现。对于在单个 ForwardDiff....
+
+## English Summary
+
+Mechanistic chromatography models are valuable for process development, but gradient-based parameter estimation and optimization can be hindered by computational cost and the effort of deriving objective-function gradients. To address this concern, a fully differentiable Julia chromatography solver, ChromOps.jl, is presented that combines high-order spatial discretization with discrete forward sensitivity analysis (DFSA). Two high-order spatial discretizations, finite difference summation-by-parts (FD-SBP) and the discontinuous Galerkin spectral element method (DG-SEM), are compared on a 6-component ion-exchange chromatography problem with steric mass action kinetics. Both attain their theoretical convergence rates on manufactured problems, while FD-SBP shows favourable work-precision performance for both forward (primal) and dual-valued simulations and is conceptually simpler to implement. DFSA scales as tDFSA approx 1.4(1+Np)tfwd for up to Np = 24 parameters propagated in a single ForwardDiff.jl chunk, i.e. about 1.4 forward solves per additional parameter. Because the primal and dual-valued solves share the same code path, DFSA provides accurate gradients of user-defined objectives without any hand-derived chain-rule code, enabling accessible gradient-based parameter estimation and optimization.

@@ -1,0 +1,21 @@
+---
+title: "用于小型企业短历史多 KPI 预测的会计图形转换器"
+title_en: "Accounting Graph Transformer for Short-History Multi-KPI Forecasting in Small Businesses"
+authors: ["Shrutendra Harsola", "Vignesh Subrahmaniam"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07037v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+小型企业通常只有 12-24 个月的会计历史，但规划和风险工作流程需要跨财务报表进行协调预测。我们研究了 71 个月度账本系列中 13 个损益表、资产负债表、现金流和营运资本关键绩效指标 (KPI) 的 12 个月联合预测。我们引入了会计图转换器（AGT），它将每个账本系列表示为一个掩码令牌，通过固定会计关系图上的类型化注意力来交换信息，池化特定于目标的上下文，并将其与门控的三个月新近度路径融合。在来自 1,060 个未见过的公司的 11,993 个预测源中，AGT 在三个独立种子中实现了样本加权 KPI 宏观平均绝对误差 (MAE) $0.6990 \pm 0.0013$，而最强基线 Lig...
+
+## English Summary
+
+Small businesses often have only 12-24 months of accounting history, yet planning and risk workflows require coordinated forecasts across financial statements. We study joint 12-month forecasting of 13 income-statement, balance-sheet, cash-flow, and working-capital key performance indicators (KPIs) from 71 monthly ledger series. We introduce the Accounting Graph Transformer (AGT), which represents each ledger series as a masked token, exchanges information through typed attention on a fixed accounting-relation graph, pools target-specific context, and fuses it with a gated three-month recency path. Across 11,993 forecast origins from 1,060 unseen companies, AGT achieves sample-weighted KPI-macro mean absolute error (MAE) $0.6990 \pm 0.0013$ over three independent seeds, compared with $0.7378 \pm 0.0014$ for the strongest baseline, LightGBM. At the pre-specified seed 42, a paired company-clustered bootstrap gives a LightGBM-minus-AGT difference of 0.0395 with 95% confidence interval (CI) $[0.0350,0.0439]$. AGT is best on all 13 KPIs against LightGBM, TimeMixer, and SOFTS in the matched seed-42 comparison, while final-architecture ablations show that relational attention, accounting topology, and the recency path each improve validation and test accuracy. On 7,094 additional unseen companies with origins sampled from January-May 2025, AGT obtains 0.7548 MAE versus 0.7694 for SOFTS. A single 5.3M-parameter model produces 156 aligned forecasts without company-specific fitting, providing one forecasting layer for integrated planning, liquidity, and working-capital analysis.

@@ -1,0 +1,21 @@
+---
+title: "通过自适应步态计时学习容错运动"
+title_en: "Learning Fault-Tolerant Locomotion with Adaptive Gait Timing"
+authors: ["Giovanbattista Gravina", "Luca Rossini", "Carlo Rizzardo", "Arturo Laurenzi", "Nikos Tsagarakis"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07328v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+硬件故障需要腿式机器人快速重新组织协调和步态时序，以保持稳定性和移动性。这对于较大的四足动物来说尤其具有挑战性，因为增加的质量和更严格的驱动限制降低了通常在较小平台上观察到的激进的高频补偿策略的可行性。在这项工作中，我们提出了一种深度强化学习方法，用于执行器断电情况下的容错运动。该方法采用不对称的演员-批评家架构，其中批评家可以在训练期间访问特权信息，而演员则学习从本体感受观察中重建相应的潜在表示。我们引入了潜在的对齐损失，以鼓励演员和评论家表征之间的一致性。此外，我们通过可学习的步态频率参数来增强动作空间，从而能够响应地形变化和执行器退化而实现自适应步态计时，而无需预定义的故障腿策略。该方法...
+
+## English Summary
+
+Hardware failures require legged robots to rapidly reorganize coordination and gait timing to maintain stability and mobility. This is particularly challenging for larger quadrupeds, where increased mass and tighter actuation limits reduce the feasibility of aggressive, high-frequency compensation strategies often observed on smaller platforms. In this work, we propose a deep reinforcement learning approach for fault-tolerant locomotion under actuator power loss. The method employs an asymmetric actor-critic architecture in which the critic has access to privileged information during training, while the actor learns to reconstruct a corresponding latent representation from proprioceptive observations. We introduce a latent-alignment loss that encourages consistency between actor and critic representations. Additionally, we augment the action space with a learnable gait frequency parameter, enabling adaptive gait timing in response to terrain variations and actuator degradation without predefined faulty-leg strategies. The approach is validated in high-fidelity simulation on uneven terrain and real-world experiments on flat ground using a 68 kg quadruped robot.

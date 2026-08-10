@@ -1,0 +1,21 @@
+---
+title: "M2-SMap：具有分层多模型表示的内存高效语义映射"
+title_en: "M2-SMap: Memory-Efficient Semantic Mapping with Hierarchical Multi-Model Representation"
+authors: ["QiYing Deng", "ZhongLai Wang", "Yuan Gao", "Wei Dong"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07074v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+密集点云地图作为一种常用的地图表示形式，很难部署在资源有限的机器人上，因为它们的内存消耗随着场景规模的增长而迅速增长。尽管紧凑的单模型表示降低了内存成本，但其固定的几何表现力不足以适应结构多样化的环境。现有的多模型方法提高了表示灵活性，但其特征提取和模型选择往往以局部几何结构为主，这可能会导致对象之间的过度拟合和粘附。为了解决这些问题，本文提出了 M2-SMap，一种基于分层多模型表示的内存高效语义映射框架。首先，分层几何分解将 RGB-D 点云划分为紧凑的高斯分量。然后，投影引导的语义注释机制为每个组件分配实例标识。随后，这些注释被纳入对象感知高斯融合策略中。此外，多尺度特征提取策略分离大平...
+
+## English Summary
+
+Dense point cloud maps, as a typically used mapping representation, are difficult to deploy on resource-constrained robots because their memory consumption grows rapidly with scene scale. Although compact single-model representations reduce memory cost, their fixed geometric expressiveness is insufficient for structurally diverse environments. Existing multi-model methods improve representational flexibility, yet their feature extraction and model selection are often dominated by local geometry, which can cause overfitting and adhesion between objects. To address these issues, this paper presents M2-SMap, a memory-efficient semantic mapping framework based on hierarchical multi-model representation. First, a hierarchical geometric decomposition partitions RGB-D point clouds into compact Gaussian components. Then, a projection-guided semantic annotation mechanism assigns instance identities to each component. Subsequently, these annotations are incorporated into an object-aware Gaussian fusion strategy. Furthermore, a multi-scale feature extraction strategy separates large planar regions, semantic objects, and complex residual structures, which are respectively represented by bounded planes, object-level superquadrics, and GMM primitives. Experiments on three RGB-D sequences show that M2-SMap runs in real time at no less than 29.37 Hz while achieving the lowest primitive count, with an average reduction of 18.7% over the best baseline. It also reduces the mean per-frame number of measured inter-object adhesion cases from 2.808 to 0, demonstrating efficient and semantically consistent scene representation.

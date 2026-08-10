@@ -1,0 +1,21 @@
+---
+title: "近乎最优的替换路径覆盖"
+title_en: "Near-Optimal Replacement Path Coverings"
+authors: ["Davide Bilò", "Keerti Choudhary", "Sarel Cohen", "Martin Schirneck"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07124v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+设$L$和$f$为正整数。图 $G$ 的 $(L,f)$ 替换路径覆盖 (RPC) 是子图族 $\mathcal{G}$，这样，对于最多 $f$ 边的每个集合 $F$，存在一个具有以下属性的子族 $\mathcal{G}_F \subseteq \mathcal{G}$。 (1) $\mathcal{G}_F$ 中没有子图包含 $F$ 的边。 (2) 对于 $G{-}F$ 中具有至多 $L$ 边的最短路径的每一对顶点 $s,t$，一条这样的路径也存在于 $\mathcal{G}_F$ 中的某个子图中。子图的总数 $|\mathcal{G}|$ 称为覆盖值。   RPC 是设计容错数据结构的重要...
+
+## English Summary
+
+Let $L$ and $f$ be positive integers. An $(L,f)$-replacement path covering (RPC) for a graph $G$ is a family $\mathcal{G}$ of subgraphs such that, for every set $F$ of at most $f$ edges, there is a subfamily $\mathcal{G}_F \subseteq \mathcal{G}$ with the following properties. (1) No subgraph in $\mathcal{G}_F$ contains an edge of $F$. (2) For each pair of vertices $s,t$ that have a shortest path in $G{-}F$ with at most $L$ edges, one such path also exists in some subgraph in $\mathcal{G}_F$. The total number $|\mathcal{G}|$ of subgraphs is called the covering value.   RPCs are an important tools in the design of fault-tolerant data structures. Weimann and Yuster [TALG 2013] presented an RPC with covering value $\widetilde{O}(f L^f)$. Karthik and Parter [TALG 2024] showed that $Ω( (L/f)^f )$ subgraphs are necessary. Recently, Bilò, Chechik, Choudhary, Cohen, and Schirneck [ICALP 2026] devised a new approach for very small sensitivities $f = o(\log L)$ with covering value $\widetilde{O}(f e^f (L/f)^{f+o(1)})$. They also showed that any RPC in the complementary range $f = Ω(\log L)$ must contain $Ω( (\sqrt{f e^f}/L) \cdot (L/f)^f)$ subgraphs. This left open the question of what is the true covering value.   We give two surprisingly simple constructions that improve both the upper and lower bound. This results in a near-tight covering value of $\widetildeΘ(\frac{(L+f)^{L+f}}{L^L f^f}) \cdot \mathsf{poly}(f)$ for the much wider range of $f = O(L)$.

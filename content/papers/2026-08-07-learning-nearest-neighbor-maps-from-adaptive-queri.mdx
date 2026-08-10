@@ -1,0 +1,21 @@
+---
+title: "从自适应查询中学习最近邻映射"
+title_en: "Learning Nearest-Neighbor Maps from Adaptive Queries"
+authors: ["Hadley Black", "Geelon So"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07352v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+我们研究从自适应查询中学习最近邻映射的问题，这相当于以下通过最近邻查询预言机重建隐藏集 $H$ 的问题。令 $K \subset \mathbb{R}^d$ 为赋范空间 $(\mathbb{R}^d,\| \cdot\|)$ 中的紧域，并令 $H \subset K$ 为 $n$ 个点的隐藏集合。在查询 $q \in K$ 时，预言机返回一些与 $q$ 距离最小的 $h \in H$。需要多少次查询才能准确恢复 $H$？之前的工作在特定领域研究了这个问题，即布尔超立方体和 $\ell_2$-单位球体。我们概括了之前的工作，并证明了最坏情况下查询复杂度的严格界限 $θ(nκ)$，其中 $κ$ 是...
+
+## English Summary
+
+We study the problem of learning nearest-neighbor maps from adaptive queries, which is equivalent to the following problem of reconstructing a hidden set $H$ via a nearest-neighbor query oracle. Let $K \subset \mathbb{R}^d$ be a compact domain in a normed space $(\mathbb{R}^d,\| \cdot\|)$ and let $H \subset K$ be a hidden set of $n$ points. Upon querying $q \in K$, the oracle returns some $h \in H$ with minimum distance from $q$. How many queries are required to exactly recover $H$? Previous work has studied this question in specific domains, namely the Boolean hypercube and the $\ell_2$-unit sphere. We generalize previous work and prove the tight worst-case query complexity bound of $Θ(nκ)$, where $κ$ is the kissing number of the underlying norm.   In the Euclidean norm, obtaining tight asymptotic bounds on $κ$ is a significant open question, although it is known that $κ= \exp(Θ(d))$. Our second set of results shows that an exponential dependence on $d$ is required even in natural Euclidean domains: $\exp(Ω(d))$ queries are needed in the ball, even when $n=2$, and $n\exp(Ω(d))$ queries are needed in the cone.   Lastly, we prove a sharper upper bound in the Euclidean sphere. Here, $d$ can be replaced by $\min(n,d)$ via a dimension reduction preprocessing step. This is a randomized version of a procedure due to Prabhu-Woodruff (ICML 2024) where we improve the query complexity from $O(nd)$ to $O(\min(n,d))$. This reveals a striking contrast between the sphere and the ball: when $n = O(1)$, the sphere admits an $O(1)$ query algorithm, whereas the ball requires $\exp(Ω(d))$.

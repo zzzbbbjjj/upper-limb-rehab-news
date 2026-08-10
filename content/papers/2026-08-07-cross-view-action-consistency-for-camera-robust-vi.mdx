@@ -1,0 +1,21 @@
+---
+title: "相机鲁棒视觉语言动作策略的跨视图动作一致性"
+title_en: "Cross-View Action Consistency for Camera-Robust Vision-Language-Action Policies"
+authors: ["Bingqi Huang", "Bingchuan Wei", "Xuan Wang", "Yingkai Cai", "Zhaokui Wang"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06965v1"
+doi: ""
+tags: ["腕关节"]
+tags_en: ["wrist"]
+keywords: ["腕关节"]
+keywords_en: ["wrist"]
+---
+
+## 中文摘要
+
+当相机移动时，即使任务、对象、语言和机器人状态不变，从固定场景相机微调的视觉-语言-动作 (VLA) 策略也可能会失败。我们仅使用场景 RGB 图像、语言和本体感觉来研究场景相机视点的鲁棒性，无需相机标签、外在参数、深度或点云输入。手腕流始终被屏蔽，以防止不受干扰的视觉快捷方式混淆对场景摄像机变化的归因。对于基于流的 VLA，我们建议对动作流速度场进行正则化，该量直接积分以生成连续的动作块。我们通过将原始 LIBERO 演示重置为相同的 MuJoCo 状态并渲染标称和扰动的场景摄像机视图来构建动作等效视图对。两个视图都受到流匹配的监督，而交叉视图损失则促使它们预测的动作流速度在相同的采样流坐标...
+
+## English Summary
+
+Vision-language-action (VLA) policies fine-tuned from a fixed scene camera can fail when the camera is moved, even when the task, objects, language, and robot state are unchanged. We study scene-camera viewpoint robustness using only a scene RGB image, language, and proprioception, without camera labels, extrinsics, depth, or point-cloud inputs. The wrist stream is masked throughout to prevent an unperturbed visual shortcut from confounding attribution to scene-camera variation. For flow-based VLAs, we propose to regularize the action-flow velocity field, the quantity directly integrated to generate continuous action chunks. We construct action-equivalent view pairs by resetting original LIBERO demonstrations to the same MuJoCo state and rendering nominal and perturbed scene-camera views. Both views are supervised by flow matching, while a cross-view loss encourages their predicted action-flow velocities to agree at the same sampled flow coordinates. On the LIBERO-Plus camera-perturbation track, our method reaches 87.2$\pm$0.4% (4,797 rollouts per seed across 3 training seeds), +7.4pp over flow-matching-only training on the same paired data (79.8$\pm$0.8%, also 3 seeds) and +12.5pp over naive mixed-camera SFT, while maintaining nominal-camera ID performance (95.0$\pm$0.8%; same-data FM-only: 95.0$\pm$4.3%). A shuffled-pair control collapses to 25.8%, showing that the gain depends on action-equivalent pairing. On a real robot, we evaluate three tabletop tasks with 10 rollouts per task and camera placement; held-out-camera success improves from 53.3% to 74.4% under the same single-scene-RGB inference interface.

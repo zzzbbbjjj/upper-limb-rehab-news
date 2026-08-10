@@ -1,0 +1,21 @@
+---
+title: "基于 OpenArm 的实验室移动操作的表示切换"
+title_en: "Representation Handoffs for OpenArm-Based Laboratory Mobile Manipulation"
+authors: ["Yang Shen", "Chonghao Cheng", "Ziyi Zhao", "Jialuo Zhu", "Zhenyi Yi", "Qi Zhao", "Jian Yang", "Yuhui Shi", "Chin-Teng Lin"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07154v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+开源机器人和基础模型降低了实现人工智能的障碍，但语言引导的实验室自动化仍然需要从指令和观察到安全行动的可靠协调。本现场报告介绍了一个用于实验室类型任务的基于 OpenArm 的移动操纵原型，该原型通过将双 OpenArm 机械臂与移动底座、垂直滑动、RGB-D 传感、基于激光雷达的映射、ROS2/MoveIt 执行和配置文件定义的技能界面集成而构建。该系统围绕表示切换进行组织：自然语言请求被限制为已注册的技能调用，传感器观察结果基于地图和对象姿势，对象先验提供角色和技能约束，运行时绑定将经过验证的技能编译为可执行的运动目标。我们使用试运行跟踪和启动检查来评估此集成路径，展示原型如何将缺失的校准...
+
+## English Summary
+
+Open-source robotics and foundation models have lowered the barrier to embodied AI, yet language-guided laboratory automation still requires reliable alignment from instructions and observations to safe actions. This field report presents an OpenArm-based mobile manipulation prototype for laboratory-style tasks, built by integrating dual OpenArm manipulators with a mobile base, vertical slide, RGB-D sensing, lidar-based mapping, ROS2/MoveIt execution, and profile-defined skill interfaces. The system is organized around representation handoffs: natural language requests are constrained into registered skill calls, sensor observations are grounded into maps and object poses, object priors provide role and skill constraints, and runtime bindings compile validated skills into executable motion goals. We use dry-run traces and startup checks to evaluate this integration path, showing how the prototype exposes missing calibration, incomplete object assets, and unfinished real-scene visual grounding as explicit deployment blockers. These intermediate representations serve as practical debugging interfaces for integrating language, perception, planning, and robot safety in embodied systems.

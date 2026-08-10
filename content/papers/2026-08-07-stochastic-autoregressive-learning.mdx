@@ -1,0 +1,21 @@
+---
+title: "随机自回归学习"
+title_en: "Stochastic Autoregressive Learning"
+authors: ["Ilan Doron-Arad", "Idan Mehalel", "Elchanan Mossel"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07224v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+受 LLM 的启发，LLM 通过从下一个令牌分布中迭代采样来生成输出，我们引入了用于二元随机自回归学习的 PAC 学习模型。这概括了 Joshi 等人的确定性自回归学习框架，COLT 2025。在我们的模型中，一个固定生成器为每个提示字符串分配伯努利下一个标记分布。从输入提示开始，对令牌进行采样并将其附加到提示中；然后再次将相同的生成器应用于此扩展提示；重复此过程 $M$ 步骤。考虑三种形式的监督：基本一步样本、揭示长度为 $M$ 的完全随机轨迹的思想链 (CoT) 样本，以及仅揭示长度为 $M$ 轨迹的最终令牌的端到端 (e2e) 样本。对于生成器类，我们分别研究在平方损失误差~$\vare...
+
+## English Summary
+
+Motivated by LLMs, which generate outputs by iteratively sampling from next-token distributions, we introduce a PAC-learning model for binary stochastic autoregressive learning. This generalizes the deterministic autoregressive learning framework of Joshi et al., COLT 2025. In our model, one fixed generator assigns a Bernoulli next-token distribution to every prompt string. Starting from an input prompt, a token is sampled and appended to the prompt; the same generator is then applied again to this expanded prompt; this procedure is repeated for $M$ steps. Three forms of supervision are considered: base one-step samples, chain-of-thought (CoT) samples that reveal full random trajectories of length $M$, and end-to-end (e2e) samples that reveal only the final token of length $M$ trajectories. For a generator class, we study the minimum number of samples $m_{base}(\varepsilon),m_{CoT}(\varepsilon), m_{e2e}(\varepsilon)$, resp., required to learn the one-step probabilities in the base model, and the final-token probability in the CoT and e2e models, under squared loss error~$\varepsilon$.   We show that stochastic autoregressive learning fundamentally differs from the deterministic theory. At scale $\varepsilon$, there is no universal comparison between the three learning tasks: both $m_{CoT}/m_{base}$ and $m_{e2e}/m_{CoT}$ can be made simultaneously arbitrarily larger than $M/\varepsilon$, the natural analogue for the existing deterministic results. Nevertheless, after altering scales, for every class, CoT learning at scale $\varepsilon$ is upper-bounded by base learning at scale $\varepsilon/M^2$, whereas e2e learning at scale $\varepsilon$ is upper-bounded, up to logarithmic factors, by $(M/\varepsilon) m_{CoT}(Θ(\varepsilon))$. These dependencies and scales are essentially tight. We complement these bounds by studying dimension $d$ logistic functions in our model.

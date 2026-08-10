@@ -1,0 +1,21 @@
+---
+title: "Fluid-DiT：用于流体流动模拟学习的无图扩散变压器"
+title_en: "Fluid-DiT: Graph-Free Diffusion Transformers for Fluid Flow Simulations Learning"
+authors: ["Shentong Mo", "Guolin Ke"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07161v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+模拟复杂的流体流动需要捕获完全平衡分布而不仅仅是平均轨迹，但高保真解算器在计算上仍然令人望而却步。扩散图网络 (DGN) 等最新进展将扩散模型与图神经网络相结合，直接从非结构化网格中采样平衡状态，即使在短期模拟中也能实现分布精度。然而，基于图的扩散方法受到手工设计的架构限制、消息传递中有限的接受域以及昂贵的多尺度设计的影响，这些限制了对更大、更复杂领域的可扩展性。我们提出了 Fluid-DiT，一种无图扩散变压器，它用基于注意力的去噪取代了图消息传递，消除了显式图设计，同时保留了对混沌流分布进行建模的能力。我们的框架引入了一种潜在空间公式，可以将几何保真度与分布学习分开，减少高频伪影并加速采样...
+
+## English Summary
+
+Simulating complex fluid flows requires capturing full equilibrium distributions rather than just mean trajectories, yet high-fidelity solvers remain computationally prohibitive. Recent advances, such as Diffusion Graph Networks (DGNs), have combined diffusion models with graph neural networks to sample equilibrium states directly from unstructured meshes, enabling distributional accuracy even from short simulations. However, graph-based diffusion approaches suffer from hand-crafted architectural constraints, limited receptive fields in message passing, and costly multi-scale designs, which restrict scalability to larger and more complex domains. We propose Fluid-DiT, a Graph-Free Diffusion Transformer that replaces graph message passing with attention-based denoising, eliminating explicit graph design while preserving the ability to model distributions of chaotic flows. Our framework introduces a latent-space formulation that disentangles geometric fidelity from distributional learning, reducing high-frequency artifacts and accelerating sampling. By leveraging the transformer's global receptive field, Fluid-DiT naturally captures both local flow structures and long-range correlations without requiring hierarchical graph coarsening. On canonical benchmarks including laminar cylinder wakes, ellipse-flow systems, and turbulent 3D wing experiments, Fluid-DiT consistently outperforms graph-based diffusion baselines in both sample quality and distributional accuracy, achieving higher $R^2$ correlations and lower Wasserstein distances. Moreover, it generalizes robustly from short, incomplete trajectories to unseen Reynolds numbers and geometries, demonstrating strong scalability.

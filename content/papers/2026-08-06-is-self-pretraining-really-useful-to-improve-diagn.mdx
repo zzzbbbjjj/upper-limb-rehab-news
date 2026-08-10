@@ -1,0 +1,21 @@
+---
+title: "自我预训练对于改善医学时间序列的诊断真的有用吗？"
+title_en: "Is Self-Pretraining really useful to improve diagnosis in medical Time Series?"
+authors: ["Omar Coser", "Antonio Orvieto", "Paolo Soda", "Loredana Zollo"]
+date: "2026-08-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06122v2"
+doi: ""
+tags: ["人机接口", "康复训练"]
+tags_en: ["human-machine interface", "rehabilitation"]
+keywords: ["人机接口", "康复训练"]
+keywords_en: ["human-machine interface", "rehabilitation"]
+---
+
+## 中文摘要
+
+最近的证据表明 Transformer 架构受益于长上下文基准上的自我预训练 (SPT)，受到启发，我们研究了类似的收益是否扩展到多模态、多变量甚至简单的单变量医疗时间序列。我们的目标是评估 SPT 对跨不同医疗应用的基于变压器的模型的性能和可扩展性的影响，特别是在有限的数据条件下。我们在三个代表性医疗时间序列任务上评估 Transformer 架构：康复机器人（Camargo 数据集）、压力检测（非脑电图压力）和帕金森病检测（步态帕金森病）。模型可以从头开始训练，也可以通过 SPT 使用四个基于掩蔽的目标进行训练，这些目标旨在促进时间和跨模式表示学习，并且我们系统地改变模型深度，以检查容量如...
+
+## English Summary
+
+Inspired by recent evidence that transformer architectures benefit from Self-PreTraining (SPT) on long-context benchmarks, we investigate whether similar gains extend to multimodal, multivariate, and even simple univariate medical time series. Our objective is to assess the impact of SPT on the performance and scalability of transformer-based models across diverse medical applications, particularly under limited data conditions. We evaluate transformer architectures on three representative medical time-series tasks: rehabilitation robotics (Camargo dataset), stress detection (Non-EEG Stress), and Parkinson's disease detection (Gait Parkinson's Disease). Models are trained either from scratch or through SPT using four masking-based objectives designed to promote temporal and cross-modal representation learning, and we systematically vary model depth to examine how capacity interacts with pre-training benefits. Across datasets and configurations, SPT consistently improves classification accuracy by 0-6 percentage points depending on masking strategy, dataset and architecture, with gains observed not only in multivariate settings but also when models are restricted to simple univariate inputs. The improvements increase for deeper models that can better exploit the enriched temporal representations learned during pre-training. These findings indicate that SPT is a simple and general strategy that enhances transformer performance on medical time-series tasks without requiring task-specific architectural changes, supporting its potential to improve robustness and accuracy in data-limited clinical settings.

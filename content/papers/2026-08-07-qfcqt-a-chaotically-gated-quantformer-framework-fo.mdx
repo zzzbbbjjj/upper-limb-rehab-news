@@ -1,0 +1,21 @@
+---
+title: "QFCQT：用于波动时间序列预测的混沌门控量化框架"
+title_en: "QFCQT: A Chaotically Gated Quantformer Framework for Volatile Time-Series Forecasting"
+authors: ["Junkai Lin", "Siqi Hou", "Raymond Lee"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07363v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+由于长程依赖性、局部波动爆发、结构变化和非线性振荡行为，预测非平稳时间序列仍然很困难。尽管基于 Transformer 的预测器对于长期时间依赖性建模非常有效，但它们的前馈块通常依赖于对突然的状态变化不够敏感的平滑静态激活。受定量 Transformer 设计和基于振荡器的非线性激活的启发，我们提出了 QFCQT（量子分形启发的混沌门控量化器的缩写），用于在复杂的波动动力学下进行稳健的预测。这里，“量子分形启发”表示基于软振子叠加和多尺度非线性响应的计算类比，而不是正式的量子力学或分形理论推导。 QFCQT 由三个主要组件组成：（1）Quantformer 式的数值编码器，通过线性嵌入直接处理...
+
+## English Summary
+
+Forecasting non-stationary time series remains difficult due to long-range dependencies, local volatility bursts, structural shifts, and nonlinear oscillatory behaviors. Although Transformer-based forecasters are effective for modeling long-term temporal dependencies, their feed-forward blocks typically rely on smooth static activations that are insufficiently sensitive to abrupt regime changes. Motivated by quantitative Transformer designs and oscillator-based nonlinear activations, we propose QFCQT, short for Quantum-Fractal-inspired Chaotically Gated Quantformer, for robust forecasting under complex volatile dynamics. Here, "quantum-fractal-inspired" denotes a computational analogy based on soft oscillator superposition and multi-scale nonlinear responses, rather than a formal quantum-mechanical or fractal-theoretic derivation. QFCQT consists of three main components: (1) a Quantformer-style numerical encoder that directly processes multivariate inputs via linear embedding; (2) a learnable Lee-oscillator activation module that maps scalar pre-activations to dynamic oscillatory responses and summarizes them through Max-over-Time pooling; and (3) a smooth-chaotic gated fusion mechanism that adaptively balances conventional smooth activations and chaos-sensitive responses. Furthermore, instead of using a single fixed oscillator, QFCQT employs a soft superposition of eight parameterized Lee oscillator families to adaptively capture different nonlinear response patterns across regimes. Experiments on ETTh1, ETTh2, and A-share Stock Index benchmarks show that QFCQT consistently outperforms strong baselines, including Informer, LogTrans, LSTMa, HAT, and COTN.

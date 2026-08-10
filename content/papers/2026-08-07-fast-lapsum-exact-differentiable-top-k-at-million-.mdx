@@ -1,0 +1,21 @@
+---
+title: "Fast LapSum：百万级精确可微分 Top-k"
+title_en: "Fast LapSum: Exact Differentiable Top-k at Million Scale"
+authors: ["Łukasz Struski", "Joanna Wojciechowicz", "Jakub Antczak", "Marcin Mazur", "Kamil Książek", "Jacek Tabor"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06912v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+top-$k$ 操作是现代稀疏计算的基本构建块，支持令牌路由、专家激活、内存选择和注意力修剪。然而，标准硬顶 $k$ 会阻碍梯度，而现有的连续（软）松弛对于大型模型来说仍然过于昂贵。我们引入了 Fast LapSum，这是一种精确预算的 soft top-$k$ 原语，其 GPU 求解器在排序后以线性时间运行。与先前放宽归一化约束的线性时间方法（例如 DFTopK）不同，据我们所知，Fast LapSum 是第一个在保持端到端完全可微分的同时保留 $k$ 精确选择质量的方法。我们的求解器将线性时间阈值计算与分析向量雅可比积相结合，并且对于极端尺度，采用概率包围来仅对内核噪声分数的不确定中间带进...
+
+## English Summary
+
+The top-$k$ operation is a fundamental building block of modern sparse computation, enabling token routing, expert activation, memory selection, and attention pruning. Yet standard hard top-$k$ blocks gradients, while existing continuous (soft) relaxations remain too costly for large-scale models. We introduce Fast LapSum, an exact-budget soft top-$k$ primitive whose GPU solver runs in linear time after sorting. Unlike prior linear-time methods such as DFTopK, which relax the normalization constraint, Fast LapSum is, to our knowledge, the first method to preserve an exact selection mass of $k$ while remaining fully differentiable end-to-end. Our solver combines a linear-time threshold computation with an analytical vector--Jacobian product, and for extreme scales employs probabilistic bracketing to sort only the uncertain middle band of kernel-noised scores. The resulting overhead is almost negligible: the solver processes $10^6$, $10^7$, and $10^8$ scores in $0.41$, $1.15$, and $5.23$\,ms, respectively. This makes exact soft top-$k$ practical for sparse routing, retrieval, and large-scale optimization. We demonstrate Fast LapSum on two demanding applications operating over millions of coordinates inside the training loop: generating megapixel sparse adversarial examples with an exact soft budget of ${\sim}0.02\%$ of an image's pixels, achieving an order-of-magnitude speedup over state-of-the-art methods, and training a fully differentiable sparse image coder from scratch.

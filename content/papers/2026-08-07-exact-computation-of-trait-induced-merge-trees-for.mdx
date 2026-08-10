@@ -1,0 +1,21 @@
+---
+title: "双变量域特征诱导合并树的精确计算"
+title_en: "Exact Computation of Trait-induced Merge Trees for Bivariate Fields"
+authors: ["Petar Hristov", "Ingrid Hotz", "Talha Bin Masood"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07181v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+特征诱导合并树 (TIMT) 提供了一种基于拓扑的稳健方法，通过分析属性空间中用户指定特征引起的距离场来选择和浏览多元数据中的特征级别集。现有的 TIMT 计算通常在网格顶点处对该距离场进行采样，并假设分段线性插值，尽管欧几里德距离特征函数通常在原始网格上不是分段线性的。因此，生成的合并树可能会丢失零值特征，并可能扰乱最小值和合并事件的位置和值。我们研究分段线性二变量场的 TIMT 精确计算，首先关注点特征。我们表明，每个四面体内的受限子级集是凸的，因此具有平凡的局部合并树结构，这意味着全局拓扑变化仅通过跨越单纯形边界的粘合而出现。基于这一观察，我们构造了一个加权图，其合并树与诱导距离场的精确...
+
+## English Summary
+
+Trait-induced merge trees (TIMTs) provide a robust topology-based method for selecting and browsing feature level sets in multivariate data by analyzing the distance field induced by a user-specified trait in attribute space. Existing TIMT computations typically sample this distance field at mesh vertices and assume piecewise-linear interpolation, although the Euclidean distance-to-trait function is generally not piecewise linear on the original mesh. As a result, the resulting merge tree may miss zero-valued features and may perturb the locations and values of minima and merge events. We study the exact computation of TIMTs for piecewise-linear bivariate fields, focusing first on point traits. We show that the restricted sublevel sets inside each tetrahedron are convex and therefore have trivial local merge-tree structure, implying that global topological changes arise only through gluing across simplex boundaries. Based on this observation, we construct a weighted graph whose merge tree is isomorphic to the exact merge tree of the induced distance field. We further relate TIMTs to Jacobi sets, showing how nonzero edge events of the TIMT are localized by the singular structure of the underlying bivariate map. We establish a theoretical upper bound on the error of the vertex-sampled linear interpolation, expressed in terms of the maximum length of projected mesh edges in the range. We discuss extensions to line, line-segment, and finite point-set traits, and implement the method robustly using CGAL and VTK, demonstrating results on both synthetic and real-world datasets.

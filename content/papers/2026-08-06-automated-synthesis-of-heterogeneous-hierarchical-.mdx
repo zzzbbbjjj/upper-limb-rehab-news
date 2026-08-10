@@ -1,0 +1,21 @@
+---
+title: "异构、分层、范围一致协议的自动合成"
+title_en: "Automated Synthesis of Heterogeneous, Hierarchical, Scoped Coherence Protocols"
+authors: ["Fletch Rydell", "An Qi Zhang", "Nicolai Oswald", "Andres Goens", "Vijay Nagarajan", "Daniel Sorin"]
+date: "2026-08-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.05965v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+处理器设计正在趋向于一种新的高速缓存一致性共享内存模型，其特点是异构性、层次结构和范围。 CXL 或 AMBA CHI 等协议用作全局协议来组合多个集群，每个集群都有自己的集群级一致性协议。手动设计垫片以在这些集群和全局协议之间进行接口是微妙且容易出错的。另一方面，自动合成会做出简化的假设，例如单写入器多读取器 (SWMR) 不变式，为了简单性和保证正确性而牺牲性能。   我们提出了一个 shim API \textemdash ，这是一个通用抽象，使我们能够通过语义一致性保证对协议事务进行分类。我们的自动合成引擎 ShimGen 使用此 shim API 自动编写具有 SWMR 和宽松访问的...
+
+## English Summary
+
+Processor design is converging on a new model of cache-coherent shared memory characterized by heterogeneity, hierarchy, and scopes. Protocols like CXL or AMBA CHI are used as global protocols to combine multiple clusters, each with its own cluster-level coherence protocols. Manually designing shims to interface between these cluster and global protocols is subtle and error-prone. Automatic synthesis, on the other hand, makes simplifying assumptions like the single-writer multiple-reader (SWMR) invariant, that sacrifice performance for simplicity and guaranteed correctness.   We present a shim API \textemdash a generic abstraction that enables us to classify protocol transactions by their semantic coherence guarantees. Our automated synthesis engine, ShimGen, uses this shim API to automatically compose protocols with both SWMR and relaxed accesses, taking advantage of modern architectural optimizations like scoped memory accesses and lazy invalidation. We demonstrate ShimGen's efficacy on two case studies. First, we compare its output to a manually-designed hierarchical protocol for the AMD APU released in gem5. ShimGen's output is similar to the existing protocol. However, we identify one scenario where the manually-designed protocol fails to uphold compound consistency, while ShimGen's does. Second, we compare the performance of a hierarchical protocol with a global protocol that exploits non-SWMR accesses to a hierarchical protocol with a strictly SWMR global protocol. The result shows the performance benefits of accommodating global protocols with non-SWMR behavior.

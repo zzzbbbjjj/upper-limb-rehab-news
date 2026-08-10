@@ -1,0 +1,21 @@
+---
+title: "可逆不可学习的例子：走向深度学习时代的版权保护"
+title_en: "Reversible Unlearnable Examples: Towards the Copyright Protection in Deep Learning Era"
+authors: ["Binze Wang", "Jinyu Tian", "Xingrun Wang", "Xiaochen Yuan", "Jianqing Li"]
+date: "2026-08-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06211v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+通过使用大型数据集，深度学习取得了重大进展，这凸显了版权保护的至关重要性。在示例中添加精心设计的扰动，使其难以学习已成为保护数据版权的重要方法。现有的创建无法学习的示例的方法忽视了数据泄露的风险，这可能会威胁到数据所有权。因此，深度学习版权保护面临两大威胁：非法模型训练和恶意数据泄露。我们调查发现，这两种威胁无法通过直接结合现有的可用性攻击和水印技术来解决，因为它们的负面交互作用。因此，在本文中，我们针对上述安全问题提出了一种新颖的版权保护机制。考虑到防止未经授权的模型训练需要对不可学习的扰动具有强大的泛化性，我们生成扰动来诱导模型学习输入图像的不相关特征。它的工作原理是最小化模型输入和输出的...
+
+## English Summary
+
+Significant advancements in deep learning have been made possible by the utilization of large datasets, underscoring the critical importance of copyright protection. Adding meticulously designed perturbations to examples, making them unlearnable has become a crucial approach for safeguarding data copyright. Existing methods for creating unlearnable examples overlook the risk of data leakage, which can threaten data ownership. Thus, copyright protection in deep learning faces two main threats: illegal model training and malicious data leakage. We investigate that these two threats cannot be solved by straightforwardly combining existing availability attacks and watermarking techniques as their negative interaction effects. Therefore, in this paper, we propose a novel copyright protection mechanism for the aforementioned security concerns. Considering that the prevention of unauthorized model training requires powerful generalizability of unlearnable perturbations, we generate perturbations to induce the model to learn uncorrelated features of input images. It works by minimizing the mutual information of the input and output of the model. On the other hand, to eliminate the side impact of unlearnable perturbations on the watermark extraction, we design a dual extraction strategy by using two distinct watermark extractors. Extensive experiments on the image datasets {ImageNet, CIFAR10, and Pets} show that our proposed method could provide comprehensive copyright protection to images. The code is available at {https://github.com/Yeah21/ReversibleUnlearnableExamples}.

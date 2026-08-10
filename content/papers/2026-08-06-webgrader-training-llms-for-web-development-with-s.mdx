@@ -1,0 +1,21 @@
+---
+title: "WebGrader：使用自我进化的程序化评分器培训法学硕士进行 Web 开发"
+title_en: "WebGrader: Training LLMs for Web Development with Self-Evolving Programmatic Grader"
+authors: ["Boshui Chen", "Huiping Liu", "Shaolei Zhang"]
+date: "2026-08-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.06474v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+大型语言模型越来越多地根据自然语言描述生成完整的网站，而强化学习已成为缩小其剩余功能差距的核心方法。这种培训制度受到奖励设计的瓶颈。手工编写的浏览器脚本是可执行的，但针对开放式需求编写成本高昂，而 VLM 和 GUI 代理评分器可扩展，但可能会在观察决定性状态之前发布判决。我们提出了 WebGrader，这是一种自我进化的程序化评分器，它可以从每个网站请求中自主导出所需的交互流，将每个流表示为可执行的流合约，并将其执行结果用作 RL 奖励。 WebGrader 在实时浏览器中具体化生成的项目，根据源代码和实时 DOM 确定目标操作，并沿着相同的浏览器轨迹收集视觉、DOM、响应和持久状态证据。然...
+
+## English Summary
+
+Large language models increasingly generate complete websites from natural-language descriptions, and reinforcement learning has become a central approach to closing their remaining functional gap. This training regime is bottlenecked by reward design. Hand-authored browser scripts are executable yet costly to write for open-ended requirements, while VLM and GUI-agent graders scale but may issue verdicts before observing the decisive state. We propose WebGrader, a self-evolving programmatic grader that autonomously derives the required interaction flows from each website request, represents each flow as an executable Flow Contract, and uses its execution outcome as an RL reward. WebGrader materializes the generated project in a live browser, grounds target actions against the source code and live DOM, and collects visual, DOM, response, and persistent-state evidence along the same browser trajectory. A residual-driven offline loop then discovers reusable verifier skills, screens them on disjoint validation pages, and freezes the promoted skill graph before policy training. By separating test planning, action grounding, evidence collection, and semantic judgment, WebGrader issues a Pass verdict only after observing the requested transition. On WebGen-Bench, WebGrader trains an 8B policy to a 52.01% functional success rate, outperforming a matched appearance-plus-script reward by 7.88 points and surpassing o4-mini and DeepSeek-v4-flash. On WG-core-250, the policy reaches a Full Score of 44.953 and surpasses Qwen3-Coder-480B.

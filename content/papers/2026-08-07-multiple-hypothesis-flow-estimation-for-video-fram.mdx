@@ -1,0 +1,21 @@
+---
+title: "匹配模糊度下视频帧插值的多假设流估计"
+title_en: "Multiple Hypothesis Flow Estimation for Video Frame Interpolation under Matching Ambiguity"
+authors: ["Zibo Su", "Jing Kong", "Ruixing Wang", "Zhanhe Zhang", "Kun Wei"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07120v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+许多基于流的视频帧插值 (VFI) 方法通过估计光流场、扭曲两个输入帧并混合扭曲的观察结果来合成中间帧。这些潜在流场通常是通过图像级重建监督来学习的，无需直接流注释。在包含重复或随机纹理、旋转对称结构或模糊快速运动的模糊区域中，单个查询的匹配证据可能包含多个可比较且空间上分离的峰值。尽管真实中间框架提供了间接监督，但它可能无法唯一地识别模糊区域中的潜在对应关系。当多个位置提供多个似是而非的匹配时，单流估计器只能保留一个位移并丢弃其余候选。如果所选匹配不正确或与相邻像素不一致，则会扭曲不匹配位置的样本内容，产生重影、结构扭曲或模糊。为了解决这一限制，我们提出了一种多假设流估计框架，该框架保留前 ...
+
+## English Summary
+
+Many flow-based video frame interpolation (VFI) methods synthesize an intermediate frame by estimating optical flow fields, warping the two input frames, and blending the warped observations. These latent flow fields are typically learned through image-level reconstruction supervision without direct flow annotations. In ambiguous regions containing repetitive or stochastic textures, rotating symmetric structures, or fast motion with blur, the matching evidence for a single query may contain multiple comparable and spatially separated peaks. Although the ground-truth intermediate frame provides indirect supervision, it may not uniquely identify the latent correspondence in ambiguous regions.When several locations provide multiple plausible matches, a single-flow estimator can retain only one displacement and discard the remaining candidates. If the selected match is incorrect or inconsistent with those of neighboring pixels, warping samples content from mismatched locations, producing ghosting, structural distortion, or blur.To address this limitation, we propose a multiple hypothesis flow estimation framework that preserves top-K candidate correspondences and selects one per location through a reliability-guided router. Each hypothesis is initialized from a coarse matching anchor and refined separately through anchor-centered local attention. Frame synthesis is thus conditioned on one selected flow-appearance hypothesis rather than a soft combination of candidate motions.Experiments on the proposed MA-HD benchmark and public VFI benchmarks show that our method achieves the best LPIPS and DISTS among the compared methods.

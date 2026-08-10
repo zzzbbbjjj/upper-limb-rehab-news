@@ -1,0 +1,21 @@
+---
+title: "C2Dex：接触一致的重建和重定向，用于单目视频的灵巧操作"
+title_en: "C2Dex: Contact-Consistent Reconstruction and Retargeting for Dexterous Manipulation from Monocular Video"
+authors: ["Jie Ren", "Zhehao Jiang", "Yinhong Yang", "Haorui Jia", "Han Jiang", "Ben Li", "Yao Yao", "Cheng Lin", "Qiu Shen", "Zhenshan Bing"]
+date: "2026-08-07"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.07045v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+灵巧机器人操作的高质量演示成本高昂且难以收集，而单眼人类视频提供了多种操作行为的可扩展来源。然而，将此类演示转移到灵巧的机器人仍然具有挑战性：单眼手部物体交互（HOI）重建通常会产生暂时不稳定的接触和物理上不可信的交互，而传统的重定向方法很难在不同的手部实施例中保留与任务相关的接触和局部交互几何形状。我们提出了 C2Dex，一个围绕共享交互表示构建的视频到灵巧操作框架：通过聚合规范对象空间中的噪声逐帧观察来恢复稳定的对象侧接触。这些稳定的接触具有双重作用：作为轨迹级约束，引导重建到时间连贯且物理上合理的人类 HOI 轨迹；以及作为灵巧手的显式转移目标，其中拉普拉斯交互优化保留了跨实施例的局部手...
+
+## English Summary
+
+High-quality demonstrations for dexterous robot manipulation are costly and difficult to collect, whereas monocular human videos provide a scalable source of diverse manipulation behaviors. However, transferring such demonstrations to dexterous robots remains challenging: monocular hand-object interaction (HOI) reconstruction often produces temporally unstable contacts and physically implausible interactions, while conventional retargeting methods struggle to preserve task-relevant contacts and local interaction geometry across different hand embodiments. We present C2Dex, a video-to-dexterous-manipulation framework built around a shared interaction representation: stable object-side contacts recovered by aggregating noisy frame-wise observations in the canonical object space. These stable contacts serve a dual role: as trajectory-level constraints that guide reconstruction toward temporally coherent and physically plausible human HOI trajectories, and as explicit transfer targets for the dexterous hand, where Laplacian interaction optimization preserves the local hand-object geometry across embodiments and residual reinforcement learning refines the trajectory in simulation. Experiments on DexYCB and TACO show that C2Dex achieves end-to-end trajectory success rates of 57.78% and 26.67%, respectively, substantially outperforming the strongest baselines (17.78% and 10.00%) under identical evaluation criteria. Real-robot replay experiments further demonstrate physical feasibility across diverse contact-rich manipulation tasks. Project page: https://k-jie.github.io/C2Dex/
