@@ -1,0 +1,21 @@
+---
+title: "通过神经元门控和混合激活设计紧凑的神经架构"
+title_en: "Designing Compact Neural Architectures via Neuron Gating and Mixed Activation"
+authors: ["Abhishek Shukla", "Ankur Sinha", "Faiz Hamid"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14443v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+神经架构搜索（NAS）自然地被表述为双层优化问题，其中上层使用验证性能来优化架构，下层使用训练损失来训练网络参数。然而，由于离散的架构决策、指数级增长的搜索空间以及训练候选架构的高成本，NAS 的计算成本很高。这项工作为跨不同架构（包括 MLP、CNN、RNN 和 Transformer）的 NAS 开发了通用双层优化框架，以识别具有强大预测性能的紧凑架构。我们提出了三种可扩展的公式，用连续松弛代替离散的神经元和激活级别决策，从而实现对其他组合架构空间的可微优化。这些公式产生了三种 NAS 方法：基于神经元门控的 NAS（NAS-NG）、基于混合激活的 NAS（NAS-MA）以及基于神经元门控...
+
+## English Summary
+
+Neural Architecture Search (NAS) is naturally formulated as a bilevel optimization problem, where the upper-level optimizes the architecture using validation performance and the lower-level trains network parameters using training loss. However, NAS is computationally expensive due to discrete architectural decisions, exponentially growing search spaces, and the high cost of training candidate architectures. This work develops a general bilevel optimization framework for NAS across diverse architectures, including MLPs, CNNs, RNNs, and Transformers, to identify compact architectures with strong predictive performance. We propose three scalable formulations that replace discrete neuron- and activation-level decisions with continuous relaxations, enabling differentiable optimization over otherwise combinatorial architecture spaces. These formulations give rise to three NAS methods: NAS based on Neuron Gating (NAS-NG), NAS based on Mixed Activation (NAS-MA), and NAS based on Neuron Gating and Mixed Activation (NAS-NGMA). Experiments on MLPs and CNNs using MNIST and CIFAR-10 show that the proposed methods consistently identify compact architectures with competitive or improved predictive performance. On MNIST, NAS-NGMA achieves 98.68% test accuracy with 7.69M MLP parameters, while NAS-NG achieves 99.63% accuracy with only 0.26M CNN parameters. On CIFAR-10, the proposed methods consistently outperform vanilla DARTS. Further experiments demonstrate that NAS-NG can optimize substantially over-parameterized and literature-optimal architectures, improving accuracy while reducing parameters. These results establish relaxed bilevel optimization as a scalable alternative to discrete NAS and provide a general framework for efficient neuron- and activation-level architecture optimization.

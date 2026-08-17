@@ -1,0 +1,21 @@
+---
+title: "通过损失引导多专家 GAN 进行手语视频合成"
+title_en: "Sign Language Video Synthesis via Loss-Guided Multi-Expert GANs"
+authors: ["Dingzhan Nong", "Zhihao Ren", "Ziqi Li", "Tim Lo"]
+date: "2026-08-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.13368v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+这份初步技术报告提出了一个手语视频合成框架，使用损失引导的多专家生成对抗网络 (GAN) 来增强听力障碍人士的沟通。三个专门的鉴别器（全局鉴别器、手鉴别器和头部鉴别器）分别引导生成器中相应的专家分支走向不同的视觉区域，从而实现隐式特征专业化，而不会造成显式多样性损失。为了稳定这个多判别器系统，该系统的早期训练否则会表现出混沌动态，我们引入了联合损失共识机制，该机制将每个判别器以 10% 的权重调整为整体平均值。每个分支进一步采用具有可学习的 AdaptiveFeatureFusion 的双通道卷积变换器设计，平衡卷积的稳定性与窗口自注意力的细节。生成器使用交替三模式调度（鉴别器、整体生成、分支...
+
+## English Summary
+
+This preliminary technical report presents a framework for sign language video synthesis using a loss-guided multi-expert Generative Adversarial Network (GAN) to enhance communication for individuals with hearing impairments. Three specialized discriminators -- global, hand, and head -- each guide a corresponding expert branch in the generator toward a distinct visual region, enabling implicit feature specialization without explicit diversity losses. To stabilize this multi-discriminator system, whose early-phase training otherwise exhibits chaotic dynamics, we introduce a United Loss consensus mechanism that regularizes each discriminator toward the ensemble average at a 10% weight. Each branch further adopts a dual-pathway convolutional-transformer design with learnable AdaptiveFeatureFusion, balancing the stability of convolutions against the detail of windowed self-attention. The generator is trained using an alternating three-mode schedule (discriminator, holistic generation, branch-specialized generation). On a custom 156GB dataset with a filtered test set that removes easy and repetitive samples, our 0.2B-parameter variant achieves 29.8 PSNR and the 1.3B-parameter variant achieves 30.7 PSNR, with inference VRAM footprints of 1.5 GB and 8 GB respectively, enabling deployment on consumer-grade hardware. Full ablation studies remain ongoing due to the 2-3 month training cycle on a single GPU. The system was showcased at the 2025 Hong Kong Frontier Technology Summit.

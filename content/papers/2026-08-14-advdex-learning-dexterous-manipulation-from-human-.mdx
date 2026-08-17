@@ -1,0 +1,21 @@
+---
+title: "AdvDex：通过联合行动和对抗性学习从人类演示中学习灵巧操作"
+title_en: "AdvDex: Learning Dexterous Manipulation from Human Demonstrations via Joint-Aligned Actions and Adversarial Learning"
+authors: ["Zhiyue Zhao", "Jingyi Wu", "Hairuo Liu", "Mingyu Liu", "Liyang Li", "Hengdi Zhang", "Tong He", "Zhengxue Cheng"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14028v1"
+doi: ""
+tags: ["手部康复", "腕关节"]
+tags_en: ["hand rehabilitation", "wrist"]
+keywords: ["手部康复", "腕关节"]
+keywords_en: ["hand rehabilitation", "wrist"]
+---
+
+## 中文摘要
+
+灵巧的操纵是体现智能的一项基本能力，但扩展它仍然很困难，因为收集机器人演示的成本很高，而且动作空间因实施例而异。在异构数据上训练的策略还可以将与任务相关的视觉线索与特定于实施例的外观纠缠在一起，从而限制跨实施例泛化。我们提出了 AdvDex，这是一个统一的视觉-语言-动作框架，用于从人类和机器人演示中学习灵巧的操作。首先，我们介绍 OmniShare，这是一个人类操作演示的大规模多模式数据集，它提供高质量的运动学监督和触觉测量，同时减少对机器人远程操作的依赖。其次，我们提出了关节对齐动作空间（JAAS），这是一种规范动作表示，包括 $\mathrm{SE}(3)$ 手腕姿势和 15 个手指关节...
+
+## English Summary
+
+Dexterous manipulation is a fundamental capability for embodied intelligence, but scaling it remains difficult because robot demonstrations are expensive to collect and action spaces vary across embodiments. Policies trained on heterogeneous data can also entangle task-relevant visual cues with embodiment-specific appearance, limiting cross-embodiment generalization. We present AdvDex, a unified Vision-Language-Action framework for learning dexterous manipulation from human and robot demonstrations. First, we introduce OmniShare, a large-scale multimodal dataset of human manipulation demonstrations that provides high-quality kinematic supervision and tactile measurements while reducing reliance on robot teleoperation. Second, we propose the Joint-Aligned Action Space (JAAS), a canonical action representation comprising an $\mathrm{SE}(3)$ wrist pose and 15 finger joints, thereby functionally aligning human hands, dexterous robot hands, and parallel grippers. Finally, we use domain-adversarial learning to reduce embodiment-specific information in the learned visual representation. Experiments on hand-action prediction and real-world dexterous manipulation show consistent improvements over baselines, effective zero-shot human-to-robot skill transfer, generalization to unseen objects and environments, and data-efficient few-shot adaptation.

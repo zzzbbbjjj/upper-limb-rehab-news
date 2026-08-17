@@ -1,0 +1,21 @@
+---
+title: "分工：将证据解释与决策聚合分开"
+title_en: "Split the Labor: Separating Evidence Interpretation from Decision Aggregation"
+authors: ["Zhelun Wu"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14509v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+要求语言模型从多个来源得出结论的系统通常会将它们连接成一个提示。这将具有不同要求的两种操作混为一谈。解释来源会奖励能力和背景。组合解释奖励固定算术、实例之间的可比性以及不返回任何内容的选项。一旦分离，设计问题就变成了它们之间的接口。我们提出了一个四字段证据元组（假设、可靠性桶、基本原理、出处），并表明修复它决定了两半。这种分离还揭示了此类系统如何组合的故障模式，我们称之为计数尺度漂移。对非归一化权重的总和进行阈值处理正是后验阈值处理，但操作点会随着参考源的数量而滑动。幻灯片随着读者的可靠性而增长。当源可靠性不同时，投票规则和后序实例不同，并且没有阈值可以协调它们。池化校准的对数似然比解决了这两...
+
+## English Summary
+
+Systems that ask a language model to reach a conclusion from many sources usually concatenate them into one prompt. This conflates two operations with different requirements. Interpreting a source rewards capacity and context. Combining interpretations rewards fixed arithmetic, comparability across instances, and the option to return nothing. Once separated, the design problem becomes the interface between them. We propose a four-field evidence tuple (hypothesis, reliability bucket, rationale, provenance) and show that fixing it determines both halves. The separation also reveals a failure mode in how such systems combine, which we call count-scale drift. Thresholding a sum of unnormalized weights is exactly posterior thresholding, but at an operating point that slides with the number of sources consulted. The slide grows with reader reliability. When source reliabilities differ, the vote rule and the posterior order instances differently, and no threshold reconciles them. Pooling calibrated log-likelihood ratios addresses both problems. The fix is arithmetic rather than architectural, and applies to a class of rules beyond language models: score-summing triage engines, diagnostic panels scored by counting positives, and additive multi-signal detectors. We then instantiate the principle twice on one longitudinal corpus, once after outcomes resolve and once before. The same partition helps in both, at different granularities: over reading in the first, over learning capacity in the second. There, a small sequence encoder on an easy auxiliary objective plus a tree ensemble carrying the censored survival loss reaches 0.921 AUPRC against 0.805 for a hand-crafted baseline. We separate what transfers from what must be re-estimated per domain, and state five predictions that would falsify the framework, three negative results, and which comparisons remain confounded.

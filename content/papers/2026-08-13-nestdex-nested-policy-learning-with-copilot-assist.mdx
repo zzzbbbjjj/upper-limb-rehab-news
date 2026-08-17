@@ -1,0 +1,21 @@
+---
+title: "NestDex：通过副驾驶辅助远程操作进行嵌套策略学习，实现灵巧操作"
+title_en: "NestDex: Nested Policy Learning with Copilot Assisted Teleoperation for Dexterous Manipulation"
+authors: ["James Zhao", "Jinhe Tang", "Mingyuan Ba", "Weiming Zhi"]
+date: "2026-08-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.13362v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+灵巧的操作有望使机器人与物理世界的交互更加丰富，但学习这些行为仍然受到收集一致、完整任务演示的困难的限制。与平行颌操作不同，灵巧任务要求操作员在整个任务过程中通过精确、接触丰富的手指行为来协调手臂运动。我们引入了 NestDex，这是一个嵌套的策略学习框架，它通过使用学到的手工技能来协助演示收集来减轻这种负担。操作员通过单自由度离合器控制手臂并调节主动手部技能，而不是直接指定完整的手指轨迹。内手策略根据最新的本体感受历史来调整其动作，而视觉语言选择器则为每个任务阶段激活适当的技能。由此产生的演示训练了一种单独的外部视觉运动策略，该策略可以在部署时控制手臂和手，而无需内部策略。手部动作变分自动编...
+
+## English Summary
+
+Dexterous manipulation promises substantially richer robot interaction with the physical world, but learning these behaviours remains constrained by the difficulty of collecting consistent, complete-task demonstrations. Unlike parallel-jaw manipulation, dexterous tasks require the operator to coordinate arm motion with precise, contact-rich finger behaviour throughout the task. We introduce NestDex, a nested policy-learning framework that reduces this burden by using learned hand skills to assist demonstration collection. The operator controls the arm and regulates the active hand skill through a single-DoF clutch, rather than directly specifying the full finger trajectory. The inner hand policy adapts its motion from the latest proprioceptive history, while a vision-language selector activates the appropriate skill for each task stage. The resulting demonstrations train a separate outer visuomotor policy that controls both the arm and hand without the inner policies at deployment. A hand-action variational autoencoder provides compact hand-action targets while retaining arm commands in joint space. Across real-world dexterous manipulation experiments, NestDex improves demonstration reliability and efficiency, and the resulting empirical evaluations support effective autonomous policy learning. Video Demo are available at project website https://aus.bot/research/nestdex.

@@ -1,0 +1,21 @@
+---
+title: "OccPlanner：用于像素目标导航的目标感知占用条件扩散规划器"
+title_en: "OccPlanner: Goal-Aware Occupancy-Conditioned Diffusion Planner for Pixel-Goal Navigation"
+authors: ["Binling Huang", "Nianjin Ye", "Xi Yang", "Liang Hu", "Zhou Huang", "Shuang Wei", "Longrui Yang", "Yanchi Chen", "Lanpeng Jia"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14160v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+像素目标导航直接在代理的摄像机视图中指定目标，但目标像素既不提供度量深度也不提供可遍历性，这使得 3D 目标基础和无碰撞连续规划具有挑战性。我们提出了 OccPlanner，一种目标感知的占用条件扩散规划器，它将像素目标置于以自我为中心的度量空间中，并根据时间视觉上下文顺序调节目标表示并学习局部 3D 占用特征。为了大规模提供占用监督，我们引入了 L3ROcc，它通过几何重建和基于光线的可见性推理，将单目 RGB 导航视频转换为以机器人为中心的本地 3D 占用注释。我们在 InternData-N1 上训练 OccPlanner，并在来自 InternScenes 的四个未见过的场景类别和两个...
+
+## English Summary
+
+Pixel-goal navigation specifies targets directly in the agent's camera view, but a target pixel provides neither metric depth nor traversability, making 3D goal grounding and collision-free continuous planning challenging. We present OccPlanner, a goal-aware occupancy-conditioned diffusion planner that grounds pixel goals in egocentric metric space and sequentially conditions the goal representation on temporal visual context and learned local 3D occupancy features. To provide occupancy supervision at scale, we introduce L3ROcc, which converts monocular RGB navigation videos into robot-centric local 3D occupancy annotations through geometric reconstruction and ray-based visibility reasoning. We train OccPlanner on InternData-N1 and evaluate it in closed-loop simulation across four unseen scene categories from InternScenes and two goal-distance ranges. In the 5-8 m setting, OccPlanner increases the average success rate (SR) over NavDP from 20.81% to 71.55% across the four categories, reaching 86.20% and 84.92% in cluttered-easy and cluttered-hard scenes, respectively. Real-world open-loop experiments on a Unitree Go2 further provide initial evidence of sim-to-real transfer and adaptation with L3ROcc-generated supervision.

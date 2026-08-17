@@ -1,0 +1,21 @@
+---
+title: "用于交通流预测的结构引导时空注意力图神经网络"
+title_en: "Structure-Guided Spatiotemporal Attention Graph Neural Network for Traffic Flow Prediction"
+authors: ["Xuanmian He", "Can Li", "Wanjing Ma"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14177v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+集成图卷积和注意力机制的深度时空模型由于其捕获复杂时空依赖性的卓越能力，在网络级交通流预测中表现出了优异的性能。尽管它们的预测取得了成功，但此类模型在安全关键的城市系统中的部署仍然因其固有的缺乏透明度而受到限制。现有的事后诊断方法经常与虚假相关性作斗争，并且无法揭示控制流量动态的内在决策机制，导致可解释性不佳和操作可信度有限。为了应对这些挑战，本文提出了结构引导时空注意力图神经网络（SGSAN）。与依赖无约束自适应图的传统架构不同，SGSAN 显式学习静态有向依赖图 (DDG) 来识别流量状态的不变宏观传播路径。我们进一步引入了一种基于 InfoNCE 的软耦合机制，该机制将模型的动态时空注意...
+
+## English Summary
+
+Deep spatiotemporal models integrating graph convolutions and attention mechanisms have demonstrated excellent performance in network-level traffic flow prediction, owing to their exceptional ability to capture complex spatiotemporal dependencies. Despite their predictive success, deployment of such models in safety-critical urban systems remains constrained by their inherent lack of transparency. Existing post-hoc diagnostic methods often struggle with spurious correlations and fail to unveil the intrinsic decision-making mechanisms governing traffic dynamics, resulting in suboptimal interpretability and limited operational trustworthiness. To address these challenges, this paper proposes the Structure-Guided Spatiotemporal Attention Graph Neural Network (SGSAN). Departing from traditional architectures that rely on unconstrained adaptive graphs, SGSAN explicitly learns a static Directed Dependency Graph (DDG) to identify the invariant macroscopic propagation paths of traffic states. We further introduce an InfoNCE-based soft-coupling mechanism that anchors the model's dynamic spatiotemporal attention to this structural prior, offering a mechanistic account of the model's decision-making process while ensuring robust forecasting by aligning attention-based reasoning with identified macroscopic dependencies and preventing over-reliance on ephemeral local noise. Furthermore, a decoupled two-stage optimization framework is developed to resolve the fundamental conflict between structural discovery and predictive error minimization. Extensive experiments on multiple real-world datasets demonstrate that SGSAN achieves state-of-the-art predictive accuracy while providing built-in interpretability that organically aligns with the physical logic of traffic networks.

@@ -1,0 +1,21 @@
+---
+title: "基于零镜头骨架的动作预期"
+title_en: "Zero-Shot Skeleton-Based Action Anticipation"
+authors: ["Hongsong Wang", "Pengbo Yan", "Yang Zhang", "Qiuxia Lai"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14243v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+动作预期（AA）旨在从部分观察中识别正在进行的人类或类人动物动作，使机器人能够在动作完成之前预测意图。尽管基于骨架的 AA 具有效率优势，但现有方法假设所有动作类别都在训练期间可见，这限制了它们在不可避免地出现新动作的现实场景中的部署。为了解决这一差距，我们研究了基于零镜头骨架的动作预期（ZS-SkAA）的新任务。这项任务需要仅使用有限的早期骨架序列来识别看不见的动作类，结合部分观察、时间动态和零样本泛化的挑战。为了建立ZS-SkAA的基础研究，我们引入：（1）基线模型，包括时空特征提取器和互信息估计和最大化模块。该基线模型通过估计和最大化它们的互信息，将部分视觉特征与跨模态的语义类嵌入明确对...
+
+## English Summary
+
+Action anticipation (AA) aims to recognize ongoing human or humanoids actions from partial observations, enabling robots to predict intentions before the actions are completed. Although skeleton-based AA offers efficiency advantages, existing approaches assume that all action classes are seen during training, which limits their deployment in real-world scenarios where novel actions inevitably arise. To address this gap, we study the new task of Zero-Shot Skeleton-Based Action Anticipation (ZS-SkAA). This task requires recognizing unseen action classes using only limited early-stage skeleton sequences, combining the challenges of partial observations, temporal dynamics, and zero-shot generalization. To establish foundational research for ZS-SkAA, we introduce:(1) A baseline model comprising a spatio-temporal feature extractor and a mutual information estimation and maximization module. This baseline model explicitly aligns partial visual features with semantic class embeddings across modalities by estimating and maximizing their mutual information, enhancing generalization to unseen classes.(2) A benchmark protocol using the NTU RGB+D dataset, which is adapted for rigorous ZS-SkAA evaluation. Experiments demonstrate the effectiveness of our model as a strong baseline for ZS-SkAA, achieving high zero-shot accuracy on NTU RGB+D. This work establishes ZS-SkAA as a vital research direction for real-world systems requiring generalization to novel actions.

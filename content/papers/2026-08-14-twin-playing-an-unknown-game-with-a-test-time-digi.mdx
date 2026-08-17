@@ -1,0 +1,21 @@
+---
+title: "双胞胎：使用测试时数字双胞胎玩未知游戏"
+title_en: "Twin: Playing an Unknown Game with a Test-Time Digital Twin"
+authors: ["Alexy Skoutnev", "Kirill Acharya", "Gaston Longhitano", "Madeleine Udell", "Kevin Ellis", "Iddo Drori"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14490v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+我们提出了一个测试时世界模型推理（双胞胎）系统，其中前沿编码代理编写一个可执行的世界模型来完成持续学习任务，例如 ARC-AGI-3 游戏。传统方法是手工设计此类模型，每个任务一个定制设计。每个游戏都隐藏其规则和目标，我们的系统仅通过模拟和交互来构建它们。其归纳先验优于网格游戏，足以恢复游戏的真实转换和几乎所有级别的目标。重放验证发生在孪生世界模型中。该工具强制要求在程序重现之前观察到的每个游戏转换之前不会执行任何操作。世界模型预测与实际行动结果之间的每一个不匹配都会成为用于修复世界模型的反例。 Twin 通关了 183 个关卡中的 179 个关卡（97.8%），并且在 179 个关卡中的 1...
+
+## English Summary
+
+We present a Test-time World-model Inference (Twin) system, in which a frontier coding agent writes an executable world model for completing continual learning tasks, such as ARC-AGI-3 games. Traditional approaches hand-engineer such models, one custom design per task. Each game hides its rules and goal, and our system constructs them from simulation and interaction alone. Its inductive prior over grid games is strong enough to recover the true transitions of the game and the goal on nearly all levels. Replay validation happens in a twin world model. The harness enforces that an action is not made until the program reproduces every previous observed game transition. Each mismatch between a world model prediction and the actual action result becomes a counterexample that is used to repair the world model. Twin clears 179 out of 183 levels (97.8%), and does so more efficiently than humans in 158 out of 179 levels (88.3%). The system infers the goal before any reward on 156 of the levels it clears (87.2%), and in the remaining levels automatically discovers the goal by search. The benchmark scores completion and action efficiency, between 0 and 100, against humans playing each game for the first time. Played directly, the base model scores only 7.8%; an off-the-shelf harness increases it to 61.1%, whereas our twin world model increases the same base model to 93.3%, clearing 23 out of 25 games. Building a usable world model is simpler than anticipated, whereas the harder problem is inferring the right goal.

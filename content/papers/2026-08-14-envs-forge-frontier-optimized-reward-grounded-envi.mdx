@@ -1,0 +1,21 @@
+---
+title: "Envs-FORGE：针对智能体 RL 的前沿优化奖励环境综合"
+title_en: "Envs-FORGE: Frontier-Optimized Reward-Grounded Environment Synthesis for Agent RL"
+authors: ["Xiaojun Wu", "Cehao Yang", "Honghao Liu", "Xueyuan Lin", "Zhichao Shi", "Hao Zhou", "Xuhui Jiang", "Chengjin Xu", "Jia Li", "Jian Guo"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14312v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+终端代理的强化学习（RL）需要具有可靠奖励和有用难度的可执行训练环境。固定配方（例如少发、自我指导和进化指导）对每个种子应用相同的提示策略，即使当前的策略会从更难、更容易或完全不同的任务中受益。我们提出了 Envs-FORGE，这是一种将验证者奖励转换为每个种子环境综合操作的激励策略。 Envs-FORGE 估计种子通过率，对围绕目标学习前沿的六个投影方向操作进行评分，并求解每个种子的混合整数线性程序 (MILP) 以选择影响生成的操作。选定的动作驱动指令、fixture、oracle解决方案、测试和Docker环境的同步重写；只有经过黄金验证的捆绑包才会进入 RL 训练。索引 MILP 表格...
+
+## English Summary
+
+Reinforcement learning (RL) for terminal agents needs executable training environments with reliable rewards and useful difficulty. Fixed recipes such as few-shot, Self-Instruct, and Evol-Instruct apply the same prompting policy to every seed, even when the current policy would benefit from a harder, easier, or simply different task. We present Envs-FORGE, a prompting policy that converts verifier rewards into per-seed environment-synthesis actions. Envs-FORGE estimates seed pass rates, scores six projection--direction actions around a target learning frontier, and solves a per-seed mixed-integer linear program (MILP) to choose the action that conditions generation. The selected action drives synchronized rewriting of the instruction, fixtures, oracle solution, tests, and Docker environment; only gold-verified bundles enter RL training. The indexed MILP form also supports optional soft skill coverage for portfolio planning. On Qwen 3.5 35B, Envs-FORGE improves Pass@1 over Base by 9.2 percentage points on tb-core (40.0% to 49.2%) and 6.4 points on tb-2.0 (23.0% to 29.4%), exceeding the strongest fixed-recipe baseline by 2.4 and 2.1 points. It reaches 77.1% on SWE-bench Verified versus 73.4% for Base, and improves tb-core by 6.8--9.2 points across the evaluated 4B--35B models. All synthesis methods export 100 verified environments and use 2.27M--2.88M synthesis tokens, placing the comparison at the same downstream training-set size and the same operational scale. The source code is available at https://github.com/DataArcTech/DataArc-SynData-Toolkit/.

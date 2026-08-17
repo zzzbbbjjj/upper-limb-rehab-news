@@ -1,0 +1,21 @@
+---
+title: "一种多引擎AI加速器无障碍同步算法"
+title_en: "A Barrier-Free Synchronization Algorithm for Multi-Engine AI Accelerators"
+authors: ["Chungha Sung", "Nikil V. Shyamsunder", "Hanliang Zhang", "Daniel Kroening", "Joonwon Choi"]
+date: "2026-08-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.13757v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+AWS Trainium 等多引擎 AI 加速器包含并行执行的专用计算引擎，编译器必须同步它们之间的数据依赖关系。对于直线代码，这很简单：每个依赖项都减少为等待指令完成的阈值计数，编译器静态计算该阈值计数。循环不允许这样的静态阈值；一个简单的解决方案是在迭代边界插入全引擎屏障，重置同步状态，以便每个循环体都可以被视为直线，但代价是并行性。   我们提出了一种无障碍同步算法，该算法通过任意嵌套的动态有界循环在结构化控制流中精确地强制执行每个依赖关系。关键思想是根据跟踪的循环迭代计数计算运行时的动态阈值。   我们将其实现为 AWS Neuron ISA 级别的编译器后端通道。在一套 ML 内核上...
+
+## English Summary
+
+Multi-engine AI accelerators such as AWS Trainium comprise specialized compute engines that execute in parallel, and the compiler must synchronize the data dependencies between them. For straight-line code this is simple: each dependency reduces to waiting for a threshold count of instruction completions, which the compiler computes statically. Loops admit no such static threshold; a simple solution inserts all-engine barriers at iteration boundaries, resetting synchronization state so each loop body can be treated as straight-line, at the cost of parallelism.   We present a barrier-free synchronization algorithm that instead enforces each dependency precisely across structured control flow with arbitrarily nested, dynamically bounded loops. The key idea is to compute dynamic thresholds at runtime from tracked loop iteration counts.   We implemented it as a compiler backend pass at the AWS Neuron ISA level. On a suite of ML kernels, it reduces latency 10-45% relative to the barrier-based baseline, achieves a 3.3x speedup on a synchronization-bound microbenchmark, and often matches or exceeds hand-tuned manual allocation.   Issuing a consumer too early violates its dependency, while issuing too late unnecessarily stalls execution. We formally characterize the minimum synchronization required for correctness and verify in the Lean proof assistant, via bisimulation, that our algorithm meets this criterion.

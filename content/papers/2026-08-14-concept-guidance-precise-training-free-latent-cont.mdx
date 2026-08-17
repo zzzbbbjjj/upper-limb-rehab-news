@@ -1,0 +1,21 @@
+---
+title: "概念指导：用于文本到图像生成的精确、免训练潜在控制"
+title_en: "Concept Guidance: Precise, Training-Free Latent Control for Text-to-Image Generation"
+authors: ["Nikolai Röhrich", "Isabell Hans", "Felix Krause", "Björn Ommer"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14172v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+文本到图像扩散模型有两​​个主要缺点，严重限制了它们的实用性：（1）标准模型缺乏连续的、特定于概念的指导的内在机制（例如，精确控制图像的美观程度），（2）它们对于需要高度局部一致性的任务（例如，生成文本或人手）缺乏可靠性。为了解决这些问题，我们引入了概念方面的互信息的新概念，并发现各个层之间存在较大的、依赖于概念的差异，证明特定结构的生成位于网络的不同部分。我们通过强化概念指导 (CoG) 中概念相关层的影响来利用这一见解，概念指导是一种精确的、针对特定目标的指导方法，适用于开箱即用的模型，无需额外的训练、外部模型、梯度或提示工程。 CoG 首先量化每个层的特定于概念的影响，然后使用跳过概念相...
+
+## English Summary
+
+Text-to-image diffusion models have two major drawbacks that severely limit their practical utility: (1) standard models lack an intrinsic mechanism for continuous, concept-specific guidance (e.g., for precisely controlling how aesthetically pleasing an image looks), and (2) they lack reliability for tasks requiring high local coherence (e.g., generating text or human hands). To tackle these issues, we introduce a novel notion of concept-wise mutual information and find large, concept-dependent differences between individual layers, demonstrating that the generation of specific structures is localized in distinct parts of the network. We exploit this insight by reinforcing the impact of concept-relevant layers in Concept Guidance (CoG), a precise, target-specific guidance method that works for models out-of-the-box without additional training, external models, gradients, or prompt engineering. CoG first quantifies each layer's concept-specific impact and then guides denoising using a weighted combination of predictions generated with concept-relevant layers skipped. We demonstrate performance increases across various targets and popular models like PixArt-alpha, SD3, SD3.5, and FLUX.1-dev. Code is available at https://github.com/CompVis/concept_guidance

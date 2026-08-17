@@ -1,0 +1,21 @@
+---
+title: "CLAIR-Fin：跨模式金融 QA 中声明级验证和自适应辩论的对抗性多代理框架"
+title_en: "CLAIR-Fin: An Adversarial Multi-Agent Framework for Claim-Level Verification and Adaptive Debate in Cross-Modal Financial QA"
+authors: ["Fatema Tuj Johora Faria", "Mukaffi Bin Moin", "Jubayer Al Mahmud", "M. F. Mridha", "Md. Alam Hossain"]
+date: "2026-08-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.13706v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+在检索增强和多智能体管道中，现有的针对幻觉的防御措施仍然是片面的：尽管模态存在分歧，证据仍然可信，辩论验证的是总体报告而不是个人主张，而且这种验证仅在起草后进行，使得智能体间的错误在最终文本之前未被发现。为了弥补这一差距，我们提出了 CLAIR-Fin，这是一个九代理框架，它将每个问题分解为在类型化的金融索赔账本中维护的原子索赔。每项主张均通过非对称证据权威解决，该权威根据主张类型确定证据信任，而不是将所有模式视为同等可靠；监管链验证，在起草和对抗性审查之间的交接处检查接地情况，而不仅仅是在管道出口处；适应性反驳循环，通过对抗性辩论来引导有争议的主张，辩论的深度与辩论发现的内容成比例；以及与连...
+
+## English Summary
+
+Existing defenses against hallucination in retrieval-augmented and multi-agent pipelines remain partial: evidence is trusted despite modality disagreement, debate verifies an aggregate report rather than individual claims, and such verification occurs only after drafting, leaving inter-agent errors undetected until the final text. To close this gap, we present CLAIR-Fin, a nine-agent framework that decomposes each question into atomic claims maintained in a typed Financial Claim Ledger. Each claim is resolved through Asymmetric Evidence Authority, which conditions evidence trust on claim type rather than treating all modalities as equally reliable; Chain-of-Custody Verification, which checks grounding at the hand-off between drafting and adversarial review rather than only at the pipeline's exit; an Adaptive Rebuttal Cycle, which routes contested claims through adversarial debate whose depth scales with what that debate finds; and a terminal entailment audit paired with a continuous Hallucination Risk Index that distinguishes claims that passed scrutiny from claims never contested. We evaluate CLAIR-Fin on BB-FinQA-X, a 500-question cross-modal financial evaluation set built from Bangladesh Bank Annual Report material, stratified by query type, format, and difficulty. Relative to a single-pass retrieval-augmented generation baseline, it raises faithfulness ($0.780 \rightarrow 0.889$) while abstaining on 5.4% of questions when evidence is insufficient rather than forcing an unsupported response, and it exceeds stronger retrieval-strategy baselines such as HyDE and Graph-RAG on faithfulness ($\leq 0.874$).

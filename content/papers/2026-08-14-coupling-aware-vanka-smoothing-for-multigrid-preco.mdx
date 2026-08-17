@@ -1,0 +1,21 @@
+---
+title: "用于隐式浸入边界方程多重网格预处理的耦合感知 Vanka 平滑"
+title_en: "Coupling-Aware Vanka Smoothing for Multigrid Preconditioning of the Implicit Immersed Boundary Equations"
+authors: ["Cole Gruninger", "Boyce E. Griffith"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14310v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+浸入边界 (IB) 方法分别使用结构力学和流体动力学的自然拉格朗日和欧拉公式来模拟流体-结构相互作用，但 IB 力的显式时间离散对时间步长施加了与刚度相关的上限。处理这些力隐式地消除了这种限制，但随着结构刚度的增加，所产生的耦合线性系统变得越来越难以求解。通过代数消除拉格朗日自由度可得到降低的欧拉速度-压力 IB 系统。在这里，我们引入了一种耦合感知 Vanka (CAV) 平滑策略，以实现该系统的有效多重网格预处理。 CAV 补丁被构建为标准压力中心 Vanka 补丁的联合，并由欧拉弹性矩阵图确定组合哪些补丁。在网格细化下，CAV 块大小保持有界，因此每个多重网格循环的计算成本随着欧拉自由度...
+
+## English Summary
+
+The immersed boundary (IB) method models fluid--structure interaction using the natural Lagrangian and Eulerian formulations of structural mechanics and fluid dynamics, respectively, but explicit time discretization of the IB force imposes a stiffness-dependent upper bound on the time-step size. Treating these forces implicitly removes this restriction, but the resulting coupled linear systems become increasingly difficult to solve as the structural stiffness increases. Algebraically eliminating the Lagrangian degrees of freedom yields a reduced Eulerian velocity--pressure IB system. Here we introduce a coupling-aware Vanka (CAV) smoothing strategy to enable effective multigrid preconditioning of this system. CAV patches are built as unions of standard pressure-centered Vanka patches, with the graph of the Eulerian elasticity matrix determining which patches are combined. Under grid refinement, CAV patch sizes remain bounded, and the computational cost of each multigrid cycle thereby grows linearly with the number of Eulerian degrees of freedom. Tests using target-point, membrane, and beam force laws show that CAV-preconditioned FGMRES reduces the relative residual by ten orders of magnitude in $9--15$ iterations, with little growth under grid refinement. In a nonlinear benchmark modeling flow past a flexible fiber, the average number of FGMRES iterations per Newton solve increases only from $8.6$ to $9.5$ as the Eulerian grid is refined from $32\times32$ to $256\times256$ cells. To our knowledge, CAV provides the first robust multigrid strategy for time-dependent implicit IB formulations.

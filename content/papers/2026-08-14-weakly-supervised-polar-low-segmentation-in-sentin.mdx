@@ -1,0 +1,21 @@
+---
+title: "Sentinel-1 SAR 图像中的弱监督极地低分割"
+title_en: "Weakly Supervised Polar Low Segmentation in Sentinel-1 SAR Imagery"
+authors: ["Andrea Federici", "Jakob Grahn", "Giacomo Boracchi", "Filippo Maria Bianchi"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14366v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+极地低压是在高纬度地区迅速形成的强烈海洋气旋。深度学习可以在合成孔径雷达 (SAR) 图像中检测到它们，但像素级分割仍然是一个开放的挑战。没有像素级掩模可用于训练，并且极地低压的范围本质上是主观的，其弥散的边界甚至连专家也不一致地描绘出。我们提出了软目标约束区域擦除（CREST），这是一种弱监督语义分割（WSSS）框架，仅从图像级标签生成掩模。我们的方法建立在对抗性擦除（AER）的基础上，它迭代地挖掘有区别的区域，擦除它们，并重新训练分类器以揭示成为分割伪标签的互补线索。然而，标准 AER 也会收集不相关的背景特征，从而降低伪标签质量。 CREST 通过 (i) 约束序数区域扩展 (CORE)...
+
+## English Summary
+
+Polar lows are intense maritime cyclones that form rapidly at high latitudes. Deep learning can detect them in Synthetic Aperture Radar (SAR) imagery, but pixel-level segmentation remains an open challenge. No pixel-level masks are available for training, and a polar low's extent is inherently subjective, with diffuse boundaries that even experts delineate inconsistently. We propose Constrained Region Erasing with Soft Targets (CREST), a Weakly Supervised Semantic Segmentation (WSSS) framework that generates masks solely from image-level labels. Our approach builds on Adversarial Erasing (AER), which iteratively mines discriminative regions, erases them, and retrains a classifier to reveal complementary cues that become pseudo-labels for segmentation. However, standard AER also collects irrelevant background features, degrading pseudo-label quality. CREST addresses this with (i) a Constrained Ordinal Region Expansion (CORE) module that encodes the spatial-connectedness prior of polar lows, constraining region expansion from a high-confidence seed, and (ii) a Dynamic Bootstrapping (DB) loss that treats the mining order as a proxy for label reliability, attenuating supervision from noisier, later-mined regions. On Sentinel-1 SAR data, CREST follows the cyclone structure more closely than standard AER, and returns a multi-class rather than binary mask whose classes indicate the reliability assigned to each region. We further evaluate on BUS-UCLM breast ultrasound and PASCAL VOC person data, whose targets satisfy the same connectedness prior but come with the dense masks the SAR data lacks. On both datasets, CREST performs better than the equivalent AER pipeline under identical settings.

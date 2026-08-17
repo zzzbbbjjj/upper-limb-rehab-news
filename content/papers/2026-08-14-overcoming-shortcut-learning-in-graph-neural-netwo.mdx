@@ -1,0 +1,21 @@
+---
+title: "通过主动解释指导克服图神经网络中的捷径学习"
+title_en: "Overcoming Shortcut Learning in Graph Neural Networks through Active Explanation Guidance"
+authors: ["Taraneh Younesian", "Steve Azzolin", "Antonio Longa", "Francesco Ferrini", "Vincenzo Marco De Luca", "Stefano Teso"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14121v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+图神经网络 (GNN) 可以通过无意中利用捷径（即与预测相关但与预测无关的边、节点和特征）来解决预测任务，这会损害其在分布外任务中的可靠性。我们引入了 XIGL，一种与架构无关的人机交互策略，用于从 GNN 中删除此类捷径。我们的主要见解是双重的。一方面，可以通过检查 GNN 解释来检测对捷径的依赖。另一方面，一旦意识到这些捷径，足够专业的用户就可以提供量身定制的纠正反馈，这有助于消除模型的混乱。 XIGL支持任意查询策略；然而，由于获得纠正性反馈的成本可能很高，因此我们开发了一种主动学习策略，优先考虑更有可能表现出捷径行为的解释，从而降低注释和认知成本。我们展示了 XIGL 在几种 GNN ...
+
+## English Summary
+
+Graph Neural Networks (GNNs) can solve prediction tasks by unintentionally exploiting shortcuts---that is, edges, nodes, and features that correlate with but are not causal for the prediction---which compromise their reliability in out-of-distribution tasks. We introduce XIGL, an architecture-agnostic human-in-the-loop strategy for removing such shortcuts from GNNs. Our key insight is twofold. On the one hand, reliance on shortcuts can be detected by inspecting GNN explanations. On the other hand, once made aware of such shortcuts, sufficiently expert users can provide tailored corrective feedback, which helps deconfound the model. XIGL supports any query strategy; however, since corrective feedback can be expensive to acquire, we develop an active learning strategy for prioritizing explanations that are more likely to display shortcut behavior, lowering annotation and cognitive costs. We showcase the effectiveness of XIGL, including both existing and proposed explanation-based strategies, on several GNN architectures. Our implementation is available online.

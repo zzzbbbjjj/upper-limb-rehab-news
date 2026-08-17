@@ -1,0 +1,21 @@
+---
+title: "Rust 中的 GPU 卸载：便携、安全且快速"
+title_en: "GPU Offload in Rust: Portable, Safe, and Fast"
+authors: ["Manuel S. Drehwald", "Marcelo Domínguez", "Kevin Sala", "Alán Aspuru-Guzik", "Johannes Doerfert"]
+date: "2026-08-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.13759v1"
+doi: ""
+tags: ["手部康复", "可穿戴"]
+tags_en: ["hand rehabilitation", "wearable"]
+keywords: ["手部康复", "可穿戴"]
+keywords_en: ["hand rehabilitation", "wearable"]
+---
+
+## 中文摘要
+
+传统上，高性能 GPU 编程迫使我们在执行效率和内存安全之间做出妥协。虽然 Rust 通过其严格的所有权模型保证主机 CPU 的编译时内存安全，但将这些约束应用于大规模并行 GPU 执行环境之前要求要么使用供应商锁定的域特定语言 (DSL)，要么转义为显式不安全的原始指针。本文提出了一个零开销、多供应商 GPU 编译框架，该框架原生构建到 Rust 编译器 (rustc) 和 LLVM 后端中。   我们利用 Rust 丰富的类型系统、所有权系统和严格的别名保证 (noalias)，通过 LLVM 的 Offload 基础设施有效管理和优化数据传输。我们揭示了跨供应商 ABI 降低主机和设备目...
+
+## English Summary
+
+High-performance GPU programming has traditionally forced a compromise between execution efficiency and memory safety. While Rust guarantees compile-time memory safety for host CPUs via its strict ownership model, applying these constraints to massively parallel GPU execution environments has previously mandated either vendor-locked Domain-Specific Languages (DSLs) or escaping to explicit unsafe raw pointers. This paper presents a zero-overhead, multi-vendor GPU compilation framework built natively into the Rust compiler (rustc) and LLVM backends.   We leverage Rust's rich type system, ownership system, and strict aliasing guarantees (noalias) to efficiently manage and optimize data transfers through LLVM's Offload infrastructure. We expose the technical challenges of cross-vendor ABI lowering mismatches between Host and Device targets and introduce a two-pass compilation pipeline capable of safely handling both manual and compiler-generated memory movements. Evaluating our framework on RAJAPerf demonstrates that our rustc-based solution can generate competitive LLVM IR for GPU kernels, achieving a solid kernel performance against native, hand-optimized CUDA and HIP C++ baselines.

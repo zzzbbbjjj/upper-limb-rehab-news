@@ -1,0 +1,21 @@
+---
+title: "通过综合症验证的语义先验进行 LLM 辅助 LDPC 解码"
+title_en: "LLM-Assisted LDPC Decoding via Syndrome-Verified Semantic Priors"
+authors: ["Sojeong Park", "Hyeonsu Lyu", "Jaehyun Choi", "Hyun Jong Yang"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14280v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+语义通信利用了有效负载的含义，而位级处理则将其丢弃。当自然语言负载上的通道解码失败时，错误在恢复的文本中显示为损坏的字符。大型语言模型 (LLM) 从语义上下文中推断出预期的字符，但它也可能产生不正确的更正。当 LLM 错误地修改字符时，直接应用它们会引入新的位错误。在本文中，我们提出了一种用于低密度奇偶校验（LDPC）码的 LLM 辅助解码框架。解码器不信任 LLM 预测，而是根据奇偶校验约束联合评估修改后的字符，并仅承认接受的更正作为经过验证的语义先验。这些先验作为通道对数似然比的软更新注入，保留原始通道证据而不修改解码器。随后的置信传播过程将注入的证据分布在检查节点上，不仅恢复注入的位，...
+
+## English Summary
+
+Semantic communication exploits the meaning of the payload, which bit-level processing discards. When channel decoding fails on a natural language payload, the errors appear as corrupted characters in the recovered text. A large language model (LLM) infers the intended characters from the semantic context, but it can also produce incorrect corrections. Applying them directly introduces new bit errors when the LLM modifies characters incorrectly. In this paper, we propose an LLM-assisted decoding framework for low-density parity-check (LDPC) codes. Rather than trusting LLM predictions, the decoder evaluates the modified characters jointly against the parity-check constraints and admits only the accepted corrections as verified semantic priors. These priors are injected as soft updates to the channel log-likelihood ratios, preserving the original channel evidence without modifying the decoder. A subsequent belief propagation pass distributes the injected evidence across the check nodes, recovering not only the injected bits but also the residual errors that the LLM fails to correct. Simulations demonstrate a 73% bit error rate reduction over a conventional decoder at 2.0 dB, whereas doubling its iterations to the same budget yields only 21%. The verification maintains an injection precision above 0.88 despite inaccurate LLM predictions, demonstrating that semantic knowledge can be reliably translated into physical-layer reliability gains.

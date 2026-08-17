@@ -1,0 +1,21 @@
+---
+title: "大规模高阶 MIMO 检测的学习过渡"
+title_en: "Learning-to-Transition for Large-scale and High-Order MIMO Detection"
+authors: ["Yubo Zhang", "Yiyao Liu", "Xiaodong Wang"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14511v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+高阶多输入多输出 (MIMO) 检测需要在大离散符号空间上进行有效搜索，同时为信道解码生成可靠的软信息。本文开发了一种学习过渡 (L2T) 框架，将 MIMO 检测制定为完整矢量过渡的随机序列。在每次转换时，通道耦合的 Transformer 都会更新实例嵌入和采样策略，而块式自回归分解则以中等顺序复杂性捕获流间依赖性。对于硬输出检测，转换网络被递归地应用并通过残差到 BER 课程进行训练，该课程首先从精确的残差度量中学习 MIMO 搜索几何结构，然后将策略与传输比特精度对齐。对于软输出接收，训练有素的硬策略在参数级别克隆到不受限软输入软输出迭代检测和解码（IDD）接收器的每一层。这种绑定到解...
+
+## English Summary
+
+High-order multiple-input multiple-output (MIMO) detection requires efficient search over a large discrete symbol space while producing reliable soft information for channel decoding. This paper develops a learning-to-transition (L2T) framework that formulates MIMO detection as a stochastic sequence of complete-vector transitions. At each transition, a channel-coupled Transformer updates both the instance embedding and the sampling policy, while a blockwise autoregressive factorization captures inter-stream dependence with moderate sequential complexity. For hard-output detection, a transition network is applied recursively and trained through a residual-to-BER curriculum, which first learns the MIMO search geometry from the exact residual metric and then aligns the policy with transmitted-bit accuracy. For soft-output reception, the well-trained hard policy is cloned at the parameter level into every layer of an untied soft-input soft-output iterative detection and decoding (IDD) receiver. This tied-to-untied transfer preserves the learned zero-prior search dynamics while enabling layer- and round-specific specialization under decoder feedback. Within each IDD round, decoder priors tilt candidate generation according to Bayes' rule, and likelihood-weighted terminal hypotheses produce posterior and extrinsic log-likelihood ratios for LDPC decoding. A multi-stage training strategy further stabilizes the hard-to-soft transfer by progressively exposing the receiver to synthetic and in-loop decoder-generated priors.

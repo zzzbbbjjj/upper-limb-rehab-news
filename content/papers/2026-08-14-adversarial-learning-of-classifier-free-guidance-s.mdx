@@ -1,0 +1,21 @@
+---
+title: "无分类器指导表的对抗性学习"
+title_en: "Adversarial Learning of Classifier-Free Guidance Schedules"
+authors: ["Ashwini Pokle", "Alexandre Galashov", "Arnaud Doucet", "Mauricio Delbracio", "Valentin De Bortoli"]
+date: "2026-08-14"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.14038v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+现代文本到图像的扩散模型依靠无分类器引导（CFG）来实现高图像保真度和文本对齐。然而，CFG 通常在所有时间步长、样本和条件下应用静态的全局尺度——这种选择通常不是最优的，并且可能会引入伪影，因为不同的状态可能会受益于不同级别的指导。虽然众所周知，随时间变化的时间表可以提高质量，但手工设计它们并不简单，而且取决于应用程序。在本文中，我们学习指导时间表作为扩散时间、条件和当前噪声样本的函数，以便更好地将采样图像与文本提示对齐。我们将其视为密度比估计问题：训练鉴别器来估计真实边缘分布和引导边缘分布之间的时间相关对数密度比，而轻量级生成器网络则预测最佳的、状态相关的引导尺度。根据经验，我们的方法优于...
+
+## English Summary
+
+Modern text-to-image diffusion models rely on classifier-free guidance (CFG) to achieve high image fidelity and text alignment. However, CFG typically applies a static, global scale across all timesteps, samples, and conditions -- a choice that is generally suboptimal and can introduce artifacts, as different states may benefit from different levels of guidance. While time-varying schedules are known to improve quality, designing them by hand is non-trivial and application-dependent. In this paper, we learn the guidance schedule as a function of diffusion time, conditioning and the current noisy sample, in order to better align sampled images with the text prompt. We frame this as a density ratio estimation problem: a discriminator is trained to estimate the time-dependent log-density ratio between the true and guided marginal distributions, while a lightweight generator network predicts the optimal, state-dependent guidance scale. Empirically, our approach outperforms both heuristic CFG schedules and prior methods for learning dynamic guidance on text-to-image generation benchmarks.
