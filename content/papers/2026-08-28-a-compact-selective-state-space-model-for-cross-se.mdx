@@ -1,0 +1,21 @@
+---
+title: "A Compact Selective State-Space Model for Cross-Sectional Stock Return Ranking from Raw Intraday Bars"
+title_en: "A Compact Selective State-Space Model for Cross-Sectional Stock Return Ranking from Raw Intraday Bars"
+authors: ["Mingju Chen", "Enze Zhang"]
+date: "2026-08-28"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.28060v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+We present STRATA (Staggered-Timescale Residual Architecture), a 244,633-parameter sequence model that maps five trading days of raw five-minute bar and order-book data directly to a next-day cross-sectional return ranking, with no hand-crafted features. The raw-input setting has a structural obstacle: price series are non-stationary and differ across stocks by orders of magnitude, so a model easily latches onto price level rather than dynamics. STRATA addresses it with a stem of five branches--four learnable causal depthwise convolutions whose effective kernels are initialised to sum to zero, plus one cross-field linear contrast--followed by four selective state-space blocks whose decay biases are staggered across the stack and a four-path readout. Because a score that merely tilts toward common style factors scores well on raw rank correlations, every model's scores are residualised against eight price-volume style factors before any metric is computed. Trained on four years of data covering roughly one thousand mid-capitalisation Chinese A-shares and evaluated once on a held-out year, STRATA reaches a style-residualised rank information coefficient of 0.0728 (information ratio 1.128, signal long-short Sharpe 12.85), ahead of six parameter-matched sequence baselines on all four reported metrics; on rank IC the day-level paired gap against every baseline is significant at p &lt; 0.001, and among the arms competitive on predictive power STRATA's scores are the least explained by the controls. The close-to-close target opens before the score exists: measured instead from the first executable price, the decile spread is indistinguishable from zero, while the ordering of the seven architectures is unchanged and STRATA's margin widens.

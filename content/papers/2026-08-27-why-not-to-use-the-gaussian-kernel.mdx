@@ -1,0 +1,21 @@
+---
+title: "Why not to use the Gaussian kernel"
+title_en: "Why not to use the Gaussian kernel"
+authors: ["Toni Karvonen", "Chris J. Oates"]
+date: "2026-08-27"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.26974v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Kernels measure similarity or correlation in tasks such as regression and classification. The Gaussian kernel, other names of which include squared exponential and radial basis function kernel, is one of the most popular in Gaussian process regression. We argue that the Gaussian kernel is best avoided and should never be used as a default. The argument rests on two results demonstrating that the Gaussian kernel is extremely brittle. First, the Gaussian kernel gives rise to a conditional variance that is unrealistically small. If the variance is used to quantify predictive uncertainty, catastrophic overconfidence is almost inevitable. Second, a small variance goes hand in hand with numerical ill-conditioning, so that to use the Gaussian kernel in practice requires tricks such as nugget terms that effectively modify the underlying regression or classification model. These problems are caused by the unnatural smoothness of the Gaussian kernel, a fact we are far from the first to take notice of. The problem is not the Gaussian form itself but the analyticity of the kernel: Our argument is more broadly that analytic kernels are best avoided. For stationary kernels analyticity is essentially equivalent to an exponential decay of the spectral density.

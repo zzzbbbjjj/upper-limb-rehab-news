@@ -1,0 +1,21 @@
+---
+title: "Learning to Difference: Adaptive Reversible Differencing (AdaRDiff) for Time Series Forecasting"
+title_en: "Learning to Difference: Adaptive Reversible Differencing (AdaRDiff) for Time Series Forecasting"
+authors: ["Morad Laglil", "Younes Hlal", "Marouane El Hadari", "Emilie Devijver", "Eric Gaussier"]
+date: "2026-08-28"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.28134v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Reliable long-horizon time series forecasting is an important yet difficult problem. Trends and seasonality introduce complex temporal structure that challenges learning-based forecasting models. Differencing, which subtracts nearby past values to remove such structure, is the classical remedy, but its reliance on hand-picked orders and periods has kept it largely absent from recent deep architectures. We propose \textbf{\underline{Ada}}ptive \textbf{\underline{R}}eversible \textbf{\underline{Diff}}erencing \textbf{(AdaRDiff)}, a generalized differencing approach that uses learnable weights to simplify the series through weighted differencing with previous time instants. This yields stabilized residuals on which forecasting is performed, after which the removed components are restored autoregressively to reconstruct the forecast, capturing trend and seasonality jointly through a single operator. This reconstruction admits a closed-form convolutional expression, which parallelizes on GPU and yields up to $33.7\times$ speedup over the naive recurrence. We furthermore rely on a two-phase training schedule that separates temporal structure discovery from reconstruction learning, as suggested by a theoretical analysis of the gradient when using a linear forecasting model. AdaRDiff attains state-of-the-art forecast accuracy across eight benchmarks spanning electricity, weather, traffic, and energy, at negligible parameter cost. Furthermore, it is designed as a plug-and-play module: integrating AdaRDiff improves eight diverse backbones, from linear models to Transformers, in the large majority of cases, by up to $25.9\%$ with a linear backbone and $18.3\%$ with iTransformer.

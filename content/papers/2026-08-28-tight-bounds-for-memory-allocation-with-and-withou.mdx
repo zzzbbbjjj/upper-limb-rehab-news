@@ -1,0 +1,21 @@
+---
+title: "Tight Bounds for Memory Allocation With and Without Request Fragmentation"
+title_en: "Tight Bounds for Memory Allocation With and Without Request Fragmentation"
+authors: ["Michael A. Bender", "Alex Conway", "Martín Farach-Colton", "Hanna Komlós", "William Kuszmaul", "Nicole Wein"]
+date: "2026-08-28"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.28462v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+The classical memory-allocation problem captures the task of placing objects of different sizes in memory, while minimizing the so-called memory high-water mark. It has been known since the early 1970s that the optimal competitive ratio for any deterministic online allocator is $Θ(\log M)$, where $M$ is the volume high-water mark of the underlying request sequence.   This paper begins with a simple observation: many real-world allocators seem to bypass the 1971 lower bound by adopting a slightly different model for memory allocation. These allocators use what we call $k$-aggregate request fragmentation, meaning that the memory allocator is permitted to break requests into multiple fragments, so long as the all-time maximum number of simultaneous fragments is at most $k$ times the all-time maximum number of simultaneous requests.   We consider the following basic question: Does request fragmentation fundamentally change the problem of memory allocation, and if so, how? Our results come with several surprises. Among these, we find that even using $k = 1 + o(1)$ request fragmentation, the optimal competitive ratio---which was $Θ(\log M)$ in the classical setting---collapses to $Θ(\log \log M)$. This result is shown to be tight with matching upper and lower bounds, applying to both deterministic and randomized algorithms.

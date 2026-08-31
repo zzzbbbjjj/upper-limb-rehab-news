@@ -1,0 +1,21 @@
+---
+title: "Accelerating Data Preprocessing for Efficient Vision Model Inference on Jetson Edge Device"
+title_en: "Accelerating Data Preprocessing for Efficient Vision Model Inference on Jetson Edge Device"
+authors: ["Tian Chen", "Nawras Alnaasan", "Jinghan Yao", "Aamir Shafi", "Hari Subramoni", "Dhabaleswar K.", " Panda"]
+date: "2026-08-27"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2608.27655v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Data preprocessing is a crucial part of deep learning workflows on edge devices. However, decoding data saved in JPEG format is very compute-intensive and occupies a major portion of the preprocessing pipeline. Therefore, increasing the decoding speed is vital for improving overall throughput, especially for inputs with large image sizes, which are often subject to preprocessing bottlenecks. On the other hand, edge devices are equipped with specialized hardware units to accelerate media processing and image decoding. For instance, the NVIDIA Jetson platform possesses a dedicated NVJPEG unit. These units can be used to enhance the performance of the preprocessing pipeline. This paper introduces the utilization of such specific hardware acceleration units for offloading decoding tasks. By combining this with a multi-instance approach, it allows for the parallelization of all compute resources including CPU, NVJPEG, GPU, and DLA in Jetson devices. In this work, we compare various potential pipeline designs. On ResNet18, ResNet50, and ResNet152, three models with different sizes, we evaluate the impact of batch sizes and image sizes, as well as the characteristics of GPU/DLA inference. Finally, a fine-tuning experiment for multi-instance design has been conducted. The multi-instance design with a specific hardware decoding unit involved offers up to 30.02% speedup for large image sizes, compared with the most optimized design without it. Based on these findings, we demonstrate the benefits of using the NVJPEG unit in deep learning workflows and provide guidelines for tuning and optimizing edge inference workflows.

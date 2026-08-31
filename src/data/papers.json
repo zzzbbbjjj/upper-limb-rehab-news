@@ -1,5 +1,2276 @@
 [
   {
+    "title": "A Clearer View of HAT-P-1 b: JWST NIRSpec G395H Reveals Water, Carbon Dioxide, and Possibly Hydrogen Sulfide",
+    "title_en": "A Clearer View of HAT-P-1 b: JWST NIRSpec G395H Reveals Water, Carbon Dioxide, and Possibly Hydrogen Sulfide",
+    "authors": [
+      "Reza Ashtari",
+      "Stephen P. Schmidt",
+      "Guangwei Fu",
+      "Avinash Verma",
+      "David K. Sing",
+      "Kevin B. Stevenson",
+      "Jayesh Goyal",
+      "Katherine A. Bennett",
+      "Joshua D. Lothringer",
+      "Jacob Lustig-Yaeger"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28538v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-a-clearer-view-of-hat-p-1-b-jwst-nirspec-g395h-rev",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nAs part of JWST's Exoplanet Grand Tour Survey, we use panchromatic transmission spectroscopy to connect HAT-P-1 b's previously studied optical and near-infrared atmosphere to the longer-wavelength molecular bands accessible with JWST. We present JWST NIRSpec G395H transmission spectroscopy of the hot Jupiter HAT-P-1 b over 2.7--5.3~$μ$m, and combine the new spectrum with archival HST STIS and WFC3 observations for a 0.3--5.3~$μ$m atmospheric analysis. We independently reduce the JWST data with the Eureka!, FIREFLy, and Tswift pipelines, finding mutually consistent transmission spectra across the G395H bandpass. Atmospheric retrievals yield strong evidence for H$_2$O and CO$_2$ with Bayes factors of $\\log_{10}B_{\\mathrm{H_2O}}=8.9$ and $\\log_{10}B_{\\mathrm{CO_2}}=52.3$, while providing tentative evidence for H$_2$S ($\\log_{10}B_{\\mathrm{H_2S}}=1.4$). The joint H$_2$O and CO$_2$ constraints favor an atmosphere near chemical equilibrium, with $\\log_{10} \\text{M/H}=0.99^{+0.19}_{-0.14}$, corresponding to $\\sim10\\times$ Solar or $\\sim9\\times$ relative to the near-solar metallicity host star, and a 3$σ$ upper limit of C/O $&lt;0.52$. Because H$_2$O and CO$_2$ provide a metallicity comparatively insensitive to vertical mixing in this temperature regime, their combined detection suggests the composition is dominated by bulk enrichment rather than strong disequilibrium transport. We find no significant evidence for clouds; instead, the persistence of molecular structure across the spectrum argues against strong cloud muting. The tentative H$_2$S signal, if confirmed, would further suggest limited photochemical processing at the pressures probed. Together, the molecular inventory, enriched metallicity, and low C/O ratio point to an oxygen-rich atmosphere and establish HAT-P-1 b as a benchmark for comparative studies of hot-Jupiter atmospheric composition.",
+    "readingTime": 2
+  },
+  {
+    "title": "A Compact Selective State-Space Model for Cross-Sectional Stock Return Ranking from Raw Intraday Bars",
+    "title_en": "A Compact Selective State-Space Model for Cross-Sectional Stock Return Ranking from Raw Intraday Bars",
+    "authors": [
+      "Mingju Chen",
+      "Enze Zhang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28060v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-08-28-a-compact-selective-state-space-model-for-cross-se",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe present STRATA (Staggered-Timescale Residual Architecture), a 244,633-parameter sequence model that maps five trading days of raw five-minute bar and order-book data directly to a next-day cross-sectional return ranking, with no hand-crafted features. The raw-input setting has a structural obstacle: price series are non-stationary and differ across stocks by orders of magnitude, so a model easily latches onto price level rather than dynamics. STRATA addresses it with a stem of five branches--four learnable causal depthwise convolutions whose effective kernels are initialised to sum to zero, plus one cross-field linear contrast--followed by four selective state-space blocks whose decay biases are staggered across the stack and a four-path readout. Because a score that merely tilts toward common style factors scores well on raw rank correlations, every model's scores are residualised against eight price-volume style factors before any metric is computed. Trained on four years of data covering roughly one thousand mid-capitalisation Chinese A-shares and evaluated once on a held-out year, STRATA reaches a style-residualised rank information coefficient of 0.0728 (information ratio 1.128, signal long-short Sharpe 12.85), ahead of six parameter-matched sequence baselines on all four reported metrics; on rank IC the day-level paired gap against every baseline is significant at p &lt; 0.001, and among the arms competitive on predictive power STRATA's scores are the least explained by the controls. The close-to-close target opens before the score exists: measured instead from the first executable price, the decile spread is indistinguishable from zero, while the ordering of the seven architectures is unchanged and STRATA's margin widens.",
+    "readingTime": 2
+  },
+  {
+    "title": "A Constant Metric Distortion Protocol for Approval Voting Given Plurality Polls",
+    "title_en": "A Constant Metric Distortion Protocol for Approval Voting Given Plurality Polls",
+    "authors": [
+      "Fabian Frank",
+      "Jannik Peters"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28340v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-a-constant-metric-distortion-protocol-for-approval",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nApproval voting is a simple and well-regarded voting rule: voters submit approval ballots (subsets of the candidates) and the candidate receiving the most approvals wins. One major limitation of approval voting is that it is not clear which candidates voters should approve if they have an underlying strict order over the candidates. In this paper, we initiate the study of approval voting under a simple kind of information: plurality polls. That is, we assume that for each candidate we know the share of voters who rank this candidate as their top choice. Using these plurality polls, we suggest a simple protocol parameterized by a fraction $k \\in (0,1)$: every voter should approve the smallest prefix of their preference list containing the first choices of at least a fraction $k$ of the voters. We evaluate this protocol via the framework of metric distortion and show that for the optimal choice of $k$, this rule achieves a metric distortion of $2 + \\sqrt{5} \\simeq 4.236$. The proof techniques we use for this statement also show that the Bucklin voting rule has a metric distortion of at most $5$. Finally, we evaluate the robustness of our protocol to noise and show that the upper bounds obtained for our protocol are tight.",
+    "readingTime": 2
+  },
+  {
+    "title": "A Formal Limitation on Learning Human Language From Textual Corpora",
+    "title_en": "A Formal Limitation on Learning Human Language From Textual Corpora",
+    "authors": [
+      "Emily Cheng",
+      "Ryan Cotterell"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28560v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-a-formal-limitation-on-learning-human-language-fro",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nCan a listener recover what a speaker means from the form of an utterance alone? We answer this question information-theoretically, and for a listener given by any featurizer of text, including the hidden states of contemporary large language models. Modeling language use as a joint distribution over meanings, contexts, and utterances, we derive upper bounds on the probability that a decoder recovers a speaker's intended meaning from a representation of the utterance. The bounds are governed by the uncertainty that form leaves about meaning, which splits into an irreducible part and a part that only (extralinguistic) context, but never the utterance alone, can resolve. Because these quantities are intrinsic to language, no representation, however much text or supervision produced it, can surpass them; the bounds hold whether the space of meanings is discrete or continuous. Experiments on artificial languages, Mandarin zero-pronoun resolution, and color reference provide empirical evidence in support of the theory.",
+    "readingTime": 1
+  },
+  {
+    "title": "AcrossVAM1.0: Particle World Modeling for Text-Assisted Robot Video Prediction",
+    "title_en": "AcrossVAM1.0: Particle World Modeling for Text-Assisted Robot Video Prediction",
+    "authors": [
+      "Yafei Zhang",
+      "Nan Wu"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28491v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-08-28-acrossvam10-particle-world-modeling-for-text-assis",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nPredicting robot videos requires both precise motion reasoning and preservation of high-frequency appearance, yet monolithic pixel models entangle these objectives and often conceal their progress behind a strong last-frame baseline. We present AcrossVAM1.0, a lightweight, text-assisted video action model that factorizes future prediction into object-centric motion and dense appearance. A frozen SAM3-DLP codec decomposes four context frames into semantic particles for the robot, arm, and gripper, together with a background latent. A 0.28M-parameter spatio-temporal Transformer aligns particle identities, rolls their states forward, and is modulated by a frozen OpenCLIP instruction embedding through FiLM. A causal dual-stream decoder combines particle-rendered motion with appearance encoded exclusively from the last observed frame; a residual refiner and learned delivery mask produce five future frames without access to future appearance. On our VRS benchmark constructed from diverse real-robot trajectories, particle dynamics reduce trajectory error by 21.0\\% over persistence. Across three delivery-mask seeds, AcrossVAM1.0 improves future-frame PSNR/SSIM from 19.97/0.796 to 20.573/0.8004, while raw particle generation improves motion-region PSNR from 11.89 to 13.23. The delivered model does not yet beat persistence in LPIPS, and correct-versus- shuffled language changes trajectory error by only 2.8--3.1%. We report these limitations alongside oracle, negative-control, multi-seed, and per-robot analyses. The results show that explicit particle dynamics are a promising low-dimensional interface for robot video prediction, while robust language grounding and appearance delivery remain the principal open challenges.",
+    "readingTime": 2
+  },
+  {
+    "title": "Adaptive Strategy Generation for Boundary Value Exploration Beyond Numeric Inputs",
+    "title_en": "Adaptive Strategy Generation for Boundary Value Exploration Beyond Numeric Inputs",
+    "authors": [
+      "Sabinakhon Akbarova",
+      "Felix Dobslaw",
+      "Robert Feldt"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28230v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-adaptive-strategy-generation-for-boundary-value-ex",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nSoftware behavior often changes abruptly at boundaries between input regions, and these transitions are known to be fault-prone. Boundary Value Exploration (BVE) automates boundary discovery by searching for pairs of similar inputs that nevertheless trigger different program behaviors. Existing automated BVE techniques rely on mutation operators hand-engineered for each input type, or even for each function under test, which has confined their use to numeric inputs. We present ABEX, an agentic LLM-based framework that replaces operator engineering with adaptive strategy generation: specialized LLM agents propose, select, and execute boundary-exploration strategies, guided by execution feedback and a quality-diversity (QD) archive. Because strategies are expressed in natural language, they can encode both type-level and function-specific knowledge, and effective strategies can even be stored and reused. We evaluate ABEX in a black-box setting on 20 functions with numeric, string, array, and mixed inputs. On numeric functions, ABEX outperforms a state-of-the-art QD method on 10 of 11 functions, with average QD-scores 11.7x higher. On non-numeric functions, addressed here for the first time in automated black-box BVE, ABEX discovers domain-aligned boundary behaviors for all subjects. Mutation testing shows the discovered boundaries are fault-revealing: with equally sized test suites, ABEX reaches an average mutation score of 86.2% versus 61.9% for the QD baseline, and kills nine times as many hard-to-detect stubborn mutants. An ablation study identifies adaptive strategy generation as the primary driver of these gains.",
+    "readingTime": 2
+  },
+  {
+    "title": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
+    "title_en": "Aero Hand Open: A Simulation-Ready Tendon-Driven Hand for Dexterous Manipulation Learning",
+    "authors": [
+      "Nan Wang",
+      "Mohit Yadav",
+      "Jonathan Wulff",
+      "Aidan Rosenbaum",
+      "Kezhou Chen",
+      "Yuvan Sharma",
+      "Xu Dong",
+      "Yiwei Tao"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28578v1",
+    "doi": "",
+    "tags": [
+      "绳索驱动",
+      "手部康复"
+    ],
+    "tags_en": [
+      "cable-driven",
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "绳索驱动",
+      "手部康复"
+    ],
+    "keywords_en": [
+      "cable-driven",
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-aero-hand-open-a-simulation-ready-tendon-driven-ha",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nTendon-driven hands are anthropomorphic, and moving the actuators off the joints is what makes a hand of this capability affordable to build. Two effects produce that saving. Routing force through a cable removes the requirement that a motor fit inside the joint it drives, so smaller and cheaper motors suffice, and one motor can drive several joints through a single cable, so fewer motors are needed. They are also harder to learn on than a direct-drive hand. The underactuated transmission that produces the saving is itself difficult to represent in a simulator, and the joints one cable drives are not independently commandable. We present Aero Hand Open, a tendon-driven anthropomorphic hand that is released simulation-ready. Three things ship with it. A simulation model reproduces the cable transmission itself. An identified actuation map connects that model to the motor commands in both directions, including the three-way coupling of the thumb. A reinforcement learning package trains policies for the hand. Together they let a policy be trained entirely in simulation and run on the hand with no fine-tuning and no state estimation. We release the mechanical design, the simulation model, the identified mapping, the training environment and the deployment stack.",
+    "readingTime": 2
+  },
+  {
+    "title": "ARC-CT: Anatomy-Routed Contrastive Vision-Language Learning for 3D Chest CT",
+    "title_en": "ARC-CT: Anatomy-Routed Contrastive Vision-Language Learning for 3D Chest CT",
+    "authors": [
+      "Huseyin Umut Isik",
+      "Mehmet Alp Ozaydin",
+      "Sila Kurugol",
+      "Şeyda Ertekin"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28455v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-arc-ct-anatomy-routed-contrastive-vision-language-",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nContrastive vision-language learning uses paired chest CT volumes and radiology reports to learn abnormality classifiers without manually annotated labels. However, two characteristics of chest CT challenge conventional global contrastive learning. First, many critical abnormalities are small or anatomically localized, and pooling an en- tire volume into a single embedding may dilute their visual evidence. Second, the standard contrastive objective treats every other scan in a batch as a negative. Because many chest CTs share abnormalities, this objective incorrectly pushes co-positive pairs apart. We propose Anatomy-Routed Contrastive Learning for 3D Chest CT (ARC-CT), a region-aware framework that addresses these limitations using only la- bels extracted from reports by an LLM, with no manual annotations or bounding boxes. ARC-CT combines three components: (1) an Anato- myQFormer localizing evidence via queries constrained by automatically generated organ masks; (2) a label-Jaccard soft InfoNCE objective in- tegrating the standard one-hot target with the label-set overlap of each pair, which reduces false-negative penalties between studies that share clinical findings; and (3) an organ-level alignment loss connecting mask- pooled visual features to organ-specific report text extracted offline with a large language model. ARC-CT achieves a 0.86 mask-free macro AUC across 18 abnormalities using a compact 3D ResNet-18 backbone. Over- all, ARC-CT outperforms both comparable efficient baselines and sev- eral larger transformer models. Our code and weights are available at https://github.com/arc-ct/arc-ct.",
+    "readingTime": 2
+  },
+  {
+    "title": "Astrophysical Sensitivity Projections for the IceCube Upgrade",
+    "title_en": "Astrophysical Sensitivity Projections for the IceCube Upgrade",
+    "authors": [
+      "R. Abbasi",
+      "M. Ackermann",
+      "J. Adams",
+      "J. A. Aguilar",
+      "M. Ahlers",
+      "J. M. Alameddine",
+      "S. Ali",
+      "N. M. Amin",
+      "K. Andeen",
+      "C. Arg{ü}elles"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28395v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-astrophysical-sensitivity-projections-for-the-icec",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nEmbedded in the South Pole's glacial ice, IceCube detects neutrino-induced Cherenkov light using an array of digital optical modules equipped with single photomultiplier tubes (PMTs). The new extension installed in 2025/2026, the IceCube Upgrade, introduces densely instrumented multi-PMT optical modules within the existing infill array known as IceCube DeepCore. It is expected to enhance sensitivity in the GeV regime, with commissioning of the detector expected to be complete by the end of 2026. We present the projected sensitivities of the IceCube Upgrade for three key analyses: neutrino transient searches, steady emission from point sources such as NGC 1068, and diffuse emission from the Milky Way. These case studies represent direct extensions of current IceCube analyses. Using new Monte Carlo datasets, we demonstrate that the IceCube Upgrade achieves order-of-magnitude improvement in sensitivity at low energies ($\\lesssim 10$ GeV) for time-dependent sources across short timescales. Conversely, for time-independent searches, the relative impact of the IceCube Upgrade's low-energy data is diluted by the decade-long accumulation of high-energy archival data. Nevertheless, we project significant improvements for soft-spectrum sources especially across the southern sky, driven by the IceCube Upgrade's superior background rejection capabilities. The improved sensitivity at low energies for both transient and steady sources will open up an expanded discovery window for IceCube in the GeV band over the next decade.",
+    "readingTime": 2
+  },
+  {
+    "title": "Band-like Carriers in a Soft, Anharmonic Lattice: Lead-Halide Perovskites",
+    "title_en": "Band-like Carriers in a Soft, Anharmonic Lattice: Lead-Halide Perovskites",
+    "authors": [
+      "Young Mi Lee",
+      "Inhee Maeng",
+      "Jinwoo Park",
+      "Seung-Jae Oh",
+      "Min-Cherl Jung"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28104v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb"
+    ],
+    "slug": "2026-08-28-band-like-carriers-in-a-soft-anharmonic-lattice-le",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nLead-halide perovskites APbX3 present a striking dichotomy: they exhibit band-like electronic transport despite their exceptionally soft and anharmonic lattices. Optically and electrically, they resemble conventional direct-gap semiconductors, exhibiting light carrier masses and steep absorption onsets, whereas their lattices display liquid-like dynamics, including overdamped octahedral motions, quasielastic Raman central peaks, and exceptionally low thermal conductivities. Solution-processed films nevertheless sustain micrometre-scale carrier diffusion at defect densities that would severely suppress transport in conventional semiconductors. Here, we argue that these apparently disparate properties emerge from a common microscopic framework: a soft, strongly anharmonic, and polar [PbX3]- framework, strongly influenced by the Pb 6s2 lone pair, which simultaneously shapes the antibonding orbital character of the band edges, the magnitude and multiple timescales of the dielectric response, and the slow relaxational dynamics that dress every charge carrier. We therefore invert the conventional order and develop the lattice before the electronic structure, because the nominally cubic phase is better viewed as a thermally fluctuating ensemble of locally symmetry-broken configurations rather than a single geometry. Within this framework, we discuss excitons, Frohlich large polarons in the intermediate-coupling regime, carrier transport, defect tolerance, dimensional reduction in two-dimensional and nanocrystalline derivatives, and symmetry-breaking phenomena. We critically assess three contested issues - defect tolerance, ferroelectricity, and the interpretation of the T-3/2 mobility law - and identify seven open questions together with the key measurements needed to resolve them",
+    "readingTime": 2
+  },
+  {
+    "title": "BanglaMed-QA: A Question Answering System for Healthcare Support in Bangla",
+    "title_en": "BanglaMed-QA: A Question Answering System for Healthcare Support in Bangla",
+    "authors": [
+      "Rowzatul Zannat",
+      "Abdullah Al Shafi",
+      "K. M. Azharul Hasan",
+      "Atia Shahnaz Ipa"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28329v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-banglamed-qa-a-question-answering-system-for-healt",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nMedical question answering (QA) systems have become crucial tools for providing reliable health information. But they remain very unexplored for low-resource languages like Bangla due to limited datasets and systems tailored to these languages. To address this, we introduce BanglaMed-QA, a robust QA system specifically designed for the Bangla medical domain. The process begins with building a structured medical knowledge base that includes 4,493 QA pairs in 9 categories under 506 diseases. To improve semantic comprehension, domain-specific root word dictionaries and synonym sets are proposed, in addition to part-of-speech tagging for anaphora resolution. We adopt supervised machine learning models in which SVM is found to be the best model to categorize questions. Multiple similarity metrics, including cosine, Jaccard, BM25, and Levenshtein, are applied with soft and hard voting methods for query matching. The performance of the QA system has been evaluated in two aspects, with a 95% F1 score in an automated evaluation and an average human satisfaction rating of 0.9 out of 1.0. This validates the real-world application of BanglaMed-QA in closing the healthcare information gap for Bangla speakers.",
+    "readingTime": 1
+  },
+  {
+    "title": "ChainSplat: A Physics-Inspired Screw-Theoretic Model for Learning Deformable Linear Object Dynamics from Multi-View RGB Videos",
+    "title_en": "ChainSplat: A Physics-Inspired Screw-Theoretic Model for Learning Deformable Linear Object Dynamics from Multi-View RGB Videos",
+    "authors": [
+      "Seungyeon Kim",
+      "Noémie Jaquier"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28570v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-chainsplat-a-physics-inspired-screw-theoretic-mode",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nIdentifying the underlying dynamics and 3D geometry of deformable linear objects (DLOs), such as cables, ropes, and hoses, is essential for accurate robotic manipulation, but remains challenging due to their high-dimensional configuration spaces and diverse behaviors arising from varying material properties. Existing methods often rely on multi-stage pipelines and auxiliary depth inputs, which are prone to errors under dynamic interactions, while their high-dimensional state representations make model-based control computationally expensive. In this paper, we introduce ChainSplat, a physics-inspired framework that jointly learns the 3D geometry, appearance, kinematics, and dynamics of DLOs solely from multi-view RGB videos. ChainSplat represents a DLO as an open-chain structure of rigid links connected by revolute joints, yielding an analytic, screw-theoretic model with a compact state representation parameterized by joint configurations. By integrating this formulation with Gaussian splatting, ChainSplat jointly recovers DLO dynamics, kinematics-aware 3D geometry, and appearance, while enabling high-fidelity RGB rendering from arbitrary states. Through real-world experiments, we demonstrate that ChainSplat achieves state-of-the-art performance in dynamics predictions, 3D geometry reconstruction, and RGB rendering across dynamic interactions. ChainSplat further enables real-time state and force estimation, as well as accurate model-based trajectory optimization, highlighting its practical utility for real-world robotic manipulation of DLOs. Accompanying source code and video are available at: https://chainsplat.github.io.",
+    "readingTime": 2
+  },
+  {
+    "title": "Compaction in a deformable porous cylinder with elastic boundaries",
+    "title_en": "Compaction in a deformable porous cylinder with elastic boundaries",
+    "authors": [
+      "Richard Mcnair",
+      "Kerstin Schirrmann",
+      "Anne Juel",
+      "Igor L. Chernyavsky"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28537v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-compaction-in-a-deformable-porous-cylinder-with-el",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nPerfusion of soft materials such as biological tissue or hydrogels is essential for the functioning of organ and laboratory systems such as chromatographic columns and bioreactors. Inspired by these applications, we model fluid-driven compaction in a long, thin cylindrical porous medium bounded by an impermeable elastic membrane and study how flow regimes relate to elastic parameters. Using a Lagrangian formulation of Darcy flow coupled to small-strain linear elasticity with porosity dependent permeability and elastic moduli, we perform an asymptotic reduction in the small aspect ratio limit and obtain a leading-order nonlinear diffusion equation for the porosity, which we solve numerically. Whereas rigid boundaries produce a compaction plateau, compliant walls exhibit, at most, an intermediate plateau beyond which the flow increases once the imposed pressure becomes comparable to the product of membrane stiffness and initial porosity. When the membrane is less stiff than the porous medium, flow rate can exceed that expected for a rigid medium. A parameter space map distinguishes regimes where plateau and breakthrough occur, where the steady flow rate is below (sub-Darcy) or above (super-Darcy) the undeformable-medium prediction, and delineates the small-strain domain in which the theory applies. An asymptotic solution for negligible gravity captures the departure from the plateau and yields compact expressions for effective permeability and flow rate.",
+    "readingTime": 2
+  },
+  {
+    "title": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
+    "title_en": "ContextPilot: Teaching Agents for Proactive Context Management via Fine-grained RL",
+    "authors": [
+      "Zhuoshi Pan",
+      "Qizhi Pei",
+      "Junru Lu",
+      "Honglin Lin",
+      "H. Vicky Zhao",
+      "Di Yin",
+      "Xing Sun"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28476v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-contextpilot-teaching-agents-for-proactive-context",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nLong-horizon agentic tasks require large language models (LLMs) to iteratively retrieve, integrate, and maintain dispersed information across multi-turn interactions, but preserving all interaction histories leads to a continuously growing working context. Recent proactive context management methods allow models to edit their own working context with specialized tools, yet they still face three key limitations: (1) a limited toolset restricted to search, deletion, and summarization, with no support for global planning, long-term memory, and adaptive compression; (2) inefficient exploration that treats context management actions uniformly despite their heterogeneous impacts on final outcomes; and (3) coarse-grained credit assignment that assigns the final trajectory-level reward to all intermediate context editing actions during RL. To bridge these gaps, we introduce ContextPilot, a proactive context management framework for long-horizon agentic reasoning. Our approach systematically augments the toolset with planning, long-term memory, and soft context offloading tools. We further propose an RL method tailored for context management, which uses context and entropy variation to identify critical editing decisions for branch sampling and estimates action-level advantages from all branched trajectories that pass through the corresponding context editing action. Experiments on long-context QA and deep search tasks show that ContextPilot achieves stronger performance with a more compact working context, consistently outperforming existing baselines across various base models and benchmarks. Code is available at https://github.com/Tencent/ContextPilot.",
+    "readingTime": 2
+  },
+  {
+    "title": "Cooperative Risk-Aware Exploration in Heterogeneous Multi-Robot Systems Using Algorithmic Altruism",
+    "title_en": "Cooperative Risk-Aware Exploration in Heterogeneous Multi-Robot Systems Using Algorithmic Altruism",
+    "authors": [
+      "Brooks A. Butler",
+      "Jair Certório",
+      "João P. Hespanha",
+      "Magnus Egerstedt"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28409v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-cooperative-risk-aware-exploration-in-heterogeneou",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nMulti-robot systems are well-positioned for exploration in hazardous environments, but effective deployment requires deciding not only where robots should gather information, but also how risk should be distributed across heterogeneous team members. This paper develops a game-theoretic framework for cooperative risk-aware exploration based on ecologically inspired altruistic behavior. Each robot selects a finite-horizon trajectory to maximize information gain while penalizing redundant exploration and expected hazard exposure. Heterogeneity is introduced through agent-specific value parameters for encoding altruistic coupling, which is modeled through relatedness weights inspired by Hamilton's rule. We introduce a game-theoretic structure for trajectory planning that defines a Social Nash Equilibrium, which modifies the utility of agent actions according to agent relatedness. This utility shaping causes agents to internalize the effect of their trajectory choices on teammates, encouraging lower-valued robots to accept risk when doing so benefits higher-valued agents and improves team performance. We define an exploration utility for agents that rewards area coverage and uncertainty reduction, while also penalizing redundancy and risk, enabling projected gradient-based waypoint optimization in a receding-horizon planner. Simulations show that altruistic planning reduces redundant exploration, improves inter-robot separation, and reallocates risk according to agent value while maintaining comparable map coverage. We further demonstrate the approach in hardware experiments, where planned waypoints are tracked by wheeled robots using single-integrator controllers and barrier certificates.",
+    "readingTime": 2
+  },
+  {
+    "title": "Effect of Thermal Broadening on Light Hadron Production in Heavy-Ion Collisions",
+    "title_en": "Effect of Thermal Broadening on Light Hadron Production in Heavy-Ion Collisions",
+    "authors": [
+      "Q'inich Coc",
+      "Oscar Garcia-Montero",
+      "Aleksas Mazeliauskas"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28456v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-effect-of-thermal-broadening-on-light-hadron-produ",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nThe measured hadron yields in heavy-ion collisions are well described by thermal particle production at temperatures close to the QCD pseudo-critical transition. However, if particles are produced in thermal equilibrium, then the in-medium effects, e.g., broadening of their spectral functions, must be taken into account. In this work, we study for the first time the effect of the thermal broadening of the light vector-meson spectral functions on light hadron production in heavy-ion collisions. We generalize the efficient resonance decay framework FastReso to resonances with finite-width spectral functions. We then compute the pion, kaon and proton spectra from the decays of hadron resonances for in-medium and vacuum spectral functions. We perform a simultaneous blast-wave fit with decay feed-down to measured particle spectra in central Pb-Pb and Xe-Xe collisions at the LHC. We find an increase in pion spectra at low momenta, from including thermally broadened $ρ$ and $ω$ mesons. Additional pion yield from finite-resonance widths reduces the commonly observed discrepancy between models and data, but does not completely resolve the soft pion puzzle in heavy-ion collisions.",
+    "readingTime": 1
+  },
+  {
+    "title": "Exact Risk Ratios for Weighted Data Selection in Linear Regression",
+    "title_en": "Exact Risk Ratios for Weighted Data Selection in Linear Regression",
+    "authors": [
+      "Guangjian Zhang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28007v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-08-28-exact-risk-ratios-for-weighted-data-selection-in-l",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nHanneke, Moran, Shlimovich and Yehudayoff (COLT 2025) posed the following open problem. A selector sees a finite dataset $D \\subseteq \\mathbb{R}^d \\times \\mathbb{R}$, picks at most $n$ examples together with nonnegative weights, and hands the weighted least squares objective to the minimum-norm ERM. Writing $F_w(d,n)$ for the worst-case ratio between the loss of the returned predictor on all of $D$ and the optimal loss, they proved $F_w(d,n)=\\infty$ for $n&lt;d$, $F_w(d,d)=d+1$ and $F_w(d,n)=1$ for $n \\ge 2d$, and asked for the value in the open regime $d&lt;n&lt;2d$. We determine this value in several cases. For every $d$ we prove $F_w(d,2d-1)=1+1/d$, which confirms a claim stated without proof in the original note. We further prove $F_w(3,4)=5/3$ and $F_w(4,5)=2$, the two smallest cells not covered by the endpoint formula. For every intermediate budget $n=d+k$ we prove the lower bound $F_w(d,d+k) \\ge 1+Γ_{d,k}$, where $Γ_{d,k}$ is an explicit harmonic quantity over balanced partitions, and we show that this bound is the exact minimax value over the class of datasets whose whitened gradient systems carry an orthogonal circuit-block structure. All three exact values match $1+Γ_{d,k}$, and we conjecture that equality holds throughout the open regime. The upper bound proofs run on a common geometric spine: a rigidity theorem for positive spanning configurations of loss gradients, classifications and structural reductions of small positive bases in $\\mathbb{R}^3$ and $\\mathbb{R}^4$, and a dimension-free extremal-basis argument that converts sign-cone geometry into five-point selections. We also give explicit counterexamples showing that several shorter routes fail, and constructive polynomial-time selection algorithms for all proved cases.",
+    "readingTime": 2
+  },
+  {
+    "title": "Fidelity Is Not Enough: Dispatch-Level Instrumentation for Agentic Datasheet Extraction",
+    "title_en": "Fidelity Is Not Enough: Dispatch-Level Instrumentation for Agentic Datasheet Extraction",
+    "authors": [
+      "Qing Ye",
+      "Meng-Hsuan Lin"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28439v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-fidelity-is-not-enough-dispatch-level-instrumentat",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nOne model passed our fidelity check without ever opening the datasheet. We found it while qualifying models for an internal extraction service: a structured-output constraint had silently disabled tool use, and the model answered anyway, with fabricated source text. Only the per-tool trace exposed it. Fidelity -- whether an extracted value matches the source -- is the standard measure for agentic document extraction, and it scores that run a success. We therefore log every tool call in an agentic benchmark of 25 hand-curated claims over three components, with 12 more on a fourth, 37 in all. From that dispatch record we build two instruments: a rule-based failure-attribution classifier, and a silent-failure detector whose two rules check only which tools were called, never the extracted value. The detector raises no flag on 207 clean fidelity-passing extractions across three model families, and recovers all 50 planted faults that withhold exactly the tools its rules check. The two results are not symmetric: the first bounds the false-positive rate, the second is recall by construction, and detection power against runs that call their tools and still answer wrongly is unmeasured. A second, independent oracle, a causal chamber that tests whether the datasheet's claims hold under physical measurement, is intentionally partial: it confirms only what the apparatus can exercise, a verifiable envelope of 2 of those 37 claims, and we give a taxonomy of why the rest are not physically gradable. Under a controlled perturbation, fidelity passes throughout while the chamber verdict flips exactly at the measurement uncertainty. Across three deployed model stacks (one destabilised by its serving stack, not by any capability gap) the tool layer buys portability and observability rather than accuracy, and earns its premium only once a document outgrows the context window.",
+    "readingTime": 2
+  },
+  {
+    "title": "From Small Talk to Rapport: Exploring Robot Self-Disclosure in Collaborative Tasks",
+    "title_en": "From Small Talk to Rapport: Exploring Robot Self-Disclosure in Collaborative Tasks",
+    "authors": [
+      "Kaitlynn Taylor Pineda",
+      "Anvii Mishra",
+      "Brian Chien",
+      "Angela Guo",
+      "Toluwani Williams",
+      "Ziang Xiao",
+      "Chien-Ming Huang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28154v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-from-small-talk-to-rapport-exploring-robot-self-di",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nPeople naturally chat while collaborating and share personal information (i.e., self-disclose) to build rapport and maintain social connections. As robots are increasingly developed to work with people, the effective use of these social behaviors to enhance engagement and support teamwork becomes ever more important. While prior work has shown that robot-initiated small talk can benefit human-robot collaboration, less is known about how best to design such small talk. In this work, we explore how self-disclosure may be designed to support small talk within a human-robot team---especially when the robot is an industrial manipulator that lacks anthropomorphic cues and performs physical work. We first developed an LLM-driven manipulator capable of partaking in small talk, adopting either a low-disclosure or high-disclosure strategy. We then conducted a user study (N = 50) to investigate how self-disclosure in small talk influences human-robot dynamics. Unexpectedly, participants disclosed more in the low-disclosure condition and reported stronger teaming and coordination than those in the high-disclosure condition. This effect was more pronounced among users with prior experience teaming with robots. These results suggest that increasing robot self-disclosure does not necessarily foster rapport, social connection, or reciprocal disclosure; other factors, such as prior HRI experience, should be considered.",
+    "readingTime": 2
+  },
+  {
+    "title": "Geometry-Controlled Dynamic Tensiometry Resolves Intrinsic Surfactant Adsorption Kinetics",
+    "title_en": "Geometry-Controlled Dynamic Tensiometry Resolves Intrinsic Surfactant Adsorption Kinetics",
+    "authors": [
+      "Camille Brigodiot",
+      "Boxin Deng",
+      "Christine Dalmazzone",
+      "Karin Schroën",
+      "Annie Colin"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28112v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-geometry-controlled-dynamic-tensiometry-resolves-i",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nAt short times, interfacial tension depends on experimental geometry because surfactant transport to the interface depends on the mass-transfer conditions.A predictive description therefore requires more than a dynamic tension curve or a fitted adsorption constant: interfacial thermodynamics, diffusion, and adsorption kinetics must be identified separately. Here, we combine equilibrium and diffusion measurements with a microfluidic EDGE tensiometer that provides a nearly stationary interface and controlled micrometer-scale transport. Equilibrium properties and diffusion are determined independently, leaving adsorption kinetics as the key unknown. Dynamic tension is then calculated using a nonequilibrium thermodynamic description, without assuming instantaneous equilibrium between the adsorbed layer and the subsurface solution. For the nonionic surfactant C$_{10}$E$_{8}$, equilibrium thermodynamics and transport are independently constrained, and a single intrinsic adsorption rate constant describes several concentrations. We extend the framework to SDS by including electrostatic interactions and subsurface-concentration dynamics, capturing transient depletion and replenishment. Once thermodynamic, transport, and kinetic parameters are identified, the model predicts dynamic interfacial tension beyond the geometry and conditions used to determine them. The microfluidic EDGE tensiometer thus provides both a reliable short-time tensiometry method and a quantitative framework for identifying the physical mechanisms governing surfactant mass transfer at interfaces.",
+    "readingTime": 1
+  },
+  {
+    "title": "GraspHOI: Full-Body 3D Human-Object Reconstruction with Finger-Level Grasps from a Single In-the-Wild Image",
+    "title_en": "GraspHOI: Full-Body 3D Human-Object Reconstruction with Finger-Level Grasps from a Single In-the-Wild Image",
+    "authors": [
+      "Semin Kim",
+      "Haechan Shin",
+      "Jongyoo Kim"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28386v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-08-28-grasphoi-full-body-3d-human-object-reconstruction-",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nExisting monocular full-body 3D human-object interaction (HOI) methods do not combine explicit finger-level grasp optimization with category-agnostic object reconstruction. Despite plausible body-object configurations, their fingers may float from or penetrate objects instead of forming a grasp. We present GraspHOI, the first framework that reconstructs a full-body 3D HOI from a single image while explicitly optimizing finger articulation against the reconstructed object. GraspHOI recovers object geometry directly, without predefined meshes or a fixed category vocabulary. It reconstructs the body, hands, and object separately, aligning them in metric camera space via depth-based registration and image-space alignment. Occlusion-aware palmar correspondences seat the object against the grasping hand, and contact-aware optimization refines arm and finger articulation to form surface contact without excessive penetration. Across four benchmarks and six baselines, GraspHOI improves relative human-object placement, hand accuracy, and contact plausibility. Full pipeline code will be released.",
+    "readingTime": 1
+  },
+  {
+    "title": "Hierarchical organization governs nonlinear mechanical reversibility in $ι$-carrageenan gels",
+    "title_en": "Hierarchical organization governs nonlinear mechanical reversibility in $ι$-carrageenan gels",
+    "authors": [
+      "Thomas Gibaud",
+      "Loïc Hilliou"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28527v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-hierarchical-organization-governs-nonlinear-mechan",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nCarrageenan gels are thermoreversible polysaccharide networks whose mechanical properties emerge from ion-mediated helix association, yet how their molecular organization controls nonlinear deformation remains poorly understood. Here, we investigate the temperature-dependent rheology of $ι$-carrageenan gels formed in KCl solutions using linear and nonlinear oscillatory rheology combined with normal-force measurements. $ι$-carrageenan forms homogeneous and mechanically reversible gels whose elastic modulus increases continuously with quench depth. Deep quenches generate pronounced strain stiffening before yielding, associated with the development of internal stresses revealed by negative normal forces. Remarkably, large deformations preserve the small-strain elastic modulus while progressively suppressing strain stiffening, demonstrating a partial mechanical reversibility of the network. We interpret these observations using a hierarchical network picture in which a persistent intermolecular network controls linear elasticity, while a more fragile mesoscale organization enables cooperative alignment and stress amplification under deformation. Our results highlight that nonlinear mechanics of thermoreversible polysaccharide gels are governed not only by molecular connectivity, but also by the reversible formation and eventually destruction of mechanically adaptive hierarchical structures.",
+    "readingTime": 1
+  },
+  {
+    "title": "Inclination-Induced Crossover in the Velocity Scaling of Lubrication-Mediated Droplet Motion",
+    "title_en": "Inclination-Induced Crossover in the Velocity Scaling of Lubrication-Mediated Droplet Motion",
+    "authors": [
+      "Haruka Hitomi",
+      "Ko Okumura"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28203v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-inclination-induced-crossover-in-the-velocity-scal",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe experimentally investigate the creeping motion of water droplets sliding along an inclined surface immersed in a viscous oil. The droplet velocity, width, and height are measured over a broad range of droplet sizes and inclination angles. The velocity increases with droplet radius according to a power law, but the corresponding exponent depends strongly on the inclination angle. At small inclinations, the exponent is close to 3/2, whereas at larger inclinations it progressively approaches 9/4. The results therefore reveal a continuous inclination-induced crossover in the velocity-size scaling of lubrication-mediated droplet motion. A scaling analysis based on Landau-Levich-Derjaguin film formation and viscous dissipation in the dynamic meniscus reproduces these limiting behaviors, which correspond to the quasi-spherical and pancake scaling regimes, respectively.   Remarkably, the evolution of the velocity scaling is substantially more pronounced than the corresponding evolution of the macroscopic droplet shape. While the velocity data progressively approach the pancake scaling law at large inclinations, the global droplet dimensions evolve in a more complex manner than expected from a simple pancake-shape picture. In particular, the approach to pancake-like velocity scaling occurs even when the measured droplet dimensions remain far from the corresponding pancake-limit geometry.   These observations suggest a crossover in the dominant lubrication-dissipation mechanism beneath the droplet that is not directly reflected in the global droplet morphology. The results identify inclination angle as a key control parameter governing lubrication-mediated droplet motion and highlight the distinction between global shape evolution and local dissipation dynamics in liquid-liquid systems.",
+    "readingTime": 2
+  },
+  {
+    "title": "Learning to Decode Concatenated Quantum Codes with Hierarchical Message Passing",
+    "title_en": "Learning to Decode Concatenated Quantum Codes with Hierarchical Message Passing",
+    "authors": [
+      "Jiahui Wu",
+      "Chao Zhang",
+      "Zipeng Wu",
+      "Shilin Huang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28571v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-learning-to-decode-concatenated-quantum-codes-with",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe introduce a neural message-passing framework for decoding general concatenated stabilizer codes. Soft beliefs propagate bidirectionally across concatenation levels, and lightweight neural networks learn only to aggregate incoming messages. For the concatenated $[[15,7,3]]$ quantum Hamming code, the resulting decoder achieves substantially higher thresholds than the state-of-the-art bidirectional hard-decision decoder under both bit-flip and depolarizing noise. In particular, the depolarizing pseudo-threshold nearly doubles, from $6.5\\%$ to $12.3\\%$. For many-hypercube codes, a decoder fine-tuned on circuit-level errors in Knill's teleportation-based error correction can achieve lower logical-CNOT failure rates than their dedicated decoder, using a fixed number of message-passing iterations instead of extensive combinatorial search. Our framework provides a generic decoding tool for exploring the design space of concatenated codes, including non-CSS constructions, toward low-overhead fault tolerance.",
+    "readingTime": 1
+  },
+  {
+    "title": "Learning to Difference: Adaptive Reversible Differencing (AdaRDiff) for Time Series Forecasting",
+    "title_en": "Learning to Difference: Adaptive Reversible Differencing (AdaRDiff) for Time Series Forecasting",
+    "authors": [
+      "Morad Laglil",
+      "Younes Hlal",
+      "Marouane El Hadari",
+      "Emilie Devijver",
+      "Eric Gaussier"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28134v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-learning-to-difference-adaptive-reversible-differe",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nReliable long-horizon time series forecasting is an important yet difficult problem. Trends and seasonality introduce complex temporal structure that challenges learning-based forecasting models. Differencing, which subtracts nearby past values to remove such structure, is the classical remedy, but its reliance on hand-picked orders and periods has kept it largely absent from recent deep architectures. We propose \\textbf{\\underline{Ada}}ptive \\textbf{\\underline{R}}eversible \\textbf{\\underline{Diff}}erencing \\textbf{(AdaRDiff)}, a generalized differencing approach that uses learnable weights to simplify the series through weighted differencing with previous time instants. This yields stabilized residuals on which forecasting is performed, after which the removed components are restored autoregressively to reconstruct the forecast, capturing trend and seasonality jointly through a single operator. This reconstruction admits a closed-form convolutional expression, which parallelizes on GPU and yields up to $33.7\\times$ speedup over the naive recurrence. We furthermore rely on a two-phase training schedule that separates temporal structure discovery from reconstruction learning, as suggested by a theoretical analysis of the gradient when using a linear forecasting model. AdaRDiff attains state-of-the-art forecast accuracy across eight benchmarks spanning electricity, weather, traffic, and energy, at negligible parameter cost. Furthermore, it is designed as a plug-and-play module: integrating AdaRDiff improves eight diverse backbones, from linear models to Transformers, in the large majority of cases, by up to $25.9\\%$ with a linear backbone and $18.3\\%$ with iTransformer.",
+    "readingTime": 2
+  },
+  {
+    "title": "Linear Temporal Logic Translation via Human-Inspired Self-Constrained Reasoning for Robot Task Specification",
+    "title_en": "Linear Temporal Logic Translation via Human-Inspired Self-Constrained Reasoning for Robot Task Specification",
+    "authors": [
+      "Haofei Hou",
+      "Fanxu Meng",
+      "Shunyi Zhao",
+      "Kairui Yang",
+      "Mengchen Cai",
+      "Lecheng Ruan",
+      "Qining Wang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28435v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-linear-temporal-logic-translation-via-human-inspir",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nMany robotic tasks are temporally extended and demand precise specifications of subgoals, constraints, and their temporal ordering. Yet human operators typically communicate such tasks in natural language, which is inherently ambiguous, underspecified, and context dependent. Translating human instructions into formal task specifications, such as Linear Temporal Logic (LTL), is therefore essential for verifiable and safe robotic execution. Existing LLM-based translators attempt to bridge this gap through open-ended reasoning or post-hoc constraint enforcement, but the former may violate domain constraints, whereas the latter can disrupt the reasoning needed for novel instructions. This paper proposes Self-Constrained Reasoning (SCR), a framework that mitigates this trade-off by internalizing structural knowledge into the model's decision-making process rather than imposing it as an external filter. By combining a structural constraint representation with a hierarchical decision-making formulation, SCR guides reasoning within a formally grounded space while preserving adaptability to unseen instructions. Experiments show that SCR improves both domain-constraint satisfaction and generalization, providing an effective and interpretable approach for translating human intent into verifiable specifications for robotic execution.",
+    "readingTime": 1
+  },
+  {
+    "title": "LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering",
+    "title_en": "LoopArena: Benchmarking Models as Runtime Controllers for Loop Engineering",
+    "authors": [
+      "Yi Wang",
+      "Haopeng Zhang",
+      "Chengxiang Huang",
+      "Rui Dai",
+      "Kaikui Liu",
+      "Piotr Koniusz",
+      "Xiangxiang Chu"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28281v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-08-28-looparena-benchmarking-models-as-runtime-controlle",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nLoop Engineering is emerging as a practice for organizing development work around coding agents. Instead of writing each prompt by hand, practitioners design loops that monitor progress, assign work, run checks, and decide what the agent should do next. Even with a capable coding agent, a loop may trust a stale progress note, skip needed verification, spend its budget in the wrong direction, or stop before the task is safe to submit. Yet the final outcome of one end-to-end run cannot tell whether success or failure reflects the loop's guidance or the coding agent's ability to carry out the task. We introduce LoopArena, a benchmark for evaluating how well one model can guide a separate coding agent through a long-running task. The model under evaluation is the \\textbf{Controller}: after each coding round, it receives a structured summary of the run and instructs a separate, fixed coding agent, the \\textbf{Worker}, on what to do or verify next, or decides whether to stop. LoopArena evaluates this ability in three complementary settings that differ in execution scope and cost. Type I scores next-step Loop Contract selection through execution-validated questions without running the Worker at evaluation time. Type II executes repeated control over a selected slice of a full task, while Type III evaluates the paired full task from its original state. On full tasks, the best observed Strict Success Rate is \\textbf{24.69\\%}, leaving substantial room for improvement in long-horizon loop control. Across Controllers, the paired reduction in estimated inference cost averages \\textbf{64.4\\%}, and Type II produces a similar ordering under the main Core criterion (Spearman's \\(ρ=\\textbf{0.9747}\\)). We release the benchmark data and evaluation code at https://github.com/AMAP-ML/LoopArena .",
+    "readingTime": 2
+  },
+  {
+    "title": "Low-Power End-to-End Cochlear Implant Speech Denoising with Spiking Neural Networks",
+    "title_en": "Low-Power End-to-End Cochlear Implant Speech Denoising with Spiking Neural Networks",
+    "authors": [
+      "Ludovic Boulanger",
+      "Sean U. N. Wood"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28493v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-low-power-end-to-end-cochlear-implant-speech-denoi",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nCochlear implants (CI) restore hearing for individuals with severe to profound hearing loss. However, CI users often struggle to understand speech in noisy environments. Deep neural networks (DNN) have shown promise in enhancing speech for CI users, yet their high energy demands make them non-ideal for low-power CI processors. Spiking neural networks (SNN), on the other hand, offer comparable performance with significantly lower energy consumption. Hence, we propose a novel SNN inspired by the Deep ACE architecture that simultaneously performs speech enhancement and CI coding. Our model achieves competitive vocoded short-time objective intelligibility (VSTOI) and signal-to-noise ratio improvement (SNRi) scores compared to Deep ACE, while achieving more than a sixfold reduction in energy consumption.",
+    "readingTime": 1
+  },
+  {
+    "title": "LUCID: An Agentic AI Framework on Digital-Twin in the Loop for QoS-Guaranteeing Robotic Control",
+    "title_en": "LUCID: An Agentic AI Framework on Digital-Twin in the Loop for QoS-Guaranteeing Robotic Control",
+    "authors": [
+      "Hyeonsu Lyu",
+      "Minwoo Kim",
+      "Sehyun Ryu",
+      "Hyun Jong Yang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28437v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-lucid-an-agentic-ai-framework-on-digital-twin-in-t",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nCloud robotics relies on the timely uplink of high-volume sensing streams, yet dynamic environments continually shift the feasible combinations of trajectories, active-robot count, and per-robot QoS. Because existing approaches formulate trajectory planning (TP) and radio resource management (RRM) as a single fixed optimization problem, they cannot reconfigure these coupled decisions as conditions evolve, resulting in transient QoS violations. However, evolving operator intents change which quantities-such as the active-robot count and per-robot QoS-are fixed, optimized, or relaxed. Furthermore, the computational cost of evaluating trajectory-dependent wireless conflicts has made it difficult to build large-scale Digital-Twin-in-the-Loop (DITL) testbeds responsive enough for such dynamic orchestration. We present LUCID, an LLM-agent--orchestrated, uplink-aware cloud-robotics pipeline that moves TP--RRM from solving a fixed formulation to dynamically orchestrating optimization problem schemas within a DITL environment. Driven by the operator's high-level intent, LUCID treats the TP--RRM formulation as a bounded template whose variables, objectives, and constraints are dynamically configured, while SimBridge enables repeated ray-tracing evaluation by converting large-scale robotics scenes into wireless-ready DTs. By integrating collision-free path planning with a spectral-radius RRM validator, LUCID identifies wireless bottlenecks and restructures the problem schema on the fly to efficiently find the verified feasible state. Experiments confirm that LUCID robustly adapts to changing intents, active-robot counts, and scenes, while a multimodal surrogate model, FastConfigNet, reduces planning latency.",
+    "readingTime": 2
+  },
+  {
+    "title": "Machine learned designs of functional colloidal foldamers",
+    "title_en": "Machine learned designs of functional colloidal foldamers",
+    "authors": [
+      "Ryan van Mastrigt",
+      "Zorana Zeravcic"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28554v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-machine-learned-designs-of-functional-colloidal-fo",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nA protein's function follows from the structure it adopts, and which structure that is depends on the pathway taken. In programmable matter the target is fixed before assembly, and whatever else forms is treated as error. Here we show that pathways themselves form a design space. Using reinforcement learning, we fold model DNA-coated droplet chains into rigid two-dimensional geometries, uncovering two classes of pathways: downhill, in which bonds are only added, and detour, in which bonds are broken and remade before the target is reached: for some the only route that exists. Coarse-graining pathways by interactions gives experimentally realizable protocols. Some produce one geometry, others several: structures sharing a detour route can be cycled between, while those that coexist assemble into superstructures inaccessible to a uniform product. Function emerges from the pathways rather than being designed. Designing the process instead of the components could give colloidal materials that reconfigure and repair themselves on demand.",
+    "readingTime": 1
+  },
+  {
+    "title": "MaCoPlanner: LLM-Assisted Manual-Compiled Task Planning with Proactive Safety Verification for Robotic Industrial Panel Operation",
+    "title_en": "MaCoPlanner: LLM-Assisted Manual-Compiled Task Planning with Proactive Safety Verification for Robotic Industrial Panel Operation",
+    "authors": [
+      "Guipeng Xin",
+      "Jiahe Xua",
+      "Mohammad Deghat",
+      "Chenhui Wan",
+      "Jie Liu",
+      "Youmin Hu",
+      "Zhongxu Hu"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28300v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-macoplanner-llm-assisted-manual-compiled-task-plan",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nRobotic industrial panel operation requires not only accurate control localization but also compliance with operating procedures, safety rules, and device-state constraints distributed across heterogeneous manuals. This study presents MaCoPlanner, a task-planning framework built on knowledge compiled from equipment manuals that converts equipment manuals into a typed intermediate representation, retrieves task- and state-relevant evidence, and uses it to support plan generation. Before actuation, candidate plans are symbolically rolled out and checked against procedural and state-transition constraints; detected violations are localized and returned for targeted repair, while unresolved plans are rejected. A separate execution interface grounds verified symbolic actions to physical controls and updates the device state. Under an independent evaluation oracle, MaCoPlanner achieves a final violation rate of 2.7%, and 26.3% of the runs in the repair analysis are rejected after exhausting the refinement budget. Compared with Raw-Manual, task success increases from 62.8% to 84.4% on Level-2 tasks and from 25.9% to 43.2% on Level-3 tasks. Experiments on a controller-panel simulator without an attached industrial load further demonstrate integrated execution feasibility under representative interaction conditions, without claiming industrial deployment readiness.",
+    "readingTime": 1
+  },
+  {
+    "title": "Manifold4D: Denoising on Point Cloud Rendered Manifolds for Video Re-shooting",
+    "title_en": "Manifold4D: Denoising on Point Cloud Rendered Manifolds for Video Re-shooting",
+    "authors": [
+      "Yongqi Mao",
+      "Zijia Dai",
+      "Zhishuo Liu",
+      "Wei Xu",
+      "Kaiwei Wang",
+      "Guotao Meng"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28174v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-manifold4d-denoising-on-point-cloud-rendered-manif",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nVideo re-shooting re-renders a monocular video of a dynamic scene along a user-specified camera trajectory, and the dominant recipe supplies the target geometry explicitly: per-frame depth lifts the source video into a 4D point cloud, which is rasterized along the trajectory into a point cloud render. Because the render and the source video are both handed to the network as visual conditions, they compete at every denoising step, leaving the model with a trust dilemma --- how much of the render to believe --- which can degrade trajectory control or visual quality on data outside the training distribution. We argue that a render already pixel-aligned with the target view does not need to be supplied as an explicit conditioning stream at all. We propose MANIFOLD4D, which injects the render directly into the initial noise of flow matching, so that generation no longer departs from standard Gaussian noise but from a new noise manifold carrying geometric information, leaving the source video as the only visual condition. The render is thus used exactly once, and the network is never asked to learn how to read it; in subsequent denoising steps the model can focus on the source video. On our DAVIS-Traj benchmark and on the Vista4D evaluation set, MANIFOLD4D attains the best camera-control accuracy on every metric, lowering rotation error by 25% and 27% and translation error by up to 32% over the strongest baseline, while matching it in video fidelity and leading on real-world novel-view photometric quality. In a user study, our method achieves clear advantages in trajectory following and dynamic consistency. The gap widens as the yaw amplitude grows past the training range, and the model still recovers correct dynamic motion from the source video when the render is deliberately corrupted, confirming that the geometric prior guides generation without overriding it.",
+    "readingTime": 2
+  },
+  {
+    "title": "Nonholonomic collective flows: velocity--orientation locking in a continuum with microstructure",
+    "title_en": "Nonholonomic collective flows: velocity--orientation locking in a continuum with microstructure",
+    "authors": [
+      "Gaetano Napoli"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28380v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-nonholonomic-collective-flows-velocity-orientation",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe develop a continuum theory for a fluid of elongated particles that advance along their own axes. The same kinematics is ideally shared by flocks of sheep, self-propelled rods, vehicular traffic, and turning flocks of birds. Within the framework of continua with vectorial microstructure, in which each point also carries an orientation, we impose the no-side-slip (skate) condition $\\vv=u\\,\\nn$ as an ideal, non-integrable internal constraint. We derive the pure equations of motion and the equation governing the constraint reaction from the principle of virtual power. Using a constitutive closure provided by the Ericksen-Leslie theory of nematic liquid crystals, we show how the constraint also shapes collective effects. It turns parabolic orientational diffusion into hyperbolic orientation-density waves and forbids any steady simple shear. It fixes the empirical Toner-Tu convective coefficient to the flow-alignment ratio measured in colloidal rollers, thereby providing a mechanical foundation for angular sound in micropolar active hydrodynamics. It also recovers the inertial spin model of bird flocks, with the addition of a banking force and a turn-density coupling. Finally, it recovers the classical macroscopic models of one-dimensional traffic flow, while describing steering, lateral tyre forces, and road geometry in two dimensions.",
+    "readingTime": 1
+  },
+  {
+    "title": "On Nonsmooth and Relatively Weakly Convex Minimization",
+    "title_en": "On Nonsmooth and Relatively Weakly Convex Minimization",
+    "authors": [
+      "Chen Jiang",
+      "Jiawen Bi",
+      "Shuzhong Zhang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28530v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-on-nonsmooth-and-relatively-weakly-convex-minimiza",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nComposite optimization plays a central role in modern machine learning and signal processing, as it offers a natural balance between data fidelity and structural properties. In this paper, we study composite optimization in the setting where both components are nonsmooth and nonconvex. We start with a deterministic Bregman proximal subgradient method that converges under subgradient upper-bound conditions. This approach relaxes the standard requirement on the convexity of the regularization term, thus accommodating a broader range of applications. To extend this to the stochastic regime, we develop a model-based minimization method under a relative Lipschitz condition and establish a convergence rate of $\\mathcal{O}(\\varepsilon^{-4})$. We also extend the framework with convergence guarantees to the setting where the distance generating function and its gradient are accessible only through a stochastic oracle.",
+    "readingTime": 1
+  },
+  {
+    "title": "PAMoR: Parameterized Affective Motion Generation in Real Time for Humanoid Robots",
+    "title_en": "PAMoR: Parameterized Affective Motion Generation in Real Time for Humanoid Robots",
+    "authors": [
+      "Yan Pan",
+      "Lingfan Bao",
+      "Tianhu Peng",
+      "Chengxu Zhou"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28213v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-pamor-parameterized-affective-motion-generation-in",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nPeople read a humanoid robot's motion in social settings not only for the action performed but for the affect conveyed. Motion carrying that affect has so far been generated for human avatars, where style is taken from a reference clip or an emotion word, neither of which can be quantitatively parameterized. We present PAMoR, which turns affect into a measured control parameter: a valence-arousal (V-A) coordinate computed natively on robot kinematics. It is obtained in closed form from postural expansion and movement energy, and these measurements serve directly as generation conditions, with no human annotation. An action prior and two affect priors, trained in a shared latent space, are composed at each denoising step: the action prior fixes what is performed, the affect priors modulate how. Whole-body motion rolls out autoregressively on a 29-DoF Unitree G1 in real time, with action and affect both editable. Generated motion tracks the commanded V-A over its full range while text-to-motion fidelity still matches text-only baselines. In a perceptual study, raters identify the commanded emotion on 0.38 of trials, above both baselines and approaching the 0.44 reported for acted human bodies.",
+    "readingTime": 1
+  },
+  {
+    "title": "PanelShield: Verifiable Closed-Loop Safe Planning for Robotic Industrial Panel Operation",
+    "title_en": "PanelShield: Verifiable Closed-Loop Safe Planning for Robotic Industrial Panel Operation",
+    "authors": [
+      "Guipeng Xin",
+      "Jiahe Xu",
+      "Chenhui Wan",
+      "Jie Liu",
+      "Youmin Hu",
+      "Zhongxu Hu"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28305v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-panelshield-verifiable-closed-loop-safe-planning-f",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nIndustrial panel operation is knowledge-intensive and safety-critical. Beyond control recognition and action generation, execution must satisfy constraints in operation manuals and safety regulations. While foundation-model-based planners show strong semantic capability, they typically lack computable, localizable, and reproducible mechanisms for violation detection and repair. To address this, we propose PanelShield, a verifiable closed-loop safety planning framework for manual-guided industrial panel operation. The framework generates parameterized action primitive sequences from task-relevant manual evidence and applies dual formal verification with LTL and a Safety FSM to enforce cross-step temporal correctness and local transition legality. When violations occur, it outputs a structured counterexample with the earliest violating step and cause, enabling targeted repair and re-verification. We build a multi-level long-horizon planning benchmark covering three representative industrial device panels, and evaluate the framework in simulation and real-world robotic experiments. Results show that PanelShield improves complex safety-constrained task performance over foundation-model-only planning baselines while reducing the violation rate to 2.7%, with 4.1 s total latency. Real-world experiments demonstrate end-toend feasibility. Overall, PanelShield offers a verifiable approach to robotic panel operation that balances flexibility, safety, and auditability.",
+    "readingTime": 1
+  },
+  {
+    "title": "PhenoIntel: A Lifecycle-Aligned Multi-Agent Web Application for Verified, Accessible Plant Phenotype Analysis",
+    "title_en": "PhenoIntel: A Lifecycle-Aligned Multi-Agent Web Application for Verified, Accessible Plant Phenotype Analysis",
+    "authors": [
+      "Narendren S",
+      "Soumyashree Kar"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27999v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-phenointel-a-lifecycle-aligned-multi-agent-web-app",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nExisting conversational plant-phenotyping platforms are difficult for plant scientists to use and lack the reliability scientific research demands: failed analyses are reported as valid measurements rather than flagged as missing, statistical tests run without checking assumptions, predictions carry no uncertainty estimate, and specialised hardware limits accessibility. We present PhenoIntel, a lifecycle-aligned multi-agent web platform that turns the full machine-learning workflow into a reliable, user-friendly phenotyping system. Nine specialised agents divide the analysis into stages, from image collection through model selection, inference, and reporting, rather than handing the whole task to one AI manager. Independent checks separate these stages, and every agent reads from and writes to one shared, fixed-structure record, so an inconsistent output from one stage is caught before it reaches the next. Uncertainty is matched to each model family, conformal prediction, detection-confidence spread, or Monte Carlo Dropout, rather than applied uniformly, and quality thresholds adapt to crop and task instead of one global cutoff. When no suitable model exists, PhenoIntel can propose, validate, and integrate a new one on its own. The model repository spans ten trained models across five crops and four imaging modalities. Classification models reach Macro F1 of 0.78-0.996; object-detection models reach 0.96 mAP@50 with a 54% reduction in counting error over an unoptimised baseline; and a temporal model reaches held-out Macro F1 of 0.7050. PhenoIntel runs in a browser on standard hardware, requiring no GPU, and a 1,200-test automated suite confirms complete pipeline execution. Every result carries calibrated uncertainty, validated statistics, and FAIR-compliant provenance, a combination existing conversational phenotyping tools do not offer.",
+    "readingTime": 2
+  },
+  {
+    "title": "Probabilistic Multi-Robot Gas Source Localization with Uncalibrated Sensors: A Distributed Estimation Approach",
+    "title_en": "Probabilistic Multi-Robot Gas Source Localization with Uncalibrated Sensors: A Distributed Estimation Approach",
+    "authors": [
+      "Wanting Jin",
+      "Marc Zoel Arias Mitjà",
+      "Alcherio Martinoli"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28214v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-probabilistic-multi-robot-gas-source-localization-",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nEstimating environmental states with multi-robot systems becomes particularly challenging when robots are equipped with uncalibrated and therefore heterogeneous sensors, whose nonlinear and inconsistent responses prevent reliable information fusion. In this paper, we propose a distributed probabilistic framework for source localization tasks that enables calibration-free estimation in the presence of sensor heterogeneity. The key idea is that each robot independently estimates a local belief using a rank-based feature that captures the relative evolution of observations and is invariant to sensor scaling and nonlinearities. These local beliefs are then fused through a product of experts formulation to obtain a consistent global estimate across the team. To further improve the efficiency of team coordination, we introduce an informative region allocation and path planning strategy that reduces redundant exploration while balancing exploration and exploitation. We validate the proposed framework using high-fidelity simulations with realistic gas sensor models. Results demonstrate that our method significantly outperforms a benchmark method based on standard measurement aggregation, achieving reliable source localization accuracy despite strong sensor heterogeneity. More broadly, this work demonstrates how calibration-free sensing representations can be effectively extended to distributed robotic systems, paving the way for their application to other estimation tasks involving heterogeneous sensors.",
+    "readingTime": 2
+  },
+  {
+    "title": "Proximity to Jamming Governs Acoustic Attenuation in Damped Packings",
+    "title_en": "Proximity to Jamming Governs Acoustic Attenuation in Damped Packings",
+    "authors": [
+      "Colton Kawamura",
+      "Derek R. Olson",
+      "Anthony P. Austin",
+      "Joshua A. Dijksman",
+      "Brian P. Tighe",
+      "Abram H. Clark"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28157v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-proximity-to-jamming-governs-acoustic-attenuation-",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe use particle-based numerical simulations to address a longstanding question regarding the origins of the linear frequency dependence of attenuation in fluid-saturated granular media. We study both the acoustic modes and wave propagation in damped, disordered particle packings. We calculate the damped vibrational modes of packings as a function of frequency, pressure, and grain-contact dissipation. The spatial structure and dissipation of these modes show a clear transition at a pressure-dependent critical frequency from viscous-like continuum behavior to more localized, scattering modes. We also measure how wavespeed and spatial attenuation rate depend on these same parameters. At the same critical frequency, wave propagation also shifts from coherent motion, where attenuation scales quadratically with frequency and linearly with contact damping, to much more incoherent particle-scale motion, where attenuation scales linearly with frequency and sublinearly with contact damping. All of these features, including the transition frequency, are consistent with a large collection of experimental data, which has not been explained by any framework based on grain-scale physics. We refer to this approach as ``Jammed-Network Scattering'' (JNS), and propose it as a grain-scale framework for understanding the acoustics of fluid-saturated granular media.",
+    "readingTime": 1
+  },
+  {
+    "title": "QGPINNs: A Physics-Informed Neural Network Framework for Nonlocal Differential Equations on Quantum Graphs",
+    "title_en": "QGPINNs: A Physics-Informed Neural Network Framework for Nonlocal Differential Equations on Quantum Graphs",
+    "authors": [
+      "Vaibhav Mehandiratta",
+      "Saket Ramchandra"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28589v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-qgpinns-a-physics-informed-neural-network-framewor",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe propose QGPINNs, a physics-informed neural network framework developed in PyTorch for the numerical solution of nonlocal differential equations on quantum graphs. The framework is designed as a general computational implementation in which the solution on each edge of the graph is approximated by a neural network, while a unified graph-based loss function enforces the governing equations together with initial, boundary, and vertex transmission conditions. In particular, the formulation incorporates standard continuity and Kirchhoff-Neumann vertex conditions and Dirichlet boundary conditions into the learning process to couple the local edge-wise neural approximations into a global solution on the graph. The framework is developed for two representative classes of nonlinear models: multi-order fractional elliptic problems and time-fractional evolution equations on quantum graphs. To improve accuracy and training stability, QGPINNs integrates several graph-adapted learning strategies, including soft and hard constraint enforcement, dynamic loss balancing, Fourier feature embeddings, and a learnable singularity-capturing feature for weakly singular solutions arising in the considered problems. The framework also extends naturally to inverse problems, including the identification of the orders of fractional operators and physical parameters from noisy observational data. We validate the accuracy, computational efficiency, and physical consistency of the proposed framework through numerical experiments on benchmark graph structures and real-world networks, including the IEEE 14-bus system and an open-channel agricultural drainage network.",
+    "readingTime": 2
+  },
+  {
+    "title": "Real-Time Musculoskeletal Surrogates for Pediatric Cerebral Palsy: a Credibility Pilot",
+    "title_en": "Real-Time Musculoskeletal Surrogates for Pediatric Cerebral Palsy: a Credibility Pilot",
+    "authors": [
+      "Mohammad Arif Ul Alam"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28371v1",
+    "doi": "",
+    "tags": [
+      "康复训练"
+    ],
+    "tags_en": [
+      "rehabilitation"
+    ],
+    "keywords": [
+      "康复训练"
+    ],
+    "keywords_en": [
+      "rehabilitation"
+    ],
+    "slug": "2026-08-28-real-time-musculoskeletal-surrogates-for-pediatric",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nReal-time musculoskeletal (MSK) surrogates could support personalized rehabilitation for children with cerebral palsy (CP), but their credibility depends on subject-wise evaluation, low inference latency, and calibrated uncertainty. We develop a subject-conditioned causal neural surrogate using OpenSim-derived static parameters, temporal joint kinematics, true muscle capacities, and training-only perturbations. On a real pediatric CP gait dataset comprising nine children, we use leave-one-subject-out validation on six development subjects and evaluate a frozen configuration once on three locked test subjects. The surrogate accurately reproduces musculotendon lengths (R-square = 0.92 in development validation and approximately 0.95 on locked subjects; nRMSE &lt; 8%) while requiring only sub-millisecond to few-millisecond neural inference, well below a 100 ms interactive-rehabilitation target. In contrast, direct muscle-force estimation remains unstable at this small, heterogeneous scale: pooled metrics can overstate within-subject, per-muscle accuracy. A Monte Carlo credibility pilot further shows that propagating only +/-5% anthropometry and muscle-capacity variation produces severely overconfident nominal 90% intervals (approximately 4% force coverage and below 1% MT-length coverage). These results establish a leakage-free evaluation and credibility framework for pediatric MSK surrogates, while identifying force modeling and epistemic uncertainty as the central next challenges for clinically credible digital twins.",
+    "readingTime": 1
+  },
+  {
+    "title": "Relativistic outflows power a quasi-periodic eruption: constraints on energetics, mass loss, and emission mechanisms",
+    "title_en": "Relativistic outflows power a quasi-periodic eruption: constraints on energetics, mass loss, and emission mechanisms",
+    "authors": [
+      "Joheen Chakraborty",
+      "Erin Kara",
+      "Wenbin Lu",
+      "Brian D. Metzger",
+      "Peter Kosec",
+      "Riccardo Arcodia",
+      "Itai Linial",
+      "Olivia Aspegren",
+      "Ehud Behar",
+      "Sudip Bhattacharyya"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28507v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-relativistic-outflows-power-a-quasi-periodic-erupt",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nQuasi-periodic eruptions (QPEs) are recurring bursts of X-ray radiation originating from supermassive black holes (SMBHs). They are an unprecedented type of structured, high-amplitude SMBH variability, but the physical origins of their regularity, timescales, energetics, and emission are uncertain. We present new XMM-Newton observations of the QPEs in ZTF19acnskyy/``Ansky'', constituting the deepest observations of individual bursts in any source thus far. The X-ray spectra reveal time-evolving P Cygni profiles comprising blueshifted absorption and redshifted emission from L-shell transitions of Fe XIX-XXIV, with column densities $N_H\\sim 10^{22-23}$ cm$^{-2}$ and bulk velocities of $|v_w/c|\\sim 0.2$, indicating relativistic mass ejections during each eruption. We construct a time-dependent analytical model of a wind turning on to self-consistently compute its evolving luminosity and ionization properties, and find that the light curve and spectral lines can be simultaneously produced by a wide-angle outflow with $\\dot{M}\\sim 10^{-9}-10^{-8}\\,M_\\odot$ s$^{-1}$ kinetically powering the X-rays with an efficiency of $L_X/\\dot{E}_K\\sim 0.1$. Each eruption ejects $\\sim 10^{-3}\\,M_\\odot$ and $\\gtrsim 10^{49}$ erg of kinetic energy, setting an upper bound on the QPE lifetime of $\\lesssim30$ years if the underlying mass reservoir is $\\sim1 M_\\odot$, and implying that the bursts may result in detectable multiwavelength signatures of reverberation and feedback. These measurements provide new quantitative constraints on QPE energetics, emission mechanisms, and the mass/energy they recycle into their circumnuclear environments, as well as an observational probe for direct comparison with physical models and hydrodynamical simulations of QPEs.",
+    "readingTime": 2
+  },
+  {
+    "title": "Scattering Equations as the lowest order K-identities in the calculation of Stringy Scaling of Hard String Scattering Amplitudes",
+    "title_en": "Scattering Equations as the lowest order K-identities in the calculation of Stringy Scaling of Hard String Scattering Amplitudes",
+    "authors": [
+      "Sheng-Hong Lai",
+      "Jen-Chi Lee",
+      "Yi Yang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28311v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-scattering-equations-as-the-lowest-order-k-identit",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe prove explicitly the n-point K-identities we proposed previously in the calculation of one tensor hard string scattering amplitudes (HSSA). These K-identities were the key to obtain the stringy scaling behavior in the saddle point calculation of the n-point HSSA and, on the other hand, to consistently match with the calculation of decoupling of zero norm states. Moreover, we introduce a G function to generate an infinite set of generalized K-identities (GKI). The lowest order set of these GKI is the scattering equations (SE) used in the calculation of field theory amplitudes in the CHY formalism. The next to leading order set of these GKI is the K-identities used previously in the calculation of one tensor HSSA. We conjecture that the higher order sets of these GKI can be used to calculate higher order HSSA and/or multi-tensor HSSA.",
+    "readingTime": 1
+  },
+  {
+    "title": "Search for magnetic fields in seven slowly rotating A stars",
+    "title_en": "Search for magnetic fields in seven slowly rotating A stars",
+    "authors": [
+      "Pablo de Frutos Rull",
+      "Coralie Neiner",
+      "Jonathan Labadie-Bartz",
+      "Frédéric Royer",
+      "Richard Monier",
+      "Keegan Thomson-Paressant"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28258v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-search-for-magnetic-fields-in-seven-slowly-rotatin",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nA small fraction of A-type stars host strong fossil magnetic fields. Identifying them relies on indirect indicators such as chemical peculiarities, slow rotation, and rotational modulation, which are also shared by non-magnetic stars. Assessing their reliability is essential for future surveys. We magnetically characterise seven slowly rotating, chemically peculiar A-type stars selected through two complementary strategies. Three were selected from abundance analysis combined with potential intrinsically slow rotation, and four from a spectral depression at 5200 Angstrom combined with rotational modulation in TESS photometry. We obtained high-resolution spectropolarimetry, applied least squares deconvolution, and measured longitudinal field strengths for detections. For non-detections, we derived upper limits on polar field strength and evaluated the critical fields of Zahn and Spruit. We detect magnetic fields in all four stars selected via the spectral depression and photometric criterion, with longitudinal field strengths of approximately 145-2900 G, while none of the three stars selected via abundance and slow rotation shows a Zeeman signature. Combined upper limits for two non-detections lie below or near the magnetic desert boundary, but only one is also below the critical fields required for rigid rotation. The non-detections are most naturally interpreted as Am stars. Among the detections, HD 63843 stands out as a magnetic $δ$ Scuti pulsator, promising for magneto-asteroseismology. In conclusion, slow rotation combined with chemical peculiarity alone does not reliably trace large scale magnetic fields, whereas adding the 5200 Angstrom depression and stable rotational modulation in space photometry appears to select magnetic A-type stars with high efficiency, providing a practical guideline for future spectropolarimetric surveys.",
+    "readingTime": 2
+  },
+  {
+    "title": "Search for scalar leptoquarks produced via muon-quark scattering in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+    "title_en": "Search for scalar leptoquarks produced via muon-quark scattering in proton-proton collisions at $\\sqrt{s}$ = 13 TeV",
+    "authors": [
+      " CMS Collaboration"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28377v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-search-for-scalar-leptoquarks-produced-via-muon-qu",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nThe first search for TeV-scale scalar leptoquarks (LQs) produced in muon-quark ($μ$q) interactions is presented. It is based on proton-proton collision data recorded at a center-of-mass energy of 13 TeV with the CMS detector at the LHC, corresponding to an integrated luminosity of 138 fb$^{-1}$. Quantum fluctuations inside the proton generate charged-lepton components, enabling the study of lepton-induced processes. In particular, the interaction of a muon from one colliding proton with a quark from the other proton enables the study of resonant production of a single LQ and its subsequent decay. The final state includes one or two muons and a jet that can come from the hadronization of either a light quark (u) or a b quark. The primary observable is the invariant mass of the muon-jet system, whose distribution peaks at the LQ mass. The data are found to be in agreement with the background predictions. Upper limits are set on the product of the LQ production cross section and its decay branching fraction to the $μ$q final state. The results exclude broad regions in the parameter plane of the LQ mass and the LQ-$μ$q coupling, improving upon previous CMS searches by extending the coverage for LQs with masses between 1.5 and 3.6 TeV, and couplings between 0.2 and 0.6 for the LQ(u$μ$) scenario; and masses above 1.8 TeV, and couplings above 1 for the LQ(b$μ$) scenario.",
+    "readingTime": 2
+  },
+  {
+    "title": "Self-extensional logics of formal inconsistency: Decidability and limits for paraconsistency",
+    "title_en": "Self-extensional logics of formal inconsistency: Decidability and limits for paraconsistency",
+    "authors": [
+      "Marcelo E. Coniglio",
+      "Héctor Federico Mallea"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28443v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-self-extensional-logics-of-formal-inconsistency-de",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nRmbC is a self-extensional paraconsistent logic in the family of Logics of Formal Inconsistency (LFIs). This system is obtained from mbC (the basic LFI) by adding the replacement property via two global inference rules. RmbC is characterized by a non-explosive negation $\\neg$ and a consistency operator $\\circ$, which recovers the principle of explosion in a controlled way. Together with its principal axiomatic extensions, RmbC admits a standard Lindenbaum--Tarski algebraization, with Boolean algebras with LFI operators (BALFIs) as its algebraic semantics. In this paper, we study how far this self-extensional paraconsistent behavior can be extended axiomatically, starting from RmbC. We classify pairs of very natural consistency axioms according to whether they preserve paraconsistency or force classical collapse; identify six algebraically equivalent explosive cores; and isolate a separate structural obstruction for the combination of excluded middle for $\\neg$ with an involutive negation. We also investigate, for the first time, the decidability of this family of self-extensional LFIs. As a first result, we prove the finite model property for RmbC with respect to BALFI semantics via an algebraic filtration, which yields decidability, and transfer this result to several paraconsistent axiomatic extensions of RmbC. Finally, we establish a 2-EXPTIME upper bound for the validity problem of RmbC and a coNP-hardness lower bound.",
+    "readingTime": 2
+  },
+  {
+    "title": "Separating Words with Automata in the Half-adversarial Case",
+    "title_en": "Separating Words with Automata in the Half-adversarial Case",
+    "authors": [
+      "Gabriel Bathie"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28385v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-separating-words-with-automata-in-the-half-adversa",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe consider the problem of separating words with deterministic finite automata (DFA) (Goral{č}{í}k and Koubek, 1986). This problem asks: given two distinct words $u,v$ of length at most $n$, what is the size of the smallest DFA that accepts one and rejects the other? The best upper bound on the worst-case over all pairs of words of length at most $n$ is $\\tilde{O}(n^{1/3})$ states (Chase, 2021), while the best lower bound is $Ω(\\log n)$.   In this work, we consider the half-random, half-adversarial case: we show that if $u$ is a uniformly random binary word of length $n$, then with high probability, for any word $v$ not equal to $u$, there is a DFA with $O(\\log^{7/3} n \\mathrm{poly}\\log\\log n)$ states that separates $u$ and $v$. Our results are based on a novel analysis that exploits the structural sparsity of random words: we show how to apply block-wise compaction with small deterministic transducers to reduce the separation problem to the case of words with short run-length encodings.",
+    "readingTime": 1
+  },
+  {
+    "title": "SignRR: Retrieve and Refine Real Motion for Sign Language Production",
+    "title_en": "SignRR: Retrieve and Refine Real Motion for Sign Language Production",
+    "authors": [
+      "Fidel Omar Tito Cruz",
+      "Angie Sanchez Marquina",
+      "Summy Farfan",
+      "Gissella Bejarano"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28568v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-signrr-retrieve-and-refine-real-motion-for-sign-la",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nSign language production (SLP) aims to generate continuous signing motion from spoken language, often through gloss-to-pose generation. Prior work mainly follows two paradigms. Generative models synthesize motion from a learned prior or from noise, without reference to an observed signing instance, making rare hand configurations and signer-specific articulation difficult to preserve. Retrieval-based methods reuse real, well-articulated motion segments, but concatenating segments from different signers and co-articulation contexts can introduce rhythm and style inconsistencies across the full sequence, not only at segment boundaries. These limitations suggest a complementary solution: use retrieval to provide realistic articulation, and use learned refinement to impose the global coherence that retrieval alone lacks. We therefore propose retrieve-and-refine, a paradigm that starts from real retrieved motion and refines it into a globally coherent signing sequence rather than generating motion from scratch. Our framework, SignRR, initializes motion from a dictionary of real sign segments and refines the full sequence with a part-aware Residual VQ-VAE, where residual quantization preserves fine hand articulation and temporal length differences are handled in the latent space. Experiments on PHOENIX14T and CSL-Daily show that SignRR achieves state-of-the-art back-translation performance while maintaining competitive pose quality.",
+    "readingTime": 1
+  },
+  {
+    "title": "Singular difference graphs of vector spaces of square matrices",
+    "title_en": "Singular difference graphs of vector spaces of square matrices",
+    "authors": [
+      "Shrinath Hadimani"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28436v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-singular-difference-graphs-of-vector-spaces-of-squ",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nThe singular difference graph, denoted by $Γ$, of the vector space of square matrices over a field   is a graph whose vertex set is the set of   all elements of the vector space, where two distinct vertices are adjacent if and only if the difference   of the corresponding matrices is singular. In this paper, we investigate fundamental   graph-theoretic properties of $Γ$, including connectivity, diameter, regularity,   the Eulerian property, independence number, clique number, and domination   number. We show that $Γ$ is a connected regular graph with diameter two. Over finite   fields, we obtain an explicit formula for the   degree of each vertex and characterize precisely when $Γ$ is   Eulerian. We determine the independence number and clique number and   provide explicit constructions attaining these values using companion   matrices of irreducible polynomials. We also construct an explicit   dominating set, yielding an upper bound for the domination number.",
+    "readingTime": 1
+  },
+  {
+    "title": "Small-Data Lifespan for a One-Dimensional Wave Equation with Mixed Characteristic-Time Derivative Source",
+    "title_en": "Small-Data Lifespan for a One-Dimensional Wave Equation with Mixed Characteristic-Time Derivative Source",
+    "authors": [
+      "Firas Kaabi"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28292v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-small-data-lifespan-for-a-one-dimensional-wave-equ",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe study the lifespan of classical solutions to \\[ v_{tt}-v_{xx}=|v_t+v_x|^m|v_t|^n, \\qquad x\\in\\R,\\quad t&gt;0, \\] where \\(m&gt;1\\) and \\(n&gt;1\\). For compactly supported data \\((ηφ,ηψ)\\), with \\(φ\\in C_0^2(\\R)\\) and \\(ψ\\in C_0^1(\\R)\\), we prove the two-sided estimate \\[ cη^{-(m+n-1)} \\leq T(η) \\leq Cη^{-(m+n-1)} \\] under the single one-sided assumption \\(ψ-φ'\\geq0\\) on \\(\\R\\), the data being nontrivial. The lower bound is obtained from the characteristic integral system and holds without any sign restriction; the upper bound follows from a scalar superlinear inequality along a selected characteristic. A short argument shows that the sign assumption already forces \\(ψ(x_0)+φ'(x_0)&gt;0\\) at some point, so that no separate activation hypothesis is needed. We also show that the compatible cancellation condition \\(ψ+φ'\\equiv0\\) produces the global free wave \\(v(x,t)=ηφ(x-t)\\), and that this cancellation regime meets the sign assumption only for trivial data. The model therefore separates a cancellation regime from a finite-time amplification regime with an exactly determined lifespan scale.",
+    "readingTime": 1
+  },
+  {
+    "title": "Speculative Probing: LLM Monitoring at Speculative-Decoding Cost",
+    "title_en": "Speculative Probing: LLM Monitoring at Speculative-Decoding Cost",
+    "authors": [
+      "Collin Zhang",
+      "Tingwei Zhang",
+      "Vitaly Shmatikov"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28099v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-speculative-probing-llm-monitoring-at-speculative-",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nReal-time classification during language model inference is valuable for safety filtering, behavioral analysis, and model monitoring, but current approaches force a trade-off between accuracy and efficiency. Hidden-state probes are fast but limited: they are either not context-aware: operating on a single vector and cannot model interactions across positions; or they are very costly: having dedicated classifier models (Llama Guard, Qwen Guard, LLM-as-judge) or performing computation on hidden states for all tokens and then pooling the results (MultiMax). This shows an intrinsic trade-off between efficiency and accuracy.   However, we find that the speculative-decoding module in recent LLMs can be repurposed for efficient high-quality classification. By appending a trained soft prompt at the end of the target sequence, we can repurpose the speculative-decoding module into a sequence classifier. At inference time in a speculative-decoding pipeline, the KV cache is already in GPU memory, so classification adds negligible overhead. We evaluate on four classification tasks across four models (Qwen3.5-4B, 9B, 27B, MiniCPM4.1-8B). Our small probes consistently outperform zero-shot GPT-5.4-mini and, on multilingual prompt safety, match or beat specialized 8B safety classifiers (Qwen3Guard-Gen-8B, Llama-Guard-3-8B) without running a full LLM.",
+    "readingTime": 1
+  },
+  {
+    "title": "Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters",
+    "title_en": "Stay Seated: Learning Omnidirectional Humanoid Locomotion on a Passive Mobile Chair with Casters",
+    "authors": [
+      "Kango Yanagida",
+      "Kazuki Miyazawa",
+      "Takato Horii"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28090v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-stay-seated-learning-omnidirectional-humanoid-loco",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nHumanoid robots with quasi-direct-drive actuators continuously generate joint torque while standing, whereas seated humans delegate weight support to chairs during desk work. As a first step toward seated loco-manipulation, we study omnidirectional seated locomotion on a passive mobile chair, requiring unfixed pelvis-seat contact and intermittent foot-floor propulsion of the robot-chair system. We extend a standard standing velocity-tracking environment with a passive-chair model, seated-state rewards, critic-only chair observations, and task-tailored contact settings. The policy is learned without motion-imitation rewards; its actor uses only proprioception and velocity commands, without contact sensing or chair states. In random-command evaluation, the policies tracked omnidirectional commands through nearly all 20-s rollouts, and the best seated policies could outperform the Standing policy in velocity tracking. Across four training seeds, a $2^3$ full-factorial comparison of symmetry regularization (SY), foot-slip regularization (FS), and command curriculum (CC) showed that FS reduced CoT but increased tracking error and that some FS-only policies converged to stationary local optima. Combining FS with either SY or CC avoided this failure without retuning FS, while SY improved bilateral leg symmetry during longitudinal motion. Direction-resolved analysis showed CoT ordered backward $&lt;$ lateral $\\ll$ forward, with planted-leg extension in backward and lateral motion and knee flexion following heel contact in forward motion. The learned policy achieved zero-shot sim-to-real transfer to a Unitree G1 and generated omnidirectional seated locomotion.",
+    "readingTime": 2
+  },
+  {
+    "title": "Stay Within Your Bounds: Distance-Guided Decoding for Guaranteed Context-Free Grammar Compliance",
+    "title_en": "Stay Within Your Bounds: Distance-Guided Decoding for Guaranteed Context-Free Grammar Compliance",
+    "authors": [
+      "Vincenzo Collura",
+      "Karim Tit",
+      "Eleonora Giunchiglia",
+      "Mike Papadakis",
+      "Maxime Cordy"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28229v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-stay-within-your-bounds-distance-guided-decoding-f",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nGrammar-constrained decoding helps large language models produce syntactically valid structured outputs, such as code, JSON, and SQL. For context-free grammars, many practical decoders enforce local prefix feasibility: each token must keep the current prefix extendable to some valid completion. Yet, under tokenizer-grammar mismatch and finite token budgets, feasible prefixes may still fail to reach acceptance. We propose a lookahead-guided decoding framework for context-free grammars based on pushdown automata. Offline, we compute bounded pushdown summaries with reachability labels and upper-bound distances to acceptance. Online, these estimates guide horizon-aware pruning and beam search. The resulting decoder is syntactically sound: every output is accepted by the target grammar. Experiments on JSON, SQL, and Linear Temporal Logic (LTL) show both consistent syntactic validity and improved completion quality over existing baselines.",
+    "readingTime": 1
+  },
+  {
+    "title": "Stress-Testing Swampland Bounds with Class S Theories",
+    "title_en": "Stress-Testing Swampland Bounds with Class S Theories",
+    "authors": [
+      "Gabriel Fenati",
+      "Miguel Montero",
+      "Irene Valenzuela"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28333v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-stress-testing-swampland-bounds-with-class-s-theor",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe test the Sharpened Distance Conjecture (SharpDC) for CFTs, as well as the Refined Distance Conjecture (RDC), in AdS$_5$ gravitational spacetimes, using the CFT dual. The former provides a lower bound on the exponential mass decay rate of the tower of states becoming light at infinite distance in the conformal manifold, while the latter bounds the bulk field range that can be traversed before the exponential behaviour of the tower kicks in. We prove the SharpDC for any large $N$ Lagrangian supersymmetric gauge theory with a finite number $M$ of gauge factors and vanishing one-loop $β$-function. We also investigate whether it universally holds in the limits of large central charge, finding that it does not: We exhibit concrete examples in Class S theories where the conjecture is violated in the $M\\rightarrow\\infty$ limit with $N$ fixed, where the size of the bulk internal geometry is much larger than the AdS curvature scale. We also test the RDC in the moduli space of Class S theories without punctures in the large $N$ limit, showing that it amounts to a precise upper bound on the Weil-Petersson diameter of the moduli space of Riemann surfaces of genus $g$. This bound is consistent with all the mathematical literature up to date, but so far remains unproven.",
+    "readingTime": 2
+  },
+  {
+    "title": "The Approximation Rank of Softmax Attention: Sharp Geometric Laws and Robust Interaction Dimension",
+    "title_en": "The Approximation Rank of Softmax Attention: Sharp Geometric Laws and Robust Interaction Dimension",
+    "authors": [
+      "Yuhe Sui",
+      "Jianing Zhang"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28150v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-the-approximation-rank-of-softmax-attention-sharp-",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWhich geometry controls the rank complexity of normalized softmax attention? We study maximum-row-$\\ell_1$ approximation rank, exactly the least unrestricted rank preserving every bounded vector-valued output. Two sharp worst-case laws isolate support geometry: for fixed $d$ and error $\\varepsilon$, spherical self-attention has rank $Θ_{d,\\varepsilon}(\\min\\{n,(1+β)^{(d-1)/2}\\})$, while full-ball geometry adds one radial degree and, for $β\\geβ_0(d,\\varepsilon)$ and $n\\ge C_d e^{β/8}$, gives $Θ_{d,\\varepsilon}(β^{d/2})$. For a fixed head, row-softmax quotients out row-scalar logit directions: the remaining visible query--key interaction dimension $r$ yields an $r/2$ per-instance upper law, and bounded constructions show this exponent is minimax sharp. Approximate interaction subspaces incur an explicit residual output error and yield a tolerance-indexed SVD dimension. On an 84-head BERT-base calibration set, we observe modest effective-dimension reductions across many head--temperature settings, together with positive associations with finite constructive rank upper certificates. Together, these results separate support geometry, which sets worst-case temperature scaling, from softmax-visible interaction geometry, which controls per-head approximation complexity.",
+    "readingTime": 1
+  },
+  {
+    "title": "The iconic $^{238}$U: ab initio nuclear structure theory towards the limit of the periodic table",
+    "title_en": "The iconic $^{238}$U: ab initio nuclear structure theory towards the limit of the periodic table",
+    "authors": [
+      "A. Scalesi",
+      "T. Duguet",
+      "V. Somà"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28091v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-the-iconic-238u-ab-initio-nuclear-structure-theory",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nThe ab initio description of heavy and superheavy nuclei constitutes one of the holy grails of nuclear theory, bearing on the synthesis of the heaviest elements and the limits of nuclear stability. Over the last fifteen years, many-body expansion methods, whose numerical cost scales polynomially with system size, have extended first-principles calculations to medium-mass nuclei and a few spherical closed-shell heavy systems. The largest portion of the nuclear chart is however composed of heavy deformed doubly open-shell nuclei and has remained completely out of reach. This is due to two major obstacles: (i) the huge computational cost of beyond mean-field calculations in very large single-particle bases, and (ii) a dubious collapse of the mean-field energy at large prolate deformation. While a highly efficient numerical implementation of the novel deformed self-consistent Green's function formalism removes the first difficulty, the second is cured by the inclusion of many-body correlations beyond the deformed mean field. Presenting the first ab initio calculation of the iconic $^{238}$U nucleus, this work brings the upper-end of the nuclear chart within reach of theoretical predictions based on first principles.",
+    "readingTime": 1
+  },
+  {
+    "title": "The Twist Conjecture and the Isomorphism Problem for Coxeter groups",
+    "title_en": "The Twist Conjecture and the Isomorphism Problem for Coxeter groups",
+    "authors": [
+      "Elia Fioravanti"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28348v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-the-twist-conjecture-and-the-isomorphism-problem-f",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe prove Mühlherr's Twist Conjecture: any two angle-compatible Coxeter generating sets of a Coxeter group differ by a finite sequence of elementary twists and a conjugation. Combined with earlier work of Howlett-Mühlherr and Marquis-Mühlherr, this completes the resolution of the Isomorphism Problem for Coxeter groups.   A further consequence is that ${\\rm Aut}(W)$ is finitely generated for every Coxeter group $W$, and there is an algorithm producing a finite set of generators for ${\\rm Aut}(W)$ starting from any Coxeter matrix.   Of the vast literature on the Twist Conjecture, we utilise only two results in an essential way: strong rigidity of $2$--spherical Coxeter systems, due to Caprace and Mühlherr, and the framework of markings and hierarchies developed by Caprace and Przytycki for the twist-rigid case. We also exploit in a fundamental way some soft ideas from JSJ theory and an observation of Mihalik-Tschantz on splittings of Coxeter groups.   No form of AI was used in the writing of this manuscript, nor in the research that it presents.",
+    "readingTime": 1
+  },
+  {
+    "title": "Tight Bounds for Memory Allocation With and Without Request Fragmentation",
+    "title_en": "Tight Bounds for Memory Allocation With and Without Request Fragmentation",
+    "authors": [
+      "Michael A. Bender",
+      "Alex Conway",
+      "Martín Farach-Colton",
+      "Hanna Komlós",
+      "William Kuszmaul",
+      "Nicole Wein"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28462v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb rehabilitation"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb rehabilitation"
+    ],
+    "slug": "2026-08-28-tight-bounds-for-memory-allocation-with-and-withou",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nThe classical memory-allocation problem captures the task of placing objects of different sizes in memory, while minimizing the so-called memory high-water mark. It has been known since the early 1970s that the optimal competitive ratio for any deterministic online allocator is $Θ(\\log M)$, where $M$ is the volume high-water mark of the underlying request sequence.   This paper begins with a simple observation: many real-world allocators seem to bypass the 1971 lower bound by adopting a slightly different model for memory allocation. These allocators use what we call $k$-aggregate request fragmentation, meaning that the memory allocator is permitted to break requests into multiple fragments, so long as the all-time maximum number of simultaneous fragments is at most $k$ times the all-time maximum number of simultaneous requests.   We consider the following basic question: Does request fragmentation fundamentally change the problem of memory allocation, and if so, how? Our results come with several surprises. Among these, we find that even using $k = 1 + o(1)$ request fragmentation, the optimal competitive ratio---which was $Θ(\\log M)$ in the classical setting---collapses to $Θ(\\log \\log M)$. This result is shown to be tight with matching upper and lower bounds, applying to both deterministic and randomized algorithms.",
+    "readingTime": 2
+  },
+  {
+    "title": "Training-free Suction Grasp Detection for Deformed Aseptic Cartons Using Vision-Language Models and Geometric Surface Scoring",
+    "title_en": "Training-free Suction Grasp Detection for Deformed Aseptic Cartons Using Vision-Language Models and Geometric Surface Scoring",
+    "authors": [
+      "Marin Maletic",
+      "Goran Vasiljevic"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28246v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-training-free-suction-grasp-detection-for-deformed",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nRobotic sorting of recyclable waste is challenging due to the deformable and geometrically inconsistent nature of target objects. We present a training-free suction grasping system for sorting deformed aseptic beverage cartons, decoupling target identification from grasp-point selection. An open-vocabulary vision-language model detects cartons from a text prompt, SAM2 refines each detection into an instance mask, and a geometric scoring method selects the suction point by combining surface flatness with normal alignment. Three geometric methods are compared: k-nearest-neighbour PCA, Sobel cross-product, and RANSAC plane fitting. Evaluated on a real robot across three deformation levels and 35 cluttered scenes, single-object grasp success reaches 88.2% and end-to-end retrieval in clutter is 72.6%.",
+    "readingTime": 1
+  },
+  {
+    "title": "What Do Interaction Representations Actually Measure? Pre-Event Separability in Weakly-Supervised Violence Detection",
+    "title_en": "What Do Interaction Representations Actually Measure? Pre-Event Separability in Weakly-Supervised Violence Detection",
+    "authors": [
+      "Parishruthi Ganesh"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27879v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-28-what-do-interaction-representations-actually-measu",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nArticulated human pose provides detailed body-configuration information beyond coarse spatial relationships, but whether this detail yields greater discriminative information when the downstream pipeline is held fixed remains unclear. We examine this through early violence detection. Holding the tracker, temporal head, supervision, folds, and evaluation fixed, we compare five interaction representations spanning coarse bounding-box geometry, a matched handcrafted pose analogue, enriched pose descriptors, and a matched-capacity encoder learned from raw joints, under video-level evaluation with cluster-bootstrap intervals. No pose-based representation outperforms coarse geometry, though with fifteen anomalous videos this subset cannot rule out small effects. Extending the pipeline to frozen visual encoders, and repeating the comparison on XD-Violence (137 anomalous videos, nine times our UCF-Crime sample), person-crop appearance and whole-frame context both exceed geometry by a wide margin, yet context matches appearance on UCF-Crime and exceeds it on the larger split: cropping to the interacting people yields no advantage over encoding the whole frame. This prompts a direct test of what the benchmark measures. Scoring anomalous videos using only frames preceding the annotated onset, under a control removing sequence length as a cue, retains 39-91% of above-chance separation on both benchmarks, including for seven hand-designed geometric channels. Inspection of the tightest pre-onset windows identifies concrete provenance artifacts: editorial title cards and platform watermarks absent from the surveillance footage supplying the normal class. Video-level AUC here is thus a composite of event evidence and pre-event source cues, a shared source of discrimination that can obscure differences between representations. The diagnostic requires only annotations these benchmarks already ship.",
+    "readingTime": 2
+  },
+  {
+    "title": "When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI",
+    "title_en": "When Robots Mishear Us: Mapping the Safety Risks of Voice-Controlled Embodied AI",
+    "authors": [
+      "Sihan Jia",
+      "Oliver Lemon"
+    ],
+    "date": "2026-08-28",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.28518v1",
+    "doi": "",
+    "tags": [
+      "上肢康复"
+    ],
+    "tags_en": [
+      "upper limb"
+    ],
+    "keywords": [
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "upper limb"
+    ],
+    "slug": "2026-08-28-when-robots-mishear-us-mapping-the-safety-risks-of",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe investigate whether automatic speech recognition (ASR) errors in user input can lead to unsafe outputs from Embodied AI (EAI) models. We find that ASR errors can lead to harmful instructions being accepted and executed by EAI models, thereby reducing safety. We simulate ASR errors and combine them with existing safety benchmarks (SafeAgentBench and POEX) to evaluate how different errors affect embodied AI safety. We find that some of them preserve semantic structure but increase harmful ambiguity, while others weaken the model refusal behaviour and allow unsafe plans to be generated and executed. We show that in some cases automatic correction of ASR errors can reduce the risk, but this is not always effective. Overall, we show that ASR errors lead to significant safety risks for embodied AI.",
+    "readingTime": 1
+  },
+  {
+    "title": "Accelerating Data Preprocessing for Efficient Vision Model Inference on Jetson Edge Device",
+    "title_en": "Accelerating Data Preprocessing for Efficient Vision Model Inference on Jetson Edge Device",
+    "authors": [
+      "Tian Chen",
+      "Nawras Alnaasan",
+      "Jinghan Yao",
+      "Aamir Shafi",
+      "Hari Subramoni",
+      "Dhabaleswar K.",
+      " Panda"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27655v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-accelerating-data-preprocessing-for-efficient-visi",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nData preprocessing is a crucial part of deep learning workflows on edge devices. However, decoding data saved in JPEG format is very compute-intensive and occupies a major portion of the preprocessing pipeline. Therefore, increasing the decoding speed is vital for improving overall throughput, especially for inputs with large image sizes, which are often subject to preprocessing bottlenecks. On the other hand, edge devices are equipped with specialized hardware units to accelerate media processing and image decoding. For instance, the NVIDIA Jetson platform possesses a dedicated NVJPEG unit. These units can be used to enhance the performance of the preprocessing pipeline. This paper introduces the utilization of such specific hardware acceleration units for offloading decoding tasks. By combining this with a multi-instance approach, it allows for the parallelization of all compute resources including CPU, NVJPEG, GPU, and DLA in Jetson devices. In this work, we compare various potential pipeline designs. On ResNet18, ResNet50, and ResNet152, three models with different sizes, we evaluate the impact of batch sizes and image sizes, as well as the characteristics of GPU/DLA inference. Finally, a fine-tuning experiment for multi-instance design has been conducted. The multi-instance design with a specific hardware decoding unit involved offers up to 30.02% speedup for large image sizes, compared with the most optimized design without it. Based on these findings, we demonstrate the benefits of using the NVJPEG unit in deep learning workflows and provide guidelines for tuning and optimizing edge inference workflows.",
+    "readingTime": 2
+  },
+  {
+    "title": "Active Surface-Driven Reconfigurable Gripper: Robust Grasping and Sequential Manipulation of Thin Objects",
+    "title_en": "Active Surface-Driven Reconfigurable Gripper: Robust Grasping and Sequential Manipulation of Thin Objects",
+    "authors": [
+      "Ziyi Zheng",
+      "Keqi Zhu",
+      "Hao Wu",
+      "Yanzhe Wang",
+      "Huixu Dong"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.26883v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-08-27-active-surface-driven-reconfigurable-gripper-robus",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nRobotic grippers face substantial challenges in grasping and manipulating thin objects. Most existing grippers rely on highly precise approach and grasp motions, which limits robustness and reduces applicability. This paper explores thin-object grasping using books as a representative example. Here, we propose a novel solution that integrates an active surface with underactuated compliance to achieve stable grasping of thin objects without complex control. First, an underactuated gripper with an active surface is designed. The active-surface thumb performs in-hand repositioning of the target book without requiring adjustments of the robot arm or the other fingers, while the underactuated fingers establish compliant contact conditions with the environment, and the reconfigurable structure enables reliable grasping of books under different configurations. Second, we establish a kinematic model of the gripper, and determine the initial grasp postures for two representative scenarios (books lying flat on a desktop and books vertically packed in a shelf). Third, by analyzing the physical model of a book lying on a table and its interaction with the gripper and the environment, we systematically optimize the structural parameters and grasping strategy. Finally, extensive experiments validate the effectiveness of the proposed gripper and strategy. The results demonstrate strong robustness and adaptability when grasping thin objects placed flat (including books, paper, fabric, plastic film, and mouse pad), as well as a high success rate when grasping vertically packed books. Moreover, the proposed gripper can reliably complete long sequential \"grasp-place\" tasks.",
+    "readingTime": 2
+  },
+  {
+    "title": "An Axial $U_A(1)_{L_μ-L_τ}$: UV Completion and Experimental Searches",
+    "title_en": "An Axial $U_A(1)_{L_μ-L_τ}$: UV Completion and Experimental Searches",
+    "authors": [
+      "Rundong Fang",
+      "Jinhui Guo",
+      "Ming Li",
+      "Jia Liu",
+      "Xiao-Ping Wang",
+      "Yiheng Xiong"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27258v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-an-axial-u_a1_l_μ-l_τ-uv-completion-and-experiment",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe propose an anomaly-free and renormalizable axial $U_A(1)_{L_μ-L_τ}$ model and study its experimental signatures for $A'$ masses from the MeV scale to the TeV scale. The opposite charges of the left- and right-handed charged leptons forbid the usual muon and tau Yukawa interactions. Their masses are instead generated by a singlet scalar and heavy vector-like leptons through a universal-seesaw mechanism. We focus on heavy vector-like leptons, small light--heavy mixing, and $m_s\\gtrsim10~\\mathrm{GeV}$. In this limit, the observables considered here depend mainly on $(m_{A'},g_X)$, while the other model parameters are restricted by mixing and perturbativity. We confront this benchmark with current experimental searches. For neutrino trident production, our finite-$m_μ$ calculation shows that $A'$ modifies the axial weak coefficient, rather than the vector coefficient relevant to the usual $L_μ-L_τ$ model. The longitudinal mode enhances muon bremsstrahlung and gives a negative contribution to $(g-2)_μ$; the latter dominates over the scalar contribution in our benchmark. Combining these results with invisible meson decays and four-muon resonance searches, we summarize the phenomenological constraints in the $(m_{A'},g_X)$ plane. For $m_{A'}\\gg m_μ$, vector and axial final-state-radiation rates become nearly identical, so the corresponding collider limits can be obtained by rate matching. At a future muon collider, the total rate alone does not fully resolve the interaction structure, whereas angular distributions, especially the forward--backward asymmetry in $μ^+μ^-\\toτ^+τ^-$, retain direct sensitivity to chirality.",
+    "readingTime": 2
+  },
+  {
+    "title": "AraMS-28k: The Largest Publicly Released Line-Level Dataset of Historical Arabic Manuscripts with Margin and Insertion-Anchor Annotations",
+    "title_en": "AraMS-28k: The Largest Publicly Released Line-Level Dataset of Historical Arabic Manuscripts with Margin and Insertion-Anchor Annotations",
+    "authors": [
+      "Mohamed Guechaoui",
+      "Mohamed Diaa Zellagui",
+      "Souleyman Chaib",
+      "Sahraoui Dhelim"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.26921v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-arams-28k-the-largest-publicly-released-line-level",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe introduce AraMS-28k, the largest publicly released line-level dataset of genuine historical Arabic manuscripts, comprising 14 books, 3,043 pages, and 28,600 annotated text lines (27,971 main-text, 629 margin). Thirteen books are hand-copied manuscripts spanning three script traditions -- Naskh, Ruq'ah, and Maghrebi -- and one is a lithographed printed edition included to broaden format diversity. Each line is labelled as main-text or margin, and margin lines that have an unambiguous attachment point in the main text are further annotated with an insertion anchor, recovering the manuscript's true non-linear reading order at line-level granularity -- to our knowledge the first such annotation released for a historical Arabic manuscript corpus. Because reference transcriptions are fully vocalised while manuscript hands are typically undiacritised, we release both the raw diacritised transcription and a diacritic-normalised counterpart for every line. The dataset was constructed with RefLAM, a reference-grounded annotation pipeline that aligns multimodal-LLM OCR against independently sourced clean transcriptions and routes every line through human review, combining automatic verification with expert oversight. We describe the construction and quality-control process, present the annotation schema, report dataset statistics at both the corpus and per-book level, and provide baseline HTR results using Kraken and HATFormer, including a cross-script generalisation gradient from in-distribution pages to fully unseen books. AraMS-28k is released with page images, line-level annotations, and fixed train/val/test splits under CC BY-NC-SA 4.0 to support reproducible research on Arabic manuscript recognition, layout analysis, and reading-order recovery.",
+    "readingTime": 2
+  },
+  {
+    "title": "Counterfactual Bias Testing for Application Tracking System",
+    "title_en": "Counterfactual Bias Testing for Application Tracking System",
+    "authors": [
+      "Sai Yashwant",
+      "Shruti Bansal",
+      "Anurag Dubey",
+      "Samaroha Chatterjee",
+      "Satyam Kumar",
+      "Shreyash Gupta",
+      "Gantala Thulsiram"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.26899v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-counterfactual-bias-testing-for-application-tracki",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nAutomated candidate-job matching systems are increasingly classified as high-risk AI under emerging regulation, yet auditing them for demographic bias is expensive: classical correspondence-audit studies require hand-crafted resumes and manual submission, which does not scale to fast pipeline retraining cycles. This paper presents a general, reusable methodology that (1) uses task-specialized LLM agents to synthesize identity-neutral base resumes and inject controlled demographic treatments across five protected-characteristic axes (sex/gender, age, residence, language, disability), producing a K x (1+N) correspondence-audit matrix; (2) qualitatively flags inferred protected characteristics per an EU AI Act-aligned prompt; (3) ranks candidates against a job description via a fine-tuned sentence-embedding model and cosine similarity; and (4) computes a nine-metric fairness suite spanning counterfactual (score delta, mean absolute rank change, flip rate), group-fairness (top-K retention, four-fifths/impact ratio), and merit-aware (Recall@K, nDCG@K, equal opportunity, equalized odds) families, each with bootstrap confidence intervals, significance tests, and Benjamini-Hochberg correction, culminating in an automated PASS/INVESTIGATE/FAIL report with a composite risk score. On an example corpus of 5 job orders, 100 base candidates, and 10 demographic treatments (90 metric x variant evaluations): score shifts, top-K retention, and merit-aware rate gaps stay within tolerance for every treatment, but a rank-stability metric (MARC) and nDCG@K each surface borderline findings - including one on the neutral baseline itself - that a score- or retention-only view would miss. The results argue for multi-metric, multi-family auditing over any single aggregate score, and for LLM-agent-generated audits as a practical, low-cost complement to human-curated audits for any candidate-job matching pipeline.",
+    "readingTime": 2
+  },
+  {
+    "title": "Diatom frustules as naturally occurring resonant microarchitectures: revealing vibrational eigenmodes across pennate and centric species",
+    "title_en": "Diatom frustules as naturally occurring resonant microarchitectures: revealing vibrational eigenmodes across pennate and centric species",
+    "authors": [
+      "Chiara Gazzola",
+      "Dame Fall",
+      "Stefano Stassi",
+      "Marc Duquennoy",
+      "Marc Serra Garcia",
+      "Marco Miniaci"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27119v1",
+    "doi": "",
+    "tags": [
+      "外骨骼"
+    ],
+    "tags_en": [
+      "exoskeleton"
+    ],
+    "keywords": [
+      "外骨骼"
+    ],
+    "keywords_en": [
+      "exoskeleton"
+    ],
+    "slug": "2026-08-27-diatom-frustules-as-naturally-occurring-resonant-m",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nDiatom frustules, the hierarchically structured, species-specific silica exoskeletons of diatom microalgae, are among Nature's most sophisticated examples of bottom-up self-assembly, exhibiting nanoscale porosity, multifunctional mechanical and optical properties, and a morphological diversity that spans nearly three orders of magnitude in size. Despite growing interest in their optical and static mechanical properties, the elastodynamic behaviour of frustules has remained largely unexplored. Here we report the first experimental detection and spatially resolved reconstruction of vibrational eigenmodes in diatom frustules, combining laser Doppler vibrometry with morphology-faithful finite-element models informed by scanning electron microscopy (SEM) and focused-ion-beam scanning electron microscopy (FIB-SEM). Two morphologically contrasting taxa were investigated as model systems: the pennate diatom Rhaphoneis amphiceros and the centric diatom Stictodiscus californicus var. nitida, spanning the two principal branches of diatom diversity. Four eigenmodes were identified for R. amphiceros in the 5.90-14.17 MHz range and three for S. californicus in the 9.96-17.62 MHz range; the simulations yield a complete modal landscape for each species, including modally split and nearly degenerate eigenmodes arising from deviations from ideal symmetry, and show quantitative agreement with the experimentally measured mode shapes and resonant frequencies. These results establish diatom frustules as a class of naturally occurring resonant microarchitectures, and open new avenues for their integration as bio-derived functional elements in nanomechanical and MEMS/NEMS applications.",
+    "readingTime": 2
+  },
+  {
+    "title": "Finite group schemes as fundamental group schemes of smooth projective varieties",
+    "title_en": "Finite group schemes as fundamental group schemes of smooth projective varieties",
+    "authors": [
+      "Gabriel Bassan"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27246v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-finite-group-schemes-as-fundamental-group-schemes-",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nIn this paper we study the problem of realizing finite group schemes as fundamental group schemes of smooth projective varieties. We establish Bertini-type results and prove the triviality of fundamental group schemes of mildly singular complete intersections in projective space. With this in hand, we are able to go through a Godeaux--Serre construction and prove that, over an infinite perfect field $k$, any finite group scheme $G/k$ can be realized as the $S$-, extended Nori and Nori fundamental group schemes of a connected smooth projective variety of any dimension at least $\\dim \\text{Lie}(G)+2$.",
+    "readingTime": 1
+  },
+  {
+    "title": "Majority C-coloring in Cartesian products",
+    "title_en": "Majority C-coloring in Cartesian products",
+    "authors": [
+      "Csilla Bujtás",
+      "Magda Dettlaff",
+      "Hanna Furmańczyk",
+      "Aleksandra Laskowska"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27669v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-majority-c-coloring-in-cartesian-products",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nA majority C-coloring of a graph $G$ assigns colors to the vertices such that every vertex shares its color with at least half of its neighbors. The maximum number of colors that can be used in such a coloring of $G$ is denoted by $\\overlineχ_{\\geqslant}(G)$. In this paper, the focus is on the majority C-coloring in Cartesian product graphs. It is shown that $\\overlineχ_{\\geqslant}(G \\square H) \\ge \\overlineχ_{\\geqslant}(G) \\overlineχ_{\\geqslant}(H)$ gives a sharp lower bound, but the difference also can be arbitrarily large. For two-dimensional Hamming graphs, the exact value $\\overlineχ_{\\geqslant}(K_m \\square K_n) = \\min\\{m,n\\}$ is established. Balanced Hamming graphs of higher dimension, that is the $k$th powers of complete graphs with respect to the Cartesian product, are also studied. It is proved that $\\overlineχ_{\\geqslant}(K_n^{\\square, k})= n^{k/2}$ holds for every even integer $k$. If $k$ is odd and the Hamming graph is the $k$-dimensional hypercube, then $\\overlineχ_{\\geqslant}(K_2^{\\square, k})= 2^{\\lfloor k/2\\rfloor}$. On the other hand, a majority C-coloring of $K_n^{\\square, k}$ with at least $3 n^{\\lfloor k/2\\rfloor}/2 $ colors is presented for every $n \\ge 7$ and odd $k \\ge 3$. For Cartesian grids, the main result shows that $\\overlineχ_{\\geqslant}(P_m \\square P_n) = 1 + \\lfloor m/2\\rfloor \\lfloor n/2\\rfloor$ if at least one of $m$ and $n$ is odd, while $\\overlineχ_{\\geqslant}(P_m \\square P_n)=mn/4$ holds if both parameters are even and $m \\ge n \\ge 4$. The paper concludes with a conjecture and several open problems.",
+    "readingTime": 2
+  },
+  {
+    "title": "Positive Geometry of Yang-Mills Correlators",
+    "title_en": "Positive Geometry of Yang-Mills Correlators",
+    "authors": [
+      "Mattia Arundine",
+      "Veronica Calvo Cortes",
+      "Joris Koefler",
+      "Facundo Rost"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27594v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-positive-geometry-of-yang-mills-correlators",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe develop a positive-geometric formulation of tree-level Yang-Mills correlators in de Sitter space at three and four points through their helicity-stripped representatives on the cosmological Grassmannian. In its Pfaffian (or spinor) embedding, physical singularities become natural geometric boundaries. At three points, the Yang-Mills correlator is the canonical form of the non-negative orthant in the Grassmannian. At four points, the Mandelstam divisors partition the Pfaffian-positive domain of the Grassmannian into four positive geometries. Requiring factorization into three-point forms, together with the correct flat-space limit, uniquely selects an oriented union of two of these regions, whose canonical form reproduces the reduced color-ordered Yang-Mills correlator. The full color-ordered correlator, on the other hand, arises from a uniquely fixed signed linear combination of homology cycles. Thus, the broader homological formulation of positive geometry is essential for capturing the complete four-point result. Our construction provides a concrete starting point for a geometric description of higher-point cosmological correlators.",
+    "readingTime": 1
+  },
+  {
+    "title": "Rapid On-Robot Learning for Dynamic Manipulation Skills: Robot Juggling",
+    "title_en": "Rapid On-Robot Learning for Dynamic Manipulation Skills: Robot Juggling",
+    "authors": [
+      "Taeyoon Lee",
+      "Chunpeng Wang",
+      "Christopher G. Atkeson",
+      "Alfred A. Rizzi",
+      "Nicolas Rojas"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.26800v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-08-27-rapid-on-robot-learning-for-dynamic-manipulation-s",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe present an online learning framework that enables a bimanual robot to acquire diverse juggling patterns directly on physical hardware within minutes, even with a significant sim2real gap. One of the most important lessons from this work is that a model, even when far from reality, can be extremely useful for learning. This motivates a central philosophy of our approach: learning should build upon the robot's current knowledge rather than replace it. Our regularized memory-based learning puts this principle into practice by learning a local model from accumulated experience while retaining the global prior model to extrapolate where experience is sparse. This enables efficient and stable online learning from each new experience without resorting to uninformed exploration over a vast space of possible behaviors. Equally important to continual on-robot learning is safety, allowing the robot to repeatedly practice and improve in the real world. We construct a mutually reachable set that allows safe transitions between successive throws and catches, without driving either arm into a state from which its next action would require violating the robot's joint or actuator limits. Together, these ideas enable a bimanual robot with multi-fingered hands and onboard vision to safely learn and compose five canonical three-ball juggling patterns, including cascade, tennis, half-shower, shower, and box, within less than 5 minutes of real-world interaction. More broadly, this work points toward robots that build upon imperfect prior knowledge and continually refine their behavior through their own real-world experience.",
+    "readingTime": 2
+  },
+  {
+    "title": "Self-Explainable Multi-Label Graph Neural Network for Correlated Evidence Attribution",
+    "title_en": "Self-Explainable Multi-Label Graph Neural Network for Correlated Evidence Attribution",
+    "authors": [
+      "Yingqi Feng",
+      "Yufei Tang",
+      "Min Shi",
+      "Xingquan Zhu"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27574v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "人机接口"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "human-machine interface"
+    ],
+    "keywords": [
+      "手部康复",
+      "人机接口"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "human-machine interface"
+    ],
+    "slug": "2026-08-27-self-explainable-multi-label-graph-neural-network-",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nMulti-label graph learning intends to capture the intrinsic complexity of real-world applications, where one sample is often related to multiple groups or consists of multiple objects. To date, a handful of multi-label graph learning methods exist, but none of them integrate training-time interpretation capability. While post-hoc graph explainers have been developed, they do not explicitly model label-dependent evidence sharing in multi-label graph learners, especially when label pairs are weakly or negatively associated. As a result, post-hoc approaches may miss how evidence should be shared or separated across different labels. This paper advances a new end-to-end self-explainable multi-label graph neural network (SEMGNN), which aims to simultaneously classify multi-labeled nodes and identify edges significantly contributing to each target node w.r.t. predicted labels. Different from post-hoc methods, SEMGNN jointly learns a predictor and a sparse edge-mask explainer within a unified framework and training objective. Label-label correlations are used to improve multi-label node classification and enhance individual label explanations, so that different labels of a node can be supported by distinct yet coherent structural and/or correlated evidence. Experiments and comparisons on synthetic and real-world multi-label networks, in social networking, entertainment, and life sciences, show that SEMGNN achieves competitive or improved predictive performance while providing more faithful and compact label-conditioned explanations.",
+    "readingTime": 2
+  },
+  {
+    "title": "Soft Active Electromyography Interface for Machine Learning-Enabled Silent Speech Recognition",
+    "title_en": "Soft Active Electromyography Interface for Machine Learning-Enabled Silent Speech Recognition",
+    "authors": [
+      "Yuta Kurotaki",
+      "Shusuke Yamakoshi",
+      "Reitaro Yoshida",
+      "Yutaka Isoda",
+      "Tamami Takano",
+      "Yuji Isano",
+      "Yusuke Miyake",
+      "Kentaro Kuribayashi",
+      "Hiroki Ota"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27048v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "人机接口",
+      "可穿戴"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "human-machine interface",
+      "wearable"
+    ],
+    "keywords": [
+      "手部康复",
+      "人机接口",
+      "可穿戴"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "human-machine interface",
+      "wearable"
+    ],
+    "slug": "2026-08-27-soft-active-electromyography-interface-for-machine",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nSilent speech recognition (SSR) provides an alternative communication pathway in the absence of audible speech. However, conventional approaches are limited by the need for constant facial attachment, privacy concerns, and unstable signal acquisition. Here, we propose a soft, active electromyography (EMG) interface that enables word-level SSR using machine learning. Worn on the hand, the device uses a fingertip electrode that can be positioned near the lips to acquire EMG signals only when needed. The interface integrates liquid metal (LM) interconnects, transparent flexible printed circuit (FPC) electrodes, and elastomer encapsulation to ensure high mechanical stability during finger motion. A deep neural network trained on these stable signals achieved a mean accuracy of 97.2 $\\pm$ 1.3% across three subjects in classifying a 30-word vocabulary, demonstrating robust linguistic discrimination. Furthermore, real-time drone control validates the practicality of this approach in noisy and privacy-sensitive environments where conventional voice recognition fails. This study highlights the potential of soft, wearable EMG systems as secure and intuitive human-machine interfaces.",
+    "readingTime": 1
+  },
+  {
+    "title": "Strategy-Proof and Minimally Wasteful Random Assignment",
+    "title_en": "Strategy-Proof and Minimally Wasteful Random Assignment",
+    "authors": [
+      "Christian Basteck",
+      "Lars Ehlers"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27261v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-strategy-proof-and-minimally-wasteful-random-assig",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nWe study random assignment of indivisible objects among a set of agents with strict preferences and outside options. When agents may rank some objects as unacceptable, we consider different notions of measuring waste of object(s) from an ex-ante perspective. The most natural one is $q$-agent-object-waste whereby both one agent and one of his acceptable objects are unassigned with at least probability $q$. On the one hand, we show that any mechanism satisfying equal treatement of almost equals (whereby any two agents with identical rankings over objects receive the same probability shares for objects they both regard acceptable), strategy-proofness and ex-post weak non-wastefulness (whereby in any assignment in the support we cannot have that both one agent and one of his acceptable objects are unassigned) must be $q$-agent-object-wasteful with $q\\geq \\frac{1}{6}$. On the other hand, we show that random serial dictatorship (RSD) attains the minimal bound of $\\frac{1}{6}$ in this class for four agents or three objects. In addition, we consider $q$-object-wastefulness where an object remains unassigned with probability $q$, while agents, who consider it acceptable, remain unassigned with aggregate probability $q$. We again show that RSD attains the minimal bound of $\\frac{1}{4}$ in this class of mechanisms with respect to $q$-object-wastefulness for three objects. Finally, we show that random deferred acceptance (RDA) may be strictly less agent-object-wasteful than RSD (but at the cost of violating equal treatment of almost equals).",
+    "readingTime": 2
+  },
+  {
+    "title": "VidParse: Online Parsing of Egocentric Procedures Like a Pro",
+    "title_en": "VidParse: Online Parsing of Egocentric Procedures Like a Pro",
+    "authors": [
+      "Anubhav Gupta",
+      "Archit Kambhamettu",
+      "Vatsal Agarwal",
+      "Pulkit Kumar",
+      "Abhinav Shrivastava"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.27562v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-vidparse-online-parsing-of-egocentric-procedures-l",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nTranslating continuous, noisy egocentric video streams into discrete, temporally ordered action steps is fraught with visual challenges. Heavy ego-motion, transient occlusions, and the high intra-class variability of unscripted human-object interactions cause standard frame-level online temporal models to struggle, often resulting in severe over-segmentation and structural collapse. To bridge the gap between unstable low-level perception and high-level procedural logic, we present VidParse, an online, training-free framework that treats activity understanding as a graph-constrained inference problem. Rather than relying on learned temporal filters, we dynamically identify semantic transitions using a temporal similarity matrix over manipulation-anchored features, which are extracted from frozen foundation models to prioritize foreground hand-object interactions. A beam search decoder then leverages an induced procedural task graph to explicitly enforce valid action transitions and prune impossible trajectories. By anchoring robust visual segments to hard procedural constraints, our approach preserves long-range state transitions and achieves up to a 10x improvement in complex multi-step parsing accuracy over strong online baselines, all without requiring a single gradient update.",
+    "readingTime": 1
+  },
+  {
+    "title": "When Is the Sharp Covariance Envelope Tight? Feature-Only Geometry for Volume-Sampled Least Squares",
+    "title_en": "When Is the Sharp Covariance Envelope Tight? Feature-Only Geometry for Volume-Sampled Least Squares",
+    "authors": [
+      "Kihun Rhee"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.26877v1",
+    "doi": "",
+    "tags": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "keywords": [
+      "手部康复",
+      "上肢康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation",
+      "upper limb"
+    ],
+    "slug": "2026-08-27-when-is-the-sharp-covariance-envelope-tight-featur",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nPrior analyses by Derezinski and Warmuth established all-size sampling identities, selected-OLS unbiasedness, and inverse moments for ordinary volume sampling, while their exact arbitrary-fixed-response loss and prediction-covariance formulas are at the rank-size endpoint s=d. We establish a Loewner envelope for centered coefficient covariance for every full-rank fixed pool, response, and legal budget d &lt;= s &lt;= m under ordinary indexed fixed-size volume sampling followed by selected unweighted least squares; its coefficient is globally sharp over the full-rank class. Global sharpness does not determine attainability on the pool in hand. Under positive loss, strict-interior budgets, and no coloops, a feature-only margin nu_A gives the exact fixed-design spectral phase: nu_A &gt; 0 if and only if the normalized spectral envelope is strict for every compatible residual, whereas nu_A = 0 if and only if some compatible residual is spectrally tight; the same zero-margin residual is tight at every strict-interior budget. A residual-augmented change of measure supplies the response-aware mechanism and a one-sided quantitative slack bound, while support saturation proves the attainment direction. Critical equal-leverage geometry interprets the boundary, and sound lower certificates yield conservative same-primitive cardinality decisions. Frozen-feature examples show that the certificate is nonvacuous and measure the fixed-pool cost of its authorized reduction. The claims concern conditional centered, full-Gram-whitened coefficient covariance, not population generalization.",
+    "readingTime": 2
+  },
+  {
+    "title": "Why not to use the Gaussian kernel",
+    "title_en": "Why not to use the Gaussian kernel",
+    "authors": [
+      "Toni Karvonen",
+      "Chris J. Oates"
+    ],
+    "date": "2026-08-27",
+    "source": "arXiv",
+    "source_url": "http://arxiv.org/abs/2608.26974v1",
+    "doi": "",
+    "tags": [
+      "手部康复"
+    ],
+    "tags_en": [
+      "hand rehabilitation"
+    ],
+    "keywords": [
+      "手部康复"
+    ],
+    "keywords_en": [
+      "hand rehabilitation"
+    ],
+    "slug": "2026-08-27-why-not-to-use-the-gaussian-kernel",
+    "content": "## 中文摘要\n\n（翻译失败，请参考英文摘要）\n\n## English Summary\n\nKernels measure similarity or correlation in tasks such as regression and classification. The Gaussian kernel, other names of which include squared exponential and radial basis function kernel, is one of the most popular in Gaussian process regression. We argue that the Gaussian kernel is best avoided and should never be used as a default. The argument rests on two results demonstrating that the Gaussian kernel is extremely brittle. First, the Gaussian kernel gives rise to a conditional variance that is unrealistically small. If the variance is used to quantify predictive uncertainty, catastrophic overconfidence is almost inevitable. Second, a small variance goes hand in hand with numerical ill-conditioning, so that to use the Gaussian kernel in practice requires tricks such as nugget terms that effectively modify the underlying regression or classification model. These problems are caused by the unnatural smoothness of the Gaussian kernel, a fact we are far from the first to take notice of. The problem is not the Gaussian form itself but the analyticity of the kernel: Our argument is more broadly that analytic kernels are best avoided. For stationary kernels analyticity is essentially equivalent to an exponential decay of the spectral density.",
+    "readingTime": 2
+  },
+  {
     "title": "Active Reinforcement of Jammed Emulsions by Living Microswimmers",
     "title_en": "Active Reinforcement of Jammed Emulsions by Living Microswimmers",
     "authors": [
