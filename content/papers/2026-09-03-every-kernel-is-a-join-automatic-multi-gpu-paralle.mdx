@@ -1,0 +1,21 @@
+---
+title: "Every Kernel Is a Join: Automatic Multi-GPU Parallelism for AI Computations in Einsummable"
+title_en: "Every Kernel Is a Join: Automatic Multi-GPU Parallelism for AI Computations in Einsummable"
+authors: ["Zhimin Ding", "Chen-Kuan Liao", "Chima Adiole", "Brianna Barrow", "Fangzhou Du", "Yu Hsiao", "Ge Huang", "Yicheng Jin", "Ismail Syed", "Chris Jermaine"]
+date: "2026-09-03"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.03905v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Distributing an AI computation across the GPUs of a multi-GPU server is one of the central problems in systems-for-AI. We present Einsummable, a prototype system that accepts a PyTorch-like description of an AI computation and automatically distributes it across a multi-GPU server, with no device assignments, sharding annotations, or communication operations written by the programmer. Einsummable models every operation as a relational join followed by an aggregation over tensor relations, in which the tuples contain sub-tensors. Each operation exposes its possible decompositions through what we call "join-agg specs". An optimizer then selects decompositions across the whole computation to minimize a communication-cost proxy. Because it searches decompositions rather than a menu of named strategies, Einsummable discovers plans that mesh-based auto-parallelizers cannot. Each decomposed operation is implemented by synthesizing an exchange program, which is a topology-aware generalization of Volcano's exchange operator. Einsummable invokes no canned collectives: all communication and aggregation is special-purpose, derived at compile time. Despite being fully automatic, Einsummable can outperform custom-designed implementations. For example, on LLaMA transformer blocks on an eight-GPU A100 server, Einsummable achieves a geometric-mean runtime of 8.97 ms, versus 13.80 ms for hand-tuned PyTorch and 15.90 ms for vLLM.

@@ -1,0 +1,21 @@
+---
+title: "MaxKernel: Agentic Kernel Generation for TPUs"
+title_en: "MaxKernel: Agentic Kernel Generation for TPUs"
+authors: ["Shangkun Wang", "Nina Cai", "Charles Hoong", "Julian Walker", "Gerson Kroiz", "George Vanica", "Deepak Patil", "Andi Gavrilescu", "Hassan Sipra", "Sethu Sankaran"]
+date: "2026-09-03"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.04523v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Designing and authoring high-performance custom kernels for accelerators is a complex task that requires deep hardware-level expertise. Large Language Models (LLM) can be leveraged together with real-time compiler feedback to build agentic systems for kernel generation. In this work, we present MaxKernel, a multi-agent system that implements three distinct paradigms for TPU kernel development: (1) a Human-in-the-Loop (HITL) agent for collaborative, step-by-step design; (2) an Autonomous (Auto) agent that executes a fully automated, metric/trace-driven optimization loop; and (3) a Graph-Based Autonomous Search that scales the Auto agent for global exploration of the design space. All three paradigms leverage a shared pool of specialized sub-agents to handle planning, implementation, self-debugging, testing, and hardware profiling. We evaluate MaxKernel on JaxBench, a comprehensive suite of 50 diverse kernel tasks for TPUs, alongside complex, real-world workloads from state-of-the-art open-source models. We demonstrate that MaxKernel consistently generates highly optimized implementations, matching expert hand-tuned baselines and delivering significant performance across the benchmark. Our agent is open-sourced and available https://github.com/AI-Hypercomputer/accelerator-agents/tree/main/MaxKernel.

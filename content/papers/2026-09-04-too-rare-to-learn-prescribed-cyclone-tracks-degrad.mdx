@@ -1,0 +1,21 @@
+---
+title: "Too Rare to Learn: Prescribed Cyclone Tracks Degrade a Bay of Bengal Ocean Emulator"
+title_en: "Too Rare to Learn: Prescribed Cyclone Tracks Degrade a Bay of Bengal Ocean Emulator"
+authors: ["Sumaiya Islam"]
+date: "2026-09-04"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.04635v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Neural ocean emulators are being proposed for regional forecasting in cyclone-exposed coastal seas, and a natural design choice is to hand the network the cyclone as a prescribed input. We test that choice in the Bay of Bengal and find it harmful. We withhold 15 whole cyclones spanning 65 to 150 kt from GLORYS12 reanalysis and compare two U-Nets that are identical except for four prescribed cyclone-track channels. Across three seeds the ocean-only model beats persistence in every run and the storm-conditioned model loses to it in every run, with the two skill ranges disjoint (p = 3.1e-5, paired across storms). The cause is exposure frequency rather than signal content: the channels are non-zero on only 7.9% of training days, so they are out of distribution the moment they activate. The extra error falls inside the prescribed storm footprint, and replacing the real cyclone map with a no-storm map at inference improves held-out storm forecasts by 7.5 to 16.4% in every seed. The conditioned network has learned a response to a rare signal that is confidently wrong.

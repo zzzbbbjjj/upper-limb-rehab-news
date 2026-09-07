@@ -1,0 +1,21 @@
+---
+title: "APEX-RBD: Mixed-Precision Exploration Framework for Hardware-Efficient Robot Dynamics Accelerator Design"
+title_en: "APEX-RBD: Mixed-Precision Exploration Framework for Hardware-Efficient Robot Dynamics Accelerator Design"
+authors: ["Xingyu Liu", "Hanwei Fan", "Chaofang Ma", "Jiawei Liang", "Guangyu Hu", "Jiang Xu", "Wei Zhang"]
+date: "2026-09-04"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.05161v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Rigid Body Dynamics (RBD) forms the computational core of real-time robotic control, but its immense computational complexity creates a performance bottleneck that necessitates dedicated hardware accelerators. However, the substantial hardware resource and power costs of these accelerators make their deployment on resource-constrained edge platforms highly challenging. While quantization offers a promising path to optimize RBD hardware for edge computing, existing uniform-precision approaches remain inefficient by ignoring the diverse quantization sensitivities of different variables. Although mixed-precision offers a superior alternative, its exploration is intractable due to a vast search space and the prohibitive cost of closed-loop simulation for motion accuracy evaluation.   To address these challenges, we introduce APEX-RBD, an automated framework that makes mixed-precision exploration computationally tractable while effectively identifying hardware-efficient configurations. Specifically, it performs physics-driven search space pruning via variable grouping and sensitivity analysis, and employs a data-efficient, prior-informed surrogate model to enable rapid trajectory error prediction. This formulation guides a hybrid optimizer to identify area- and power-efficient designs under user-defined accuracy and performance constraints. Experimental results demonstrate that APEX-RBD discovers designs achieving up to 1.9$\times$ area reduction and 1.8$\times$ power savings compared to uniform-precision baselines across diverse robotic platforms.
