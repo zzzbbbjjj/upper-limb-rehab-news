@@ -1,0 +1,21 @@
+---
+title: "通过 GPU 并行模式评估进行接触丰富的运动规划"
+title_en: "Contact-Rich Motion Planning via GPU-Parallel Mode Evaluation"
+authors: ["Jiayun Li", "Georgia Chalvatzaki"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21803v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+富接触运动规划（CRMP）对于机器人操纵和运动至关重要，但由于组合接触决策，计算上仍然具有挑战性。现有方法通常避免通过搜索启发法或优化重构来对接触模式序列进行广泛评估。我们根据现代 GPU 硬件重新审视广泛的评估，并引入具有并行轨迹优化 (CoMET) 的接触模式扩展，它将 GPU 并行轨迹评估与贪婪接触模式扩展相结合。在平面推送基准上，CoMET 在解决方案质量和规划时间方面与基于优化、采样和树搜索的基线相比具有竞争力，几乎所有实例上的完整枚举参考都与评估次数更少、规划时间更短相匹配。消融表明，大部分性能增益来自高吞吐量轨迹评估器。在双手非综合操作中，随着模式空间的增长，GPU 友好的局部模...
+
+## English Summary
+
+Contact-rich motion planning (CRMP) is essential for robotic manipulation and locomotion, yet remains computationally challenging due to combinatorial contact decisions. Existing methods typically avoid broad evaluation of contact-mode sequences through search heuristics or optimization reformulations. We revisit broad evaluation in light of modern GPU hardware and introduce Contact-Mode Expansion with parallel Trajectory optimization (CoMET), which combines GPU-parallel trajectory evaluation with greedy contact-mode expansion. On planar pushing benchmarks, CoMET is competitive with optimization-based, sampling, and tree-search baselines in solution quality and planning time, matching the full-enumeration reference on nearly all instances with fewer evaluations and shorter planning times. Ablations suggest that much of the performance gain comes from the high-throughput trajectory evaluator. In bimanual nonprehensile manipulation, GPU-friendly local mode expansion achieves higher planning success than the tested adaptive tree search as the mode space grows. These results demonstrate that broad explicit mode evaluation provides a simple yet effective alternative for CRMP.

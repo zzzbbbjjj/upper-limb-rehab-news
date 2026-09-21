@@ -1,0 +1,21 @@
+---
+title: "PlaceReasoner-Beta：推理驱动的宏放置和基准测试"
+title_en: "PlaceReasoner-Beta: Reasoning-Driven Macro Placement and Benchmarking"
+authors: ["Qiufeng Li", "Chengxuan Wang", "Rongqian Chen", "Quan Cheng", "Yihui Ren", "Chia-Tung Ho", "David Z. Pan", "Tian Lan", "Weidong Cao"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21263v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+自动宏布局仍然是 VLSI 物理设计中的基本挑战。尽管经过数十年的研究，现有方法主要优化手工制作的代理目标，例如估计线长，并且通常通过一次性数值优化产生布局，限制了它们在统一循环中整合视觉布局上下文、编码化设计专业知识和下游物理设计反馈的能力。我们提出了 PlaceReasoner-Beta，一个验证者引导的多智能体框架，它将宏布局重新表述为闭环推理问题，而不是黑盒优化。视觉语言模型（VLM）规划器根据平面图图像、宏观规格和连接结构生成候选布局；几何验证器强制执行物理合法性和专家放置原则；物理验证员使用早期实施反馈来完善候选者；布线后优化器使用最终的 PPA 进一步改进有前景的布局。为了实现可...
+
+## English Summary
+
+Automated macro placement remains a fundamental challenge in VLSI physical design. Despite decades of research, existing approaches predominantly optimize hand-crafted proxy objectives, such as estimated wirelength, and typically produce placements through one-shot numerical optimization, limiting their ability to incorporate visual layout context, codified design expertise, and downstream physical-design feedback in a unified loop. We present PlaceReasoner-Beta, a verifier-guided multi-agent framework that reformulates macro placement as a closed-loop reasoning problem rather than black-box optimization. A vision-language model (VLM) planner generates candidate placements from the floorplan image, macro specifications, and connectivity structure; a geometric verifier enforces physical legality and expert placement principles; a physical verifier refines candidates using early implementation feedback; and a post-route optimizer further improves promising layouts using final PPA. To enable reproducible evaluation, we introduce PlaceReasoner-Bench, a fully open end-to-end benchmark built from open RTL designs, EDA tools, and technology libraries. It comprises 8 designs at two aspect ratios, yielding 16 tasks with fixed floorplans and I/O assignments, so methods differ only in macro positions and orientations and are evaluated using routed PPA and DRC rather than pre-route proxies. Across the benchmark, PlaceReasoner-Beta achieves the best timing among DRC-clean methods on all square tasks, reducing post-route TNS by 61.2% at 1:1 and 53.0% at 2:1 relative to the classical baseline field. It also shortens routed wirelength on most designs despite never explicitly optimizing it, demonstrating that reasoning over spatial structure under physical-design feedback can improve end-to-end layout quality beyond proxy-objective optimization.

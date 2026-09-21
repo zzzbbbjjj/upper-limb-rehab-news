@@ -1,0 +1,21 @@
+---
+title: "用于双手程序异常检测的手部感知转换建模"
+title_en: "Hand-Aware Transition Modeling for Bimanual Procedural Anomaly Detection"
+authors: ["Di Wen", "Jimmy Weissert", "Luc Maria Scherrer", "Cedric Zöllner", "Kailun Yang", "Ruiping Liu", "Yufan Chen", "Jiale Wei", "Junwei Zheng", "Kunyu Peng"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21207v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+双手装配中的程序异常检测需要根据迄今为止的执行来判断每个手部动作。单独的纠正措施可能看起来不寻常，而视觉上合理的措施可能会违反程序的顺序。我们提出了 HACT，一种针对每局预测事件的转换模型。 A role-preserving history keeps the concurrent responsibilities of both hands, and a marked temporal point process assigns each observed transition a semantic and temporal surprisal.受监督的证据头和两种状态过滤器将这些意外情...
+
+## English Summary
+
+Procedural anomaly detection in bimanual assembly requires judging each hand action against the execution so far. A corrective action may look unusual in isolation, while a visually plausible action can violate the order of the procedure. We present HACT, a transition model over predicted per-hand events. A role-preserving history keeps the concurrent responsibilities of both hands, and a marked temporal point process assigns each observed transition a semantic and temporal surprisal. A supervised evidence head and a two-state filter convert these surprisals into per-hand anomaly posteriors. A recovery-aware protocol on predicted events and participant-disjoint folds reports the recovery false-positive rate at an operating point selected on validation participants. On two bimanual power-tool procedures HACT has the highest AUPRC and F1 among the compared methods and the fewest recovery alarms. Applied without retraining to a different assembly order of the same product, it retains the highest AUPRC and F1. The source code is available at https://github.com/Kratos-Wen/HACT.

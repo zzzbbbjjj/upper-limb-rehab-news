@@ -1,0 +1,21 @@
+---
+title: "并行仿真中机器人操作的扩展视觉语言奖励学习"
+title_en: "Scaling Vision-Language Reward Learning for Robot Manipulation in Parallel Simulation"
+authors: ["Lobna Joualy", "Eric Demeester", "Nikolaos Tsiogkas"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21767v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉语言模型 (VLM) 可以在基于偏好的奖励学习中取代人类注释者，但顺序 API 请求和单一环境数据收集使得训练缓慢且成本高昂。我们提出了 RAPID（自适应并行图像多样性奖励学习），这是一个将 GPU 并行部署与数据感知策略更新、单请求偏好标记、自动奖励稳定和代表性图像采样相结合的系统。我们在 IsaacLab 中的五个 Franka Panda 操作任务中评估了这些组件。并行推出和自适应更新首次大幅减少了训练时间：在匹配的两阶段提示下，平均运行时间从 9.18 小时降至 3.13 小时。启用所有 RAPID 组件后，每次运行使用 896 个 API 调用（而不是 19,840 个 API...
+
+## English Summary
+
+Vision-language models (VLMs) can replace human annotators in preference-based reward learning, but sequential API requests and single-environment data collection make training slow and costly. We present RAPID (Reward learning with Adaptive Parallel Image Diversity), a system that couples GPU-parallel rollout with data-aware policy updates, single-request preference labeling, automatic reward stabilization, and representative image sampling. We evaluate these components on five Franka Panda manipulation tasks in IsaacLab. Parallel rollout and adaptive updates provide the first substantial reduction in training time: under matched two-stage prompting, mean runtime falls from 9.18 to 3.13 hours. With all RAPID components enabled, training completes in 1.15 hours using 896 rather than 19,840 API calls per run, and aggregate final success rises from 86.3\% to 98.7\%. This represents an 8.0$\times$ end-to-end speedup and a 95.5\% reduction in API usage. An offline evaluation with Gemma~3 12B and GPT-4.1 mini demonstrates that single-request prompting reduces labeling latency and cost across both models. Code is available at: https://github.com/rapid-vlm/rapid-vlm-rl.

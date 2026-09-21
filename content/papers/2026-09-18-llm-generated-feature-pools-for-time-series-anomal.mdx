@@ -1,0 +1,21 @@
+---
+title: "用于时间序列异常检测的 LLM 生成的特征池"
+title_en: "LLM-Generated Feature Pools for Time Series Anomaly Detection"
+authors: ["Youssef Attia El Hili", "Malik Tiomoko", "Corinne Ancourt"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21801v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+我们研究在严格的选择协议下，简单的统计管道可以在单变量时间序列异常检测上进行多远。该方法提取滑动窗口上的一小部分统计数据，使用传导鲁棒（MAD）模型对每个窗口进行评分，并在保留的调整分割上选择每个域的特征子集。在 TSB-AD-U 上，每系列 VUS-PR 达到 0.529 美元，高于公共排行榜上最好的神经（0.45 美元）和统计（0.44 美元）条目，距离最强的预训练基础模型不到 0.06 美元，其中一些模型使用的监督比我们的模型更多。消融找到了原因：在三种选择策略和事后预言中，分数移动了 0.031 美元，在聚合网格上移动了 0.096 美元，而更改候选池时，分数移动了 0.226 美元。...
+
+## English Summary
+
+We study how far a simple statistical pipeline can go on univariate time series anomaly detection under a strict selection protocol. The method extracts a small pool of statistics over sliding windows, scores each window with a transductive robust (MAD) model, and selects a feature subset per domain on a held-out tuning split. On TSB-AD-U it reaches $0.529$ per-series VUS-PR, above the best neural ($0.45$) and statistical ($0.44$) entries on the public leaderboard and within $0.06$ of the strongest pretrained foundation model, several of which use more supervision than ours. Ablations locate the cause: across three selection strategies and a hindsight oracle the score moves by $0.031$, and across the aggregation grid by $0.096$, while changing the candidate pool moves it by $0.226$. The candidate pool sets the ceiling; the search over it is second-order. We therefore generate a pool per domain by prompting a multimodal LLM with in-context example windows from that domain. The generated pools match the hand-crafted one under matched selection, and the two cover different domains: selecting over their union improves on the generated pool in all twelve generator-seed pairs and lifts the pipeline to $0.588$, matching the performance of the best entry on the leaderboard.

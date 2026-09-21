@@ -1,0 +1,21 @@
+---
+title: "发生故障的机器人何时应该询问？根据经过审核的传感器证据启动纠正性人机对话"
+title_en: "When Should a Failing Robot Ask? Initiating Corrective Human-Robot Dialogue from Audited Sensor Evidence"
+authors: ["Eshika Pathak", "Leela Krishna"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21942v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+任务失败的机器人面临纠正对话中的第一个决定：根据自己的诊断采取行动，咨询另一个机载传感器，或者打断人。做出好的选择需要了解机器人的传感器揭示了多少原因以及机器人自身的诊断有多可靠。我们建立了一个模拟基准，其中每个故障的真正原因都是已知的，因为我们注入了它，并测量每个传感器揭示的内容，并明确检查数据泄漏。有些故障可以通过摄像头图像来诊断；其他仅来自机器人的力数据（来自力数据的 0.99，没有高于 0.55 的图像方法）。然后我们测试了六种开放视觉语言模型。他们的行为只跟踪提示的表面，而不是证据：将拒绝选项从答案列表中的最后一个移动到第一个，在六对模特和家庭中的三对中，拒绝率从 78-100% 下...
+
+## English Summary
+
+A robot that fails at a task faces the first decision in corrective dialogue: act on its own diagnosis, consult another onboard sensor, or interrupt a person. Choosing well requires knowing how much the robot's sensors reveal about the cause and how reliable the robot's own diagnosis is. We build a simulated benchmark in which every failure's true cause is known, because we injected it, and measure what each sensor reveals, with explicit checks against data leakage. Some failures are diagnosable from camera images; others only from the robot's force data (0.99 from force data, no image method above 0.55). We then test six open vision-language models. Their behavior tracks the surface of the prompt, not the evidence: moving the refusal option from last to first in the answer list collapses refusal rates from 78-100% to 0-6% in three of the six swept model-and-family pairs. Accuracy from frames stays at or below a majority-class baseline under every prompt variant, with or without worked examples, and stated confidence carries no information about correctness. Handing the same models the force data as ten lines of text produces the first above-baseline diagnoses, in four of the six models: much of the failure reflects missing sensor data, not missing ability. We pose the choice as a three-action decision problem, act, consult your own sensors, or ask a human, whose optimal policy follows from measured accuracy. The models do not follow it, and their ask rates ignore a fourfold change in question cost. One question to a human still lifts them from that baseline to roughly the answerer's own reliability (0.70-0.81 when they ask). The decision to ask should be tied to measured accuracy and stated costs, not to the model's confidence.

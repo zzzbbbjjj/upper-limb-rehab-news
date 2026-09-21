@@ -1,0 +1,21 @@
+---
+title: "临床数据稀缺情况下基于扩散的肿瘤修复用于肾脏分割"
+title_en: "Diffusion-Based Tumor Inpainting for Renal Segmentation under Clinical Data Scarcity"
+authors: ["Ekaterina Sedykh", "Salme Ussanov", "Dmytro Fedorenko", "Dmytro Fishman"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21698v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+肾肿瘤的深度学习分割需要大量带注释的数据集，但临床部署通常只提供目标部位的少数肿瘤阳性病例。我们提出了一种基于扩散的修复框架，可以在健康 CT 扫描中合成解剖学上合理的肾肿瘤，无需额外注释，并为此任务提供 2D、2.5D 和全 3D (MAISI) 合成策略的首次系统比较。在公共数据（KiTS23、KIRC）上训练扩散模型并在三个低数据机制的内部队列上评估 nnU-Net 分割，我们发现 2.5D 和 3D 增强在保持 Dice 的同时大大减少了误报（从 $\sim$18--20\% 到 $\sim$3--6\%），而 2D 没有提供一致的好处。至关重要的是，所提出的 2.5D 方法以低得多的...
+
+## English Summary
+
+Deep learning segmentation of renal tumors requires large annotated datasets, yet clinical deployments typically offer only a handful of tumor-positive cases from the target site. We propose a diffusion-based inpainting framework that synthesizes anatomically plausible renal tumors within healthy CT scans, requiring no additional annotation, and provide the first systematic comparison of 2D, 2.5D, and full 3D (MAISI) synthesis strategies for this task. Training the diffusion model on public data (KiTS23, KIRC) and evaluating nnU-Net segmentation on a internal cohort across three low-data regimes, we find that 2.5D and 3D augmentation substantially reduce false positives (from $\sim$18--20\% to $\sim$3--6\%) while maintaining Dice, whereas 2D provides no consistent benefit. Crucially, the proposed 2.5D method matches full 3D synthesis on every metric at substantially lower computational cost, indicating that local volumetric consistency alone is sufficient for effective augmentation in data- and resource-scarce clinical settings.

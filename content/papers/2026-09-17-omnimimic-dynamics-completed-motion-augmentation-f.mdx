@@ -1,0 +1,21 @@
+---
+title: "OmniMimic：用于多风格全向四足运动的动力学完成的运动增强"
+title_en: "OmniMimic: Dynamics-completed Motion Augmentation for Multi-style Omnidirectional Quadruped Locomotion"
+authors: ["Sheng Wu", "Guoqiang Zhao", "Zhe Yang", "Fei Teng", "Zhikun Zhou", "Yanlin Yang", "Zheng Fang", "Hong Zheng", "Yaonan Wang", "Kailun Yang"]
+date: "2026-09-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.20566v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+动物演示为四足机器人提供了自然且独特的步态风格，而这些步态风格很难通过手工制作的奖励来指定。然而，它们的方向覆盖范围狭窄，对向后、横向和转向命令几乎没有风格一致的监督。我们提出了 OmniMimic，这是一个训练框架，可将方向有限的动物演示转变为针对目标每轴速度范围的单一多步态策略。 OmniMimic 首先结合时间反转、约束动力学完成和矢状反射，构建超出观察方向的机器人特定运动学和物理监督。然后，它将命令从演示的速度分布逐步扩展到目标每轴边界，并使用具有软门控、步态专业残差专家的共享参与者来平衡可重复使用的运动技能与特定步态的校正。在模拟的四种步态中，与匹配的 APEX 基线相比，OmniM...
+
+## English Summary
+
+Animal demonstrations provide quadruped robots with natural and distinctive gait styles that are difficult to specify through hand-crafted rewards. However, their narrow directional coverage leaves little style-consistent supervision for backward, lateral, and turning commands. We present OmniMimic, a training framework that turns directionally limited animal demonstrations into a single multi-gait policy over target per-axis velocity ranges. OmniMimic first combines temporal reversal, constrained dynamics completion, and sagittal reflection to construct robot-specific kinematic and physical supervision beyond the observed directions. It then expands commands progressively from the demonstrated velocity distribution toward the target per-axis bounds, and uses a shared actor with soft-gated, gait-specialized residual experts to balance reusable locomotion skills with gait-specific corrections. Across four gaits in simulation, OmniMimic reduces mean foot-position RMSE at forward and backward reference velocities by 12.9% and velocity-tracking RMSE on a uniform Cartesian command grid by 63.1%, compared with the matched APEX baseline. The project page is at https://OmniMimic.github.io.

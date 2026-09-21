@@ -1,0 +1,21 @@
+---
+title: "超越稳定性--流媒体目标说话人提取中的可塑性前沿"
+title_en: "Beyond the Stability--Plasticity Frontier in Streaming Target Speaker Extraction"
+authors: ["Yuesheng Ma", "Linyang He", "Nima Mesgarani"]
+date: "2026-09-17"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.20463v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+流式目标说话人提取必须保持提取对象的表示，而目标可能会陷入沉默、被干扰掩盖或在声学上偏离登记。现有系统通常将此状态保存为由手工设计的规则更新的存储嵌入。在 22 种配置中，包括置信门控和预言活动门控更新，我们表明该家族位于稳定性可塑性前沿：即使是完美的目标活动信息也无法将目标缺席的鲁棒性与对注册混合不匹配的适应结合起来。因此，我们通过封闭的流循环对说话者状态动态进行元训练，使更新器暴露在其自身受污染的证据中。我们提出的 41k 参数锚定快速权重 (AFW) 内存超出了测量的启发式边界，在严重不匹配的情况下比最佳启发式增加了 3.0 dB，同时在缺席 30 秒后保持在 0.9 dB 的静态注册范...
+
+## English Summary
+
+Streaming target speaker extraction must maintain a representation of whom to extract while the target may fall silent, be masked by interference, or drift acoustically away from enrollment. Existing systems typically hold this state as a stored embedding updated by hand-designed rules. Across 22 configurations, including confidence-gated and oracle-activity-gated updates, we show that this family lies on a stability-plasticity frontier: even perfect target-activity information cannot combine robustness to target absence with adaptation to enrollment-mixture mismatch. We therefore meta-train speaker-state dynamics through the closed streaming loop, exposing the updater to its own contaminated evidence. Our proposed 41k-parameter anchored fast-weights (AFW) memory moves beyond the measured heuristic frontier, gaining 3.0 dB over the best heuristic under severe mismatch while staying within 0.9 dB of static enrollment after 30 s of absence, at under 5% runtime overhead. A gated recurrent unit (GRU) control confirms that the gain is not AFW-specific, while AFW is smaller and more interpretable: under severe mismatch, its write residual grows and aligns with the target rather than the interferer. Code is publicly available at https://github.com/ym2976/anchor-fast-weight.

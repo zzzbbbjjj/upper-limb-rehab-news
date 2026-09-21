@@ -1,0 +1,21 @@
+---
+title: "对象检测基准不完整：标签错误和注释不确定性的作用"
+title_en: "Object Detection Benchmarks are Incomplete: The Role of Label Errors and Annotation Uncertainty"
+authors: ["Sarina Penquitt", "Jonathan Klees", "Antonia van Betteray", "Parssa Jashnieh", "Peter Stehr", "Matthias Rottmann", "Lars Schmarje"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21822v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+虽然对象检测通过改进的架构和开放词汇模型取得了进步，但我们提供了强有力的证据表明基准质量受到注释不完整性的限制。在四个广泛使用的数据集（COCO、Pascal VOC、Cityscapes、KITTI）中，重新注释揭示了注释对象的大幅增加（例如，KITTI 上增加了 60%，COCO 上增加了 40%），这主要是由以前未标记的小型、遮挡或密集实例驱动的。虽然特定于数据集的注释约定产生了一些差异，但我们一致发现缺失注释是所有数据集标签错误的主要来源。为了实现高数据质量，我们引入了一个可扩展的注释管道，该管道强调高召回率，并通过从每个对象至少 11 个注释器聚合的软标签捕获歧义。由此产生的注释提高...
+
+## English Summary
+
+While object detection has advanced through improved architectures and open-vocabulary models, we provide strong evidence that benchmark quality is limited by annotation incompleteness. Across four widely used datasets (COCO, Pascal VOC, Cityscapes, KITTI), re-annotation reveals substantial increases in annotated objects (e.g., up to +60% on KITTI and +40% on COCO), driven primarily by previously unlabeled small, occluded, or densely packed instances. While some differences arise from dataset-specific annotation conventions, we consistently find that missing annotations are the main source of label errors across all datasets. To achieve high data quality, we introduce a scalable annotation pipeline that emphasizes high recall and captures ambiguity through soft labels aggregated from at least 11 annotators per object. The resulting annotations improve coverage and align well with human calibration. We show that benchmark performance is highly sensitive to annotation quality, although model rankings remain largely stable. We introduce two large-scale benchmarks: (i) an uncertainty-aware object detection benchmark, and (ii) a label error detection benchmark grounded in real label errors. We show that current detectors are strongly depended on annotation quality and are misaligned with human perception. Current label error detection methods, which have been shown to perform well on synthetic noise, struggle to achieve high recall and precision on real label errors. Our results highlight the need for future object detection benchmarks to move beyond deterministic annotations toward high-recall, uncertainty-aware evaluation that maximizes valid instances and better reflects real-world ambiguity.

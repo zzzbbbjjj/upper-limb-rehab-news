@@ -1,0 +1,21 @@
+---
+title: "IncentRL：偏好指导和任务绩效之间的权衡"
+title_en: "IncentRL: The Trade-Off Between Preference Guidance and Task Performance"
+authors: ["Xuening Wu", "Yanlan Kang", "Shenqin Yin"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21525v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+基于偏好的奖励塑造可以指导强化学习，但在奖励中添加偏好信号可能会无意中改变正在优化的任务。我们通过 IncentRL 解决了这个问题，该框架引入了偏好指导，同时明确描述了其对外部任务绩效的影响。 IncentRL 在指定结果分布和首选分布之间添加了 Kullback-Leibler (KL) 惩罚。对于具有有限成形成本的有限贴现马尔可夫决策过程，我们推导了外部价值扰动界限，建立了足够严格的行动间隙条件来保留原始最优策略，并通过贴现累积偏好成本来表征大权重制度。确切的例子阐明了这些保证的局限性，包括绑定最优值和支持不匹配。我们使用手工设计的、基于距离的结果代理、固定偏好分布和分数加权系数搜索来研...
+
+## English Summary
+
+Preference-based reward shaping can guide reinforcement learning, but adding preference signals to the reward may unintentionally change the task being optimized. We address this problem with IncentRL, a framework that introduces preference guidance while explicitly characterizing its effect on external-task performance. IncentRL adds a Kullback--Leibler (KL) penalty between a specified outcome distribution and a preferred distribution. For finite discounted Markov decision processes with bounded shaping costs, we derive an external-value perturbation bound, establish a sufficient strict-action-gap condition for preserving the original optimal policy, and characterize the large-weight regime through discounted cumulative preference cost. Exact examples clarify the limits of these guarantees, including tied optima and support mismatch. We study a practical implementation using a hand-designed, distance-based outcome proxy, a fixed preference distribution, and score-weighted coefficient search. On MiniGrid DoorKey-8x8, the reported three-seed mean success rate after two million training steps reaches 98\% with coefficient 0.01, compared with 90.5\% for the reported zero-coefficient baseline, while the search progressively shifts toward smaller coefficients. Together, these results provide a principled view of the central trade-off in preference-based RL: using additional guidance to improve learning without excessively distorting the original task objective. The current experiments remain descriptive and do not yet isolate KL shaping from simpler alternatives.

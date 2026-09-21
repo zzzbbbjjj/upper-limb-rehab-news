@@ -1,0 +1,21 @@
+---
+title: "从预训练到熟练：以最少的人为干预进行长视野操纵的现实世界子任务强化学习"
+title_en: "From Pretraining to Proficiency: Real-World Subtask RL for Long-Horizon Manipulation with Minimal Human Intervention"
+authors: ["Sichang Su", "Benjamin Yang", "Zhiyun Deng", "Boyuan Liang", "Yip Fun Yeung", "Zelin Wang", "Lingfeng Sun"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21788v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb"]
+---
+
+## 中文摘要
+
+预先训练的机器人基础策略可能会执行大部分长期任务，但在一些关键子任务上会反复失败。收集额外的全任务演示以进行监督微调（SFT）需要操作员重复策略已经表现良好的行为。强化学习（RL）微调为弥合这一差距提供了一条有希望的途径，但现有方法很难仅使用稀疏奖励来解决长期任务。我们提出了 PARTS（针对目标子任务的 RL 策略适应），这是一个现实世界的子任务 RL 框架，该框架将实践集中在这些瓶颈上，同时允许在最少的人为干预下进行训练。冻结的预训练策略在整个执行过程中提供名义操作，而代理生成的选择器和成功验证器则激活剩余修正并提供本地结果奖励。即使完成任务的成功很少，这些奖励也支持从成功的子任务中学习。...
+
+## English Summary
+
+A pretrained robot foundation policy may execute most of a long-horizon task yet repeatedly fail at a few critical subtasks. Collecting additional full-task demonstrations for supervised fine-tuning (SFT) requires operators to repeat behaviors the policy already performs well. Reinforcement learning (RL) fine-tuning offers a promising path to bridge this gap, but existing approaches struggle to solve long-horizon tasks using only sparse rewards. We present PARTS (Policy Adaptation with RL on Targeted Subtasks), a real-world subtask RL framework that concentrates practice at these bottlenecks while allowing training rollouts to proceed with minimal human intervention. The frozen pretrained policy supplies nominal actions throughout execution, while agent-generated selectors and success verifiers activate residual corrections and provide local outcome rewards. These rewards support learning from successful subtasks even when complete-task successes are scarce. Training combines online RL with success-reweighted retraining, and each retrained residual policy is redeployed to collect further experience. Humans identify bottlenecks during setup and perform physical resets when needed. On bimanual YAM and single-arm Franka tasks, PARTS improves complete-task success from 32% to 61% and from 50% to 95%, respectively, using tens of minutes of real-world RL rollouts per task on average. Compared with existing real-world RL fine-tuning methods, PARTS raises full-task success by more than 25% under the same robot-rollout budget while requiring less human involvement.

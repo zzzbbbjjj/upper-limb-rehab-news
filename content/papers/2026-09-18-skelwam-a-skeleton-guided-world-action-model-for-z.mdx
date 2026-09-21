@@ -1,0 +1,21 @@
+---
+title: "SkelWAM：用于零射击跨实体操作的骨骼引导世界动作模型"
+title_en: "SkelWAM: A Skeleton-Guided World-Action Model for Zero-Shot Cross-Embodiment Manipulation"
+authors: ["Pengjun Niu", "Yujia Xie", "Rui Peng", "Hang Zhao", "Ke Liu"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21983v1"
+doi: ""
+tags: ["腕关节", "上肢康复"]
+tags_en: ["wrist", "upper limb"]
+keywords: ["腕关节", "上肢康复"]
+keywords_en: ["wrist", "upper limb"]
+---
+
+## 中文摘要
+
+在机器人实施例中重用操作经验对于扩展机器人学习和减少重复的特定任务数据收集非常重要。然而，实施例的变化改变了视觉外观、动作维度和语义，以及可以实现相同工具姿势的全身配置。我们提出了 SkelWAM，一种骨架引导的世界动作模型，通过一个显式几何表示将感知和控制结合起来，以实现单源跨实体操作。手臂中心线几何形状、工具中心点 (TCP) 姿势和平行爪命令形成共享的 25 维状态。同样的定义也是规范的第三人称和手腕观察以及未来全身动作目标的基础。通过预测视觉监督进行训练，变形金刚的视频动作混合物可以预测规范的骨架动作块，具体实施例的受限解码器将其转换为关节或连续机器人控制。这种表述不需要一对一的联合对...
+
+## English Summary
+
+Reusing manipulation experience across robot embodiments is important for scaling robot learning and reducing repeated task-specific data collection. However, changes in embodiment alter visual appearance, action dimensionality and semantics, and the whole-body configurations that can realize the same tool pose. We present SkelWAM, a skeleton-guided world-action model that couples perception and control through one explicit geometric representation for single-source cross-embodiment manipulation. Arm centerline geometry, tool-center-point (TCP) pose, and parallel-jaw commands form a shared 25-D state. The same definition underlies canonical third-person and wrist observations and future whole-body action targets. Trained with predictive visual supervision, a video-action mixture of transformers predicts canonical skeleton action chunks, which embodiment-specific constrained decoders convert into joint or continuum-robot controls. This formulation requires no one-to-one joint correspondence and uses no target-task demonstrations or target policy updates. We introduce LIBERO-Cross10, a source-only cross-embodiment transfer benchmark covering ten tasks and ten target embodiments across four morphological groups. On this benchmark, Franka-trained SkelWAM achieves 43.3% success over 1,000 episodes, exceeding the best-performing evaluated baseline by 36.2 percentage points. We further deploy a JAKA mini2-trained policy on the Feagine A03 continuum robot for three tabletop manipulation tasks, illustrating the approach's potential for real-world cross-embodiment manipulation. Project page: http://www.liukepku.com/skelwam/index.html

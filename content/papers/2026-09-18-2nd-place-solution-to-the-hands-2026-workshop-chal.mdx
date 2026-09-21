@@ -1,0 +1,21 @@
+---
+title: "HANDS 2026 研讨会挑战赛第二名解决方案 - 灵巧抓取运动轨迹：用于抓取运动生成的单次轨迹扭曲"
+title_en: "2nd Place Solution to the HANDS 2026 Workshop Challenge-Dexterous Grasp Motion Track: Single-Shot Trajectory Warping for Grasp Motion Generation"
+authors: ["Muneeb A. Khan", "Woojin Kim", "Shinwoo Kim", "Muhammad Munsif", "Binod Bhattarai", "Seungryul Baek"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21511v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+本报告介绍了我们与 ECCV 2026 结合的 HANDS 2026 研讨会挑战（灵巧抓取运动轨道）的第二名解决方案。在本次挑战中，我们解决了 12 自由度 LinkerHand O6 的抓取运动生成问题，旨在根据模拟中的随机初始手姿势为看不见的物体生成物理上合理的触及和举起轨迹。这项任务特别具有挑战性，因为每次抓取都需要一个每步策略来做出大约 70 美元的十二维决策，误差会随着时间的推移而累积，而测试对象和物理动力学可能与训练期间遇到的不同。为了解决这些挑战，我们建议编辑单个成功的 GraspM3 演示，而不是逐步生成运动：策略观察对象一次并输出演示的 12 维扭曲，然后开环重播。此外，我们...
+
+## English Summary
+
+This report describes our 2nd place solution to the HANDS 2026 workshop challenge (Dexterous Grasp Motion track) in conjunction with ECCV 2026. In this challenge, we address grasp motion generation for the 12-DoF LinkerHand O6, aiming to produce physically plausible reach-and-lift trajectories for unseen objects from randomized initial hand poses in simulation. This task is particularly challenging because each grasp requires a per-step policy to make approximately $70$ twelve-dimensional decisions, with errors accumulating over time, while test objects and physical dynamics may differ from those encountered during training. To address these challenges, we propose editing a single successful GraspM3 demonstration instead of generating the motion step by step: a policy observes the object once and outputs a 12-D warp of the demonstration, which is then replayed open-loop. Moreover, we train the warp policy with one-step PPO over all $4{,}824$ training objects in parallel. As a result, our method achieved success rates of $94.61\%$ on the easy track, the highest of all submissions, and $57.18\%$ on the hard track of the private test set.

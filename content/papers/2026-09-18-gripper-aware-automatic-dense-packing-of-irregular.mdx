@@ -1,0 +1,21 @@
+---
+title: "不规则物体的抓取感知自动密集包装"
+title_en: "Gripper-Aware Automatic Dense Packing of Irregular Objects"
+authors: ["Tianhao Qin", "Connor McCann", "Berk Calli", "Jing Xiao"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.22062v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+自动密集包装在仓库运营中受到广泛欢迎，但仍然是机器人操作的基本挑战。现有的不规则物体堆积工作主要针对理想化接触的模拟，将物体视为孤立的刚体。如果完全考虑的话，夹具通常作为离散的事后可行性检查进入，并且执行过程中积累的感知和接触漂移没有得到解决。我们提出了一个闭环管道，它集成了感知、夹具感知放置优化和真实机械臂上的力引导执行。优化器将对象与夹具一起表示为分层球体树的单个复合体。它在 CMA-ES 框架内的 GPU 上搜索超过五个自由度，垂直坐标根据当前高度图进行分析。在执行过程中，受力监控的垂直下降在第一次接触时停止。然后，释放后整合的推动将消除夹具感知规划留下的剩余横向间隙。在放置之间重新感知...
+
+## English Summary
+
+Automatic dense packing is widely desired in warehouse operations but remains a fundamental challenge in robotic manipulation. Existing work on irregular-object packing largely targets simulation with idealized contact, treating the object as an isolated rigid body. The gripper often enters as a discrete, post-hoc feasibility check, if considered at all, and the perception and contact drift accumulated during execution are not addressed. We present a closed-loop pipeline that integrates perception, gripper-aware placement optimization, and force-guided execution on a real manipulator. The optimizer represents the object together with the gripper as a single composite body of hierarchical sphere trees. It searches over five degrees of freedom on a GPU within a CMA-ES framework, with the vertical coordinate grounded analytically against the current heightmap. During execution, a force-monitored vertical descent stops on first contact. A post-release consolidation push then closes the residual lateral clearance that gripper-aware planning leaves behind. The container is re-perceived between placements so that drift does not accumulate. We validate the system on a Franka Emika Panda robot packing a 3D-printed set of flat, curved, and concave objects, and a YCB object subset. An ablation study isolates the contribution of gripper-aware optimization, the consolidation push, and mesh-derived geometry to end-to-end success, achieved density, and computational cost. We further benchmark against the heightmap-minimization method as a baseline representative of prior irregular-object packing work.

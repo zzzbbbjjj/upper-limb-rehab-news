@@ -1,0 +1,21 @@
+---
+title: "对持续学习作文任务的世界模型进行基准测试"
+title_en: "Benchmarking World Models for Continual Learning on Compositional Tasks"
+authors: ["Haoyu Zhou", "Joe Watson", "Anson Lei", "Ingmar Posner"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.22055v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+世界模型的一个理想特性是能够跨任务持续学习，适应新环境，而不会忘记代理已经学到的东西。特别是，保留和重用从先前经验中获得的知识的能力支撑了智能体有效适应新环境的能力，因为物理世界的动态通常可以用循环机制来描述。然而，世界模型的适应衡量标准涉及两种能力：学习未见过的任务的速度和能力，以及对已获得的知识的重用，因为传入的任务与重复出现的内容一起携带着新颖的内容。为了将知识重用与先前的经验隔离开来，我们为机器人操作中的世界模型提出了一个组合的持续学习基准。具体来说，我们设计每个任务课程时都包含组合任务，这些任务结合了序列中任务的各个方面。我们沿着行动和感知的轴进一步分解这种组合，以更好地理解不同的输...
+
+## English Summary
+
+A desirable property of a world model is the ability to learn continually across tasks, adapting to new environments without forgetting what the agent has already learnt. In particular, the ability to retain and reuse knowledge obtained from prior experiences underpins an agent's ability to efficiently adapt to novel environments, as the dynamics of the physical world can often be described in recurring mechanisms. However, the world model's measure of adaptation entangles two abilities: the speed and capacity to learn unseen tasks, and the reuse of knowledge already acquired, since incoming tasks carry novel content alongside what recurs. In order to isolate knowledge reuse from prior experiences, we propose a compositional continual learning benchmark for world models in robot manipulation. Specifically, we design each task curriculum with compositional tasks that combine aspects of the tasks seen in the sequence. We further factorise this composition along the axes of action and perception to better understand how different input modalities bottleneck knowledge reuse. We evaluate state-of-the-art world models under canonical continual learning methods, alongside a modular world model whose dynamics backbone contains explicitly reusable components. Results show that modularity balances reuse against forgetting better than conventional methods, but none solve the problem fully, leaving clear room for continual world models built to reuse without forgetting. More details are available on our project website: https://object814.github.io/Compositional-Continual-Learning/.

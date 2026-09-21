@@ -1,0 +1,21 @@
+---
+title: "GALA: Geometry-Aware Latent Action Modeling for Vision-Language-Action Model Pretraining across Embodiments"
+title_en: "GALA: Geometry-Aware Latent Action Modeling for Vision-Language-Action Model Pretraining across Embodiments"
+authors: ["Yichen Liu", "Puzhen Yuan", "Xiang Zhu", "Yanjiang Guo", "Jianyu Chen"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21948v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+由于末端执行器的动作空间异构，从多实施数据集中学习大规模视觉语言动作（VLA）模型仍然具有挑战性。尽管潜在动作模型 (LAM) 可以从不同的视频数据中学习与具体实施例无关的动作表示，但现有的基于图像的 LAM 通常无法捕获细粒度的末端执行器关节，特别是人类和灵巧的机器人手的手指级几何变化。为了解决这个限制，我们提出了 GALA，一种几何感知的潜在动作建模框架，它通过 3D 末端执行器几何运动增强基于图像的潜在动作。然而，天真地合并点云会产生具有有限共享语义的细粒度动作表示，从而阻碍了跨实体预训练。为了解决这个问题，我们引入了统一末端执行器运动表示（UEMR），它保留了细粒度的运动信息，同时提高...
+
+## English Summary
+
+Learning large-scale vision-language-action (VLA) models from multi-embodiment datasets remains challenging due to heterogeneous action spaces across end effectors. Although latent action models (LAMs) can learn embodiment-agnostic action representations from diverse video data, existing image-based LAMs often fail to capture fine-grained end-effector articulation, particularly finger-level geometric changes in human and dexterous robot hands. To address this limitation, we propose GALA, a Geometry-Aware Latent-Action modeling framework that augments image-based latent actions with 3D end-effector geometric motion. However, naively incorporating point clouds yields fine-grained action representations with limited shared semantics, hindering cross-embodiment pretraining. To address this issue, we introduce the Unified End-effector Motion Representation (UEMR), which preserves fine-grained motion information while improving the cross-embodiment generalizability of latent actions. Building upon UEMR, GALA combines visual latent actions that capture scene-level dynamics with geometric latent actions that capture shared fine-grained end-effector articulation, providing effective supervision for VLA pretraining from multi-embodiment data, including action-free ego-centric human videos. Experiments on fine-grained motion probing, cross-embodiment retrieval, and downstream VLA evaluation demonstrate GALA's effectiveness in modeling generalizable fine-grained motions across embodiments, achieving 68.3% RoboCasa-GR1 success rate and 75.5% real-world success rate. Code, appendix, and demos are available at https://puzhenyuan.github.io/GALA-website/.

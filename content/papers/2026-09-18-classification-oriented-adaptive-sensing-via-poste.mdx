@@ -1,0 +1,21 @@
+---
+title: "通过后验采样的面向分类的自适应感知"
+title_en: "Classification-oriented adaptive sensing via posterior sampling"
+authors: ["Andriy Enttsel", "Maxime Rousselot", "Vincent Corlay"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21812v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+扩散模型的最新进展通过后验采样实现了高性能、实例自适应的压缩感知，而无需特定于任务的策略训练。现有方法通过最大化总后验信号方差来选择传感探针，因此主要是重建驱动的。我们引入了一种由类条件高斯混合模型的封闭式后验协方差驱动的分类驱动扩展，该模型分解为类内和类间不确定性。使用校准的软分类器输出，我们从扩散后验样本中估计这些不确定性项，并提出一种面向分类的标准，用于在未测量的子空间中选择主导传感方向。在 MNIST 和 CIFAR-10 上进行的实验将所得的分类精度、测量成本和重建质量与面向重建的对应结果进行了比较。结果确定了语义后验不确定性产生更有利的分类的机制——测量权衡并量化相关的重建成本。
+
+## English Summary
+
+Recent advances in diffusion models have enabled high-performance, instance-adaptive compressed sensing through posterior sampling, without task-specific policy training. Existing methods select sensing probes by maximizing total posterior signal variance and are therefore primarily reconstruction-driven. We introduce a classification-driven extension motivated by the closed-form posterior covariance of a class-conditional Gaussian mixture model, which decomposes into within-class and between-class uncertainty. Using calibrated soft classifier outputs, we estimate these uncertainty terms from diffusion posterior samples and propose a classification-oriented criterion for selecting the dominant sensing direction in the unmeasured subspace. Experiments on MNIST and CIFAR-10 compare the resulting classification accuracy, measurement cost, and reconstruction quality with those of reconstruction-oriented counterparts. The results identify regimes in which semantic posterior uncertainty yields a more favorable classification--measurement trade-off and quantify the associated reconstruction cost.

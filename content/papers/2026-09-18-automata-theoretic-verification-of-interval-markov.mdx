@@ -1,0 +1,21 @@
+---
+title: "区间马尔可夫决策过程的自动机理论验证"
+title_en: "Automata-Theoretic Verification of Interval Markov Decision Processes"
+authors: ["Sarvin Bahmani", "Soumyajit Paul", "Sven Schewe", "Sadegh Soudjani", "Ashutosh Trivedi"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21966v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+区间马尔可夫决策过程 (IMDP) 为具有不确定转移概率的随机系统建模提供了一个自然的框架，由概率区间表示并以对抗方式解决。例如，当从有限数据中学习转换模型或通过基于模型的强化学习获得转换模型时，这种不确定性自然会出现。在本文中，我们通过考虑更广泛的 ω-正则目标类别，研究 IMDP 针对丰富时间规范（包括所有 LTL 规范）的自动理论验证。我们证明了经典的自动机理论验证技术可以扩展到 IMDP，但其明显的区别是由过渡区间的结构决定的。对于稳定的 IMDP，其中上限为零或下限严格为正，验证简化为普通 MDP 分析，并且可以使用该设置中使用的标准自动机（适合 MDP 自动机）进行。对于不稳定的 ...
+
+## English Summary
+
+Interval Markov decision processes (IMDPs) provide a natural framework for modeling stochastic systems with uncertain transition probabilities, represented by probability intervals and resolved adversarially. Such uncertainty arises naturally, for example, when the transition model is learned from finite data or obtained through model-based reinforcement learning. In this paper, we study the automata-theoretic verification of IMDPs against rich temporal specifications, including all LTL specifications, by considering the broader class of ω-regular objectives. We show that classical automata-theoretic verification techniques extend to IMDPs, but with a sharp distinction determined by the structure of the transition intervals. For stable IMDPs, where either the upper bound is zero or the lower bound is strictly positive, verification reduces to ordinary MDP analysis and can be carried out using the standard automata used in that setting (good-for-MDP automata). For unstable IMDPs, where intervals may include zero while the upper bound is strictly positive, verification becomes game-like and requires automata whose nondeterminism can be resolved on the fly (good-for-games automata). Building on these insights, we develop algorithms for verifying ω-regular specifications over IMDPs and derive probabilistic guarantees when the interval model is learned from sampled data. The resulting framework enables principled verification of stochastic systems under probabilistic model uncertainty, connecting automata-based verification with data-driven stochastic modeling.

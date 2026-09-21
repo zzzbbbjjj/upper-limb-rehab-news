@@ -1,0 +1,21 @@
+---
+title: "CARF：故障引导流匹配的对比吸引-排斥"
+title_en: "CARF: Contrastive Attraction-Repulsion of Failure-Guided Flow Matching"
+authors: ["Shuqi Zhao", "Bang Du", "Cheng-En Wu", "Yichen Xie", "Yixiao Wang", "Masayoshi Tomizuka"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21982v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+除了成功的演示之外，机器人演示集合通常还会产生不完美或失败的轨迹。现有的方法通常通过识别仍在完成任务方面取得进展的片段来利用失败的轨迹，但很大程度上忽略了直接导致任务失败的\textit{失败关键行为}。在这里，我们认为这两种类型的片段提供了根本上不对称的监督：应该模仿进步的片段，而应该明确避免失败的关键片段。基于这一观察，我们提出了 CARF，一种基于失败的对比吸引-排斥的框架，用于从不完美的机器人数据中学习。 CARF 引入了一种基于进度的重要性评分器，仅根据成功的专家演示及其扰动结果进行训练，以估计对任务完成的逐步贡献并识别失败轨迹中的信息区域。这些分数指导统一的流量匹配目标，吸引政策采...
+
+## English Summary
+
+Robot demonstration collection often produces imperfect or failed trajectories in addition to successful demonstrations. Existing methods typically exploit failed trajectories by identifying segments that still make progress toward task completion, but largely overlook \textit{failure-critical behaviors} that directly lead to task failure. Here we argue that these two types of segments provide fundamentally asymmetric supervision: progressive segments should be imitated, whereas failure-critical segments should be explicitly avoided. Based on this observation, we propose CARF, a Contrastive Attraction-Repulsion of Failure-guided framework for learning from imperfect robot data. CARF introduces a progress-based importance scorer, trained solely on successful expert demonstrations and its perturbation results, to estimate step-wise contributions toward task completion and identify informative regions in failed trajectories. These scores guide a unified flow-matching objective that attracts the policy toward progressive behaviors and repels it from failure-critical ones, while excluding ambiguous segments. This enables more comprehensive utilization of imperfect data and avoids unreliable supervision from ambiguous failure segments. Extensive experiments in simulation and the real world demonstrate consistent improvements over competing baselines across diverse failure scenarios, with ablations further validating the effectiveness of the proposed scoring and attraction-repulsion mechanisms. Our website is https://zhao-sq.github.io/carf/#.

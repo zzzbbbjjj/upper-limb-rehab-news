@@ -1,0 +1,21 @@
+---
+title: "超越运动学：肌肉驱动模仿学习的模拟保真度基准测试"
+title_en: "Beyond Kinematics: Benchmarking Simulation Fidelity for Muscle-Driven Imitation Learning"
+authors: ["Ayah G. Ahmad", "Claire E. Borden", "Maegan Tucker"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21909v1"
+doi: ""
+tags: ["人机接口"]
+tags_en: ["human-machine interface"]
+keywords: ["人机接口"]
+keywords_en: ["human-machine interface"]
+---
+
+## 中文摘要
+
+在这项工作中，我们对两种最先进的运动模仿强化学习 (MIRL) 管道进行了系统比较，一种基于 SCONE/HyFyDy，另一种基于 MuJoCo/MyoSim。 HyFyDy 通过详细的肌腱建模强调生理真实性，而 MuJoCo 则优先考虑计算效率和可扩展的策略学习。虽然最近的工作表明，这两个管道都以高保真度再现了人体运动学，但仍不清楚它们是否准确地捕获了产生运动的潜在神经肌肉行为。这种限制对于机器人辅助设备的设计和控制尤其重要，其中肌肉激活模式和代谢成本等结果测量通常被用作优化目标。为了进行系统比较，我们的工作使用一组通用的人体动作捕捉和肌电图 (EMG) 测量来比较这两个管道。结果发现，虽然...
+
+## English Summary
+
+In this work, we conduct a systematic comparison of two state-of-the-art motion-imitation reinforcement learning (MIRL) pipelines, one built on SCONE/HyFyDy and one built on MuJoCo/MyoSim. HyFyDy emphasizes physiological realism through detailed musculotendon modeling, while MuJoCo prioritizes computational efficiency and scalable policy learning. While recent work has demonstrated that both pipelines reproduce human kinematics with high fidelity, it remains unclear if they accurately capture the underlying neuromuscular behavior that produced the movement. This limitation is particularly important for robotic assistive-device design and control, where outcome measures such as muscle activation patterns and metabolic cost are often used as optimization targets. To conduct a systematic comparison, our work compares both pipelines using a common set of human motion-capture and electromyography (EMG) measurements. The results find that while both pipelines produce similar kinematics with relative accuracy, the muscle activations from HyFyDy are more aligned with the experimental EMG, as supported by the average pooled (RMSE, r) values for muscle activations from HyFyDy and MuJoCo: (0.164, 0.4) and (0.344, 0.11), respectively. While we conclude that the more advanced physiological realism of HyFyDy currently makes it more suitable for musculoskeletal modeling, both require further development to bring physiological realism to GPU-parallelizable simulation environments and advance robotic assistive device design.

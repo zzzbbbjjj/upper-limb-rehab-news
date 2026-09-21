@@ -1,0 +1,21 @@
+---
+title: "GameLogicBench：使用 Tick 级状态断言评估运行时游戏逻辑的编码代理"
+title_en: "GameLogicBench: Evaluating Coding Agents on Runtime Game Logic with Tick-Level State Assertions"
+authors: ["Xinyu Che", "Yunfei Ge", "Shihao Li", "Yanchen Liu", "Hang Yan", "Xinping Lei", "Yanghai Wang", "Zixuan Dong", "Yifan Yao", "Qianqian Xie"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21562v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+编码代理可以跨大型软件项目修改和测试代码。游戏开发是代理必须执行游戏规则的领域。即使在运行过程中违反了规则，游戏也可以以有效状态结束。当前的游戏开发基准会重播固定示例、对视频进行评分或要求另一个模型来判断结果。然而，现有的基准测试还没有在评估者选择的各种场景的整个执行过程中检查游戏规则，同时确保判决的准确可重复性。我们引入了 GameLogicBench，这是 Godot 项目中 72 个游戏逻辑任务的基准。自动评估器会在每次模拟时检查每个游戏的规则。在 403 个手工设计的场景中，种子参数变化产生了 1,451 个测试用例。为了确保评估器衡量行为而不是实现选择，它必须接受每项任务的不同正确实...
+
+## English Summary
+
+Coding agents can modify and test code across large software projects. Game development is a domain where agents must implement gameplay rules. A game can end in a valid state even after violating its rules during the run. Current game-development benchmarks replay fixed examples, score videos, or ask another model to judge the result. However, no existing benchmark checks game rules throughout execution across varied evaluator-selected scenarios while ensuring exactly reproducible verdicts. We introduce GameLogicBench, a benchmark of 72 gameplay-logic tasks in Godot projects. An automated evaluator checks each game's rules at every simulation tick. Across 403 hand-designed scenarios, seeded parameter variations produce 1,451 test cases. To ensure that the evaluator measures behavior rather than implementation choice, it must accept different correct implementations for each task while rejecting mutants, implementations with one required capability removed. The tasks span isolated mechanics, multi-system interactions, and repository-scale features. Across 20 combinations of language models and scaffolds, the best observed run solves 52.78% of tasks. Under Claude Code, all twelve models solve fewer tasks as task scope expands from isolated mechanics, through interacting systems, to repository-scale features. Agents inspect code more often and make more tool calls on repository-scale tasks than on isolated-mechanic tasks. Most unsuccessful submissions are runnable, but implement some required game behavior incorrectly. We compared versions of our benchmark evaluator built with and without validation using mutants. Without this validation, incorrect agent submissions passed. A separate analysis finds agents copying code from public repositories when network access is open. Reliable evaluation thus depends both on what the tests reject and on what external code agents can access.

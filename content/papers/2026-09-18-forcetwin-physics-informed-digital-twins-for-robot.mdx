@@ -1,0 +1,21 @@
+---
+title: "ForceTwin：基于物理的数字孪生，用于通过仪表化人类交互进行机器人操作"
+title_en: "ForceTwin: Physics-informed Digital Twins for Robotic Manipulation from Instrumented Human Interaction"
+authors: ["Tim Engelbracht", "René Zurbrügg", "Mayank Mittal", "Marco Hutter", "Marc Pollefeys", "Hermann Blum", "Zuria Bauer"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21751v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+操纵物体不仅需要了解它们的运动，还需要了解决定它的物理特性。对于铰接式物体，这些包括惯性、摩擦力和弹簧或闭门器等机构，其效果可能随配置和速度而变化。这些属性无法从外观直接观察到：视觉上相同的门可能需要非常不同的努力来操纵。现有的数字孪生管道主要恢复运动学或根据视觉和语言先验分配静态物理参数，这可能会产生物理上难以置信的估计。因此，依赖于状态的机制动态仍然未知，并且没有以标准资产格式表示。我们推出了 ForceTwin，这是一个用于从仪器化人类交互中识别铰接物体的物理信息数字孪生的系统。一个人使用手持力传感夹具探测物体，提供同步姿势和相互作用力，从中我们估计关节、参数动力学，包括惯性、库仑摩擦、...
+
+## English Summary
+
+Manipulating objects requires understanding not only their motion, but also the physical properties that determine it. For articulated objects, these include inertia, friction, and mechanisms such as springs or door closers, whose effects can vary with configuration and velocity. Such properties are not directly observable from appearance: visually identical doors may require very different effort to manipulate. Existing digital-twin pipelines recover primarily kinematics or assign static physical parameters from visual and language priors, which can yield physically implausible estimates. As a result, state-dependent mechanism dynamics remain unidentified and are not represented in standard asset formats. We present ForceTwin, a system for identifying physics-informed digital twins of articulated objects from instrumented human interaction. A person probes an object using a handheld force-sensing gripper, providing synchronized poses and interaction forces from which we estimate the articulation, parametric dynamics including inertia, Coulomb friction, viscous damping, and a structured neural residual capturing state-dependent mechanism forces. ForceTwin nearly halves the inertial-parameter error of a VLM prior. As a feedforward dynamics model for impedance control on a Spot and a Franka FR3, ForceTwin achieves 87% goal completion across nine object-embodiment pairs, compared with 60% using VLM-prior and 57% using kinematics-only twins, with the largest gains on objects whose strong mechanisms cause both baselines to stall. We further use the identified twins to train whole-body door-traversal policies and deploy them in the real world. Project Page: https://timengelbracht.github.io/forcetwin-website/

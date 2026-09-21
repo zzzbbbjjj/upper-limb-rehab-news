@@ -1,0 +1,21 @@
+---
+title: "SeeQ：训练长视野机器人操作的通才价值函数"
+title_en: "SeeQ: Training Generalist Value Functions for Long-Horizon Robotic Manipulation"
+authors: ["Saksham Singh", "Zheyuan Hu", "Max Sobol Mark", "Jeffrey Yu", "Zackory Erickson", "Aviral Kumar"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.22085v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+尽管取得了快速进展，但通用机器人政策在复杂、长期的任务上仍然很脆弱，这些任务包括多个阶段，或者需要在同一基础阶段进行反复尝试和深思熟虑才能成功。 Q 值函数可以通过对候选操作进行排名或指导策略改进来改进这些策略，但从稀疏的任务级奖励中学习需要较长的信用分配范围、困难的贝尔曼备份和广泛的数据覆盖要求。我们引入了 SeeQ（子任务引发的 Q 函数），它学习当前活动子任务的 Q 值。这缩短了价值预测范围，并实现了具有时间差异 (TD) 目标的有效学习。在训练期间，离线机器人数据中存在的子任务级注释提供分解，并能够从广泛的、可能次优的机器人数据集中进行学习。为了消除测试时对人工注释或模块化子任务预测系...
+
+## English Summary
+
+Despite rapid progress, generalist robot policies remain brittle on complex, long-horizon tasks that comprise multiple stages or require repeated attempts and deliberation on the same underlying stage before success. Q-value functions can improve these policies by ranking candidate actions or guiding policy improvement, but learning from sparse task-level rewards entails long credit-assignment horizons, difficult Bellman backups, and broad data-coverage requirements. We introduce SeeQ (Subtask-elicited Q-functions), which instead learns Q-values for the currently active subtask. This shortens the value-prediction horizon and enables effective learning with temporal-difference (TD) objectives. During training, subtask-level annotations present in offline robot data provide the decomposition and enable learning from broad, potentially suboptimal robot datasets. To eliminate the need for human annotations or modular subtask prediction systems at test time, our Q-function architecture is trained to autoregressively predict the active subtask in natural language before estimating its value. We instantiate SeeQ using a base vision-language backbone, pretrain it on diverse open-source robot manipulation data, and finetune it on downstream tasks. Across four real-world manipulation tasks on two bimanual robot platforms, the SeeQ value function substantially improves best-of-N policy steering.

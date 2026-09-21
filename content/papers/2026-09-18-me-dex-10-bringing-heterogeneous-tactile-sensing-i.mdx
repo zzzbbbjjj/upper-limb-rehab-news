@@ -1,0 +1,21 @@
+---
+title: "ME-Dex 1.0：将异构触觉感知引入世界动作建模"
+title_en: "ME-Dex 1.0: Bringing Heterogeneous Tactile Sensing into World Action Modeling"
+authors: ["Xuancheng Zhang", "Xuetao Liu", "Qianying Tang", "Jizhe Wang", "Zhijing Cheng", "Bochen Lin", "Haoran Wen", "Ming Li", "Kun Zhan", "Yu Liu"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21449v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+世界动作模型将视频模型的预测能力引入机器人动作生成中，为未来视觉状态建模提供了丰富的基础。触觉传感通过直接测量物理交互来补充这一基础。一些现有的方法使用触觉特征作为调节输入，而不共同预测未来的触觉状态、视觉观察和动作。我们的主要见解是，触觉信号（例如视频）提供了对不断变化的世界状态的观察，并且应该与视频一起建模为未来的观察。我们推出了 ME-Dex-1.0 (MachEmbodied-Dex-1.0)，这是一个用于联合视觉、触觉和动作学习的统一世界动作触觉模型。 ME-Dex-1.0采用Mixture-of-Transformers架构，包括视频专家、触觉专家和动作专家，所有专家都经过流匹配训...
+
+## English Summary
+
+World Action Models bring the predictive capabilities of video models into robot action generation, providing a rich foundation for modeling future visual states. Tactile sensing complements this foundation with direct measurements of physical interaction. Some existing methods use tactile features as conditioning inputs without jointly predicting future tactile states, visual observations, and actions. Our key insight is that tactile signals, like video, provide observations of the evolving world state and should be modeled as future observations alongside video. We present ME-Dex-1.0 (MachEmbodied-Dex-1.0), a unified World Action Tactile Model for joint visual, tactile, and action learning. ME-Dex-1.0 adopts a Mixture-of-Transformers architecture comprising a Video Expert, a Tactile Expert, and an Action Expert, all trained with flow matching. We use shared attention connects the experts in intermediate layers, allowing action generation to draw on learned representations of visual and tactile dynamics during joint denoising. To support multi-source heterogeneous tactile inputs, a Canonical Hand Model and a Unified Tactile Autoencoder map tactile observations from different embodiments and sensing layouts into shared spatial and latent spaces. To address the limited availability of paired visual, tactile, and action data, we develop the Agentic Tactile Data Engine, an agent-based data production platform. It supplements RoboTwin and DexJoCo with tactile data recorded directly from force sensors during trajectory replay in simulation. Experiments on the RoboTwin, DexJoCo, and ManiFeel simulation platforms, together with real robot evaluations, demonstrate improved manipulation performance using both grippers and dexterous hands equipped with tactile sensing.

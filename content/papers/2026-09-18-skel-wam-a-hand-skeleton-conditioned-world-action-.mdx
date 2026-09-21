@@ -1,0 +1,21 @@
+---
+title: "Skel-WAM：用于人机操作转移的手部骨骼条件世界动作模型"
+title_en: "Skel-WAM: A Hand-Skeleton-Conditioned World Action Model for Human-to-Robot Manipulation Transfer"
+authors: ["Zetao Cai", "Yaping Li", "Yiqun Wang", "Xinyu Zhan", "Yuyin Yang", "Haoxiang Ma", "Kailin Li", "Tao Lu", "Jiangmiao Pang", "Linning Xu"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21514v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+机器人演示的收集成本很高，而且通常提供的任务变化的分布范围有限。人类视频提供了补充操作体验的低成本来源，但从中学习需要弥合视觉外观和动作空间中的体现差距。我们引入了 Skel-WAM，这是一种世界动作模型，它通过统一的手部骨骼运动接口来弥合这些差异。关键的见解是通过通用的手部拓扑来对齐人类和机器人的运动，将场景中地面运动的骨架覆盖与编码显式手部运动学的结构化 2.5 维关键点相结合。视频和关键点专家通过混合变形金刚共同学习视觉和骨骼动力学，而单独的机器人训练动作专家将这些预测映射到可执行控制。这种分离使得人类和机器人演示能够直接监督共享动态，而不需要人类视频的机器人动作标签。在四项现实世界的双...
+
+## English Summary
+
+Robot demonstrations are expensive to collect and often provide limited distributional coverage of task variations. Human videos offer a low-cost source of complementary manipulation experience, but learning from them requires bridging embodiment gaps in visual appearance and action spaces. We introduce Skel-WAM, a world action model that bridges these differences through a unified hand-skeleton motion interface. The key insight is to align human and robot motion through a common hand topology, combining skeleton overlays that ground motion in the scene with structured 2.5-D keypoints that encode explicit hand kinematics. Video and Keypoint Experts jointly learn visual and skeletal dynamics through a Mixture-of-Transformers, while a separate robot-trained Action Expert maps these predictions to executable controls. This separation enables human and robot demonstrations to directly supervise shared dynamics without requiring robot action labels for human videos. Across four real-world bimanual tasks and seven simulated tasks, Skel-WAM achieves average success rates of 79.86% and 63.29%, surpassing the strongest baseline by 22.22 and 8.28 percentage points, respectively. Human-robot cotraining more than doubles real-world success on task variations absent from robot training data, from 38.89% to 86.11%. These results demonstrate that a shared skeletal interface enables joint learning across human and robot data and expands robot task coverage through complementary human demonstrations.

@@ -1,0 +1,21 @@
+---
+title: "CommitFlow：长视野机器人操作 VLA 执行的语义承诺验证和本地校正"
+title_en: "CommitFlow: Semantic Commitment Verification and Local Correction for Long-Horizon Robot Manipulation VLA Execution"
+authors: ["Zixiang Zhao", "Yansong Feng", "Yang Yang", "Chaoyu Wang", "Haoran Xiao", "Hui Zhang", "Chuang Cheng", "Jianjun Ma"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21908v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+尽管视觉-语言-行动（VLA）政策进展迅速，但在建立所需的物理效果之前，长期执行仍可能进入下一个任务阶段。我们称之为语义承诺、阶段必须建立或维护的物理条件以及实际物理状态之间的不匹配。由于单独的操作命令无法确认这种情况，因此局部偏差可能会传播并导致任务失败。为了解决这个问题，我们提出了 CommitFlow，这是一个闭环执行框架，它将承诺监控与本地校正结合起来，同时保持基本策略冻结。 CommitFlow 集成了三个组件。语义承诺监视器 (SCM) 将阶段要求与当前状态证据进行比较，并在未满足或违反所需条件时阻止相关操作。然后，BoundaryFlow 生成以当前状态和基本动作为条件的局部校正...
+
+## English Summary
+
+Although vision-language-action (VLA) policies have advanced rapidly, long-horizon execution may still progress to the next task stage before the required physical effect has been established. We call this a mismatch between semantic commitments, physical conditions that a stage must establish or maintain, and the actual physical state. Because an action command alone cannot confirm such a condition, local deviations can propagate and cause task failure. To address this problem, we present CommitFlow, a closed-loop execution framework that combines commitment monitoring with local correction while keeping the base policy frozen. CommitFlow integrates three components. A Semantic Commitment Monitor (SCM) compares stage requirements against current state evidence and holds back dependent actions when a required condition is unmet or violated. BoundaryFlow then generates a local correction conditioned on the current state and base action, and Relation and Gain Calibration (RGC) selects the smallest correction strength that satisfies the relevant constraints. Across the ten common RoboTwin 2.0 benchmark tasks, CommitFlow achieves a mean success rate of 75.9 percent, improving on the base policy pi0.5 by 22.7 percent. Cross-policy experiments show consistent gains, pointing toward reliable long-horizon robot execution.

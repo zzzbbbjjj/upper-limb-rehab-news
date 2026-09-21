@@ -1,0 +1,21 @@
+---
+title: "生产中的高效基准测试：不断发展的法学硕士代理人的研究"
+title_en: "Efficient Benchmarking in Production: A Study of an Evolving LLM Agent"
+authors: ["Yining She", "Lei Lin"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21267v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+生产 LLM 代理在发展过程中会被反复评估，但重新运行完整代理基准的成本很高。我们研究了为数以万计的每月活跃用户提供服务的生产分析代理的有效定期评估，并报告了第一手的部署经验。使用生产基准的 574 次历史运行，按时间顺序分为校准期和保留期，我们比较随机采样、历史缓存、固定代表性子集和基于 IRT 的自适应测试。结果表明，多维 2PL 自适应测试实现了最佳的总体分数保真度：执行 200 个问题，占完整运行的 38.5%，产生 1.03 pp 的 MAE。尽管如此，我们还是部署了难度分层的固定子集，因为它们操作简单，并且表明它们无需重新校准即可转移到其他五个代理系列，并且在短至一天的校准窗口中保...
+
+## English Summary
+
+Production LLM agents are evaluated repeatedly as they evolve, but full agent benchmarks are costly to rerun. We study efficient recurring evaluation for a production analytics agent serving tens of thousands of monthly active users and report first-hand deployment experience. Using 574 historical runs of the production benchmark, split chronologically into calibration and held-out periods, we compare random sampling, historical caching, fixed representative subsets, and IRT-based adaptive testing. The results show that multidimensional 2PL adaptive testing achieves the best overall score fidelity: executing 200 questions, 38.5% of a full run, yields 1.03 pp of MAE. We nevertheless deployed difficulty-stratified fixed subsets because of their operational simplicity, and show they transfer without recalibration to five other agent families and remain stable across calibration windows as short as one day. Drawing on this deployment experience, we report practical recommendations for recurring production-agent evaluation.

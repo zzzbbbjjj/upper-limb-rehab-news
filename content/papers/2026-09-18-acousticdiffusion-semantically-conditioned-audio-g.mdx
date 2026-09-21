@@ -1,0 +1,21 @@
+---
+title: "AcousticDiffusion：用于搜救援助的语义调节音频引导扩散策略"
+title_en: "AcousticDiffusion: Semantically Conditioned Audio-Guided Diffusion Policy for Search-and-Rescue Assistance"
+authors: ["Iana Zhura", "Didar Seyidov", "Dmitrii Plotnikov", "Hajira Amjad", "Miguel Altamirano Cabrera", "Dzmitry Tsetserukou"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21792v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+对于在视觉接触减弱或遮挡的情况下运行的救援机器人来说，导航到呼叫者是一项重要功能。我们提出了 AcousticDiffusion，一种用于人类引导导航的语义调节的音频引导扩散策略。冻结的预训练音频识别器处理 10.24 秒的窗口，具有语音门控和遇险感知优先级，将识别输出转换为源级导航角色。麦克风阵列到达方向测量被递归地集成到以机器人为中心的贝叶斯鸟瞰置信场中。自我运动补偿对齐连续的观测结果，逐渐限制源位置，同时保留方位引起的范围不确定性。语义信念、最近的声学观察、音频特征和机器人状态条件形成了生成路点轨迹的扩散模型。在使用录制音频的合成导航验证集上，AcousticDiffusion 实现了 ...
+
+## English Summary
+
+Navigating toward human callers is an important capability for rescue robots operating where visual contact is degraded or occluded. We present AcousticDiffusion, a semantically conditioned, audio-guided diffusion policy for human-directed navigation. A frozen pretrained audio recognizer processes 10.24 s windows, with speech gating and distress-aware prioritization converting recognition outputs into source-level navigation roles. Microphone-array direction-of-arrival measurements are recursively integrated into a robot-centric Bayesian bird's-eye-view belief field. Ego-motion compensation aligns successive observations, progressively constraining source position while preserving bearing-induced range uncertainty. The semantic belief, recent acoustic observations, audio features, and robot state condition a diffusion model that generates waypoint trajectories. On a synthetic-navigation validation set using recorded audio, AcousticDiffusion achieves a mean end-point bearing error of 11.20 degrees, with 91.78% of trajectories aligned within 30 degrees of the caller. Distractor rejection ranges from 89.20% to 98.99%, and the policy favors a HELP-designated caller over a competing speaker in 91.07% of windows. Deployed online on a ZSL-1 quadruped without additional retraining, it achieves a mean bearing error of 64.9 degrees, compared with 98.2 degrees for A* and 90.4 degrees for RRT, with a mean planner compute time of 6.07 ms. Despite imperfect acoustic localization, the reported mean final source distance is reduced from 3.96 m for the classical planners using ODAS-derived (Open embedded Audition System) guidance to 2.48 m, a 37.4% improvement. These results demonstrate the framework's ability to translate uncertain acoustic observations into closer approaches to human callers.

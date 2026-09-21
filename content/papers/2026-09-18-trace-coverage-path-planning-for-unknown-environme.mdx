@@ -1,0 +1,21 @@
+---
+title: "TRACE：使用分层覆盖树对未知环境进行覆盖路径规划"
+title_en: "TRACE: Coverage Path Planning for Unknown Environments Using Hierarchical Coverage Tree"
+authors: ["Zongyuan Shen", "Haodong Liu", "Gao Wang", "Shancheng Zhao", "Dehua Zhou", "Yaming Ou", "Zhongqiang Ren", "Yikui Zhai", "C. L. Philip Chen"]
+date: "2026-09-18"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.21777v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+本文提出了一种新颖的在线覆盖路径规划（CPP）算法，称为 TRACE，用于未知环境的实时覆盖。 TRACE 建立在分层覆盖树的基础上，该树提供了未覆盖空间不断变化的连接性的全局表示。随着环境逐渐显露和覆盖，新发现的障碍物和覆盖的单元可能会将剩余的未覆盖空间分割成不相连的区域。 TRACE递归地扩展相应的树节点以显式地表示这些区域并组织它们以用于后续的覆盖规划。基于更新的树，维护增量全局巡视以指导覆盖过程。 TRACE 仅在本地细化受影响的部分，同时保留未更改区域的访问顺序，从而减少全局重新规划的计算负担并保持一致的覆盖进度。在全球巡演的指导下，本地规划人员生成来回覆盖路径，并切换到全球巡演感知...
+
+## English Summary
+
+This paper presents a novel online coverage path planning (CPP) algorithm, called TRACE, for real-time coverage of unknown environments. TRACE is built upon a hierarchical coverage tree that provides a global representation of the evolving connectivity of the uncovered space. As the environment is incrementally revealed and covered, newly discovered obstacles and covered cells may fragment the remaining uncovered space into disconnected regions. TRACE recursively expands the corresponding tree nodes to explicitly represent these regions and organize them for subsequent coverage planning. Based on the updated tree, an incremental global tour is maintained to guide the coverage process. TRACE locally refines only the affected portions while preserving the visiting order of unchanged regions, thereby reducing the computational burden of global replanning and maintaining a consistent coverage progression. Guided by the global tour, a local planner generates back-and-forth coverage paths and switches to global-tour-aware planning to efficiently complete the target regions. Theoretical analysis establishes the computational complexity and complete coverage property of TRACE, and derives an approximation bound for the incremental global tour refinement. The performance of TRACE is evaluated through extensive high-fidelity simulations and real-robot experiments using a mobile robot. Comparative evaluations against six existing CPP methods demonstrate significant improvements in coverage time, path length, overlap ratio, and number of turns.
