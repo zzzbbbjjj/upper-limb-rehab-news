@@ -1,0 +1,21 @@
+---
+title: "受时间窗口约束的多模态推理的无线证据采集"
+title_en: "Wireless Evidence Acquisition for Multimodal Inference Constrained by Temporal Windows"
+authors: ["Alessandro Compagnoni", "Anup Mishra", "Carla Fabiana Chiasserini", "Elad Michael Schiller", "Petar Popovski"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31428v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+自动驾驶和机器人导航等安全关键应用中的多模态推理需要异构传感器观察才能在任务规定的时间窗口内到达边缘服务器。参考正在推断的事件或状态，该窗口在观察对当前决策仍然有用的最晚时间结束。由于传感器的准备时间、数据量、无线信道条件和任务相关性因传感器而异，因此最大化网络吞吐量并不一定能最小化窗口关闭时的融合预测误差。我们将多模态上行链路调度视为顺序无线证据采集，并且对于线性最小均方误差（LMMSE）融合模型，从残余误差量的减少中导出条件证据增益度量。该度量通过二阶统计定义，适用于高斯模型之外，并且当目标误差和预测误差共同为高斯时，与条件互信息一致。然后，我们开发了 MIRA，一种贪婪任务驱动的最大信息...
+
+## English Summary
+
+Multimodal inference in safety-critical applications, such as autonomous driving and robot navigation, requires heterogeneous sensor observations to reach an edge server within a task-prescribed temporal window. Referenced to the event or state being inferred, this window ends at the latest time an observation remains useful for the current decision. Since sensor readiness times, data volumes, wireless channel conditions, and task relevance vary across sensors, maximising network throughput does not necessarily minimise the fused prediction error when the window closes. We cast multimodal uplink scheduling as sequential wireless evidence acquisition and, for a linear minimum mean-square error (LMMSE) fusion model, derive a conditional evidence gain metric from the reduction in residual-error volume. Defined through second-order statistics, this metric applies beyond Gaussian models and coincides with conditional mutual information when the target and prediction errors are jointly Gaussian. We then develop MIRA, a greedy task-driven maximum information-rate allocation policy that combines conditional evidence gain with each sensor's channel state information and remaining data volume, while updating sensor relevance as evidence is acquired. Experiments on synthetic classification, human activity recognition, and vehicle-trajectory regression show that MIRA outperforms both relevance-only and channel-only scheduling. Relative to the former, MIRA improves classification accuracy by up to 70% and reduces regression mean-square error (MSE) by up to 5.5%. Relative to the latter, it requires 58% less acquisition time to attain an 80% target accuracy, while achieving up to 95% higher accuracy and 9% lower regression MSE. These gains are achieved without maximising received-data volume.

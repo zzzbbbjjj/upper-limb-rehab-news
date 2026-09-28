@@ -1,0 +1,21 @@
+---
+title: "MATISSE-py：用于高效、自动化 VLTI/MATISSE 数据缩减的高级 Python 接口"
+title_en: "MATISSE-py: a high-level Python interface for efficient, automated VLTI/MATISSE data reduction"
+authors: ["A. Soulain", "A. Matter", "P. Berio", "F. Millour", "B. Lopez", "R. Petrov", "S. Lagarde"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31283v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+甚大望远镜干涉仪 (VLTI) 的多孔径中红外光谱实验 (MATISSE) 可提供丰富的中红外干涉数据集，这些数据集通过强大的多级 ESO 管道进行缩减。然而，在其原生形式中，减少依赖于对 esorex 的命令行调用、手工编辑的文件集 (SOF) 和配置文件以及难以自动化、重现或集成到现代 Python 工作流程中的手动迭代。我们推出了 MATISSE-py，这是一个模块化的 Python 界面，它将官方 ESO esorex 配方包装在一个用户友好的 matisse 命令后面。它可以自动发现、减少、校准和检查数据，并作为基于行业标准实践的经过测试的开源包提供。除了方便之外，MATISSE-p...
+
+## English Summary
+
+The Multi AperTure mid-Infrared SpectroScopic Experiment (MATISSE) at the Very Large Telescope Interferometer (VLTI) delivers rich mid-infrared interferometric datasets that are reduced through a robust, multi-stage ESO pipeline. In its native form, however, the reduction relies on command-line calls to esorex, hand-edited set-of-files (SOF) and configuration files, and manual iterations that are difficult to automate, reproduce, or integrate into modern Python workflows. We present MATISSE-py, a modular Python interface that wraps the official ESO esorex recipes behind a single, user-friendly matisse command. It automates discovery, reduction, calibration, and inspection of the data, and ships as a tested, open-source package built on industry-standard practices. Beyond convenience, MATISSE-py introduces science-grade improvements developed over seven years of MATISSE operations: visibility- and photometry-factor (V-factor and P-factor) corrections derived from the GRAVITY fringe tracker to mitigate residual visibility losses, per-baseline data filtering, beam-commuting-device (BCD) "magic-number" corrections, and an absolute spectrophotometric flux calibration using state-of-the-art reference spectra. On faint targets observed under degraded conditions, the V-factor correction recovers up to a few percent of lost visibility and reduces the statistical uncertainties by nearly 20%, while yielding calibrator diameters that are consistent across BCD modes. MATISSE-py thus consolidates the consortium's expertise into a maintainable package and shortens the reduction-to-science loop for the community.

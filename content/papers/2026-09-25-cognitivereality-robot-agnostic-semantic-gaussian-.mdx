@@ -1,0 +1,21 @@
+---
+title: "CognitiveReality：使用 LLM 代理进行与机器人无关的语义高斯映射，用于沉浸式协作 VR 远程操作"
+title_en: "CognitiveReality: Robot-Agnostic Semantic Gaussian Mapping with an LLM Agent for Immersive Collaborative VR Teleoperation"
+authors: ["Timofei Kozlov", "Dmitrii Maliukov", "Andrey Marchenko", "Dmitrii Plotnikov", "Miguel Altamirano Cabrera", "Dzmitry Tsetserukou"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31418v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+逼真的 3D 视图告诉远程操作员机器人在哪里，但不告诉操作员场景包含什么、每个对象的观察情况，或者如何将指向和语音转化为机器人动作。 CognitiveReality 将机器人的 RGB-D 流转换为实时的、语义索引的高斯-TSDF 地图，由虚拟现实中的操作员和使用工具的语言代理共享。一个映射器二进制文件仅通过配置即可服务于任何平台：它从机器人 SLAM、关节运动学、运动捕捉或内联视觉跟踪器中获取姿势，通过阴影跟踪器和关键帧锚定的 PnP 桥接定位中断，并在 2 Hz 下维护每个对象质量的开放词汇表实例标识。通过经过验证的类型化工具和操作员确认的机器人动作，语音和控制器光线针对持久的场景对象进...
+
+## English Summary
+
+A photorealistic 3D view tells a teleoperator where a robot is, but not what the scene contains, how well each object has been observed, or how to turn pointing and speech into robot action. CognitiveReality turns a robot's RGB-D stream into a live, semantically indexed Gaussian-TSDF map shared by an operator in virtual reality and a tool-using language agent. One mapper binary serves any platform through configuration alone: it ingests poses from robot SLAM, joint kinematics, motion capture or an inline visual tracker, bridges localization outages with a shadow tracker and keyframe-anchored PnP, and maintains open-vocabulary instance identities with per-object quality at 2 Hz. Speech and controller rays are grounded against persistent scene objects through validated typed tools and operator-confirmed robot actions. In the controlled agent evaluation, the deployed local Qwen3-VL-8B router reaches 81.24\% tool exact match, while merge-aware replay correctly redirects 101 absorbed object identifiers. On robot data CognitiveReality exceeds a Gaussian-plus-SDF baseline by 2-8 dB; pose error through 5-40 s SLAM outages stays within 1-8 cm. Deployed live on two quadrupeds, the agent executed 26 of 30 navigation requests and 20 of 20 re-observation requests, raising object quality by 2-5 dB.

@@ -1,0 +1,21 @@
+---
+title: "MBFormer：用于 3D 时间序列数据处理的微泡变压器，以改善非破坏性超声分子成像中的束缚气泡检测"
+title_en: "MBFormer: Microbubble Transformer for 3D Time-Series Da-ta Processing to Improve Bound Bubble Detection in Nonde-structive Ultrasound Molecular Imaging"
+authors: ["Jihye Baek", "Jeong Hoon Lee", "Hoda Hashemi", "Arutselvan Natarajan", "Farbod Tabesh", "Ramasamy Paulmurugan", "Jeremy J. Dahl"]
+date: "2026-09-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30618v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+无损超声分子成像 (UMI) 的发展对于通过使用临床超声系统进行实时筛查来检测早期癌症至关重要。目前的技术在准确检测与特定生物标志物结合的目标微泡 (MB) 方面面临挑战，这主要是由于未结合的自由漂浮 MB 的误报检测。我们提出了一种用于时间序列视频处理的变压器模型，以提高绑定 MB 的区分度。我们提出了一种分层变压器，称为 MBFormer（微泡变压器），具有无位置嵌入编码器和轻量级解码器。利用 3D 时空数据中的注意力，有效捕获来自绑定 MB 的平稳信号，同时抑制来自未绑定 MB 的非平稳信号。由于与医学成像中的传统分割目标（例如器官和肿瘤）相比，MB 看起来相对较小的纹理，因此我们用两个...
+
+## English Summary
+
+Development of nondestructive ultrasound molecular imaging (UMI) is essential for early cancer detection through real-time screening using clinical ultrasound systems. Current techniques face challenges in accurately detecting targeted microbubbles (MBs) bound to specific biomarkers, primarily due to false-positive detections of unbound free-floating MBs. We propose a transformer model for time-series video processing to improve the differentiation of bound MBs. We propose a hierarchical transformer, termed MBFormer (microbubble transformer), featuring a positional-embedding-free encoder and a lightweight decoder. Leveraging attention within 3D spatio-temporal data to effectively capture stationary signals from bound MBs while suppressing nonstationary signals from unbound MBs. Since MBs appears as relatively small textures compared with conventional segmentation targets in medical imaging, such as organs and tumors, we optimized the model with two hierarchical layers, each with an attention block, to process ultrasound video data. The network outputs the molecular signal amplitude to visualize fine MB textures. Performance was evaluated using an in vivo breast cancer model, compared against a prior CNN-based UMI method and SegFormer3D baseline, a representative 3D transformer. MBFormer (AUC = 0.943) outperformed both CNN (AUC = 0.897) and SegFormer3D (AUC = 0.766) in detecting bound MBs. The CNN showed residual molecular signal from free MBs in the cardiac chambers, whereas SegFormer3D failed to detect fine MB textures. Overall, MBFormer demonstrated enhanced detection of bound MBs while suppressing free MBs and achieved a frame rate of 16.7 to 18.1 FPS, demonstrating its potential for real-time application. We anticipate that this transformer-based UMI model can facilitate real-time, free-hand nondestructive UMI in clinical systems.

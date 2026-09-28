@@ -1,0 +1,21 @@
+---
+title: "中微子输运的多维广义相对论玻尔兹曼求解器：实现、离散化和优化"
+title_en: "A Multidimensional General-Relativistic Boltzmann Solver for Neutrino Transport: Implementation, Discretization and Optimization"
+authors: ["Arthur Offermans", "Harry Ho-Yin Ng", "Patrick Chi-Kit Cheong", "Anthony Mezzacappa", "Tjonnie Guang Feng Li"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31611v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+我们提出了使用有限体积方法实现中微子输运的多维广义相对论玻尔兹曼求解器。我们扩展了广义相对论磁流体动力学求解器 \texttt{Gmunu} 以离散化整个 $6$D 相空间。我们将共动坐标系中的动量空间离散化为球坐标系，并将实验室坐标系中的位置空间离散化为笛卡尔坐标系、柱坐标系或球坐标系。与 M1 方案一样，我们将交互核扩展到勒让德级数中的一阶。我们提出了一种离散化方案，确保空平坦时空、多维和坐标系中数保守和非保守公式之间的一致性，在一维测试中将能量保存到 $\sim 1\%$ 和 $20$ 能量箱。我们讨论刚性源项的隐式求解器的优化，以最小化其计算成本。特别是，我们引入了一种利用核的勒让德展...
+
+## English Summary
+
+We present the implementation of a multidimensional general-relativistic Boltzmann solver for neutrino transport using the finite volume method. We extend the general-relativistic magnetohydrodynamics solver \texttt{Gmunu} to discretize the full $6$D phase space. We discretize the momentum space in spherical coordinates in the comoving frame, and the position space in the lab frame in Cartesian, cylindrical or spherical coordinates. As in the M1 scheme, we expand the interaction kernels up to first order in a Legendre series. We present a discretization scheme that ensures consistency between the number-conservative and non-conservative formulations in empty flat spacetime, multiple dimensions and coordinate systems, conserves energy to $\sim 1\%$ with $20$ energy bins in 1D tests. We discuss optimizations of the implicit solver for stiff source terms to minimize its computational cost. In particular, we introduce a method that leverages the Legendre expansion of the kernels to reduce the dimensionality of the problem. In a 1D core-collapse supernova snapshot, our method yields a speed-up factor of $300$ compared to a full-matrix LU method for $14$ angular bins when including energy- and species-coupling interactions. Finally, we validate our implementation on standard test cases and report quadratic convergence in space, energy and propagation angles. We compare our solver to the M1 scheme in simplified 1D configurations and find differences of about $10\%$ in the free-streaming luminosities in relaxation test cases, which we attribute primarily to the M1 closure relation. The average energies, on the other hand, agree between the two methods. We compare both methods on a core-collapse supernova test case and find an overall good agreement in the fluid variables' profiles at the time of core bounce for $20$ energy bins.

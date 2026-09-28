@@ -1,0 +1,21 @@
+---
+title: "TinyCVIO：用于纳米无人机的星座辅助视觉惯性里程计系统"
+title_en: "TinyCVIO: A Constellation-Aided Visual-Inertial Odometry System for Nanodrones"
+authors: ["Derin Ozturk", "Kaan Akan", "Irwin Wang", "Christopher Batten"]
+date: "2026-09-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30358v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+纳米无人机需要在严格的传感和计算限制下进行准确、实时的状态估计。我们推出 TinyCVIO，这是一种视觉惯性里程计系统，可为具有 520 kB SRAM 的商用双核微控制器共同设计微型传感、视觉处理和估计。假设放置在公共水平面上，轻量级 LED 星座可提供已知的几何形状，无需测量位置或偏航角。流式视觉前端以 29.2 FPS 的速度跟踪来自毫米级相机的 LED 观察结果，而刚性板测量模型则保留 LED 间约束和固定滤波器状态大小的流式 QR 边界估计工作空间。在 19 个手持式硬件在环数据集中，刚性板模型相对于平面点将平均绝对轨迹误差降低了 27%。完整的系统在 Crazyflie 上运行，以...
+
+## English Summary
+
+Nanodrones require accurate, real-time state estimation under severe sensing and computational constraints. We present TinyCVIO, a visual-inertial odometry system that co-designs miniature sensing, visual processing, and estimation for a commodity dual-core microcontroller with 520 kB SRAM. Lightweight LED constellations provide known geometry without surveyed positions or yaw angles, assuming placement on a common level plane. A streaming visual frontend tracks LED observations from a millimeter-scale camera at 29.2 FPS, while a rigid-board measurement model retains inter-LED constraints and streaming QR bounds estimation workspace for a fixed filter-state size. Across 19 hand-held hardware-in-the-loop datasets, the rigid-board model reduces mean absolute trajectory error by 27% relative to planar points. The complete system runs onboard a Crazyflie across nine flights at three speeds, achieving 3.5-3.7 cm mean absolute trajectory error and 0.50-0.60% relative pose error over 10 m segments, with mean estimate latency of 15.7-16.3 ms.

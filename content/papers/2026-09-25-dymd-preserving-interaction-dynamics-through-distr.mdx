@@ -1,0 +1,21 @@
+---
+title: "DyMD：通过少步视频世界模型中的分布匹配蒸馏来保留交互动态"
+title_en: "DyMD: Preserving Interaction Dynamics through Distribution Matching Distillation in Few-Step Video World Models"
+authors: ["Haojun Xu", "Jie Huang", "Xin Lu", "Mingchen Zhong", "Zihao Fan", "Linjiang Huang", "Si Liu"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31349v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+大型视频扩散模型为具体预测和学习提供了富有表现力的先验，但其多步采样对于交互式下游使用来说仍然成本高昂。分布匹配蒸馏 (DMD) 可以实现几步视频生成，但可以抑制机器人物体运动，同时保持视觉质量。检查 DMD 的教师信号和假分数信号，我们发现弱的重新噪声使教师后验集中在运动缺陷的推出附近，从而限制了运动恢复指导。同时，更强的运动推出往往会产生更大的假分数拟合误差，这可能会阻碍生成器对交互动力学的学习。我们提出了 DyMD，这是一个 DMD 框架，可以适应教师监督和批评者的需求，以适应不断发展的学生。时间亲和力条件再噪声采样通过将基本时间表与受局部后验变化激励的教师先验混合来使时间步分布适应每个...
+
+## English Summary
+
+Large video diffusion models offer expressive priors for embodied prediction and learning, yet their many-step sampling remains costly for interactive downstream use. Distribution Matching Distillation (DMD) enables few-step video generation, but can suppress robot--object motion while preserving visual quality. Examining DMD's teacher and fake-score signals, we find that weak re-noising keeps the teacher posterior concentrated near motion-deficient rollouts, limiting motion-restoring guidance. Meanwhile, stronger-motion rollouts tend to incur larger fake-score fitting errors, which can hinder the generator's learning of interaction dynamics. We propose DyMD, a DMD framework that adapts both teacher supervision and critic fitting to the evolving student. Temporal affinity--conditioned re-noise sampling adapts the timestep distribution to each rollout's current interaction fidelity by mixing the base schedule with a teacher prior motivated by local posterior variation, thereby balancing motion recovery and appearance refinement. To better track stronger-motion rollouts, dynamics-guided fake-score tracking uses a noise-conditioned predictor to estimate noise-relative fitting difficulty from latent temporal dynamics, then upweights predicted-hard rollouts in the critic loss. Using DyMD, we distill a 14B teacher into a four-step 1.3B student with no auxiliary modules at inference. On embodied-video benchmarks, the student improves R-Bench task adherence by $9.6$ percentage points and PAI-Bench-G Domain score by $5.1$ points over Base DMD while maintaining comparable visual quality. As a backbone for downstream action planning, our student achieves 34% mean success across two WorldArena tasks, compared with 16% for Base DMD.

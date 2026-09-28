@@ -1,0 +1,21 @@
+---
+title: "Peregrino：资源受限边缘设备上完整 Falcon 后量子数字签名方案的全硬件加速器"
+title_en: "Peregrino: A Full-Hardware Accelerator for the Complete Falcon Post-Quantum Digital Signature Scheme on Resource-Constrained Edge Devices"
+authors: ["Antonio Carreño", "Jaime Señor", "Jorge Portilla"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31252v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+量子计算机的到来威胁到了经典密码学的安全保证，因为量子算法可以破坏针对传统攻击的安全方案。因此，美国国家标准与技术研究院 (NIST) 标准化了一套后量子密码算法，其中包括 Falcon，这是一种基于格的数字签名方案，具有标准化候选方案中最紧凑的签名和公钥大小。 Falcon 对浮点运算的依赖使其很难在硬件中实现，并且之前的工作仅提供用于特定操作（例如签名生成或验证）的部分加速器，或通过高级综合（HLS）生成的单个完整实现。这项工作提出了 Peregrino，这是在 HDL 中从头开始设计的完整 Falcon 数字签名方案的第一个硬件加速器，通过模拟浮点数据路径针对没有本机浮点单元的资源受限边...
+
+## English Summary
+
+The arrival of quantum computers threatens the security guarantees of classical cryptography, since quantum algorithms can break schemes that remain secure against conventional attacks. The National Institute of Standards and Technology (NIST) has therefore standardized a set of post-quantum cryptographic algorithms, among them Falcon, a lattice-based digital signature scheme with the most compact signature and public-key sizes of the standardized candidates. Falcon's reliance on floating-point arithmetic makes it hard to implement in hardware, and prior work offers only partial accelerators for specific operations such as signature generation or verification, or a single full implementation generated through high-level synthesis (HLS). This work presents Peregrino, the first hardware accelerator of the complete Falcon digital signature scheme designed from scratch in HDL, targeting resource-constrained edge devices without a native floating-point unit through an emulated floating-point datapath. Implemented on a single Artix 7 XC7A200T FPGA, Peregrino uses 85261 LUTs, 41382 FFs, 44 BRAMs, and 142 DSPs for the Falcon-1024 variant. Against the only prior full implementation, the HLS-based FalconTakesOff, it uses 1,9$\times$ fewer LUTs, 3,4$\times$ fewer FFs, 2,7$\times$ fewer BRAMs, and 9,9$\times$ fewer DSPs, fitting the entire scheme on one FPGA where the HLS design requires at least two. Operating as a peripheral of an on-chip MicroBlaze soft-core, the accelerator additionally reduces key-pair generation, signature generation, and signature verification clock cycles by 92\%, 96\%, and 85\% over the emulated floating-point reference software.

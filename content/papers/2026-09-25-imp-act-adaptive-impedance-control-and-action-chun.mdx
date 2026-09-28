@@ -1,0 +1,21 @@
+---
+title: "Imp-ACT：使用 Transformers 进行自适应阻抗控制和动作分块，以从演示中学习丰富的接触操作"
+title_en: "Imp-ACT: Adaptive Impedance Control and Action Chunking with Transformers to Learn Contact-Rich Manipulation from Demonstrations"
+authors: ["Luca Zanetti", "Doganay Sirintuna", "Idil Ozdamar", "Pietro Balatti", "Heng Zhang", "Arash Ajoudani"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31225v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+丰富的接触操作要求机器人在精确的运动跟踪与合规交互之间取得平衡，但大多数视觉动作策略将合规性固定在控制器级别。我们提出了 Imp-ACT，这是一种方法论基础且实用的方法，可将方向相关的笛卡尔刚度调制直接合并到演示集合中，无需手动刚度选择或离线目标重建。在远程操作期间，自调节阻抗控制器会沿瞬时运动方向调整刚度，同时保持正交方向的顺应性。适应的刚度与视觉观察和运动命令一起应用和记录，捕获相同动态下的运动和顺应性。我们使用 Action Chunking with Transformer (ACT) 来实现此流程，以根据视觉、本体感觉和扳手观察来预测末端执行器姿势、夹具动作和运动方向刚度。使用成功率...
+
+## English Summary
+
+Contact-rich manipulation requires robots to balance accurate motion tracking with compliant interaction, yet most visual-action policies leave compliance fixed at the controller level. We present Imp-ACT, a methodologically grounded and practical approach to incorporating direction-dependent Cartesian stiffness modulation directly into demonstration collection, without manual stiffness selection or offline target reconstruction. During teleoperation, a self-tuning impedance controller adapts stiffness along the instantaneous direction of motion while maintaining compliance in orthogonal directions. The adapted stiffness is applied and recorded alongside visual observations and motion commands, capturing motion and compliance under the same dynamics. We implement this pipeline using Action Chunking with Transformer (ACT) to predict end-effector pose, gripper action, and motion-direction stiffness from visual, proprioceptive, and wrench observations. The performance of Imp-ACT is evaluated on wiping and plug insertion using both success rate and quantitative measures of contact behavior. Compared with fixed low- and high-stiffness baselines, Imp-ACT achieves comparable or higher success while maintaining low interaction forces. In wiping, it reduces contact-force vibration by approximately $29\times$ relative to the compliant baseline and $180\times$ relative to the stiff baseline. In plug insertion, it reduces forces orthogonal to the insertion direction by $43\%$ relative to the better fixed-stiffness baseline. These results highlight the benefit of maintaining sufficient stiffness along the direction needed for task execution while preserving compliance in other directions to limit contact forces and accommodate environmental constraints.

@@ -1,0 +1,21 @@
+---
+title: "广义任务和运动规划问题的编码代理"
+title_en: "Coding Agents for Generalized Task and Motion Planning Problems"
+authors: ["Matteo Merler", "Bowen Li", "Josh Roy", "Yichao Liang", "Qianwei Wang", "Yixuan Huang", "Tom Silver"]
+date: "2026-09-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30233v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+即使具有完全可观测性和以对象为中心的状态，任务和运动规划 (TAMP) 问题仍然很困难，因为离散决策与几何、运动学和动态约束紧密耦合。广义 TAMP 通过利用问题实例之间的规律来减少新实例的规划工作，从而解决了这一难题。然而，现有方法需要大量的 TAMP 特定工程。我们研究编码代理是否可以通过合成跨实例泛化的程序来自动化此过程。给定任务描述和模拟器访问权限，每个代理选择如何与环境交互，同时在固定的综合预算内开发程序。然后程序被冻结并在未见过的实例上进行评估。我们在 KinDER 和 PDDLStream 的 28 个模拟环境中评估了 Claude Code (Opus 5) 和 Codex（G...
+
+## English Summary
+
+Task and motion planning (TAMP) problems remain difficult even with full observability and object-centric states because discrete decisions are tightly coupled to geometric, kinematic, and dynamic constraints. Generalized TAMP addresses this difficulty by exploiting regularities across problem instances to reduce planning effort on new instances. However, existing methods require substantial TAMP-specific engineering. We investigate whether coding agents can automate this process by synthesizing programs that generalize across instances. Given a task description and simulator access, each agent chooses how to interact with the environment while developing a program within a fixed synthesis budget. The program is then frozen and evaluated on unseen instances. We evaluate Claude Code (Opus 5) and Codex (GPT-5.6 Sol and GPT-6 Astra) on 28 simulated environments from KinDER and PDDLStream, with object counts beyond those evaluated in the original benchmark. Across all program synthesis methods, we evaluate 980 generated programs on 100 held-out instances each, 98,000 evaluation episodes in total. Overall, we find that coding agents are surprisingly effective at generalized TAMP: all three agent configurations outperform hand-engineered planners, one-shot generation, and an LLM-based generalized planning baseline in mean success (56% to 95% versus 47% for the planners, on the 16 environments where a planner is available). As object counts grow, the agents' programs maintain higher success than the planner, using an order of magnitude less computation per instance on average. Logs show agents using interaction to calibrate physical models, test edge cases, and refine strategies. We release all code, including the full prompts given to the agents. These findings suggest that coding agents are a strong baseline for generalized TAMP.

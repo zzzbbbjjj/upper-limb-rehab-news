@@ -1,0 +1,21 @@
+---
+title: "用于可解释的安全评估批判性观点的结构化推理代理框架"
+title_en: "Structured Reasoning Agentic Framework for Interpretable Critical View of Safety Assessment"
+authors: ["Qing Xu", "Yuxiang Luo", "Zhen Chen"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31524v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+手术场景理解对于计算机辅助干预至关重要，但腹腔镜胆囊切除术仍然面临肝囊三角复杂解剖结构和胆管损伤风险的挑战。现有的安全关键视图 (CVS) 评估方法通常将其视为整体预测任务，将视觉特征直接映射到标准级别标签。这种黑盒范式缺乏对解剖关系的明确推理，限制了可解释性和组合概括。为了解决这个问题，我们提出了 ReasonCVS，这是一种由视觉语言模型（VLM）支持的结构化推理代理框架，可将 CVS 评估分解为明确的、细粒度的解剖验证。具体来说，我们设计了一种解剖场景图抽象（ASGA），它将解剖实体及其空间关系组织成结构化表示。为了实现这一点，我们引入了一个基本原理感知推理代理，该代理由通过基本原理蒸馏...
+
+## English Summary
+
+Surgical scene understanding is critical for computer-assisted intervention, yet laparoscopic cholecystectomy remains challenged by the complex anatomy of the hepatocystic triangle and the risk of bile duct injury. Existing methods for Critical View of Safety (CVS) assessment typically treat it as a holistic prediction task, mapping visual features directly to criterion-level labels. This black-box paradigm lacks explicit reasoning about anatomical relationships, limiting both interpretability and compositional generalization. To address this, we propose ReasonCVS, a structured reasoning agentic framework empowered by Vision-Language Models (VLMs) that decomposes CVS assessment into explicit, fine-grained anatomical verification. Specifically, we devise an Anatomical Scene Graph Abstraction (ASGA) that organizes anatomical entities and their spatial relationships into a structured representation. To operationalize this, we introduce a Rationale-Aware Reasoning Agent, powered by a Large Language Model (LLM) fine-tuned via rationale distillation. Functioning as a strict central decision-maker, it invokes VLM-driven Sub-criterion Verifier as a specialized perceptual tool to parse the graph and independently evaluate individual sub-criteria. Through calibrated soft reasoning, this agent synthesizes the tool-gathered distributed observations, yielding a final verdict alongside a traceable clinical rationale. Extensive experiments on the Endoscapes-CVS201 benchmark demonstrate that ReasonCVS achieves superior performance (68.1\% mAP) over state-of-the-art while providing interpretable, criterion-level explanations for reliable surgical assessment.

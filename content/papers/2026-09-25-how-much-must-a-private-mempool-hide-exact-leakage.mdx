@@ -1,0 +1,21 @@
+---
+title: "私人内存池必须隐藏多少？三明治攻击的精确泄漏阈值"
+title_en: "How Much Must a Private Mempool Hide? Exact Leakage Thresholds for Sandwich Attacks"
+authors: ["Tingyi Lin", "Jiazhuo Li", "Ruoran Lai"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31379v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+私有和加密的内存池隐藏待处理的交易，以阻止三明治攻击和其他形式的最大可提取价值（MEV），但它们隐藏的很少是一切：交易的配对、方向及其大小的粗略范围仍然可能泄漏。多少泄漏才能使夹心技术产生效益？我们准确回答了免费的恒定产品自动做市商，Uniswap v2 背后的定价规则。交易者观察一个包含受害者规模的区间，并在第一价格拍卖中出价以获得将其夹在中间的权利，而获胜的先行者必须保持受害者的​​交易在该区间内的每个规模上都可执行。答案是与泄漏相符的最小尺寸。它单独决定了可行的抢先交易，最大的可行抢先交易对于逐点利润、预期利润和最坏情况利润都是最优的，并且保证利润具有封闭形式。当执行成本很高时，想要排除...
+
+## English Summary
+
+Private and encrypted mempools hide pending transactions to stop sandwich attacks and other forms of maximal extractable value (MEV), but what they hide is rarely everything: a transaction's pair, direction, and a coarse range for its size can still leak. How much leakage makes sandwiching pay? We answer exactly for a fee-free constant-product automated market maker, the pricing rule behind Uniswap v2. Traders observe an interval containing the victim's size and bid in a first-price auction for the right to sandwich it, and the winning front-run must keep the victim's trade executable at every size in the interval. The answer turns on the smallest size consistent with the leak. It alone determines the feasible front-runs, the largest feasible front-run is optimal for pointwise, expected, and worst-case profit alike, and the guaranteed profit has a closed form. When execution is costly, a privacy layer that wants to rule out sandwiches profitable at every consistent size may therefore reveal anything about the size except a lower bound above an explicit threshold; the upper end of the range is irrelevant. With two or more symmetric traders, every pure-strategy perfect Bayesian equilibrium of the auction hands the entire expected net rent to the auctioneer. If the direction is hidden too, no non-contingent first leg front-runs both possible directions, while post-trade arbitrage can survive even perfect pre-trade hiding.

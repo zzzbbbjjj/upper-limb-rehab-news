@@ -1,0 +1,21 @@
+---
+title: "提交之前进行审核：定位主动识别中的信念失败以进行一次性操纵"
+title_en: "Audit Before You Commit: Locating Belief Failures in Active Identification for One-Shot Manipulation"
+authors: ["Mohamed Abouagour", "Byung-Cheol Min"]
+date: "2026-09-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30608v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+机器人在进行不可逆转的动作（例如在插入钉子之前轻敲表面）之前会进行几次探测，必须决定何时证据足以实施。我们认为，这一决定取决于现有方法无法分离的两个条件：信念必须仍然涵盖决定行动的坐标中的真相，以及对行动进行评分的失败模型必须跟踪已实现的失败。我们在部署的“探测然后提交”管道上，离线并根据真实情况单独审核这两种条件：粒子信念、场景失败分数和一次提交。在模拟插入中，更多的点击会增强信念，而事实则在 16.9% 的剧集中留下了支持，失败分数变得乐观了 0.31。保形校准恢复了覆盖范围，但不能恢复决策：确信错误的实例仍然会通过置信门。相反，审计签名指向观察模型，手动扫描发现抽头边界存在 2.1 毫米...
+
+## English Summary
+
+A robot that probes a few times before one irreversible action, such as tapping a surface before inserting a peg, must decide when the evidence is enough to commit. We argue that this decision rests on two conditions that existing methods do not separate: the belief must still cover the truth in the coordinate that decides the action, and the failure model that scores actions must track realized failure. We audit both conditions separately, offline and with ground truth, on a deployed probe-then-commit pipeline: a particle belief, a scenario failure score, and one commit. On simulated insertion, more taps sharpen the belief while the truth leaves its support on 16.9% of episodes and the failure score turns optimistic by 0.31. Conformal calibration restores coverage but not the decision: confidently wrong instances still pass a confidence gate. The audit's signatures instead point at the observation model, where a hand scan finds a 2.1 mm error in the tap boundary. Correcting that one number cuts failure from 0.354 to 0.112 on untouched instances and transfers unrefitted to a second engine, while in a third engine the same audit suggests an execution-model mismatch instead. Across seven task families in three engines, a few probes at a fixed executor reduce miss or failure. On a physical arm inserting a tool into a rigid pocket by touch, the gain and the audit's two conditions reproduce, and replaying the recorded taps under an injected model error shows the audit's signature on real data. Additional materials are available at https://sites.google.com/view/auditbeforeyoucommit.

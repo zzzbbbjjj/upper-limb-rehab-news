@@ -1,0 +1,21 @@
+---
+title: "通过 STL 引导的 Stein 变分策略梯度从稀疏成功信号中学习机器人策略"
+title_en: "Learning Robot Policies from Sparse Success Signals via STL-Guided Stein Variational Policy Gradient"
+authors: ["Hongrui Zheng", "Cristian Ioan Vasile", "Antonio Loquercio", "Rahul Mangharam"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31606v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+当任务的完成取决于协调的动作、精确的接触结果或同时满足多个条件时，学习机器人针对成功信号稀疏的任务的策略是具有挑战性的。与世界错综复杂的物理交互使这些要求变得更加复杂。之前使用传统奖励塑造机制的工作提供了密集的反馈，但局部进展可能不会转化为最终的任务完成。我们提出了信号时态逻辑引导的 Stein 变分策略梯度（STL-SVPG），这是一种基于群体的方法，使用平滑的 STL 鲁棒性作为轨迹级训练目标。通过动态区分这一目标，根据政策行动对整个任务规范的影响，而不是仅仅根据局部进展，将功劳分配给政策行动。我们评估了六项四轴飞行器和操纵器任务的方法，这些任务涉及事件触发的响应、严格有序的行为、指定期限...
+
+## English Summary
+
+Learning robot policies for tasks with sparse success signals is challenging when completion depends on coordinated actions, precise contact outcomes, or satisfying several conditions together. Intricate physical interactions with the world further complicate these requirements. Prior work using conventional reward shaping mechanisms provides dense feedback but local progress might not translate into eventual task completion. We present Signal Temporal Logic-guided Stein Variational Policy Gradient (STL-SVPG), a population-based method that uses smooth STL robustness as a trajectory-level training objective. Differentiating this objective through the dynamics assigns credit to policy actions according to their effect on the complete task specification, rather than local progress alone. We evaluate the approach on six quadcopter and manipulator tasks that involves event-triggered responses, strictly ordered behavior, responses within specified deadlines, and physical interaction with the world. STL-SVPG achieves the highest mean success rate among the compared methods on five of six benchmarks. Simulation-trained policies trained in simulation transfer temporal and contact task behavior to the real world.

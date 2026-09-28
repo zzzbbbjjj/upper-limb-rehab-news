@@ -1,0 +1,21 @@
+---
+title: "迈向 VLA-Dreamer：使用世界模型完善 VLA 行为"
+title_en: "Towards VLA-Dreamer: Refining VLA Behavior Using World Models"
+authors: ["Parsa Mastouri Kashani", "Jan-Gerrit Habekost", "Stefan Wermter"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31313v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉-语言-动作模型（VLA）虽然在机器人控制方面显示出强大的潜力，但需要大量高质量的模仿学习数据。此外，缺乏明确的世界模型使人们进一步怀疑它们的控制能力。在这篇概念论文中，我们提出了一种新颖的架构，通过在 VLA 视觉编码器的嵌入空间上训练预测世界模型来解决 VLA 中的样本效率问题。我们假设这些嵌入与动作相关并且可用于未来的预测。为此，我们建议使用建议的架构来研究这些嵌入基于动作预测未来的效果，因为无法这样做将标志着 VLA 架构的一个关键限制：缺乏模拟现实世界动态的无损隐式世界模型。所提出的架构与标准世界模型动力学不同，因为损失来自嵌入空间而不是像素空间，类似于联合嵌入预测架构。此外，经...
+
+## English Summary
+
+Vision-Language-Action models (VLAs), while showing strong potential for robot control, require massive amounts of high-quality imitation learning data. Moreover, the absence of an explicit world model casts further doubt on their control capabilities. In this concept paper, we propose a novel architecture that addresses sample efficiency in VLAs by training a predictive world model on the embedding space of the VLA's vision encoder. We hypothesize that these embeddings are action-relevant and usable for future prediction. To this end, we propose using the suggested architecture to investigate how well these embeddings predict the future based on actions, as the inability to do so would mark a key limitation of VLA architectures: the lack of a non-lossy implicit world model to simulate real-world dynamics. The proposed architecture differs from the standard world model dynamics as the loss comes from the embedding space rather than the pixel space, similar to joint embedding predictive architectures. Furthermore, the trained world model can be utilized for short-term planning tasks by sampling VLA actions given goal images. We intend to examine the richness of vision embeddings in VLAs and reduce their high data requirements through a world model that can also generate plans during inference.

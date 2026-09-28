@@ -1,0 +1,21 @@
+---
+title: "SAID：用于声音事件定位和检测的语义声学成像检测器"
+title_en: "SAID: Semantic Acoustic Imaging Detector for Sound Event Localization and Detection"
+authors: ["Runbang Wang", "Zining Liang", "Yin Cao", "Qiuqiang Kong"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31492v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在日常生活中，人们会听到周围的言语、脚步声和音乐。我们常常可以识别这些声音并判断它们来自哪里。每个声源都可以显示在单独的声学图上，即水平覆盖 $360^{\circ}$ 和垂直覆盖 $180^{\circ}$ 的矩形图像。该地图显示了声源所在区域的方向以及该区域内的声能。类别标签标识声音。从音频预测这些标记的声学图被称为语义声学成像。此类地图可以帮助机器人感知周围环境，并允许增强现实显示器显示现实世界中的声音区域和类别。现有模型可以识别声音类别并估计每个声源的方向。然而，方向本身并不能描述源区域或其能量。声学成像还必须区分附近方向的声源，而活动源的数量及其占据的区域可能会随着时间的推移而变化。...
+
+## English Summary
+
+In daily life, people hear speech, footsteps, and music around them. We can often recognize these sounds and judge where they come from. Each sound source can be shown on a separate acoustic map, a rectangular image covering $360^{\circ}$ horizontally and $180^{\circ}$ vertically. The map shows the directions occupied by the source as a region and the sound energy within that region. A class label identifies the sound. Predicting these labeled acoustic maps from audio is called semantic acoustic imaging. Such maps could help robots perceive their surroundings and allow augmented reality displays to show sound regions and classes over the real world. Existing models can recognize sound classes and estimate a direction for each source. However, a direction alone does not describe the source region or its energy. Acoustic imaging must also distinguish sound sources in nearby directions, while the number of active sources and the regions they occupy can change over time. We therefore propose the Semantic Acoustic Imaging Detector (SAID), which predicts a separate labeled acoustic map for each active source from audio. First, we pretrain Audio2Sph, SAID's audio encoder, through sound energy estimation across directions without class labels. Then, we train the complete SAID model to predict source regions, energy, and classes together. We also develop a pipeline that generates simulated recordings for pretraining and supports fine-tuning on real recordings. On the official DCASE2026 Task 3 Track A evaluation set, our submitted system ranks first with 0.1080 macro-averaged mean average precision (Macro mAP) and 0.3962 Macro Pearson $r$. Demos and code are provided at https://github.com/IN03X/SAID.

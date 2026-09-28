@@ -1,0 +1,21 @@
+---
+title: "FeatMark：使用扩散模型针对模仿攻击的功能级水印保护"
+title_en: "FeatMark: Feature-level Watermark Protection against Mimicry Attacks with Diffusion Models"
+authors: ["Haoyang Li", "Ruoxi Sun", "Qingqing Ye", "Benjamin Zi Hao Zhao", "Yaxin Xiao", "Jason Xue", "Haibo Hu"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30980v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+文本到图像的扩散模型可以实现数据高效的“模仿”攻击，其中对手在少数公开照片上微调模型，以合成目标个人的令人信服的伪造品。一种常见的对策是嵌入难以察觉的低能量水印，但最近的研究表明这些签名很脆弱：适度的后处理或轻量的对抗性扰动很容易抑制检测，暴露出不可察觉性和鲁棒性之间的根本张力。我们推出了 FeatMark，这是一种水印框架，它从像素级、能源匮乏的扰动转变为不显眼的语义特征：小的、场景一致的微特征，对人类来说保持自然，同时提供更强的、机器可验证的来源信号。 FeatMark 构建了特定于领域的特征库，将每个水印编码为紧凑的概念程序，将开放词汇语义线索与可靠的编辑区域和指令模板配对。然后，它自动...
+
+## English Summary
+
+Text-to-image diffusion models enable data-efficient "mimicry" attacks, wherein adversaries fine-tune the model on a handful of public photos to synthesize convincing forgeries of a target individual. A common countermeasure is to embed imperceptible, low-energy watermarks, yet recent studies show these signatures are brittle: modest post-processing or lightweight adversarial perturbations readily suppress detection, exposing a fundamental tension between imperceptibility and robustness. We introduce FeatMark, a watermarking framework that shifts from pixel-level, energy-starved perturbations to inconspicuous semantic features: small, scene-consistent micro-features that remain natural to humans while providing a stronger, machine-verifiable provenance signal. FeatMark builds domain-specific feature banks that encode each watermark as a compact concept program, pairing open-vocabulary semantic cues with reliable edit regions and instruction templates. It then automatically selects features that are both feasible and executable and injects them through modular, mask-guided concept editing, yielding highly localized, scene-consistent micro-edits that are difficult to perceive. We conduct extensive experiments across VGGFace2, CelebA-HQ, and WikiArt, evaluating against 10 strong watermark removal/purification attacks (including regeneration-style purification) and several bespoke adaptive attacks tailored to FeatMark, to assess perceptual fidelity, watermark detection accuracy, and robustness. We further demonstrate FeatMark's extensibility to video mimicry attacks. The results show FeatMark remains virtually impervious, withstanding all evaluated attacks with negligible bit-accuracy and fidelity degradation.

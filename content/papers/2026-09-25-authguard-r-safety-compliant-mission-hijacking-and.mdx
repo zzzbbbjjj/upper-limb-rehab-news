@@ -1,0 +1,21 @@
+---
+title: "AuthGuard-R：LLM控制机器人的安全兼容任务劫持和双门防御"
+title_en: "AuthGuard-R: Safety-Compliant Mission Hijacking and Dual-Gate Defense for LLM-Controlled Robots"
+authors: ["Saidattu Chepuri", "Vikas Srivastava"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31110v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+大型语言模型越来越多地用作移动机器人、机器人操纵器和自动驾驶车辆的高级规划器。最近的研究表明，这些系统可能会受到恶意文本、语音、视觉指令、检索到的文档和中毒的感官环境的影响。大多数辩护都会询问拟议的行动是否物理安全。本文研究了一个不同的问题：一个动作可能在物理上是安全的，但仍然违反了用户授权的任务。攻击者可能会重定向送货机器人、替换已批准的物体、扩展机器人的操作区域、激活不必要的传感器或延迟任务，而不会造成直接的物理危险。我们将这种攻击称为\emph{符合安全的任务劫持}。我们提出 MissionPAIR，一种自适应攻击框架，用于搜索在违反经过身份验证的任务时通过安全门的可执行计划。我们还提出...
+
+## English Summary
+
+Large language models are increasingly used as high-level planners for mobile robots, robot manipulators, and autonomous vehicles. Recent studies show that these systems can be influenced through malicious text, speech, visual instructions, retrieved documents, and poisoned sensory context. Most defenses ask whether a proposed action is physically safe. This paper studies a different problem: an action may be physically safe and still violate the mission authorized by the user. An attacker may redirect a delivery robot, replace an approved object, extend a robot's operating region, activate an unnecessary sensor, or delay a mission without creating an immediate physical hazard. We call this attack \emph{safety-compliant mission hijacking}. We propose MissionPAIR, an adaptive attack framework that searches for executable plans that pass a safety gate while violating an authenticated mission. We also propose AuthGuard-R, a deterministic authorization layer that binds every executable action to a signed mission, robot identity, object and region scope, current state, time, and input provenance. AuthGuard-R operates with an independent safety gate, giving a dual-gate architecture. We formalize mission policies over robot traces, define security games, and prove authorization soundness, mission non-escalation, replay resistance, robot binding, provenance separation, threshold-approval security, audit-log tamper evidence, and trace-level composition. We report a preliminary cross-model evaluation with Claude Haiku~4.5 and the open-source Qwen2.5~7B planner. Across 240 live attack trials, the planners followed an injected mission deviation in 109 trials; AuthGuard-R rejected all 109 resulting unauthorized actions. A separate hand-constructed suite of eleven protocol- and policy-level attacks was also blocked completely.

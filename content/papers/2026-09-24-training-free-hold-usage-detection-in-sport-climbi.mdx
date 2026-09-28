@@ -1,0 +1,21 @@
+---
+title: "使用基础姿势模型进行运动攀岩中的免训练保持使用检测"
+title_en: "Training-Free Hold-Usage Detection in Sport Climbing with Foundation Pose Models"
+authors: ["Abu Bakar", "Abdullah Aftab", "Amir Hamza"]
+date: "2026-09-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30026v1"
+doi: ""
+tags: ["手部康复", "腕关节"]
+tags_en: ["hand rehabilitation", "wrist"]
+keywords: ["手部康复", "腕关节"]
+keywords_en: ["hand rehabilitation", "wrist"]
+---
+
+## 中文摘要
+
+检测攀岩者使用哪个支架以及何时使用，为运动攀登的自动评分、运动分析和辅助系统提供支持。现有方法训练特定于任务的模型或重新利用 2D 姿势估计器，其手部关键点位于手腕处，脚部关键点位于脚踝处，即偏离实际接触握点的指尖和脚趾，并且其手部在大约一半的帧中被遮挡。我们证明，冻结的、现成的姿势基础模型就足够了：使用智人的指尖和脚趾关键点、针对带注释的握点的每帧邻近测试、每肢互斥和短时间持续规则，我们无需任何攀爬特定训练即可检测握点的使用情况。在 The Way Up 数据集（22 个视频、10 名运动员、两条路线）上，我们的方法在保留分割上达到了 90.2% 的事件 F_1（在留一参与者交叉验证下为 8...
+
+## English Summary
+
+Detecting which holds a climber uses, and when, underpins automated scoring, movement analysis, and assistive systems for sport climbing. Existing approaches train task-specific models or repurpose 2D pose estimators whose hand keypoint sits at the wrist and foot keypoint at the ankle i.e. offset from the fingertips and toes that actually contact the holds, and whose hands are occluded in roughly half of all frames. We show that a frozen, off-the-shelf pose foundation model is sufficient: using the fingertip and toe keypoints of Sapiens, a per-frame proximity test against the annotated holds, per-limb mutual exclusion, and a short temporal-persistence rule, we detect hold usage without any climbing-specific training. On the The Way Up dataset (22 videos, 10 athletes, two routes), our method reaches an event F_1 of 90.2% on a held-out split (89.8% under leave-one-participant-out cross-validation) and 79.9% over all 22 videos at any temporal overlap, and performs best on footholds (F_1,89.8% overall, 96.6% held-out). Under an identical protocol it exceeds our reproductions of the YOLOv8-pose and ViTPose pipelines at every temporal threshold, with the margin widening under strict timing. An ablation shows that two intuitively helpful additions---dense foundation-feature change gating and body-part segmentation---both hurt, arguing that a minimal, keypoint-only design is the right one for this task. Finally, standard coaching statistics computed from our automatic predictions track ground truth closely (Pearson r=1.00 for climb time, 0.94 for pace), turning ordinary single-camera video into reliable performance metrics with no instrumentation.

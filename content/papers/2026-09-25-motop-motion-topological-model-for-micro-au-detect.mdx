@@ -1,0 +1,21 @@
+---
+title: "MoTop：用于微型 AU 检测的运动拓扑模型"
+title_en: "MoTop: Motion-Topological Model For Micro AU Detection"
+authors: ["Huai-Qian Khor", "Mengting Wei", "Yante Li", "Chu Kiong Loo", "Guoying Zhao"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31285v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+面部微表情是自发的、简短的、微妙的面部动作，揭示了高风险环境中压抑的情绪。与经典的表情分析相反，检测动作单元（AU）可以更精细地表示面部动作，作为定义表情类别和其他下游任务之前的初步步骤。因此，它是面部分析中至关重要的上游任务，改进AU检测模块可以提高面部分析的精度。尽管如此，由于 AU 激活区域的收缩性质，检测 AU 具有挑战性，导致不同 AU 之间的混淆，称为 AU 模糊性。为了对精细尺度的变化进行建模，我们提出了 \textbf{MoTop}，这是一种运动拓扑模型，它通过可学习的运动上下文进行增强，为面部活动产生区域软指导，然后是捕捉微 AU 的精细尺度拓扑变化的面部标志。为了增加微面部...
+
+## English Summary
+
+Facial micro-expressions are spontaneous, brief, and subtle facial movements that reveal suppressed emotions in high-stakes environments. In contrast to classic expression analysis, detecting action unit (AU) yields a finer representation of facial movements, serving as a preliminary step before defining expression classes and other downstream tasks. Therefore, it represents a crucial upstream task in facial analysis, and improving an AU detection module increases the precision of facial analysis. Despite that, detecting AU is challenging because of the constrictive nature of the AU activation regions, leading to confusion among different AUs known as AU ambiguity. To model the fine-scale changes, we propose \textbf{MoTop}, a motion-topological model that is augmented with a learnable motion context, yielding regional soft guidance for facial activity, followed by facial landmarks that capture the fine-scale topological changes of micro AUs. To increase the micro facial landmark representations, we amplify the encoded facial landmark transitions via linear extrapolation, thereby increasing the spatial proximity of landmarks and enhancing the low-intensity landmark dynamics. In addition, we design anatomical facial clusters that enhance the hierarchical representation, facilitating multi-scale modelling of facial geometry and improving micro-topological representations. With these contributions, we have achieved state-of-the-art performance on the CD6ME protocol for the micro AU detection task.

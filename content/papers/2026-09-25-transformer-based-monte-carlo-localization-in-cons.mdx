@@ -1,0 +1,21 @@
+---
+title: "构造网格中基于变压器的蒙特卡罗定位"
+title_en: "Transformer-based Monte Carlo Localization in Construction Meshes"
+authors: ["Linus Kramer", "William Talbot", "Olga Vysotska", "Marco Hutter"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31357v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+为了能够执行检查或数字化任务，建筑工地上的移动机器人必须能够相对于与建筑地图共享的全局参考系可靠地定位自己。类似的房间布局和低纹理表面对现有的基于激光雷达和视觉的定位方法提出了挑战。我们使用基于 LiDAR 的全局重定位系统来解决这个问题，该系统估计机器人相对于建筑网格的姿态，并将 PointNet++ 编码器与位置识别解码器相结合，其输出作为蒙特卡罗定位 (MCL) 框架内的学习观察模型。该管道专门针对通过模拟建筑网格内的机器人传感器获得的合成激光雷达扫描进行训练。我们的方法在模糊环境中非常稳健，因为具有不确定性感知的解码器可以缩放位置可能性，并且重采样策略可以将模型假设注入粒子集中，从而能...
+
+## English Summary
+
+To be able to perform inspection or digitization tasks, mobile robots on construction sites must be able to localize themselves reliably with respect to a global reference frame that is shared with a building map. Similar room layouts and low-texture surfaces pose a challenge for existing LiDAR- and vision-based localization methods. We approach this problem with a LiDAR-based global relocalization system that estimates the robot's pose relative to a building mesh and combines a PointNet++ encoder with a place recognition decoder, whose outputs serve as a learned observation model within a Monte Carlo Localization (MCL) framework. The pipeline is trained exclusively on synthetic LiDAR scans obtained by simulating the robot's sensors inside the building mesh. Our approach is robust in ambiguous environments due to an uncertainty-aware decoder that scales positional likelihoods and a resampling strategy that injects model hypotheses into the particle set, enabling recovery from potential particle depletion. Evaluations on real-world datasets show that our method outperforms both diffusion-based and ScanContext++ baselines while maintaining fast inference (18 ms per call), demonstrating the practicality of synthetic-data training for mesh-referenced global localization in construction robotics.

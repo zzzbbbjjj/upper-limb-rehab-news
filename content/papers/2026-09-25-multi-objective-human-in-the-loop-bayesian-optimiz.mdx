@@ -1,0 +1,21 @@
+---
+title: "下肢外骨骼的多目标人在环贝叶斯优化"
+title_en: "Multi-Objective Human-in-the-Loop Bayesian Optimization of a Lower-Limb Exoskeleton"
+authors: ["Neil Janwani", "Matthew T. Lerner", "Aaron J. Young", "Maegan Tucker"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30695v1"
+doi: ""
+tags: ["外骨骼", "可穿戴"]
+tags_en: ["exoskeleton", "wearable"]
+keywords: ["外骨骼", "可穿戴"]
+keywords_en: ["exoskeleton", "wearable"]
+---
+
+## 中文摘要
+
+人机交互优化 (HILO) 是优化辅助设备控制的常用方法，可考虑佩戴者独特的生物力学和主观偏好。然而，尽管研究表明，一个人可能会根据环境、情绪或精力水平等随时间变化的因素而对目标有不同的优先级，但现有的 HILO 方法仅考虑单个目标或对一组目标实施固定的权重。这两种方法都无法代表个人对目标的偏好。在这项工作中，我们提出了多目标人机循环贝叶斯优化（MO-HILBO），它建立在显式多目标贝叶斯优化的基础上，可以有效地推断一组个性化的帕累托最优控制器。我们将我们的方法与现有的多目标 HILO 方法进行比较，并通过实验证明 MO-HILBO 在下肢外骨骼上的两个目标：代谢成本（效率）和有序的人类反馈（...
+
+## English Summary
+
+Human-in-the-loop optimization (HILO) is a common approach for optimizing the control of assistive devices to account for the wearer's unique biomechanics and subjective preferences. However, despite research suggesting that a person may have a different prioritization of objectives depending on time-varying factors such as the environment, their mood, or energy levels, existing HILO approaches only consider a single objective or enforce a fixed weighting on a set of objectives. Neither approach is capable of representing an individual's preferences over objectives. In this work, we propose Multi-Objective Human-in-the-loop Bayesian Optimization (MO-HILBO), which builds on explicit multi-objective Bayesian optimization to efficiently infer a personalized set of Pareto-optimal controllers. We compare our approach with an existing multi-objective HILO method and experimentally demonstrate MO-HILBO on a lower-limb exoskeleton across two objectives: metabolic cost (efficiency) and ordinal human feedback (comfort). We find that MO-HILBO (1) discovers Pareto-optimal controllers, and (2) that the pairwise ordering of points on the Pareto front itself is consistent with validation trials. Lastly, we open-source mohilo, a Python package for running both HILO and MO-HILBO on wearable devices: https://dynamicmobility.github.io/mohilo/.

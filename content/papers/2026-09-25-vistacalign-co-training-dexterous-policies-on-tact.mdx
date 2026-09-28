@@ -1,0 +1,21 @@
+---
+title: "VisTacAlign：在触觉人类和机器人演示上联合训练灵巧策略"
+title_en: "VisTacAlign: Co-Training Dexterous Policies on Tactile Human and Robot Demonstrations"
+authors: ["Julien Poffet", "Matthew Strong", "Ankush Dhawan", "Baiyu Shi", "Shalika Neelaveni", "Yujia Yuan", "Zhenan Bao", "Monroe Kennedy"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30959v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+人类演示是灵巧操作的廉价数据来源，但在其上共同训练机器人策略需要缩小策略所使用的每种模式中的人类与机器人之间的差距。我们提出了 VisTacAlign，一个用于在人类和机器人演示中共同训练 3D-视觉-触觉灵巧策略的框架。手套追踪的人手运动被重新定位到具有一次性指尖校正的 17-DoF 触觉机器人手。然后，从两个立体视图中删除人手，并用机器人手网格替换，该机器人手网格涂有机器人记录的像素，并且在复合材料上重新运行实时立体基础模型，因此人类点云具有与机器人点云相同的立体误差和可见性。最后，电容式触觉手套在其信号空间中与机器人的指尖传感器对齐，给出一个可解释的每手指力表示。扩散变压器消耗点云、本体...
+
+## English Summary
+
+Human demonstrations are a cheap source of data for dexterous manipulation, but co-training a robot policy on them requires closing the human--robot gap in every modality the policy consumes. We present VisTacAlign, a framework for co-training 3D-visual-tactile dexterous policies on human and robot demonstrations. Glove-tracked human hand motion is retargeted to a 17-DoF tactile robot hand with a one-time fingertip correction. The human hand is then erased from both stereo views and replaced by a posed robot-hand mesh painted with pixels from robot recordings, and a real-time stereo foundation model is re-run on the composite, so the human point clouds carry the same stereo errors and visibility as the robot ones. Finally, a capacitive tactile glove is aligned to the robot's fingertip sensors in its signal space, giving one interpretable per-finger force representation. A diffusion transformer consumes point-cloud, proprioceptive, and per-finger tactile tokens. On three real-world tasks requiring precise force -- Lego assembly, plucking strawberries of varying size, and activating and lifting a power drill -- adding aligned human demonstrations to existing robot data improves over robot-only policies, and ablations show that both tactile input and visual alignment are necessary. Project page: https://vis-tac-align.github.io

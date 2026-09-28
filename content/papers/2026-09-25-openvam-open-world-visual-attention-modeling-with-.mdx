@@ -1,0 +1,21 @@
+---
+title: "OpenVAM：使用 VLM 进行开放世界视觉注意力建模"
+title_en: "OpenVAM: Open-World Visual Attention Modeling with VLMs"
+authors: ["Kiana Hooshanfar", "Amirhossein Kazerouni", "Alireza Hosseini", "Michael Brudno", "Babak Taati"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31364v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+预测人类视线是从 Web/UI 设计分析到机器人和人机交互等应用的核心功能。然而，大多数视觉注意力建模方法仅输出密集的显着性图，这通常不足以采取行动：从业者需要将注意力峰值与场景中的离散元素（什么）联系起来，并了解上下文中这些峰值的驱动因素（为什么），同时对跨自然图像、商业内容和 UI/Web 布局的领域转移保持鲁棒性。因此，我们引入了 OpenVAM（使用 VLM 的开放世界视觉注意力建模），这是一个统一的框架，可共同解决异构领域（自然场景、商业图像和 UI/Web 布局）和监督模式的通用性和可解释性。 OpenVAM 采用解耦但对齐的设计：专用的密集视觉路径提供稳定、空间精确的定位，而遵循...
+
+## English Summary
+
+Predicting human gaze is a core capability for applications ranging from web/UI design analysis to robotics and human-computer interaction. Yet, most visual attention modeling methods output only a dense saliency map, which is often insufficient for action: practitioners need to connect attention peaks to discrete elements in the scene (what) and understand the drivers of those peaks in context (why), while remaining robust to domain shift across natural images, commercial content, and UI/web layouts. We, therefore, introduce OpenVAM (Open-world Visual Attention Modeling with VLMs), a unified framework that jointly addresses universality and explainability across heterogeneous domains (natural scenes, commercial imagery, and UI/web layouts) and supervision modalities. OpenVAM adopts a decoupled-but-aligned design: a dedicated dense visual pathway provides stable, spatially precise localization, while an instruction-following vision--language semantic head generates grounded what/why explanations conditioned on the same image and data-type prompts. A three-stage training strategy preserves strong localization priors while progressively introducing language grounding and improving explanation alignment via parameter-efficient adaptation without perturbing the saliency branch. We further propose a scalable pipeline to generate multi-domain saliency-reason annotations for training and systematic evaluation. Experiments across diverse datasets show that OpenVAM improves robustness under domain shift while producing image-grounded explanations that make saliency predictions more interpretable.

@@ -1,0 +1,21 @@
+---
+title: "Android 第三方库检测的上下文感知功能建模"
+title_en: "Context-Aware Functional Modeling for Android Third-Party Library Detection"
+authors: ["Dihao Fan", "Jian Zhang", "Yasai Shi", "Chuan Luo", "Xudong Liu", "Yang Liu", "Chunming Hu", "Xu Wang"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31409v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+第三方库（TPL）在Android应用程序中广泛使用，但它们的重用可能会带来安全风险并干扰下游程序分析。现有的 Android TPL 检测方法面临两个关键限制：它们手工制作的功能在激进的代码转换下很脆弱，并且当应用程序仅保留 TPL 的一部分时，它们的全库匹配策略无效。   在本文中，我们提出了 LibFan，一种基于上下文感知功能建模的基于学习的 Android TPL 检测方法。它通过两个互补的组件来实现这种建模：方法级别的上下文感知对比学习和库级别的功能划分。在方法层面，它通过对比训练学习语义表示，同时结合呼出关系和类级上下文，提高对混淆、收缩和优化的鲁棒性。在库级别，它将每个 TPL...
+
+## English Summary
+
+Third-party libraries (TPLs) are widely used in Android apps, but their reuse can introduce security risks and interfere with downstream program analyses. Existing Android TPL detection approaches face two key limitations: their hand-crafted features are fragile under aggressive code transformations, and their whole-library matching strategies are ineffective when apps retain only part of a TPL.   In this paper, we propose LibFan, a learning-based Android TPL detection approach based on context-aware functional modeling. It realizes this modeling through two complementary components: context-aware contrastive learning at the method level and functional partitioning at the library level. At the method level, it learns semantic representations through contrastive training while incorporating outgoing call relationships and class-level context, improving robustness to obfuscation, shrinking, and optimization. At the library level, it partitions each TPL into functionally coherent units and determines library presence using the best-matching partition, thereby accommodating partial library reuse. To evaluate LibFan, we construct a new benchmark comprising 200 apps and 46 vulnerable TPLs, with each app compiled under four transformation configurations. Under the most challenging R8 full mode, LibFan achieves F1 scores of 81.3% at the library level and 47.6% at the version level, representing relative improvements of 64.9% and 35.6% over the state of the art, respectively.

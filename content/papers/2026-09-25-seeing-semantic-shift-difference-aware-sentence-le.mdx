@@ -1,0 +1,21 @@
+---
+title: "看到语义转变：手语视频的差异感知句子级时间分割"
+title_en: "Seeing Semantic Shift: Difference-Aware Sentence-Level Temporal Segmentation of Sign Language Videos"
+authors: ["Bowen Guo", "Shiwei Gan", "Yafeng Yin", "Xiao Liu", "Kuizhuang Liu", "Zhiwei Jiang", "Lei Xie"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31148v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+手语理解的最新进展在短的单句视频上取得了令人印象深刻的成功，但当应用于长的连续手语视频时，其性能急剧下降。为了弥补这一差距，我们专注于一个具有挑战性和现实的设置：纯视觉句子级手语分割（Vis-SSLS），其目的是将连续的手语视频分割成不重叠的句子级片段，无需任何字幕辅助，作为下游识别和翻译任务的关键先决条件。然而，手语中的句子转换通常是平滑的且视觉上含糊不清，缺乏明确的停顿或姿势重置。因此，静态帧表示可能无法捕获指示句子边界的细微时间变化。为了应对这一挑战，我们提出了 \textbf{SignShift}，这是一种差异感知分割框架，它明确地将帧到帧的特征变化建模为句子边界检测的语义线索。首先，...
+
+## English Summary
+
+Recent advances in sign language understanding have achieved impressive success on short, single-sentence videos, yet their performance drops sharply when applied to long, continuous sign language videos. To bridge this gap, we focus on a challenging and realistic setting: Visual-only Sentence-level Sign Language Segmentation (Vis-SSLS), which aims to partition continuous sign language videos into non-overlapping sentence-level segments without any caption assistance, serving as a crucial prerequisite for downstream recognition and translation tasks. However, sentence transitions in sign language are often smooth and visually ambiguous, lacking explicit pauses or posture resets. As a result, static frame representations may fail to capture the subtle temporal changes that indicate sentence boundaries. To address this challenge, we propose \textbf{SignShift}, a difference-aware segmentation framework that explicitly models frame-to-frame feature variation as semantic cues for sentence boundary detection. First, to model the feature variation, we design a Temporal Difference Module, which incorporates full-frame, facial, and hand cues, and employs inter-frame differencing to learn multi-scale temporal variations that capture both fine-grained local kinematics and global semantic transitions. Second, to mitigate over- and under-segmentation issues, we design a Segment Count Prediction module, which predicts the number of sentences to guide boundary selection. Extensive experiments on benchmark datasets demonstrate that SignShift substantially outperforms existing methods, validating its effectiveness.

@@ -1,0 +1,21 @@
+---
+title: "Cybflight：用于空中机器人研究的嵌入式 Rust 自动驾驶仪"
+title_en: "Cybflight: An Embedded Rust Autopilot for Aerial Robotics Research"
+authors: ["Yifan Lin", "Chao Qin", "H S Helson Go", "Hugh H. -T. Liu"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31232v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+将空中机器人方法从模拟引入飞行不需要重建成熟的自动驾驶仪或添加配套计算机。 Cybflight 是一款开源嵌入式 Rust 研究自动驾驶仪，其类型化、可替换的接口连接硬件访问、感知、状态估计、轨迹规划和控制。这种模块化开发和编译时优化工作流程通过在没有配套计算机的情况下在一台 STM32H743 上运行的模型预测轮廓跟踪控制 (MPCTC) 和增量非线性动态反演 (INDI) 的可替换 Rust 实现进行了演示。采用这种配置，车辆在室内飞行时速度达到 12.38 m/s，而使用全球导航卫星系统 (GNSS) 位置更新的室外飞行速度达到 31.4 m/s。这些飞行表明，完全在飞行控制器微控制器上...
+
+## English Summary
+
+Bringing an aerial robotics method from simulation to flight should not require rebuilding a mature autopilot or adding a companion computer. Cybflight is an open-source embedded Rust research autopilot whose typed, replaceable interfaces connect hardware access, perception, state estimation, trajectory planning, and control. This modular development and compile-time optimization workflow is demonstrated with replaceable Rust implementations of model predictive contour-tracking control (MPCTC) and incremental nonlinear dynamic inversion (INDI) running on one STM32H743 without a companion computer. Using this configuration, the vehicle reaches 12.38 m/s during indoor flight, while an outdoor flight using global navigation satellite system (GNSS) position updates reaches 31.4 m/s. These flights show that running demanding estimation and nonlinear control entirely on a flight-controller microcontroller need not come at the expense of a modular autopilot structure.

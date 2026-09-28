@@ -1,0 +1,21 @@
+---
+title: "用于时变声路径下主动噪声控制的耦合元自适应滤波"
+title_en: "Coupled Meta-Adaptive Filtering for Active Noise Control Under Time-Varying Acoustic Paths"
+authors: ["Boxiang Wang", "Zhengding Luo", "Ziyi Yang", "Dongyuan Shi", "Xuexian Liu", "Woon-Seng Gan"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30945v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+元自适应过滤（Meta-AF）通过在整个在线适应过程中采用学习优化器，为手工自适应过滤器更新提供了数据驱动的替代方案。然而，当 Meta-AF 用于主动噪声控制 (ANC) 时，时变声学路径仍然是一个主要挑战。特别是，基于物理的优化器特征是使用辅助路径估计构建的，并且当物理路径改变时变得不匹配，导致滤波器更新不准确和降噪性能下降。为了解决这个问题，本文提出了一种耦合元自适应滤波主动噪声控制（CoMeta-AF-ANC）方法，该方法应用元学习在闭环框架内共同学习控制滤波器自适应和声路径跟踪。所提出的元门控联合路径标识符（MG-JPI）同时跟踪来自可用 ANC 信号的主路径和辅助路径，而无需辅助噪...
+
+## English Summary
+
+Meta-adaptive filtering (Meta-AF) provides a data-driven alternative to hand-crafted adaptive filter updates by employing a learned optimizer throughout online adaptation. However, when Meta-AF is used for active noise control (ANC), time-varying acoustic paths remain a major challenge. In particular, the physics-informed optimizer features are constructed using a secondary path estimate and become mismatched when the physical path changes, leading to inaccurate filter updates and degraded noise reduction. To address this problem, this paper proposes a Coupled Meta-Adaptive Filtering Active Noise Control (CoMeta-AF-ANC) method, which applies meta-learning to jointly learn the control filter adaptation and acoustic path tracking within a closed-loop framework. The proposed Meta-Gated Joint Path Identifier (MG-JPI) simultaneously tracks the primary and secondary paths from the available ANC signals without auxiliary noise, while the updated secondary path estimate is fed back to reconstruct the Meta-AF controller features. A delayless dual-rate realization performs learned adaptation at the frame rate while generating the control signal at the sampling rate in the time domain. Evaluation using measured headrest acoustic paths shows that CoMeta-AF-ANC outperforms representative ANC algorithms in tracking time-varying acoustic paths, while maintaining higher stability across unseen head movement scenarios. It also generalizes well to real-world noises not encountered during training.

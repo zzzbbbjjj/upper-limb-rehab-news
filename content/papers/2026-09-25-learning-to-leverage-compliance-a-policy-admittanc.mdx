@@ -1,0 +1,21 @@
+---
+title: "学习利用合规性：机器人插入的策略准入学习框架"
+title_en: "Learning to Leverage Compliance: A Policy-Admittance Learning Framework for Robotic Insertion"
+authors: ["Chongren Wang", "Minghe Li", "Honghua Dai", "Zhicheng Lin", "Shiyang Wei", "Xiaokui Yue"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31439v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+策略学习和合规控制为在姿态错误和接触不确定性下实现可靠​​的自主装配提供了一条有前途的途径。然而，将它们结合起来并不能确保协调：当控制器屈服时，策略可能会继续推动接触，从而产生持续的负载，但进展有限。为了解决这个问题，我们提出了 LeCo（LeverageCompliance），一种策略导纳学习框架，它通过固定导纳下的执行时交互来指导视觉策略。多速率反馈机制将高速率接触交互记录聚合成策略转换奖励。然后，综合冲突成本表征了持续的策略加载/控制器卸载反对，而定向高力尾部成本捕获了过渡中的持续加载事件。与任务完成一起，这些成本鼓励政策利用合规性来减少非生产性负载。我们在四项真实的连接器组装任务上对 ...
+
+## English Summary
+
+Policy learning and compliant control offer a promising route to reliable autonomous assembly under pose errors and contact uncertainty. However, combining them does not ensure coordination: the policy may continue pushing against contact while the controller yields, producing sustained loading with limited progress. To address this problem, we propose LeCo (Leverage Compliance), a policy-admittance learning framework that guides a visual policy through execution-time interaction under fixed admittance. A multirate feedback mechanism aggregates high-rate contact-interaction records into policy-transition rewards. An integrated conflict cost then characterizes sustained policy-loading/controller-unloading opposition, while a directional high-force tail cost captures continued-loading events within a transition. Together with task completion, these costs encourage the policy to leverage compliance with less unproductive loading. We evaluate LeCo on four real connector-assembly tasks, obtaining an aggregate success rate of 94%. Across tasks, mean successful-trial resultant-force and torque peaks decrease by approximately 30% and 64% relative to the comparison baseline. Reward ablation further shows that adding conflict shaping reduces median successful-trial contact-conditioned conflict density by approximately 53%. These results support learning to leverage fixed compliance by turning multirate policy-admittance interaction into complementary reward signals for effective, lower-load insertion.

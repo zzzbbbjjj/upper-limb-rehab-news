@@ -1,0 +1,21 @@
+---
+title: "基于视觉的机器人布料展开的 6-DoF 抓取姿势估计"
+title_en: "Vision-Based 6-DoF Grasp Pose Estimation for Robot Cloth Unfolding"
+authors: ["Domen Tabernik", "Peter Nimac", "Jan Jerićević", "Danijel Skočaj", "Andrej Gams"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31452v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+由于布料具有可变形和高维的性质，布料操纵是一项具有挑战性的任务，这会导致复杂的交互动力学和由于折叠、边缘和抓握点等关键视觉线索的频繁遮挡而产生的感知模糊性。在这项工作中，我们使用空中重新抓取策略来处理布料展开问题，其中一个机械手握住布料，而另一个机械手在最佳选择的点抓住布料以将其展开。为此，我们提出了 CeDiRNet-6DoF，这是一个深度学习框架，可以根据观察到的布料配置联合预测有效抓取点和完整的 6-DoF 抓取姿势。通过将密集 3D 抓取回归与分割和正余弦编码欧拉角相结合，该方法可靠地估计了最大化展开布料面积的抓取配置。我们在 ICRA 2024 布料竞赛框架内的双手机器人设置上对 C...
+
+## English Summary
+
+Cloth manipulation is a challenging task due to the deformable and high-dimensional nature of cloth, which leads to complex interaction dynamics and perceptual ambiguity arising from frequent occlusions of critical visual cues such as folds, edges, and grasp points. In this work, we tackle cloth unfolding using a regrasping-in-the-air strategy, where one manipulator holds the cloth while the other grasps it at an optimally selected point to unfold it. To this end, we propose CeDiRNet-6DoF, a deep learning framework that jointly predicts effective grasp points and the complete 6-DoF grasp pose from the observed cloth configuration. By integrating dense 3D grasp regression with segmentation and sine-cosine-encoded Euler angles, the proposed method reliably estimates the grasp configuration that maximizes the unfolded cloth area. We extensively evaluated CeDiRNet-6DoF on a bimanual robotic setup within the ICRA 2024 Cloth Competition framework, achieving state-of-the-art performance. An ablation study further validates the benefits of key design components, including joint segmentation, background randomization, and image cropping. These results establish CeDiRNet-6DoF as a robust and versatile foundation for reliable robotic cloth manipulation in unstructured environments.

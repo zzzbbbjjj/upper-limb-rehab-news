@@ -1,0 +1,21 @@
+---
+title: "看到就到达，感觉抓住：学习拟人机器人手的盲抓反射"
+title_en: "See to Reach, Feel to Grasp: Learning A Blind Grasp Reflex for Anthropomorphic Robotic Hands"
+authors: ["Alexander Alexiev", "Tzu-Yuan Lin", "Sang Min Kim", "Ho Jae Lee", "Yonghyeon Lee", "Sangbae Kim"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31323v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+在这项工作中，我们研究仅使用本体感觉的机械手是否可以在没有视觉观察的情况下抓住不同的物体。我们提出了一种模块化灵巧抓取架构，将全局手臂运动与局部接触控制分开。独立控制的手臂引导手朝向物体，而强化学习策略仅使用手部本体感受反馈来抓住并稳定物体。我们称之为 \textit{盲目抓取反射}：在没有图像、物体姿势或几何观察的情况下进行抓取。学习的稳定抓取分数决定了物体何时被牢固地握住，从而允许手臂开始抓取后的操作。这种分离使得掌握成为一种可重复使用的手级技能，可以与独立设计的手臂控制器相结合来完成各种操作任务。模拟和硬件实验证明了对不同物体的强大盲抓能力以及与一系列手臂控制器的无缝组合。此外，尽管从未...
+
+## English Summary
+
+In this work we study if a robotic hand using proprioception alone can grasp diverse objects with no visual observation. We present a modular dexterous grasping architecture that separates global arm motion from local contact control. An independently controlled arm guides the hand toward the object, while a reinforcement learning policy grasps and stabilizes it using only hand proprioceptive feedback. We call this \textit{a blind grasp reflex}: grasping without images, object poses, or geometric observations. A learned stable-grasp score determines when the object is securely held, allowing the arm to begin post-grasp manipulation. This separation makes grasping a reusable hand-level skill that can be combined with independently designed arm controllers for various manipulation tasks. Experiments in simulation and on hardware demonstrate robust blind grasping across diverse objects and seamless composition with a range of arm controllers. Moreover, despite never observing contact geometry, the learned grasp score closely aligns with an independent physics-based measure of grasp stability. The resulting approach follows a simple principle: see to reach, feel to grasp. Project page: https://blindgraspreflex.github.io.

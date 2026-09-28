@@ -1,0 +1,21 @@
+---
+title: "实时力调节，全手灵巧抓取"
+title_en: "Real-Time Force Regulation for Whole-Hand Dexterous Grasping"
+authors: ["Sang Min Kim", "Alexander Alexiev", "Tzu-Yuan Lin", "Sangbae Kim", "Young Min Kim", "Yonghyeon Lee"]
+date: "2026-09-24"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30082v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+尽管整个手部的接触交互变化，但稳健灵巧的抓握需要保持身体稳定性。在物体运动、建模错误或外部干扰的情况下，预先计算的力分布很容易失败。在本文中，我们提出了一个针对动态变化的全手接触进行实时力调节的框架。我们的方法使用跟踪对象模型和本体感觉来几何估计所有手部链接的接触，而不需要对这些接触进行触觉感知。它会根据摩擦约束、执行器限制以及由经典全肢力分析驱动的执行一致性约束来重复重新计算所需的接触力分布。我们将这种力调节控制器与反应性伸手相结合，使手能够抓住物体，在干扰下保持它，并在失去物体后重新抓住物体。无重力的模拟实验表明，在受控扰动下，与固定分配和仅指尖执行相比，抓握保持力得到了改善，而 27-D...
+
+## English Summary
+
+Robust dexterous grasping requires maintaining physical stability despite contacts interactively evolving across the entire hand. A precomputed force distribution can easily fail under object motion, modeling errors, or external disturbances. In this paper, we present a framework for real-time force regulation over dynamically changing whole-hand contacts. Our method geometrically estimates contacts across all hand links using a tracked object model and proprioception, without requiring tactile sensing at those contacts. It repeatedly recomputes the desired contact-force distribution subject to friction constraints, actuator limits, and an actuation-consistency constraint motivated by classical whole-limb force analysis. We integrate this force-regulation controller with reactive reaching, enabling the hand to acquire a grasp, maintain it under disturbances, and regrasp after losing the object. Simulation experiments without gravity demonstrate improved grasp retention over fixed-allocation and fingertip-only execution under controlled perturbations, while real-world experiments on a 27-DoF arm-hand system demonstrate grasp maintenance and recovery under human-applied disturbances as contacts evolve across the whole hand. Project page: https://sangminkim-99.github.io/reactive-grasp-whole-hand/

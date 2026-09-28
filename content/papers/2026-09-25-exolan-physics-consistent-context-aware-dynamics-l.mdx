@@ -1,0 +1,21 @@
+---
+title: "ExoLaN：物理一致的外骨骼上下文感知动力学学习"
+title_en: "ExoLaN: Physics-Consistent Context-Aware Dynamics Learning for Exoskeletons"
+authors: ["Lucas Schulze", "Maximilian Schwarz", "Jona Hoppe", "Jan Peters", "Oleg Arenz"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.31434v1"
+doi: ""
+tags: ["外骨骼"]
+tags_en: ["exoskeleton"]
+keywords: ["外骨骼"]
+keywords_en: ["exoskeleton"]
+---
+
+## 中文摘要
+
+基于人类意图的与任务无关的辅助外骨骼控制比依赖预定义任务或运动模式的传统方法提供了更大的灵活性。人体关节扭矩估计通过表征用户动作来实现与任务无关的协助。深度拉格朗日网络 (DeLaN) 等物理一致的方法已被应用于估计多用户设置中的人体扭矩，但现有方法无法在不经过重新训练的情况下适应特定用户，并且无法考虑运动过程中的间歇性接触。我们提出了 ExoLaN，一种用于人外骨骼交互的上下文感知 DeLaN，它可以学习完全耦合的系统动力学，同时适应交互上下文的变化。 ExoLaN 将时间背景与力敏感鞋垫的部分接触力测量相结合，以推断潜在的动力学嵌入并估计广义接触扭矩。在 7 个看不见的用户执行 21 个看...
+
+## English Summary
+
+Task-agnostic assistive exoskeleton control based on human intention offers greater flexibility than conventional approaches that rely on predefined tasks or motion patterns. Human joint torque estimation enables task-agnostic assistance by characterizing user actions. Physics-consistent methods such as Deep Lagrangian Networks (DeLaN) have been applied to estimate the human torques in multi-user settings, but existing approaches cannot adapt to a specific user without retraining, and do not account for intermittent contacts during locomotion. We propose ExoLaN, a Context-Aware DeLaN for human-exoskeleton interaction that learns the full coupled system dynamics while adapting to changes in interaction context. ExoLaN combines temporal context with partial contact-force measurements from force-sensitive insoles to infer latent dynamics embeddings and estimate generalized contact torques. On seven unseen users performing 21 unseen tasks, ExoLaN reduces torque estimation MSE by 7% compared to a black-box baseline. Beyond inverse dynamics, ExoLaN serves as a unified model that also enables accurate forward prediction: training with a multi-step prediction loss reduces acceleration MSE by 59% and long-horizon position and velocity errors by 60% and 93%, respectively, compared with a single-step loss. Moreover, the learned latent context captures task information without explicit task labels, making it a promising signal for task-aware assistive control.

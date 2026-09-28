@@ -1,0 +1,21 @@
+---
+title: "PICO：用于 6DoF 手术工具姿势估计的投影通知一致性优化"
+title_en: "PICO: Projection-Informed Consistency Optimisation for 6DoF Surgical Tool Pose Estimation"
+authors: ["Lucy Fothergill", "Pietro Valdastri", "Dominic Jones", "Duygu Sarikaya"]
+date: "2026-09-25"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2609.30989v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+目的：手术工具的准确 6 DoF 位姿估计对于自动化、机器人本体感觉以及与手术组织的安全交互至关重要。由于机械臂的电缆驱动特性，基于运动学的方法会遭受累积误差，而基于视觉的方法通常依赖于外部标记或跟踪器。尽管最近提出了基于视觉的进展，但由于累积的误差和计算开销，这些两阶段姿态估计方法通常缺乏实时鲁棒性。方法：我们提出了一种新颖的端到端可训练模型：PICO。我们的模型采用多任务学习架构来预测分割和深度图，以及平移和旋转参数的回归。我们定义了两个代理任务，以强制 2D 和 3D 空间中的几何一致性，从而提高准确性和鲁棒性。为此，我们提出了投影损失和点对点损失。结果：我们在 SurgRIPE 数据集...
+
+## English Summary
+
+Purpose: Accurate 6 DoF pose estimation of surgical tools is critical for automa- tion, robotic proprioception, and safe interaction with the tissue operated on. Kinematics-based approaches suffer from accumulated errors due to the cable- driven nature of robotic arms, while vision-based methods often rely on external markers or trackers. Although more recent vision-based advances have been pro- posed, these two-stage pose estimation methods often lack real-time robustness due to accumulated errors and computational overhead. Methods: We propose a novel end-to-end trainable model, PICO. Our model employs a multi-task learning architecture to predict segmentation and depth maps, alongside regression of translation and rotation parameters. We define two proxy tasks that enforce geometric consistency in both 2D and 3D spaces, improving accuracy and robustness. For this, we propose a projection loss, and a point-to-point loss. Results: We evaluate our method on the SurgRIPE dataset, benchmarking its performance against state-of-the-art approaches using standard 6DoF pose esti- mation metrics. Our results demonstrate consistently strong performance across all four subsets, specifically in rotation, ranking second even under occlusion. It also demonstrates comparable translational performance, remaining competitive, especially in occluded cases. Conclusion: PICO demonstrates the effectiveness of multi-task learning and geometry-aware proxy tasks for robust and reliable surgical tool pose estimation, especially in occluded scenarios, highlighting potential for future applications.
