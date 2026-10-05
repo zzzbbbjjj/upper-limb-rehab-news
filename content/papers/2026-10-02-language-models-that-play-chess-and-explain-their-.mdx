@@ -1,0 +1,21 @@
+---
+title: "下棋并解释其走法的语言模型"
+title_en: "Language Models that Play Chess and Explain Their Moves"
+authors: ["Adithya Bhaskar", "Jeffrey Cheng", "Danqi Chen"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03695v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+现代国际象棋引擎是沉默的专家：它们以超人的水平下棋，但不提供其下棋的解释。另一方面，语言模型（LM）可以生成听起来合理的解释，但其较弱的发挥能力限制了其解释的实用性。我们介绍 Queen，一个 4B 参数国际象棋语言模型，可以在典型大师水平下棋时解释其走法和计划。我们的新颖框架通过互补组件实现特定领域的推理：编码器-解码器架构和迭代蒸馏算法。该架构通过交叉注意力将静默专家国际象棋编码器与指令调整的 LM 集成在一起，我们通过问答课程对其进行训练，以从编码器的表示中提取国际象棋概念。在此领域适应模型的基础上，我们通过贝尔曼更新的自然语言模拟来迭代改进其解释：模型分析其最佳候选移动后的位置，并将它...
+
+## English Summary
+
+Modern chess engines are silent experts: they play at a superhuman level, but do not offer explanations for their play. On the other hand, language models (LMs) can generate plausible-sounding explanations, but their weak playing strength limits the utility of their explanations. We introduce Queen, a 4B-parameter chess-language model that can explain its moves and plans while playing at the level of a typical Grandmaster. Our novel framework enables domain-specific reasoning through complementary components: an encoder-decoder architecture and an iterative distillation algorithm. This architecture integrates a silent expert chess encoder with an instruction-tuned LM through cross-attention, which we train via a question-answering curriculum to extract chess concepts from the encoder's representations. Building on this domain-adapted model, we iteratively improve its explanations with a natural-language analog of the Bellman update: the model analyzes the positions after its top candidate moves and consolidates them into an explanation of the current position, which is then distilled back into the model. Over seven iterations, our model gains over 900 Elo points (1782 to 2697), substantially surpassing all frontier models on both playing strength and puzzle accuracy, despite containing three orders of magnitude fewer parameters. Furthermore, LM-based evaluations show that our explanations are fluent and approach GPT-5.6-Sol (high) in coherence. The generality of our architecture and training procedure suggests a recipe for applying language models to domains where silent expert encoders are available, like games, robotics, and computer use.

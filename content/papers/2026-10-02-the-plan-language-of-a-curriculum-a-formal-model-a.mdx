@@ -1,0 +1,21 @@
+---
+title: "课程的规划语言：形式模型和学位规划的复杂性"
+title_en: "The Plan Language of a Curriculum: A Formal Model and the Complexity of Degree Planning"
+authors: ["Sherzod Turaev", "Mary John", "Mamoun Awad"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03392v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+我们将学术课程建模为可行学习计划语言的生成器：先决条件是联合范式的单调布尔公式，学位要求是覆盖约束的学分阈值，学习计划是受每学期学分能力限制的一系列术语。在这个模型中，我们解决了两个自然规划目标的复杂性、一定程度的条款数量和总信贷负荷，并且我们隔离了负责每个硬度来源的结构承诺。每当每项能力不受限制时，对于任意析取先决条件和任意选修课，达到学位的时间都是多项式的，因此析取永远不会增加其硬度，但一旦能力绑定，即使没有任何先决条件，它也会变得很强的 NP 困难。负载是互补的：析取和重叠选修课在孤立情况下都是强 NP 困难的，并且它们的复杂性不依赖于容量，而负载是合取、强制片段上的多项式。因此，这两个...
+
+## English Summary
+
+We model an academic curriculum as a generator of a language of feasible study plans: prerequisites are monotone Boolean formulas in conjunctive normal form, degree requirements are credit-threshold covering constraints, and a study plan is a sequence of terms bounded by a per-term credit capacity. Within this model, we settle the complexity of the two natural planning objectives, the number of terms to a degree and the total credit load, and we isolate the structural commitment responsible for each source of hardness. Time to degree is polynomial whenever the per-term capacity is unbounded, for arbitrary disjunctive prerequisites and arbitrary electives, so disjunction never contributes to its hardness, yet it becomes strongly NP-hard as soon as capacity binds, even without any prerequisite. Load is complementary: disjunction and overlapping electives are each strongly NP-hard in isolation and their complexity does not depend on capacity, while load is polynomial on the conjunctive, mandatory fragment. The two objectives therefore have disjoint sources of hardness. We show that the delay-factor component of the standard curricular-complexity metric is a polynomially computable upper bound on time to degree, exact on the conjunctive fragment and loose elsewhere by a quantity we name the disjunctive slack, and we prove that program subsumption is coNP-complete and consensus prerequisite recovery is NP-complete. Instantiating the model on a corpus of twenty-two universities, we find that 88 percent of prerequisite-bearing courses are purely conjunctive and that capacity, not prerequisite logic, is the operative constraint on time to degree. The curriculum corpus is openly available (https://doi.org/10.5281/zenodo.22334674), and the analysis and figure-generation code accompany the paper.

@@ -1,0 +1,21 @@
+---
+title: "GeoScaffold：通过重构学习紧凑的几何潜在特征以实现高效的视觉语言导航"
+title_en: "GeoScaffold: Learning Compact Geometric Latents via Reconstruction for Efficient Vision-Language Navigation"
+authors: ["Yixuan Jiang", "Wentong Li", "An Liu", "Zihao Xin", "Fulin Tang", "Cong Leng", "Yang Gao", "Jian Cheng"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.02697v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+最近的视觉和语言导航 (VLN) 系统越来越多地采用流视频 LLM 策略，将以自我为中心的 RGB 观察和指令直接映射到低级操作。然而，这些策略继承了 2D 预训练的弱 3D 几何先验。现有的几何感知扩展会收取持续的推理时间费用：深度传感器、3D 编码器或每步感知工具调用。我们提出了 GeoScaffold，这是一个几何监督框架，通过将几何内部化到策略本身中，在训练时一次性付出这个代价。它首先从训练轨迹的深度图上学习紧凑的深度标记器并将其冻结。然后，它使用一些可学习的几何查询标记来微调策略，训练它们的隐藏状态以重建导航关键几何，例如深度、连接性和可遍历性。这种监督将查询状态转化为用于动作解码的...
+
+## English Summary
+
+Recent vision-and-language navigation (VLN) systems increasingly adopt streaming Video-LLM policies that map egocentric RGB observations and instructions directly to low-level actions. Yet these policies inherit weak 3D geometric priors from 2D pretraining. Existing geometry-aware extensions charge a persistent inference-time price: depth sensors, 3D encoders, or per-step perception tool calls. We propose GeoScaffold, a geometric supervision framework that pays this price once, at training time, by internalizing geometry into the policy itself. It first learns a compact depth tokenizer on depth maps from the training trajectories and freezes it. It then fine-tunes the policy with a handful of learnable geometry query tokens, training their hidden states to reconstruct navigation-critical geometry such as depth, connectivity, and traversability. This supervision turns the query states into compact geometric latents for action decoding, and through the shared weights also internalizes geometry into the backbone's own representations. Like a scaffold, the tokenizer, target generators, and reconstruction heads are discarded after training, leaving the backbone and action interface unchanged. Extensive experiments show that GeoScaffold consistently outperforms leading vision-only navigators on continuous VLN benchmarks, offering a practical paradigm for lightweight edge deployment of spatially aware embodied navigation models.

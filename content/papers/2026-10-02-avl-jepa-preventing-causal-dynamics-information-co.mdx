@@ -1,0 +1,21 @@
+---
+title: "AVL-JEPA：防止联合嵌入预测架构世界模型中的因果动力学信息崩溃"
+title_en: "AVL-JEPA: Preventing Causal Dynamics Information Collapse In Joint Embedding Predictive Architecture World Models"
+authors: ["Yikang Qiao", "Ling Zhang", "Ziying Song", "Duan Huang"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03587v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+联合嵌入预测架构（JEPA）无需重建观察结果即可预测未来的潜在表示，从而使世界模型能够专注于高级语义动态。然而，JEPA 可以保留高维视觉信息，同时丢弃有关动作的物理后果的信息。我们将这种故障模式称为因果动态信息崩溃，并提出基于行动的视觉不变性潜伏（AVL）来防止这种崩溃。我们首先使用执行的动作作为辅助动力学锚点，鼓励模型保留动态信息，然后使用视觉不变路径，在不丢弃动态信息的情况下对齐扰动和干净的潜在预测，迫使模型充分理解和利用因果动态信息。我们在四个机器人控制任务（TwoRoom、PushT、OGBench Cube 和 Reacher）上验证了 AVL，结果表明它可以显着提高视觉扰动下的成...
+
+## English Summary
+
+Joint embedding predictive architectures (JEPAs) predict future latent representations without reconstructing observations, enabling world models to focus on high-level semantic dynamics. However, a JEPA can preserve high dimensional visual information while discarding information about the physical consequences of actions. We call this failure mode causal dynamics information collapse and propose action-grounded vision-invariance latent (AVL) to prevent this collapse. We first use the executed action as an auxiliary dynamics anchor that encourages the model to preserve dynamics information, and then use a vision-invariance pathway which aligns perturbed and clean latent predictions without discarding dynamics information, forcing the model to fully understand and utilize causal dynamics information. We validate AVL on four robotic control tasks (TwoRoom, PushT, OGBench Cube, and Reacher), showing that it substantially improves success rates under visual perturbations while preserving clean-environment performance. We further evaluate physical consequence alignment, clean-noisy dynamics consistency, and the causal effect of targeted transition subspace erasure. Collectively, these results indicate that dynamic information causally relevant to planning is preserved from collapse under AVL.

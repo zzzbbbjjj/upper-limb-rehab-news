@@ -1,0 +1,21 @@
+---
+title: "通过以交互为中心的谱潜在指导进行世界行动学习"
+title_en: "World Action Learning via Interaction-Centric Spectral Latent Guidance"
+authors: ["Zhiming Liu", "Yikun Miao", "Ying Chen", "Hongrui Yin", "Fangqi Zhu", "Xiaoyi Pang", "Quanxin Shou", "Zhengyang Yan", "Haodong Wang", "Song Guo"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03607v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+学习通用机器人策略需要大规模的现实世界交互数据，但收集机器人演示仍然昂贵且难以扩展。以自我为中心的视频为机器人操作提供了丰富的具有任务相关语义的人类交互体验，但直接传输具有挑战性，原因有两个：从帧重建推断出的潜在动作可能会受到诸如自我相机运动之类的令人讨厌的变化的支配，而人类和机器人的行为通常表现出不同的时间动态。我们提出了 WING（通过以交互为中心的频谱潜在指导进行世界行动学习），这是一个将交互知识从以自我为中心的视频转移到机器人策略的框架。 WING 首先将观察者引起的运动与手部物体交互分开，并将以交互为中心的组件提炼为潜在动作。然后，它利用跨实施例任务语义集中在缓慢变化的时间结构中的观...
+
+## English Summary
+
+Learning general-purpose robot policies requires large-scale real-world interaction data, yet collecting robot demonstrations remains expensive and difficult to scale. Egocentric videos offer abundant human interaction experience with task-relevant semantics for robotic manipulation, but direct transfer is challenging for two reasons: latent actions inferred from frame reconstruction can be dominated by nuisance variation such as ego-camera motion, and human and robot behaviors often exhibit different temporal dynamics. We propose WING (World Action Learning via INteraction-Centric Spectral Latent Guidance), a framework for transferring interaction knowledge from egocentric videos to robot policies. WING first separates observer-induced motion from hand-object interaction and distills the interaction-centric component into latent actions. It then exploits the observation that cross-embodiment task semantics are concentrated in slowly varying temporal structures, identifying shared low-frequency components between egocentric latent actions and robot behaviors in the spectral domain and using them to guide action generation. WING achieves average success rates of 99.20% on LIBERO, 93.80% on RoboTwin 2.0, and 57.7% on RoboCasa-GR1, and also performs strongly across four real-world manipulation tasks under diverse generalization settings. These results show that interaction-centric spectral guidance provides an effective and scalable way to transfer physical interaction knowledge from human egocentric video to robot control. Project page: https://mikuz12.github.io/wing/

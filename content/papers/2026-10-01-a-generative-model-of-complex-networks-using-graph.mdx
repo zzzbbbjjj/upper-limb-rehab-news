@@ -1,0 +1,21 @@
+---
+title: "使用图子和神经逆算子的复杂网络生成模型"
+title_en: "A Generative Model of Complex Networks Using Graphons and Neural Inverse Operators"
+authors: ["Wooseong Choi", "Italo'Ivo Lima Dias Pinto", "Chen Sun", "Gaurav Gupta", "Dong Song", "Paul Bogdan"]
+date: "2026-10-01"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.02439v1"
+doi: ""
+tags: ["手部康复", "人机接口"]
+tags_en: ["hand rehabilitation", "human-machine interface"]
+keywords: ["手部康复", "人机接口"]
+keywords_en: ["hand rehabilitation", "human-machine interface"]
+---
+
+## 中文摘要
+
+生成图模型是理解和模拟复杂网络的核心。然而，现有方法具有互补的优点和局限性。机械模型提供可解释性，但依赖于特定于实例的估计方法。另一方面，深度生成模型以可解释性为代价提供摊销推理，并且在很大程度上仅限于训练期间看到的图形大小。科学应用激发了一个保留两种范式优点的框架。我们通过在函数空间中制定生成模型和参数恢复来桥接它们。多重分形阶梯图元通过递归结构扩展了标准阶梯图元，该递归结构可以紧凑地参数化复杂网络。该公式允许神经逆算子恢复其参数，从而能够对看不见的图大小进行推断。我们评估我们的模型，仅针对合成多重分形步骤图子实现进行训练，针对这两种范式。与在经验网络上预训练的图基础模型相比，我们的方法在零...
+
+## English Summary
+
+Generative graph models are central to understanding and simulating complex networks. However, existing approaches have complementary strengths and limitations. Mechanistic models offer interpretability but rely on instance-specific estimation methods. Deep generative models, on the other hand, offer amortized inference at the cost of interpretability and are largely limited to graph sizes seen during training. Scientific applications motivate a framework that retains the strengths of both paradigms. We bridge them by formulating both the generative model and parameter recovery in function space. A multifractal step graphon extends standard step graphons with a recursive construction that compactly parameterizes complex networks. This formulation admits a neural inverse operator to recover its parameters, enabling inference on unseen graph sizes. We evaluate our model, trained only on synthetic multifractal step graphon realizations, against both paradigms. Against a graph foundation model pretrained on empirical networks, our method achieves the best average performance on three of four metrics in a zero-shot graph-generation benchmark, indicating that the model transfers to real-world graphs. We also apply our method to single-observation networks, a regime largely inaccessible to deep models that require training corpora, where it performs comparably to an instance-specific method that optimizes on each graph. In a multi-subject EEG case study, the inferred parameters track a reversible change in brain state more sensitively than traditional network statistics. Together, these results indicate that mechanistic interpretability and amortized inference can be effectively unified in a generative graph model to enhance our understanding of complex networks.

@@ -1,0 +1,21 @@
+---
+title: "AIBL：具有结构化记忆和神经嵌入的增强型基于实例的学习"
+title_en: "AIBL: Augmented Instance-Based Learning with Structured Memory and Neural Embeddings"
+authors: ["Radha Poovendran", "Andrea Stocco", "Linda Bushnell"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03413v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+顺序学习系统通常根据积累的经验做出决策，同时接收其分布可能随时间变化的高维输入。基于实例的学习理论 (IBLT) 通过存储的情境决策实用实例、部分匹配、激活和混合，为此类设置提供了一个原则性的基于案例的框架。 IBLT 依赖于类似字典格式的符号知识表示，但文本、图像、事务向量和用户项目历史通常需要学习的相似性，而不是手动指定的匹配规则。在本文中，我们介绍了 AIBL（基于增强实例的学习），这是一种在高维序列数据的学习向量空间中制定的实例学习模型。 AIBL 将符号情境匹配推广到神经嵌入相似性，同时保留实例存储、激活加权检索和效用混合。 AIBL 模型将记忆组织为活跃存储、遗忘存储和惊喜存储。惊...
+
+## English Summary
+
+Sequential learning systems often make decisions from accumulated experience while receiving high-dimensional inputs whose distribution may change over time. Instance-Based Learning Theory (IBLT) provides a principled case-based framework for such settings through stored situation-decision-utility instances, partial matching, activation, and blending. IBLT relies on symbolic knowledge representation in dictionary-like formats, but text, images, transaction vectors, and user-item histories often require learned similarity rather than hand-specified matching rules. In this paper, we introduce AIBL (Augmented Instance-Based Learning), an instance-learning model formulated in a learned vector space for high- dimensional sequential data. AIBL generalizes symbolic situation matching to neural embedding similarity while retaining instance storage, activation- weighted retrieval, and utility blending. The AIBL model organizes memory into active, forgotten, and surprise stores. Surprise memory separates weakly matched, possible out-of-distribution, or corner-case observations from active memory, reducing forced fitting to the nearest available cases. An observation-driven graduation algorithm promotes recurring surprise instances to active memory, allowing the memory to incorporate repeated novel patterns that may arise under concept drift. We evaluate the same implementation on five machine learning tasks and three controlled simulation tasks, comparing AIBL with classical IBLT variants and task-specific baselines where appropriate. AIBL improves accuracy by 6 to 17 percentage points. The results show where vector-space retrieval improves over symbolic matching and how the added memory mechanisms govern novelty detection, cold-start handling, drift adaptation, and reward learning under the tested protocols.

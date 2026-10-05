@@ -1,0 +1,21 @@
+---
+title: "EVOL：模拟器引导的进化专家综合，用于免部署学习路径推荐"
+title_en: "EVOL: Simulator-Guided Evolutionary Expert Synthesis for Deployment-Free Learning Path Recommendation"
+authors: ["Geonwoo Bang", "Dongho Kim", "Moohong Min"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03273v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+用于学习路径推荐 (LPR) 的强化学习 (RL) 面临两个耦合障碍。首先，该策略必须致力于一系列没有中间反馈的 L 概念，产生一个随 L 超指数增长的组合搜索空间，并且仅在最后一步提供奖励。其次，专家学习路径将是稀疏奖励强化学习的自然疗法，但它们并不存在于教育数据中，因为学生日志记录了学习者做了什么，而不是他们应该做什么。我们通过导入机器人技术中基于模拟器的演示学习的秘诀来解决这两个障碍：知识跟踪模拟器既用于通过进化搜索合成每个学习者的专家演示，又用于训练免部署策略，将这些演示提炼为前馈学习器。我们的框架 EVOL 用不对称的参与者-批评者实例化了这个管道，其中参与者致力于部署现实的盲目规划...
+
+## English Summary
+
+Reinforcement learning (RL) for learning path recommendation (LPR) faces two coupled obstacles. First, the policy must commit to a sequence of L concepts without intermediate feedback, producing a combinatorial search space that grows super-exponentially with L and provides reward only at the final step. Second, expert learning paths would be the natural cure for sparse-reward RL, but they do not exist in educational data, because student logs record what learners did, not what they should have done. We address both obstacles by importing a recipe from simulator-based demonstration learning in robotics: the knowledge tracing simulator is used both to synthesize per-learner expert demonstrations through evolutionary search and to train a deployment-free policy that distills these demonstrations into a feed-forward learner. Our framework, EVOL, instantiates this pipeline with an asymmetric actor-critic where the actor commits to deployment-realistic blind planning while the critic exploits the privileged simulator state during training. Across three datasets (ASSIST15, Junyi, and EdNet; 39-189 concepts) and path lengths L = 5, 10, and 20, EVOL surpasses 8 baselines spanning heuristic, sequential, RL, graph-enhanced RL, and LLM-enhanced methods. We further compare three imitation strategies (BC, AWR, and DAPG) and show that final performance is governed by the quality of evolutionary experts rather than by the particular imitation objective.

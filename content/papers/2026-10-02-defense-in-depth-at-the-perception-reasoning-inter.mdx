@@ -1,0 +1,21 @@
+---
+title: "以 LLM 为中心的代理无人机群感知推理界面的深度防御"
+title_en: "Defense-in-Depth at the Perception-Reasoning Interface of LLM-Centric Agentic UAV Swarms"
+authors: ["Mohammadhossein Homaei", "Yousef Emami", "Sajad Homayoun", "Rahim Taheri", "Hao Zhou", "Miguel Gutierrez Gaitan", "Bo Wei"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03319v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+大型语言模型 (LLM) 越来越多地支持无人飞行器 (UAV) 集群操作，例如数据收集调度，其中模型读取结构化传感器报告并决定访问哪些传感器。悄悄操纵这些报告的对手可以在不修改模型权重或无人机的情况下重定向群体。已经在架构上提出了针对此接口的防御措施，但很少实施或评估。我们在以 LLM 为中心的代理无人机群的感知推理界面上实施和评估深度防御。五层检查报告的来源，其值是否在物理上可接受，它们是否与群体几何和服务历史预测一致，生成的调度是否使任何传感器缺乏，并且当这些失败时，将控制权交给一个确定性调度程序，该调度程序会忽略可疑的输入。我们将每一层与一个足够强大的对手进行测试，以击败它之前的层。对于...
+
+## English Summary
+
+Large Language Models (LLMs) increasingly support Uncrewed Aerial Vehicle (UAV) swarm operations such as data collection scheduling, where the model reads structured sensor reports and decides which sensors to visit. An adversary who quietly manipulates those reports can redirect the swarm without modifying the model weights or the UAV. Defenses for this interface have been proposed architecturally but rarely implemented or evaluated. We implement and evaluate defense-in-depth at the perception-reasoning interface of LLM-Centric Agentic UAV Swarms. Five layers check the provenance of a report, whether its values are physically admissible, whether they agree with what swarm geometry and service history predict, whether the resulting schedule starves any sensor, and, when these fail, hand control to a deterministic scheduler that ignores the suspect input. We test each layer against an adversary strong enough to defeat the layer before it. For each of the three input-side layers, we derive in closed form how far a report can be distorted before that layer reacts, fixing each boundary from deployment parameters before any attack data is collected; across thirty matched simulation runs, predicted and measured boundaries agree. Separating attack detection from response is a well-established principle, and we quantify the cost of neglecting this distinction at the perception-reasoning interface. When the system rejects a report, it replaces it with the most recent accepted report. This prevents the adversary from controlling the UAV schedule, but it also increases cumulative cost by 79% and 74% for the two detectors, respectively, compared with the undefended system. The safety check does not detect any attacks, but it nevertheless reduces the attack-induced cost by 37.5%.

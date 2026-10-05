@@ -1,0 +1,21 @@
+---
+title: "亲切学习：相关数据的分布式训练"
+title_en: "Cordial Learning: Distributed Training with Correlated Data"
+authors: ["Sarah Shitrit", "Ilai Bistritz"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03330v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+我们考虑一个具有相关数据的代理的分布式学习任务。具体来说，一个代理的标签取决于同一样本的其他代理的输入，并且这些输入也是相关的。当代理共享相同的环境时，相关数据就是现实。现有的去中心化方法，例如联邦学习，忽略了问题的结构，并且在相关数据上表现不佳。另一方面，由于隐私和通信限制，集中式方法是不可行的。我们引入亲切（相关和分布式）学习来解决这一差距，方法是在代理之间仅共享低维输出，同时训练本地模型以从同伴中提取信息信号。这种分布式学习引发了一个博弈，其中每个代理的损失函数取决于其他代理的模型。假设一个线性模型，我们证明，尽管全局目标是非凸的，亲切学习仍以概率 1 收敛到全局最优解。结构化多数字 M...
+
+## English Summary
+
+We consider a distributed learning task with agents that have correlated data. Specifically, the label of an agent depends on the input of other agents for the same sample, and these inputs are also correlated. Correlated data is the reality when agents share the same environment. Existing decentralized methods, such as federated learning, ignore the structure of the problem and perform poorly on correlated data. On the other hand, centralized approaches are infeasible due to privacy and communication constraints. We introduce cordial (correlated and distributed) learning to address this gap by sharing only low-dimensional outputs between the agents while training local models to extract informative signals from peers. This distributed learning induces a game in which the loss function of each agent depends on the models of others. Assuming a linear model, we prove that cordial learning converges with probability one to a globally optimal solution, despite the nonconvex global objective. Experiments on structured multi-digit MNIST tasks demonstrate that cordial learning remains highly effective even in highly nonlinear settings.

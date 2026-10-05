@@ -1,0 +1,21 @@
+---
+title: "从世界行动模型的视频中进行本机行动先验学习"
+title_en: "Native Action-Prior Learning from Videos for World Action Models"
+authors: ["Zhaochong An", "Fei Zhang", "Menglin Jia", "Duncan Frost", "Zijian Zhou", "Yikai Wang", "Xudong Wang", "Aditya Patel", "Belinda Zeng", "Tao Xiang"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03391v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+世界动作模型将未来视觉动力学与机器人动作预测相结合，但其可扩展性仍然受到对动作注释机器人轨迹的需求的限制。仅观察视频包含有关交互动态的丰富证据，但现有方法通常使用它们来预训练随后必须适应控制的视觉表示，或者推断随后基于机器人命令的潜在动作。我们提出了 NAVA-WAM，它通过直接从仅观察视频中预训练动作策略来引入本机动作先验学习，避免间接表示到控制的传输或单独的潜在动作模型。我们的培训分为两个阶段。首先，我们对仅观察的视频进行预训练，其中对视觉转换的未来视频流匹配监督通过转换结构的联合注意力传播，以优化 Action-DiT 并学习与动作相关的先验。其次，我们使用动作标记的演示，通过联合视频动...
+
+## English Summary
+
+World action models integrate future visual dynamics with robot action prediction, but their scalability remains limited by the need for action-annotated robot trajectories. Observation-only videos contain rich evidence about interaction dynamics, but existing approaches typically use them either to pretrain visual representations that must later be adapted for control, or to infer latent actions that are subsequently grounded to robot commands. We present NAVA-WAM, which introduces native action-prior learning by directly pretraining the action policy from observation-only videos, avoiding indirect representation-to-control transfer or a separate latent-action model. Our training consists of two stages. First, we pretrain on observation-only videos, where future-video flow-matching supervision over visual transitions is propagated through transition-structured joint attention to optimize the Action-DiT and learn action-relevant priors. Second, we use action-labeled demonstrations to post-train the Action-DiT for robot control through joint video--action flow matching, while asymmetric attention decouples the visual branch from iterative action denoising and enables efficient action-only inference. Extensive experiments show that NAVA-WAM consistently outperforms prior approaches under both in-distribution and out-of-distribution settings, while demonstrating strong action-label efficiency and effective real-robot generalization. These results establish native action-prior learning as an effective approach to directly pretrain action policies from observation-only videos, providing a scalable path beyond action-labeled robot data.

@@ -1,0 +1,21 @@
+---
+title: "OptiSelect：优化器如何塑造数据课程？"
+title_en: "OptiSelect: How does the Optimizer Shape Data Curriculum?"
+authors: ["Simin Fan", "Alireza Abdollahpoorrostam", "Martin Jaggi"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03432v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在线数据选择已经证明，通过对每批中最有价值的候选人进行培训，LLM 预培训的效率得到了显着提高。由于候选者的价值是通过其有效的模型更新来实现的，因此原则性选择应考虑优化器步骤，该步骤在更新模型参数之前重塑原始梯度。我们将这种优化器感知的选择范例形式化为 OptiSelect，并首次系统地研究了优化器如何塑造数据选择。我们的理论建立了一个选择增益原则，其中在线选择的优势由优化器引起的效用分数的可区分性决定。我们证明，Lion 和 Muon 的基于符号和极切线预处理器将遭受可辨别性崩溃，这限制了 OptiSelect 可获得的收益，而 AdamW 和 Sophia 等对角线自适应优化器则严格接受更...
+
+## English Summary
+
+Online data selection has demonstrated substantial efficiency gains for LLM pretraining by training on the most valuable candidates within each batch. Since a candidate's value is realized through its effective model update, principled selection should account for the optimizer step, which reshapes the raw gradient before it updates model parameters. We formalize this optimizer-aware selection paradigm as OptiSelect and present the first systematic study of how the optimizer shapes data selection. Our theory establishes a selection gain principle in which the advantage of online selection is governed by the discriminability of the optimizer-induced utility scores. We prove that sign-based and polar-tangential preconditioners of Lion and Muon would suffer from a discriminability collapse which caps attainable gains from OptiSelect, whereas diagonal-adaptive optimizers such as AdamW and Sophia admit strictly better upper bounds. The proposed principle also yields a quantitative derivation of the optimal candidate oversampling ratio. Pretraining experiments on 124M and 720M models are consistent with our theoretical analysis and show that AdamW's diagonal-adaptive scoring geometry remains the strongest scoring geometry even with Muon as optimizer. We further demonstrate that OptiSelect retains its benefits under data rephrasing, a technique used in modern data processing pipelines. Our findings provide theoretical foundations and practical guidance for co-designing optimizers and data selection in LLM pretraining.

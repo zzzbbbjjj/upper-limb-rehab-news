@@ -1,0 +1,21 @@
+---
+title: "不断发展的用于图像分类的混合量子经典架构"
+title_en: "Evolving Hybrid Quantum-Classical Architectures for Image Classification"
+authors: ["Devroop Kar", "Daniel Krutz", "Travis Desell"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03220v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+混合量子经典神经网络将参数化量子电路（PQC）与已建立的深度学习架构集成在一起，但其性能在很大程度上取决于量子电路架构的选择，而这种选择很大程度上仍然是手动的。大多数现有方法依赖于手工设计或固定电路设计，需要提前指定电路结构、门组成和量子位连接性，但不能保证它们适合任务。这种限制在图像分类中尤其严重，其中量子电路必须转换经典网络提取的特征，同时保持足够紧凑以进行实际训练，而通用的、与任务无关的分析不太可能同时满足这些要求。我们将 EXAQC（一种自动量子电路发现的进化框架）扩展到图像分类。 EXAQC 将 PQC 发展为中间处理模块，同时保留经典的特征提取和预测层。在 MNIST、Fashio...
+
+## English Summary
+
+Hybrid quantum classical neural networks integrate parameterized quantum circuits (PQCs) with established deep learning architectures, but their performance depends strongly on the choice of quantum circuit architecture, a choice that remains largely manual. Most existing approaches rely on hand-designed or fixed circuit ansätze, requiring circuit structure, gate composition, and qubit connectivity to be specified in advance with no guarantee that they suit the task. This limitation is especially acute in image classification, where quantum circuits must transform features extracted by classical networks while remaining compact enough for practical training, requirements that generic, task-agnostic ansätze are unlikely to satisfy simultaneously. We extend EXAQC, an evolutionary framework for automated quantum circuit discovery, to image classification. EXAQC evolves PQCs as intermediate processing modules while retaining classical feature-extraction and prediction layers. On MNIST, Fashion-MNIST, and CIFAR-10, EXAQC achieves 98.42%, 90.62%, and 85.47% accuracy, respectively, while using comparable gate counts to other quantum architecture-search methods. Against classical networks, evolved hybrid models maintain comparable accuracy with substantially fewer trainable parameters, reaching 85.68% on CIFAR-10 with over 25$\times$ fewer parameters than a 10-layer CNN. Encoding choice also matters: rotation-based encodings (RX, RY, U3) outperform amplitude encoding by 22-25 points on CIFAR-10. These results demonstrate that automated circuit discovery yields compact quantum modules that can replace larger classical components in vision architectures while retaining competitive accuracy.

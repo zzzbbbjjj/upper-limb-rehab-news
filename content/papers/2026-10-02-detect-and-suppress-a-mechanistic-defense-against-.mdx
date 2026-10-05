@@ -1,0 +1,21 @@
+---
+title: "检测和抑制：VLA 模型中对抗性补丁的机械防御"
+title_en: "Detect and Suppress: A Mechanistic Defense against Adversarial Patches in VLA Models"
+authors: ["Yukiya Horiba", "Koshiro Aoki", "Shunsuke Yasuki", "Bum Jun Kim", "Taiki Miyanishi"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03498v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+对抗性补丁可以通过操纵视觉观察来破坏视觉-语言-动作（VLA）模型，从而导致机器人控制失败。然而，人们仍然对哪些内部机制导致这些失败以及如何有针对性的干预措施能够缓解这些失败知之甚少。在这项工作中，我们使用稀疏自动编码器（SAE）机械地分析 VLA 表示，并识别其激活与对抗补丁的存在强烈相关的特征。基于此分析，仅当线性探针检测到攻击时，我们才在推理时抑制已识别的特征。这种干预可以提高鲁棒性，而无需微调 VLA。我们针对 LIBERO-10 上的 VLA 对抗性补丁攻击评估了我们的方法。有条件的干预可以提高间歇性攻击下的成功率，而持续应用相同的干预会大大降低策略性能。这些结果表明，与攻击相关的内...
+
+## English Summary
+
+Adversarial patches can disrupt Vision-Language-Action (VLA) models by manipulating visual observations, leading to failures in robot control. However, it remains poorly understood which internal mechanisms underlie these failures and how targeted interventions can mitigate them. In this work, we mechanistically analyze VLA representations using a sparse autoencoder (SAE) and identify a feature whose activation strongly correlates with the presence of an adversarial patch. Based on this analysis, we suppress the identified feature at inference time only when a linear probe detects an attack. This intervention improves robustness without the cost of fine-tuning the VLA. We evaluate our method against VLA adversarial patch attacks on LIBERO-10. Conditional intervention improves success rate under intermittent attacks, whereas continuously applying the same intervention substantially degrades policy performance. These results show that attack-related internal representations can provide useful targets for VLA adversarial defense and that controlling when to intervene is important for limiting disruption to nominal policy behavior.

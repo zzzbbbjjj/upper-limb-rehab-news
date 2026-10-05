@@ -1,0 +1,21 @@
+---
+title: "EVEWorld：实体世界模型的物理进化监督"
+title_en: "EVEWorld: Physical Evolution Supervision for Embodied World Models"
+authors: ["Kaiqi Wang", "Songxin Zhang", "Zejian Xie", "Xiao Xiong", "Zhuoyang Song", "Ziwei Wu", "Jun Yu Lu", "Yitan Teng", "Ziying Song", "Jiaxing Zhang"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03374v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+具身世界模型可以对机器人学习的具身交互进行可扩展的模拟。然而，现有模型容易出现模型惰性，因为它们专注于视觉保真度，而牺牲了物理推理，并且缺乏对被操纵对象的时间动态的过程级监督。在这项工作中，我们提出了 EVEWorld，一个用于物理一致目标进化的物理进化监督框架。 EVEWorld 由两个组件组成：实例引导恢复 (IGR) 和时间实例对齐 (TIA)。首先，IGR通过恢复监督来促进实例一致性。其次，TIA 通过跨相邻帧对齐目标实例来促进跨帧一致性。我们进一步介绍了模型惰性率（MLR），这是一个衡量生成轨迹中实例一致性持续违反的指标。 DreamGenBench、EWMBench 和 PBenc...
+
+## English Summary
+
+Embodied world models enable scalable simulation of embodied interactions for robot learning. However, existing models are prone to Model Laziness, as they focus on visual fidelity at the expense of physical reasoning and lack process-level supervision over the temporal dynamics of manipulated objects. In this work, we propose EVEWorld, a physical evolution-supervision framework for physically consistent target evolution. EVEWorld consists of two components: Instance-Guided Restoration (IGR) and Temporal Instance Alignment (TIA). First, IGR promotes instance consistency through restoration supervision. Second, TIA promotes cross-frame consistency by aligning target instances across adjacent frames. We further introduce the Model Laziness Rate (MLR), a metric that measures persistent violations of instance consistency in generated trajectories. Extensive experiments on DreamGenBench, EWMBench, and PBench demonstrate the effectiveness of EVEWorld, notably achieving an 87.5% reduction in MLR compared with GigaWorld-0. On the WorldArena 2.0 Track 1 leaderboard, our model ranks 6th in JEPA Similarity and 17th overall, which further validates the performance of our evolution supervision strategy.

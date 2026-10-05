@@ -1,0 +1,21 @@
+---
+title: "从片段到全局地图：使用大型语言模型学习矢量化地图聚合"
+title_en: "From Fragments to Global Maps: Learning Vectorized Map Aggregation with Large Language Models"
+authors: ["Ziwei Li", "Yi-Tang Chen", "Xiaoqi Wang", "Wenbin He", "Han-Wei Shen", "Liu Ren"]
+date: "2026-10-01"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.02513v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+大规模矢量化高清地图提供结构化道路信息，这对于自动驾驶的感知、定位和规划至关重要。构建此类地图需要将沿车辆轨迹收集的噪声、碎片和重叠的局部预测聚合成连贯的全局地图。现有的聚合方法通常依赖于手工制定的规则来进行片段关联和细化。然而，一组固定的阈值无法有效处理道路结构的变化和预测误差，通常需要针对检测器进行调整或手动调整。为了解决这个限制，我们提出了 MapMergeLLM，这是一个数据驱动的框架，它将矢量化地图聚合制定为具有大型语言模型的条件序列生成。给定序列化的局部矢量化地图，我们的模型直接预测聚合的全局地图折线。为了减少对任何特定上游检测器的依赖，我们使用模拟代表性预测误差的损坏在从干净向量...
+
+## English Summary
+
+Large-scale vectorized HD maps provide structured road information that is essential for perception, localization, and planning in autonomous driving. Constructing such maps requires aggregating noisy, fragmented, and overlapping local predictions collected along a vehicle trajectory into a coherent global map. Existing aggregation methods typically rely on hand-crafted rules for fragment association and refinement. However, a fixed set of thresholds cannot effectively handle variations in road structures and prediction errors, often requiring detector-specific tuning or manual adjustment. To address this limitation, we propose MapMergeLLM, a data-driven framework that formulates vectorized map aggregation as conditional sequence generation with a large language model. Given serialized local vectorized maps, our model directly predicts the aggregated global map polylines. To reduce dependence on any particular upstream detector, we train the model on synthetic local maps generated from clean vector maps using corruptions that simulate representative prediction errors. We further introduce a coordinate tokenizer with geometry-aware pretraining to precisely represent map coordinates. In addition, we propose a line-level association loss that explicitly supervises correspondences between local observations of the same map element. Experiments on Argoverse2 and nuScenes using multiple recent upstream detectors demonstrate that MapMergeLLM substantially outperforms heuristic and optimization-based aggregation baselines without detector-specific retraining.

@@ -1,0 +1,21 @@
+---
+title: "半径多项式方法的 Lean~4 框架"
+title_en: "A Lean~4 Framework for the Radii Polynomial Method"
+authors: ["Fengyang Wang"]
+date: "2026-10-01"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.02335v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+动力学中的计算机辅助证明通过严格的数值计算建立非线性系统的结果。它们的正确性依赖于区间算术库和手动检查的分析估计的可信基础。我们在 Lean~4 中形式化了半径多项式方法的框架，该框架通过验证四个范数界限和由此产生的多项式不等式来证明接近数值近似的精确解。加权系数代数为泰勒级数和切比雪夫级数中的多项式方程和初始值问题提供了通用设置。它们的普适性构造了有界算子和求值映射，而自由交换代数的普适性使多项式代换与求值可交换。有限/尾部约简将四个范数界限转化为有限理性不等式，这在精益中进行了检查。然后半径定理产生精确的系数解，并且实现定理将其带到原始方程的解。工作示例是由收敛幂级数和多项式初始值问题给出...
+
+## English Summary
+
+Computer-assisted proofs in dynamics establish results about nonlinear systems by rigorous numerical computation. Their correctness rests on a trusted base of interval-arithmetic libraries and analytic estimates checked by hand. We formalize in Lean~4 a framework for the radii polynomial method, which certifies an exact solution near a numerical approximation by verifying four norm bounds and the resulting polynomial inequality. Weighted coefficient algebras provide the common setting for polynomial equations and initial value problems in Taylor and Chebyshev series. Their universal properties construct the bounded operators and the evaluation maps, and the universal property of the free commutative algebra makes polynomial substitution commute with evaluation. Finite/tail reductions turn the four norm bounds into finite rational inequalities, which are checked in Lean. The radii theorem then yields an exact coefficient solution, and realization theorems carry it to a solution of the original equation. The worked examples are a square-root branch given by a convergent power series and polynomial initial value problems, among them the Lorenz system, for which the library proves existence, uniqueness within the trajectory ball, and analyticity of the function-level solution.

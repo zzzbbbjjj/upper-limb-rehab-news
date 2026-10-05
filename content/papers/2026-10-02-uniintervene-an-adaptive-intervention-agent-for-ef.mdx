@@ -1,0 +1,21 @@
+---
+title: "UniIntervene++：一种用于高效现实世界强化学习的自适应干预代理"
+title_en: "UniIntervene++: An Adaptive Intervention Agent for Efficient Real-World Reinforcement Learning"
+authors: ["Yudong Lin", "Haoyuan Deng", "Zhuoxuan Yuan", "Zaijia Yang", "Yuanjiang Xue", "Ziwei Wang"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03620v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在线强化学习（RL）使机器人策略能够通过物理交互来改进，但它们所需的帮助会随着它们能力的发展而变化。因此，基于离线估计或固定决策规则的现有干预策略可能与当前政策不匹配。为了解决这个问题，我们提出了 UniIntervene++，这是一种自适应干预代理，可以学习在在线 RL 期间在自主执行和异构辅助行为之间分配控制。具体来说，UniIntervene++ 首先在统一的半马尔可夫决策过程中将不断演变的 RL 策略、轨迹校正和任务结构的 CodePolicy 制定为选项，并在线学习它们的相对值。在此基础上，能力自适应干预通过独立执行定期探测强化学习策略，保持控制分配对其不断发展的能力做出响应。最后，...
+
+## English Summary
+
+Online reinforcement learning (RL) enables robot policies to improve through physical interaction, but the assistance they require changes as their competence evolves. Existing intervention strategies based on offline estimates or fixed decision rules can therefore become mismatched to the current policy. To address this, we propose UniIntervene++, an adaptive intervention agent that learns to allocate control between autonomous execution and heterogeneous assisted behaviors during online RL. Specifically, UniIntervene++ first formulates the evolving RL policy, trajectory correction, and a task-structured CodePolicy as Options in a unified semi-Markov decision process and learns their relative values online. Building on this, competence-adaptive intervention periodically probes the RL policy through unassisted execution, keeping control allocation responsive to its evolving capability. Finally, coupled experience learning allows assisted behaviors to improve the RL policy, whose evolving outcomes in turn reshape future intervention decisions. In this way, UniIntervene++ jointly determines when to intervene, how to intervene, and when to return control as the RL policy improves. Across five real-world manipulation tasks, UniIntervene++ achieves an average success rate of 89.67%, outperforming all baselines by at least 6 percentage points, while reducing human intervention to 0.77%, a relative reduction of at least 94.6% from the best baseline. Code is available in our \href{https://github.com/dannyyudong/An-Adaptive-Intervention-Agent-for-Efficient-Real-World-Reinforcement-Learning}{GitHub repository}.

@@ -1,0 +1,21 @@
+---
+title: "NeutronGym：LLM 代理的物理分级中子仪器设计"
+title_en: "NeutronGym: Physics-Graded Neutron Instrument Design for LLM Agents"
+authors: ["Lijie Ding", "Changwoo Do"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03631v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+设计一个科学仪器来测试语言模型智能体是否能够做物理而不是回忆它，前提是评分无可争议。我们介绍 NeutronGym，据我们所知，这是中子仪器设计的第一个可执行环境：代理通过验证工具构建仪器，McStas 光线跟踪它们构建的内容，以及级别解析的阶梯等级语法、运行时间、结构和科学，无需 LLM 判断。程序族提供固定布局的无限实例，代理必须设置其设计参数，并保留参数机制； McStasBench 是一个精心策划的切片，它在记忆探针和沙箱后面添加了来自已发布工具的 16 项任务。 7 个模型最多重现 16 个中的 7 个，没有一个检索到参考，也没有一个达到改进目标。环境也在训练。强化学习的奖励将 Qw...
+
+## English Summary
+
+Designing a scientific instrument tests whether language-model agents can do physics rather than recall it, provided the grading cannot be argued with. We introduce NeutronGym, to our knowledge the first executable environment for neutron instrument design: agents build instruments through validating tools, McStas ray-traces what they build, and a level-resolved ladder grades syntax, runtime, structure and science with no LLM judge. Procedural families supply unlimited instances of a fixed layout whose design parameters the agent must set, with held-out parameter regimes; a curated slice, McStasBench, adds 16 tasks from published instruments behind memorization probes and a sandbox. Seven models reproduce at most 7 of the 16, none retrieves a reference, and none meets an improvement target. The environment also trains. Reinforcement learning on its reward takes Qwen3-8B from 11% to 77% of held-out instances of a family whose targets come from a hidden design (69% at a second seed), past an untrained Qwen3-32B, and the recipe holds, at one seed each, on three further gated families. The analysis says what that gain is. Without the ladder's partial credit it collapses by 60 points. From reward alone the trained model reaches what a classical optimizer reaches, at the agent's simulation budget, only when handed the closed-form physics (77% against 81%, a gap that does not separate at this size), while frontier models still solve 98-99%. Getting a trustworthy result meant failing four task designs that no-model baselines could solve, and we release the probes that found them.

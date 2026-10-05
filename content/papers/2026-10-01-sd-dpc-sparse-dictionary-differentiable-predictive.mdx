@@ -1,0 +1,21 @@
+---
+title: "SD-DPC：稀疏字典可微预测控制"
+title_en: "SD-DPC: Sparse Dictionary Differentiable Predictive Control"
+authors: ["Ali Reza Daneshvar Garmroodi", "Jan Drgoňa"]
+date: "2026-10-01"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.02466v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+我们提出了稀疏字典可微预测控制（SD-DPC），这是一个从数据中学习非线性系统稀疏、可解释反馈策略的框架。首先通过基于梯度的非线性动力学稀疏识别 (SINDy) 来识别预测模型，该模型建立在基于梯度的多步骤公式之上。然后，该策略被参数化为字典函数的稀疏组合，并通过该模型区分受约束的有限范围预测控制目标来进行训练，以便通过闭环性能来选择其项，而不是通过模仿先前训练的控制器。结果是一个只有少数术语的显式反馈定律。在三个基准控制问题中，SD-DPC 满足所有测试场景中的约束，其性能比提取到相同项的策略高出一个数量级，并且需要比优化基准少几个数量级的内存和在线计算，同时允许明确的敏感度界限。
+
+## English Summary
+
+We present sparse dictionary differentiable predictive control (SD-DPC), a framework for learning sparse, interpretable feedback policies for nonlinear systems from data. A prediction model is first identified by rollout-based sparse identification of nonlinear dynamics (SINDy), building on gradient-based and multistep formulations. The policy is then parameterized as a sparse combination of dictionary functions and trained by differentiating a constrained finite-horizon predictive-control objective through this model, so that its terms are selected by closed-loop performance rather than by imitating a previously trained controller. The result is an explicit feedback law with only a handful of terms. Across three benchmark control problems, SD-DPC satisfies the constraints in all test scenarios, outperforms a policy distilled onto the same terms by up to an order of magnitude, and requires orders of magnitude less memory and online computation than an optimization benchmark, while admitting explicit sensitivity bounds.

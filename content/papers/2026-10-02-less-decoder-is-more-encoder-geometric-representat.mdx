@@ -1,0 +1,21 @@
+---
+title: "更少的解码器就是更多的编码器：从新颖的视图合成中学习几何表示"
+title_en: "Less Decoder is More Encoder: Geometric Representation Learning from Novel View Synthesis"
+authors: ["Keerthi Kaashyap", "Dennis Anthony", "Akshay Krishnan", "Nhi Ngoc Nguyen", "Jeremy Collins", "James Hays", "Shreyas Kousik", "Animesh Garg"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03717v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+本文探讨了新颖视图合成（NVS）在几何表示学习中的作用。原则上，NVS 应该推理 3D 场景结构，从而实现可传输的多视图几何表示。然而，现有的基于编码器的 NVS 方法的表示效果很差。这并不是因为缺乏监督信号，而是因为不显眼的架构选择：\textit{空间表达解码器}削弱了场景编码器的表示能力，而\textit{低级像素空间目标}阻碍了特征学习。我们提出了 SNAP，一种自监督编码器-解码器转换器，它通过姿势条件本地解码器和潜在空间重建目标来解决问题。 SNAP 与任务无关，我们证明它与专用几何监督方法具有竞争力。 SNAP 还在五个任务中与自监督表示竞争：视觉定位、姿态估计、点对应、深度估计...
+
+## English Summary
+
+This paper examines the role of Novel View Synthesis (NVS) in geometric representation learning. In principle, NVS should reason about 3D scene structure, thereby enabling transferable multi-view geometric representations. Yet, existing encoder-based NVS methods yield poor representations. This is not because of a lack of supervisory signal, but rather due to inconspicuous architectural choices: \textit{spatially expressive decoders} that dilute representational capabilities of the scene encoder, and \textit{low-level pixel-space targets} that hinder feature learning. We present SNAP, a self-supervised encoder-decoder transformer that addresses both through a pose-conditioned local decoder and a latent-space reconstruction objective. SNAP is task agnostic, and we show that it is competitive with special-purpose geometry-supervised methods. SNAP also performs competitively against self-supervised representations across five tasks: visual localization, pose estimation, point correspondence, depth estimation, and robot manipulation. Remarkably, SNAP's patch features exhibit emergent viewpoint invariance that approaches heavily supervised models despite lower compute and data budgets. Under camera shifts where standard 2D representations collapse, SNAP degrades more gracefully, revealing that restricting decoder expressivity actively prevents the suppression of transferable geometric structure. https://snap-nvs.github.io

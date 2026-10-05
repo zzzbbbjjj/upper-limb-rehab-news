@@ -1,0 +1,21 @@
+---
+title: "IDRF：掩模离散扩散模型的逆蒸馏奖励微调"
+title_en: "IDRF: Inverse-Distilled Reward Fine-tuning of Masked Discrete Diffusion Models"
+authors: ["Vladislav Gromadskii", "David Li", "Samson Gourevitch", "Yazid Janati", "Eric Moulines", "Maxim Panov", "Alexander Korotin"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03641v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+掩蔽离散扩散模型为自回归生成提供了一种有前途的替代方案，但迭代采样可能成本高昂，而且棘手的序列可能性使奖励微调变得复杂。我们引入了 IDRF，一个用于对少步掩码离散扩散生成器进行奖励微调的框架。从标准的反向 KL 正则化目标开始，IDRF 用逆蒸馏正则化取代了棘手的序列级 KL 惩罚。使用最佳辅助降噪器，我们证明总体逆蒸馏损失使序列级 KL 散度与参考分布的上限一致。 IDRF 优化了这种损失的基于轨迹的替代项，而无需推出参考模型，因此学生可以保留自己的几步采样器。我们将少步生成视为有限视野马尔可夫决策过程，并通过对学生轨迹的修剪策略梯度目标来优化奖励。在 DNA、图像和文本生成方面，IDRF...
+
+## English Summary
+
+Masked discrete diffusion models offer a promising alternative to autoregressive generation, but iterative sampling can be costly, and intractable sequence likelihoods complicate reward fine-tuning. We introduce IDRF, a framework for reward fine-tuning of few-step masked discrete diffusion generators. Starting from a standard reverse-KL-regularized objective, IDRF replaces the intractable sequence-level KL penalty with inverse-distillation regularization. With an optimal auxiliary denoiser, we prove that the population inverse-distillation loss upper-bounds the sequence-level KL divergence to the reference distribution. IDRF optimizes a trajectory-based surrogate of this loss without reference-model rollouts, so the student keeps its own few-step sampler. We view few-step generation as a finite-horizon Markov decision process and optimize reward with a clipped policy-gradient objective over the student's trajectories. Across DNA, image, and text generation, IDRF achieves high reward with up to $32\times$ fewer denoising steps than the reference while mitigating reward hacking and preserving sample quality.

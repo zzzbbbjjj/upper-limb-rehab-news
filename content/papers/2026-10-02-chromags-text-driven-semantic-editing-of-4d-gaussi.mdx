@@ -1,0 +1,21 @@
+---
+title: "ChromaGS：4D 高斯头像的文本驱动语义编辑"
+title_en: "ChromaGS: Text-Driven Semantic Editing of 4D Gaussian Avatars"
+authors: ["Antonio Canela", "Jordi Sànchez-Riera"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03441v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+我们推出了 ChromaGS，这是一种对可动画 3D 高斯头部头像进行实时、语言引导的颜色编辑的方法。给定经过训练的可动画化身，用户可以通过自然语言立即修改语义区域的颜色，并在渲染时应用编辑，无需重新训练。我们的主要见解是通过学习到的语义区域软分配来增强每个高斯基元，并将颜色分解为区域级基色和高斯级残差。这种分解实现了连贯的颜色传递：修改区域的基色自然地通过所有关联的高斯传播，同时保留残差中编码的精细外观细节。两阶段语言管道将文本指令转换为目标颜色，支持绝对规格和相对调整。与可能引入意外修改的生成编辑方法不同，我们的方法提供了确定性、精确本地化的语义控制。实验证明了不同受试者之间忠实的外观保留...
+
+## English Summary
+
+We present ChromaGS, a method for real-time, language-guided color editing of animatable 3D Gaussian head avatars. Given a trained animatable avatar, users can instantly modify the color of semantic regions through natural language, with edits applied at render time and no retraining required. Our key insight is to augment each Gaussian primitive with learned soft assignments to semantic regions and decompose colors into region-level base colors and Gaussian-level residuals. This decomposition enables coherent color transfer: modifying a region's base color propagates naturally through all associated Gaussians while preserving fine appearance details encoded in residuals. A two-stage language pipeline translates text instructions into target colors, supporting both absolute specifications and relative adjustments. Unlike generative editing methods that may introduce unintended modifications, our approach provides deterministic, precisely localized semantic control. Experiments demonstrate faithful appearance preservation and intuitive interaction across diverse subjects. Project page and code are available at: https://a-canela.github.io/chromags/

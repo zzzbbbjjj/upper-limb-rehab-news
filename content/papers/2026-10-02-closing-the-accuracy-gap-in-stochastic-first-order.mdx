@@ -1,0 +1,21 @@
+---
+title: "缩小随机一阶双层优化中的精度差距"
+title_en: "Closing the Accuracy Gap in Stochastic First-Order Bilevel Optimization"
+authors: ["Haihan Zhang", "Wendao Wu", "Chenheng Zhang", "Yanyi Li", "Chunyuan Zheng", "Cong Fang", "Haoxuan Li", "Zhouchen Lin"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03633v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+我们用随机一阶预言来描述平滑非凸-强凸双层优化的最佳精度依赖性。对于具有有界方差的全局无偏新鲜梯度观测，我们证明 $Ω(ε^{-6})$ 下界与现有上限的精度指数相匹配。我们考虑全局 Lipschitz 梯度、下变量中的有界上梯度和 Lipschitz 下 Hessian 块，目标为 $\mathbb{E}|\nabla F(\widehat{x})|\leε$。令 $L$ 为常见的一阶尺度，$μ$ 为较低的强凸模量，$ρ$ 为较低的 Hessian 变分预算，$κ=L/μ$，$χ=1+ρ/μ$。对于$ρ\gtrsimμ$、$χ\lesssimκ$、足够高的精度和足够大的维度，我们建立$Ω\l...
+
+## English Summary
+
+We characterize the optimal accuracy dependence for smooth nonconvex--strongly-convex bilevel optimization with stochastic first-order oracles. For globally unbiased fresh-gradient observations with bounded variance, we prove an $Ω(ε^{-6})$ lower bound matching the accuracy exponent of existing upper bounds. We consider globally Lipschitz gradients, a bounded upper gradient in the lower variable, and Lipschitz lower Hessian blocks, with target $\mathbb{E}|\nabla F(\widehat{x})|\leε$. Let $L$ be the common first-order scale, $μ$ the lower strong-convexity modulus, $ρ$ the lower Hessian-variation budget, $κ=L/μ$, and $χ=1+ρ/μ$. For $ρ\gtrsimμ$, $χ\lesssimκ$, sufficiently high accuracy, and sufficiently large dimension, we establish $Ω\left(Lκ^2Δε^{-2}+L^3χ^2κ^8σ_g^2Δε^{-6}\right)$, where $Δ$ is the initial gap budget and $σ_g^2$ is the lower-gradient variance budget. The bound holds over full Euclidean spaces against arbitrary randomized adaptive algorithms, even when every sample is the gradient of a scalar function. In the common-scale regime $ρ=Θ(L)$, the leading stochastic term has condition-number dependence $κ^{10}$, compared with the achievable $κ^{11}$ dependence. The proof embeds a sequential hard objective into an exact lower response while preserving global regularity and finite gap. A multiscale decomposition limits the gradient signal carrying each new direction, yielding the required sample complexity. We complement this lower bound with a frozen-linear-tilt estimator whose bias is proportional to lower Hessian variation. Its analysis makes this structural dependence explicit and yields matching leading rates in the specified curvature-controlled and small-gap regimes.

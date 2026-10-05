@@ -1,0 +1,21 @@
+---
+title: "DexJoCo-X：多手灵巧操作的基准动作表示"
+title_en: "DexJoCo-X: Benchmarking Action Representations for Multi-Hand Dexterous Manipulation"
+authors: ["Xiangwei Jiang", "Yao Mu", "Lixin Duan", "Wen Li"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03278v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+随着灵巧双手的激增，为每种形态分别收集数据和训练策略变得越来越不切实际。因此，可扩展的跨实体学习需要一个统一的表示，以捕获共享的操作结构，同时保留特定于形态的控制。手、任务、数据集和控制界面的差异使得现有研究无法隔离表示、预训练和架构的影响。我们推出了 DexJoCo-X，这是一个基准测试和工具包，用于对七个代表性灵巧手、六个单臂和双手任务以及 2,100 个平衡演示进行受控比较。 DexJoCo-X 提供了匹配的多手、多任务协议，包括常见场景、成功标准和执行界面、重新设计的手套到手映射以及可跨随机场景扩展审核演示的自动化管道。使用 $π_{0.5}$、Ego-Pi 和 Being-H0.5，...
+
+## English Summary
+
+As dexterous hands proliferate, collecting data and training policies separately for every morphology becomes increasingly impractical. Scalable cross-embodiment learning therefore requires a unified representation that captures shared manipulation structure while preserving morphology-specific control. Differences in hands, tasks, datasets, and control interfaces prevent existing studies from isolating the effects of representation, pretraining, and architecture. We introduce DexJoCo-X, a benchmark and toolkit for controlled comparison across seven representative dexterous hands, six single-arm and bimanual tasks, and 2,100 balanced demonstrations. DexJoCo-X provides a matched multi-hand, multi-task protocol with common scenes, success criteria, and execution interfaces, redesigned glove-to-hand mappings, and an automated pipeline that expands reviewed demonstrations across randomized scenes. Using $π_{0.5}$, Ego-Pi, and Being-H0.5, we examine whether a shared action interface is sufficient for multi-hand learning. Expanding $π_{0.5}$ to an 80-dimensional bimanual output yields near-zero success. Ego-Pi preserves the pretrained action head through interleaved prediction and supports per-hand multi-task learning, but remains ineffective for seven-hand joint training. By contrast, Being-H0.5 combines cross-embodiment pretraining, a unified action space, and embodiment-aware experts, enabling one policy to control all seven hands. Within this architecture, function-aligned action slots achieve 47.7% mean success, compared with 47.0% for native coordinates and 33.1% for DexLatent. These results show that cross-embodiment representation depends on the entire learning system: action coordinates, pretraining, and architecture must jointly separate shared manipulation structure from embodiment-specific control.

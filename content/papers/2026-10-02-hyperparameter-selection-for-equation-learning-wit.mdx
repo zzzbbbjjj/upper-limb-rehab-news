@@ -1,0 +1,21 @@
+---
+title: "利用生物信息神经网络进行方程学习的超参数选择"
+title_en: "Hyperparameter selection for equation learning with biologically-informed neural networks"
+authors: ["William Lavery", "Jodie A. Cochrane", "John T. Nardini", "Sara Hamis"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.02954v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+生物信息神经网络 (BINN) 已成为物理信息神经网络 (PINN) 的灵活子类，用于从数据中学习偏微分方程中的项。 BINN 特别适合生物系统，其中控制方程高度非线性且仅部分先验已知，并且数据观测通常稀疏、有噪声且不完整。然而，在实践中有效应用 BINN 关键取决于超参数的选择，这仍然是方程学习框架中的一个核心挑战。超参数通常是启发式选择的，并且只是粗略地记录下来，这限制了结果的可重复性和方法的可转移性。我们提出了一种用于超参数选择的诊断工作流程，可以在地面真值方程未知时使用。该工作流程以三个主要问题为指导：(1) 更大的网络容量带来的好处是否值得付出成本？ （2）更多的训练周期是否会不断减...
+
+## English Summary
+
+Biologically-informed neural networks (BINNs) have emerged as a flexible subclass of physics-informed neural networks (PINNs) for learning terms in partial differential equations from data. BINNs are particularly suited for biological systems, where the governing equations are highly nonlinear and only partially known a priori, and where data observations are often sparse, noisy, and incomplete. However, applying BINNs effectively in practice depends critically on hyperparameter selection, which remains a central challenge in equation-learning frameworks. Hyperparameters are often chosen heuristically and only cursorily documented, which limits the reproducibility of results and the transferability of methods. We present a diagnostic workflow for hyperparameter selection that can be used when the ground-truth equations are not known. The workflow is guided by three main questions: (1) Are the benefits of greater network capacity worth the cost? (2) Do more training epochs keep reducing the validation loss? (3) Do the learned terms stop changing as network capacity and training increase? We apply our workflow to synthetic systems of varying complexity with known ground truth, spanning diffusion and growth right-hand side terms and data ranging from 1D+t to 2D+t. We demonstrate that the validation loss generally follows the true error in the learned terms and distil practical rules of thumb for selecting hyperparameters in the BINN architecture. By providing a structured workflow, practical guidelines, and suggested starting values for hyperparameter selection, this work lowers the barrier to BINN-based equation learning.

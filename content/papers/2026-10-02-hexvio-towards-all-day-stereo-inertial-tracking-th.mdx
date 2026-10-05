@@ -1,0 +1,21 @@
+---
+title: "HexVIO：通过商品 DSP 实现全天立体惯性跟踪"
+title_en: "HexVIO: Towards All-Day Stereo-Inertial Tracking Through Commodity DSPs"
+authors: ["Patrick Wolf", "Mateo de Mayo", "Daniel Cremers"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03283v1"
+doi: ""
+tags: ["可穿戴"]
+tags_en: ["wearable"]
+keywords: ["可穿戴"]
+keywords_en: ["wearable"]
+---
+
+## 中文摘要
+
+设备在其周围环境中定位自身的能力是空间计算的基本先决条件。视觉惯性里程计 (VIO) 已被证明是执行此任务的一种经济高效且准确的解决方案。机器人、可穿戴设备、XR 设备和无人机可以从 VIO 的高效实施中获益匪浅，因为它们可以实现更酷、更轻、更便宜的设备，并具有更长的电池寿命和更好的用户体验。在这项工作中，我们建议通过利用 Hexagon DSP（许多现代智能手机和 XR 设备中存在的商用协处理器）来提高 VIO 系统的效率。我们的方法将立体惯性里程计系统的视觉前端卸载到 DSP，同时将后端保留在主 CPU 上。通过优化 DSP 架构的实现，与仅使用 CPU 执行相比，我们显着降低了功耗和延迟...
+
+## English Summary
+
+The ability of a device to localize itself within its surroundings is a fundamental prerequisite for spatial computing. Visual-inertial odometry (VIO) has proven to be a cost-effective and accurate solution for this task. Robots, wearables, XR devices, and drones can benefit significantly from efficient implementations of VIO since they allow for cooler, lighter, and cheaper devices with longer battery life and a better user experience. In this work, we propose to enhance the efficiency of a VIO system by leveraging the Hexagon DSP, a commodity co-processor present in many modern smartphones and XR devices. Our approach offloads the visual frontend of a stereo-inertial odometry system to the DSP while keeping the backend on the main CPU. By optimizing the implementation for the DSP architecture, we achieve significant reductions in power consumption and latency compared to CPU-only execution. Our system, HexVIO, demonstrates a 67% reduction in power consumption or an 86% increase in throughput on a commodity smartphone, with the ability to sustain long-term real-time 30 fps tracking for 0.83 W, corresponding to ~18 hours of tracking on the testing device. These results highlight the potential of commodity DSPs for enabling all-day visual-inertial tracking in robotics and mobile devices.

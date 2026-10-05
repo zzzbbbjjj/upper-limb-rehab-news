@@ -1,0 +1,21 @@
+---
+title: "SARI：用于丰富接触操作的分相模拟-真实协同训练"
+title_en: "SARI: Phase-Split Sim-Real Co-Training for Contact-Rich Manipulation"
+authors: ["Xingxin He", "Yuxuan Jiang", "Haonan Zhang", "Chuhan Cui", "Kaile Li", "Zhongxing Zheng", "Caihao Xu", "Ziqi Wang"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.02804v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+视觉-语言-动作（VLA）模型通常需要昂贵的现实世界演示才能适应接触丰富的操作任务，特别是当需要跨对象放置进行泛化时。我们提出 SARI（模拟方法，真实交互），这是一种基于简单见解的分相模拟和真实协同训练框架：空间覆盖和接触物理应该从最适合它们的领域获取。具体来说，自由空间方法需要空间多样性，但可以容忍适度的模拟间隙，这使它们成为合成生成的理想选择；相反，接触交互需要精确的物理原理，但在不同的对象放置位置上变化很小，从而允许一些真实的演示在整个工作空间中推广。 SARI 在逼真的数字孪生中生成多种模拟方法，同时仅在少数位置收集真实的接触交互。经过这些阶段分段演示的训练后，单个策略使用视觉外观对...
+
+## English Summary
+
+Vision-language-action (VLA) models often require costly real-world demonstrations to adapt to contact-rich manipulation tasks, particularly when generalization across object placements is needed. We propose SARI (Simulated Approach, Real Interaction), a phase-split sim-and-real co-training framework built on a simple insight: spatial coverage and contact physics should be acquired from the domains best suited to them. Specifically, free-space approaches require spatial diversity but tolerate modest simulation gaps, making them ideal for synthetic generation; conversely, contact interactions demand accurate physics but vary little across object placements, allowing a few real demonstrations to generalize across the workspace. SARI generates diverse simulated approaches in a photorealistic digital twin while collecting real contact interactions at only a few placements. Post-trained on these phase-segmented demonstrations, a single policy seamlessly stitches simulated approaches with real contact interactions using visual appearance alignment and a shared camera-relative action representation--without explicit phase labels or hand-coded switches. Across five real-world contact-rich manipulation tasks, SARI reduces real-data collection time by 34.3% and achieves 27.5% success at unseen placements, where all full-task sim-real baselines fail completely (0%).

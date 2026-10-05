@@ -1,0 +1,21 @@
+---
+title: "COSMI：多对象交互的组合综合"
+title_en: "COSMI: COmpositional Synthesis of Multi-object Interactions"
+authors: ["Daniel Eskandar", "Ilya A. Petrov", "Gerard Pons-Moll"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03252v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+人与物体交互的生成模型受到现有数据的限制：日常活动涉及多个物体，但大多数捕获的数据集一次记录一个物体，因为多物体捕获的组合成本很高。我们的观察是，交互是局部的，因此单对象捕获已经包含多对象活动的部分。我们编写它们：单一交互的接触一致片段，镜像以平衡双手，身体之间的转移，语言模型和几何检查只允许在语义和物理上合理的配对。因此，数据集与剪辑而不是记录时间组合增长。 COSMI 数据集包含 222k 序列和 275 小时，最多包含五个对象，几乎是最大多对象捕获的 30 倍，并且可以通过添加数据集甚至手部对象记录来扩展。我们根据这些数据训练 COSMI 方法，这是一种文本到交互的扩散转换器，遵循数据的...
+
+## English Summary
+
+Generative models of human-object interaction are bounded by the data that exists: everyday activities involve several objects, but most captured datasets record one at a time, as multi-object capture is combinatorially expensive. Our observation is that interactions are local, so single-object captures already contain the parts of multi-object activities. We compose them: contact-consistent clips of single interactions, mirrored to balance the hands, transfer between bodies, and a language model and geometric checks admit only the pairings that are plausible, semantically and physically. Therefore, the dataset grows combinatorially with the clips rather than recording time. The COSMI dataset holds 222k sequences and 275 hours with up to five objects, nearly thirty times the largest multi-object capture, and can be extended by adding datasets or even hand-object recordings. On this data we train the COSMI method, a text-to-interaction diffusion transformer that follows how the data is built: weight-shared object slots generate a variable number of objects, predicted relative to the body parts that move them. On a benchmark with an unseen object and unseen interaction combinations, models trained on the dataset generalize to the unseen combinations. COSMI outperforms baselines in text alignment and contact accuracy, where its margin is largest on the unseen object. Code, models, and the dataset pipeline will be released on the project page: https://ptrvilya.github.io/cosmi.

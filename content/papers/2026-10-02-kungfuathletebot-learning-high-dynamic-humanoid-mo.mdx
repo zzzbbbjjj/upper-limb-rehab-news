@@ -1,0 +1,21 @@
+---
+title: "KungfuAthleteBot：通过统一的鲁棒恢复从视频中学习高动态人形运动"
+title_en: "KungfuAthleteBot: learning high-dynamic humanoid motion from video with unified robust recovery"
+authors: ["Zhongxiang Lei", "Lulu Cao", "Xuyang Wang", "Tianyi Qian", "Jinyan Liu", "Xuesong Li"]
+date: "2026-10-02"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.03388v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视频是人类运动数据的丰富且廉价的来源，其中富含极限运动行为。然而，使其可用于人形机器人并不是简单地重新定位重建轨迹的问题：视频衍生的运动在物理上不一致，缺乏致动信息，并且没有提及失败或恢复。我们提出了 KungfuAthleteBot (KAB)，这是一个框架，它将从视频中学习高动态运动作为中心问题，并依次解决这三种故障模式。 (C1) 我们根据国家级武术家的视频构建 KungfuAthlete 数据集，并引入物理引导的抛物线轨迹校正，消除重建空中和着陆阶段的高度浮动、地面穿透和高频抖动。 (C2) 由于视频不携带力信息，因此严格跟踪重建的轨迹在动态上是不可行的，并且错误驱动的初始化不断从不可...
+
+## English Summary
+
+Video is an abundant, inexpensive source of human motion data that is rich in extreme athletic behaviors. Making it usable for humanoid robots, however, is not a matter of simply retargeting a reconstructed trajectory: video-derived motion is physically inconsistent, devoid of actuation information, and says nothing about failure or recovery. We present KungfuAthleteBot (KAB), a framework that treats learning high-dynamic motion from video as the central problem and resolves each of these three failure modes in turn. (C1) We build the KungfuAthlete dataset from videos of national-level martial artists and introduce a physics-guided parabolic trajectory correction that removes height floating, ground penetration, and high-frequency jitter from reconstructed aerial and landing phases. (C2) Because video carries no force information, strict tracking of a reconstructed trajectory is dynamically infeasible, and error-driven initialization keeps re-launching the policy from infeasible aerial poses. We introduce physics-driven pseudo-low-kinetic-energy (LKE) sampling, our central mechanism for making such references learnable: it biases initialization towards dynamically feasible states, letting the policy discover feasible actuation patterns instead of imitating infeasible ones. (C3) Finally, we introduce a direct training paradigm in which disturbance rejection and fall recovery are learned inside the same policy that tracks the video motion, requiring no recovery reference data and no manual mode switching. On a humanoid robot, KAB learns dynamic skills from video and recovers from arbitrary falls in about 0.7 s, the fastest reported recovery for a unified policy. Ablations on the unified policy confirm the necessity of its components, supporting the view that repairing and compensating video data, rather than only collecting more of it, is what unlocks high-dynamic humanoid skills.
