@@ -1,0 +1,21 @@
+---
+title: "Opening the Black Box of Classifier-Free Guidance via Information Bottleneck"
+title_en: "Opening the Black Box of Classifier-Free Guidance via Information Bottleneck"
+authors: ["Jiayang Gao", "Tianyi Zheng", "Jiayang Zou", "Fengxiang Yang", "Luyao Fan", "Lv Tang", "Bo Li", "Jia Wang"]
+date: "2026-10-09"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.13369v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Classifier-free guidance (CFG) is a standard technique for improving conditional generation in diffusion models, yet its activation schedule is usually selected heuristically. In practice, most existing CFG-based methods rely on a pre-defined activation policy throughout inference, while recent dynamic variants often depend on hand-designed schedules without a principled theoretical explanation of when conditional information is most useful. In order to understand how the informational relevance between conditioning inputs and the score function evolves over the course of generation, we explore when guidance should be activated from an information-theoretic perspective. In this work, we formulate the diffusion trajectory as a time-dependent information bottleneck and show that the effectiveness of conditional information is not uniform throughout sampling, but becomes significantly stronger after a critical stage characterized by a Fisher-information balance condition. Motivated by this insight, we propose a training-free dynamic CFG strategy for inference. Rather than prescribing a fixed schedule in advance, our method constructs a stochastic process from conditional and unconditional score statistics and activates guidance when the estimated guidance gain crosses a prescribed threshold. This yields an adaptive activation rule that aligns condition injection with the underlying generation dynamics, while also recovering interval-based guidance as a limiting special case. Extensive experiments across diverse architectures and tasks, demonstrate that our method is effective, robust, and broadly applicable. Beyond empirical improvements, our framework provides an interpretation of dynamic guidance methods and a principled foundation for inference-time control in conditional diffusion models.

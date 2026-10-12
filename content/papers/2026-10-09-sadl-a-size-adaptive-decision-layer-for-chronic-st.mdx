@@ -1,0 +1,21 @@
+---
+title: "SADL: A Size-Adaptive Decision Layer for Chronic Stroke Lesion Segmentation in ISLES 2026"
+title_en: "SADL: A Size-Adaptive Decision Layer for Chronic Stroke Lesion Segmentation in ISLES 2026"
+authors: ["Marek Wodzinski", "Gniewosz Drwiega", "Wojciech Szymanski"]
+date: "2026-10-09"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.13422v1"
+doi: ""
+tags: ["脑卒中"]
+tags_en: ["stroke"]
+keywords: ["脑卒中"]
+keywords_en: ["stroke"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Chronic ischemic stroke lesions are difficult to segment on T1-weighted MRI. Their appearance overlaps with healthy tissue, and their volumes span four orders of magnitude, so voxel-level and lesion level metrics often disagree. We build an eleven-member nnU-Net ensemble that covers five design axes: a baseline dice + top-K loss, heavy augmentation, per-lesion volume loss re-weighting, stochastic weight averaging, and a sampling-and-architecture block that pairs cohort-balanced sampling with a residual-encoder backbone. Weighted soft-map fusion of the members feeds a tuned decision layer, SADL, that estimates lesion volume, applies an adaptive per-lesion-size threshold, prunes components by voxel count and peak probability, and adds a never-empty rescue. All fusion weights and per-bucket parameters are fitted on out-of-fold (OOF) predictions, so tuning never touches the held-out test set. On a site-disjoint 91-case holdout, SADL reaches Dice 0.7322, lesion-F1 0.7461 and PR-AUC 0.8430 when scored online with the challenge's released evaluation code. A paired non-parametric bootstrap against a reference single ensemble member confirms the lesion-F1 gain at p=0.024, and the gain is largest in the small-lesion regime, where the rescue step recovers cases that a fixed threshold would silently discard.

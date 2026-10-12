@@ -1,0 +1,21 @@
+---
+title: "SmolWAM: A Latent World-Action Model for Robotic Manipulation on Edge Devices"
+title_en: "SmolWAM: A Latent World-Action Model for Robotic Manipulation on Edge Devices"
+authors: ["Timi Owolabi", "Hikmah Olawore", "Frances Adelakun", "Ayotomiwa Oyewumi"]
+date: "2026-10-09"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.13740v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+World-action models (WAMs) predict a robot's actions together with the observations those actions will produce. However, the strongest models rely on video diffusion transformers that are far too computationally expensive for resource-constrained edge devices. We present SmolWAM, a latent WAM that we derive from the 2B-parameter Cosmos Policy by keeping its pretrained trunk and rebuilding its inference interface: single-frame visual latents, cached text features that preserve the trunk's attention sinks, 12 of 28 transformer blocks, and 1,008 tokens from which actions and future visual latents are read out in one rectified-flow step. Trained in 3.6 GPU-hours, SmolWAM succeeds in 95.5% of 400 LIBERO episodes at 57 ms and 2.3 TFLOP per 16-action chunk with 2.4 GiB of GPU memory, 11x faster than its teacher with 18.5x fewer FLOPs and 3.2x less memory, and its world head still forecasts scene motion.
