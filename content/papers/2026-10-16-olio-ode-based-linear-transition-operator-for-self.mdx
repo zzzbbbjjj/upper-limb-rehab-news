@@ -1,0 +1,21 @@
+---
+title: "OliO：基于 ODE 的线性转移算子，用于自监督时间序列预测"
+title_en: "OliO: ODE-based Linear Transition Operator for Self-Supervised Time Series Forecasting"
+authors: ["Kwangryeol Park", "Seulki Lee"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23345v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+自监督表示学习通过从未标记的数据中捕获强大的特征来实现先进的时间序列预测。然而，现有的对比和基于掩蔽的方法通常很难通过将时间滞后视为噪声或通过破坏预测所必需的固有时间动态来明确地建模底层时间流。为了解决这些限制，我们提出了 OliO（**O**DE-based **Li**near Transition **O**perator），这是一种即插即用的自监督学习方法，可将双向时间流学习为连续且结构一致的动态系统。 OliO 引入了从线性常微分方程 (ODE) 派生的转移算子，以跨任意时移对齐潜在表示。通过对转移矩阵施加严格的上三角约束，我们在数学上确保了数值稳定性并强制执行稳健的多项式边界，该边...
+
+## English Summary
+
+Self-supervised representation learning has advanced time series forecasting by capturing robust features from unlabeled data. However, existing contrastive and masking-based methods often struggle to explicitly model the underlying temporal flow, either by treating time lag as noise or by disrupting the inherent temporal dynamics essential for forecasting. To address these limitations, we propose OliO (**O**DE-based **Li**near Transition **O**perator), a plug-and-play self-supervised learning method that learns bidirectional temporal flows as a continuous and structurally consistent dynamical system. OliO introduces a transition operator derived from linear Ordinary Differential Equations (ODEs) to align latent representations across arbitrary time shifts. By imposing a strictly upper triangular constraint on the transition matrix, we mathematically ensure numerical stability and enforce a robust polynomial boundary that effectively captures long-term dependencies while preventing the exponential divergence typically found in unconstrained ODE-based models. This structural constraint induces a temporally coherent representation space that preserves the underlying flow essential for accurate forecasting. Extensive experiments across various backbone architectures and benchmarks demonstrate that OliO achieves significant performance gains, providing Mean Squared Error (MSE) reductions of up to 5.75% over the most competitive grid-searched SOTA baselines. The code is available at *https://github.com/eai-lab/OliO*

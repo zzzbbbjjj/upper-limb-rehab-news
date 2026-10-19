@@ -1,0 +1,21 @@
+---
+title: "学习机器人元推理：实时控制的自适应计算预算"
+title_en: "Learning Robot Metareasoning: Adaptive Computation Budgets for Real-Time Control"
+authors: ["Lorenzo Magnino", "Antonio Marino", "Michael Amir", "Daigo Shishika", "Amanda Prorok"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23662v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+移动中的规划面临着深思熟虑和反应性之间的历史权衡。与执行同时运行的规划器需要时间进行计算，因此机器人必须在这段时间内承诺开环动作块：较长的承诺会以反馈频率为代价购买更好的计划。现有控制器在部署之前确定此操作承诺，从而确定计算预算。然而，最佳计算时间高度依赖于状态（由于未建模的动力学、安全约束和边际优化增益等因素），即动态的，因此离线静态调整存在使系统在关键操作期间失明或无法找到全局有效解决方案的风险。我们将最优计算预算的识别视为半马尔可夫决策过程（SMDP），其中单个决策定义了机器人动作承诺和分配给求解器的时间。为了解决这个问题，我们根据当前状态、执行计划和廉价的规划统计数据来训练强化学习策略...
+
+## English Summary
+
+Planning while moving faces an historical trade-off between deliberation and reactivity. A planner running concurrently with execution needs time to compute, so the robot must commit to an open-loop action chunk for that duration: a longer commitment buys a better plan at the cost of feedback frequency. Existing controllers fix this action commitment, and consequently the computation budget, before deployment. However, the optimal computation time is highly state-dependent (due to factors such as unmodeled dynamics, safety constraints, and marginal optimisation gains), i.e. dynamic, therefore offline static tuning risks leaving systems blind during critical maneuvers or unable to find global effective solutions. We cast the identification of the optimal computation budget as a semi-Markov decision process (SMDP) in which a single decision defines both the robot action commitments and the time allocated to the solver. To solve this, we train a reinforcement-learning policy conditioned on the current state, the executing plan, and inexpensive planner statistics. Across ground-robot navigation, agile quadrotor flight, and contact-rich manipulation, the learned policy changes its budget with the demands of the scenario, discovering efficient reasoning patterns that outperform fixed-budget baselines. https://lorenzomagnino.github.io/learning-robot-metareasoning-review/

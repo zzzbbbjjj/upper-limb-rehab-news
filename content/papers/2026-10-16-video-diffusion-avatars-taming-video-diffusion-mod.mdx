@@ -1,0 +1,21 @@
+---
+title: "视频扩散头像：将视频扩散模型驯服为可控的 3D 头像"
+title_en: "Video Diffusion Avatars: Taming Video Diffusion Models into Controllable 3D Avatars"
+authors: ["Simon Giebenhain", "Tobias Kirschstein", "Liam Schoneveld", "Davide Davoli", "Zhe Chen", "Matthias Nießner"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23772v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在互联网规模数据上训练的视频扩散模型 (VDM) 对外观、运动和物理学进行了丰富的先验编码，而这些先验知识很难通过显式 3D 渲染和昂贵的 3D 数据捕获来复制。我们引入了视频扩散化身 (VDA)，这是一种通过微调 VDM 以精确控制摄像机视点、面部表情和上半身姿势，从单个图像创建逼真、多视图一致的化身的方法。与 3D 变形模型 (3DMM) 不同，VDA 使用学习的表达空间来提升 3DMM 的表达上限，例如舌头和口腔内部。然而，正如我们的 DISTRACT 基准测试所揭示的那样，学习的表达代码表现出严重的观点偏差。我们证明，这种偏差可以通过解开来消除，从而使它们能够用作多视图一致化身的驱动信...
+
+## English Summary
+
+Video diffusion models (VDMs) trained on internet-scale data encode a rich prior on appearance, motion, and physics that is difficult to replicate with explicit 3D rendering and costly 3D data capture. We introduce Video Diffusion Avatars (VDAs), a method that creates photo-realistic, multi-view consistent avatars from a single image by fine-tuning a VDM for precise control over camera viewpoint, facial expression, and upper-body pose. Departing from 3D morphable models (3DMMs), VDAs use a learned expression space that lifts the expressiveness ceiling of 3DMMs, e.g., for the tongue and mouth interior. However, learned expression codes exhibit heavy viewpoint bias, as our DISTRACT benchmark reveals. We show that this bias can be removed through disentanglement, enabling their use as driving signals for multi-view consistent avatars. Camera and upper-body pose are controlled jointly via proxy-mesh renderings, giving independent control over expression, pose, and viewpoint. A camera-triplet training strategy makes the approach efficient: our models train for 34 hours on a single A100 using only public multi-view data. VDAs outperform state-of-the-art single-image 3D avatars on novel-view reenactment, reducing face LPIPS by 29% and improving perceptual quality (JOD) by 66% on BecomingLit. A static 3DGS reconstruction probe further confirms that our generations are the most multi-view consistent. Built on a video prior, VDAs produce effects beyond the reach of explicit renderers, including physically plausible hair dynamics, shadows, reflections, and refractions.

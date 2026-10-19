@@ -1,0 +1,21 @@
+---
+title: "超出预期值：利用分布式蒙特卡罗树搜索进行风险敏感规划"
+title_en: "Beyond Expected Values: Risk-Sensitive Planning with Distributional Monte-Carlo Tree Search"
+authors: ["Quynh Trinh", "Trung Nguyen", "Nam Nguyen", "Tuan Dam"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23565v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+蒙特卡洛树搜索 (MCTS) 通常仅存储标量均值估计，这使得它不太适合尾部风险目标，例如条件风险价值 (CVaR)。我们引入乐观分类汤普森采样 (CATSO) 和乐观粒子汤普森采样 (PATSO)，这两种分布式 MCTS 算法在 Q 边上维护有限支持经验备份定律。 CATSO 用分类原子和 Dirichlet Thompson 采样表示 Q 边定律，而 PATSO 用自适应粒子表示它们。两种算法都使用 Thompson 采样的 Q 边定律的 CVaR 加上多项式乐观奖励来选择操作，并通过子 Q 边 CVaR 分数的访问加权平均值传播标量连续值。对于有限深度嵌套 CVaR 规划目标，我们证明了 ...
+
+## English Summary
+
+Monte-Carlo Tree Search (MCTS) typically stores only scalar mean estimates, which makes it poorly suited for tail-risk objectives such as conditional value-at-risk (CVaR). We introduce Categorical Thompson Sampling with Optimism (CATSO) and Particle Thompson Sampling with Optimism (PATSO), two distributional MCTS algorithms that maintain finite-support empirical backup laws at Q-edges. CATSO represents Q-edge laws with categorical atoms and Dirichlet Thompson sampling, while PATSO represents them with adaptive particles. Both algorithms select actions using the CVaR of a Thompson-sampled Q-edge law plus a polynomial optimism bonus, and propagate scalar continuation values through visit-weighted averages of child Q-edge CVaR scores. For the finite-depth nested CVaR planning target, we prove an $O(n^{-1/2})$ bound on the root value error after $n$ rollouts, which upper-bounds the risk-sensitive simple regret. CATSO adds a fixed-grid discretization bias, while capped PATSO adds a tunable Wasserstein compression bias. Experiments on stochastic planning benchmarks show that distributional Q-edges improve lower-tail return and reduce catastrophic outcomes when mean-optimal and risk-sensitive behavior differ.

@@ -1,0 +1,21 @@
+---
+title: "CIIR - 类索引接口表示学习"
+title_en: "CIIR - Class-Indexed Interface Representation Learning"
+authors: ["Doo Yon Kim", "Christian Wallraven"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23151v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+多模态学习通常假设配对或同步观察，但独立收集的数据集很少提供这种对应关系。我们引入 CIIR，一种模块化编码器-解码器框架，它通过类索引地址空间连接异构数据集，同时保留每个数据集的本机输入格式和输出模块。已知的本地索引选择地址 $k$，并且将依赖于输入的 128 维地址表示 Z_k(x) 写入该地址。为了演示 CIIR，我们从手写数字、服装图像、口语数字频谱图和手势中学习这个地址空间，而没有同步或实例匹配的样本。新训练的无标签接收器以 94.7% 的宏观平均地址实现精度恢复所请求的地址。然后，我们在冻结基地址空间后附加看不见的 SVHN 数据集，并仅训练轻量级适配器，在没有目标端解码器标签的情...
+
+## English Summary
+
+Multimodal learning commonly assumes paired or synchronized observations, yet independently collected datasets rarely provide such correspondence. We introduce CIIR, a modular encoder--decoder framework that connects heterogeneous datasets through a class-indexed address space while preserving each dataset's native input format and output module. A known local index selects address $k$, and an input-dependent 128-dimensional address representation Z_k(x) is written to that address. To demonstrate CIIR, we learn this address space from handwritten digits, clothing images, spoken-digit spectrograms, and hand signs without synchronized or instance-matched samples. Newly trained label-free receivers recover the requested addresses with 94.7% macro-average Address Realization Accuracy. We then attach the unseen SVHN dataset after freezing the base address space and train only lightweight adapters, achieving 90.2% MNIST&gt;SVHN and 82.3% SVHN&gt;MNIST end-to-end Address Transfer Accuracy without target-side decoder labels. To demonstrate generalizability of CIIR, we reuse the ten addresses as code elements in collision-free arithmetic and hierarchical address codes for all 100 CIFAR-100 classes and evaluate direct arithmetic-code realization through the existing receivers. These results establish CIIR as a compact interface for modular cross-dataset communication and post-hoc dataset attachment without exhaustive paired multimodal supervision.

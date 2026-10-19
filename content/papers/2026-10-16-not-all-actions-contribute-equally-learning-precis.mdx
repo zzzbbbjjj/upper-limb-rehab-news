@@ -1,0 +1,21 @@
+---
+title: "并非所有行动的贡献均等：从不精确的演示中学习精确的进度估计"
+title_en: "Not All Actions Contribute Equally: Learning Precise Progress Estimation from Imprecise Demonstrations"
+authors: ["Huanqian Wang", "Boshi Tang", "Botong Xiao", "Jie Zhang", "Yang Yue", "Danhua Tao", "Shiji Song", "Gao Huang"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23769v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+进度估计器在为机器人操作中的强化学习提供密集奖励信号方面发挥着至关重要的作用，但准确评估任务进度可能非常具有挑战性。现有方法严重依赖专家数据，并天真地假设演示中的所有操作都有助于任务成功。这种假设在现实场景中常常不成立，特别是在高精度操作中，细微的几何误差可能导致任务失败。因此，这些方法可能会错误地将人类错误解释为有意义的进步，进一步破坏进步学习。我们认为，一个关键的限制是缺乏关于任务评估标准的全局先验，这对于区分有意义的进展和人为错误至关重要。为此，我们提出了 PRIME，一种新颖的进度估计器，能够通过汇总跨轨迹的经验，从不精确的演示中学习精确的进度估计。 PRIME 在观察到的状态上构建加...
+
+## English Summary
+
+Progress estimators play an essential role in providing dense reward signals for reinforcement learning in robotic manipulation, but accurately assessing task progress can be much challenging. Existing methods heavily rely on expert data and naively assume that all actions within a demonstration contribute to task success. This assumption often breaks down in real-world scenarios, especially in high-precision manipulation, where subtle geometric errors can lead to task failure. Therefore, these methods can erroneously interpret human mistakes as meaningful progress, further corrupting progress learning. We argue that a key limitation is the lack of a global prior regarding task evaluation criteria, which is crucial for distinguishing meaningful progress from human mistakes. To this end, we propose PRIME, a novel progress estimator capable of learning precise progress estimation from imprecise demonstrations by aggregating experience across trajectories. PRIME constructs a weighted graph over observed states, connecting states across trajectories based on spatial proximity and visual consistency. Edge weights encode spatial distances as transition costs, and shortest-path search approximates the geodesic distance to success. Changes in this distance naturally distinguish advancement, stagnation, and setbacks without assuming monotonic progress over time. Extensive experiments in both simulation and real world on precise manipulation tasks show that PRIME is consistently effective across diverse tasks, and robust to data with varying degrees of suboptimality. Notably, the advantage of PRIME gets more pronounced in higher-precision scenarios, yielding up to a \(5\times\) improvement in policy success rate over the SFT baselines on charger insertion.

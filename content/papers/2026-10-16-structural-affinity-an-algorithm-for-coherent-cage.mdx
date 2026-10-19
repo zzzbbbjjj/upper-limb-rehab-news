@@ -1,0 +1,21 @@
+---
+title: "结构亲和力：基于笼的相干形状设计的算法"
+title_en: "Structural Affinity: An Algorithm for Coherent Cage-Based Shape Design"
+authors: ["Aviraj Newatia", "Shengan Yang", "Hantao Zhong", "Rika Antonova"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23173v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+基于笼的变形 (CBD) 通过一小组控制手柄对 3D 几何进行参数化，有效地实现从动画和交互式建模到基于工具的协同设计、神经变形传递和空气动力学形状优化等各种任务。许多依赖 CBD 的优化方法采用正则化策略，通过鼓励平滑、规则的笼变形来减少变形网格的扭曲。这些技术为优化算法提供了软指导以实现所需的变形，但与任务目标竞争而不是改变变形参数化本身。在这项工作中，我们引入了 CBD 的结构亲和力，这是一种显式正则化方法，通过利用两笼结构直接耦合笼手柄运动，可以通过控制笼实现平滑变形。结构亲和力使用平均值坐标预先计算亲和力矩阵，将内部控制笼绑定到较粗糙的外部笼。该矩阵定义了笼手柄位移传播到相邻手柄的量...
+
+## English Summary
+
+Cage-based deformation (CBD) parametrises 3D geometry through a small set of control handles, effectively enabling a variety of tasks from animation and interactive modelling to tool-based co-design, neural deformation transfer, and aerodynamic shape optimization. Many optimization approaches relying on CBD employ regularisation strategies to reduce the distortion of the deformed mesh by encouraging smooth, regular cage deformations. These techniques offer soft guidance to an optimization algorithm towards desirable deformations, but compete with the task objective rather than changing the deformation parameterization itself. In this work we introduce Structural Affinity for CBD, an explicit regularisation method which enables smooth deformations through control cages by exploiting a two-cage structure to couple cage-handle motion directly. Structural Affinity precomputes an affinity matrix using mean-value coordinates, binding the inner control-cage to a coarser outer-cage. This matrix defines how much a cage handle displacement propagates to neighbouring handles which substantially decreases and often eliminates cage self-intersections, reduces mesh distortion, and adds linear overhead at deformation time. Across robotic control--morphology co-design, source-to-target neural deformation transfer, and aerodynamic wing shape optimization, Structural Affinity produces more regular deformations and substantially reduces reliance on hand-designed structural loss terms. We report consistent gains on three complementary diagnostics: the cotangent Laplacian, a proxy for surface smoothness; cage distortion, capturing whether control handles move coherently; and surface roughness, which measures undesirable oscillation in wing geometry.

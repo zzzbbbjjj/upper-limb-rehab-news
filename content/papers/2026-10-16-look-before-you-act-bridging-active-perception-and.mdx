@@ -1,0 +1,21 @@
+---
+title: "三思而后行：通过观察一致的数据适应来桥接主动感知和视觉-语言-行动模型"
+title_en: "Look Before You Act: Bridging Active Perception and Vision-Language-Action Models via Observation-Aligned Data Adaptation"
+authors: ["Jiawei Geng", "Zhenyang Liu", "Yuzheng Wu", "Yongchong Gu", "Yanwei Fu"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23378v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在杂乱中操纵物体的机器人不仅必须决定如何行动，还必须决定往哪里看。尽管主动相机运动可以暴露被遮挡的目标，但它可能会将机器人移动到与操纵策略的训练分布不同的初始观察状态分布中。我们将此问题确定为第一帧分布敏感性：在 LIBERO 中开始时受到扰动，天真地将相机重新定位到 pi_0.5 将成功率从 46.3% 降低到 11.5%。我们引入了 ActiveAlign，这是一个数据适应框架，可以从主动感知终止的状态训练视觉-语言-行动（VLA）策略。学习的视点模块首先生成相机轨迹。离线时，ActiveAlign 使用闭环对齐将轨迹端点连接到现有演示，重播剩余的操作轨迹，并保留成功的延续以进行微调。在部...
+
+## English Summary
+
+Robots manipulating objects in clutter must decide not only how to act, but also where to look. Although active camera motion can expose an occluded target, it may move the robot into an initial observation-state distribution that differs from the manipulation policy's training distribution. We identify this problem as first-frame distribution sensitivity: under perturbed starts in LIBERO, naively prepending camera repositioning to pi_0.5 reduces success from 46.3% to 11.5%. We introduce ActiveAlign, a data-adaptation framework that trains a Vision-Language-Action (VLA) policy from the states at which active perception terminates. A learned viewpoint module first generates a camera trajectory. Offline, ActiveAlign uses closed-loop alignment to connect the trajectory endpoint to an existing demonstration, replays the remaining manipulation trajectory, and retains successful continuations for fine-tuning. At deployment, the same viewpoint module precedes the adapted VLA without modifying its architecture. Across 40 LIBERO tasks, ActiveAlign achieves 70.7% success with pi_0 and 72.7% with pi_0.5, outperforming their standard-training baselines by 40.0% and 26.4% respectively. Matched-state and data-matched controls support gains beyond prefix shortening and generic viewpoint augmentation; OpenVLA and GR00T N1 also show the same trend. Success rate under physical occlusion in real world increases from 35/90 to 83/90. These results show that active perception benefits manipulation when policy training is aligned with the observation and robot-state distribution induced by viewpoint selection.

@@ -1,0 +1,21 @@
+---
+title: "随机机器学习实验的等价测试和运行计数设计"
+title_en: "Equivalence testing and run-count design for stochastic machine-learning experiments"
+authors: ["Dmytro Knopov", "Nadiya Shvai"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23700v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+声称两种训练方法表现相同的说法通常基于每种方法两次或三次运行之间的非显着差异。我们利用其功效理论开发了一种协议，用于验证每次运行指标（例如 AUROC（接收器工作特征曲线下的面积））的实际等效性。它基于两级（种子 x 项目）方差模型，将运行间离散度与项目级噪声分开。预先指定的裕度内的等价性通过两个单边检验（TOST）进行测试，相当于通过裕度内的置信区间进行测试；两级引导程序涵盖复合统计数据。封闭式公式将余量和目标功效转换为每种方法的运行次数；它的 shift-t 精化是根据实现的两级过程进行校准的。在 270 个单元网格上和非高斯种子定律下进行的模拟确认了该公式在其设计相关范围内（每种方法运行...
+
+## English Summary
+
+Claims that two training methods perform equally well often rest on a non-significant difference between two or three runs per method. We develop a protocol, with its power theory, for certifying practical equivalence in per-run metrics such as the AUROC (area under the receiver operating characteristic curve). It rests on a two-level (seed x item) variance model separating between-run dispersion from item-level noise. Equivalence within a pre-specified margin is tested by two one-sided tests (TOST), equivalently by a confidence interval inside the margin; a two-level bootstrap covers composite statistics. A closed-form formula converts a margin and a target power into runs per method; its shifted-t refinement is calibrated against the realised two-level process. Simulations on a 270-cell grid and under non-Gaussian seed laws confirm the formula within its design-relevant range, from five runs per method. For four published runs of a joint energy-based model, the failure to certify equivalence was largely decided by design: with the variance calibrated to those runs, two per method certify with probability near three per cent, whereas certifying 0.01 AUROC at 80 per cent power needs twelve even under exact equality. A second case study on a thousand-seed CIFAR-10 zoo and the MultiBERTs checks the formula against real seed laws (within 0.05 in that range) and resolves comparisons that two or three runs leave undecided. In a two-stage design (pilot, then formula), our experiments suggest that an upper confidence bound on the pilot variance substantially reduces the undersizing seen with its point estimate.

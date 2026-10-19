@@ -1,0 +1,21 @@
+---
+title: "没有眼睛，没问题：触摸对于盲人保定球操控有何贡献？"
+title_en: "No Eyes, No Problem: What Does Touch Contribute to Blind Baoding Ball Manipulation?"
+authors: ["Ayush Deshmukh", "Nalin Agarwal", "Elle Miller", "Sethu Vijayakumar"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23438v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+人类仅通过触摸就可以轻松地操纵手中的物体，但对于机器人来说，在没有视觉的情况下实现持续的现实世界操纵仍然是一个开放的挑战。尽管强化学习（RL）可以在模拟中生成复杂的盲操作策略，但将它们转移到真正灵巧的手上仍然受到不断变化的接触、运动引起的触觉信息漂移以及模拟和物理动力学之间的差距的阻碍。我们通过 Shadow Dexterous Hand Lite 上的保定球旋转来研究这个问题，仅使用本体感觉和二元触觉反馈作为观察。我们通过结合传感器对齐、耦合感知的模拟实施例、触觉校准和两个新颖的情景域随机化：转换速率动作限制和 STuck-AT Taxels，成功实现了零样本传输。在物理方面，该策略实现了持...
+
+## English Summary
+
+Humans manipulate objects within their hands through touch alone with remarkable ease, but for robots, achieving sustained real-world manipulation without vision remains an open challenge. Although reinforcement learning (RL) can generate sophisticated blind manipulation policies in simulation, transferring them to a real dexterous hand remains hindered by continuously changing contacts, motion-induced tactile information drift, and the gap between simulated and physical dynamics. We study this problem through Baoding ball rotation on the Shadow Dexterous Hand Lite, using only proprioception and binary tactile feedback as observations. We achieve successful zero-shot transfer through a combination of a sensor-aligned, coupling-aware embodiment in simulation, tactile calibration, and two novel episodic domain randomisations: slew-rate action limits and STuck-AT Taxels. On the physical hand, the policy achieves sustained blind Baoding rotation, completing 225 consecutive $\mathbf{180^\circ}$ rotations (112.5 full rotations) at $\sim0.36 \;\text{rot/s}$ in a single continuous trial without any vision or object-state information. Furthermore, we evaluate the contribution of tactile sensing relative to proprioception alone and identify the hand regions where tactile information is most important. This is the strongest reported hardware result for Baoding ball manipulation in both rotation count and speed, irrespective of the sensing modality used. By effectively bridging the sim-to-real gap, our framework sets a new benchmark for sustained tactile-driven dexterous manipulation on physical hardware.

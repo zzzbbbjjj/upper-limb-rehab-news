@@ -1,0 +1,21 @@
+---
+title: "LY-GWM-RoboCasa-Human300：使用图动态模型进行预测引导的动作选择"
+title_en: "LY-GWM-RoboCasa-Human300: Prediction-Guided Action Selection with a Graph Dynamics Model"
+authors: ["TianLiang Ma", "Ting Ma", "ZhongYuan Ma"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23274v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+我们提出了 LY-GWM-RoboCasa-Human300，这是一种结合了 Human300 微调的 GR00T-N1.5 动作生成器、动作条件图动态模型和学习的二元状态奖励评分器的策略。在推理时，策略对四个动作块进行采样，预测每个动作块的未来潜在特征和机器人状态，并执行具有最高预测状态奖励 logit 的候选者。因此，预测会影响发送到环境的操作。评估的系统使用 16 步预测范围，并在评估过程中保持所有三个组件冻结。在训练前厨房分组中对 50 个 RoboCasa 1.0.1 任务进行的本地评估中，每个任务有 50 个情节，系统记录了 207/2,500 次成功（8.28%），而历史自训练 ...
+
+## English Summary
+
+We present LY-GWM-RoboCasa-Human300, a policy that combines a Human300-fine-tuned GR00T-N1.5 action generator, an action-conditioned graph dynamics model, and a learned binary state-reward scorer. At inference, the policy samples four action chunks, predicts the future latent features and robot state for each, and executes the candidate with the highest predicted-state reward logit. Predictions therefore influence the actions sent to the environment. The evaluated system uses a 16-step prediction horizon and keeps all three components frozen during evaluation. In the local evaluation on 50 RoboCasa 1.0.1 tasks in the pretrain kitchen split, with 50 episodes per task, the system records 207/2,500 successes (8.28%), compared with 181/2,500 (7.24%) in the historical self-trained GR00T-N1.5 baseline. The observed difference is 26 successes, or 1.04 percentage points. The atomic group improves from 141/900 to 150/900. Separately, the RoboCasa maintainers re-evaluated the submission and reported 354/1,500 successes (23.6%) across 50 tasks, with leaderboard rates of 48.3%, 16.3%, and 3.1% for Atomic-Seen, Composite-Seen, and Composite-Unseen. The local and official results are reported separately; their difference is not attributed to a model improvement. Recorded local audits identify 212,700 changed environment-input chunks, including 28,223 in atomic tasks. We describe the actual training stages, implemented inference mechanism, evaluation provenance, and public reproduction entrypoints. These results document an active prediction-and-selection system and a positive historical difference.

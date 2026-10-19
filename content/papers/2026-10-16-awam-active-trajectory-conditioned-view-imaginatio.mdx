@@ -1,0 +1,21 @@
+---
+title: "AWAM：用于鲁棒机器人操纵的主动轨迹条件视图想象"
+title_en: "AWAM: Active Trajectory-Conditioned View Imagination for Robust Robot Manipulation"
+authors: ["Jiawei Geng", "Zhenyang Liu", "Yuzheng Wu", "Yanwei Fu"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23396v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+具身智能的快速进步使得机器人的能力越来越强，能够遵循语言指令并操纵不同的物体。然而，结构化环境中的强大结果不会自动转移到开放世界条件，在开放世界条件下，混乱、遮挡和不断变化的视角可能会模糊行动所需的空间关系。为了解决这种感知差距，引入了虚拟主动感知范式。 AWAM 是一种主动世界行动模型，在行动之前积极计划观察位置并想象沿计划轨迹将会看到什么。预测与任务相关的虚拟相机运动，并将其用作对几何条件世界模型的结构化查询，产生可重用的空间先验进行操作，随后将其压缩到固定内存中，并通过交叉注意与实时观察融合，以进行基于扩散的动作预测。 AWAM 在 LIBERO-Occ 上实现了 75.9% 的成功率，...
+
+## English Summary
+
+Rapid progress in embodied intelligence has enabled increasingly capable robots to follow language instructions and manipulate diverse objects. However, strong results in structured environments do not automatically transfer to open-world conditions, where clutter, occlusion, and changing viewpoints can obscure the spatial relationships required for action. To address this perceptual gap, a virtual active-perception paradigm is introduced. AWAM, an Active World-Action Model actively plans where to observe and imagines what will be seen along the planned trajectory before acting. Task-related virtual camera motion is predicted and used as a structured query into a geometry-conditioned world model, producing a reusable spatial prior for manipulation, which is later compressed into a fixed memory and fused with live observations through cross-attention for diffusion-based action prediction. AWAM achieves competitive success rates with 75.9% on LIBERO-Occ, 62.4% on LIBERO-Plus, 76.5% on RLBench-OG Occlusion1, and 94.4% in real-robot trials. These results support improved robustness to the evaluated occlusions and distribution shifts, addressing part of the gap between structured manipulation and less controlled environments.

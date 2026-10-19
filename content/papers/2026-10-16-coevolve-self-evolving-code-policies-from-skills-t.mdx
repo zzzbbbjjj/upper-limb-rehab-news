@@ -1,0 +1,21 @@
+---
+title: "CoEvolve：人形机器人从技能到策略的自我进化代码策略"
+title_en: "CoEvolve: Self-Evolving Code Policies from Skills to Strategies for Humanoid Robots"
+authors: ["Zicheng Liu", "Haochen Wu", "Jiawei He", "Suyun Zhao", "Huan Yang", "Cheng Chi", "Hao Tang"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23288v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉-语言-动作（VLA）模型和世界动作模型（WAM）的最新进展扩展了单个机器人的操纵和全身能力。然而，单个机器人仍然受到其具体化的限制，并且许多现实世界的任务需要只能通过合作才能出现的能力。现有的多机器人框架主要强调任务分解、分配和重新规划，同时在物理执行偏离预期行为时为调整可执行协调提供有限的支持。我们提出了 CoEvolve，一个将团队协调表示为固定机器人运动技能的可执行代码的框架。 CoEvolve 引入了验证者引导协调进化，其中多模式基础模型通过运动原语、语义目标、临时机器人角色和有界执行参数来实例化协调策略。物理验证评估每个执行的转换，被拒绝的行为触发从接受的检查点进行结构化协调修...
+
+## English Summary
+
+Recent advances in Vision-Language-Action (VLA) models and World Action Models (WAMs) have expanded the manipulation and whole body capabilities of individual robots. Yet a single robot remains limited by its embodiment, and many real world tasks require capabilities that can only emerge through cooperation. Existing multi robot frameworks largely emphasize task decomposition, allocation, and replanning, while providing limited support for adapting executable coordination when physical execution deviates from the intended behavior. We present CoEvolve, a framework that represents team coordination as executable code over fixed robot motor skills. CoEvolve introduces Verifier Guided Coordination Evolution, where a multimodal foundation model instantiates coordination strategies through motion primitives, semantic objectives, temporary robot roles, and bounded execution parameters. Physical verification evaluates each executed transition, rejected behaviors trigger structured coordination revision from an accepted checkpoint, and verified experience is retained to guide subsequent decisions. We evaluate CoEvolve with two simulated Unitree G1 humanoids transporting a freely supported rigid payload through constrained corridors. Across 15 base task runs with three multimodal backbone families, CoEvolve completes 8 tasks, with every backbone achieving end to end success. Additional evaluations yield verified placement on two additional corridor layouts and after both same-backbone and cross-backbone experience initialization, while exposing persistent limitations in motion precision and contact stability. These results support executable coordination as a practical interface for adapting long horizon multi robot collaboration under shared physical constraints.

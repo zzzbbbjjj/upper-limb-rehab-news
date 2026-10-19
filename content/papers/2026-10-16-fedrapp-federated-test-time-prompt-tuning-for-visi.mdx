@@ -1,0 +1,21 @@
+---
+title: "FedRAPP：通过可靠性感知提示个性化对视觉语言模型进行联合测试时提示调整"
+title_en: "FedRAPP: Federated Test-Time Prompt Tuning for Vision-Language Models with Reliability-Aware Prompt Personalization"
+authors: ["Syed Md. Ahnaf Hasan", "Md Akil Raihan Iftee", "Sajib Mistry", "Amin Ahsan Ali", "AKM Mahbubur Rahman"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23705v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+联合提示学习使 CLIP 等视觉语言模型能够跨分布式客户端协作调整轻量级软提示，而无需共享原始数据。然而，现有的联合提示学习方法主要是针对带有标记的客户数据的监督设置而设计的，并假设相对稳定的训练分布。在测试时，无源联合提示调整在很大程度上仍未被探索。客户端可能会收到具有异构的、通常是非 IID 分布的未标记目标样本，这些分布在客户端之间以及与源训练分布有很大不同，导致本地适应的提示向不同方向漂移并降低联合聚合的有效性。在这项工作中，我们探索无源联合测试时提示调整（SF-FTTPT），其中分布式客户端协作调整未标记测试流上的软提示，而无需访问源数据。我们的研究表明，传统的联合聚合方法在异构客户...
+
+## English Summary
+
+Federated prompt learning enables vision-language models like CLIP to collaboratively adapt lightweight soft prompts across distributed clients without sharing raw data. However, existing federated prompt learning methods are designed primarily for supervised settings with labeled client data and assumed relatively stable training distributions. At test time, source-free federated prompt tuning remains largely unexplored. Clients may receive unlabeled target samples with heterogeneous, often non-IID distributions that differ substantially across clients and from the source training distribution, causing locally adapted prompts to drift in different directions and reducing the effectiveness of federated aggregation. In this work, we explore Source-Free Federated Test-Time Prompt Tuning (SF-FTTPT), where distributed clients collaboratively adapt soft prompts on unlabeled test streams without access to source data. Our study reveals that conventional federated aggregation methods struggle under heterogeneous client distributions, as locally adapted prompts become increasingly specialized and difficult to combine effectively. To address this challenge, we propose FedRAPP, a personalized aggregation framework that combines reliability-aware client assessment, server-side exponential moving-average prompt memory, and similarity-guided peer aggregation. FedRAPP selectively incorporates information from reliable and compatible clients while preserving local specialization, enabling more robust adaptation under distribution shift. Extensive experiments across nine CLIP benchmark datasets and ImageNet variants demonstrate that FedRAPP consistently outperforms standard federated aggregation baselines under heterogeneous client distributions while maintaining the efficiency advantages of prompt-only adaptation.

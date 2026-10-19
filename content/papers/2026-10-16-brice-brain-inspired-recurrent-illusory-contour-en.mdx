@@ -1,0 +1,21 @@
+---
+title: "BRICE：用于点云补全的受大脑启发的循环虚幻轮廓编码器"
+title_en: "BRICE: Brain-inspired Recurrent Illusory Contour Encoder for Point Cloud Completion"
+authors: ["Yunlei Wang", "Dawei Li", "Xue-song Tang"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23001v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+主流的点云补全方法一致基于深度学习架构。一方面，这些方法倾向于重复堆叠注意力模块来增强网络性能，这偏离了统一和可解释网络的简洁设计；另一方面，几乎所有现有架构都仅依赖前馈连接来传播信息，而忽略了来自更深层的反馈。由前馈-反馈环路形成的循环神经结构已显示出其在哺乳动物 V1 大脑区域生成幻觉轮廓 (IC) 的能力；而IC本质上是大脑对于视觉信息的补全机制。受此启发，我们设计了一种受大脑启发的循环虚幻轮廓编码器（BRICE）来“想象”不完整的 3D 点云中缺失的内容。基于预测编码 (PC) 的基础模型，即插即用的特性使 BRICE 能够无缝集成到主流点云完成基线中。实验结果表明，BRICE 可以增...
+
+## English Summary
+
+Mainstream point cloud completion methods are unanimously based on deep learning architectures. On one hand, these methods tend to repetitively stacking attention modules to enhance network performance, which drifts away from the neat design of unified and interpret-able networks; on the other hand, nearly all existing architectures rely solely on feed-forward connections to propagate information, neglecting feedback from deeper layers. The recurrent neural architecture, formed by feedforward-feedback loops, have shown its ability to generate Illusory Contours (ICs) in the V1 brain region of mammals; and ICs are essentially a completion mechanism of the brain for visual information. Motivated by this, we design a Brain-inspired Recurrent Illusory Contour Encoder (BRICE) to "imagine" what is missing in the incomplete 3D point clouds. Building upon the foundation model of Predictive Coding (PC), the plug-and-play nature enables BRICE to be seamlessly integrated into mainstream point cloud completion baselines. Experimental results show that BRICE can enhance various completion baselines on different 3D datasets such as MVP2K, PCN, and PlantPCom. Our code: Https://github.com/wangyunlei-wyl/BRICE.

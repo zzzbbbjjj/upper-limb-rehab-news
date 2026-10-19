@@ -1,0 +1,21 @@
+---
+title: "通过闭环优化增强对视觉-语言-动作模型的视觉任务重定向攻击"
+title_en: "Enhancing Visual Task-Redirection Attacks on Vision-Language-Action Models via Closed-Loop Optimization"
+authors: ["Chunjin Ye", "Guanying Chen", "Jianjie Huang", "Jianhao Chen", "Quanlin Chen", "Hanjie Zhao", "Haozhe Liang", "Tieyun Qian", "Xiaochun Cao"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23566v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉-语言-动作（VLA）模型可以实现语言引导的机器人操作，但仍然容易受到视觉攻击，从而破坏用户对机器人行为的控制。先前的研究使用固定目标监督来优化视觉扰动。然而，扰动可以改变早期的行为，进而改变后来达到的物理状态。随着攻击轨迹的演变，这种监督可能不再符合实际达到的状态所需的行为。因此，准确匹配这些目标可能无法推进攻击者指定的任务。即使有适当的监督，减少平均匹配误差也不能确保任务的持续进展。机器人仍然可能在关键阶段失败，进一步的更新可能会破坏之前成功的行为。为了解决这些限制，我们提出了 TRACO，这是一个通过闭环优化增强现有目标视觉攻击的框架。其执行驱动监督重建了对受到攻击的状态的监督，以指...
+
+## English Summary
+
+Vision-language-action (VLA) models enable language-guided robot manipulation, but remain vulnerable to visual attacks that undermine user control over robot behavior. Prior studies optimize visual perturbations using fixed target supervision. However, the perturbation can change earlier actions and, in turn, the physical states reached later. As the attacked trajectory evolves, this supervision may no longer match the behavior needed at the states actually reached. Accurately matching these targets can therefore fail to advance the attacker-specified task. Even with suitable supervision, reducing average matching error does not ensure sustained task progress. The robot may still fail at a critical stage, and further updates can disrupt previously successful behavior. To address these limitations, we propose TRACO, a framework that enhances existing targeted visual attacks through closed-loop optimization. Its Execution-Driven Supervision rebuilds supervision for the states reached under attack to guide subsequent updates. Within this framework, Progress-Guided Selection focuses updates where progress stalls while maintaining supervision on the earlier behavior needed to reach that point. Experiments across VLA models and simulation environments show improved task-redirection success with TRACO, highlighting the security implications of closed-loop attack optimization.

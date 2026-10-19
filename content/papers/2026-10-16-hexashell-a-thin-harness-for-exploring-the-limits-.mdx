@@ -1,0 +1,21 @@
+---
+title: "HexaShell：用于探索 VLM 代理作为机器人编码代理的局限性的薄线束"
+title_en: "HexaShell: A Thin Harness for Exploring the Limits of VLM Agents as Robot Coding Agents"
+authors: ["Hongcheng Gao", "Alex Zhou", "Jay Zhu", "Zelin Zheng", "Shijia Ge", "Xiping Li", "Di Wu", "Yazhe Wang", "Jianshu Zeng", "Xuan Shangguan"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23479v1"
+doi: ""
+tags: ["手部康复", "腕关节", "上肢康复"]
+tags_en: ["hand rehabilitation", "wrist", "upper limb"]
+keywords: ["手部康复", "腕关节", "上肢康复"]
+keywords_en: ["hand rehabilitation", "wrist", "upper limb"]
+---
+
+## 中文摘要
+
+基于视觉语言模型 (VLM) 构建的代理现在可以在机器人操作排行榜上与学习到的策略进行竞争。我们要问的是，当编码代理控制机器人而不是计算机时，它可以走多远，以及在哪里停止。我们的系统 HexaShell 使线束保持薄型：它仅将代理的命令转换为机器人运动。代理通过一条命令行驱动一个有两只手臂的机器人。它看到三个 RGB 摄像头并知道它们的校准。每次尝试失败后，代理都会读取日志，查找原因，并编写或修复称为工具的小程序。通过这种方式，它将所学到的内容保留为代码，就像编码代理在修复失败的测试时所做的那样。这些工具只能使用机器人观察到的内容。他们使用三角测量来查找物体相对于彼此以及相对于夹具的位置。如果...
+
+## English Summary
+
+Agents built on vision language models (VLMs) now compete with learned policies on robot manipulation leaderboards. We ask how far a coding agent can go when it controls a robot instead of a computer, and where it stops. Our system, HexaShell, keeps the harness thin: it only turns the agent's commands into robot motion. The agent drives a robot with two arms through one command line. It sees three RGB cameras and knows their calibration. After each failed attempt, the agent reads the log, finds the cause, and writes or fixes small programs called tools. In this way it keeps what it learns as code, as a coding agent does when it fixes a failing test. The tools may use only what the robot observes. They use triangulation to find where objects are, relative to each other and to the gripper. If two cameras see the same point, the point lies where the two camera rays meet. If a point lies on a known plane, such as the table or the top of a block, it lies where its ray meets that plane. When the head camera is not enough, the robot moves a wrist camera to get a second view. We build the tools on only ten layouts of one seed per task, then freeze them and test them on ten new layouts of the same seed. We use Codex with GPT-6-Astra at medium reasoning effort. On all 42 RoboDojo tasks, HexaShell reaches a success rate of 39.7% and a progress score of 48.0, averaged in the same way as the leaderboard. This is a new state of the art on RoboDojo. The limit is contact, not reasoning: pushing reaches 92.5% and memory tasks 65.0%, but tight insertion only 8.3%. When the agent fails, it usually sees the failure but cannot make the motion work. We open source the tools evolved so far at https://github.com/HexaFuture/HexaShell.

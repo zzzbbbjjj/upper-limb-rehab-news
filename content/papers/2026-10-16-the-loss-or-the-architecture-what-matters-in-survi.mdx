@@ -1,0 +1,21 @@
+---
+title: "损失还是架构？在竞争风险的生存分析中什么最重要"
+title_en: "The Loss or the Architecture? What Matters in Survival Analysis with Competing Risks"
+authors: ["Julie Alberge", "Gaël Varoquaux", "Judith Abécassis"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23322v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+通常，\emph{eg}在医疗保健和预测性维护中，重要的是几个竞争原因中的哪一个将首先发生，以及以何种概率：与竞争风险的生存分析。相应的深度学习方法被开发为捆绑包：一个新的架构和一个新的训练损失，针对少数基线在一到五个数据集上进行测试。因此，最先进的结果不能归因于架构、损失或评估协议。这种耦合并非偶然：每个原因都有一个关联曲线，网络的头部与其上可表达的损耗相关联。我们在四个主干上独立地改变两个轴，三个损失，其中两个严格正确，跨越两种将轴分开的模式：20 个表格数据集和 3 个病理图像数据集。两败俱伤：直接在审查权重下对累积发生率进行建模。对于竞争风险数据来说，选择一个好的骨干网带来的好处是它的...
+
+## English Summary
+
+Often, \emph{eg} in healthcare and predictive maintenance, what matters is which of several competing causes will strike first, and with what probability: survival analysis with competing risks. Corresponding deep learning methods are developed as bundles: a new architecture together with a new training loss, tested on one to five datasets against a handful of baselines. Thus, a state-of-the-art result cannot be attributed to the architecture, the loss, or the evaluation protocol. The coupling is not accidental: with one incidence curve per cause, a network's head is tied to the losses expressible on it. We vary the two axes independently, three losses, two of them strictly proper, on four backbones, across two modalities that tease the axes apart: 20 tabular and 3 pathology-image datasets. One loss wins in both: modelling cumulative incidence directly under censoring weighting. It brings twice as much as benefits a good choice of backbone on competing-risks data, and no more than it on single-event data: the loss is decisive for competing risks. The backbone matters too, and must match the modality: tabular networks lead on tables, pretrained vision encoders on images. The two choices compound rather than substitute. Proper scoring rules reveal these dynamics; the concordance index (C-index), which is not proper, does not separate models: neither axis moves it, not even tuning on the loss built to improve it. This is an avenue of progress: composed, the two give a model nobody has tried, RealMLP or TabM trained with the cumulative-incidence loss, which takes the best Brier score in our benchmark.

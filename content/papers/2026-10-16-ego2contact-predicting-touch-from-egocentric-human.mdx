@@ -1,0 +1,21 @@
+---
+title: "Ego2Contact：从以自我为中心的人类视频中预测触摸，以实现接触丰富的机器人操作"
+title_en: "Ego2Contact: Predicting Touch from Egocentric Human Video for Contact-Rich Robot Manipulation"
+authors: ["Qianqian Yang", "Dayou Li", "Bangya Liu", "Zihao Zhu", "Nuo Chen", "Siyuan Xu", "Hezhen Hu", "Chen Yu", "Rebecca Friesen", "Minghui Zheng"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.22932v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+接触位置和相互作用力对于富含接触的机器人操作至关重要，但仅从视觉上来看往往是模糊的。在机器人上测量它们需要专门的触觉硬件和特定于平台的数据收集，这使得机器人触觉数据稀缺。人类以自我为中心的视频更容易扩展，但缺乏触摸。最近接受以自我为中心的录音训练的预测器与触觉手套测量相结合，可以仅从视频中预测出丢失的信号。然而，这些预测器仍然局限于人手，人手在外观和触觉布局上与机器人手不同。我们推出了 Ego2Contact，它可以从人类交互中学习视觉-触觉先验并将其转移到机器人手上。其预测器将时间场景上下文与手局部视觉特征融合，以从 RGB 视频推断双手触觉场。解剖区域对应将不同的机器人触觉布局与预测器的规...
+
+## English Summary
+
+Contact locations and interaction forces are critical for contact-rich robot manipulation but are often ambiguous from vision alone. Measuring them on robots requires specialized tactile hardware and platform-specific data collection, which keeps robot tactile data scarce. Human egocentric video is far easier to scale but lacks touch. Recent predictors trained on egocentric recordings paired with tactile-glove measurements can predict this missing signal from video alone. These predictors, however, remain confined to human hands, which differ from robot hands in appearance and tactile layout. We present Ego2Contact, which learns a visual-tactile prior from human interactions and transfers it to robot hands. Its predictor fuses temporal scene context with hand-local visual features to infer bimanual tactile fields from the RGB video. Anatomical region correspondences align varying robot tactile layouts with the predictor's canonical grid, turning robot measurements into fine-tuning targets and predictions into policy inputs. Ego2Contact outperforms prior tactile predictors on human data, including unseen objects, and on robot data after adaptation. The adapted predictor provides tactile inputs for both simulated reinforcement learning and real-robot policy post-training. In simulation, policies using predicted touch outperform non-tactile baselines and recover part of the benefit of ground-truth tactile sensing. These results show that human-learned tactile priors can supply touch when direct tactile sensing is limited.

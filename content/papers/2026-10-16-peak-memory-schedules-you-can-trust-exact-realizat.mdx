@@ -1,0 +1,21 @@
+---
+title: "您可以信赖的峰值内存调度：精确实现、经过认证的最优性以及推理重新计算的限制"
+title_en: "Peak-Memory Schedules You Can Trust: Exact Realization, Certified Optimality, and the Limits of Recomputation for Inference"
+authors: ["Ivan Fomin", "Ivan Koryabkin", "Boris Sheludko"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23328v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+小型设备上的实时推理需要低激活内存而无需额外的延迟，这使得操作员订购成为最有价值的内存杠杆：它是及时免费的。我们表明，部署更好的订单（将其交还给编译器并重新生成代码）的常用方法是不可靠的。在 PyTorch Inductor 中，重新生成的程序在 54 个 CPU 配置中的 22 个中未达到预期峰值。其中 9 个程序比常规程序要差，50 个程序中的 19 个程序在 GPU 上的性能更差，而且在 GPU 上它还会改变数值结果。相反，我们分析生成的程序，根据其自己的语句及其读/写效果准确地对其内存进行建模，并排列这些语句。我们证明，只要分配不依赖于历史，就可以实现建模峰值。在我们所有的 CPU 运...
+
+## English Summary
+
+Real-time inference on small devices needs low activation memory without extra latency, which makes operator order the most valuable memory lever: it is free in time. We show that the usual way of deploying a better order, handing it back to the compiler and regenerating code, is unreliable. In PyTorch Inductor the regenerated program misses its predicted peak in 22 of 54 CPU configurations. It is worse than the stock program in 9 of them and in 19 of 50 on a GPU, and on the GPU it also changes numerical results. We instead profile the generated program, model its memory exactly from its own statements and their read/write effects, and permute those statements. We prove that this realizes the modeled peak whenever allocation does not depend on history. It does so to the byte, with bitwise-identical results, in all our CPU runs. On the GPU we characterize why the caching allocator breaks the condition. To know when to stop, we give forward and reverse "trap" lower bounds, each computable with $O(n^2)$ minimum cuts. They certify the found order optimal for 94% of held-out wrapper graphs and all 16 microcontroller-class models we study, in under a second. So most inference graphs are already scheduled optimally. Branching networks are the exception, where reordering is free and pays, e.g. 10.0% on DeepLabV3. In compiled training we save up to 7.6%. Beyond the certified optimum we study selective recomputation with per-operator caps. It is strongly NP-hard for every fixed cap even at treewidth two, encodes knapsack exactly on series-parallel graphs, and is solvable exactly on bounded treewidth. It is useless on public tiny models whose peak is a single layer, but on architectures that hold a cheap value for a late reuse it pays: on the public ReDimNet speaker networks, whose order is already optimal, it lowers the peak by 5.2-6.1% at under 0.4% extra MACs, with bitwise-identical outputs.

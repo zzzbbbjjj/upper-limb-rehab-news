@@ -1,0 +1,21 @@
+---
+title: "从延迟的单方面反馈中学习个性化记忆门控"
+title_en: "Learning Personalized Memory Gating from Delayed One-Sided Feedback"
+authors: ["Kaixuan Ji", "Zixiang Chen", "Wenting Zhao", "Cheng Qian", "Heng Wang", "Weizhi Zhang", "Jielin Qiu", "Liangwei Yang", "Quanquan Gu", "Silvio Savarese"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23812v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb"]
+---
+
+## 中文摘要
+
+长期记忆使语言模型代理能够个性化未来的交互，但有限的记忆库无法保存每个提取的事实。现有的内存门控策略通常在用户之间共享，因此无法考虑未来重用的用户特定模式。在本文中，我们在事实层面上研究记忆门控。我们首先提出一种基于检索的标记策略，通过稍后是否检索并合并到响应中来标记每个事实。然后，我们将在线记忆门控制定为具有延迟单方面反馈的情境苹果品尝，并提出热启动 UCB，它将现有数据的离线学习与对当前用户的在线适应相结合。我们的理论分析建立了当延迟窗口至多$O(\sqrt{T})$时$\tilde{O}(Tε\wedge d\sqrt{T})$的高概率后悔上限，其中$T$是总轮数，$ε$是初始化误差，$...
+
+## English Summary
+
+Long-term memory enables language-model agents to personalize future interactions, but a finite memory bank cannot preserve every extracted fact. Existing memory gating policies are typically shared across users and therefore fail to account for user-specific patterns of future reuse. In this paper, we study memory gating at the fact level. We first propose a retrieval-based labeling strategy that labels each fact by whether it is later retrieved and incorporated into responses. We then formulate online memory gating as contextual apple tasting with delayed one-sided feedback, and propose Warm-Start UCB, which combines offline learning from existing data with online adaptation to the current user. Our theoretical analysis establishes a high-probability regret upper bound of $\tilde{O}(Tε\wedge d\sqrt{T})$ when the delay window is at most $O(\sqrt{T})$, where $T$ is the total number of rounds, $ε$ is the initialization error, $d$ is the dimension of the feature map, and $\tilde{O}(\cdot)$ hides constant and poly-logarithmic factors. The results of our experiment demonstrate that our method outperforms all baselines under different memory budgets and history lengths, establishing it as a promising personalized memory gating policy.

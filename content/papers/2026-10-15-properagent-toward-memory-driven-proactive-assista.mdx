@@ -1,0 +1,21 @@
+---
+title: "ProPerAgent：迈向内存驱动的主动协助"
+title_en: "ProPerAgent: Toward Memory-Driven Proactive Assistance"
+authors: ["Shenglai Zeng", "Xiao Yang", "Tiffany Ma", "Xinyuan Zhang", "Nanshu Wang", "Deren Lei", "Kai Sun", "Xilun Chen", "Tammy Stark", "Xianhui Zhu"]
+date: "2026-10-15"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.22671v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+随着助理从被动回答转向主动干预，记忆的作用发生了变化：它不再仅仅提供问题的答案，而是决定是否以及何时说话。在此设置中的先前工作为系统提供了上下文中的相关事实；我们研究使问题变得困难的制度，其中证明干预合理的证据必须从长期的个人记忆中挖掘出来。我们推出了 ProPerMem，这是内存驱动的主动辅助 (MPA) 的基准，它将以自我为中心的视频与长达一年、干扰丰富的用户记忆（平均约 618K 代币）、经过人工验证的触发窗口以及对内容和时间进行联合评分的协议配对。我们评估的每个基线都表现不佳（最多 15%），包括给出总结或检索增强记忆的前沿模型。一项对照研究解释了原因：在触发窗口内传递的预言机证据 G...
+
+## English Summary
+
+As assistants move from reactive answering toward proactive intervention, memory changes role: it no longer only supplies the answer to a query, it determines whether and when to speak at all. Prior work in this setting hands the system the relevant fact in context; we study the regime that makes the problem hard, where the evidence justifying an intervention must be mined from a long-horizon personal memory. We introduce ProPerMem, a benchmark for memory-driven proactive assistance (MPA), pairing egocentric video with year-long, distractor-rich user memories (~618K tokens on average), human-verified trigger windows, and a protocol that scores content and timing jointly. Every baseline we evaluate performs poorly (at most 15%), including frontier models given summarized or retrieval-augmented memory. A controlled study explains why: with oracle evidence delivered inside the trigger window GPT-5.3-Chat reaches 96%; letting it choose the timing drops it to 38%, and replacing oracle evidence with retrieval drops it to 15%. Content and timing are separately necessary, and missing either is catastrophic. Guided by this, we build ProPerAgent (Proactive Personalized Agent) with a plug-and-play harness that surfaces memory from a graph-organized store and gates it down to what is worth interrupting for, plus a lightweight RL stage that curbs early and repeated firing. Without any training, ProPerAgent lifts strict accuracy from below 10% to 37.5% on Qwen3.8-27B and 38% on GPT-5.3-Chat; RL post-training reaches 42.4%.

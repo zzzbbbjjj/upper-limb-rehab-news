@@ -1,0 +1,21 @@
+---
+title: "MetaCurate：不断发展的高质量代理编码数据的管理过滤器"
+title_en: "MetaCurate: Evolving Curation Filters for High-Quality Agentic Coding Data"
+authors: ["Donghoon Kim", "Seunghyuk Oh", "Kevin Galim", "Minseo Kim", "Minjae Lee", "Younghyun Kim", "Wooseok Seo", "Hyung Il Koo", "Wonjun Kang"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23134v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+对代理轨迹进行监督微调是改进编码代理的有效方法，但选择有用的训练示例需要的不仅仅是识别成功的运行。已解决的补丁可能会遵循低效的推理或不必要的工具使用，而失败的运行可能仍包含有用的中间步骤。因此，训练管道依赖于规则和定性评估来过滤轨迹，但设计这些过滤器通常需要大量的人类专业知识，并且通过重复训练和评估来验证改进的成本很高。我们引入了 MetaCurate，这是一个免训练的框架，它使用成对的 LLM 判断来演化可执行的轨迹管理过滤器。过滤器的排名和法官的偏好之间的不一致为共同修改其规则、评分标准和聚合政策提供了有针对性的反馈。生成的过滤器独立地对轨迹进行评分，因此仅在搜索期间才需要成对比较。从空白...
+
+## English Summary
+
+Supervised fine-tuning on agent trajectories is an effective way to improve coding agents, but selecting useful training examples requires more than identifying successful runs. A resolved patch may follow inefficient reasoning or unnecessary tool use, while a failed run may still contain useful intermediate steps. Training pipelines therefore rely on rules and qualitative assessments to filter trajectories, yet designing these filters typically requires substantial human expertise, and validating improvements through repeated training and evaluation is expensive. We introduce MetaCurate, a training-free framework that evolves executable trajectory curation filters using pairwise LLM judgments. Disagreements between the filter's rankings and the judge's preferences provide targeted feedback for jointly revising its rules, rubric, and aggregation policy. The resulting filter scores trajectories independently, so pairwise comparisons are required only during search. Starting from a blank filter, MetaCurate autonomously discovers a curation strategy that achieves competitive downstream performance without task-specific handwritten criteria. We validate downstream utility through controlled SFT experiments on our uncurated trajectory pool and the Nemotron v3 SWE dataset, with random selection and hand-authored filtering as baselines. In our experiments, MetaCurate achieves the highest mean SWE-Verified score among the compared methods, including hand-authored rule-based filtering and a training-loop baseline whose search costs 3.5x as much.

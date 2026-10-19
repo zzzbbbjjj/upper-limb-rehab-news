@@ -1,0 +1,21 @@
+---
+title: "R$^2$Orch：通过技能内化循环中的自我发挥来实现代理编排的递归自我改进"
+title_en: "R$^2$Orch: Recursive Self-Improvement for Agent Orchestration via Self-Play within a Skill-Internalization Loop"
+authors: ["Mingda Zhang", "Yun Huang", "Qiang Huang", "Yanjin Li", "Rui Qian", "Qichao Zhao", "Tiesunlong Shen", "Na Zhao", "Jian Wang", "Xiaoying Tang"]
+date: "2026-10-15"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.22740v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+近年来，代理编排已广泛应用于解决复杂的人工任务。然而，现有的编排学习仍然面临着关键挑战，包括手工设计的课程、当一项任务的推出都达到相同结果时优势崩溃，以及通过一个嘈杂的分数来判断每项技能的不可靠的评估信号。为了应对这些挑战，我们提出了 R$^2$Orch，这是一种递归自玩编排的新范式：自玩的内循环可以改进自选任务的编排器，外循环可以改进内循环的改进方式。为了支持这种范式，我们引入了递归学习能力，这是一种培训目标，奖励提议者选择的任务，这些任务的推出随着技能的撤回而不断达到不同的结果。在此目标的基础上，我们进一步提出技能撤回，其中一旦自我对弈中的受控评估表明编排器在没有技能的情况下也能表现良好，...
+
+## English Summary
+
+In recent years, agentic orchestration has been widely applied to solve complex human tasks. However, existing orchestration learning still faces key challenges, including hand-designed curricula, advantage collapse when a task's rollouts all reach the same outcome, and unreliable evaluation signals that judge each skill by one noisy score. To address these challenges, we propose R$^2$Orch, a new paradigm of Recursive Self-Play Orchestration: an inner loop of self-play that improves the orchestrator on self-chosen tasks, and an outer loop that improves how the inner loop improves. To support this paradigm, we introduce Recursive Learnability, a training objective that rewards a Proposer for choosing tasks whose rollouts keep reaching different outcomes as skills are withdrawn. Built on this objective, we further propose Skill Withdrawal, in which the outer loop withdraws each skill once a controlled evaluation within self-play shows that the orchestrator performs as well without it. Moreover, the two loops form one cycle: failures are distilled into skills, skills into parameters, and withdrawals lead the Proposer to new failures, so the orchestrator moves toward zero-skill deployment. Experimental results on twelve datasets show that R$^2$Orch consistently outperforms baselines across question answering, math, code, and interactive tasks.

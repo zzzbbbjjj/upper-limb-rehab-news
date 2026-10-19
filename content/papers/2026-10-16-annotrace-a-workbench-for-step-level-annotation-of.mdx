@@ -1,0 +1,21 @@
+---
+title: "Annotrace：代理跟踪的步骤级注释的工作台"
+title_en: "Annotrace: A Workbench for Step-Level Annotation of Agent Traces"
+authors: ["Arun Josephraj Arokiaraj", "Chenyi Huang", "Sahan Bulathwela", "Zekun Wu", "Bin Wu"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23284v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+每项关于 LLM 代理失败原因的研究都是从手动标记痕迹开始的，并且每项此类研究都会构建自己的一次性工具。可观察性平台记录代理踪迹，但不提供结构化标签；注释工具标记文本，但没有步骤、委托或工具调用的概念，因此不清楚要标记的最小执行单元应该是什么。 Annotrace 读取六种跟踪格式，包括 OpenTelemetry GenAI、LangSmith 和 Langfuse，并将每次运行转换为有序的嵌套步骤列表。标注者编写自己的标注码本；前沿模型根据自己的痕迹样本提出一个起始集，首先回答，然后准确地询问人类所提出的问题，从而使注释成为人类与人工智能的联合过程。 Annotrace 衡量任意两个注释者...
+
+## English Summary
+
+Every study of why LLM agents fail begins by labelling traces by hand, and every such study builds its own throwaway tool. Observability platforms record agent traces but offer no structured labelling; annotation tools label text but have no notion of a step, a delegation or a tool call, leaving it unclear what the smallest unit of execution to label should be. Annotrace reads six trace formats, including OpenTelemetry GenAI, LangSmith and Langfuse, and turns each run into an ordered, nested list of steps. The annotator writes their own labelling codebook; a frontier model proposes a starting set from a sample of their own traces, answers first, and is asked exactly the questions the human is asked, making annotation a joint human-AI process. Annotrace measures agreement between any two annotators, human or AI. On a multi-agent question-answering corpus it reproduces a previous manual effort's 235 annotation units exactly, and two models labelling the same traces agree 91% of the time at $κ= 0.82$.

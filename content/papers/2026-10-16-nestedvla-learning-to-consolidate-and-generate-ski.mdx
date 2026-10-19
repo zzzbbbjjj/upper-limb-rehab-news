@@ -1,0 +1,21 @@
+---
+title: "NestedVLA：学习巩固和生成视觉-语言-动作模型的技能"
+title_en: "NestedVLA: Learning to Consolidate and Generate Skills for Vision-Language-Action Models"
+authors: ["Guodong Du", "Wanyu Lin"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23271v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉-语言-动作（VLA）模型有望成为通用机器人代理，但整合跨异构任务和环境所学到的技能仍然很困难：训练数据跨平台分散，联合多任务训练受到干扰，模型合并往往会引入参数冲突或需要架构更改。相反，我们提倡一种先独立学习技能，然后事后巩固技能的范式。为此，我们提出了 NestedVLA，它用参数生成代替参数聚合：以目标任务为条件的嵌套超网络，合成与冻结的基础 VLA 组成的任务自适应动作专家参数。特定于任务的压缩VLM残差单独保留。这种公式可以实现灵活的任务条件技能重用，同时减少干扰。在三个 RL 基准（MetaWorld、ManiSkill、CALVIN）中，NestedVLA 比最强的模型合并基...
+
+## English Summary
+
+Vision--Language--Action (VLA) models promise generalist robotic agents, yet consolidating skills learned across heterogeneous tasks and environments remains difficult: training data is fragmented across platforms, joint multi-task training suffers from interference, and model merging tends to introduce parameter conflicts or require architectural changes. We instead advocate a paradigm in which skills are first learned independently and then consolidated post hoc. To this end, we propose NestedVLA, which replaces parameter aggregation with parameter generation: a nested hypernetwork, conditioned on the target task, synthesizes task-adaptive action-expert parameters that compose with a frozen base VLA. Task-specific compressed VLM residuals are retained separately. This formulation enables flexible task-conditioned skill reuse while mitigating interference. Across three RL benchmarks (MetaWorld, ManiSkill, CALVIN), NestedVLA outperforms the strongest model-merging baseline by 41 pp on average, matches per-task fine-tuning within 1 pp on ManiSkill, and substantially closes the gap on CALVIN, pointing toward a storage-efficient route to skill consolidation. Code is available at https://github.com/WanyuGroup/NeurIPS2026-NestedVLA.

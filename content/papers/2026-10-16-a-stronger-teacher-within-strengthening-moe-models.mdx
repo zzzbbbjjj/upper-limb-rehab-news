@@ -1,0 +1,21 @@
+---
+title: "内在更强大的老师：通过政策双向蒸馏强化 MoE 模型"
+title_en: "A Stronger Teacher Within: Strengthening MoE Models via On-Policy Bidirectional Distillation"
+authors: ["Haoyu Chen", "Jun Bai", "Yang Liu", "Jianfei Zhang", "Wenge Rong"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23185v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+具有可验证奖励的强化学习（RLVR）极大地改善了专家混合（MoE）法学硕士，但其结果级别的奖励仅提供稀疏的监督。在策略蒸馏提供了密集的代币级反馈，但需要更强的兼容教师，而在策略自蒸馏则依赖于手工设计的特权信息。我们观察到，MoE 架构本身提供了一种解决这一困境的方法，因为增加每个代币的激活预算会暴露潜在的专家能力，并在模型中产生潜在的更强大的教师。然而，幼稚的扩展会降低性能，因为新联合激活的专家并未针对协同工作进行优化。因此，我们提出了 MoEvolve，一种遵循恢复然后改进策略的双向蒸馏框架：我们首先恢复激活扩展的高 $k$ 模型，并通过利用其额外的活动能力进一步加强它，然后反转蒸馏方向，将...
+
+## English Summary
+
+Reinforcement Learning with Verifiable Rewards (RLVR) has substantially improved Mixture-of-Experts (MoE) LLMs, but its outcome-level rewards provide only sparse supervision. On-Policy Distillation offers dense token-level feedback, yet requires a stronger compatible teacher, while on-policy self-distillation relies on hand-designed privileged information. We observe that the MoE architecture itself offers a way to resolve this dilemma, as increasing the activation budget per token exposes latent expert capacity and yields a potentially stronger teacher within the model. However, naive expansion degrades performance because newly co-activated experts are not optimized to work together. We therefore propose MoEvolve, a bidirectional distillation framework following a recovery-then-improvement strategy: we first restore the activation-expanded high-$k$ model and further strengthen it by exploiting its additional active capacity, then reverse the direction of distillation to transfer the enhanced capabilities back into the original low-$k$ configuration, retaining its inference-time activation budget. Across diverse MoE models and benchmarks, MoEvolve improves the initial models by up to $22.2$ domain-average points and outperforms same-budget RLVR baselines by up to $6.5$ points. Notably, the final low-$k$ models often surpass their activation-expanded teachers.

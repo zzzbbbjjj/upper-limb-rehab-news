@@ -1,0 +1,21 @@
+---
+title: "用于基于低光摄像头的 VRU 检测的立体 LWIR-RGB 自动标记"
+title_en: "Stereo LWIR-RGB Automatic Labeling for Low-Light Camera-Based VRU Detection"
+authors: ["Dimitrios Bouzoulas", "Pyry Jäppinen", "Pejman Habibiroudkenar", "Eerik Alamikkotervo", "Risto Ojala"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.23621v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+弱光条件下的 VRU 检测是在一天中最容易发生碰撞的时间确保 VRU 安全的关键组成部分。目前，由于缺乏大规模数据集和自动标记方法，弱光检测的进展受到限制。大多数自动标记方法使用 RGB 检测作为标记源，在弱光条件下无法复制。为了填补本文中的这一空白，我们提出了一种用于低光 VRU 标记的自动化流程。我们使用 LWIR-RGB 图像对，并从 LWIR 获取标签，因为 VRU 由于体温而与背景不同。与我们之前依赖复杂的硬件设置来对齐两种模式的工作不同，我们使用 LWIR-RGB 立体设置来执行此实验，降低了硬件复杂性和成本，使管道更容易重现。我们在芬兰首都地区收集的数据集上对方法进行端到端评估。...
+
+## English Summary
+
+VRU detection in low-light conditions is a key component in ensuring VRU safety during the most collision prone time of the day. Currently, advances in low-light detection are limited due to the lack of large scale datasets and automated labeling methods. Most autolabeling methods use RGB detections as their labels source, which cannot be replicated in low-light conditions. To fill this gap in this paper we present an automated pipeline for low-light VRU labeling. We use LWIR-RGB image pairs and source our labels from LWIR as VRUs differentiate from the background due to their body temperature. Unlike our previous work that relied on a complex hardware setup to align the two modalities, we perform this experiment using a LWIR-RGB stereo setup, lowering hardware complexity and cost, making the pipeline easier to reproduce. We evaluate method end-to-end on a dataset collected in the capital region of Finland. Models trained on our generated labels beat both off-the-shelf baselines and models fine tuned on a hand labeled subset on F1, mAP@50 and LAMR metrics when tested on a manually labeled dataset, and the result holds for two different LWIR detectors. This shows that low-light VRU autolabeling can be made both accessible and effective without specialized alignment hardware.

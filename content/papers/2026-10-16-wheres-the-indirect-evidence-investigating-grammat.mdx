@@ -1,0 +1,21 @@
+---
+title: "间接证据在哪里？用影响函数研究语法泛化"
+title_en: "Where's the Indirect Evidence? Investigating Grammatical Generalization with Influence Functions"
+authors: ["William Dai", "Zhenghao Herbert Zhou", "Maya Viswanathan", "Robert Frank"]
+date: "2026-10-16"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.22919v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+语言模型可以超越训练语料库来学习语言现象（Patil 等人，2024 年；Misra 和 Mahowald，2024 年），这表明存在驱动学习的间接证据。先前的工作已经推断出间接证据的存在，但没有确定其特征或考虑关于它可能是什么的具体假设。我们探索另一种自下而上的方法来识别间接证据。我们使用影响函数（Koh 和 Liang，2017）来衡量单个训练句子如何影响 BLiMP 中 15 种语法现象的模型预测（Warstadt 等人，2020）。我们使用手工构建的规则过滤掉某种现象的直接证据，并将剩下的 60,000 个最有影响力的句子作为间接证据。这种间接证据极大地影响了学习：没有它的再训练比针对...
+
+## English Summary
+
+Language models generalize beyond their training corpus to learn linguistic phenomena (Patil et al., 2024; Misra and Mahowald, 2024), showing that there exists indirect evidence driving learning. Prior work has inferred that indirect evidence exists without identifying its character or considered specific hypotheses about what it might be. We explore an alternative bottom-up method for identifying indirect evidence. We use influence functions (Koh and Liang, 2017) to measure how individual training sentences affect model predictions in 15 grammatical phenomena from BLiMP (Warstadt et al., 2020). We filter out a phenomenon's direct evidence using hand-constructed rules and take the 60,000 most influential remaining sentences as indirect evidence. This indirect evidence substantially affects learning: retraining without it lowers held-out accuracy more than removing a matched random group for every phenomenon across five models (by a median of 12 points). We characterize the indirect evidence by its similarity to our direct evidence filters: it (partially) meets the filters' structural conditions at a median of 4.7 times the rate of a matched random group. Finally, clustering phenomena by indirect-evidence overlap recovers three of the five BLiMP categories that include multiple phenomena, suggesting that this method can reveal linguistic relationships.
