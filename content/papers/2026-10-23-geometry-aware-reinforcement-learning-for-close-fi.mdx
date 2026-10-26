@@ -1,0 +1,21 @@
+---
+title: "用于紧密贴合的可穿戴设备插入的几何感知强化学习"
+title_en: "Geometry-Aware Reinforcement Learning for Close-Fitting Wearable Insertion"
+authors: ["Takuma Tsukakoshi", "Elle Miller", "Tamon Miyake", "Namiko Saito", "Yushi Wang", "Shigeki Sugano", "Tetsuya Ogata", "Sethu Vijayakumar"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32143v1"
+doi: ""
+tags: ["手部康复", "可穿戴", "上肢康复"]
+tags_en: ["hand rehabilitation", "wearable", "upper limb"]
+keywords: ["手部康复", "可穿戴", "上肢康复"]
+keywords_en: ["hand rehabilitation", "wearable", "upper limb"]
+---
+
+## 中文摘要
+
+由于狭窄的开口和铰接的身体部位，机器人辅助穿衣尤其具有挑战性。即使身体部位和衣服开口之间的相对姿势存在很小的误差，也可能导致卡住、错过插入或不完整的穿着。为了解决这些挑战，我们将着装制定为几何感知插入问题，表示身体部位和对象开口之间与任务相关的空间关系，而不是依赖于完全可变形对象状态。基于这个公式，我们提出了一个强化学习（RL）框架，该框架结合了分阶段课程，逐步指导从粗略对齐到插入和最终放置的策略，以及手指插入软门，提供对单个手指插入进度的持续反馈，并有助于抑制过早插入。我们通过组件消融、初始手部姿势的系统变化以及在真实机器人系统上学习策略的闭环执行来评估刚性和可变形手镯修整任务的框架。在训练...
+
+## English Summary
+
+Robot-assisted dressing is particularly challenging due to narrow openings and articulated body parts. Even small errors in the relative pose between the body part and garment opening can cause snagging, missed insertion, or incomplete dressing. To address these challenges, we formulate dressing as a geometry-aware insertion problem that represents task-relevant spatial relationships between the body part and object opening, rather than relying on the full deformable-object state. Based on this formulation, we propose a Reinforcement Learning (RL) framework combining a staged curriculum, which progressively guides the policy from coarse alignment to insertion and final placement, with a finger-wise insertion soft gate that provides continuous feedback on individual finger insertion progress and helps suppress premature insertion. We evaluate the framework on rigid and deformable bracelet dressing tasks through component ablations, systematic variations in the initial hand pose, and closed-loop execution of the learned policies on a real robotic system. On the post-training deformable evaluation, the full method reaches 84.7 +- 1.2% success. The insertion gate accounts for the largest gain, and adding the curriculum on top of that gate reaches the top score. On a mannequin hand the same full policy succeeds on 15/20 real-robot trials.

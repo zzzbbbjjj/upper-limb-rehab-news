@@ -1,0 +1,21 @@
+---
+title: "正则化强化学习改进了模拟到真实的转换"
+title_en: "Regularised RL improves sim-to-real transfer"
+authors: ["Danilo Vucetic", "Mohamad H. Danesh", "Florence Clerc", "Hsiu-Chin Lin", "Jonathan Tremblay"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32855v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+正则化强化学习（RL）具有经过证明的稳健性保证，可以简化策略从模拟到机器人的转移，即从模拟到真实。然而，像近端策略优化（PPO）这样的弱正则化算法仍然是模拟到真实管道中事实上的选择，而正则化对于传输的实际好处仍然没有得到很好的描述。在这项工作中，我们研究了常用 RL 算法的模拟到真实性能，旨在表征正则化对机器人性能的影响。为此，我们推导了 Soft MellowMax Actor-Critic (SMM-AC)，这是一种基于 Soft MellowMax 值函数的新型正则化 RL 算法，具有很强的鲁棒性保证。在 MuJoCo 连续控制基准上，SMM-AC 与 Soft Actor-Critic...
+
+## English Summary
+
+Regularised reinforcement learning (RL) has provable robustness guarantees that should ease the transfer of policies from simulation to robots, known as sim-to-real. Yet, weakly regularised algorithms like Proximal Policy Optimisation (PPO) remain the de facto choice in sim-to-real pipelines, while the practical benefits of regularisation for transfer remain poorly characterised. In this work, we study the sim-to-real performance of commonly used RL algorithms, with the aim of characterising the effects of regularisation on robotic performance. To that end, we derive Soft MellowMax Actor-Critic (SMM-AC), a novel regularised RL algorithm based on the soft mellowmax value function, which carries strong robustness guarantees. On MuJoCo continuous control benchmarks, SMM-AC is competitive with baselines like Soft Actor-Critic (SAC). On real robots, SMM-AC achieves higher return, while exhibiting greater robustness to perturbations in observations, the environment, and dynamics than baselines. Together, these results demonstrate that regularised RL improves real-world policy deployment through better robustness to the sim-to-real gap, and changing real-world conditions.

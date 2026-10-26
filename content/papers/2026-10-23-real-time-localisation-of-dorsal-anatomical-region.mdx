@@ -1,0 +1,21 @@
+---
+title: "利用 RGB-D 实时定位商业转盘奶牛的背部解剖区域"
+title_en: "Real-Time Localisation of Dorsal Anatomical Regions on Dairy Cows in Commercial Rotary Parlours from RGB-D"
+authors: ["Vineet Prasad", "Shiron Melvin", "Sheikh Azid", "Hai Wang"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32174v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+奶牛的自动监测越来越多地测量身体的某一部位，例如臀部的温度或背部的姿势，但该区域本身通常是手动放置的。现有系统要么对奶牛进行整体评分，要么检测稀疏关键点（通常在受控走道中），但都无法产生在拥挤的商业旋转平台上进行此类测量所需的指定区域掩模。我们提出了一个感知前端，可以在商业旋转客厅的整个 RGB-D 框架上一次向前传递时找到目标牛、十个骨骼标志和四个命名的背部区域（马肩隆、背部、臀部和尾头）。两个编码器，一个用于颜色，一个用于深度，后期融合并共享一个具有三个头的解码器。在我们基于公共旋转室 RGB-D 图像（538 个带注释的帧，牛不相交测试集）构建的解剖区域数据集上，网络的地标达到 PCK@...
+
+## English Summary
+
+Automated monitoring of dairy cows increasingly measures one part of the body, such as the rump for temperature or the back for posture, yet the region itself is usually placed by hand. Existing systems either score the cow as a whole or detect sparse keypoints, often in controlled walkways, and neither yields the named region masks that such measurements need on a crowded commercial rotary platform. We present a perception front end that finds the target cow, ten bony landmarks and four named dorsal regions (withers, back, rump and tail-head) in a single forward pass over a whole RGB-D frame from a commercial rotary parlour. Two encoders, one for colour and one for depth, are fused late and share one decoder with three heads. On an anatomical region dataset that we built on public rotary-parlour RGB-D images (538 annotated frames, cow-disjoint test set), the network reaches PCK@10 0.905 for landmarks and region IoU 0.70 to 0.91, and runs end to end in 26.4 ms per frame on a T4 GPU, against an 11 fps camera. Dense region supervision is what makes the landmarks accurate: removing the region head costs 0.15 PCK@10. Agreement between the two heads flags unreliable frames without labels. On our own rig at the largest dairy farm in Western Australia, the model transfers with ten labelled frames (PCK@10 0.84), and its regions are carried through depth into a radiometric thermal camera, giving one repeatable temperature per region and cow.

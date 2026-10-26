@@ -1,0 +1,21 @@
+---
+title: "Consommé：用于分割推理的条件令牌合并"
+title_en: "Consommé: Conditioned Token Merging for Split Inference"
+authors: ["Man Ngo", "Jan S. Rellermeyer"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32794v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+分割推理将 Vision Transformer 在资源受限的边缘设备和服务器之间进行分区。然而，通过通信通道传输中间令牌的成本很高。将经过微调的主干网部署到每个端点也变得昂贵。我们研究了冻结骨干网下分割推理的令牌缩减，其中仅运送了一个小型适配器。我们观察到 CLS 令牌扮演着双重角色：它充当接收者进行分类所需的全局摘要，并充当要保留哪些补丁的信号。我们提出了Consommé，一种利用这两种特性的方法。在那里，信息瓶颈将 CLS 令牌压缩成紧凑的潜在变量，该潜在变量代替完整的 CLS 令牌进行传输，并通过软分配将学习补丁门合并到恰好 $k$ 令牌中。它一步即可达到任何预算，从而摆脱了二分匹配 ...
+
+## English Summary
+
+Split inference partitions a Vision Transformer between a resource-constrained edge device and a server. However, transmitting intermediate tokens across the communication channel is costly. Deploying fine-tuned backbones to every endpoint becomes expensive as well. We study token reduction for split inference under a frozen backbone, where only a small adapter is shipped. We observe that the CLS token plays a dual role: it acts as the global summary the receiver needs for classification, and it serves as a signal on which patches to keep. We propose Consommé, a method utilizing both characteristics. There, an information bottleneck compresses the CLS token into a compact latent which is transmitted in place of the full CLS token and conditions a learned patch gate merging patches into exactly $k$ tokens via soft assignment. It reaches any budget in a single step, thus escaping the per-layer cap of bipartite matching (BPM). On DeiT-S/T, it leads all methods at aggressive token budgets and remains operable at shallow splits where BPM cannot operate, while matching fine-tuned methods at gentle budgets at a fraction of their deployment cost.

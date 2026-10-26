@@ -1,0 +1,21 @@
+---
+title: "知道何时停止：编码代理中的证据与行动差距"
+title_en: "Knowing When to Stop: The Evidence-Action Gap in Coding Agents"
+authors: ["Tianyu Chen", "Xinran Zhao", "Vijay Viswanathan", "Shoubin Yu", "Mingyuan Zhou", "Tongshuang Wu"]
+date: "2026-10-22"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.31895v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+编码代理经过训练来完成任务，即使环境无法完成，他们也会继续尝试。只有外部帮助才能恢复进展的证据通常会在几步之内出现，但代理人很少采取行动：他们过度坚持，尝试不受欢迎的解决方法，并声称记录不支持成功——这种现象我们称之为证据与行动差距。为了测量它，我们引入了 ImpasseBench，它将 12 个现实环境阻碍因素注入到其他可解决的修复任务中，并在每个轨迹中标记收集到的证据变得足够的步骤。与该步骤相关的评分动作将适当的努力与过度坚持和过早的切换区分开来。在八个前沿模型和 19,371 个轨迹中，我们发现几乎每次需要外部帮助的运行都收集了足够的证据，但三分之一的运行仍然耗尽了他们的预算，并且我们检...
+
+## English Summary
+
+Coding agents are trained to complete tasks, and they keep trying even when the environment makes completion impossible. The evidence that only outside help can restore progress usually appears within a few steps, yet agents rarely act on it: they over-persist, attempt undesired workarounds, and claim success the record does not support -- a phenomenon we call evidence-action gap. To measure it, we introduce ImpasseBench, which injects twelve realistic environment blockers into otherwise solvable repair tasks and marks, in each trajectory, the step at which the collected evidence becomes sufficient. Scoring actions relative to that step separates appropriate effort from over-persistence and premature handoff. Across eight frontier models and 19,371 trajectories, we find that nearly every run that needs outside help collects sufficient evidence, yet a third still exhaust their budget, and every unsafe request we detect comes after that point. Fortunately, an escalation tool, or an external monitor for models that ignore the tool, already guards against much of this behavior: the tool cuts budget exhaustion from 34.0% to 6.7%, and the monitor nearly triples task success after environment restoration. Even then, a fired escalation is not yet a useful handoff: tickets reliably name the blocker but often omit the agent's own progress and verification status. Taken together, we argue that knowing when to stop therefore needs explicit support, both in the tool that lets an agent hand off and in the report it leaves behind.

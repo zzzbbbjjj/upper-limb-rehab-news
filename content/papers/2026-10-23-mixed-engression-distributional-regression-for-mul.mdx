@@ -1,0 +1,21 @@
+---
+title: "混合参与：多元混合类型响应的分布回归"
+title_en: "Mixed Engression: Distributional Regression for Multivariate Mixed-Type Responses"
+authors: ["Seyong Hwang", "Kean Ming Tan", "Ji Zhu"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32850v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+估计具有连续和二元分量的多元响应的条件分布需要捕获它们的依赖性，尊重它们的不同支持，并适应潜在的重尾连续结果。我们提出混合参与，它使用由有界差异引起的能量损失来拟合连续生成器，然后对其软二进制输出进行阈值处理以生成混合响应样本。由于差异是有限的，因此在没有响应时刻假设的情况下，总体目标仍然得到明确定义。然而，我们表明，完整响应向量的完整响应能量距离在阈值化之前可能趋于零，但随着响应维度的增长，之后仍然远离零。整个二元向量上的单独能量损失捕获了全响应比较所掩盖的差异并控制阈值的效果。因此，发电机采用结合了全响应和二元组件的增强能量损失进行安装。在结构函数的组合平滑性和统一的阈值裕度条件下，我们推...
+
+## English Summary
+
+Estimating the conditional distribution of multivariate responses with continuous and binary components requires capturing their dependence, respecting their different supports, and accommodating potentially heavy-tailed continuous outcomes. We propose mixed engression, which fits a continuous generator using energy losses induced by bounded discrepancies and then thresholds its soft binary outputs to produce mixed-response samples. Because the discrepancies are bounded, the population objective remains well defined without response-moment assumptions. However, we show that the full-response energy distance for the complete response vector can tend to zero before thresholding yet remain bounded away from zero afterward as response dimensions grow. A separate energy loss on the entire binary vector captures discrepancies obscured by the full-response comparison and controls the effect of thresholding. The generator is therefore fitted using an augmented energy loss that combines the full-response and binary components. Under compositional smoothness of the structural functions and a uniform threshold-margin condition, we derive nonasymptotic bounds on the final sampler's full-response error for sparse ReLU estimators of models driven by Gaussian or Student-t structural noise, yielding polynomial convergence rates up to logarithmic factors. We also establish consistency when the covariate, response, and noise dimensions grow under suitable conditions. Simulations show improved accuracy relative to the comparison methods under the full-response energy distance, including in heavy-tailed settings. Moderate binary augmentation substantially improves binary-distribution accuracy while largely preserving full-response accuracy.

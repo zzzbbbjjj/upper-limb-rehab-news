@@ -1,0 +1,21 @@
+---
+title: "用于模拟驾驶员交互的经验校准微分游戏"
+title_en: "Empirically Calibrated Differential Games for Simulating Driver Interactions"
+authors: ["Amirmohammad Khakpour", "Nachuan Li", "Pedram Beigi", " Yu", " Nie"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32276v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+博弈论模型可以在没有手写优先级规则的情况下解决车辆交互问题，但它们在校准后是否能够描述人类驾驶员却很少经过测试。本研究制定了城市十字路口车辆交互的一般和微分博弈，根据观察到的驾驶对其进行校准，并根据未用于校准的数据对其进行评估。每辆车都将速度跟踪、遵守基于地图的车道路线、控制工作、基于智能驾驶员模型的间隙保持、预测冲突项和接触障碍结合在一起，同时感知其他车辆有延迟，从而最大限度地降低成本。该游戏采用反馈迭代线性二次算法进行求解，并通过贝叶斯优化对华盛顿特区四个十字路口记录的轨迹进行贝叶斯优化来校准每辆车的 10 个行为参数。校准后的游戏再现了 819 辆车的轨迹，平均位置误差为 1.00 m。...
+
+## English Summary
+
+Game-theoretic models can resolve vehicle interactions without hand-written priority rules, but whether they describe human drivers once calibrated has rarely been tested. This study formulates a general-sum differential game of vehicle interactions at urban intersections, calibrates it to observed driving, and evaluates it on data not used for calibration. Each vehicle minimizes a cost that combines speed tracking, adherence to a map-derived lane route, control effort, gap keeping based on the intelligent driver model, a predictive conflict term, and a contact barrier, while perceiving the other vehicles with a delay. The game is solved with a feedback iterative linear-quadratic algorithm, and ten behavioral parameters per vehicle are calibrated by Bayesian optimization on trajectories recorded at four intersections in Washington, D.C. The calibrated game reproduces the trajectories of 819 vehicles with a mean position error of 1.00 m. When only each vehicle's route is known, as in a simulator, it is the most accurate of the compared models on 96 held-out vehicles (7.42 m), and ten-fold cross-validation shows that it is significantly more accurate than calibrated SUMO (by 3.61 m), an inverse reinforcement learning model (by 0.93 m), and independent and cooperative variants of the same model (by 0.33 and 0.32 m). The solutions, computed in 2.1 s for a typical interaction, are verified approximate equilibria. Finally, the conflict and steering weights, which the data do not identify, can be set from safety and comfort targets; together with a stiffer contact barrier, this removes the collisions that otherwise occur in 43% of tight closed-loop conflicts.

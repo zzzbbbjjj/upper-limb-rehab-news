@@ -1,0 +1,21 @@
+---
+title: "自然语言到 Nav2：基于 Costmap 的导航的运营策略"
+title_en: "Natural-Language to Nav2: Operational Policies for Costmap-Based Navigation"
+authors: ["Jiyeong Chae", "Hyunkyo Seo", "Heonjae Lee", "Kyung-Joon Park"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32633v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+自主移动机器人支持仓库和工业设施中的物料运输，其中导航必须适应不断变化的操作条件。传感器观测结果揭示了物理障碍，但其本身并不指定临时访问规则、路线偏好或操作员已知的例外情况。本文提出了一个自然语言策略接口，将这些知识引入 ROS 2 Nav2。本地大语言模型将指令转换为指定目的地、空间约束以及时间或事件条件的 JSON 策略。确定性检查控制任务接受，三个成本图适配器将接受的策略投影到现有的导航堆栈中，而无需更改其规划器或控制器。在 150 个研究人员编写的英语命令中，四个本地模型产生 107-142 个正确接受的策略，而基于规则的解析器则产生 44 个正确接受的策略，每个模型有 3-20 个不...
+
+## English Summary
+
+Autonomous mobile robots support material transport in warehouses and industrial facilities, where navigation must adapt to changing operating conditions. Sensor observations reveal physical obstacles, but do not by themselves specify temporary access rules, route preferences, or exceptions known to operators. This paper presents a natural-language policy interface that brings this knowledge into ROS 2 Nav2. A local large language model converts instructions into JSON policies specifying destinations, spatial constraints, and temporal or event conditions. Deterministic checks govern mission acceptance, and three costmap adapters project accepted policies into the existing navigation stack without changing its planner or controller. On 150 researcher-authored English commands, four local models produce 107-142 correct accepted policies, compared with 44 for a rule-based parser, with 3-20 incorrect acceptances per model. Fault injection records rejection of eight endpoint/JSON faults and 29 validator-stage faults. Navigation experiments use correct task policies to evaluate keepouts, zone costs, person-dependent regions, and event-conditioned passage in simulation and on a TurtleBot3. For Tasks 1-3, mean travel times are 18.4-24.5% lower in simulation and 23.1-35.0% lower on the physical testbed than with the baseline lacking those policies. A native KeepoutFilter comparison and two-robot demonstrations examine basic keepout behavior and shared policy projection. The interface connects operator instructions to explicit navigation policies while retaining Nav2's planning and control components.

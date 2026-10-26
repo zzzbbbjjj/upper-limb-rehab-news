@@ -1,0 +1,21 @@
+---
+title: "查询记住什么：查询抽象控制古典阿拉伯诗歌的词汇和密集检索"
+title_en: "What the Query Remembers: Query Abstraction Governs Lexical and Dense Retrieval of Classical Arabic Poetry"
+authors: ["Omar Farouk Zouak", "Selma Mani", "Larbi Said Chikh", "Raid Abderrezak Ouahioune"]
+date: "2026-10-22"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.31821v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+诗歌档案的搜索效果取决于用户仍然记得什么，而不仅仅是模型理解的内容。我们针对古典阿拉伯诗歌展示了这一点，通过两个语料库、三种索引模式和两种评估协议对九个密集编码器和 BM25 进行了基准测试。哪个检索器获胜取决于查询仍然包含多少一首诗的措辞。在舌尖查询上，BM25 领先于所有密集编码器，包括 8B 最先进的模型（Recall@5 为 0.746 与 0.717）；在抽象查询中，它下降到十分之八（0.392 vs. 0.748）。编辑相同查询的措辞表明，这个排名很大程度上反映了查询的组成：添加一首记忆的半诗句使 BM25 提高了 38 分，手工重写引用的单词使 BM25 与 8B 编码器处于同一...
+
+## English Summary
+
+How well a poetry archive can be searched depends on what the user still remembers, not only on what the model understands. We show this for Classical Arabic poetry, benchmarking nine dense encoders and BM25 over two corpora, three indexing modes and two evaluation protocols. Which retriever wins is governed by how much of a poem's wording the query still carries. On tip-of-the-tongue queries BM25 leads every dense encoder, including an 8B state-of-the-art model (0.746 vs. 0.717 Recall@5); on abstract queries it falls to eighth out of ten (0.392 vs. 0.748). Editing the wording of the same queries shows that this ranking largely reflects query composition: adding one remembered half-verse raises BM25 by 38 points, rewriting the quoted words by hand leaves BM25 level with the 8B encoder, and BM25's sensitivity to remembered wording is significantly steeper than that of the strongest dense encoder. The same axis controls explanation augmentation, whose effect swings from +37 to -39 points. The mechanism splits by system type: lexical containment predicts BM25's behaviour, while embedding proximity predicts dense encoders. Finally, the field's two standard protocols, known-item retrieval and thematic relevance, dissociate on the same systems, a result reproduced by two blind human annotators and by two open-weights judges, one of them under a rubric with no literal-match criterion. A benchmark that reports one protocol, or one query register, can give a materially wrong picture. Code and data are available at https://github.com/Ellzo/what-the-query-remembers.

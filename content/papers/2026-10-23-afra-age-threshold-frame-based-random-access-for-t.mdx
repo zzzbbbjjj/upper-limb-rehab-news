@@ -1,0 +1,21 @@
+---
+title: "AFRA：基于年龄阈值帧的随机访问，用于多代理系统中的及时通信"
+title_en: "AFRA: Age-Threshold Frame-Based Random Access for Timely Communication in Multi-Agent Systems"
+authors: ["Jiedan Tan", "Fang Liu"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32785v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+及时的状态更新对于多代理系统（例如交换状态信息的移动机器人团队）中的协调和监控至关重要。当代理共享无线信道时，分布式接入方案的冲突和缓慢收敛会降低有限操作周期内的信息新鲜度。本文提出了基于年龄阈值帧的随机访问（AFRA），这是一种用于最小化信息年龄（AoI）的分布式媒体访问控制协议。一旦其寿命达到阈值，代理就会开始强制传输本地帧，如果不成功，则在统一选择的剩余时隙上进行进一步尝试。每次尝试都会携带新生成的更新。 AFRA 仅需要本地状态和确认反馈，具有共享时隙边界但独立定时的本地帧。我们证明，当帧长度 $L$ 和年龄阈值 $T$ 满足 $L\ge T>N​​\ge2$ 时，从任何合法初始状态到...
+
+## English Summary
+
+Timely state updates are essential for coordination and monitoring in multi-agent systems, such as teams of mobile robots exchanging state information. When agents share a wireless channel, collisions and slow convergence of distributed access schemes can degrade information freshness over finite operating periods. This paper proposes age-threshold frame-based random access (AFRA), a distributed medium access control protocol for minimizing age of information (AoI). Once its age reaches a threshold, an agent starts a local frame with a mandatory transmission and, if unsuccessful, makes one further attempt at a uniformly selected remaining slot. Each attempt carries a freshly generated update. AFRA requires only local state and acknowledgment feedback, with shared slot boundaries but independently timed local frames. We prove almost-sure convergence from any legal initial state to collision-free periodic operation when the frame length $L$ and age threshold $T$ satisfy $L\ge T&gt;N\ge2$, where $N$ is the number of agents. We also derive closed-form expressions for steady-state throughput, average AoI, and average peak AoI. Simulations demonstrate that AFRA combines rapid convergence at small age thresholds with lower window-averaged AoI than the existing age-aware random access schemes evaluated in this study.

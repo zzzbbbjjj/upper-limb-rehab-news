@@ -1,0 +1,21 @@
+---
+title: "具有行动感知量化的预测性长期进展建模"
+title_en: "Predictive Long-Horizon Progress Modeling with Action-Aware Quantification"
+authors: ["Tianchi Xu", "Yalin Zheng", "Yangxin Zhu", "Ruonan Ren", "Zheng Fu", "Yunlong Wang", "Yuanxin Zhong"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32776v1"
+doi: ""
+tags: ["TSA"]
+tags_en: ["twisted-string actuator"]
+keywords: ["TSA"]
+keywords_en: ["twisted-string actuator"]
+---
+
+## 中文摘要
+
+定量和密集的任务进度反馈对于跨数据管理、政策评估和强化学习的机器人操作至关重要。现有的进度注释通常依赖于源自主观手动判断的稀疏关键帧标记，限制了它们的可扩展性和跨任务一致性，特别是在长范围操作中。为了克服这些挑战，我们提出了行动感知量化，这是一种统一的进度规范，通过视觉语言模型（VLM）将长期轨迹分解为对象级子任务，并分配加权行动信用以捕获细粒度的执行动态。使用 VLM 自动标记和人工校准，我们构建了一个 800 多个小时的训练视频数据集和 LOOM，这是一个包含 19,618 个人工校准评估帧的长期进度基准。为了对这些密集的进展动态进行建模，我们引入了 NimCritic，这是一种通过联合视...
+
+## English Summary
+
+Quantitative and dense task progress feedback is essential for robotic manipulation across data curation, policy evaluation, and reinforcement learning. Existing progress annotations often rely on sparse keyframe markings derived from subjective manual judgments, limiting their scalability and cross-task consistency, particularly in long-horizon manipulation. To overcome these challenges, we propose action-aware quantification, a unified progress specification that decomposes long-horizon trajectories into object-level subtasks via a vision-language model (VLM) and assigns weighted action credits to capture fine-grained execution dynamics. Using VLM auto-labeling and human calibration, we construct an 800+ hour training video dataset and LOOM, a long-horizon progress benchmark containing 19,618 human-calibrated evaluation frames. To model these dense progress dynamics, we introduce NimCritic, a predictive progress critic trained via Joint Video-Progress Learning. We further incorporate Historical Progress Perturbation to mitigate sequential drift, and design a contrastive Video-Progress Alignment objective that bridges asymmetric expert streams by mutually grounding intermediate visual dynamics and denoised progress trajectories. NimCritic matches or outperforms state-of-the-art process reward models (PRMs) on the established Video Progress Benchmark (VPB) and LOOM, surpassing GVL (GPT-6-Sol) on VPB by about 65% in terminal success accuracy (TSA). On the large-scale RoboArena policy evaluation benchmark, it also retrieves human-selected successful rollouts with about 97% overall recall. These results establish action-aware quantification as a scalable foundation for dense progress feedback in robotic manipulation.

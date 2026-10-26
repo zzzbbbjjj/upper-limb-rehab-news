@@ -1,0 +1,21 @@
+---
+title: "全身运动引导参考生成，用于不确定性感知合规协助"
+title_en: "Whole-Body Motion Guided Reference Generation for Uncertainty-Aware Compliant Assistance"
+authors: ["Muyuan Ma", "Long Cheng", "Lijun Han", "Haotian Zhai", "Xinpan Meng", "Xiuze Xia", "Houcheng Li", "Zeyu Liu"]
+date: "2026-10-22"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.31302v1"
+doi: ""
+tags: ["外骨骼"]
+tags_en: ["exoskeleton"]
+keywords: ["外骨骼"]
+keywords_en: ["exoskeleton"]
+---
+
+## 中文摘要
+
+外骨骼在增强人类身体能力方面显示出巨大潜力，但由于人类运动模式和交互要求在实践中存在很大差异，因此产生可靠的帮助仍然具有挑战性。为了解决这个问题，提出了一种双环辅助策略，将多模态外骨骼轨迹生成与可变导纳控制耦合起来，其中轨迹方差连接外环生成器和内环控制器。生成器通过去噪来合成未来的外骨骼轨迹，主要使用人体全身运动和外骨骼本体感觉，并以任务描述作为辅助语义线索。为了减少跨模态表示不匹配，引入了三阶段训练流程来逐步优化人体运动编码器、外骨骼本体感觉编码器和轨迹生成器。在内循环中，从生成器中采样多个未来轨迹以估计轨迹均值和方差。均值用作控制参考，而方差为预测可靠性提供不确定性度量。该措施被进一步纳入...
+
+## English Summary
+
+Exoskeletons have shown great potential for augmenting human physical capabilities, yet generating reliable assistance remains challenging because human motion patterns and interaction requirements vary substantially in practice. To address this problem, a dual-loop assistance strategy is proposed to couple multimodal exoskeleton trajectory generation with variable admittance control, where trajectory variance links the outer-loop generator and the inner-loop controller. The generator synthesizes future exoskeleton trajectories through denoising, primarily using whole-body human motion and exoskeleton proprioception, with task descriptions as auxiliary semantic cues. To reduce cross-modal representation mismatch, a three-stage training pipeline is introduced to progressively optimize the human motion encoder, the exoskeleton proprioception encoder, and the trajectory generator. In the inner loop, multiple future trajectories are sampled from the generator to estimate the trajectory mean and variance. The mean is used as the control reference, while the variance provides an uncertainty measure for prediction reliability. This measure is further incorporated into a stiffness regulation law, enabling compliant assistance with input-to-state stability under bounded lumped interaction input. Experimental results demonstrate that the proposed method significantly reduces muscle activation levels compared with standard baselines, while also decreasing users' metabolic energy expenditure relative to the unassisted condition.

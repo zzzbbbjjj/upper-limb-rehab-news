@@ -1,0 +1,21 @@
+---
+title: "通过物理信息高斯过程对热流变简单材料进行多温度线性调频流变测量的时间-温度叠加"
+title_en: "Time-temperature superposition from multi-temperature chirp rheometry of thermorheologically simple materials via physics-informed Gaussian processes"
+authors: ["Isaac Y. Miranda-Valdez", "Kourosh Mobredi", "Juha Koivisto", "Mikko J. Alava"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32895v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+从瞬态响应数据推断本构定律是软凝聚态物理中的一个中心反问题，特别是当相关弛豫谱超出单个实验的时间窗口时。时间-温度叠加 (TTS) 通过允许温度重新调整特征弛豫时间而不改变弛豫谱的基本形状，从而限制了线性粘弹性区域中热流变简单材料的这个问题。我们将此约束纳入基于物理的机器学习框架中，通过线性调频流变测量实现时间分辨机械光谱。我们将紧凑分数粘弹性模型编码为源自玻尔兹曼叠加原理的因果卷积特征，并使用稀疏变分高斯过程回归联合拟合多温度线性调频记录。该模型直接从线性粘弹性区域中测量的时域应力应变信号推断水平位移因子、本构参数和观测噪声尺度，无需首先提取频域谱或手动移动单独的曲线。对于合成分数麦克斯韦数...
+
+## English Summary
+
+Inferring constitutive laws from transient response data is a central inverse problem in soft condensed-matter physics, particularly when the relevant relaxation spectrum extends beyond the time window of a single experiment. Time-temperature superposition (TTS) constrains this problem for thermorheologically simple materials in the linear viscoelastic regime by allowing temperature to rescale the characteristic relaxation time without changing the underlying shape of the relaxation spectrum. We incorporate this constraint into a physics-informed machine-learning framework for time-resolved mechanical spectroscopy via chirp rheometry. We encode compact fractional viscoelastic models as causal convolutional features derived from the Boltzmann superposition principle, and we jointly fit multi-temperature chirp records using sparse variational Gaussian process regression. The model infers horizontal shift factors, constitutive parameters, and an observational-noise scale directly from time-domain stress-strain signals measured in the linear viscoelastic regime, without first extracting frequency-domain spectra or manually shifting separate curves. For synthetic Fractional Maxwell data, the method recovers the generating constitutive law from a prescribed model library and latent shifts over stress-noise levels from 3% to 25%. Applied to a DGEBA-IPDA epoxy dataset spanning the glass-transition regime, the pooled likelihood distinguishes competing fractional rheology models using the Bayesian information criterion. These results recast TTS master-curve construction as probabilistic inference over latent time rescaling and linear viscoelasticity, while also identifying limitations, such as homoscedastic noise and weakly informative spectral regimes.

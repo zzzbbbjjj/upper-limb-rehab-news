@@ -1,0 +1,21 @@
+---
+title: "运行时 BiDi 结构验证可捕获可访问性、可操作性和逻辑属性检查遗漏的从右到左布局缺陷"
+title_en: "Runtime BiDi Structural Verification Catches Right-to-Left Layout Defects that Accessibility, Actionability, and Logical-Property Linting Miss"
+authors: ["Karan Yadav"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32934v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb"]
+---
+
+## 中文摘要
+
+当使用物理方向 CSS（margin-left、border-left、text-align:left）编写的界面在 dir="rtl" 下呈现而不进行镜像时，会出现双向（从右到左、RTL）布局缺陷。可访问性引擎（axe-core）、可操作性引擎（Playwright），甚至 Stylelint 当前的核心逻辑属性规则都无法定位这些缺陷。我们提出了运行时结构不变量——计算样式和几何的零黄金模式，以及双向保守差分模式——在无头浏览器中捕获它们。在根据 Bootstrap 和 Material Components Web 中的过时修复提交重建的 14 个真实 RTL 错误的保留基准中，检测器恢复...
+
+## English Summary
+
+Bidirectional (right-to-left, RTL) layout defects arise when interfaces authored with physical directional CSS (margin-left, border-left, text-align:left) are rendered under dir="rtl" without being mirrored. Accessibility engines (axe-core), actionability engines (Playwright), and even Stylelint's current core logical-property rule fail to localise these defects. We present runtime structural invariants -- a zero-golden mode over computed style and geometry, and a bidi-conservative differential mode -- that catch them in a headless browser. On a held-out benchmark of 14 real RTL bugs reconstructed from dated fix commits in Bootstrap and Material Components Web, the detector recovers 13/14 (2 via zero-golden, 11 via the differential mode), with no false alarm on any patched version; on the actual committed historical bootstrap.rtl.css it catches 1 of 2 attempted. It reports 0 false positives on 16 negative LTR-island cases and, in both modes, on 43 unmodified real components across four design systems and three RTL architectures (rule-of-three 95% upper bound &lt;= 7%), and it surfaced a real directional defect in the current Bulma 1.0.4. By contrast, Stylelint's core rule emits an identical 1744 warnings on Bootstrap's LTR and correct-RTL builds, pseudo-localisation detects none of the mirroring bugs, and a naive pixel mirror-and-diff reaches only F1 0.87 with a test-set-tuned threshold. The two modes are complementary: zero-golden is the sole detector of the decoration/styling-asymmetry class (5/6) but false-flags the correct logical border-inline-end, while the differential detects none of that class yet never false-alarms and is empirically exact on the block-level inset/margin class. We scope this paper to detection; repair is future work.

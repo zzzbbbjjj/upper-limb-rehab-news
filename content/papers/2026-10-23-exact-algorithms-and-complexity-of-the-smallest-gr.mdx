@@ -1,0 +1,21 @@
+---
+title: "最小语法问题的精确算法和复杂性"
+title_en: "Exact Algorithms and Complexity of the Smallest Grammar Problem"
+authors: ["Xiangle Chen"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32298v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+最小语法问题（SGP）要求生成给定字符串的最小直线语法，其中大小是右侧的总长度。规则可以嵌套，因此重复片段的局部最优选择不需要组合成最优语法。我们证明，在最佳语法中，我们可以选择每个辅助非终结符的展开的出现，使得这些间隔是成对不相交的。因此，可以从输入的分区中读取字典，从而将字典的选择与规则的解析解耦。使用此属性以及对长度为 2 的规则的引用的限制，我们获得了在 $O^*(1.8723^n)$ 时间和 $O(n)$ 个单词空间中运行的精确算法，改进了 Casel 等人的 $O^*(3^n)$ 限制。对于一般语法。对于字母表大小 $σ$ 和 $R=\log_σn$，我们给出 $2^{O((n/R...
+
+## English Summary
+
+The Smallest Grammar Problem (SGP) asks for a smallest straight-line grammar generating a given string, where size is the total length of the right-hand sides. Rules may be nested, so locally optimal choices of repeated fragments need not combine into an optimal grammar. We show that in an optimal grammar one can choose an occurrence of the expansion of each auxiliary nonterminal such that these intervals are pairwise disjoint. Hence the dictionary can be read off from a partition of the input, decoupling the choice of the dictionary from the parsing of rules. Using this property together with a bound on references to rules of length two, we obtain an exact algorithm running in $O^*(1.8723^n)$ time and $O(n)$ words of space, improving the $O^*(3^n)$ bound of Casel et al. for general grammars. For alphabet size $σ$ and $R=\log_σn$, we give a $2^{O((n/R)\log(R+1))}$-time algorithm, which is subexponential for fixed alphabets. Conversely, using an anchor-based projection from encoded grammars back to source grammars, we prove that SGP is NP-complete over a binary alphabet, answering a question of Casel et al., and construct instance families of tunable alphabet size on which no $2^{o(n/R)}n^{O(1)}$-time algorithm exists under ETH. Finally, for every $c&gt;1$ we give a constant-degree integer polynomial formulation of SGP with $O(c^n)$ variables. By the barrier theorem of Belova, Golovnev, Kulikov, Mihajlin, and Sharipov, a proof that SGP is $λ^n$-SETH-hard under their deterministic fine-grained reductions would imply new lower bounds for Boolean series-parallel circuits or for arithmetic circuits.

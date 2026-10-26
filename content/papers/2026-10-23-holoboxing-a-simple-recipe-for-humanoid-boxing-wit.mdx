@@ -1,0 +1,21 @@
+---
+title: "HoloBoxing：7 分钟单 GPU 训练的人形拳击简单秘诀"
+title_en: "HoloBoxing: A Simple Recipe for Humanoid Boxing with 7 Minutes of Single-GPU Training"
+authors: ["Xihan Ma", "Bo Zhang", "Boxiong Li", "Yuhan Bao", "Ziyue Liu", "Yucheng Wang"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32909v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+HoloBoxing 提供了一个通过构建预训练的全身控制器来学习人形拳击的简单方法。该配方将可重复使用的运动技能与任务决策分开：紧凑的规划器请求未来的身体点目标，而冻结的控制器处理联合级执行。学习解码器将 32 维动作映射到结构化目标窗口，测量状态模仿在强化学习之前初始化规划器。然后，任务学习可以在重用解码器和控制器的同时完善交互行为，从而避免重新学习全身控制的需要。这种组合使任务优化集中在紧凑的上层策略上，并在奖励驱动的探索之前提供初始行为。从可用的控制器开始，该配方需要大约七分钟的额外训练，包括重复使用的表示拟合和单 GPU 任务运行。这不包括控制器预训练、数据准备、评估和搜索。模拟拳击实...
+
+## English Summary
+
+HoloBoxing presents a simple recipe for learning humanoid boxing by building on a pretrained whole-body controller. The recipe separates reusable motor skills from task decisions: a compact planner requests future body-point targets, while the frozen controller handles joint-level execution. A learned decoder maps 32-dimensional actions to structured target windows, and measured-state imitation initializes the planner before reinforcement learning. Task learning then refines interaction behavior while reusing the decoder and controller, avoiding the need to relearn whole-body control. This combination keeps task optimization focused on a compact upper policy and supplies an initial behavior before reward-driven exploration. Starting from that available controller, the recipe accounts for about seven minutes of additional training, including reused representation fitting and a single-GPU task run. This excludes controller pretraining, data preparation, evaluation, and search. Simulated boxing experiments and component controls evaluate the resulting behavior and the roles of imitation initialization and the target representation.

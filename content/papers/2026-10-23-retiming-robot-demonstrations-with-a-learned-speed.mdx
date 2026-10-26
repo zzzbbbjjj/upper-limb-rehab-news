@@ -1,0 +1,21 @@
+---
+title: "使用学习的速度先验重新定时机器人演示"
+title_en: "Retiming Robot Demonstrations with a Learned Speed Prior"
+authors: ["Seungyong Moon", "Deokjae Lee", "Hansang Lee", "Munkhtselmeg Battsengel", "Youngin Kim", "Seonghyeon Yun", "Sungjin Jeon", "SongEun Kim", "Jeongmin Park", "Hyun Oh Song"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32676v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+机器人演示的节奏通常由远程操作员决定，而不是由任务本身决定。因此，相同的动作在演示中可能会以截然不同的速度出现，并且根据此类数据训练的策略可能会继承操作员特定的时序以及任务行为。我们建议直接从大规模演示数据中学习速度先验。给定任务指令、运动路径和沿其的图像，它可以预测沿路径的执行速度分布，从中选择的分位数定义用于重新定时每个演示的一致时钟。现有方法从它们加速的数据中获取加速信号，因此每个新任务都会花费另一个拟合、注释或一对预定义的速率。相反，单个经过训练的速度先验涵盖了语料库中的每项任务。我们对机器人远程操作数据和手持式演示都进行了先验速度调整，其中人类手臂而不是机器人手臂移动抓手，并使用它来...
+
+## English Summary
+
+The pace of a robot demonstration is often determined by the teleoperator rather than by the task itself. As a result, the same motion can appear at widely different speeds across demonstrations, and policies trained on such data may inherit operator-specific timing along with task behavior. We propose to learn a speed prior directly from large-scale demonstration data. Given a task instruction, a motion path and the images along it, it predicts a distribution over execution speed along the path, from which a chosen quantile defines a consistent clock for retiming each demonstration. Existing methods derive the acceleration signal from the very data they accelerate, so each new task costs another fit, annotation, or pair of predefined rates. A single trained speed prior instead covers every task in a corpus. We fit a speed prior on both robot teleoperation data and handheld demonstrations in which a human arm, rather than a robot arm, moves the gripper, and use it to retime robot demonstrations to the handheld pace before fine-tuning a vision-language-action policy. For execution, we pair the policy with a real-time optimal-control layer that tracks predicted action chunks under robot constraints using the predicted pace. On 120 RoboLab tasks, policies fine-tuned on our learned clocks succeed more often and move with up to half the jerk compared with policies fine-tuned on the original demonstration timing and uniformly accelerated to the same speed. On a real robot, our policy stacks cups in 3.50s, 1.72$\times$ faster than the default policy's 6.02s while succeeding as often, in 29 of 30 trials. Videos and further material are available at https://mllab.snu.ac.kr/projects/learned_speed_prior.

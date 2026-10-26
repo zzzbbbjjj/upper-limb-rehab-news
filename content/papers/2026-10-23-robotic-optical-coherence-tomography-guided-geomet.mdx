@@ -1,0 +1,21 @@
+---
+title: "机器人光学相干断层扫描引导软组织几何建模：数据驱动闭环形状控制的 3D 表示"
+title_en: "Robotic Optical Coherence Tomography-Guided Geometric Modeling of Soft Tissue: 3D Representations for Data-Driven Closed-Loop Shape Control"
+authors: ["Chaoyu Zhang", "Guangshen Ma", "Mark Draelos"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32961v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在医疗机器人技术中，数据驱动的软组织形状控制需要通过连续的物理相互作用使组织变形为所需的形态。这一挑战在微尺度操纵中尤为重要，因为局部变形难以观察、表示和控制，而基于物理的模型计算成本高昂且难以适应现实环境。光学相干断层扫描 (OCT) 提供组织变形的高分辨率体积感知，但目标条件控制需要有效表示观察到的和期望的组织状态。在这项工作中，我们引入了一个用于组织形状控制的 OCT 引导数据驱动框架，该框架从用户引导的演示中学习并通过闭环 OCT 反馈执行。我们使用确定性（显式）和生成扩散（扩散）策略来研究全体积、组织掩蔽稀疏体积和体素化点云表示，无论有或没有残余条件。在 3-DoF 深度和 6-Do...
+
+## English Summary
+
+In medical robotics, data-driven soft-tissue shape control requires deforming tissue toward desired morphologies through sequential physical interactions. This challenge is particularly important in microscale manipulation, where localized deformation is difficult to observe, represent, and control, while physics-based models can be computationally expensive and difficult to adapt to realistic environments. Optical coherence tomography (OCT) provides high-resolution volumetric perception of tissue deformation, but target-conditioned control requires effective representations of both observed and desired tissue states. In this work, we introduce an OCT-guided data-driven framework for tissue shape control, learned from user-guided demonstrations and executed with closed-loop OCT feedback. We study full-volume, tissue-masked sparse-volume, and voxelized point-cloud representations, with or without residual conditioning, using deterministic (Explicit) and generative diffusion (Diffusion) policies. Across 12 configurations and 576 phantom rollouts on 3-DoF depth and 6-DoF directional tasks, OCT-derived 3D representations support both Explicit and Diffusion policies, with performance depending on representation and residual conditioning. Residual conditioning reduces directional Shape RMSE from 0.748 to 0.555 mm for full-volume Diffusion, while voxelized point-cloud Explicit with residuals achieves 0.534 mm for depth and 0.443 mm for directional control, with comparable accuracy at intermediate unseen targets and consistent performance across deployments. We further evaluate the framework in 60 ex vivo porcine rollouts, extending to biological tissue with final geometric errors comparable to human demonstrations. These results establish volumetric OCT as current and goal representations for learned closed-loop tissue shape control across deterministic and generative action models.

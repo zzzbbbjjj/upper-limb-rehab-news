@@ -1,0 +1,21 @@
+---
+title: "站在开放的肩膀上：利用适度的数据和计算对英国野生动物的开放式相机陷阱模型进行区域微调"
+title_en: "Standing on Open Shoulders: Regional Fine-Tuning of Open-Weight Camera-Trap Models for UK Wildlife with Modest Data and Compute"
+authors: ["Paul Fergus"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32573v1"
+doi: ""
+tags: ["手部康复", "肩肘康复"]
+tags_en: ["hand rehabilitation", "shoulder-elbow"]
+keywords: ["手部康复", "肩肘康复"]
+keywords_en: ["hand rehabilitation", "shoulder-elbow"]
+---
+
+## 中文摘要
+
+相机陷阱物种分类主要由资源丰富的组织的大型模型主导，这些模型通常缺乏区域保护需求的物种级别区别，例如英国的本土红松鼠与入侵灰松鼠。我们询问开放权重是否可以让拥有适度数据集和单个 GPU 的小团队真正参与人工智能开发。我们对 28 个 UK 类别的开放 DeepFaune 分类器进行了微调，将其与未修改的 MegaDetector v6 配对，并在删除与我们的训练档案共享 1,039 个图像中的任何图像后，在 20,212 个手工验证的 MammalWeb 公民科学图像上将生成的 DeepFaune-UK v1.2 与 DeepFaune v1.5.0 和 SpeciesNet 进行比较。 De...
+
+## English Summary
+
+Camera-trap species classification is dominated by large models from well-resourced organisations, which often lack the species-level distinctions regional conservation needs, such as native red versus invasive grey squirrels in the UK. We ask whether open weights let a small team with a modest dataset and a single GPU take a real part in AI development. We fine-tuned the open DeepFaune classifier on 28 UK classes, paired it with the unmodified MegaDetector v6, and compared the resulting DeepFaune-UK v1.2 with DeepFaune v1.5.0 and SpeciesNet on 20,212 hand-verified MammalWeb citizen-science images, after removing sequences sharing any of 1,039 images with our training archive. DeepFaune-UK achieved a strict image-level accuracy of 88.8%, including empty frames, against 56.5% and 59.0% for the baselines, but at DeepFaune's coarser label resolution DeepFaune v1.5.0 was more accurate, though not significantly under contributor resampling (91.4% vs. 88.8%). As DeepFaune v1.5.0 uses a newer DINOv3-based classifier, we applied the identical recipe, without new data, to that classifier. The resulting DeepFaune-UK v1.3 reached 90.6% strict accuracy, narrowed the like-for-like gap to 0.8 points and reduced roe deer misclassified as fallow deer by 69%. On 1,850 images from the 26 contributors with no overlapping images, the three DeepFaune-based models did not differ significantly (90.5%, 90.6%, 89.9% like-for-like). Fine-tuning on 10% of the training crops (about 150 per class) gave out-of-distribution accuracy similar to using all of them, and a DINOv2 run on this subset took about 22 minutes with under 4 GB of GPU memory. Open weights thus make regional model development feasible for small teams, but the largest like-for-like gain came from a newer base model trained by others, so this democratisation depends on large actors continuing to release open weights, under licences that may change.

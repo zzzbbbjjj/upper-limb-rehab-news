@@ -1,0 +1,21 @@
+---
+title: "从徒手演示到自主机器人超声：以解剖学为基础的学习框架"
+title_en: "From Freehand Demonstrations to Autonomous Robotic Ultrasound: An Anatomy-Anchored Learning Framework"
+authors: ["Yuan Bi", "Fangxu Han", "Ye Su", "Yiping Zhou", "Zhongliang Jiang", "Nassir Navab"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32525v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+超声成像高度依赖于操作员，具有激励性的机器人系统能够始终如一地重现专家扫描技能。这些技能涉及对解剖标志、超声图像和探头-组织相互作用的协调解释，而这些在手工设计的控制策略中很难编码。模仿学习提供了一种替代方案，但其观察和动作表示应反映扫描的解剖结构性质。我们提出了一种基于解剖学的模仿学习框架，该框架将解剖学引导的探头放置与学习的超声导航相结合。放置模块从外部视觉观察中识别特定于任务的解剖起点，并建立初始探头姿势作为扫描的参考系。然后，基于流的策略根据锚点相对探头姿势、超声图像、探头安装的摄像机视图和接触力生成扫描运动，同时终端头预测任务完成情况。这避免了对第三人称视觉的持续依赖，并减少了对机器...
+
+## English Summary
+
+Ultrasound imaging is highly operator-dependent, motivating robotic systems that reproduce expert scanning skills consistently. These skills involve coordinated interpretation of anatomical landmarks, ultrasound images, and probe-tissue interactions that are difficult to encode in hand-designed control strategies. Imitation learning offers an alternative, but its observation and action representations should reflect the anatomically structured nature of scanning. We propose an anatomy-anchored imitation-learning framework that combines anatomy-guided probe placement with learned ultrasound navigation. The placement module identifies a task-specific anatomical starting point from external visual observations and establishes the initial probe pose as the reference frame for scanning. A flow-based policy then generates scanning motions from anchor-relative probe poses, ultrasound images, probe-mounted camera views, and contact forces, while a termination head predicts task completion. This avoids continuous reliance on third-person vision and reduces dependence on the robot-patient configuration. A handheld acquisition platform enables multimodal demonstrations to be collected during natural freehand scanning without a robot. On 16 unseen participants, task success reaches 96%, 94%, 88%, and 94% for kidney, gallbladder, and liver standard-plane acquisition and radial artery sweeping, respectively. Compared with a fine-tuned pi_0 model, success on the abdominal tasks improves by 10-42 percentage points, with lower time-to-target, peak contact force, and trajectory jerk. Ablations support the complementary roles of anatomical anchoring, egocentric vision, and force feedback. End-to-end trials with automatic placement achieve 90-100% success, and the policies transfer without retraining to a second robot with 83-100% success.

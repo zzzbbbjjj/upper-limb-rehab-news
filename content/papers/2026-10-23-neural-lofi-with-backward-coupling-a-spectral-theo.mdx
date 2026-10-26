@@ -1,0 +1,21 @@
+---
+title: "具有后向耦合的神经 LoFi：跨层特征学习的谱理论"
+title_en: "Neural LoFi with Backward Coupling: A Spectral Theory of Cross-Layer Feature Learning"
+authors: ["Yatin Dandi", "Matteo Vilucchio", "Hugo Tabanelli", "Florent Krzakala"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32849v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在联合训练期间，反向传播允许后面的层重塑早期的表示，这是纯粹逐层学习中不存在的反馈机制。我们扩展了神经低度过滤（Neural LoFi），这是最近提出的一种用于特征学习的分层光谱替代方法，以捕获这种相互作用。从精确的反向传播梯度开始，我们得出神经元的传入权重与其相应的下一层列之间的局部耦合。在具有平滑激活和固定环境的受控小初始化机制中，这些动力学放大了跨层相关算子的奇异模式。每种生长模式通过共享神经元系数将早期特征与上层响应配对。这激发了后向耦合算法，其中上层灵敏度为早期光谱步骤生成依赖于样本的有效标签，同时校正的特征细化向上传输。函数空间变分原理通过在核范数约束下最大化其乘积的标签相关性来表...
+
+## English Summary
+
+During joint training, backpropagation allows later layers to reshape earlier representations, a feedback mechanism absent from purely layer-wise learning. We extend Neural Low-Degree Filtering (Neural LoFi), a recently proposed layer-wise spectral surrogate for feature learning, to capture this interaction. Starting from the exact backpropagation gradients, we derive a local coupling between a neuron's incoming weights and its corresponding next-layer column. In a controlled small-initialization regime with smooth activations and fixed surroundings, these dynamics amplify singular modes of a cross-layer correlation operator. Each growing mode pairs an earlier feature with an upper-layer response through shared neuron coefficients. This motivates a backward-coupling algorithm in which upper-layer sensitivities generate sample-dependent effective labels for earlier spectral steps, while corrected features refine upward transmission. A function-space variational principle characterizes the selected feature-response pairs by maximizing the label correlation of their product under kernel-norm constraints. For three-layer networks, we derive self-consistent continuous-time dynamics for the filtered hidden-layer features, the activation kernels, and the network output under the proposed backward coupling. In a hierarchical multi-index model, we establish a feature-recovery separation: backward coupling recovers lower-layer directions invisible to the original forward label-weighted statistic. The linear specialization recovers residual-dependent singular-mode dynamics, while paired modes provide a dynamical mechanism for linked low-rank covariance components consistent with the rainbow-network picture. Experiments with fully connected and convolutional networks on binary CIFAR-10 show improved accuracy over forward Neural LoFi at matched widths.

@@ -1,0 +1,21 @@
+---
+title: "PiHand：基于物理的策略学习的潜在手-物体交互先验"
+title_en: "PiHand: Latent Hand-Object Interaction Priors for Physics-Based Policy Learning"
+authors: ["Niklas Berndt", "Xianghui Xie", "Enes Duran", "Yixiao Wang", "Gerard Pons-Moll"]
+date: "2026-10-22"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.31299v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+合成基于物理的灵巧手部物体交互对于 VR/AR、游戏和机器人技术非常重要，但仍然具有挑战性，因为必须共同尊重微妙的接触动力学、不同的物体几何形状和目标轨迹，同时保持自然的抓握。现有方法要么跟踪动作捕捉轨迹，但对新物体的转移有限，要么依赖于仅手部生成先验，无法捕获耦合的手部物体运动，从而牺牲了接触保真度和样本效率。为了应对这些挑战，我们引入了 PiHand，一种基于物理的交互感知手部运动合成框架。 PiHand 首先训练在模拟中跟踪动捕演示的专家策略，然后使用目标条件 VAE 将其提炼为统一的手部对象交互，最后通过潜在空间中的有界残差探索来解决各种灵巧的操作任务。只需单一奖励且无需复杂的课程训练...
+
+## English Summary
+
+Synthesizing physically grounded dexterous hand-object interactions is important for VR/AR, gaming, and robotics, yet remains challenging because subtle contact dynamics, diverse object geometries, and target trajectories must be jointly respected while maintaining natural grasps. Existing methods either track mocap trajectories with limited transfer to novel objects, or rely on hand-only generative priors that fail to capture coupled hand-object motion, sacrificing contact fidelity and sample efficiency. To tackle these challenges, we introduce PiHand, a Physically grounded Interaction-aware Hand motion synthesis framework. PiHand first trains expert policies that track mocap demonstrations in simulation, distills them into a unified hand-object interaction prior using a goal-conditioned VAE, and finally solve diverse dexterous manipulation tasks through bounded residual exploration in its latent space. With only a single reward and no complex curriculum training, this yields general tabletop manipulation policies that generalize to unseen objects and trajectories on GRAB and DexYCB. The same prior transfers to object catching and bimanual handover, two tasks that are rarely seen in its training data. Across all tasks, PiHand consistently outperforms baselines in all metrics. We will release the processed data and model checkpoints.

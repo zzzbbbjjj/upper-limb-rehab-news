@@ -1,0 +1,21 @@
+---
+title: "跨项目和代码空间的知识蒸馏以实现并行生成推荐"
+title_en: "Knowledge Distillation across Item and Code Spaces for Parallel Generative Recommendation"
+authors: ["Yixuan Xu", "Hailin Liu", "Linxiang Peng", "Can Yang"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32943v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+使用语义 ID 的生成推荐将每个项目表示为从其语义表示派生的离散代码序列，并预测这些代码以生成推荐。现有的语义 ID 推荐器通常使用针对观察到的下一个项目的硬标签进行训练。尽管这种监督识别了目标，但它没有提供有关以相同用户历史记录为条件的替代项目的明确分布信息。顺序推荐器可以提供项目级的预测知识，但将其转移到语义 ID 生成具有挑战性，因为教师和学生分别在项目和代码空间中操作。我们为并行语义 ID 推荐器提出了两个互补的知识蒸馏目标，它们同时预测所有代码位置，而无需自回归前缀条件。项目分布匹配 (IDM) 根据学生的并行代码预测重建目录级项目分布，并将其与教师的项目分布对齐。代码边缘匹配 (C...
+
+## English Summary
+
+Generative recommendation with semantic IDs represents each item as a sequence of discrete codes derived from its semantic representation and predicts these codes to generate recommendations. Existing semantic-ID recommenders are typically trained with hard labels for the observed next item. Although such supervision identifies the target, it provides no explicit distributional information about alternative items conditioned on the same user history. Sequential recommenders can supply this item-level predictive knowledge, but transferring it to semantic-ID generation is challenging because the teacher and student operate in item and code spaces, respectively. We propose two complementary knowledge-distillation objectives for parallel semantic-ID recommenders, which predict all code positions simultaneously without autoregressive prefix conditioning. Item Distribution Matching (IDM) reconstructs a catalogue-level item distribution from the student's parallel code predictions and aligns it with the teacher's item distribution. Code Marginal Matching (CMM) projects the teacher's item probabilities onto each code position using fixed item-to-code assignments, then matches the resulting code marginals to the corresponding student heads. Both objectives transfer the teacher's soft distributional knowledge while preserving the student's parallel prediction structure. Experiments on benchmark datasets show that both methods consistently outperform existing state-of-the-art approaches. On average, IDM improves Recall@10 by 15.39%, while CMM improves NDCG@10 by 8.28%. These results demonstrate that distillation in either reconstructed item space or code-marginal space can substantially strengthen hard-label supervision for parallel generative recommendation.

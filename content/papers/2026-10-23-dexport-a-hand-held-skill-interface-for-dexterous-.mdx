@@ -1,0 +1,21 @@
+---
+title: "DexPort：用于灵巧手数据采集的手持技能界面"
+title_en: "DexPort: A Hand-Held Skill Interface for Dexterous Hand Data Collection"
+authors: ["Amber Xie", "Jiawei Fu", "Xiaofeng Guo", "Carmelo Sferrazza", "Guanya Shi", "Haozhi Qi"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32969v1"
+doi: ""
+tags: ["手部康复", "腕关节", "可穿戴", "上肢康复"]
+tags_en: ["hand rehabilitation", "wrist", "wearable", "upper limb"]
+keywords: ["手部康复", "腕关节", "可穿戴", "上肢康复"]
+keywords_en: ["hand rehabilitation", "wrist", "wearable", "upper limb"]
+---
+
+## 中文摘要
+
+收集高质量的演示仍然是学习灵巧操作的主要瓶颈。远程操作记录可执行的机器人动作，但它需要完整的机器人设置，并且给操作员带来了协调许多手指关节的负担。人类演示更容易收集，但必须估计它们的动作并将其重新定位到机器人，并且它们不直接提供机器人动作。在本文中，我们介绍了 DexPort，一种用于高自由度机器人手的便携式数据采集接口。它使用相同的手部硬件进行收集和部署，避免了手部实施间隙，并记录命令的联合目标和测量的联合状态。我们的主要观察结果是，一小部分技能可以支持广泛的灵巧任务。在收集过程中，操作员移动手持界面来指定机器人手腕运动，并选择或调整协调手指运动的技能。这样就无需独立控制每个关节，同时保留精...
+
+## English Summary
+
+Collecting high-quality demonstrations remains a central bottleneck for learning dexterous manipulation. Teleoperation records executable robot actions, but it requires a complete robot setup and places the burden of coordinating many finger joints on the operator. Human demonstrations are easier to collect, but their motions must be estimated and retargeted to the robot, and they do not directly provide robot actions. In this paper, we introduce DexPort, a portable data-collection interface for high-DoF robot hands. It uses the same hand hardware for collection and deployment, avoiding a hand embodiment gap, and records both commanded joint targets and measured joint states. Our key observation is that a small set of skills can support a wide range of dexterous tasks. During collection, the operator moves the hand-held interface to specify the robot wrist motion and selects or adjusts skills that coordinate the finger motion. This removes the need to control each joint independently while retaining behaviors such as precise grasping and in-hand manipulation. We collect demonstrations across several real-world tasks and in unstructured environments without a robot arm. We then use behavior cloning to train visuomotor policies directly on the recorded wrist motions and hand commands, without skill labels. We evaluate across 4 tasks: pick-and-place with diverse objects, screwing with in-hand tool use, drawer stowage which requires simultaneous grasp and pulling, and a bimanual scanning task. We collect over 2,500 demonstrations with our portable device, in both laboratory and in-the-wild settings. Across our tasks, we see an improvement from 11% to 64% when using recorded robot commands instead of states, and an improvement from 36% to 78% for task success when using in-the-wild data.

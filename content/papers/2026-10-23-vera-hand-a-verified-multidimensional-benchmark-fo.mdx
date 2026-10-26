@@ -1,0 +1,21 @@
+---
+title: "VERA-Hand：第三人称动态手势视频中 2D 手势估计的经过验证的多维基准"
+title_en: "VERA-Hand: A Verified Multidimensional Benchmark for 2D Hand Pose Estimation in Third-Person Dynamic Gesture Videos"
+authors: ["Gibran Benitez-Garcia", "Hiroki Takahashi"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32517v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+手部标志可作为手势识别、手语理解和非接触式人机交互的输入。然而，手部姿势估计器通常使用 PCK 或 MPJPE 等逐帧定位指标进行评估，这些指标是根据匹配的预测进行计算的，并忽略了遗漏或虚假的手部、惯用手错误和时间不稳定性。为了解决这些限制，我们提出了 VERA-Hand，这是一个基准，它使用手动验证的帧级 2D 注释来评估估计器，涵盖四个互补维度（检测、定位、识别和时间稳定性）的 10,690 只手，以及需要正确检测和准确定位的联合 Pose-F1 度量。评估涵盖手特定、全身、基于重建和基础模型范式的六个估计器，我们发现没有一个估计器占主导地位：各个维度的排名急剧重新排序。 VERA-Han...
+
+## English Summary
+
+Hand landmarks serve as input for gesture recognition, sign language understanding, and touchless human-computer interaction. Yet hand pose estimators are typically evaluated with frame-wise localization metrics such as PCK or MPJPE, which are computed over matched predictions and overlook missed or spurious hands, handedness errors, and temporal instability. To address these limitations, we present VERA-Hand, a benchmark that evaluates estimators using manually verified, frame-level 2D annotations for 10,690 hands across four complementary dimensions (detection, localization, identification, and temporal stability), as well as a joint Pose-F1 metric that requires both correct detection and accurate localization. Evaluating six estimators spanning hand-specific, whole-body, reconstruction-based, and foundation-model paradigms, we find that no estimator dominates: rankings reorder sharply across dimensions. VERA-Hand also exposes failures that localization-only and downstream evaluations may not reveal, including cross-hand overlap in over 85% of frames for a recent foundation model. A post-hoc cleanup case study demonstrates how the benchmark can validate corrective interventions, while stratified analyses show that robustness varies across motion-blur classes and hand regions. We release the verified annotations, protocol, and code at https://gibranbenitez.github.io/VERA_Hand/

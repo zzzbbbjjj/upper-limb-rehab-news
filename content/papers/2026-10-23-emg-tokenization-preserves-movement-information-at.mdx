@@ -1,0 +1,21 @@
+---
+title: "EMG Tokenization Preserves Movement Information at a Fraction of the Bitrate"
+title_en: "EMG Tokenization Preserves Movement Information at a Fraction of the Bitrate"
+authors: ["Raul C. Sîmpetru", "Amin Olamazadeh", "Devon Rohlf", "Vlad Cnejevici", "Alessandro Del Vecchio"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32674v1"
+doi: ""
+tags: ["手部康复", "人机接口", "可穿戴"]
+tags_en: ["hand rehabilitation", "human-machine interface", "wearable"]
+keywords: ["手部康复", "人机接口", "可穿戴"]
+keywords_en: ["hand rehabilitation", "human-machine interface", "wearable"]
+---
+
+## 中文摘要
+
+无线肌电图 (EMG) 接口必须平衡电极覆盖范围与传输带宽。在这里，我们表明紧凑的 EMG 令牌大大减少了有效负载，同时保留了三维手势解码的信息。我们评估了两种没有姿势标签的因果分词器：一种是经过预训练以重建 EMG 频谱的编码器，另一种是基于 SPAR（一种相邻电极的工程频谱空间表示）。在使用 9 名参与者的 320 通道 EMG 进行的个性化会话内实验中，我们使用匹配的解码器架构和训练程序来比较标记化特征和连续特征。对解码器进行平均，标记化将 SPAR 的平均误差改变了 +0.01 mm（95% 置信区间：-0.12 到 0.14），将学习表示的平均误差改变了 +0.45 mm（0.10 ...
+
+## English Summary
+
+Wireless electromyography (EMG) interfaces must balance electrode coverage against transmission bandwidth. Here, we show that compact EMG tokens substantially reduce payload while retaining information for three-dimensional hand-pose decoding. We evaluate two causal tokenizers fitted without pose labels: an encoder pretrained to reconstruct EMG spectra and one based on SPAR, an engineered spectral-spatial representation of neighbouring electrodes. In personalized, within-session experiments with 320-channel EMG from nine participants, we compare tokenized and continuous features using matched decoder architectures and training procedures. Averaged across decoders, tokenization changed mean error by +0.01 mm for SPAR (95% confidence interval: -0.12 to 0.14) and +0.45 mm for the learned representation (0.10 to 0.82). Both increases met a 1 mm non-inferiority criterion. Stored token arrays reduced payloads 41-fold relative to raw EMG and 36-fold relative to continuous SPAR features. On sampled windows of the public emg2pose benchmark's test partition, absolute differences in mean error between learned tokens and continuous features were below 0.05 mm across 176 participants and in the subset of 20 participants unseen during training. Electrode coverage, calibration, and unseen recordings affected SPAR decoding more than quantization did. In a computational benchmark, optimized SPAR generated tokens for 63 channels within 20 ms on a Cortex-M55 microcontroller. These findings support tokenization as a compact interface between wearable sensing and movement decoding, allowing decoders to be updated while the wearable encoder and transmitted representation remain fixed.

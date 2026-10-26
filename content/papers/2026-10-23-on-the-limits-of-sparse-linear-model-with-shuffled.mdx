@@ -1,0 +1,21 @@
+---
+title: "具有混洗差分隐私的稀疏线性模型的局限性"
+title_en: "On the Limits of Sparse Linear Model with Shuffled Differential Privacy"
+authors: ["Yan Zhang", "Jiong Tuo", "Meng Ding", "Yuheng Ma", "Di Wang"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32822v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+稀疏线性回归是高维统计中的一个基本问题，其私有对应问题在差分隐私的中央模型和本地模型之间留下了很大的差距。混洗差分隐私 (SDP) 位于两者之间，提供更接近中心模型的准确性，而无需中心管理者的信任要求。本文研究了非交互式和交互式 SDP 协议下的稀疏线性回归。在非交互式设置中，任何非交互式 $(ε,δ)$-SDP 协议都会产生 $Ω( \frac{\sqrt{dk}}{nε} )$ 的 $\ell_2$ 范数估计误差，维度为 $d$、稀疏度 $k$ 和 $n$ 用户，揭示了固有的维度障碍。此外，还提出了一种非交互式算法，可实现$\tilde{\mathcal{O}}(\sqrt{\frac{k...
+
+## English Summary
+
+Sparse linear regression is a fundamental problem in high-dimensional statistics, and its private counterparts leave a large gap between the central and the local model of differential privacy. Shuffled differential privacy (SDP) sits between the two, offering accuracy closer to the central model without the trust requirement of a central curator. This paper studies sparse linear regression under both non-interactive and interactive SDP protocols. In the non-interactive setting, any non-interactive $(ε,δ)$-SDP protocol is shown to incur an $\ell_2$-norm estimation error of $Ω( \frac{\sqrt{dk}}{nε} )$ with dimension $d$, sparsity $k$, and $n$ users, revealing an inherent dimensionality barrier. In addition, a non-interactive algorithm is proposed that achieves an $\ell_2$-norm upper bound of $\tilde{\mathcal{O}}( \sqrt{\frac{k}{n}} + \frac{d\sqrt{k}}{nε})$. To overcome this barrier, we turn to the interactive user-level setting, where each user holds $m$ samples. A two-round interactive algorithm is developed that first recovers the support through a heavy hitter step and then estimates the parameter, achieving an error of $\tilde{\mathcal{O}}( \sqrt{\frac{k}{nm}} + \frac{k}{n\sqrt{m}ε} )$ with no polynomial dependence on $d$. Furthermore, by extending the score attack framework to user-level data, a new lower bound $Ω( \sqrt{\frac{k\log(d/k)}{nm}} + \frac{k\log(d/k)}{n\sqrt{m}ε} )$ is established for any user-level $(ε,δ)$-DP, showing that the proposed algorithm is near-optimal with only a gap of the factor $\log(d/k)$.

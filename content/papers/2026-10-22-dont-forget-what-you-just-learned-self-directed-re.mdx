@@ -1,0 +1,21 @@
+---
+title: "不要忘记您刚刚学到的知识：自我修复将特工的错误转化为持久的教训"
+title_en: "Don't Forget What You Just Learned: Self-Directed Repair Turns Agent Mistakes Into Lasting Lessons"
+authors: ["Yuval Kansal", "Karen Ullrich", "Polina Kirichenko", "Ilia Kulikov", "Niraj K. Jha", "Mohammad Pezeshki", "Mark Ibrahim"]
+date: "2026-10-22"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.31846v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+智能代理应该从错误中学习，以便经验能够不断改进。然而，今天的智能体只能暂时从错误中恢复：上下文中的反射很容易在会话中被遗忘，并争夺有限的上下文，而全参数微调成本高昂，并且可能会干扰现有功能。我们引入了自我指导，这是一种让代理从错误中学习的机制，结合了临时上下文重试和策略更新的好处。当代理在任务中失败时，它会反思自己的轨迹以吸取教训，并立即将其提炼成轻量级的低级适配器。通过保持原始权重冻结，自我方向可防止适配器训练覆盖基本模型参数，同时为每个适配器训练相当于基本模型参数计数约 0.02% 的附加参数。然后，代理将这些适配器保存在持久的课程库中，稍后自动路由它们以解决相关问题。基于 Qwen 系列...
+
+## English Summary
+
+Intelligent agents should learn from their mistakes so that experience leads to continuous improvement. Yet today's agents recover from a mistake only temporarily: in-context reflections are easily forgotten across sessions and compete for limited context, while full-parameter fine-tuning is expensive and can interfere with existing capabilities. We introduce Self-Direction, a mechanism for agents to learn from mistakes that combines the benefits of temporary in-context retries and policy updates. When an agent fails a task, it reflects on its own trajectory in order to extract a lesson and immediately distills it into a lightweight low-rank adapter. By keeping the original weights frozen, Self-Direction prevents adapter training from overwriting base-model parameters while training additional parameters equivalent to ~0.02% of the base model's parameter count for each adapter. The agent then saves these adapters in a persistent library of lessons, automatically routing them to solve related problems later. Experiments with agents based on open-weight models from the Qwen family across open-ended research (GAIA), tool-use workflows (Claw-Eval), and terminal tasks (Terminal-Bench 2.1) show that our method improves overall success rates by 8.9 to 17.0 percentage points and performs competitively with frontier systems. We find that Self-Direction reduces repeated mistakes across future encounters of a task, nearly doubling the reliability of an agent's corrections. Learned lessons also transfer: a handful of adapters generalize to dozens of new tasks without additional training. Ultimately, this self-directed repair transforms everyday mistakes into lasting lessons.

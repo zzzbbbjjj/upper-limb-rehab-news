@@ -1,0 +1,21 @@
+---
+title: "具有多步转换预测的强化学习：贝尔曼理论"
+title_en: "Reinforcement Learning with Multi-Step Transition Predictions: A Bellman Theory"
+authors: ["Chenbei Lu", "Zaiwei Chen", "Tongxin Li", "Chenye Wu", "Adam Wierman"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32887v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+对未来转型实现的多步预测可以改进强化学习，但其价值仍然难以量化。直接将这些预测包含在状态中可能会导致状态空间呈指数增长，从而使得直接动态编程的计算成本昂贵。我们在块反馈协议下研究折扣有限 MDP：在每个 K 周期块开始时，决策者观察动作子集的 $K$ 步概率转换预测，并根据块内观察到的状态调整决策。我们证明最优值满足原始状态空间上的贝叶斯贝尔曼方程。这种表示揭示了预测信息通过递归地改变贝尔曼展开式中最大化和期望的局部顺序来创造价值。我们通过 Bellman-Jensen 分析形式化了这种效应，并量化了预测范围、误差、动作覆盖范围和块内反馈的影响。我们提出了带有在线适应的块反馈贝叶斯离线学习（B...
+
+## English Summary
+
+Multi-step predictions of future transition realizations can improve reinforcement learning, but their value remains difficult to quantify. Directly including these predictions in the state can lead to exponential state-space growth, making direct dynamic programming computationally expensive. We study discounted finite MDPs under a block-feedback protocol: at the start of each K-period block, the decision maker observes $K$-step probabilistic transition predictions for a subset of actions and adapts decisions to observed states within the block. We show that the optimal value satisfies a Bayesian Bellman equation on the original state space. This representation reveals that predictive information creates value by recursively changing the local order of maximization and expectation in the Bellman expansion. We formalize this effect through a Bellman--Jensen analysis and quantify the effects of prediction horizon, error, action coverage, and within-block feedback. We propose block-feedback Bayesian offline learning with online adaptation (BF--BOLA), a model-based algorithm for learning near-optimal policies, and establish upper and lower sample-complexity bounds that match up to logarithmic factors in the stated regimes. The results show that predictions can reduce transition learning to uncovered rows and that learning a near-optimal policy can require fewer prediction samples than estimating the Bayesian value function.

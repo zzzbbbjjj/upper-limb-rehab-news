@@ -1,0 +1,21 @@
+---
+title: "Flownomaly：用于少样本异常检测的单步条件均值恢复"
+title_en: "Flownomaly: Single-Step Conditional-Mean Recovery for Few-Shot Anomaly Detection"
+authors: ["Bernardo Perrone Ribeiro", "Erkut Akdag", "Egor Bondarev"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32964v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+少镜头工业异常检测需要仅从少数无缺陷图像中对特定类别的正态性进行建模。常见的方法将推理与存储的样本联系起来，强加严格的线性结构，或冒重现异常内容的风险。相反，Flownomaly 将问题转化为冻结 DINOv2 特征空间中的正常对应恢复。给定法线支持，通过冻结补丁标记上的条件流匹配来学习速度场，以将高斯噪声传输到法线特征。沿着直线路径，使用对最佳场的一次评估的单个恢复步骤产生干净法线标记的后验平均值，而无需轨迹积分。操作时间控制恢复修改查询令牌的强度。由于没有可用于调整的异常验证样本，仅正态雅可比噪声增益准则仅从支持中选择该时间。查询标记与其恢复的对应标记之间的残差平方产生用于密集定位和图像级...
+
+## English Summary
+
+Few-shot industrial anomaly detection requires modeling category-specific normality from only a handful of defect-free images. Common approaches tie inference to stored exemplars, impose rigid linear structure, or risk reproducing anomalous content. Flownomaly instead casts the problem as normal-counterpart recovery in frozen DINOv2 feature space. Given normal supports, a velocity field is learned through conditional flow matching over frozen patch tokens to transport Gaussian noise toward normal features. Along straight paths, a single recovery step using one evaluation of the optimal field yields the posterior mean of the clean normal token without trajectory integration. The operating time governs how strongly recovery modifies a query token. With no anomalous validation samples available for tuning, a normal-only Jacobian gain-to-noise criterion selects this time from the supports alone. Squared residuals between query tokens and their recovered counterparts yield anomaly signals for both dense localization and image-level detection. Across 1-, 2-, and 4-shot benchmarks on MVTec-AD and VisA, together with sample-shot evaluations on Real-IAD, Flownomaly achieves state-of-the-art performance against recent category-specific methods. In the 1-shot setting, image- and pixel-level AUROC reach 97.8% and 98.0% on MVTec-AD and 95.3% and 98.7% on VisA, with a 2.1-point image-level AUROC improvement over the strongest baseline on VisA. Code is available at https://github.com/b-rbmp/Flownomaly.

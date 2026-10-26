@@ -1,0 +1,21 @@
+---
+title: "SEMPRE：通过一致性驱动的联合优化进行语义感知协议逆向工程"
+title_en: "SEMPRE: Semantic-Aware Protocol Reverse Engineering via Consistency-Driven Joint Optimization"
+authors: ["Yihua Xu", "Weijie Huang", "Xiaofeng Wang", "Hang Zhang", "Binghui Wang", "Yue Duan"]
+date: "2026-10-22"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.31844v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+协议逆向工程 (PRE) 对于理解未记录或专有的通信格式至关重要，从而实现漏洞发现、恶意软件 C2 分析和 IDS 签名生成等安全关键任务。然而，现有的 PRE 技术依赖于脆弱的手写规则、相邻字段之间的模型上下文依赖关系，并且经常在具有嵌套子协议的消息上失败。我们提出了 SEMPRE，这是一个完全自动化的 PRE 框架，它用基于细粒度动态程序分析的递归 LLM 推理取代了临时启发式方法。 SEMPER 使用污点流和循环跟踪来指导 LLM 驱动的思想树搜索，该搜索将消息分割成字段，同时检测嵌套的子有效负载，从而生成分层布局。然后，它推断每个字段的类型和角色，并通过冻结高置信度片段并在语义约束下重...
+
+## English Summary
+
+Protocol reverse engineering (PRE) is essential for understanding undocumented or proprietary communication formats, enabling security-critical tasks such as vulnerability discovery, malware C2 analysis, and IDS signature generation. However, existing PRE techniques rely on brittle hand-written rules, under-model contextual dependencies among neighboring fields, and often fail on messages with nested sub-protocols. We present SEMPRE, a fully automated PRE framework that replaces ad-hoc heuristics with recursive LLM reasoning grounded in fine-grained dynamic program analysis. SEMPRE uses taint-flow and loop traces to guide an LLM-driven tree-of-thought search that slices messages into fields while detecting nested sub-payloads, producing a hierarchical layout. It then infers each field's type and role and iteratively refines boundaries by freezing high-confidence segments and re-running detection under semantic constraints, yielding an EM-style procedure that monotonically improves structure and semantics until convergence. Evaluated on a broad corpus of mainstream protocols against six state-of-the-art (vs. &lt;0.4 for all baselines) and 0.72 for semantic inference (vs. 0.13 for BinPRE). Ablations confirm the contribution of each component, and a case study on a prolific real-world botnet demonstrates practical utility.

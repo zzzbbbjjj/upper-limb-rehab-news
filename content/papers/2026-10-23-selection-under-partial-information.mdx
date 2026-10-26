@@ -1,0 +1,21 @@
+---
+title: "部分信息下的选择"
+title_en: "Selection under partial information"
+authors: ["Benjamin Aram Berendsohn"]
+date: "2026-10-23"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.32731v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+选择问题要求在给定集合 $X$ 中找到第 $k$ 个最小元素。众所周知，对于每个固定的 $k$，其复杂度为 $θ(|X|)$。我们考虑偏序集选择问题，其中给出 $X$ 上的偏序 $P$，并且 $X$ 的底层顺序保证是 $P$ 的线性扩展。这概括了之前研究的选择问题的几种变体。   我们的主要结果是执行 $O( k + \operatorname{OPT}(P,k) )$ 比较的算法，其中 $\operatorname{OPT}(P,k)$ 是输入 $(P,k)$ 所需的最小比较次数。如果 $P$ 是有根树，我们得到一个 $O( \operatorname{OPT} \log (k / \ope...
+
+## English Summary
+
+The selection problem asks to find the $k$-th smallest element in a given set $X$. Its complexity is well-known to be $Θ(|X|)$ for every fixed $k$. We consider the poset selection problem where a partial order $P$ on $X$ is given, and the underlying order of $X$ is guaranteed to be a linear extension of $P$. This generalizes several variants of the selection problem studied before.   Our main result is an algorithm that performs $O( k + \operatorname{OPT}(P,k) )$ comparisons, where $\operatorname{OPT}(P,k)$ is the minimum number of comparisons required for the input $(P,k)$. If $P$ is a rooted tree, we obtain an $O( \operatorname{OPT} \log (k / \operatorname{OPT}) )$ algorithm, which can be further improved to $O( \operatorname{OPT} \log \log (k/\operatorname{OPT}) )$ or $O( \operatorname{OPT} \log \operatorname{OPT})$ under mild assumptions about $P$.   Our algorithms are based on the work of Kaplan, Kozma, Zamir, and Zwick [SOSA 2019], who used Chazelle's soft heaps [J. ACM 2000] to simplify several older results. We introduce a new soft heap variant, the weighted soft heap, which allows greater control over which elements get corrupted.
