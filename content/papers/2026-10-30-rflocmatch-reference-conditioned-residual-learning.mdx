@@ -1,0 +1,21 @@
+---
+title: "RFLocMatch: Reference-Conditioned Residual Learning from Angle-Delay Spectra for Accurate Localization"
+title_en: "RFLocMatch: Reference-Conditioned Residual Learning from Angle-Delay Spectra for Accurate Localization"
+authors: ["Leihao Zhao", "Xiucheng Wang", "Junxi Huang", "Conghao Zhou", "Yuxiang Zhang", "Huixin Xu", "Nan Cheng"]
+date: "2026-10-30"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.41757v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Radio fingerprint localization supports mobile robots and location-aware services when satellite positioning is unreliable. Angle-delay power fingerprints capture power distributions over angles and delays, but localization remains vulnerable to spatial ambiguity and measurement perturbations. Reflections and blockage can produce similar fingerprints at distant locations, while noise in query fingerprints can alter query-reference rankings despite a clean reference library. These effects can place a distant reference first in the ranking, creating tail errors. Similarity scores can generate plausible candidates, but reliable selection requires candidate-specific residual evidence and comparison across alternatives. This separation motivates RFLocMatch, which uses complementary joint and link-specific matching to preserve candidate locations supported by different links. Reference-conditioned residual learning then scores each candidate using the query and reference fingerprints, their absolute difference, and their element-wise product, while candidate-context modeling compares alternatives. Tail-focused training emphasizes costly errors, and inference replaces the initial match only when a candidate's score advantage exceeds a validation-calibrated threshold. On ray-tracing-generated data, RFLocMatch reduces dual-transmitter 99th-percentile error by 75.2% under link and receiver perturbations relative to the best-performing baseline. On real-world single-transmitter channel impulse response (CIR) measurements with motion-assisted angular-spectrum estimation, it attains 8.25-m 90th-percentile error and 3.83-m mean absolute error.

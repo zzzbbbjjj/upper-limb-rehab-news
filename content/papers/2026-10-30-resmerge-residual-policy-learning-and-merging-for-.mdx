@@ -1,0 +1,21 @@
+---
+title: "ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies"
+title_en: "ResMerge: Residual Policy Learning and Merging for Continual Adaptation of Pre-trained Robot Policies"
+authors: ["Kefei Zhu", "Lingyun Xu", "Yue Xin", "Xiaoqi Li", "Caixin Guo", "Xincheng Du", "Yuanpei Chen", "Yaodong Yang", "Hao Dong"]
+date: "2026-10-30"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.41663v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Continual adaptation to new tasks is essential for robots deployed in the real world, but adapting pre-trained policies remains challenging due to parameter growth and the need for continual demonstration collection. Parameter-Efficient Continual Fine-Tuning (PECFT) isolates task-specific updates, but adapter-per-task designs require demonstrations and grow with the task set. We propose ResMerge, a two-stage framework that learns mergeable residual policies atop a frozen pre-trained policy: residual reinforcement learning (RL) acquires task-specific corrections without additional expert demonstrations during adaptation, and parameter-space merging consolidates compatible residuals to reduce stored parameters. We introduce Residual-Field Consistency (RFC), a simple, bounded, and interpretable metric that assesses compatibility in residual action-field space by comparing correction direction and magnitude. Experiments on LIBERO across two backbones and on a real-world Franka robot show improved continual learning performance over strong PECFT baselines, while selective merging reduces the residual-parameter footprint. Project website: https://resmerge.github.io/.

@@ -1,0 +1,21 @@
+---
+title: "ProdCrawl: A Replayable Test Collection for Focused Crawling"
+title_en: "ProdCrawl: A Replayable Test Collection for Focused Crawling"
+authors: ["Manuel Rey-Escobar", "David Otero", "Javier Parapar"]
+date: "2026-10-29"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2610.40855v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+A focused crawler searches for web pages on a specific topic under a constrained download budget. Since it can only fetch a limited number of pages, its success depends on choosing which links to follow. Focused crawlers are usually evaluated on live websites by harvest rate, the fraction of downloaded pages that are relevant. This has two problems: on the one hand, websites change over time, so a crawl cannot be repeated under the same conditions; on the other hand, there is no ground truth for which pages are relevant. As a result, comparisons between crawlers are unreliable. We present ProdCrawl, a replayable test collection for focused crawling. It comprises static mirrors of 621 company and organization websites, about 1.1 million pages, with each page labeled as a product page or non-product page based on a majority vote among three large language models. Any crawler can be run on exactly the same sites and scored against the same labels. We use ProdCrawl to compare simple baselines (breadth-first, depth-first and text classifiers) with an approach that scores each link by searching for similar link texts whose target pages have already been labeled. Our results show that text classifiers and keyword matching do not significantly outperform breadth-first crawling, whereas neural embeddings, which compare link texts by semantic meaning, outperform all simple strategies. Because every run evaluates over identical pages and labels, these results are exactly reproducible. The collection, codebase, and models are publicly released to support experimental replication and fair crawler comparison.
