@@ -1,0 +1,21 @@
+---
+title: "通过约束移动地平线估计仅通过肌腱测量来定位肌腱驱动连续体机器人上的接触点"
+title_en: "Locating Contact on Tendon-Driven Continuum Robots From Tendon Measurements Alone via Constrained Moving Horizon Estimation"
+authors: ["Haitham El-Hussieny"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09877v1"
+doi: ""
+tags: ["绳索驱动"]
+tags_en: ["cable-driven"]
+keywords: ["绳索驱动"]
+keywords_en: ["cable-driven"]
+---
+
+## 中文摘要
+
+肌腱驱动的连续体机器人可以穿过受限空间，但其身体上的接触对于其电机上的传感器来说是不可见的。我们证明这是一个结构限制而不是一个调整问题：从接触力到肌腱测量的映射具有至少七维的零空间，因此没有自由接触支撑的估计器可以定位接触。然而，当障碍物几何形状已知时，非穿透性和互补性使得接触力可以局部识别，并且我们证明具有未知接触输入的所得系统是局部指数强可检测的。我们提出了一种约束移动水平估计器（MHE），它对这些条件进行编码，并作为每个样本的一个二次程序实时运行，并为其提供局部、模式稳健的稳定性结果。在两部分机器人在墙壁上按压和滑动的有限元基准中，估计器将接触定位为 0.9 mm，估计接触力为 0.22...
+
+## English Summary
+
+Tendon-driven continuum robots can reach through constrained spaces, but contact along their bodies is invisible to the sensors at their motors. We show that this is a structural limitation rather than a tuning problem: the map from contact forces to tendon measurements has a null space of dimension at least seven, so no estimator that leaves the contact support free can locate contact. When the obstacle geometry is known, however, non-penetration and complementarity make the contact force locally identifiable, and we prove that the resulting system with unknown contact inputs is locally exponentially strongly detectable. We present a constrained moving horizon estimator (MHE) that encodes these conditions and runs in real time as one quadratic program per sample, and we give a local, mode-wise robust stability result for it. In a finite- element benchmark of a two-section robot pressing and sliding on a wall, the estimator located contact to 0.9 mm and estimated contact force to 0.22 N, compared with 65 mm and 0.72 N for a tuned extended Kalman filter (EKF) with state projection. The estimator tolerated millimeter- level errors in the obstacle position and unmodeled wall friction, under which the projected EKF failed. Under randomized model mismatch over 40 trials, including unmodeled tendon friction, it remained better in force and location in every trial. Without contact, the MHE offered no advantage over the EKF, which confirms that its benefit comes from the contact constraints. This report extends a letter submitted to IEEE Control Systems Letters with complete proofs and additional experiments.

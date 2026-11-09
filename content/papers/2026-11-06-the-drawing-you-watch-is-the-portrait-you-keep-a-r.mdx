@@ -1,0 +1,21 @@
+---
+title: "你观看的画作就是你保留的肖像：可重播的机器肖像工作室"
+title_en: "The Drawing You Watch Is the Portrait You Keep: A Replayable Machine Portrait Studio"
+authors: ["Vinod Rajpurohit"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.08994v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+向图像模型询问你的肖像，最终的照片就会出现：没有第一行，没有第二个想法，没有记录它是如何到达的，如果你再次询问，就会得到不同的照片。我建立了一个肖像工作室，以另一种方式工作。拍摄者从八位虚构艺术家中选择一位，每位艺术家都写有自己的城市、媒介和节奏，保持静止 8 到 12 秒，然后在 44 秒内观看自己的画作出现。在同意后发送一个静态图像，托管图像模型返回一个拍摄者从未见过的私人研究，编译器将该研究转化为一个绘图文档。实时绘图、保存的图纸、矢量导出和影片都会读取该文档，并且重播不会进行模型调用，因此您观看的绘图就是您保留的肖像。我足够详细地描述了编译器来重建它，并清楚地说明了它是什么：以压缩速度...
+
+## English Summary
+
+Ask an image model for your portrait and a finished picture arrives: no first line, no second thoughts, no record of how it got there, and a different picture if you ask again. I built a portrait studio that works the other way. A sitter chooses one of eight fictional artists, each written with a city, a medium and a tempo of its own, holds still for 8 to 12 seconds, and watches a drawing of themselves appear over 44 seconds. One still is sent after consent, a hosted image model returns a private study the sitter never sees, and a compiler turns that study into one drawing document. The live drawing, the saved sheet, the vector export and the film all read that document, and a replay makes no model call, so the drawing you watch is the portrait you keep. I describe the compiler in enough detail to rebuild it and say plainly what it is: an authored reconstruction at a compressed speed, not a recorded hand. On 16 generated test studies a sheet holds 8,784 to 16,378 timed contacts, about three quarters of them fixed-grid fills and nearly all shorter than one video frame, and recompiling one study gave byte-identical output four times on one machine. The paper also traces a bug that matters more than any of that. The earlier compiler estimated the paper colour tile by tile, read dark skin as paper, and in all eight hands kept less of a deep-complexioned face than a fair one (13 to 48 percent against 41 to 56). On 80 generated studies the rebuilt engine keeps the complexion difference the study already has (raw retention 89 to 120 percent), so the fairness question has moved upstream, to the study and the hosted model. The two test sitters are generated and differ in more than complexion, and no real-face or perceptual study exists yet. The studio is live at https://everyfaceproject.com.

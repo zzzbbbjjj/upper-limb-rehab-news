@@ -1,0 +1,21 @@
+---
+title: "DKWBC：解耦运动跟踪和平衡以实现人形全身控制"
+title_en: "DKWBC: Decoupling Motion Tracking and Balancing for Humanoid Whole-Body Control"
+authors: ["Dingkun Wei", "Zehong Shen", "Huaijin Pi", "Xueyang Wang", "Xing Zhu", "Hujun Bao", "Yujun Shen", "Xiaowei Zhou"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09605v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+人形全身控制要求机器人跟踪不同的参考运动，同时在重力、扭矩限制、接触切换和外部干扰下保持平衡。现有的基于强化学习的跟踪器通常学习共同解决运动跟踪和平衡问题的控制输出。然而，类似的参考姿势可能对应于截然不同的动态需求，需要统一的策略来学习运动相关的控制要求以及平衡校正。这会使学习变得复杂并导致控制输出的高频波动。我们提出了 DKWBC，一种基于动力学的全身控制框架，它将基于模型的显式跟踪与学习的平衡残差相结合。受到浮基动力学中基于模型和环境扳手对关节扭矩贡献的启发，DKWBC 使用逆动态前馈和关节 PD 反馈来提供跟踪扭矩，而残差策略则学习额外的关节扭矩校正以实现平衡执行。通过明确考虑与运动相关...
+
+## English Summary
+
+Humanoid whole-body control requires a robot to track diverse reference motions while maintaining balance under gravity, torque limits, contact switching, and external disturbances. Existing reinforcement-learning-based trackers typically learn control outputs that jointly address motion tracking and balance. However, similar reference poses can correspond to substantially different dynamic demands, requiring a unified policy to learn motion-dependent control requirements alongside balance corrections. This can complicate learning and lead to high-frequency fluctuations in control outputs. We propose DKWBC, a dynamics-informed whole-body control framework that combines explicit model-based tracking with a learned balancing residual. Inspired by the model-based and environmental-wrench contributions to joint torques in floating-base dynamics, DKWBC uses inverse-dynamics feedforward and joint PD feedback to supply tracking torques, while a residual policy learns additional joint-torque corrections for balanced execution. By explicitly accounting for motion-dependent torque demands, this structure simplifies the policy's learning task. Experiments in simulation and on real hardware demonstrate that a single learned balancing policy generalizes across motion datasets while maintaining accurate motion tracking and balance across ground support, attached payloads, and physical interaction. Project page: https://robbyant-research.github.io/DKWBC/.

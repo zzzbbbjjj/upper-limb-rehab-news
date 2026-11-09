@@ -1,0 +1,21 @@
+---
+title: "EventHOI：智能眼镜上事件驱动的资源高效的手部对象交互记录"
+title_en: "EventHOI: Event-Driven Resource-Efficient Hand-Object Interaction Logging on Smartglasses"
+authors: ["Le Zhang", "Kailai Cui", "Hao Chen", "Vlad Roznyatovskiy", "Jianzhong Zhang", "Anhong Guo", "Kang G. Shin", "Ke Sun"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09089v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+智能眼镜可以捕捉手与物体的交互（HOI），以了解人们如何在日常生活中操纵物体。从以自我为中心的角度自动记录这些交互，为记忆辅助等应用程序提供日常操作的时间戳证据。然而，连续的 RGB 捕获和无线传输超出了智能眼镜的能量和带宽预算。我们推出了 EventHOI，这是一种事件驱动的传感和压缩系统，它将选择性 RGB 捕获与 HOI 感知编码相结合，以通过蓝牙低功耗 (BLE) 实现以自我为中心的日志记录，同时保留下游 HOI 日志记录性能。我们的主要见解是使用低功耗事件感应来确定何时需要 RGB 捕获并确定必须保留视觉细节的位置。基于 IMU 的轻量级自我运动消除管道可抑制自我运动引起的事件，以便...
+
+## English Summary
+
+Hand-object interactions (HOIs) can be captured by smartglasses to learn how people manipulate objects in daily life. Automatic logging of these interactions from an egocentric perspective provides time-stamped evidence of daily actions for applications like memory assistance. However, continuous RGB capture and wireless transmission exceed the energy and bandwidth budgets of smartglasses. We present EventHOI, an event-driven sensing and compression system that couples selective RGB capture with HOI-aware encoding to enable egocentric logging over Bluetooth Low Energy (BLE) while preserving downstream HOI logging performance. Our key insight is to use low-power event sensing both to determine when RGB capture is needed and to identify where visual detail must be preserved. A lightweight IMU-based egomotion cancellation pipeline suppresses egomotion-induced events so that residual HOI motion can guide RGB triggering and spatial compression. We build a smartglasses prototype and conduct an end-to-end evaluation of EventHOI on a 50-hour egocentric benchmark with 97 subjects and a 20-hour real-world dataset we collect from 10 participants, together covering a broad range of daily-life scenarios and environments. Compared to RGB-only baselines, EventHOI reduces always-on backend power consumption by 5.8-10.4x and uplink bandwidth by 2.9x, with minimal HOI recognition accuracy loss. The resulting RGB uplink of less than 130 kbps fits within commodity BLE bandwidth budgets, making stable BLE video streaming feasible for egocentric HOI logging. Demo video and project website: https://eventhoi.github.io

@@ -1,0 +1,21 @@
+---
+title: "GPU 需要操作系统"
+title_en: "The GPU Needs an Operating System"
+authors: ["Reza Nourai", "Behnam Bastani"]
+date: "2026-11-05"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.08720v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+人工智能芯片在为模型提供服务时大部分时间处于闲置状态，因为回复必须很快，并且每一步都需要等待内存。在两个大型开放模型上，数学单元只有大约 6-11% 的时间忙碌。我们认为 GPU 需要一个操作系统，使紧急工作按计划进行，并用其他有用的工作来填充空闲容量。今天发布的一项功能可以恢复四分之一的 GPU 的共享工作，以及十分之一的实际工作，解码速度减慢 5%。我们的研究系统做得更好：一个驻留内核运行整个模型的速度比 vLLM 对于单个请求的最佳速度更快，并且以低于 2% 的速度共享 GPU。超越一种手工构建的模型需要编译器和一些我们指定的新芯片功能。
+
+## English Summary
+
+AI chips sit mostly idle while serving models, because replies must be fast and each step waits on memory. On two large open models, the math units were busy only about 6-11% of the time. We argue the GPU needs an operating system that keeps urgent work on schedule and fills idle capacity with other useful work. A feature that ships today recovers a quarter of a GPU with work designed to share, and a tenth with real jobs, at 5% slower decode. Our research system does better: one resident kernel runs a whole model faster than vLLM's best for a single request, and shares the GPU at under 2% slowdown. Scaling beyond one hand-built model needs compilers and a few new chip features, which we specify.

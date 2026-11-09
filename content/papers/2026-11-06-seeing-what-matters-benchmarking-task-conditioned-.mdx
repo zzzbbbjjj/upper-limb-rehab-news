@@ -1,0 +1,21 @@
+---
+title: "看到重要的事情：对任务条件下的可操作空间信念进行基准测试以进行操作"
+title_en: "Seeing What Matters: Benchmarking Task-Conditioned Actionable Spatial Belief for Manipulation"
+authors: ["Yina Jian", "Mingkun Xu"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09794v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+机器人什么时候应该看杯子，什么时候应该看手柄？空间推理基准评估模型是否可以描述场景，但操作需要更具体的东西：获取使当前命令可执行的特定证据的能力。即使在同一工作站上，对一项任务提供信息的视图可能对另一项任务毫无用处。我们引入了“Seeing What Matters”，这是模拟桌面操作中以任务为条件的可操作空间信念的基准。该基准测试跨越三个领域——咖啡工作站、抽屉/橱柜和微波炉/电器——提供了 860 个冷冻评估案例；跨方法、预算和推理重复的扩展在两个协议下产生了超过 115,000 个评估器事件：闭环可操作性和相同对象功能分布外泛化。每个案例将一组候选 RGB 视图与操作命令、共享脚本技能和...
+
+## English Summary
+
+When should a robot look at the cup, and when at the portafilter? Spatial-reasoning benchmarks evaluate whether a model can describe a scene, but manipulation needs something more specific: the ability to acquire the particular evidence that makes the current command executable. A view that is informative for one task can be useless for another, even at the same workstation. We introduce Seeing What Matters, a benchmark for task-conditioned actionable spatial belief in simulated tabletop manipulation. Across three domains--coffee workstation, drawer/cabinet, and microwave/appliance--the benchmark provides 860 frozen evaluation cases; expanding across methods, budgets, and inference repeats yields more than 115,000 evaluator episodes under two protocols: closed-loop actionability and same-object functional out-of-distribution generalization. Each case pairs a set of candidate RGB views with a manipulation command, shared scripted skills, and hidden postconditions, so the benchmark directly measures whether a view-selection policy acquires the observations its command actually needs. We also provide a diagnostic reference pipeline that maintains a spatial-functional belief state and ranks views by missing evidence. At primary budget settings, this pipeline reaches 98.8% closed-loop and 98.9% functional-OOD success; ablating the functional or command-binding components collapses performance to near zero. Seven vision-language models, evaluated on the same cases, reach only 26-43%. Replacing the reference pipeline's coverage metadata with frozen RGB-derived scores preserves 98.5%/98.9% success; shuffling the visual scores collapses it to 15%/11%, confirming that the result depends on image content. These gaps suggest that spatial belief for manipulation should be evaluated not by scene-level completeness, but by whether it acquires the evidence the current command requires.

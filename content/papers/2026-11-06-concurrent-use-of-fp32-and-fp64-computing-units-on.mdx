@@ -1,0 +1,21 @@
+---
+title: "在 GPU 上并行使用 FP32 和 FP64 计算单元以及 WENO 重建中的混合精度放置"
+title_en: "Concurrent Use of FP32 and FP64 Computing Units on GPUs and Mixed-Precision Placement in WENO Reconstruction"
+authors: ["Jun Hatayama", "Daichi Mukunoki", "Yusuke Onishi", "Atsushi Sekimoto", "Toshinori Kouchi"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09651v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+科学计算通常需要 FP64 算法，尽管 FP64 性能在 NVIDIA GPU 上受到限制。双浮点 (DF) 仿真使用两个具有约 48 位有效位的 FP32 值来表示一个值，其性能优于本机 FP64（其中 FP64 单位有限）。另一方面，混合精度策略将不确定精度的操作卸载到 FP32。在这两种方法中，本机 FP64 单元在 FP32 指令执行期间保持空闲。我们调查了是否可以在 A100、GH200、GB200 和 RTX PRO 6000 Blackwell Max-Q 上恢复此空闲资源。微基准测试显示，共驻 FP32 和本机 FP64 内核在 A100 上超过了单独的更快内核的吞吐量，但在 ...
+
+## English Summary
+
+Scientific computing often requires FP64 arithmetic, although FP64 performance is limited on NVIDIA GPUs. Double-float (DF) emulation, which represents a value using two FP32 values with about 48 bits of significand, outperforms native FP64 where FP64 units are limited. On the other hand, mixed-precision strategies offload to FP32 the operations that do not determine accuracy. In both approaches, the native FP64 units remain idle during FP32 instruction execution. We investigated whether this idle resource can be recovered on A100, GH200, GB200, and RTX PRO 6000 Blackwell Max-Q. A microbenchmark shows that co-resident FP32 and native-FP64 kernels exceed the throughput of the faster kernel alone on A100 but not on GH200 and GB200; on RTX 6000 Blackwell, they do so against FFMA but, against DF emulation, only when the issue density of the DF kernel is reduced. We then tested whether this gain carries over to computing the WENO-Z reconstruction with the nonlinear weights in FP32 and the candidate polynomials in native FP64 (W32P64). We observe substantial overlap on A100, whereas GH200, GB200, and RTX 6000 Blackwell show little overlap. Importantly, the fastest placement does not always preserve the design accuracy of WENO-Z: for a one-dimensional entropy wave problem, W32P64 fails to achieve the design order of accuracy for WENO7 and WENO9. In contrast, DF emulation of the entire reconstruction comes close to it on the grids tested for WENO5, WENO7, and WENO9 while delivering a $2.51-3.94 \times$ speedup over FP64 on RTX 6000 Blackwell. For WENO5 on the two-dimensional Euler vortex problem the W32P64 error at $n=256$ is $1.26 \times$ that of FP64 and 1/104 of that of the all-FP32 reconstruction.

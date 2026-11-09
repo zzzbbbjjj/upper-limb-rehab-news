@@ -1,0 +1,21 @@
+---
+title: "使用软接触预算对蒙皮角色进行实时自渗透修复"
+title_en: "Real-Time Self-Penetration Repair for Skinned Characters with Soft Contact Budgets"
+authors: ["Yifei Zhu"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09693v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+在一个身体上合理的运动可以在形状改变后穿透另一个身体，而运动模型可以在其原生角色上产生自我渗透。我们提出了一种免训练的后处理，通过姿势校正和有界皮肤压缩来减少这些伪影。该模块可附加到任何其本机字符和输出字符具有兼容字符包的运动模型，而无需访问模型内​​部。每个包都是从装备和皮肤离线构建的，无需培训。顶点级姿态层在一个 CPU 内核上用纯 C 语言求解局部二次程序，无状态接触变形器作用于主机的最终蒙皮网格。部分相关的软组织预算通过静态约定在姿势和皮肤之间分配校正。源渗透不贡献额外津贴；可选的布料厚度和顺应性修改姿势层的碰撞表面。操作是因果的或使用短缓冲前瞻，在本机接口处进行帧精确传递，以实现零状...
+
+## English Summary
+
+Motion that is plausible on one body can penetrate another after a change in shape, and motion models can produce self-penetration on their native characters. We present a training-free post-process that reduces these artifacts through pose correction followed by bounded skin compression. The module attaches to any motion model whose native character and output character have compatible character packs, without access to model internals. Each pack is built offline from the rig and skin without training. A vertex-level pose layer solves a local quadratic program in plain C on one CPU core, and a stateless contact deformer acts on the host's final skinned mesh. A part-dependent soft-tissue budget allocates correction between pose and skin through a static convention. Source penetration contributes no extra allowance; optional cloth thickness and compliance modify the pose layer's collision surface. Operation is causal or uses a short buffered lookahead, with frame-exact pass-through at the native interface for clean, inactive frames in the zero state. Across 320 unseen clips and 3 body shapes, the fraction of frames with hand-torso depth above 20 mm falls from 15.53% for copied motion to 0.00%, with final maximum depth 9.3 mm over every frame. Mean pose and skin costs are 1.11 and 1.18 ms, respectively, and their sum of 2.29 ms is a sub-frame processing cost. The median joint-velocity high-frequency ratio relative to copied target motion is 1.008.

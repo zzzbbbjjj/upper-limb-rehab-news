@@ -1,0 +1,21 @@
+---
+title: "ODEaction：从预测块到演化动作"
+title_en: "ODEAction: From Predicting Chunks to Evolving Actions"
+authors: ["Qishen Wang", "Pengxiang Ding", "Shifeng Bao", "Mingyang Sun", "Hengtao Li", "Yi Gao", "Baohua Yin", "Yang Liu", "Jiajun Fu", "Jiacheng Liu"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09672v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉-语言-动作（VLA）模型通常以块的形式生成动作，将连续的机器人执行组织成单独预测的片段，从而在动作块转换时引入潜在的不连续性。我们提出了 ODEAction，一种无块动作生成范式，用连续动作进化代替动作块预测。给定视觉观察、语言指令和机器人本体感受信息，ODEAction 学习在动作空间上定义的动作转换场，其中转换向量表征当前动作相对于进化时间的进化速率。在执行过程中，模型将当前动作作为初始条件，并使用常微分方程（ODE）对学习到的字段进行积分，递归地生成具有显式依赖关系的后续动作。 ODEAction 作为动作头实现，不依赖于特定的视觉语言骨干架构。在 LIBERO、EBench、Ro...
+
+## English Summary
+
+Vision-language-action (VLA) models typically generate actions in chunks, organizing continuous robot execution into separately predicted segments and thus introducing potential discontinuities at action-chunk transitions. We propose ODEAction, a chunk-free action generation paradigm that replaces action-chunk prediction with Continuous Action Evolution. Given visual observations, language instructions, and robot proprioceptive information, ODEAction learns an action transition field defined over action space, where a transition vector characterizes the evolution rate of the current action with respect to evolution time. During execution, the model takes the current action as its initial condition and integrates the learned field using an ordinary differential equation (ODE), recursively generating subsequent actions with explicit dependencies. ODEAction is implemented as an action head and does not depend on a specific vision-language backbone architecture. Experiments on LIBERO, EBench, RoboTwin, and real robots show that ODEAction improves both task performance and trajectory quality over matched action-chunking baselines, with particularly pronounced gains on fine manipulation tasks.

@@ -1,0 +1,21 @@
+---
+title: "ZeoBench：3D 沸石表示自监督学习的基准"
+title_en: "ZeoBench: A Benchmark for Self-Supervised Learning on 3D Zeolite Representations"
+authors: ["Aaron Sun", "Yachan Liu", "Ping Yang", "Peng Bai", "Subhransu Maji"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09880v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+沸石是一类重要的多孔晶体材料，在气体储存、分离和催化领域具有广泛的应用。尽管已知数十万种通过实验实现的和假设的沸石结构，但识别针对目标应用优化的材料仍然具有挑战性，因为属性标签的获取成本昂贵，并且仅适用于有限的结构-分子对。虽然之前的工作已经证明 3D 神经表征可以有效地预测沸石特性，但仍不清楚哪种表征学习策略在与材料发现相关的低数据状态下最有效。我们提出了 ZeoBench，这是全硅沸石密集 3D 表示的自监督学习基准，并在一系列训练集大小上评估了六个现有下游吸附性能预测任务的结果特征。我们的研究比较了体积沸石数据的自监督 3D 预训练、图像预训练的 2D ConvNet 和视觉转换器通过多...
+
+## English Summary
+
+Zeolites are an important class of porous crystalline materials with broad applications in gas storage, separations, and catalysis. Although hundreds of thousands of experimentally realized and hypothetical zeolite structures are known, identifying materials optimized for a target application remains challenging because property labels are expensive to obtain and available only for limited structure-molecule pairs. While prior work has demonstrated that 3D neural representations can predict zeolite properties effectively, it remains unclear which representation-learning strategies are most effective in the low-data regime relevant to materials discovery. We present ZeoBench, a benchmark for self-supervised learning on dense 3D representations of all-silica zeolites, and evaluate the resulting features on six existing downstream adsorption-property prediction tasks, across a range of training set sizes. Our study compares self-supervised 3D pretraining on volumetric zeolite data, adaptations of image-pretrained 2D ConvNets and vision transformers to 3D via multiview and channel-inflation strategies, and 3D ConvNets pretrained on out-of-domain volumetric datasets, alongside hand-crafted descriptors and supervised baselines. Using our pretraining and evaluation framework, we find self-supervised 3D representations outperform existing methods and achieve state-of-the-art performance across both in-domain label regimes and for the unseen domain of metal organic frameworks. Learned representations consistently outperform hand-crafted descriptors, and convolutional architectures are generally more effective than vision transformers in this setting. These results establish ZeoBench as a practical benchmark for 3D representation learning in zeolites and provide guidance for data-limited adsorption property prediction.

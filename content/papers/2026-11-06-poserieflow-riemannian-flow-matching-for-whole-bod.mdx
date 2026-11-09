@@ -1,0 +1,21 @@
+---
+title: "PoseRieFlow：用于全身文本到姿势生成的黎曼流匹配"
+title_en: "PoseRieFlow: Riemannian Flow Matching for Whole-Body Text-to-Pose Generation"
+authors: ["Jan Spindler", "Bardia Ardakanian", "Patrick Stotko", "Reinhard Klein"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09692v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+我们推出了 PoseRieFlow，这是一个紧凑的流匹配框架，用于文本条件生成全身 3D 人体姿势。先前的文本到姿势方法要么忽略了铰接的手，要么忽略了欧几里德空间中的模型旋转，尽管它们是非欧几里德几何。相反，PoseRieFlow 直接在 SMPL-H 关节旋转的乘积流形上制定生成，学习文本条件向量场，该向量场在沿黎曼测地线进行数据分布之前从各向同性 $\mathrm{SO}(3)$ 高斯传输样本。部分标记化的扩散变压器将 52 个关节聚合为 8 个身体部位标记，为每只手分配专用标记和非线性投影仪，并通过特定于部分的解码器恢复每个关节的分辨率，缩短序列，同时提高每个关节标记化的运动学保真度。 ...
+
+## English Summary
+
+We present PoseRieFlow, a compact flow-matching framework for text-conditioned generation of whole-body 3D human poses. Prior text-to-pose methods either neglect articulated hands or model rotations in Euclidean space despite their non-Euclidean geometry. PoseRieFlow instead formulates generation directly on the product manifold of SMPL-H joint rotations, learning a text-conditioned vector field that transports samples from an isotropic $\mathrm{SO}(3)$ Gaussian prior to the data distribution along Riemannian geodesics. A part-tokenized Diffusion Transformer aggregates the 52 joints into eight body-part tokens, allocating a dedicated token and nonlinear projector to each hand, and restores per-joint resolution through part-specific decoders, shortening the sequence while improving kinematic fidelity over per-joint tokenization. With only 21.6M trainable parameters, PoseRieFlow supports expressive SMPL-H generation with detailed hand articulation at a fraction of the scale of recent LLM-based generators. On PoseScript, it attains the lowest whole-body kinematic error among all hand-producing methods, with consistent kinematic gains from the Riemannian formulation over its Euclidean counterpart at every practical inference budget, while distributional and retrieval metrics remain comparable between them.

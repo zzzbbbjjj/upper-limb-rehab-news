@@ -1,0 +1,21 @@
+---
+title: "ExQuery：用于时态 3D 对象检测的显式结构化查询先验"
+title_en: "ExQuery: Explicit Structured Query Priors for Temporal 3D Object Detection"
+authors: ["Honglin Sun", "Yifei Zhang", "Junyang Zhang", "Kenji Hashimoto"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09527v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+基于稀疏查询的 3D 检测器通常将异构语义、几何和运动信息编码为统一的潜在查询，包括使用显式 3D 锚点时。我们引入 ExQuery，这是一种用于时态 3D 对象检测的显式结构化查询框架。每个解码的查询都被组织成共享语义上下文切片和中心、维度、方向和速度的物理状态特定切片。这种结构从先前的编码到特定于分支的回归得以保留，并被重用以重建时间查询：预测的物理状态通过自我运动进行转换，分类分数形成软语义先验，并且重建的查询通过门控仿射调制与存储的潜在实例特征融合。 nuScenes 基准测试表明，我们的方法实现了有竞争力的检测性能，消融研究验证了我们提出的模块的有效性。
+
+## English Summary
+
+Sparse query-based 3D detectors commonly encode heterogeneous semantic, geometric, and motion information into unified latent queries, including when explicit 3D anchors are used. We introduce ExQuery, an explicit structured query framework for temporal 3D object detection. Each decoded query is organized into a shared semantic context slice and physical-state-specific slices for center, dimensions, orientation, and velocity. This structure is preserved from prior encoding to branch-specific regression and is reused to reconstruct temporal queries: predicted physical states are transformed by ego motion, classification scores form soft semantic priors, and the reconstructed query is fused with the stored latent instance feature through gated affine modulation. Experiments on the nuScenes benchmark show that our method achieves competitive detection performance, and ablation studies validate the effectiveness of our proposed modules.

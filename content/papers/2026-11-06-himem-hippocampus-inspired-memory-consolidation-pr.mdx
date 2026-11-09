@@ -1,0 +1,21 @@
+---
+title: "HiMEM：海马启发的 3D 场景中视觉-语言-动作模型的记忆巩固、修剪和组合"
+title_en: "HiMEM: Hippocampus-Inspired Memory Consolidation, Pruning, and Composition for Vision-Language-Action Models in 3D Scenes"
+authors: ["Boran Zhao", "Yanbin Hu", "Jun Ye", "Zhenxian Hu", "Yuxin Zhai", "Jin Cui", "Pengju Ren"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09355v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+对于在复杂 3D 场景中运行的视觉-语言-动作 (VLA) 模型，内存在长视野任务执行和跨任务泛化中发挥着至关重要的作用。然而，现有的 VLA 内存机制受到内存噪声的影响，特别是在复杂的 3D 场景中，因为存储的情景内存包含有关场景布局、对象配置和机器人特定状态的大量冗余细节，这模糊​​了可推广的操作原理并阻碍了跨任务传输。为了应对这一挑战，我们首先引入了一种受海马体启发的记忆巩固机制，该机制将广泛的情景经验合成为一组紧凑的基本语义记忆，使 VLA 模型能够从实践经验中得出可推广的原则。其次，我们提出了一种情景记忆修剪机制，可以删除其内容由合并语义记忆捕获的冗余情景记忆，从而增加有效记忆容量并...
+
+## English Summary
+
+Memory plays a crucial role in long-horizon task execution and cross-task generalization for Vision-Language-Action (VLA) models operating in complex 3D scenes. However, existing VLA memory mechanisms suffer from memory noise, particularly in complex 3D scenes, as stored episodic memories contain extensive redundant details about scene layouts, object configurations, and robot-specific states, which obscure generalizable manipulation principles and hinder cross-task transfer. To address this challenge, we first introduce a hippocampus-inspired memory consolidation mechanism that synthesizes extensive episodic experiences into a compact set of essential semantic memories, enabling VLA models to derive generalizable principles from practical experience. Second, we propose an episodic memory pruning mechanism that removes redundant episodic memories whose contents are captured by consolidated semantic memories, thereby increasing effective memory capacity and improving long-horizon task execution. Finally, to handle complex task scenarios, we develop a flexible memory composition mechanism that jointly leverages multiple episodic and semantic memories to enhance cross-scenario generalization. Experiments on LIBERO, LIBERO-Plus demonstrate the effectiveness of HiMEM across different VLA backbones, improving the average success rate of pi_0 from 91.88% to 98.20% on LIBERO.

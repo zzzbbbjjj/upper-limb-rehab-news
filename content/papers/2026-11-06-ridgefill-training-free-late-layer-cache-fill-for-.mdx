@@ -1,0 +1,21 @@
+---
+title: "RidgeFill：无需培训的后期缓存填充，可实现更快的预填充"
+title_en: "RidgeFill: Training-Free Late-Layer Cache Fill for Faster Prefill"
+authors: ["Dylan Johnston", "Robert P. Smith"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09709v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+RidgeFill 通过不计算提示的模型上层的大部分来缩短预填充。下层正好延伸至裂缝；根据分割层的状态，每层映射预测每个后面层的输入，并且每个后面层根据该预测写入其缓存。该设计遵循 YOCO 和 DeepSeek-V4.1-Flash，其中投影被训练到模型中。 RidgeFill 将其改进到从未对其进行过训练的模型上：地图是一次通过校准文本以封闭形式拟合的山脊回归，该层自己的投影保持不变，并且选定的一组行、最后几千个标记以及每个解码步骤都运行完整的模型。没有任何内容被训练，也没有令牌被丢弃。   大部分工作都是在测量中，寻找可重复的方法。所有令牌的平均损失隐藏了 RidgeFill 的错误。填...
+
+## English Summary
+
+RidgeFill shortens prefill by not computing most of a model's upper layers for the prompt. The lower layers run exactly up to a split; from the split layer's state a per-layer map predicts every later layer's input, and each late layer writes its cache from that prediction. The design follows YOCO and DeepSeek-V4.1-Flash, where the projection is trained into the model. RidgeFill retrofits it onto models that were never trained for it: the map is a ridge regression fitted once in closed form from one pass over calibration text, the layer's own projections run unchanged, and a chosen set of rows, the last few thousand tokens, and every decoding step run the full model. Nothing is trained and no token is dropped.   Most of the work was in measurement, finding a repeatable methodology. Loss averaged over all tokens hides RidgeFill's error. Needle retrieval in the filled region, loss on tokens that depend on distant context, and splice tests that swap filled keys or values for exact ones show which component carries it: the keys on Llama-3.1-8B, half of it in their scale, and the values and the recurrent state on Qwen3.5-9B.   On Qwen3.8-27B in a llama.cpp fork on an A100, time to first token is 1.25 to 1.31x faster at 16K to 120K tokens with the maps in VRAM; RULER changes by -1.2 and -1.4 points and LongBench v2 by -1.4; the 95 % intervals include zero but do not rule out losses of a few points. On Qwen3.8-Flash-Next in vLLM it is 1.50 to 1.60x faster than exact at 9K to 32K tokens, with RULER's needle tasks at 99.8 against 100.0 and perplexity on novel tokens 2.65 % higher [-0.02 %, +4.93 %]. On three 8 to 9B reference models, at the same split and tail as the identity fill, the fitted map retrieves 49.1 and 49.6 more filled-region RULER points on the two dense models (at that split Llama's loss is worse), and its long-document loss is +/-0.03 nats of the released SwiftKV checkpoint's.

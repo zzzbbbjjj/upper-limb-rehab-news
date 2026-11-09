@@ -1,0 +1,21 @@
+---
+title: "针对对抗性调度程序的争用解决方案"
+title_en: "Contention Resolution Against an Adversarial Scheduler"
+authors: ["Michael A. Bender", "Martín Farach-Colton", "Andrew Krapivin", "Pritom Kundu", "John Kuszmaul", "Margaret Kuszmaul", "William Kuszmaul", "Jingxun Liang"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09747v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+在经典的竞争解决问题中，一组玩家共享一个广播通道，并且如果一个玩家是给定时间步骤中唯一进行广播的玩家，则该玩家在该步骤中成功。经典问题中隐含的假设是每个玩家都可以自由地执行每一步：一旦玩家到达，它就会参与直到成功。   我们研究消除该假设后会发生什么。在我们的模型中，对抗性的 \emph{scheduler} 在每个步骤中决定哪个玩家子集被安排参与该步骤。未安排的玩家只是在这一步中睡觉。我们通过其 \emph{效率} 来衡量协议：玩家数量除以至少一名玩家处于活动状态的预期步骤数。   我们的第一个结果表明，只要玩家能够访问全局时钟并共享随机性，他们就可以实现效率 $Ω(1/\log n)$。即...
+
+## English Summary
+
+In the classical contention-resolution problem, a set of players share a broadcast channel, and a player succeeds in a given time step if it is the only player to broadcast during that step. Implicit in the classical problem is the assumption that every player is free to act on every step: once a player arrives, it participates until it succeeds.   We study what happens when that assumption is removed. In our model, an adversarial \emph{scheduler} decides, on each step, which subset of the players gets scheduled to participate in the step. An unscheduled player simply sleeps through the step. We measure a protocol by its \emph{efficiency}: the number of players divided by the expected number of steps in which at least one player was active.   Our first result says that, so long as the players are given access to a global clock and to shared randomness, they can achieve efficiency $Ω(1/\log n)$. The players are able to achieve this bound without requiring any channel feedback, and even if the adversarial scheduler is adaptive. We also give a matching lower bound of $O(1 / \log n)$, which holds even with channel feedback, and even for an oblivious scheduler.   Our upper bounds all require the players to have access to a shared global clock and to shared randomness. Our final result says that this type of implicit shared state is necessary. If the players have neither a global clock nor shared randomness, then no protocol can achieve efficiency better than $O(\log n / n)$; and this holds even if the other aspects of the problem are designed to be as favorable for the players as possible (the channel gives ternary feedback and the adversary is oblivious).

@@ -1,0 +1,21 @@
+---
+title: "用于缓解长上下文 LLM 中的中间丢失的查询引导 RoPE 调制"
+title_en: "Query-Guided RoPE Modulation for Lost-in-the-Middle Mitigation in Long-Context LLMs"
+authors: ["Peiyu Zhang", "Heng Ping", "Shinibali Bhattacharyya", "Anwesan Pal", "Nikos Kanakaris", "Kevin Cheang", "Shixuan Li", "Wei Yang", "Paul Bogdan"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09554v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+长上下文语言模型经常忽略输入中间的信息，这种现象称为“中间丢失”。这种差距的部分原因可能源于旋转位置嵌入（RoPE）的长程衰减，它削弱了远处令牌之间的位置信号。现有的输入压缩会删除低重要性标记，而注意力重新加权仅在 RoPE 削弱该信号后才起作用。 RoPE 级方法直接修改位置，但对每个查询应用相同的重新映射。为了解决这些限制，我们提出了 QGPM（查询引导位置调制），这是一种无需训练的方法，可以使用来自模型自身注意力头的查询相关性来重塑 RoPE 位置。 QGPM 为下层构建了广泛的相关性图，为上层构建了清晰的相关性图。低相关性标记在快速旋转的平面上前进不到一位，将相关证据拉向查询。缓慢旋转...
+
+## English Summary
+
+Long-context language models often neglect information in the middle of the input, a phenomenon known as "lost-in-the-middle". Part of this gap may stem from the long-range decay of rotary position embedding (RoPE), which weakens the positional signal between distant tokens. Existing input compression deletes low-importance tokens, and attention reweighting acts only after RoPE has weakened this signal. RoPE-level methods modify positions directly but apply the same remapping to every query. To address these limitations, we propose QGPM (Query-Guided Positional Modulation), a training-free method that reshapes RoPE positions using query relevance from the model's own attention heads. QGPM builds a broad relevance map for lower layers and a sharp one for upper layers. Low-relevance tokens advance by less than one position on fast-rotating planes, pulling relevant evidence toward the query. Slow-rotating planes keep the original layout, with every token in place. Experiments on NoLiMa and RULER with multiple context lengths show that QGPM improves over base models and strong baselines, with the largest gains on retrieval tasks, and generalizes across multiple backbones. Our code is available at https://github.com/iZHpy/QGPM.

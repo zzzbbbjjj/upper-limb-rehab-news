@@ -1,0 +1,21 @@
+---
+title: "具有不确定性量化的机器学习原子间势的物理学先验知识"
+title_en: "Physics Informed Priors for Machine Learning Interatomic Potentials with Uncertainty Quantification"
+authors: ["George I. Simmons", "Thomas D. Swinburne", "Thomas Hudson", "James R. Kermode"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09325v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+机器学习原子间势的标准不确定性量化方法通常无法量化模型错误指定的影响，尽管它是一个突出的错误来源。为了解决这个问题，错误指定的不确定性方案已经引起了人们的关注，其中逐点最优参数集回归（POPS-Regression）就是其中之一。然而，没有给出对后验分布的物理性的保证，并且与真实误差相比，不确定性估计可以是保守的。为了解决这个问题，我们提出了一种模型错误指定感知方案，该方案基于 POPS 回归，允许用户指定在获得的模型集合中强制执行的物理先验。这使得用户能够在不影响物理特性的情况下纳入错误指定的不确定性。该方案适用于可以由一组凸参数表示的任何物理量，因此对于各种静态属性都具有鲁棒性，这有助于为...
+
+## English Summary
+
+Standard uncertainty quantification methods for machine learning interatomic potentials often fail to quantify the effects of model misspecification despite its prominence as a source of error. To combat this, misspecification-aware uncertainty schemes have been gaining attention, pointwise optimal parameter set regression (POPS-Regression) among them. However, no guarantees on the physicality of the posterior distribution are given and uncertainty estimates can be conservative compared to the true error. To combat this, we present a model misspecification aware scheme that builds on POPS-Regression by allowing users to specify physical priors that are enforced across the obtained ensemble of models. This allows the user to incorporate misspecification-aware uncertainties without compromising on physical properties. The scheme is applicable to any physical quantity that can be represented by a convex set of parameters and so is robust for a wide variety of static properties which can help inform dynamical simulations. Here, we demonstrate the scheme for phononic vibrations and elastic properties. The scheme is also applied to both linear and message-passing neural network potentials by exploiting the linearity available in both architectures; for neural network potentials we approximate the readout layer as a linear model based on fixed non-linear features. The versatility of the method provides an alternative to hand-crafted or active learning approaches to data-set construction to correct physical failures by adding data thus reducing the computational overhead for designing potentials for specific applications.

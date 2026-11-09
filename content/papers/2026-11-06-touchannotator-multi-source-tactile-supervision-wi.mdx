@@ -1,0 +1,21 @@
+---
+title: "TouchAnnotator：具有特权视图蒸馏的多源触觉监督"
+title_en: "TouchAnnotator: Multi-Source Tactile Supervision with Privileged-View Distillation"
+authors: ["Ao Li", "Zhihao Yuan", "Chubin Zhang", "Kunrui Huang", "Sheng Xu", "Zengjue Chen", "Junjie Wang", "Jiawei Li", "Yansong Tang"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09129v1"
+doi: ""
+tags: ["手部康复", "腕关节"]
+tags_en: ["hand rehabilitation", "wrist"]
+keywords: ["手部康复", "腕关节"]
+keywords_en: ["hand rehabilitation", "wrist"]
+---
+
+## 中文摘要
+
+以自我为中心的视频大规模捕捉人与物体的交互，但很少包含隐藏接触和压力的触觉标签。我们推出 TouchAnnotator，这是一种仅自我的双手触觉注释器，经过多源触觉监督和特权视图蒸馏训练。规范的手场统一了来自六个数据集和三个实施例的手套压力、几何衍生的人类接触和机器人指尖变形，而源感知掩模保留了有效目标。在训练过程中，EMA 老师观察同步的自我和手腕视图，并将手局部表征和触觉预测提炼给学生，该学生仅使用自我视频和估计姿势进行推理。紧凑的过去剪辑内存提供时间上下文。我们对 EgoTouch、零次 FPHA 传输和 860 同步手套记录进行评估。该模型转换为徒手接触，并在徒手、戴手套和机器人实施例...
+
+## English Summary
+
+Egocentric video captures human-object interaction at scale but rarely includes tactile labels for hidden contact and pressure. We introduce TouchAnnotator, an ego-only bimanual tactile annotator trained with multi-source tactile supervision and privileged-view distillation. A canonical hand field unifies glove pressure, geometry-derived human contact, and robot fingertip deformation from six datasets and three embodiments, while source-aware masks preserve valid targets. During training, an EMA teacher observes synchronized ego and wrist views and distills hand-local representations and tactile predictions into a student that uses only ego video and estimated pose at inference. Compact past-clip memory supplies temporal context. We evaluate on EgoTouch, zero-shot FPHA transfer, and 860 synchronized glove recordings. The model transfers to bare-hand contact and produces qualitatively coherent tactile responses across bare-hand, gloved-hand, and robot embodiments. On measured recordings, it improves temporal accuracy by 5.38 points and Volumetric IoU by 5.02 points under a shared protocol. These results show that heterogeneous human--robot supervision and privileged training views can turn egocentric video into dense tactile annotations.

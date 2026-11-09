@@ -1,0 +1,21 @@
+---
+title: "学习重启：优化动态的可微分重启策略"
+title_en: "Learning to Restart: Differentiable Restart Policies for Optimization Dynamics"
+authors: ["Yiman Fong", "Zhonglin Xie", "Zaiwen Wen"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.08883v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+自适应重启机制重置迭代优化器的动量或其他辅助状态，在加速一阶方法的经验性能中发挥着核心作用，但现有的重启规则仍然几乎完全是手工设计的。学习重启策略的障碍在于，与典型的学习优化（L2O）设置不同，离散的重启事件使得所得轨迹在算法参数中不可微，从而阻碍了重启策略的基于梯度的优化。我们通过针对连续时间限制的重启政策制定可区分的框架来解决这一障碍。我们为重新启动事件和优化轨迹引入了代理梯度，这些代理梯度可以有效地计算并可证明收敛到其连续时间对应物。我们验证了 L2O 设置中替代梯度的有效性，训练重启策略改进了二次和线性程序上标准手工自适应重启标准，并将零样本从合成二次方程转移到真实数据集上的逻辑回归。
+
+## English Summary
+
+Adaptive restart mechanisms, which reset the momentum or other auxiliary state of an iterative optimizer, play a central role in the empirical performance of accelerated first-order methods, yet existing restart rules remain almost entirely hand-designed. The obstruction to learning restart policies is that, unlike the typical Learning to Optimize (L2O) setting, the discrete restart events make the resulting trajectory non-differentiable in the algorithm parameters and thus block gradient-based optimization of the restart policy. We resolve this obstruction by developing a differentiable framework for restart policies through their continuous-time limit. We introduce surrogate gradients for the restart events and optimization trajectories that are efficient to compute and provably converge to their continuous-time counterparts. We validate the effectiveness of our surrogate gradients in L2O settings, training restart policies that improve upon standard handcrafted adaptive restart criteria on quadratic and linear programs, and that transfer zero-shot from synthetic quadratics to logistic regression on real datasets.

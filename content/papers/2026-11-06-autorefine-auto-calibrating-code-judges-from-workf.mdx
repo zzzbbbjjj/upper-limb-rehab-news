@@ -1,0 +1,21 @@
+---
+title: "AutoRefine：根据工作流程结果自动校准代码判断"
+title_en: "AutoRefine: Auto-Calibrating Code Judges from Workflow Outcomes"
+authors: ["Shervin Shahidi", "James Poon", "Hang Xie", "Kenneth O. Xu", "Robin Håkanson", "Vikram Nair", "Jens Pillgram-Larsen", "Nachiappan Nagappan"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09291v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+LLM 评委越来越多地充当没有测试预言机的代码更改的质量关口，但评委提示必须针对其任务进行校准，并随着其评判系统的发展而重新校准，而用于校准的手动标签是资源密集型的并且会过时。开发工作流程免费发出结果标签（测试通过或失败、改变土地或被放弃），但这些标签很吵。我们提出了 AutoRefine，这是一个循环，它重写了可部署法官的提示以重现结果标签，由一位知情的老师看到法官的输入加上结果，解释它保留的每个标签，并在无法从法官所看到的结果解释结果时弃权。在具有执行预言机的保留数据集上，校准将机会校正一致性（Scott 的 $π$）从 0.36 提高到 0.60。在部署的代理的结果标签上，随机翻转 25...
+
+## English Summary
+
+LLM judges increasingly serve as quality gates for code changes that have no test oracle, but a judge prompt must be calibrated for its task and recalibrated as the system it judges evolves, while hand labels for the calibration are resource intensive and go stale. Development workflows emit outcome labels for free (tests pass or fail, changes land or are abandoned), but these labels are noisy. We present AutoRefine, a loop that rewrites a deployable judge's prompt to reproduce outcome labels, with an informed teacher that sees the judge's input plus the outcome, explains each label it keeps, and abstains when the outcome cannot be explained from what the judge sees. On a held-out dataset with an execution oracle, calibration raised chance-corrected agreement (Scott's $π$) from 0.36 to 0.60. On a deployed agent's outcome labels, with 25\% flipped at random to introduce noise, the teacher set aside flipped \textsc{fail} labels at more than twice the rate of genuine ones, cutting overall label noise from 25\% to 20\%. Recalibrating that agent's judge using AutoRefine raised its agreement with merge/abandon outcomes on 17 independently held-out diffs from the current workflow ($π$ 0.16 to 0.51); on 16 diffs from older workflows, the previous judge stayed ahead, illustrating the need for recalibration as the agent evolves. By abstaining, the teacher not only removes noisy labels but also flags changes whose outcome the judge's input cannot explain, telling a team when a judge needs better inputs rather than a better prompt.

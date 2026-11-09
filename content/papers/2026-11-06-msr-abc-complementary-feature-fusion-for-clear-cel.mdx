@@ -1,0 +1,21 @@
+---
+title: "MSR-ABC：透明细胞肾细胞癌分类的互补特征融合"
+title_en: "MSR-ABC: Complementary Feature Fusion for Clear Cell Renal Cell Carcinoma Classification"
+authors: ["Yuan Liang", "Sourav Bhattacharjee", "Abraham Campbell"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09583v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+计算机断层扫描 (CT) 的透明细胞肾细胞癌 (ccRCC) 分类可能受益于捕获肿瘤表型不同方面的表示。然而，简单地连接重建衍生的特征、图像文本嵌入和放射组学描述符可能无法充分利用它们的补充信息。我们提出 MSR-ABC，这是一个集成 MedVAE、MedSigLIP 和放射组学的全球-本地框架。空间匹配的局部图像描述符通过交叉表示注意力进行交互，而放射组学辅助监督则鼓励合并的局部表示保留定量的肿瘤属性。门控残差机制将局部信息与全局摘要相结合。区域感知池以及视觉和软文本提示完善了框架。我们使用 396 个 KiTS23 病例的患者级别分组和 111 个 TCGA/TCIA 病例的外部队列来评估...
+
+## English Summary
+
+Clear cell renal cell carcinoma (ccRCC) classification from computed tomography (CT) may benefit from representations that capture different aspects of tumour phenotype. However, simply concatenating reconstruction-derived features, image--text embeddings, and radiomic descriptors may not fully exploit their complementary information. We propose MSR-ABC, a global--local framework integrating MedVAE, MedSigLIP, and radiomics. Spatially matched local image descriptors interact through cross-representation attention, while radiomic auxiliary supervision encourages the pooled local representation to retain quantitative tumour attributes. A gated residual mechanism integrates local information with global summaries. Area-aware pooling and visual and soft-text prompting complete the framework. We evaluate discrimination using a patient-level split of 396 KiTS23 cases and an external cohort of 111 TCGA/TCIA cases, reporting mean AUROC over three training seeds with 95% patient-bootstrap confidence intervals. MSR-ABC achieves mean AUROCs of 0.806 internally and 0.879 externally. Internally, it exceeds global MedVAE--radiomics and three-source concatenation by 3.35 and 3.61 AUROC percentage points, respectively. Removing any source lowers mean AUROC in both cohorts, with the largest decreases following radiomics removal. Individual removal of cross-representation attention, auxiliary supervision, or gated fusion also lowers internal mean AUROC. These findings are consistent with complementary contributions within the integrated architecture and support further investigation of structured representation fusion for non-invasive renal tumour characterisation.

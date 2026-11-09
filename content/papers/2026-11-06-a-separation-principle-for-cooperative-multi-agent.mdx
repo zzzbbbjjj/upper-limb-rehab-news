@@ -1,0 +1,21 @@
+---
+title: "协作多智能体强化学习的分离原则"
+title_en: "A Separation Principle for Cooperative Multi-Agent Reinforcement Learning"
+authors: ["Lucia Pezzetti", "Nicolas Lanzetti", "Antonio Terpin", "Florian Dörfler", "Giorgia Ramponi"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09644v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+我们研究协作多智能体强化学习（MARL）问题，其中智能体在解耦的噪声动态下进化，但共享一个群体目标。一个典型的例子是移动运营商协调车队以满足客户需求。这些问题的随机性和时变性需要学习方法，但现有的 MARL 算法无法扩展：随着智能体数量的增长，在整个状态-动作空间上联合学习分配和路由变得令人望而却步。在概率测度空间上制定该问题，我们证明了一个分离原理：人口移动成本函数的上限是最优运输问题，其运输成本是目标条件单代理移动成本函数。这将多智能体问题简化为学习单智能体策略并通过最佳传输来协调智能体。在此原则的基础上，我们引入了 SALT（通过最佳传输进行基于分离的分配和学习），这是一系列算法，可以使...
+
+## English Summary
+
+We study cooperative multi-agent reinforcement learning (MARL) problems in which agents evolve under decoupled noisy dynamics but share a population objective. A canonical example is a mobility operator that orchestrates a fleet of vehicles to meet customer demand. The stochastic and time-varying nature of these problems calls for learning approaches, yet existing MARL algorithms do not scale: learning assignment and routing jointly over the full state-action space becomes prohibitive as the number of agents grows. Formulating the problem over the space of probability measures, we prove a separation principle: the population cost-to-go function is upper bounded by an optimal transport problem whose transportation cost is the target-conditioned single-agent cost-to-go function. This simplifies the multi-agent problem to learning a single-agent policy and coordinating the agents via optimal transport. Building on this principle, we introduce SALT (Separation-based Assignment and Learning via optimal Transport), a family of algorithms that learn a target-conditioned single-agent policy using any standard reinforcement learning algorithm, and then coordinate the agents via optimal transport. Since learning occurs at the single-agent level, SALT scales to fleet sizes where MARL baselines become intractable and transfers without retraining to fleet sizes unseen during training. In a vehicle-delivery experiment on the southern Manhattan road network, where MARL baselines are computationally prohibitive, SALT improves travel time by 15-21% over a shortest-path routing heuristic. In stochastic grid worlds, SALT reduces average travel times by 23-61% relative to MARL baselines and scales to population sizes where these methods fail.

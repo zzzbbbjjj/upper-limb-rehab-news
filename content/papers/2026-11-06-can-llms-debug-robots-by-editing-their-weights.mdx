@@ -1,0 +1,21 @@
+---
+title: "法学硕士可以通过编辑机器人的权重来调试机器人吗？"
+title_en: "Can LLMs Debug Robots by Editing Their Weights?"
+authors: ["Jusheng Zhang", "Keze Wang", "Liang Lin"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09376v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+语言模型可以通过仅编辑 65 个标记嵌入行来修复机器人策略的词汇指令基础。我们将权重空间编程引入机器人基础策略：GPT-6 Astra 读取权重并使用 CPU 工作区和预算模拟器反馈，无需梯度更新或新演示。 $π_{0.5}$ 上的三个独立会议都提高了 765 个保留释义的成功率；最好的成功率从 86.3% 提高到 92.0%（48 次修复，4 次回归；精确配对 $p=1.31\times10^{-10}$）。在包含编辑令牌的 335 条指令中，成功率从 74.3% 上升到 87.5%；其他 430 集的结果变化为零。匹配的随机方向编辑没有帮助。使用编辑者自己的词典进行完全替换可以解释大部分增...
+
+## English Summary
+
+A language model can repair a robot policy's lexical instruction grounding by editing just 65 token-embedding rows. We bring weight-space programming to robot foundation policies: GPT-6 Astra reads weights and uses a CPU workspace and budgeted simulator feedback, without gradient updates or new demonstrations. Three independent sessions on $π_{0.5}$ all improve success on 765 held-out paraphrases; the best raises success from 86.3\% to 92.0\% (48 repairs, four regressions; exact paired $p=1.31\times10^{-10}$). Among the 335 instructions containing edited tokens, success rises from 74.3\% to 87.5\%; the other 430 episodes have zero outcome changes. Matched random-direction edits do not help. Full replacement using the editor's own lexicon explains much of the gain but produces more regressions; its direct difference from the editor is not significant at 0.05. Across 13 further robot sessions, the editor declines 12 candidates; the sole retained edit does not show a significant held-out gain. Separately, benchmark metadata lowers FastWAM success from 70.0\% to 48.6\%, while the evaluated VLA's aggregate rate is unchanged. The evidence supports precise lexical repair, not general acquisition of missing robot capabilities.

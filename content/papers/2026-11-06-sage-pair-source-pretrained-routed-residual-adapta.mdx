@@ -1,0 +1,21 @@
+---
+title: "SAGE-PAIR：用于稀疏反馈推荐的源预训练路由残差适应"
+title_en: "SAGE-PAIR: Source-Pretrained Routed Residual Adaptation for Sparse-Feedback Recommendation"
+authors: ["Weiqing Zeng", "Zida Yang", "Guquan You", "Jiexin Zheng", "Cong Wang"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09728v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+推荐系统通常会在获得足够的结果来重新训练已部署的模型之前进入新的服务窗口。我们用 0.05-1.0% 的目标反馈来研究这个机制，这个范围涵盖了我们的压力测试，同时保持监督远低于源推荐器的自由度。在这种规模下，现有的微调和元学习方法仍然从极其稀疏的反馈中估计特定于目标的更新，从而使更新方向难以识别。相反，SAGE-PAIR 会传输源支持的残差校正空间，并且仅使用目标结果来校准该空间。我们引入了 SAGE-PAIR，这是一种分阶段适配器，可在相邻源周期上预训练低维全局残差，并在以源用户配置文件为条件的残差专家上添加软路由器。然后，目标反馈会校准此残余状态，而不是重新学习推荐器。在 KuaiSAR-...
+
+## English Summary
+
+Recommendation systems often enter a new serving window before enough outcomes are available to retrain the deployed model. We study this regime with 0.05-1.0% target feedback, a range that spans our stress tests while keeping supervision far below the degrees of freedom of the source recommender. At this scale, existing fine-tuning and meta-learning methods still estimate target-specific updates from extremely sparse feedback, leaving the update direction weakly identified. SAGE-PAIR instead transfers a source-supported residual correction space and only calibrates this space using target outcomes. We introduce SAGE-PAIR, a staged adapter that pretrains a low-dimensional global residual on an adjacent source period and adds a soft router over residual experts conditioned on source user profiles. Target feedback then calibrates this residual state rather than relearning the recommender. On a locked test split of KuaiSAR-v2, SAGE-PAIR (Full) achieves a 1.77% relative improvement in NDCG@10, while a core-protocol comparison shows a further 0.25% gain from routed experts beyond source-pretrained PAIR. Matched source-pretrained LoRA and Adapter-Tuning baselines remain near the source model, supporting the need for a different adaptation space. Thus, SAGE-PAIR improves ranking quality with millisecond-scale adaptation and inference costs. Sparse-feedback adaptation is fundamentally governed by the identifiability of the update space rather than by label count alone. Source pretraining supplies estimable correction directions for scarce labels, while user-conditioned routing contributes a consistent, differentiated cross-user correction on top of the global correction. Our code is available at https://anonymous.4open.science/r/SAGE-PAIR-610E/.

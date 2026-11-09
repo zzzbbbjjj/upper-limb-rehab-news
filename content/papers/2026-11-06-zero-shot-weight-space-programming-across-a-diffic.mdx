@@ -1,0 +1,21 @@
+---
+title: "跨越两人游戏难度分级阶梯的零样本权重空间编程"
+title_en: "Zero-Shot Weight-Space Programming Across a Difficulty-Graded Ladder of Two-Player Games"
+authors: ["Eduardo C. Garrido-Merchán"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09271v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+权重空间编程根据所需计算的明确规范，手动设置前馈网络的每个权重，在构造过程中没有梯度下降，也没有训练数据。我们询问大型语言模型可以在故意增加难度的游戏中将这种零样本实践进行到什么程度。我们设计了一个跨越四个难度轴的四级梯子（尼姆、井字游戏、两种尺寸的四子棋和国际象棋残局），并在每个梯级上构建第二个独立网络，使用结构上不相关的游戏来匹配难度，以将梯级的发现所反映的难度级别与它所描述的用于衡量难度的游戏的情况分开。建成并独立验证了十个网络。其中六人承认针对独立预言机的正确性提供了完整的、非统计的证明。国际象棋残局的梯级在正确性便宜、走法合法性以及在一个网络中精确的单层交配检测器的情况下是精确的，而...
+
+## English Summary
+
+Weight-space programming sets every weight of a feed-forward network by hand, from an explicit specification of the desired computation, with no gradient descent and no training data anywhere in the construction. We ask how far a large language model can carry this practice, zero-shot, across games of deliberately increasing difficulty. We design a four-rung ladder (Nim, tic-tac-toe, two sizes of Connect Four, and a chess endgame) spanning four axes of difficulty, and build a second, independent network at each rung, using a structurally unrelated game at matched difficulty, to separate what a rung's finding says about the difficulty level from what it says about the one game used to measure it. Ten networks are built and independently verified. Six admit a complete, non-statistical proof of correctness against an independent oracle. The chess-endgame rung is exact where correctness is cheap, move legality and, in one network, an exact one-ply mate detector, and collapses where it is expensive, composing a multi-move mating plan, from 84.1-100% success at the one-ply tactics it was built to get right down to 0.57-9.13% in full adversarial play; its replicate shows this collapse is an order of magnitude less severe under a shorter required plan and exact rather than heuristic safety checks. The standard-sized rung confirms, by holding hand-set evaluation weights fixed and adding only shallow search, that the remaining gap is an architectural ceiling rather than a matter of engineering effort, and this exact collapse reproduces across two structurally unrelated games. We release all ten networks, their independent oracles, construction-cost measurements, and a cold-prompt protocol for a future cross-model comparison

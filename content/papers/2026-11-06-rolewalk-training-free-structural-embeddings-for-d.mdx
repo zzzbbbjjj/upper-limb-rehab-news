@@ -1,0 +1,21 @@
+---
+title: "RoleWalk：跨图传输的有向图的免训练结构嵌入"
+title_en: "RoleWalk: training-free structural embeddings for directed graphs that transfer across graphs"
+authors: ["Maixent Chenebaux"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09189v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+结构角色嵌入通过节点在图中的位置（枢纽、桥梁、外围、密集核心的成员）来描述节点，而不是通过其邻居是谁来描述节点。现有方法要么学习特定于一个图的坐标（struc2vec、Role2Vec、RESD），要么从整个图（GraphWave、Digraphwave）读取尺度和归一化，因此同一邻域可以在两个图中接收不同的坐标；很少有人阅读边缘方向。我们提出了 RoleWalk，这是一种免训练嵌入，它遵循从每个节点开始的短惰性随机游走，并在每一步记录两个分布：通过其在固定频率网格的特征函数的转移概率分布，以及游走者到其起始节点的距离分布。在有向图上，向前然后向后的行走添加共享节点目标或源的人。嵌入仅取决于固...
+
+## English Summary
+
+Structural role embeddings describe a node by its position in a graph - hub, bridge, periphery, member of a dense core - rather than by who its neighbours are. Existing methods either learn coordinates specific to one graph (struc2vec, Role2Vec, RESD) or read scales and normalisations from the whole graph (GraphWave, Digraphwave), so the same neighbourhood can receive different coordinates in two graphs; few read edge directions. We present RoleWalk, a training-free embedding that follows a short lazy random walk from each node and records, at each step, two distributions: that of the transition probabilities, through its characteristic function at a fixed grid of frequencies, and that of the walker's distance to its starting node. On directed graphs, walks that go forward then backward add who shares a node's targets or sources. The embedding depends only on a node's neighbourhood within a fixed radius, so its coordinates mean the same thing in every graph. We show that, without curvature, it is the kernel mean embedding of the walk's footprint, that it separates graphs that the Weisfeiler-Leman test cannot, and that pruning small probabilities comes with a per-node error certificate. Empirically, RoleWalk is competitive with the best role embeddings on five classification benchmarks at a fraction of their cost, has the highest scores on real directed roles in Wikipedia adminship, exceeds the published accuracy of Digraphwave at every noise level of its own Enron network-alignment benchmark, transfers centrality predictors to graphs four times larger better than existing inductive embeddings, hand-made features and a trained GIN, and embeds a million nodes in 20 s to 3 min on one CPU core. The code is open source (BSD license): https://github.com/kerighan/rolewalk

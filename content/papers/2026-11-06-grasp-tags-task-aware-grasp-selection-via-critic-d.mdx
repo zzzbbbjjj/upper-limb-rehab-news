@@ -1,0 +1,21 @@
+---
+title: "Grasp-TAGS：通过临界点蒸馏进行任务感知的抓取选择以进行预先的局部操作"
+title_en: "Grasp-TAGS: Task-Aware Grasp Selection via Critic Distillation for Prehensile Loco-Manipulation"
+authors: ["Xun Tu", "Minghao Zou", "Karthik Desingh"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09864v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+运动操纵需要移动操纵器在长范围内协调运动和操纵，是服务机器人和仓库自动化等应用中大型物体重新排列的关键功能。尽管最近取得了进展，但可靠地执行这些任务仍然具有挑战性，因为性能取决于复杂的机器人-物体和物体-环境交互动力学。现有的方法要么通过基于模型的方法（通常需要准确的动力学模型），要么通过基于学习的方法来解决这一挑战，这些方法减少了这一要求，但通常假设固定或预定义的初始掌握。然而，不同的几何稳定抓握可能会导致下游操纵性能的显着不同。因此，我们提出了 Grasp-TAGS，一种用于目标条件大对象重新排列的任务感知抓取选择框架。我们跨多个初始抓取配置训练一个统一的基于 PPO 的强化学习策略，并将...
+
+## English Summary
+
+Loco-manipulation, which requires mobile manipulators to coordinate locomotion and manipulation over long horizons, is a key capability for large-object rearrangement in applications such as service robotics and warehouse automation. Despite recent progress, reliably executing these tasks remains challenging because performance depends on complex robot-object and object-environment interaction dynamics. Existing approaches address this challenge either through model-based methods, which often require accurate dynamics models, or through learning-based methods, which reduce this requirement but typically assume a fixed or predefined initial grasp. However, different geometrically stable grasps can lead to substantially different downstream manipulation performance. Therefore, we propose Grasp-TAGS, a task-aware grasp selection framework for goal-conditioned large-object rearrangement. We train a unified PPO-based reinforcement learning policy across multiple initial grasp configurations and distill the learned critic into a lightweight grasp utility network that ranks candidate grasps using only the candidate grasp configuration and goal information. At inference time, we select the grasp with the highest predicted downstream utility for the downstream policy to complete the task, before even making a contact. Experiments demonstrate that Grasp-TAGS improves rearrangement success over both fixed single-grasp policies and random grasp selection, achieving an average success rate of 89.84% compared with 79.87% for the best-performing single-grasp policies, an improvement of 9.97 percentage points. Grasp-TAGS also reduces final orientation errors across all evaluated objects. For more qualitative results, refer to the supplementary webpage: https://rpm-lab-umn.github.io/Grasp-TAGS-web-page/

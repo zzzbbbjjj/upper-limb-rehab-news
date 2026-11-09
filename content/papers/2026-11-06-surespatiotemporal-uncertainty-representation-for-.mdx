@@ -1,0 +1,21 @@
+---
+title: "SURE：高效视觉-语言-动作学习的时空不确定性表示"
+title_en: "SURE:Spatiotemporal Uncertainty Representation for Efficient Vision-Language-Action Learning"
+authors: ["Jingye Zhang", "Choo Sin Wai", "Dake Zhong", "Zhifang Liu", "Yuhong Zhang", "Siyao Xiao", "Guorui Song", "Guocun Wang", "Dongbin Zhang", "Peng Jiao"]
+date: "2026-11-06"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.09684v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+视觉-语言-动作（VLA）策略已成为端到端机器人控制的有前景的范例，但其有效性仍然在很大程度上取决于大量的演示数据。在操作任务中，这种依赖性因动作空间中的结构化时空不确定性而变得更加复杂：多个附近的动作或轨迹可能成功地解决同一任务，而语义上等效的演示通常以不同的速度展开。标准的逐点监督将每个展示的行动视为一个确切的目标，在这种不确定性下施加了不必要的学习负担。我们提出了 SURE，一种数据高效的 VLA 训练框架，可以显式地模拟空间和时间的不确定性。 SURE 通过轻量级转置卷积概率动作解码器增强了 VLA 主干，该解码器通过相邻动作箱之间的局部相关性捕获空间不确定性。它还引入了 Soft-D...
+
+## English Summary
+
+Vision-language-action (VLA) policies have become a promising paradigm for end-to-end robot control, but their effectiveness still depends heavily on large volumes of demonstration data. In manipulation tasks, this dependence is compounded by structured spatiotemporal uncertainty in the action space: multiple nearby actions or trajectories may successfully solve the same task, while semantically equivalent demonstrations often unfold at different speeds. Standard pointwise supervision treats each demonstrated action as an exact target, imposing an unnecessary learning burden under such uncertainty. We present SURE, a data-efficient VLA training framework that explicitly models both spatial and temporal uncertainty. SURE augments a VLA backbone with a lightweight transposed-convolutional probabilistic action decoder that captures spatial uncertainty through local correlations among neighboring action bins. It further introduces Soft-DTW alignment supervision to accommodate local timing variations between predicted and demonstrated action chunks. Together, these two components reduce sensitivity to demonstrator-specific poses and execution timing, enabling more data-efficient action learning. We evaluate SURE on LIBERO, RoboTwin 2.0, and real-world manipulation tasks. Even with only 10% of the demonstration data or 20% of the training steps, SURE achieves manipulation success rates that match or surpass baseline VLAs.
