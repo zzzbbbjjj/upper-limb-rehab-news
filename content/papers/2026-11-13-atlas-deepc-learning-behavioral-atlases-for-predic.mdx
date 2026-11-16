@@ -1,0 +1,21 @@
+---
+title: "Atlas-DeePC: Learning Behavioral Atlases for Predictive Control"
+title_en: "Atlas-DeePC: Learning Behavioral Atlases for Predictive Control"
+authors: ["Dian Jin", "Zhiyuan Jin", "Jeremy Coulson"]
+date: "2026-11-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.18266v1"
+doi: ""
+tags: ["上肢康复"]
+tags_en: ["upper limb rehabilitation"]
+keywords: ["上肢康复"]
+keywords_en: ["upper limb rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Data-enabled Predictive Control (DeePC) uses linear combinations of recorded input-output trajectories to compute control actions without a parametric model. For nonlinear systems, these linear combinations may not satisfy the system dynamics, and the computational cost grows with dataset size. We propose Atlas-DeePC, which approximates the behavior of a dynamical system using a collection of low-dimensional subspaces, termed a behavioral atlas, to enable computationally efficient prediction and control. The atlas is constructed offline by clustering the data and fitting a subspace to each cluster. Online, the controller selects the subspace that best matches recent measurements and solves a predictive control problem parameterized by its orthonormal basis. A graph-based reference planner complements the controller by providing intermediate references across operating regions. We illustrate Atlas-DeePC on a planar robotic manipulator, where it achieves higher success rates and substantially lower online computation times than the compared controllers based on online data selection. An additional benchmark of an autonomous racing task is also included. The project website provides code and demonstrations https://dianjin-frederick.github.io/Atlas-DeePC/

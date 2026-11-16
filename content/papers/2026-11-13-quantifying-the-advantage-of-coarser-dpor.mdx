@@ -1,0 +1,21 @@
+---
+title: "Quantifying the Advantage of Coarser DPOR"
+title_en: "Quantifying the Advantage of Coarser DPOR"
+authors: ["Minjian Zhang", "Rupak Majumdar", "Umang Mathur", "C. -H. Luke Ong"]
+date: "2026-11-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.18069v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Dynamic partial-order reduction (DPOR) has emerged as a promising approach to addressing interleaving explosion in bounded model checking of concurrent programs. Given an equivalence relation on interleavings, the model checker explores a program's executions while minimizing repeated visits to the same class; optimal model checkers avoid such repetition altogether. A coarser equivalence promises faster exploration by reducing the number of classes. This has motivated alternatives to Mazurkiewicz's trace equivalence such as reads-from and reads-value-from equivalence. This promise, however, does not always materialize in practice: while a coarser equivalence can yield exponentially fewer classes on some families of programs, it may offer little or no reduction for the program at hand.   We show how to quantify the advantage of coarser equivalences for individual programs. We focus on the problem of counting the reads-from (RF) equivalence classes induced by a given program, as well as the problem of computing the ratio of RF to Mazurkiewicz class counts under sequential consistency. We show that both problems are $\#\mathrm{P}$-hard and that the reduction ratio remains hard to approximate accurately under standard complexity assumptions.   Guided by these limits, we present CoEst, a sampling-based algorithm for estimating both the RF count and its ratio to the Mazurkiewicz count. For a fixed number of threads, each trial runs in polynomial time and yields unbiased count estimates. As the number of independent trials grows, the count and ratio estimates converge almost surely to their true values. Our algorithm can provide statistical evidence for deciding whether Mazurkiewicz or RF model checking is likely to be faster for a given program. In experiments across 34 benchmark configurations, our method selects the faster checker in 99.4% of runs using a one-minute estimation budget.

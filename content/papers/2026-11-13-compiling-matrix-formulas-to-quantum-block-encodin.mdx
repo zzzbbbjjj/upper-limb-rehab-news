@@ -1,0 +1,21 @@
+---
+title: "Compiling Matrix Formulas to Quantum Block Encodings"
+title_en: "Compiling Matrix Formulas to Quantum Block Encodings"
+authors: ["Daksh Shami", "Charles Yuan"]
+date: "2026-11-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.17756v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Realizing the promise of quantum applications such as chemistry or fluid dynamics requires building quantum circuits that efficiently encode and manipulate exponentially large matrices. This process forces researchers to grapple with the reality that a matrix expressible as one equation on paper can map to thousands of bit-level quantum logic gates, historically written by hand. Even worse, it often ends with a discovery that the needed resources grow so quickly with matrix size that the quantum algorithm loses its asymptotic speedup.   In this work, we present MARBLE, a language that automatically synthesizes an efficient circuit from the publication-style formula for the entries of a matrix. MARBLE algebraically rewrites programs into symbolic combinations of simpler matrices that have known circuit realizations. It analyzes costs of possible representations, notably the subnormalization term that dominates time complexity. It then emits an OpenQASM circuit and certifies whether its cost is poly-logarithmic in problem size, as required by quantum algorithms.   When evaluated on quantum applications ranging from fluid dynamics to physical Hamiltonians, MARBLE matches or surpasses 37 of 39 published baselines. On the low end, it automatically matches many theoretically optimal circuits, and on the high end, it improves on a published construction in fluid dynamics by 10,487x in subnormalization. MARBLE produces exponentially smaller circuits than the leading tool FABLE, and it successfully compiles matrices whose dimensions exceed 2^100 within five seconds on a laptop.

@@ -1,0 +1,21 @@
+---
+title: "uhd-rfsoc: Bringing Off-the-Shelf RFSoC Boards to Unmodified UHD Applications"
+title_en: "uhd-rfsoc: Bringing Off-the-Shelf RFSoC Boards to Unmodified UHD Applications"
+authors: ["Wei Cheng", "Yiming Li", "Junyao Zheng", "Cheng-Bin Chen", "Tingjun Chen"]
+date: "2026-11-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.17723v1"
+doi: ""
+tags: ["手部康复", "上肢康复"]
+tags_en: ["hand rehabilitation", "upper limb"]
+keywords: ["手部康复", "上肢康复"]
+keywords_en: ["hand rehabilitation", "upper limb"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Next-generation wireless research relies on software-defined radios (SDRs) with more channels and larger bandwidth. The USRP family is one of the most widely used SDR platforms, and much of the wireless software ecosystem is built on top of the USRP hardware driver (UHD). However, each USRP model comes with a fixed channel count, bandwidth, and streaming capability. Off-the-shelf radio frequency system-on-chip (RFSoC) boards, on the other hand, integrate up to 16 analog-to-digital converters (ADCs) and 16 digital-to-analog converters (DACs) operating at several gigasamples per second (GS/s), but existing UHD applications cannot directly use them. We present uhd-rfsoc, an open-source FPGA design and host software stack that turns these boards, including the 16-channel ZCU216 and the RFSoC 4x2, into standard UHD devices without modifying UHD. Through standard UHD calls, applications can configure the carrier frequency, channel count, the per-channel I/Q sample rate, and the wire format. uhd-rfsoc combines timestamped, flow-controlled sample transport in the FPGA with data plane development kit (DPDK) packet processing and vectorized sample conversion on x86 and Arm hosts. The built bitstreams for a number of RFSoC board configurations with varying RF data converter rates, channel counts, I/Q sample rates, and wire formats all successfully pass UHD's built-in streaming benchmarks. We further demonstrate compatibility with unmodified GNU Radio flowgraphs, a custom GPU-accelerated transceiver digital signal processing pipeline, as well as the OCUDU and Duranta 5G radio access network stacks using both software and commodity user equipment.

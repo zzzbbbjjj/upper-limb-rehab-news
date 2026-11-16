@@ -1,0 +1,21 @@
+---
+title: "Euclid Data Release 1 (DR1). AstroVink-TREX: Automated strong gravitational lens segmentation as input for mass modelling pipelines"
+title_en: "Euclid Data Release 1 (DR1). AstroVink-TREX: Automated strong gravitational lens segmentation as input for mass modelling pipelines"
+authors: [" Euclid Collaboration", "S. H. Vincken", "N. E. P. Lines", "J. W. Nightingale", "T. E. Collett", "L. R. Ecker", "S. Schuldt", "A. Nersesian", "T. Li", "N. Wielders"]
+date: "2026-11-13"
+source: "arXiv"
+source_url: "http://arxiv.org/abs/2611.17894v1"
+doi: ""
+tags: ["手部康复"]
+tags_en: ["hand rehabilitation"]
+keywords: ["手部康复"]
+keywords_en: ["hand rehabilitation"]
+---
+
+## 中文摘要
+
+（翻译失败，请参考英文摘要）
+
+## English Summary
+
+Strong gravitational lens modelling requires the lens light, lensed source light, and contaminants to be separated in each image before mass modelling codes can fit the system. Within Euclid this separation has so far been done by hand, which does not scale to the more than 15,000 candidates in the Euclid Lens Identification Pipeline and Scientific Exploration (ECLIPSE) catalogue of Data Release 1 (DR1). We present AstroVink-TREX , a neural network that performs this separation automatically and predicts three flux maps, in a standard format directly usable by mass-modelling pipelines. The network uses a hybrid architecture, pairing a vision transformer encoder reused from the lens detection network with a parallel convolutional branch. A custom loss function penalises both flux and structural error, while allowing independent weighting per component. From the network's predictions we also derive the modelling centre, fitting region, conjugate points, and binary maps, providing all the inputs that a modelling pipeline needs to run without manual setup. We evaluate the efficiency of the network on DR1 systems against existing fits and through expert validation. Across approximately 3000 inspected systems, taking 75% agreement between inspectors, just 39 lens models fail because of a segmentation error. Following this validation, the network provides the component separation and modelling setup for every system modelled in DR1. With automated segmentation, lens modelling is no longer limited by manual preprocessing and can now operate at the same scale as lens discovery.
